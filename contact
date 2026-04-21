@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Nigel Thomas</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI',Roboto,sans-serif;background:#f5f7fb;color:#1e293b;line-height:1.7;}
+        .container{max-width:800px;margin:0 auto;background:white;padding:3rem;border-radius:16px;margin-top:2rem;margin-bottom:2rem;box-shadow:0 4px 20px rgba(0,0,0,0.05);}
+        h1{color:#0f2b3d;margin-bottom:1rem;}
+        input,textarea{width:100%;padding:12px;margin:10px 0;border:1px solid #ddd;border-radius:8px;font-size:16px;}
+        button{background:#2c7da0;color:white;padding:12px 24px;border:none;border-radius:8px;cursor:pointer;font-size:16px;}
+        button:hover{background:#1e4a6e;}
+        @media(max-width:768px){.container{padding:1.5rem;}}
+    </style>
+</head>
+<body>
+    <div style="background:#1a2a3a;padding:1rem 0;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px;display:flex;justify-content:space-between;">
+            <a href="/" style="color:white;text-decoration:none;font-size:1.3rem;">Nigel Thomas</a>
+            <div style="display:flex;gap:1.5rem;">
+                <a href="/" style="color:white;text-decoration:none;">Home</a>
+                <a href="/blog.html" style="color:white;text-decoration:none;">Blog</a>
+                <a href="/about.html" style="color:white;text-decoration:none;">About</a>
+                <a href="/contact.html" style="color:white;text-decoration:none;">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>Have questions, collaboration ideas, or just want to say hello? Reach out using the form below or email me directly.</p>
+        
+        <form action="https://formsubmit.co/nigel@nigelthomas.live" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <hr style="margin: 2rem 0;">
+        <p><strong>📧 Direct Email:</strong> nigel@nigelthomas.live</p>
+        <p><strong>🔗 LinkedIn:</strong> linkedin.com/in/nigelthomas</p>
+    </div>
+
+    <footer style="background:#0f1a24;color:#8899aa;padding:2rem 0;text-align:center;">
+        <p>&copy; 2025 Nigel Thomas. All rights reserved. | <a href="/privacy.html" style="color:#8899aa;">Privacy</a> | <a href="/terms.html" style="color:#8899aa;">Terms</a></p>
+    </footer>
+</body>
+</html>
