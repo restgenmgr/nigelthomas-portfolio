@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Nigel Thomas | Hospitality Professional | Bio</title>
+    <meta name="description" content="Nigel Thomas - Hospitality professional with 6 years in USA, 5 years in Middle East, and 5 years in India (Bangalore, Hyderabad, Nandi Hills).">
+    <meta name="author" content="Nigel Thomas">
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQLVPTR6EB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WQLVPTR6EB');
+    </script>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #f5f5f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: #2c3e2f;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .bio-content {
+            padding: 40px 35px;
+        }
+
+        .bio-content h2 {
+            color: #2c3e2f;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            border-left: 5px solid #c7a252;
+            padding-left: 20px;
+        }
+
+        .bio-content h3 {
+            color: #4a6b3f;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .bio-content p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .bio-content ul {
+            margin: 20px 0 20px 40px;
+        }
+
+        .bio-content li {
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            background: #f9f7f2;
+            padding: 30px 35px;
+            border-top: 1px solid #e0ddd5;
+            border-bottom: 1px solid #e0ddd5;
+        }
+
+        .contact-section h3 {
+            color: #2c3e2f;
+            margin-bottom: 20px;
+            font-size: 1.6rem;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-details a {
+            color: #2c3e2f;
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        .contact-details a:hover {
+            color: #c7a252;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .social-links a {
+            background: #2c3e2f;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #c7a252;
+            color: #1a1a1a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            font-size: 0.85rem;
+            color: #777;
+            background: #f5f5f0;
+        }
+
+        /* AdSense auto ads will appear automatically */
+        @media (max-width: 700px) {
+            .bio-content {
+                padding: 25px 20px;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Nigel Thomas</h1>
+        <p>Hospitality Professional | USA • Middle East • India</p>
+    </header>
+
+    <div class="bio-content">
+        <!-- ============================================== -->
+        <!-- ========== YOUR 2000+ WORD BIO GOES HERE ========== -->
+        <!-- ============================================== -->
+
+        <h2>My Journey Across Three Continents</h2>
+        <p><strong>6 years in the United States • 5 years in the Middle East • 5 years in India (Bangalore, Hyderabad, Nandi Hills)</strong></p>
+        <p>Welcome. I'm Nigel Thomas, a hospitality operations professional who has spent nearly two decades learning the craft of service, leadership, and resilience—from busy American hotel kitchens to luxury Middle Eastern resorts and the vibrant, fast-growing hospitality scene in India. This is my story.</p>
+
+        <h2>🇺🇸 Six Years in the United States</h2>
+        <p>[Paste your USA experience here. Mention cities, hotel/restaurant names, roles, what you learned, challenges, achievements, and how it shaped you.]</p>
+        <p>Example: "I started my American journey in [City, State], working as a [role]. Within two years, I was promoted to [higher role]. I learned the importance of speed, precision, and American-style customer service..."</p>
+
+        <h2>🇦🇪 Five Years in the Middle East</h2>
+        <p>[Paste your Middle East experience here. Dubai? Doha? Abu Dhabi? Mention properties, guest profiles, cultural learnings, how it differs from the USA.]</p>
+        <p>The Middle East taught me luxury service, attention to detail, and how to handle high-net-worth guests with discretion and warmth.</p>
+
+        <h2>🇮🇳 Five Years in India – Bangalore, Hyderabad & Nandi Hills</h2>
+        <p>[Paste your India experience here. Bangalore's fast-paced corporate hospitality, Hyderabad's rich culinary culture, Nandi Hills' serene properties. Compare and contrast.]</p>
+        <p>Working in India has been a homecoming. The energy, diversity, and growth here are unmatched.</p>
+
+        <h3>What I Bring to Every Team</h3>
+        <ul>
+            <li>Hands-on operations management across three very different regions</li>
+            <li>Deep understanding of food & beverage, banquets, and guest relations</li>
+            <li>Team training and leadership – I build people who build businesses</li>
+            <li>Crisis management – from kitchen fires to VIP guest escalations</li>
+            <li>Payment and billing system knowledge – because getting paid matters</li>
+        </ul>
+
+        <p><strong>My philosophy is simple:</strong> Respect the craft, respect your team, and never stop learning. Whether it's a 5 AM airport pickup for a VIP or a last-minute banquet for 500 guests, I get it done.</p>
+
+        <!-- ============================================== -->
+        <!-- ========== END OF BIO SECTION ================= -->
+        <!-- ============================================== -->
+    </div>
+
+    <div class="contact-section">
+        <h3>📬 Let's Connect</h3>
+        <div class="contact-details">
+            <span>📞 <strong>Phone & WhatsApp:</strong> <a href="tel:+919769351231">+91 9769351231</a></span>
+            <span>✉️ <strong>Email:</strong> <a href="mailto:restgenmgr1952@gmail.com">restgenmgr1952@gmail.com</a> | <a href="mailto:napt1952@gmail.com">napt1952@gmail.com</a></span>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nathomas-hospitality" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.facebook.com/FoodBeverageMgr" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.instagram.com/restgenmgr/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Nigel Thomas — Hospitality professional. Based in Nandi Hills, India.</p>
+        <p style="margin-top: 8px; font-size: 0.75rem;">This is a personal website. Google AdSense and Google Analytics are active.</p>
+    </footer>
+</div>
+
+</body>
+</html>
