@@ -1,0 +1,9 @@
+{
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/about.html", "dest": "/about.html" },
+    { "src": "/contact.html", "dest": "/contact.html" },
+    { "src": "/privacy.html", "dest": "/privacy.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
