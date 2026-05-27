@@ -1,369 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google + SEO tags below -->
-<div class="header">
-    <h1>Nigel Anthony Thomas</h1>
-    <p>General Manager | Global Hospitality & Resort Operations Leader</p>
-    <p>Mumbai, India | Global Experience: India, Middle East, USA</p>
-</div>
-<title>Food Safety Temperatures, Cold Chain Control & Kitchen Storage Standards</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body { font-family: Arial, Helvetica, sans-serif; line-height: 1.7; margin: 20px; color: #222; }
-h1 { color: #b30000; }
-h2 { color: #1a1a1a; margin-top: 30px; }
-h3 { color: #333366; margin-top: 20px; }
-table { border-collapse: collapse; width: 100%; margin: 15px 0; }
-table, th, td { border: 1px solid #ccc; }
-th, td { padding: 10px; text-align: left; }
-.note { background: #fff3cd; padding: 10px; border-left: 5px solid #ffcc00; margin: 15px 0; }
-.warning { background: #f8d7da; padding: 10px; border-left: 5px solid #d9534f; margin: 15px 0; }
-.good { background: #d4edda; padding: 10px; border-left: 5px solid #28a745; margin: 15px 0; }
-</style>
+    <title>Food Safety Temperature Guide for Commercial Kitchens | Nigel Thomas</title>
+
+    <!-- SEO META TAGS -->
+    <meta name="description" content="Complete Food Safety Temperature Guide for Commercial Kitchens covering HACCP standards, refrigeration procedures, blast chillers, FIFO systems, food storage hierarchy, hot and cold holding temperatures, and kitchen compliance procedures.">
+
+    <meta name="keywords" content="Food Safety Temperatures, HACCP Guide, Commercial Kitchen Safety, Hot Holding Temperature, Cold Holding Temperature, Blast Chiller Procedures, Kitchen FIFO System, Fridge Temperature Logs, Food Storage Standards, Hospitality Food Safety, Walk In Refrigerator Standards, Kitchen Hygiene">
+
+    <meta name="author" content="Nigel Anthony Thomas">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="google-site-verification" content="qo7RHiH7vEI7MFQvdbNJWkpxqrIqyOCTvPGejF5rMbw" />
+
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://nigelthomas.live/food-safety-temperature-guide.html">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Food Safety Temperature Guide for Commercial Kitchens">
+    <meta property="og:description" content="Professional hospitality food safety guide covering hot and cold holding, refrigeration, blast chillers, FIFO systems, and HACCP compliance.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://nigelthomas.live/food-safety-temperature-guide.html">
+    <meta property="og:site_name" content="NigelThomas.live">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Food Safety Temperature Guide for Commercial Kitchens">
+    <meta name="twitter:description" content="Complete commercial kitchen HACCP and food temperature control guide.">
+
+    <!-- GOOGLE ANALYTICS (GA4) -->
+    <!-- REPLACE G-XXXXXXXXXX WITH YOUR REAL GOOGLE ANALYTICS ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- STRUCTURED DATA / SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Food Safety Temperature Guide for Commercial Kitchens",
+      "description": "Complete HACCP food safety guide covering hot and cold holding temperatures, blast chillers, refrigeration logs, FIFO storage, and kitchen hygiene procedures.",
+      "author": {
+        "@type": "Person",
+        "name": "Nigel Anthony Thomas"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "NigelThomas.live"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://nigelthomas.live/food-safety-temperature-guide.html"
+      }
+    }
+    </script>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        .header {
+            background: linear-gradient(135deg,#0a2b3b,#1a4a6e);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #b30000;
+        }
+
+        h2 {
+            color: #1a1a1a;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #333366;
+            margin-top: 25px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #0a2b3b;
+            color: white;
+        }
+
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid #ffcc00;
+            margin: 20px 0;
+        }
+
+        .warning {
+            background: #f8d7da;
+            padding: 15px;
+            border-left: 5px solid #d9534f;
+            margin: 20px 0;
+        }
+
+        .good {
+            background: #d4edda;
+            padding: 15px;
+            border-left: 5px solid #28a745;
+            margin: 20px 0;
+        }
+
+        .footer {
+            background: #0a2b3b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: #9fd3ff;
+            text-decoration: none;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<h1>Food Safety Temperatures, Cold Chain Control & Kitchen Storage Standards</h1>
+    <div class="header">
+        <h1>Food Safety Temperature Guide for Commercial Kitchens</h1>
+        <p>Professional HACCP, Refrigeration & Food Storage Standards</p>
+        <p>By Nigel Anthony Thomas</p>
+    </div>
 
-<p>
-Food safety is one of the most critical responsibilities in any professional kitchen. Whether operating a hotel, restaurant, catering service, or institutional kitchen, strict temperature control and correct storage procedures ensure that food remains safe, fresh, and compliant with hygiene regulations.
-</p>
+    <div class="container">
 
-<p>
-This comprehensive guide explains <strong>hot holding temperatures, cold storage limits, thermometer usage, refrigeration systems, blast chillers, temperature logs, FIFO systems, and correct food storage hierarchy</strong>. These procedures are essential for maintaining HACCP compliance and preventing foodborne illness.
-</p>
+        <h1>Food Safety Temperatures, Cold Chain Control & Kitchen Storage Standards</h1>
 
-<hr>
+        <p>
+            Food safety is one of the most critical responsibilities in any professional kitchen. Whether operating a hotel, restaurant, catering service, or institutional kitchen, strict temperature control and correct storage procedures ensure that food remains safe, fresh, and compliant with hygiene regulations.
+        </p>
 
-<h2>1. The Critical Temperature Danger Zone</h2>
+        <p>
+            This comprehensive guide explains hot holding temperatures, cold storage limits, thermometer usage, refrigeration systems, blast chillers, temperature logs, FIFO systems, and correct food storage hierarchy.
+        </p>
 
-<p>
-The “danger zone” refers to the temperature range in which bacteria multiply rapidly. In most food safety systems, this range is:
-</p>
+        <hr>
 
-<div class="warning">
-<strong>Danger Zone:</strong> 5°C to 63°C (41°F to 145°F)
-</div>
+        <h2>1. The Critical Temperature Danger Zone</h2>
 
-<p>
-Within this range, harmful bacteria such as Salmonella, E. coli, and Listeria can grow rapidly if food is left unchecked. Therefore, strict controls must be applied for both hot and cold food storage.
-</p>
+        <p>
+            The “danger zone” refers to the temperature range in which bacteria multiply rapidly.
+        </p>
 
-<h3>Key Critical Control Points (CCP)</h3>
+        <div class="warning">
+            <strong>Danger Zone:</strong> 5°C to 63°C (41°F to 145°F)
+        </div>
 
-<ul>
-<li><strong>Cold Holding:</strong> 5°C or below</li>
-<li><strong>Hot Holding:</strong> 63°C or above</li>
-<li><strong>Cooking Temperature (general):</strong> 75°C core temperature (varies by food type)</li>
-<li><strong>Reheating Temperature:</strong> 75°C minimum</li>
-</ul>
+        <ul>
+            <li><strong>Cold Holding:</strong> 5°C or below</li>
+            <li><strong>Hot Holding:</strong> 63°C or above</li>
+            <li><strong>Cooking Temperature:</strong> 75°C minimum core temperature</li>
+            <li><strong>Reheating Temperature:</strong> 75°C minimum</li>
+        </ul>
 
-<div class="note">
-In many hospitality operations, 63°C is the accepted hot holding minimum standard, while 5°C is the maximum safe refrigeration temperature.
-</div>
+        <div class="note">
+            In professional hospitality operations, 63°C is the accepted minimum hot holding temperature while refrigeration should remain at or below 5°C.
+        </div>
 
-<hr>
+        <hr>
 
-<h2>2. Hot Kitchen Temperature Control</h2>
+        <h2>2. Hot Kitchen Temperature Control</h2>
 
-<p>
-Hot kitchens deal with cooked foods, service lines, bain-maries, and holding cabinets. Maintaining correct temperature is essential to prevent bacterial growth after cooking.
-</p>
+        <p>
+            Hot kitchens deal with cooked foods, buffet lines, bain-maries, and heated cabinets.
+        </p>
 
-<h3>Hot Holding Requirements</h3>
+        <ul>
+            <li>Food must be maintained at 63°C or above</li>
+            <li>Bain-maries should be preheated before use</li>
+            <li>Food below 63°C for more than 2 hours must be discarded</li>
+        </ul>
 
-<ul>
-<li>Food must be maintained at <strong>63°C or above</strong></li>
-<li>Bain-maries must be preheated before use</li>
-<li>Food should not be held for extended periods without monitoring</li>
-<li>Any food below 63°C for more than 2 hours must be discarded</li>
-</ul>
+        <div class="good">
+            Proper hot holding prevents bacterial growth during service.
+        </div>
 
-<div class="good">
-Correct hot holding ensures cooked food remains safe during service and prevents rapid bacterial growth.
-</div>
+        <hr>
 
-<h3>Hot Holding Equipment</h3>
+        <h2>3. Cold Kitchen Temperature Control</h2>
 
-<ul>
-<li>Bain-maries</li>
-<li>Hot cupboards / heated cabinets</li>
-<li>Heated lamps (for short service periods)</li>
-<li>Steam tables</li>
-</ul>
+        <ul>
+            <li>Refrigeration must remain between 0°C and 5°C</li>
+            <li>Food should be covered and labeled</li>
+            <li>Raw and cooked items must be separated</li>
+        </ul>
 
-<hr>
+        <div class="warning">
+            If refrigerators exceed 5°C corrective action must be taken immediately.
+        </div>
 
-<h2>3. Cold Kitchen Temperature Control</h2>
+        <hr>
 
-<p>
-Cold kitchens handle salads, desserts, cold starters, prepared vegetables, and stored chilled ingredients. Temperature control is equally important as hot holding.
-</p>
+        <h2>4. Thermometers Used in Commercial Kitchens</h2>
 
-<h3>Cold Storage Requirements</h3>
+        <ul>
+            <li>Probe thermometers</li>
+            <li>Infrared thermometers</li>
+            <li>Walk-in refrigerator thermometers</li>
+            <li>Digital data loggers</li>
+        </ul>
 
-<ul>
-<li>Refrigeration temperature must be maintained at <strong>0°C to 5°C</strong></li>
-<li>Food must be covered and labeled</li>
-<li>Raw and cooked foods must always be separated</li>
-</ul>
+        <h3>Calibration</h3>
 
-<div class="warning">
-If refrigeration exceeds 5°C, corrective action must be taken immediately and food safety risk assessed.
-</div>
+        <ul>
+            <li>Ice water test should read 0°C</li>
+            <li>Boiling water should read 100°C</li>
+        </ul>
 
-<hr>
+        <hr>
 
-<h2>4. Thermometers and Temperature Monitoring Tools</h2>
+        <h2>5. Refrigeration Systems</h2>
 
-<p>
-Accurate temperature measurement is essential. Every professional kitchen must use calibrated thermometers.
-</p>
+        <h3>Standard Refrigerators</h3>
+        <p>Used for daily ingredient storage and checked twice daily.</p>
 
-<h3>Types of Thermometers Used in Kitchens</h3>
+        <h3>Walk-In Refrigerators</h3>
+        <p>Large cold rooms requiring strict organization and temperature logging.</p>
 
-<ul>
-<li><strong>Probe Thermometers:</strong> Used for core food temperature checks</li>
-<li><strong>Infrared Thermometers:</strong> Surface temperature measurement only</li>
-<li><strong>Fridge Thermometers:</strong> Constant monitoring inside refrigeration units</li>
-<li><strong>Data Logger Systems:</strong> Automatic temperature recording systems</li>
-</ul>
-
-<h3>Calibration of Thermometers</h3>
-
-<p>
-Thermometers must be calibrated regularly to ensure accuracy. A commonly used method is the ice point test:
-</p>
-
-<ul>
-<li>Ice water should read 0°C</li>
-<li>Boiling water should read 100°C (at sea level)</li>
-</ul>
-
-<hr>
-
-<h2>5. Refrigeration Systems in Professional Kitchens</h2>
-
-<h3>1. Standard Fridges</h3>
-<p>
-Used for daily storage of perishable items. Must be checked at least twice daily.
-</p>
-
-<h3>2. Walk-In Refrigerators</h3>
-<p>
-Large cold storage rooms used in hotels and large kitchens. Require strict organization and temperature logging.
-</p>
-
-<h3>3. Blast Chillers</h3>
-<p>
-Blast chillers rapidly reduce food temperature from cooking temperature to safe chilled storage conditions.
-</p>
-
-<div class="good">
-Blast chilling reduces food from 70°C to 3°C within 90 minutes (industry standard), preventing bacterial growth.
-</div>
-
-<h3>Blast Chilling Stages</h3>
-
-<ul>
-<li>Stage 1: Rapid cooling from hot to warm</li>
-<li>Stage 2: Controlled drop to below 10°C</li>
-<li>Stage 3: Final chilling to 0–5°C</li>
-</ul>
-
-<hr>
-
-<h2>6. Temperature Logs and Monitoring Frequency</h2>
-
-<p>
-Temperature logs are a legal and operational requirement in most professional kitchens.
-</p>
-
-<h3>Logging Frequency</h3>
-
-<ul>
-<li><strong>Twice Daily:</strong> Minimum requirement in many kitchens (morning and evening checks)</li>
-<li><strong>Every 4 Hours:</strong> High-risk kitchens or strict HACCP environments</li>
-<li><strong>Continuous Monitoring:</strong> Using digital data loggers</li>
-</ul>
-
-<h3>What Must Be Logged</h3>
-
-<ul>
-<li>Fridge temperatures</li>
-<li>Freezer temperatures</li>
-<li>Hot holding temperatures</li>
-<li>Blast chiller cycles</li>
-<li>Corrective actions taken</li>
-</ul>
-
-<div class="warning">
-Failure to maintain logs can lead to compliance breaches and food safety violations.
-</div>
-
-<hr>
-
-<h2>7. Correct Food Storage Procedures</h2>
-
-<p>
-Proper storage prevents cross-contamination and extends shelf life of ingredients.
-</p>
-
-<h3>Fridge Storage Hierarchy (Top to Bottom)</h3>
-
-<table>
-<tr>
-<th>Level</th>
-<th>Food Type</th>
-<th>Reason</th>
-</tr>
-<tr>
-<td>Top Shelf</td>
-<td>Cooked foods, ready-to-eat items</td>
-<td>Highest protection from contamination</td>
-</tr>
-<tr>
-<td>Middle Shelf</td>
-<td>Dairy products, prepared vegetables, cooked meats</td>
-<td>Moderate risk items</td>
-</tr>
-<tr>
-<td>Lower Shelf</td>
-<td>Raw vegetables and unprocessed foods</td>
-<td>Lower contamination risk</td>
-</tr>
-<tr>
-<td>Bottom Shelf</td>
-<td>Raw meat, poultry, fish</td>
-<td>Prevents dripping contamination</td>
-</tr>
-</table>
-
-<div class="warning">
-Raw meat must always be stored below cooked foods to prevent cross-contamination.
-</div>
-
-<hr>
-
-<h2>8. FIFO System (First In, First Out)</h2>
-
-<p>
-FIFO is a fundamental inventory management system in food safety.
-</p>
-
-<h3>Principles of FIFO</h3>
-
-<ul>
-<li>Old stock is used before new stock</li>
-<li>Items must be clearly labeled with date of receipt</li>
-<li>Expired stock must be discarded immediately</li>
-</ul>
-
-<div class="good">
-FIFO reduces waste and ensures food freshness at all times.
-</div>
-
-<hr>
-
-<h2>9. Storage Hygiene Standards</h2>
-
-<p>
-Cleanliness in storage areas is as important as temperature control.
-</p>
-
-<h3>Key Rules</h3>
-
-<ul>
-<li>No food packages should be placed directly on the floor</li>
-<li>Minimum storage height: <strong>9 inches (approx. 23 cm) above floor level</strong></li>
-<li>Use pallets or shelving units for all dry goods</li>
-<li>Storage areas must be pest-free and well ventilated</li>
-</ul>
-
-<h3>Dry Goods Storage</h3>
-
-<ul>
-<li>Flour, rice, pasta, canned goods</li>
-<li>Stored in sealed containers</li>
-<li>Kept in dry, cool environment</li>
-<li>Regular pest control inspections required</li>
-</ul>
-
-<hr>
-
-<h2>10. Cross Contamination Prevention</h2>
-
-<p>
-Cross contamination is one of the leading causes of foodborne illness in commercial kitchens.
-</p>
-
-<h3>Prevention Methods</h3>
-
-<ul>
-<li>Separate chopping boards (raw, cooked, vegetables)</li>
-<li>Color-coded utensils</li>
-<li>Proper handwashing procedures</li>
-<li>Sanitization of surfaces after each task</li>
-</ul>
-
-<div class="warning">
-Never use the same equipment for raw and cooked foods without washing and sanitizing.
-</div>
-
-<hr>
-
-<h2>11. HACCP Compliance in Temperature Control</h2>
-
-<p>
-HACCP (Hazard Analysis Critical Control Points) is a globally recognized food safety system.
-</p>
-
-<h3>Critical Control Points in Kitchens</h3>
-
-<ul>
-<li>Receiving temperature checks</li>
-<li>Cold storage monitoring</li>
-<li>Cooking temperature verification</li>
-<li>Hot holding control</li>
-<li>Cooling process validation</li>
-</ul>
-
-<hr>
-
-<h2>12. Staff Responsibilities in Temperature Control</h2>
-
-<p>
-Every staff member plays a role in maintaining food safety standards.
-</p>
-
-<ul>
-<li>Chefs must monitor cooking and holding temperatures</li>
-<li>Stewards must ensure cleanliness of storage areas</li>
-<li>Managers must verify logs and compliance</li>
-<li>All staff must report temperature deviations immediately</li>
-</ul>
-
-<hr>
-
-<h2>Conclusion</h2>
-
-<p>
-Maintaining strict food temperature control and storage discipline is essential in any professional kitchen environment. From hot holding above 63°C to cold storage below 5°C, every step must be carefully monitored and recorded.
-</p>
-
-<p>
-Proper use of thermometers, blast chillers, walk-in refrigeration systems, FIFO stock rotation, and structured logging ensures not only compliance but also the safety and satisfaction of every guest served.
-</p>
-
-<p>
-Food safety is not optional—it is a professional standard that defines the quality and reputation of any hospitality operation.
-</p>
+        <h3>Blast Chillers</h3>
+
+        <div class="good">
+            Blast chillers reduce food temperature from 70°C to 3°C within 90 minutes.
+        </div>
+
+        <ul>
+            <li>Rapid cooling stage</li>
+            <li>Intermediate cooling stage</li>
+            <li>Final chilling stage</li>
+        </ul>
+
+        <hr>
+
+        <h2>6. Temperature Logs & Monitoring</h2>
+
+        <ul>
+            <li>Twice daily checks minimum</li>
+            <li>Every 4 hours in high-risk kitchens</li>
+            <li>Continuous digital monitoring preferred</li>
+        </ul>
+
+        <h3>Required Logs</h3>
+
+        <ul>
+            <li>Fridge temperatures</li>
+            <li>Freezer temperatures</li>
+            <li>Hot holding temperatures</li>
+            <li>Blast chiller logs</li>
+        </ul>
+
+        <div class="warning">
+            Missing temperature logs can lead to HACCP violations and food safety failures.
+        </div>
+
+        <hr>
+
+        <h2>7. Correct Fridge Storage Hierarchy</h2>
+
+        <table>
+
+            <tr>
+                <th>Shelf</th>
+                <th>Storage Item</th>
+            </tr>
+
+            <tr>
+                <td>Top Shelf</td>
+                <td>Cooked foods and ready-to-eat items</td>
+            </tr>
+
+            <tr>
+                <td>Middle Shelf</td>
+                <td>Dairy products and prepared vegetables</td>
+            </tr>
+
+            <tr>
+                <td>Bottom Shelf</td>
+                <td>Raw meat, poultry, and fish</td>
+            </tr>
+
+        </table>
+
+        <div class="warning">
+            Raw meat must always be stored below cooked food to prevent cross-contamination.
+        </div>
+
+        <hr>
+
+        <h2>8. FIFO System (First In, First Out)</h2>
+
+        <ul>
+            <li>Use older stock first</li>
+            <li>Label all products with dates</li>
+            <li>Discard expired products immediately</li>
+        </ul>
+
+        <div class="good">
+            FIFO minimizes waste and improves food freshness.
+        </div>
+
+        <hr>
+
+        <h2>9. Dry Goods Storage Standards</h2>
+
+        <ul>
+            <li>No packages directly on the floor</li>
+            <li>Minimum 9 inches above floor level</li>
+            <li>Use pallets or shelving</li>
+            <li>Store in cool, dry, pest-free conditions</li>
+        </ul>
+
+        <hr>
+
+        <h2>10. Cross Contamination Prevention</h2>
+
+        <ul>
+            <li>Separate chopping boards</li>
+            <li>Color-coded equipment</li>
+            <li>Proper sanitization procedures</li>
+            <li>Strict handwashing standards</li>
+        </ul>
+
+        <div class="warning">
+            Never use the same utensils for raw and cooked foods without sanitizing.
+        </div>
+
+        <hr>
+
+        <h2>11. HACCP Critical Control Points</h2>
+
+        <ul>
+            <li>Receiving temperatures</li>
+            <li>Cold storage monitoring</li>
+            <li>Cooking verification</li>
+            <li>Cooling procedures</li>
+            <li>Hot holding compliance</li>
+        </ul>
+
+        <hr>
+
+        <h2>12. Conclusion</h2>
+
+        <p>
+            Food safety temperature control is a core responsibility in every commercial kitchen. Proper refrigeration, hot holding, blast chilling, FIFO stock rotation, and storage discipline protect guests, ensure compliance, and maintain operational standards.
+        </p>
+
+        <p>
+            Consistent temperature logging and HACCP compliance help hospitality operations maintain quality, safety, and professional excellence.
+        </p>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Nigel Anthony Thomas | NigelThomas.live</p>
+        <p>
+            <a href="https://nigelthomas.live/">Home</a>
+        </p>
+    </div>
 
 </body>
 </html>
