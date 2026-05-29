@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -166,38 +167,47 @@
 
         .blog-grid{
             display:grid;
-            grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-            gap:1.5rem;
-            margin:2rem 0;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+            margin-top:30px;
         }
 
         .blog-card{
-            background:white;
-            border-radius:12px;
-            padding:1.5rem;
-            box-shadow:0 2px 8px rgba(0,0,0,0.08);
-            transition:transform 0.3s;
+            background:#f8fafc;
+            padding:20px;
+            border-radius:14px;
+            border:1px solid #dbe4ee;
+            transition:0.3s;
         }
 
         .blog-card:hover{
             transform:translateY(-5px);
+            box-shadow:0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .blog-card img{
+            width:100%;
+            border-radius:12px;
+            margin-bottom:15px;
         }
 
         .blog-card h3{
-            color:#0a2b3b;
-            margin-bottom:0.5rem;
+            color:#1a4a6e;
+            margin-bottom:12px;
         }
 
-        .blog-card .date{
-            color:#6c757d;
-            font-size:0.85rem;
-            margin-bottom:1rem;
+        .blog-card p{
+            margin-bottom:18px;
+            color:#475569;
         }
 
-        .read-more{
-            color:#2c7da0;
+        .read-btn{
+            display:inline-block;
+            background:#0f3b5c;
+            color:white;
+            padding:10px 18px;
+            border-radius:8px;
             text-decoration:none;
-            font-weight:600;
         }
 
         .footer{
@@ -246,47 +256,6 @@
 
     </div>
 
-<h2 style="color:#0a2b3b; margin-bottom:20px;">
-Latest Hospitality Article
-</h2>
-
-<div style="
-background:white;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 4px 14px rgba(0,0,0,0.1);
-">
-
-<img src="/images/street-food-stall.jpg"
-style="width:100%; height:350px; object-fit:cover;">
-
-<div style="padding:25px;">
-
-<h3 style="color:#1a4a6e; margin-bottom:15px;">
-The Street Food Scene in India
-</h3>
-
-<p style="margin-bottom:20px;">
-Explore how Asian cuisines, food trucks, and mobile kitchens are transforming India's street food culture.
-</p>
-
-<a href="/street-food-india.html"
-style="
-background:#1a4a6e;
-color:white;
-padding:12px 22px;
-text-decoration:none;
-border-radius:8px;
-display:inline-block;
-">
-Read Full Article
-</a>
-
-</div>
-</div>
-
-</section>
-
     <div class="nav">
 
         <a href="/index.html">Home</a>
@@ -312,6 +281,8 @@ Read Full Article
             <p>
                 Accomplished hospitality executive with 20+ years of global leadership experience managing P&L accountability for luxury resorts, multi-unit F&B operations, and international cruise lines across India, Middle East, and USA.
             </p>
+
+            <br>
 
             <p>
                 Expert in turnaround management, cost optimization, hospitality food safety systems, HACCP implementation, and scalable SOP development.
@@ -339,100 +310,67 @@ Read Full Article
                     <div>Team Members Led</div>
                 </div>
 
-        <div class="blog-grid">
-
-            <div class="blog-card">
-
-                <h3>How to Reduce Food Costs by 12% in Luxury Resorts</h3>
-
-                <div class="date">April 2026</div>
-
-                <p>
-                    A GM's playbook on vendor rationalization, inventory waste elimination, and strategic procurement.
-                </p>
-
-                <a href="/food-cost-reduction.html" class="read-more">
-                    Read More
-                </a>
-
-            </div>
-
-            <div class="blog-card">
-
-                <h3>HACCP vs FSSAI vs USPH Compliance Guide</h3>
-
-                <div class="date">April 2026</div>
-
-                <p>
-                    Food safety compliance guide for hotels, resorts, restaurants, and cruise operations.
-                </p>
-
-                <a href="/compliance-guide.html" class="read-more">
-                    Read More
-                </a>
-
-            </div>
-
-            <div class="blog-card">
-
-                <h3>How AI is Transforming Hotel Operations</h3>
-
-                <div class="date">April 2026</div>
-
-                <p>
-                    AI-powered hotel systems, automation, SOP generation, and operational efficiency strategies.
-                </p>
-
-                <a href="/ai-hospitality.html" class="read-more">
-                    Read More
-                </a>
-
             </div>
 
         </div>
 
+        <section style="padding:40px 20px;background:#ffffff;border-radius:18px;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+
+            <h2 style="text-align:center;color:#0a2b3b;margin-bottom:30px;">
+                Latest Hospitality & Food Industry Articles
+            </h2>
+
+            <div class="blog-grid">
+
+                <div class="blog-card">
+
+                    <img src="/street-food-stall.jpg" alt="Street Food India">
+
+                    <h3>The Street Food Scene in India</h3>
+
+                    <p>
+                        Explore India’s booming street food culture, food trucks, Asian cuisine trends, and global influences shaping modern hospitality.
+                    </p>
+
+                    <a href="/street-food-india.html" class="read-btn">
+                        Read Article
+                    </a>
+
+                </div>
+
+                <div class="blog-card">
+
+                    <h3>Food Safety Temperatures & Cold Chain Control</h3>
+
+                    <p>
+                        Complete guide to food holding temperatures, storage compliance, HACCP standards, and kitchen safety systems.
+                    </p>
+
+                    <a href="/food-temperatures-article.html" class="read-btn">
+                        Read Article
+                    </a>
+
+                </div>
+
+                <div class="blog-card">
+
+                    <h3>Kitchen & Housekeeping Color Coding Guide</h3>
+
+                    <p>
+                        Professional hygiene color coding systems used in hotels, restaurants, and hospitality operations.
+                    </p>
+
+                    <a href="/color-coding-kitchen-housekeeping.html" class="read-btn">
+                        Read Article
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </div>
-<section style="padding:40px 20px;background:#ffffff;margin:40px auto;max-width:1200px;border-radius:18px;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
-
-<h2 style="text-align:center;color:#0a2b3b;margin-bottom:30px;">
-Latest Hospitality & Food Industry Articles
-</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;">
-
-<div style="background:#f8fafc;padding:20px;border-radius:14px;border:1px solid #dbe4ee;">
-<img src="street-food-stall.jpg" alt="Street Food India" style="width:100%;border-radius:12px;margin-bottom:15px;">
-<h3 style="color:#1a4a6e;">The Street Food Scene in India</h3>
-<p style="margin:15px 0;color:#475569;">
-Explore India’s booming street food culture, food trucks, Asian cuisine trends, and global influences shaping modern hospitality.
-</p>
-<a href="/street-food-india.html" style="display:inline-block;background:#0f3b5c;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;">
-Read Article
-</a>
-</div>
-
-<div style="background:#f8fafc;padding:20px;border-radius:14px;border:1px solid #dbe4ee;">
-<h3 style="color:#1a4a6e;">Food Safety Temperatures & Cold Chain Control</h3>
-<p style="margin:15px 0;color:#475569;">
-Complete guide to food holding temperatures, storage compliance, HACCP standards, and kitchen safety systems.
-</p>
-<a href="/food-temperatures-article.html" style="display:inline-block;background:#0f3b5c;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;">
-Read Article
-</a>
-</div>
-
-<div style="background:#f8fafc;padding:20px;border-radius:14px;border:1px solid #dbe4ee;">
-<h3 style="color:#1a4a6e;">Kitchen & Housekeeping Color Coding Guide</h3>
-<p style="margin:15px 0;color:#475569;">
-Professional hygiene color coding systems used in hotels, restaurants, and hospitality operations.
-</p>
-<a href="/color-coding-kitchen-housekeeping.html" style="display:inline-block;background:#0f3b5c;color:white;padding:10px 18px;border-radius:8px;text-decoration:none;">
-Read Article
-</a>
-</div>
-
-</div>
-</section>
 
     <div class="footer">
 
@@ -460,3 +398,4 @@ Read Article
 
 </body>
 </html>
+```
