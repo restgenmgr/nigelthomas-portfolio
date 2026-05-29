@@ -14,7 +14,12 @@
   <url><loc>https://nigelthomas.live/privacy-policy.html</loc><lastmod>2026-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://nigelthomas.live/terms.html</loc><lastmod>2026-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://nigelthomas.live/disclaimer.html</loc><lastmod>2026-04-01</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-
+<url>
+<loc>https://nigelthomas.live/street-food-india.html</loc>
+<lastmod>2026-05-29</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.80</priority>
+</url>
   <!-- BLOG POSTS -->
   <url><loc>https://nigelthomas.live/food-cost-reduction.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://nigelthomas.live/compliance-guide.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
