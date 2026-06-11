@@ -1,183 +1,105 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="google-site-verification" content="hDIZHvIzxWFECFJIoXNcGXv6zAGrppBgZ9zFO9OtpCw" />
-    <title>Nigel Thomas | Portfolio & Blog</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigel Thomas | Hospitality Trainer & Professional</title>
+    <meta name="description" content="Nigel Thomas - Hospitality Trainer & Professional with 30+ years experience on cruise ships, resorts in Middle East, USA, and India.">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            line-height: 1.6;
-            color: #1e293b;
-            background: #f5f7fb;
-            padding: 2rem 1rem;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 24px;
-            padding: 2rem;
-            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
-        }
-        /* Navigation Styles */
-        .nav {
-            background: #1e293b;
-            border-radius: 16px;
-            padding: 1rem 1.5rem;
-            margin-bottom: 2rem;
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .nav a {
-            color: #e2e8f0;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav a:hover {
-            color: #60a5fa;
-        }
-        h1 {
-            font-size: 2.5rem;
-            color: #2563eb;
-            margin-bottom: 0.5rem;
-        }
-        .tagline {
-            color: #475569;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        h2 {
-            margin: 1.5rem 0 1rem;
-            color: #1e293b;
-        }
-        .article-card {
-            background: #f8fafc;
-            border-radius: 16px;
-            padding: 1.5rem;
-            margin: 1rem 0;
-            transition: transform 0.2s;
-            border: 1px solid #e2e8f0;
-        }
-        .article-card:hover {
-            transform: translateY(-2px);
-            border-color: #2563eb;
-        }
-        .article-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        .article-title a {
-            color: #1e293b;
-            text-decoration: none;
-        }
-        .article-title a:hover {
-            color: #2563eb;
-        }
-        .meta {
-            font-size: 0.85rem;
-            color: #64748b;
-            margin-bottom: 0.75rem;
-        }
-        .badge {
-            background: #2563eb10;
-            color: #2563eb;
-            padding: 0.2rem 0.6rem;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            font-weight: 600;
-        }
-        hr {
-            margin: 2rem 0;
-            border: none;
-            border-top: 1px solid #e2e8f0;
-        }
-        footer {
-            text-align: center;
-            color: #64748b;
-            font-size: 0.85rem;
-            margin-top: 2rem;
-        }
-        .footer-links {
-            margin-top: 1rem;
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .footer-links a {
-            color: #64748b;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-        .footer-links a:hover {
-            color: #2563eb;
-        }
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;background:#f5f0e8;}
+        .navbar{background:#800000;padding:1.2rem 0;position:sticky;top:0;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+        .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
+        .logo{color:#FFD700;font-size:1.8rem;font-weight:bold;text-decoration:none;}
+        .nav-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
+        .nav-links a{color:white;text-decoration:none;padding:8px 18px;border-radius:30px;font-weight:500;transition:all 0.3s;}
+        .nav-links a:hover{background:#FFD700;color:#800000;}
+        .hero{background:linear-gradient(135deg,#800000 0%,#a52a2a 100%);color:white;padding:100px 20px;text-align:center;}
+        .hero h1{font-size:3rem;margin-bottom:15px;text-shadow:2px 2px 4px rgba(0,0,0,0.3);}
+        .hero p{font-size:1.3rem;max-width:800px;margin:10px auto;}
+        .btn{display:inline-block;background:#FFD700;color:#800000;padding:12px 35px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:25px;transition:0.3s;border:none;cursor:pointer;}
+        .btn:hover{background:#e6c200;transform:scale(1.05);}
+        .container{max-width:1200px;margin:0 auto;padding:50px 20px;}
+        .section-title{font-size:2rem;color:#800000;margin-bottom:30px;text-align:center;font-weight:bold;}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin:30px 0;}
+        .card{background:white;border-radius:15px;padding:25px;box-shadow:0 5px 20px rgba(0,0,0,0.1);border-left:5px solid #FFD700;transition:0.3s;}
+        .card:hover{transform:translateY(-5px);}
+        .card h3{color:#800000;margin-bottom:15px;font-size:1.4rem;}
+        .sectors{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:40px 0;}
+        .sector-tag{background:#f0fdf4;color:#065f46;padding:10px 20px;border-radius:40px;font-size:0.95rem;font-weight:500;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+        footer{background:#800000;color:#FFD700;text-align:center;padding:40px 20px;margin-top:50px;}
+        .footer-links{margin-bottom:20px;}
+        .footer-links a{color:#FFD700;text-decoration:none;margin:0 12px;font-weight:500;}
+        .footer-links a:hover{text-decoration:underline;}
+        @media(max-width:768px){.hero h1{font-size:2rem;}.nav-container{flex-direction:column;gap:15px;}}
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Nigel Thomas</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Nigel Thomas</h1>
+        <p>🏆 Hospitality Trainer & Professional | 30+ Years Global Experience</p>
+        <p>🚢 Cruise Ships | 🏨 Luxury Resorts | 🌍 Middle East | 🇺🇸 USA | 🇮🇳 India</p>
+        <a href="/about.html" class="btn">Learn More →</a>
+    </div>
+
     <div class="container">
-        <!-- Navigation Menu -->
-        <div class="nav">
-            <a href="index.html">?? Home</a>
-            <a href="#about">?? About</a>
-            <a href="#articles">?? Articles</a>
-            
+        <div class="grid">
+            <div class="card">
+                <h3>🏆 30+ Years Experience</h3>
+                <p>Executive leadership on premium cruise lines, luxury resorts, and 5-star hotels across global markets.</p>
+            </div>
+            <div class="card">
+                <h3>📚 10,000+ Mentored</h3>
+                <p>Helping hospitality professionals achieve their career goals through expert guidance and training.</p>
+            </div>
+            <div class="card">
+                <h3>🌐 Global Expertise</h3>
+                <p>Deep experience across Middle East, USA, and India markets with proven success.</p>
+            </div>
         </div>
 
-        <h1>Nigel Thomas</h1>
-        <div class="tagline">
-            Workplace Compliance � Global HR � Labor Law Insights
+        <h2 class="section-title">📈 14 Executive Sectors I Cover</h2>
+        <div class="sectors">
+            <span class="sector-tag">🚢 Cruise Line Operations</span>
+            <span class="sector-tag">🏨 Luxury Hotels</span>
+            <span class="sector-tag">🕌 Middle East Hospitality</span>
+            <span class="sector-tag">🍽️ F&B Management</span>
+            <span class="sector-tag">🏨 Front Office</span>
+            <span class="sector-tag">🧹 Housekeeping</span>
+            <span class="sector-tag">👨‍🍳 Culinary Arts</span>
+            <span class="sector-tag">📊 Revenue Management</span>
+            <span class="sector-tag">👥 Human Resources</span>
+            <span class="sector-tag">🔧 Engineering</span>
+            <span class="sector-tag">⚓ Maritime Deck</span>
+            <span class="sector-tag">🔧 Maritime Engine</span>
+            <span class="sector-tag">🧘 Wellness & Spa</span>
+            <span class="sector-tag">🎰 Retail & Casino</span>
         </div>
-        
-        <h2 id="articles">?? Featured Article</h2>
-        
-        <div class="article-card">
-            <div class="article-title">
-                <a href="equal-opportunity-employer-india-usa-europe.html">
-                    Equal Opportunity Employer: What It Means for Business Establishments in India, USA & Europe
-                </a>
-            </div>
-            <div class="meta">
-                <span class="badge">3000+ words</span>
-                <span class="badge" style="background:#e6f7e6;">Deep Dive</span>
-                <span>?? June 2026</span>
-            </div>
-            <p>
-                A comprehensive legal and practical analysis of EOE requirements across three major economies. 
-                Learn about mandatory posting laws in the US, EU directives, and India's emerging framework 
-                under the RPwD Act and constitutional mandates. Essential reading for HR leaders and founders.
-            </p>
-        </div>
-        
-        <h2 id="about">?? About Nigel Thomas</h2>
-        <p>
-            I'm a workplace compliance and global HR professional with expertise in labor law frameworks across 
-            India, the USA, and Europe. This blog covers equal opportunity employment, ATS compliance, diversity 
-            hiring, and cross-border employment regulations.
-        </p>
-        
-        <h2>?? Coming Soon</h2>
-        <p>More articles on global employment law, ATS compliance, and diversity hiring strategies.</p>
-        
-        <hr>
-        
-        <footer>
-            <div>� 2026 Nigel Thomas</div>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms.html">Terms</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </footer>
+
+        <h2 class="section-title">🚀 My Mission</h2>
+        <p style="text-align:center; max-width:800px; margin:0 auto; font-size:1.1rem;">To bridge the gap between executive talent and career opportunities in hospitality and maritime industries across India, the Middle East, and international markets.</p>
     </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <p>© 2026 Nigel Thomas — Hospitality Trainer & Professional</p>
+        <p>30+ years cruise ships, resorts in Middle East, USA, and India</p>
+        <p>🌐 <a href="https://joblynk.live" style="color:#FFD700;">JobLynk.live</a> - Premier Hospitality Career Platform</p>
+    </footer>
 </body>
 </html>
