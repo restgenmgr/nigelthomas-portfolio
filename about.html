@@ -1,17 +1,523 @@
-<div class="blog-card">
-<h3>👨‍🏫 Nigel Thomas — Hospitality Professional</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Nigel Thomas | Hospitality Trainer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI', Arial, sans-serif;
+background:#f5f0e8;
+color:#333;
+line-height:1.7;
+}
+
+/* NAVIGATION */
+
+.navbar{
+background:#800000;
+padding:1rem 0;
+position:sticky;
+top:0;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 20px;
+flex-wrap:wrap;
+}
+
+.logo{
+color:#FFD700;
+font-size:1.8rem;
+font-weight:bold;
+text-decoration:none;
+}
+
+.nav-links{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+padding:8px 18px;
+border-radius:30px;
+transition:.3s;
+}
+
+.nav-links a:hover{
+background:#FFD700;
+color:#800000;
+}
+
+/* HERO */
+
+.profile-header{
+background:linear-gradient(135deg,#800000,#a52a2a);
+color:white;
+padding:70px 20px;
+}
+
+.profile-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.profile-image{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #FFD700;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.profile-info{
+flex:1;
+min-width:300px;
+}
+
+.profile-info h1{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.profile-info h2{
+color:#FFD700;
+font-weight:normal;
+margin-bottom:20px;
+}
+
+.profile-info p{
+font-size:1.05rem;
+max-width:800px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+margin-top:25px;
+}
+
+.hero-btn{
+display:inline-block;
+background:#FFD700;
+color:#800000;
+padding:12px 24px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin-right:10px;
+}
+
+/* MAIN CONTENT */
+
+.content{
+max-width:1200px;
+margin:40px auto;
+padding:0 20px;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+margin-bottom:25px;
+}
+
+.card h3{
+color:#800000;
+margin-bottom:15px;
+}
+
+.timeline-item{
+padding-bottom:20px;
+margin-bottom:20px;
+border-bottom:1px solid #ddd;
+}
+
+.timeline-item:last-child{
+border-bottom:none;
+margin-bottom:0;
+}
+
+.timeline-item h4{
+color:#800000;
+margin-bottom:5px;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#FFD700;
+color:#800000;
+padding:8px 15px;
+border-radius:25px;
+font-weight:bold;
+font-size:.9rem;
+}
+
+/* STATS */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.stat{
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat h4{
+color:#800000;
+font-size:1.8rem;
+margin-bottom:5px;
+}
+
+/* QUOTE */
+
+.quote{
+font-style:italic;
+font-size:1.05rem;
+border-left:5px solid #FFD700;
+padding-left:15px;
+}
+
+/* FOOTER */
+
+footer{
+background:#800000;
+color:#FFD700;
+text-align:center;
+padding:40px 20px;
+margin-top:40px;
+}
+
+.footer-links{
+margin-bottom:15px;
+}
+
+.footer-links a{
+color:#FFD700;
+text-decoration:none;
+margin:0 10px;
+}
+
+.footer-links a:hover{
+text-decoration:underline;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.profile-container{
+justify-content:center;
+text-align:center;
+}
+
+.content{
+grid-template-columns:1fr;
+}
+
+.nav-container{
+flex-direction:column;
+gap:15px;
+}
+
+.profile-info h1{
+font-size:2.2rem;
+}
+
+.profile-image{
+width:220px;
+height:220px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<div class="navbar">
+<div class="nav-container">
+
+<a href="/" class="logo">Nigel Thomas</a>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a href="/about.html">About</a>
+<a href="/blog.html">Blog</a>
+<a href="/certifications.html">Certifications</a>
+<a href="/contact.html">Contact</a>
+</div>
+
+</div>
+</div>
+
+<!-- HERO -->
+
+<section class="profile-header">
+
+<div class="profile-container">
+
+<img src="assets/profile.jpg" alt="Nigel Thomas" class="profile-image">
+
+<div class="profile-info">
+
+<h1>Nigel Thomas</h1>
+
+<h2>
+Hospitality Trainer • Certified Hospitality Supervisor (CHS) •
+ServSafe Food Protection Manager • Cruise & Hotel Operations Specialist
+</h2>
 
 <p>
-International hospitality professional with experience across luxury hotels,
-resorts, cruise lines, food & beverage operations, hospitality education,
-food safety compliance and workforce training.
+With more than four decades of experience in international hospitality,
+Nigel Thomas has built a career spanning luxury hotels, resorts,
+restaurants, food & beverage operations, cruise lines and hospitality education.
 
-Certified Hospitality Supervisor (CHS), ServSafe Food Protection Manager,
-Food & Beverage Management Specialist and Cruise Industry Professional.
+His expertise includes food safety, hospitality supervision,
+restaurant operations, beverage management, guest service excellence,
+staff development and workforce training.
+
+Today, he focuses on mentoring future hospitality professionals,
+sharing practical industry knowledge, and promoting food safety
+and service excellence across the hospitality sector.
 </p>
 
-<a href="/about.html" class="btn-read">
-View Professional Profile →
+<div class="hero-buttons">
+<a href="/certifications.html" class="hero-btn">🏆 Certifications</a>
+<a href="/blog.html" class="hero-btn">📚 Read Blog</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MAIN CONTENT -->
+
+<div class="content">
+
+<!-- LEFT COLUMN -->
+
+<div>
+
+<div class="card">
+
+<h3>💬 Professional Philosophy</h3>
+
+<p class="quote">
+"Hospitality is not simply serving food or providing accommodation.
+It is creating memorable experiences through professionalism,
+attention to detail, safety and genuine care for every guest."
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💼 Professional Experience</h3>
+
+<div class="timeline-item">
+<h4>👨‍🏫 Hospitality Trainer</h4>
+<p>Hospitality Institutes & Professional Development Programs</p>
+<p>Food Safety, F&B Operations, Service Excellence and Workforce Development.</p>
+</div>
+
+<div class="timeline-item">
+<h4>🚢 Royal Caribbean Cruise Line</h4>
+<p>Senior Head Bartender</p>
+<p>International cruise hospitality operations and beverage management.</p>
+</div>
+
+<div class="timeline-item">
+<h4>🏨 Ramada Hotel Abu Dhabi</h4>
+<p>Hospitality Operations</p>
+<p>Guest service and food & beverage operations.</p>
+</div>
+
+<div class="timeline-item">
+<h4>🏨 Le Méridien Abu Dhabi</h4>
+<p>Commis de Rang</p>
+<p>Luxury dining and hospitality service standards.</p>
+</div>
+
+<div class="timeline-item">
+<h4>🍸 Spinneys Abu Dhabi</h4>
+<p>Head Barman</p>
+<p>Beverage operations and customer service leadership.</p>
+</div>
+
+<div class="timeline-item">
+<h4>🏝️ Nanidam Resort & Café</h4>
+<p>Hospitality Operations & Training</p>
+<p>Supporting hospitality standards and guest satisfaction.</p>
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>🎯 Areas of Expertise</h3>
+
+<div class="skills">
+
+<span class="skill">Food Safety</span>
+<span class="skill">ServSafe</span>
+<span class="skill">Hospitality Training</span>
+<span class="skill">F&B Service</span>
+<span class="skill">Restaurant Operations</span>
+<span class="skill">Cruise Operations</span>
+<span class="skill">Guest Service</span>
+<span class="skill">Beverage Management</span>
+<span class="skill">Hospitality Supervision</span>
+<span class="skill">Menu Planning</span>
+<span class="skill">Customer Service</span>
+<span class="skill">Workforce Development</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RIGHT COLUMN -->
+
+<div>
+
+<div class="card">
+
+<h3>🏆 Career Highlights</h3>
+
+<div class="stats">
+
+<div class="stat">
+<h4>40+</h4>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h4>1981</h4>
+<p>Career Started</p>
+</div>
+
+<div class="stat">
+<h4>Hotels</h4>
+<p>Resorts & Restaurants</p>
+</div>
+
+<div class="stat">
+<h4>Cruise</h4>
+<p>International Operations</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>📜 Key Certifications</h3>
+
+<ul>
+<li>ServSafe Food Protection Manager</li>
+<li>Certified Hospitality Supervisor (CHS)</li>
+<li>Food & Beverage Management Specialization</li>
+<li>Planning & Control of F&B Operations</li>
+<li>Carnival College of Management</li>
+<li>Vessel Sanitation Management</li>
+<li>Beverage Sales & Service Seminar</li>
+<li>Excel Using AI Workshop</li>
+</ul>
+
+<br>
+
+<a href="/certifications.html" class="hero-btn">
+View All Certifications →
 </a>
 
 </div>
+
+<div class="card">
+
+<h3>🌍 Industry Exposure</h3>
+
+<ul>
+<li>🚢 Cruise Ships</li>
+<li>🏨 Luxury Hotels</li>
+<li>🏝️ Resorts</li>
+<li>🍽️ Restaurants</li>
+<li>🎓 Hospitality Education</li>
+<li>👨‍🏫 Professional Training</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-links">
+<a href="/">Home</a>
+<a href="/about.html">About</a>
+<a href="/blog.html">Blog</a>
+<a href="/certifications.html">Certifications</a>
+<a href="/contact.html">Contact</a>
+</div>
+
+<p>© 2026 Nigel Thomas — Hospitality Trainer & Food Safety Professional</p>
+
+<p>
+International Hospitality Experience • Hotels • Resorts • Cruise Ships • Training
+</p>
+
+</footer>
+
+</body>
+</html>
