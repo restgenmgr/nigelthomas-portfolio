@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nigel Thomas | Hospitality Trainer</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f0e8;}
+        .navbar{background:#800000;padding:1.2rem 0;position:sticky;top:0;}
+        .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
+        .logo{color:#FFD700;font-size:1.8rem;font-weight:bold;text-decoration:none;}
+        .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
+        .nav-links a{color:white;text-decoration:none;padding:8px 18px;border-radius:30px;}
+        .nav-links a:hover{background:#FFD700;color:#800000;}
+        .hero{background:linear-gradient(135deg,#800000,#a52a2a);color:white;padding:60px 20px;text-align:center;}
+        .hero h1{font-size:2.5rem;}
+        .container{max-width:1200px;margin:0 auto;padding:50px 20px;}
+        .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px;}
+        .blog-card{background:white;border-radius:15px;padding:25px;box-shadow:0 5px 20px rgba(0,0,0,0.1);border-left:5px solid #FFD700;}
+        .blog-card h3{color:#800000;margin-bottom:15px;}
+        .btn-read{background:#800000;color:#FFD700;padding:10px 25px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:15px;}
+        footer{background:#800000;color:#FFD700;text-align:center;padding:40px;margin-top:40px;}
+        .footer-links a{color:#FFD700;text-decoration:none;margin:0 10px;}
+        @media(max-width:768px){.nav-container{flex-direction:column;}}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Nigel Thomas</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Hospitality Training Blog</h1>
+        <p>Expert insights from 30+ years in the industry</p>
+    </div>
+    <div class="container">
+        <div class="blog-grid">
+            <div class="blog-card">
+                <h3>🍛 Street Food of India</h3>
+                <p>Exploring India's vibrant street food culture, safety practices, and service standards.</p>
+                <a href="#" class="btn-read">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <h3>🌡️ Food Safety Temperatures & Cold Chain Control</h3>
+                <p>Essential temperature guidelines for food storage and HACCP compliance.</p>
+                <a href="#" class="btn-read">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <h3>🎨 Color Coding in Kitchen & Housekeeping</h3>
+                <p>Prevent cross-contamination with proper color coding systems.</p>
+                <a href="#" class="btn-read">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <h3>🍽️ Restaurant Service Excellence</h3>
+                <p>Best practices for professional food and beverage service.</p>
+                <a href="#" class="btn-read">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <h3>🍸 Cocktail & Bar Service</h3>
+                <p>Essential techniques for professional bartending and mixology.</p>
+                <a href="#" class="btn-read">Read More →</a>
+            </div>
+            <div class="blog-card">
+                <h3>🫔 North Indian Cuisine Guide</h3>
+                <p>Traditional cooking methods, spices, and service standards.</p>
+                <a href="#" class="btn-read">Read More →</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+        </div>
+        <p>© 2026 Nigel Thomas — Hospitality Trainer & Professional</p>
+        <p>30+ years cruise ships, resorts in Middle East, USA, and India</p>
+    </footer>
+</body>
+</html>
