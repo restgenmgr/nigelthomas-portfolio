@@ -1,290 +1,130 @@
+# First, replace the file with corrected version
+@'
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta name="google-site-verification" content="hDIZHvIzxWFECFJIoXNcGXv6zAGrppBgZ9zFO9OtpCw" />
+    <title>Nigel Thomas | Portfolio & Blog</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="description" content="Deep-dive article: What Equal Opportunity Employer means for business establishments in India, USA, and Europe. Legal requirements, compliance, and ATS-friendly insights for HR and founders.">
-    <meta name="keywords" content="Equal Opportunity Employer, India, USA, Europe, labor law, EOE notice, diversity hiring, ATS, business compliance, Nigel Thomas blog">
-    <meta name="author" content="Nigel Thomas">
-    <meta property="og:title" content="Equal Opportunity Employer: India vs USA vs Europe | Nigel Thomas">
-    <meta property="og:description" content="Comprehensive guide on EOE mandates, legal framework, and why displaying this notice matters for modern businesses.">
-    <meta property="og:type" content="article">
-    <title>Equal Opportunity Employer in India, USA & Europe | Nigel Thomas Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f5f7fb;
-            color: #1e293b;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             line-height: 1.6;
+            color: #1e293b;
+            background: #f5f7fb;
             padding: 2rem 1rem;
         }
         .container {
-            max-width: 1280px;
+            max-width: 900px;
             margin: 0 auto;
-            background: #ffffff;
-            border-radius: 28px;
-            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08);
-            overflow: hidden;
-            padding: 2rem 2rem 3rem;
+            background: white;
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
         }
-        /* ATS friendly: clean hierarchy, semantic headings, standard font weights */
         h1 {
             font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-            border-left: 6px solid #2563eb;
-            padding-left: 1.2rem;
-            color: #0f172a;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
         }
-        .byline {
-            font-size: 0.95rem;
+        .tagline {
             color: #475569;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 2px solid #e2e8f0;
             padding-bottom: 1rem;
-            margin-bottom: 1.8rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .date {
-            background: #eef2ff;
-            padding: 0.25rem 0.75rem;
-            border-radius: 40px;
-            font-size: 0.8rem;
-            font-weight: 500;
+            margin-bottom: 1.5rem;
         }
         h2 {
-            font-size: 1.8rem;
-            font-weight: 600;
-            margin: 1.8rem 0 0.8rem 0;
-            padding-bottom: 0.3rem;
-            border-bottom: 2px solid #e0e7ff;
+            margin: 1.5rem 0 1rem;
             color: #1e293b;
         }
-        h3 {
-            font-size: 1.35rem;
-            font-weight: 600;
-            margin: 1.4rem 0 0.6rem;
-            color: #2c3e66;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            font-size: 1.02rem;
-            color: #2d3a4b;
-        }
-        ul, ol {
-            margin: 0.8rem 0 1.2rem 1.8rem;
-        }
-        li {
-            margin-bottom: 0.4rem;
-        }
-        .highlight-card {
+        .article-card {
             background: #f8fafc;
-            border-left: 4px solid #2563eb;
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
             border-radius: 16px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 1.8rem 0;
-            font-size: 0.95rem;
-            overflow-x: auto;
-            display: block;
-        }
-        th, td {
-            border: 1px solid #cbd5e1;
-            padding: 12px 14px;
-            text-align: left;
-            vertical-align: top;
-        }
-        th {
-            background-color: #f1f5f9;
-            font-weight: 600;
-        }
-        .badge {
-            background-color: #2563eb10;
-            color: #1e40af;
-            font-weight: 500;
-            border-radius: 24px;
-            padding: 0.2rem 0.8rem;
-            display: inline-block;
-            font-size: 0.75rem;
-        }
-        .footer-note {
-            margin-top: 2.8rem;
-            background: #f1f4f9;
             padding: 1.5rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            text-align: center;
-            border: 1px solid #e2edff;
+            margin: 1rem 0;
+            transition: transform 0.2s;
+            border: 1px solid #e2e8f0;
         }
-        a {
-            color: #2563eb;
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: #2563eb;
+        }
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .article-title a {
+            color: #1e293b;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+        .article-title a:hover {
+            color: #2563eb;
         }
-        @media (max-width: 680px) {
-            .container {
-                padding: 1.25rem;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
+        .meta {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 0.75rem;
+        }
+        .badge {
+            background: #2563eb10;
+            color: #2563eb;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
         }
         hr {
             margin: 2rem 0;
-            border: 0;
-            height: 1px;
-            background: linear-gradient(90deg, #cbd5e1, transparent);
+            border: none;
+            border-top: 1px solid #e2e8f0;
         }
-        .stat-grid {
-            display: flex;
-            gap: 1.2rem;
-            flex-wrap: wrap;
-            margin: 1.5rem 0;
-        }
-        .stat-item {
-            background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 20px;
-            padding: 1rem 1.2rem;
-            flex: 1;
-            min-width: 150px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        footer {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin-top: 2rem;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Equal Opportunity Employer: What It Means for Business Establishments in India, USA & Europe</h1>
-    <div class="byline">
-        <span>✍️ Nigel Thomas — Workplace compliance & global HR insights</span>
-        <span class="date">📅 June 2026</span>
+    <div class="container">
+        <h1>Nigel Thomas</h1>
+        <div class="tagline">
+            Workplace Compliance • Global HR • Labor Law Insights
+        </div>
+        
+        <h2>📄 Featured Article</h2>
+        
+        <div class="article-card">
+            <div class="article-title">
+                <a href="equal-opportunity-employer-india-usa-europe.html">
+                    Equal Opportunity Employer: What It Means for Business Establishments in India, USA & Europe
+                </a>
+            </div>
+            <div class="meta">
+                <span class="badge">3000+ words</span>
+                <span class="badge" style="background:#e6f7e6;">Deep Dive</span>
+                <span>📅 June 2026</span>
+            </div>
+            <p>
+                A comprehensive legal and practical analysis of EOE requirements across three major economies. 
+                Learn about mandatory posting laws in the US, EU directives, and India's emerging framework 
+                under the RPwD Act and constitutional mandates. Essential reading for HR leaders and founders.
+            </p>
+        </div>
+        
+        <h2>🔍 Coming Soon</h2>
+        <p>More articles on global employment law, ATS compliance, and diversity hiring strategies.</p>
+        
+        <hr>
+        
+        <footer>
+            © 2026 Nigel Thomas | <a href="https://github.com/restgenmgr/nigelthomas-portfolio">GitHub</a>
+        </footer>
     </div>
-    <p><span class="badge">⚖️ Labor Law Deep Dive</span> <span class="badge" style="background:#e6f7e6;">🌍 Comparative Analysis</span></p>
-    <p>Walk into any corporate office in New York, London, or Berlin, and you’ll likely see a framed poster stating: <strong>“We are an Equal Opportunity Employer.”</strong> In India, however, the legal compulsion to display such a notice is more nuanced — yet the principle is rapidly gaining ground. For business establishments, understanding the <strong>Equal Opportunity Employer (EOE)</strong> framework is not just about legal hygiene; it’s about talent acquisition, employer branding, and alignment with global standards. This 3000+ word article unpacks the meaning, legal requirements, and practical implications of EOE in India compared to the US and Europe, with actionable insights for founders, HR leaders, and compliance officers. Let’s decode what “equal opportunity” truly demands from your business establishment.</p>
-    
-    <h2>1. Defining the Equal Opportunity Employer Concept</h2>
-    <p>An <strong>Equal Opportunity Employer</strong> is a designation that signals a commitment to non-discrimination in all employment practices — including hiring, promotion, compensation, training, and termination. The core idea is to ensure that decisions are based on merit, qualifications, and business needs, not on attributes such as race, color, religion, sex, national origin, age, disability, or genetic information. In modern contexts, many organizations also voluntarily include sexual orientation, gender identity, marital status, and pregnancy status.</p>
-    <p>For business establishments, posting the EOE notice serves a dual purpose: <strong>1) legal transparency</strong> — informing employees and applicants of their rights, and <strong>2) cultural signal</strong> — demonstrating a commitment to fairness and inclusion. While many assume “EOE is mandatory everywhere”, the reality differs across jurisdictions. Let’s explore the statutory landscapes of three major economies: the United States, Europe, and India.</p>
-    
-    <h2>2. United States: The Birthplace of Mandatory EOE Posting</h2>
-    <p>The US has the longest-standing, most aggressive equal opportunity framework. Under <strong>Title VII of the Civil Rights Act of 1964</strong>, the <strong>Americans with Disabilities Act (ADA)</strong>, the <strong>Age Discrimination in Employment Act (ADEA)</strong>, and the <strong>Equal Pay Act</strong>, employers with 15 or more employees (20 for age discrimination) are prohibited from discriminatory practices. Crucially, the <strong>Equal Employment Opportunity Commission (EEOC)</strong> enforces these laws and mandates that covered employers conspicuously post the “EEO is the Law” poster in their establishments. Failure to post can lead to fines and negative inferences in litigation.</p>
-    <div class="highlight-card">
-        <strong>📌 US Requirement at a glance:</strong><br>
-        • Physical and digital posting (including job ads, career portals).<br>
-        • Federal contractors must use “Equal Opportunity Employer” clause in subcontracts.<br>
-        • State-level variations (e.g., California adds sexual orientation and gender identity).<br>
-        • Recordkeeping: Employers must retain hiring records for 1 year (or 2 years for federal contractors).
-    </div>
-    <p>In practice, nearly every US business establishment with a physical office displays the “Equal Opportunity Employer/M/F/Disability/Protected Veteran” notice. Tech companies, retail chains, and law firms even embed the EOE tagline in every job description. For ATS (Applicant Tracking Systems), the language “We are an Equal Opportunity Employer” is a standard filter for compliance — recruiters know missing that phrase could expose them to class-action lawsuits. Thus, for US-based businesses, the notice is not optional: it’s foundational.</p>
-    
-    <h2>3. Europe: A Mosaic of Directives and National Laws</h2>
-    <p>Europe doesn’t have a single “Equal Opportunity Employer” poster law like the US, but the principle is enshrined under the <strong>EU Employment Equality Directives</strong> (2000/78/EC, 2000/43/EC). These directives prohibit discrimination based on religion, belief, disability, age, and sexual orientation. Additionally, the <strong>General Data Protection Regulation (GDPR)</strong> adds transparency around recruitment data. However, the requirement to <em>display</em> an EOE notice is not uniform: countries like Germany, France, and the Netherlands rely on works councils, internal policies, and discrimination ombudsmen instead of mandatory wall posters.</p>
-    <p>That said, business establishments in Europe often adopt voluntary EOE statements to align with modern diversity standards. In <strong>the UK</strong> (post-Brexit but following Equality Act 2010), while there is no law mandating “EOE poster”, employers with 250+ staff must publish gender pay gap data, and many choose to publish equality policies prominently. In <strong>Sweden</strong>, active measures against discrimination are required. What’s critical: In Europe, an EOE-like commitment is often implied through accessible policy documents, but the physical ‘notice’ is less common than in the US. Instead, job advertisements typically include: “We welcome applications from all qualified individuals regardless of background.”</p>
-    <p>For Indian companies with European subsidiaries — or those dealing with EU clients — it’s prudent to adopt transparent anti-discrimination statements, aligning with both the spirit of the directives and ESG expectations.</p>
-    
-    <h2>4. India’s Legal Position: No Mandatory Poster, but Emerging Framework</h2>
-    <p>This is where nuance begins. <strong>In India, there is no single central law that explicitly requires every business establishment to display an “Equal Opportunity Employer” notice</strong> on the premises. That surprises many. However, several constitutional and statutory provisions provide the foundation for equal opportunity in the workplace. Let’s examine:</p>
-    <h3>4.1 Constitutional Mandate</h3>
-    <p>Article 16 of the Indian Constitution guarantees equality of opportunity in matters of public employment. For <strong>government establishments</strong>, discrimination based on religion, race, caste, sex, descent, place of birth, or residence is prohibited. Additionally, Articles 14 (right to equality) and 15 (prohibition of discrimination) cast a wide net. However, private sector employers were historically outside the ambit — but that is changing via judicial interpretation and specialized laws.</p>
-    <h3>4.2 Statutory Laws Covering Private Employers</h3>
-    <p><strong>The Rights of Persons with Disabilities Act, 2016 (RPwD Act)</strong> mandates that establishments with 20+ employees formulate an equal opportunity policy for persons with disabilities. Section 20 requires every appropriate government and <strong>private establishment to publish an equal opportunity policy</strong> detailing the measures taken to provide reasonable accommodation, non-discrimination, and a grievance mechanism. This policy must be made available to employees. It’s not exactly a wall poster, but it’s a written policy that must be communicated.</p>
-    <p><strong>The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013 (POSH)</strong> — while not EOE, it reinforces non-discriminatory environment. Also, various courts have read down discrimination on grounds of sex and maternity (Maternity Benefit Act, 2017). There is also the <strong>Transgender Persons (Protection of Rights) Act, 2019</strong>, which prohibits discrimination against transgender persons in employment. Many leading companies (Infosys, Tata, Wipro) voluntarily comply with EOE norms to align with global clients.</p>
-    
-    <div class="highlight-card">
-        <strong>🇮🇳 Key takeaway for Indian businesses:</strong> While no blanket “display EOE poster” law exists under central labour codes, certain laws like RPwD Act require formal equal opportunity policies. Plus, under the new <strong>Labour Codes (2020-21)</strong>, the Code on Social Security contains provisions for unorganized workers and anti-discrimination — but the poster requirement has not been specifically included. Nonetheless, voluntary adoption of EOE statements is strongly advised for brand reputation and litigation defense.
-    </div>
-    
-    <h2>5. Why an EOE Notice Matters for Your Business Establishment — Even if Not Legally Mandated</h2>
-    <p>Beyond compliance, placing an Equal Opportunity Employer notice (either physical or in recruitment materials) is a strategic move. Let’s break down the value:</p>
-    <ul>
-        <li><strong>✅ Talent attraction & retention:</strong> 76% of job seekers in a 2025 global survey (LinkedIn) said diversity in workforce is a key factor when evaluating offers. An EOE statement signals a progressive culture.</li>
-        <li><strong>✅ Applicant Tracking System (ATS) compatibility:</strong> Many ATS platforms (Lever, Greenhouse, iCIMS) include fields for EOE language. If you post jobs without it, external compliance partners may flag you. Moreover, clients in the US and EU often require their vendors to have an EOE/non-discrimination clause.</li>
-        <li><strong>✅ Mitigating legal risk:</strong> Even though India lacks a specific poster provision, the absence of an anti-discrimination policy can be used as adverse evidence in a labour dispute. Having an EOE notice displayed or distributed bolsters your defence.</li>
-        <li><strong>✅ Building public trust:</strong> Startups, MNCs, and SMEs that showcase “Equal Opportunity Employer” on their website and establishment walls gain credibility with socially conscious consumers.</li>
-    </ul>
-    
-    <h2>6. Comparative Compliance Table: India vs USA vs Europe (EOE Notice Requirements)</h2>
-    <table>
-        <thead>
-            <tr><th>Aspect</th><th>India</th><th>USA</th><th>Europe (EU/UK)</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>Mandatory physical posting in establishment?</td><td>No (except limited govt instructions) but RPwD Act demands policy communication.</td><td><strong>Yes</strong> — EEOC poster must be displayed conspicuously.</td><td>Generally no. Some countries like Germany require works agreement, not a poster. UK: no mandatory poster but “Equality and Diversity” policy recommended.</td></tr>
-            <tr><td>Law that drives EOE concept</td><td>Constitution (Art. 16), RPwD Act 2016, Transgender Act 2019, judicial precedents.</td><td>Civil Rights Act 1964, ADEA, ADA, GINA.</td><td>EU Employment Equality Directive, national laws (Equality Act 2010 in UK, AGG in Germany).</td></tr>
-            <tr><td>Does it apply to private firms?</td><td>Partially — specifically for disability & transgender protection; general EOE encouraged.</td><td>Yes (15+ employees).</td><td>Yes, with thresholds varying.</td></tr>
-            <tr><td>Penalty for not displaying EOE notice</td><td>None specific, but failure to have policy for disabled employees attracts penalty under RPwD Act.</td><td>Fines, adverse inference, back pay liability.</td><td>No direct ‘poster penalty’, but discrimination claims can lead to heavy compensation.</td></tr>
-        </tbody>
-    </table>
-    
-    <h2>7. How to Implement an Equal Opportunity Policy in Your Indian Business Establishment</h2>
-    <p>If you’re a founder or HR leader in India, here’s a step-by-step playbook to adopt EOE best practices — and yes, make it “ATS friendly” for your careers page.</p>
-    <h3>7.1 Draft an Equal Opportunity Policy Statement</h3>
-    <p>Write a clear, bold statement that includes prohibited grounds: religion, caste, race, sex, gender identity, sexual orientation, disability, marital status, pregnancy, age, and any other protected category under Indian laws. Example: <em>"[Company Name] is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees, regardless of caste, creed, gender, disability, or sexual orientation."</em></p>
-    <h3>7.2 Display the Notice in the Workplace</h3>
-    <p>Even though Indian law doesn’t strictly mandate it, place a framed poster in common areas (reception, break room, notice board). Additionally, include the EOE tag in email signatures and internal HR portals. This reinforces culture.</p>
-    <h3>7.3 Integrate EOE into Recruitment & ATS</h3>
-    <p>Ensure every job description on your career page, LinkedIn, and Naukri contains the EOE statement. For ATS platforms, add a voluntary self-identification form (disability, gender) as an optional disclosure, protecting candidate privacy. This is also a global best practice.</p>
-    <h3>7.4 Train Hiring Managers</h3>
-    <p>Implicit bias training and structured interviews reduce discrimination risk. Document your training efforts — that’s what regulators (and international partners) look for.</p>
-    <h3>7.5 Periodic Audits</h3>
-    <p>Conduct internal pay equity and promotion audits to ensure equal opportunity isn’t just a poster, but a reality. Publish diversity metrics voluntarily — this builds trust.</p>
-    
-    <div class="stat-grid">
-        <div class="stat-item">📊 <strong>India Inc. trend</strong><br>As of 2025, 68% of NSE 500 companies mention “Equal Opportunity Employer” on their career portals (source: ETHR survey).</div>
-        <div class="stat-item">🌐 <strong>Global benchmark</strong><br>More than 90% of Fortune 500 companies include EOE in job postings.</div>
-        <div class="stat-item">⚡ <strong>ATS impact</strong><br>Job listings with EOE notice have 14% higher completion rate among diverse applicants.</div>
-    </div>
-    
-    <h2>8. Myths vs Reality: Clearing Common Misconceptions</h2>
-    <p><strong>Myth 1: “EOE notice is only for American companies.”</strong><br>Reality: While the US poster is the most visible, most global corporations standardize EOE across all offices, including India, to ensure consistent brand values and legal safety when operating cross-border.</p>
-    <p><strong>Myth 2: “Indian labour laws prohibit any reservation — so EOE doesn’t apply.”</strong><br>Reality: EOE is about non-discrimination, not mandatory reservations. India has reservations for SC/ST/OBC in public sector, but EOE in private sector complements that by ensuring fair treatment for all, including those from marginalized groups. They are not contradictory.</p>
-    <p><strong>Myth 3: “Putting up an EOE poster means I can’t have any hiring criteria.”</strong><br>Reality: EOE does not prevent you from hiring based on bona fide occupational qualifications (BFOQ). You can still require specific skills, degrees, or experience — but you cannot use protected characteristics as a filter.</p>
-    
-    <h2>9. Future Outlook: Is India Moving Towards Mandatory EOE Posting?</h2>
-    <p>Given the global integration of Indian businesses and the push towards diversity, equity, and inclusion (DEI), it’s plausible that upcoming labour codes or new legislation may introduce a requirement to display non-discrimination notices. The <strong>Occupational Safety, Health and Working Conditions Code, 2020</strong> hints at safer workplaces but stops short of explicit EOE posting. However, progressive state policies like Karnataka’s IT/ITeS policy encourage diversity charters. Additionally, the <strong>UN Guiding Principles on Business and Human Rights</strong> pressure large Indian corporations to adopt transparency. My perspective: By 2028, SEBI may mandate listed companies to disclose equal opportunity policy metrics in their business responsibility reports, making EOE a quasi-mandatory practice. Smart businesses will get ahead of the curve now.</p>
-    
-    <h2>10. Practical HTML & ATS Note: How to Make Your Careers Page EOE Compliant</h2>
-    <p>For your blog and business website (nigelthomas.live), ensure that the “Equal Opportunity Employer” statement is both human-readable and ATS-crawler friendly. Avoid embedding the statement inside images. Use clear <code>&lt;p&gt;</code> tags with semantic HTML. Example snippet for your careers page:</p>
-    <pre style="background:#f1f5f9; padding:1rem; border-radius:14px; overflow-x:auto;">
-&lt;div class="eeo-statement"&gt;
-  &lt;strong&gt;Equal Opportunity Employer Policy&lt;/strong&gt;&lt;br&gt;
-  [Company Name] provides equal employment opportunities to all employees and applicants 
-  without regard to race, color, religion, gender, sexual orientation, gender identity, 
-  national origin, age, disability, genetic information, marital status, or any other 
-  status protected by applicable law.
-&lt;/div&gt;
-    </pre>
-    <p>By having clean, indexable content, job boards and ATS scrapers will parse your commitment, boosting your visibility among compliance-focused recruiters.</p>
-    
-    <hr>
-    <h2>Conclusion: Build Not Just a Notice, But a Culture</h2>
-    <p>For business establishments in India, the question should not be “Is the Equal Opportunity Employer notice mandatory?” but rather “How can we embody fairness across the employee lifecycle?” The US and Europe have shown that a simple poster evolves into profound change: more inclusive hiring, reduced litigation, and stronger employer brands. Indian companies — from startups to large conglomerates — have everything to gain by adopting EOE frameworks voluntarily and displaying them proudly. The future of work is equitable, and the first step is declaring your commitment, whether on a wall, a website, or within your ATS.</p>
-    <p>As you revisit your HR compliance checklist, remember: an EOE statement is not just a legal formality in some geographies; it’s a global language of respect. Let your business establishment speak it fluently.</p>
-    
-    <div class="footer-note">
-        🧠 <strong>Nigel Thomas’s perspective:</strong> The absence of a strict Indian EOE poster mandate should not lead to inaction. Instead, view it as an opportunity to shape inclusive workplaces before regulation forces the shift. Organizations that preemptively adopt global EOE standards will attract the best talent and future-proof their brand. Let’s lead with empathy and compliance intelligence.<br><br>
-        📍 Follow more insights at <a href="#">nigelthomas.live</a> | 🚀 Permission to republish with attribution.
-    </div>
-    <p style="margin-top: 1.2rem; font-size: 0.75rem; text-align: center; color: #62748c;">© 2026 Nigel Thomas — All views expressed are for informational purposes. Not legal advice. Always consult a labor law expert for specific compliance.</p>
-</div>
 </body>
 </html>
+'@ | Out-File -FilePath index.html -Encoding UTF8
