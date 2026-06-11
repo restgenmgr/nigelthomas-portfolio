@@ -1,3 +1,5 @@
+# First, replace the file with corrected version
+@'
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,26 +23,6 @@
             border-radius: 24px;
             padding: 2rem;
             box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
-        }
-        /* Navigation Styles */
-        .nav {
-            background: #1e293b;
-            border-radius: 16px;
-            padding: 1rem 1.5rem;
-            margin-bottom: 2rem;
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .nav a {
-            color: #e2e8f0;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .nav a:hover {
-            color: #60a5fa;
         }
         h1 {
             font-size: 2.5rem;
@@ -105,39 +87,16 @@
             font-size: 0.85rem;
             margin-top: 2rem;
         }
-        .footer-links {
-            margin-top: 1rem;
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .footer-links a {
-            color: #64748b;
-            text-decoration: none;
-            font-size: 0.85rem;
-        }
-        .footer-links a:hover {
-            color: #2563eb;
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Navigation Menu -->
-        <div class="nav">
-            <a href="index.html">?? Home</a>
-            <a href="#about">?? About</a>
-            <a href="#articles">?? Articles</a>
-            
-        </div>
-
         <h1>Nigel Thomas</h1>
         <div class="tagline">
-            Workplace Compliance � Global HR � Labor Law Insights
+            Workplace Compliance • Global HR • Labor Law Insights
         </div>
         
-        <h2 id="articles">?? Featured Article</h2>
+        <h2>📄 Featured Article</h2>
         
         <div class="article-card">
             <div class="article-title">
@@ -148,7 +107,7 @@
             <div class="meta">
                 <span class="badge">3000+ words</span>
                 <span class="badge" style="background:#e6f7e6;">Deep Dive</span>
-                <span>?? June 2026</span>
+                <span>📅 June 2026</span>
             </div>
             <p>
                 A comprehensive legal and practical analysis of EOE requirements across three major economies. 
@@ -157,27 +116,15 @@
             </p>
         </div>
         
-        <h2 id="about">?? About Nigel Thomas</h2>
-        <p>
-            I'm a workplace compliance and global HR professional with expertise in labor law frameworks across 
-            India, the USA, and Europe. This blog covers equal opportunity employment, ATS compliance, diversity 
-            hiring, and cross-border employment regulations.
-        </p>
-        
-        <h2>?? Coming Soon</h2>
+        <h2>🔍 Coming Soon</h2>
         <p>More articles on global employment law, ATS compliance, and diversity hiring strategies.</p>
         
         <hr>
         
         <footer>
-            <div>� 2026 Nigel Thomas</div>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="terms.html">Terms</a>
-                <a href="contact.html">Contact</a>
-            </div>
+            © 2026 Nigel Thomas 
         </footer>
     </div>
 </body>
 </html>
+'@ | Out-File -FilePath index.html -Encoding UTF8
