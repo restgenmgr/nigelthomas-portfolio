@@ -116,5 +116,39 @@
         <p>© 2026 Nigel Thomas — Hospitality Trainer & Professional</p>
         <p>30+ years cruise ships, resorts in Middle East, USA, and India</p>
     </footer>
+    <!-- Search + Category Filter JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("blogSearch");
+            const cards = document.querySelectorAll(".blog-card");
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            let activeCategory = "all";
+            function applyFilters() {
+                const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : "";
+                cards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardText = card.innerText.toLowerCase();
+                    const matchesCategory = (activeCategory === "all" || cardCategory === activeCategory);
+                    const matchesSearch = searchTerm === "" || cardText.includes(searchTerm);
+                    card.style.display = (matchesCategory && matchesSearch) ? "block" : "none";
+                });
+            }
+            if (filterBtns.length > 0) {
+                filterBtns.forEach(btn => {
+                    btn.addEventListener("click", function () {
+                        filterBtns.forEach(b => b.classList.remove("active"));
+                        this.classList.add("active");
+                        activeCategory = this.dataset.category;
+                        applyFilters();
+                    });
+                });
+            }
+            if (searchInput) {
+                searchInput.addEventListener("keyup", function () { applyFilters(); });
+            }
+            applyFilters();
+        });
+    </script>
 </body>
 </html>
+
