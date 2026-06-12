@@ -1,2 +1,7 @@
-
-// force redeploy 2026-06-12 18:05:34
+﻿{
+  "version": 2,
+  "routes": [
+    { "src": "/homestay-vs-hotels.html", "dest": "/homestay-vs-hotels.html" },
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
