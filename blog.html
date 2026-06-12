@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,21 +7,23 @@
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
         body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f0e8;}
-        .navbar{background:#800000;padding:1.2rem 0;position:sticky;top:0;}
+        .navbar{background:#800000;padding:1rem 0;position:sticky;top:0;z-index:100;}
         .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
-        .logo{color:#FFD700;font-size:1.8rem;font-weight:bold;text-decoration:none;}
+        .logo{color:#FFD700;font-size:1.5rem;font-weight:bold;text-decoration:none;}
         .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
-        .nav-links a{color:white;text-decoration:none;padding:8px 18px;border-radius:30px;}
+        .nav-links a{color:white;text-decoration:none;padding:8px 15px;border-radius:25px;}
         .nav-links a:hover{background:#FFD700;color:#800000;}
         .hero{background:linear-gradient(135deg,#800000,#a52a2a);color:white;padding:60px 20px;text-align:center;}
-        .hero h1{font-size:2.5rem;}
-        .container{max-width:1200px;margin:0 auto;padding:50px 20px;}
-        .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px;}
-        .blog-card{background:white;border-radius:15px;padding:25px;box-shadow:0 5px 20px rgba(0,0,0,0.1);border-left:5px solid #FFD700;}
-        .blog-card h3{color:#800000;margin-bottom:15px;}
-        .btn-read{background:#800000;color:#FFD700;padding:10px 25px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:15px;}
-        footer{background:#800000;color:#FFD700;text-align:center;padding:40px;margin-top:40px;}
-        .footer-links a{color:#FFD700;text-decoration:none;margin:0 10px;}
+        .hero h1{font-size:2rem;margin-bottom:10px;}
+        .container{max-width:1200px;margin:0 auto;padding:20px;}
+        #blogSearch{width:100%;padding:15px;border:2px solid #800000;border-radius:10px;font-size:16px;margin-bottom:20px;}
+        .filter-btn{background:#800000;color:#FFD700;border:none;padding:8px 20px;margin:5px;border-radius:30px;cursor:pointer;}
+        .filter-btn.active{background:#FFD700;color:#800000;}
+        .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px;}
+        .blog-card{background:white;border-radius:15px;padding:20px;box-shadow:0 5px 15px rgba(0,0,0,0.1);border-left:5px solid #FFD700;display:block;}
+        .blog-card h3{color:#800000;margin-bottom:10px;}
+        .btn-read{background:#800000;color:#FFD700;padding:8px 20px;border-radius:25px;text-decoration:none;display:inline-block;margin-top:10px;}
+        footer{background:#800000;color:#FFD700;text-align:center;padding:30px;margin-top:40px;}
         @media(max-width:768px){.nav-container{flex-direction:column;}}
     </style>
 </head>
@@ -38,91 +39,53 @@
             </div>
         </div>
     </div>
+
     <div class="hero">
         <h1>Hospitality Training Blog</h1>
         <p>Expert insights from 30+ years in the industry</p>
     </div>
+
     <div class="container">
-        <div class="blog-grid">
-            <div class="blog-card" data-category="cuisine"><div class="blog-card">
-                <h3>🍛 Street Food of India</h3>
-                <p>Exploring India's vibrant street food culture, safety practices, and service standards.</p>
-                <a href="#" class="btn-read">Read More →</a>
-            </div>
-            <div class="blog-card" data-category="safety"><div class="blog-card">
-                <h3>🌡️ Food Safety Temperatures & Cold Chain Control</h3>
-                <p>Essential temperature guidelines for food storage and HACCP compliance.</p>
-                <a href="#" class="btn-read">Read More →</a>
-            </div>
-            <div class="blog-card" data-category="safety"><div class="blog-card">
-                <h3>🎨 Color Coding in Kitchen & Housekeeping</h3>
-                <p>Prevent cross-contamination with proper color coding systems.</p>
-                <a href="#" class="btn-read">Read More →</a>
-            </div>
-            <div class="blog-card" data-category="operations"><div class="blog-card">
-                <h3>🍽️ Restaurant Service Excellence</h3>
-                <p>Best practices for professional food and beverage service.</p>
-                <a href="#" class="btn-read">Read More →</a>
-            </div>
-            <div class="blog-card" data-category="cuisine"><div class="blog-card">
-                <h3>🍸 Cocktail & Bar Service</h3>
-                <p>Essential techniques for professional bartending and mixology.</p>
-                <a href="#" class="btn-read">Read More →</a>
-            </div>
-            <div class="blog-card" data-category="cuisine"><div class="blog-card">
-                <h3>🫔 North Indian Cuisine Guide</h3>
-                <p>Traditional cooking methods, spices, and service standards.</p>
-                <a href="#" class="btn-read">Read More →</a>
-            </div>
-            <div class="blog-card" data-category="career"><div class="blog-card">
-                <h3>⚖️ Equal Opportunity Employer: India, USA & Europe</h3>
-                <p>A comprehensive legal and practical analysis of EOE requirements across three major economies.</p>
-                <a href="/equal-opportunity-employer-india-usa-europe.html" class="btn-read">Read Article →</a>
-            </div>
-            <div class="blog-card" data-category="operations"><div class="blog-card">
-                <h3>🏢 FOH & BOH Hierarchy in Hospitality</h3>
-                <p>Understanding Front of House and Back of House organizational structure, reporting lines, and career progression paths in hotels and restaurants.</p>
-                <a href="/foh-boh-hierarchy-blog.html" class="btn-read">Read Article →</a>
-            </div>
-            <div class="blog-card" data-category="cuisine"><div class="blog-card">
-                <h3>🥢 Chinese Culinary Styles: A Complete Guide</h3>
-                <p>Explore the diverse regional cuisines of China - from Cantonese dim sum to Szechuan hot pot.</p>
-                <a href="/chinese-culinary-styles-blog.html" class="btn-read">Read Article →</a>
-            </div>
-            <div class="blog-card" data-category="operations"><div class="blog-card">
-                <h3>📊 Menu Planning & Menu Engineering</h3>
-                <p>Master menu engineering quadrants, food cost calculation, recipe standardization, and menu psychology to maximize restaurant profitability.</p>
-                <a href="/menu-planning-engineering.html" class="btn-read">Read Article →</a>
-            </div>
-            <div class="blog-card" data-category="cuisine"><div class="blog-card">
-                <h3>🌶️ Indian Spices, Herbs & Condiments: Health Benefits Guide</h3>
-                <p>From saffron and turmeric to coconut water and palm sap — discover the health benefits and culinary uses of 25+ Indian spices and herbs.</p>
-                <a href="/indian-spices-herbs-health-benefits.html" class="btn-read">Read Article →</a>
-            </div>
-            <div class="blog-card" data-category="cuisine"><div class="blog-card">
-            <h3>🍲 The 5 Mother Sauces: Complete Guide with Recipes & Variants</h3>
-            <p>Master Bechamel, Veloute, Espagnole, Hollandaise, and Sauce Tomate — with full recipes, procedures, and all classic derivative sauces.</p>
-            <a href="/mother-sauces-complete-guide.html" class="btn-read">Read Article →</a>
-</div>
+        <input type="text" id="blogSearch" placeholder="🔍 Search articles... (try: safety, Indian, sauce, fine dining)">
+    </div>
+
+    <div class="container">
+        <button class="filter-btn active" data-category="all">📋 All</button>
+        <button class="filter-btn" data-category="cuisine">🍽️ Cuisine</button>
+        <button class="filter-btn" data-category="safety">🌡️ Safety</button>
+        <button class="filter-btn" data-category="operations">🏢 Operations</button>
+        <button class="filter-btn" data-category="career">🎯 Career</button>
+    </div>
+
+    <div class="container">
+        <div class="blog-grid" id="blogGrid">
+            <div class="blog-card" data-category="cuisine"><h3>🍛 Street Food of India</h3><p>Exploring India's vibrant street food culture.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="safety"><h3>🌡️ Food Safety Temperatures</h3><p>Essential temperature guidelines for food storage.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="safety"><h3>🎨 Color Coding in Kitchen</h3><p>Prevent cross-contamination with color coding.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="operations"><h3>🍽️ Restaurant Service Excellence</h3><p>Best practices for food and beverage service.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🍸 Cocktail & Bar Service</h3><p>Essential bartending and mixology techniques.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🫔 North Indian Cuisine Guide</h3><p>Traditional cooking methods and spices.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="career"><h3>⚖️ Equal Opportunity Employer</h3><p>EOE requirements across India, USA & Europe.</p><a href="/equal-opportunity-employer-india-usa-europe.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="operations"><h3>🏢 FOH & BOH Hierarchy</h3><p>Understanding hotel organizational structure.</p><a href="/foh-boh-hierarchy-blog.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🥢 Chinese Culinary Styles</h3><p>From Cantonese dim sum to Szechuan hot pot.</p><a href="/chinese-culinary-styles-blog.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="operations"><h3>📊 Menu Planning & Engineering</h3><p>Master menu engineering quadrants and pricing.</p><a href="/menu-planning-engineering.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🌶️ Indian Spices & Herbs</h3><p>Health benefits of 25+ Indian spices.</p><a href="/indian-spices-herbs-health-benefits.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🍲 The 5 Mother Sauces</h3><p>Complete guide with recipes and variants.</p><a href="/mother-sauces-complete-guide.html" class="btn-read">Read Article →</a></div>
         </div>
     </div>
+
     <footer>
-        <div class="footer-links">
-            <a href="/">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/blog.html">Blog</a>
-            <a href="/contact.html">Contact</a>
-        </div>
         <p>© 2026 Nigel Thomas — Hospitality Trainer & Professional</p>
         <p>30+ years cruise ships, resorts in Middle East, USA, and India</p>
     </footer>
-    <!-- Search + Category Filter JavaScript -->
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function() {
             const searchInput = document.getElementById("blogSearch");
             const cards = document.querySelectorAll(".blog-card");
             const filterBtns = document.querySelectorAll(".filter-btn");
             let activeCategory = "all";
+
             function applyFilters() {
                 const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : "";
                 cards.forEach(card => {
@@ -133,23 +96,22 @@
                     card.style.display = (matchesCategory && matchesSearch) ? "block" : "none";
                 });
             }
-            if (filterBtns.length > 0) {
-                filterBtns.forEach(btn => {
-                    btn.addEventListener("click", function () {
-                        filterBtns.forEach(b => b.classList.remove("active"));
-                        this.classList.add("active");
-                        activeCategory = this.dataset.category;
-                        applyFilters();
-                    });
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", function() {
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    this.classList.add("active");
+                    activeCategory = this.dataset.category;
+                    applyFilters();
                 });
-            }
+            });
+
             if (searchInput) {
-                searchInput.addEventListener("keyup", function () { applyFilters(); });
+                searchInput.addEventListener("keyup", applyFilters);
             }
+
             applyFilters();
         });
     </script>
 </body>
 </html>
-
-
