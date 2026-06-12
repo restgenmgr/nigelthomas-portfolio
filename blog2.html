@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nigel Thomas | Hospitality Trainer</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f0e8;}
+        .navbar{background:#800000;padding:1rem 0;position:sticky;top:0;z-index:100;}
+        .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
+        .logo{color:#FFD700;font-size:1.5rem;font-weight:bold;text-decoration:none;}
+        .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
+        .nav-links a{color:white;text-decoration:none;padding:8px 15px;border-radius:25px;}
+        .nav-links a:hover{background:#FFD700;color:#800000;}
+        .hero{background:linear-gradient(135deg,#800000,#a52a2a);color:white;padding:60px 20px;text-align:center;}
+        .hero h1{font-size:2rem;margin-bottom:10px;}
+        .container{max-width:1200px;margin:0 auto;padding:20px;}
+        #blogSearch{width:100%;padding:15px;border:2px solid #800000;border-radius:10px;font-size:16px;margin-bottom:20px;}
+        .filter-btn{background:#800000;color:#FFD700;border:none;padding:8px 20px;margin:5px;border-radius:30px;cursor:pointer;}
+        .filter-btn.active{background:#FFD700;color:#800000;}
+        .blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px;}
+        .blog-card{background:white;border-radius:15px;padding:20px;box-shadow:0 5px 15px rgba(0,0,0,0.1);border-left:5px solid #FFD700;display:block;}
+        .blog-card h3{color:#800000;margin-bottom:10px;}
+        .btn-read{background:#800000;color:#FFD700;padding:8px 20px;border-radius:25px;text-decoration:none;display:inline-block;margin-top:10px;}
+        footer{background:#800000;color:#FFD700;text-align:center;padding:30px;margin-top:40px;}
+        @media(max-width:768px){.nav-container{flex-direction:column;}}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">Nigel Thomas</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/blog.html">Blog</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Hospitality Training Blog</h1>
+        <p>Expert insights from 30+ years in the industry</p>
+    </div>
+
+    <div class="container">
+        <input type="text" id="blogSearch" placeholder="🔍 Search articles... (try: safety, Indian, sauce, fine dining)">
+    </div>
+
+    <div class="container">
+        <button class="filter-btn active" data-category="all">📋 All</button>
+        <button class="filter-btn" data-category="cuisine">🍽️ Cuisine</button>
+        <button class="filter-btn" data-category="safety">🌡️ Safety</button>
+        <button class="filter-btn" data-category="operations">🏢 Operations</button>
+        <button class="filter-btn" data-category="career">🎯 Career</button>
+    </div>
+
+    <div class="container">
+        <div class="blog-grid" id="blogGrid">
+            <div class="blog-card" data-category="cuisine"><h3>🍛 Street Food of India</h3><p>Exploring India's vibrant street food culture.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="safety"><h3>🌡️ Food Safety Temperatures</h3><p>Essential temperature guidelines for food storage.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="safety"><h3>🎨 Color Coding in Kitchen</h3><p>Prevent cross-contamination with color coding.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="operations"><h3>🍽️ Restaurant Service Excellence</h3><p>Best practices for food and beverage service.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🍸 Cocktail & Bar Service</h3><p>Essential bartending and mixology techniques.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🫔 North Indian Cuisine Guide</h3><p>Traditional cooking methods and spices.</p><a href="#" class="btn-read">Read More →</a></div>
+            <div class="blog-card" data-category="career"><h3>⚖️ Equal Opportunity Employer</h3><p>EOE requirements across India, USA & Europe.</p><a href="/equal-opportunity-employer-india-usa-europe.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="operations"><h3>🏢 FOH & BOH Hierarchy</h3><p>Understanding hotel organizational structure.</p><a href="/foh-boh-hierarchy-blog.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🥢 Chinese Culinary Styles</h3><p>From Cantonese dim sum to Szechuan hot pot.</p><a href="/chinese-culinary-styles-blog.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="operations"><h3>📊 Menu Planning & Engineering</h3><p>Master menu engineering quadrants and pricing.</p><a href="/menu-planning-engineering.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🌶️ Indian Spices & Herbs</h3><p>Health benefits of 25+ Indian spices.</p><a href="/indian-spices-herbs-health-benefits.html" class="btn-read">Read Article →</a></div>
+            <div class="blog-card" data-category="cuisine"><h3>🍲 The 5 Mother Sauces</h3><p>Complete guide with recipes and variants.</p><a href="/mother-sauces-complete-guide.html" class="btn-read">Read Article →</a></div>
+                    <div class="blog-card" data-category="operations">
+                <h3>🍔 QSR vs Fine Dining: A Complete Breakdown</h3>
+                <p>Understanding the key differences between Quick Service Restaurants and Fine Dining establishments - operations, staffing, profitability, and career paths.</p>
+                <a href="/qsr-vs-fine-dining.html" class="btn-read">Read Article →</a>
+            </div>
+            <div class="blog-card" data-category="cuisine">
+                <h3>🔪 Chef's Tools: Complete Guide to Knives & Cutting Boards</h3>
+                <p>Essential kitchen knives, cutting board types, color coding standards (HACCP), and knife care maintenance for professional chefs.</p>
+                <a href="/chefs-tools-knives-cutting-boards.html" class="btn-read">Read Article →</a>
+            </div>
+                        <div class="blog-card" data-category="operations">
+                <h3>🏠 Homestay vs Hotels: A Complete Comparison</h3>
+                <p>Compare homestays and hotels across operations, guest experience, profitability, staffing, and investment requirements for hospitality professionals.</p>
+                <a href="/homestay-vs-hotels.html" class="btn-read">Read Article →</a>
+            </div>
+</div>
+    </div>
+
+    <footer>
+        <p>© 2026 Nigel Thomas — Hospitality Trainer & Professional</p>
+        <p>30+ years cruise ships, resorts in Middle East, USA, and India</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.getElementById("blogSearch");
+            const cards = document.querySelectorAll(".blog-card");
+            const filterBtns = document.querySelectorAll(".filter-btn");
+            let activeCategory = "all";
+
+            function applyFilters() {
+                const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : "";
+                cards.forEach(card => {
+                    const cardCategory = card.dataset.category;
+                    const cardText = card.innerText.toLowerCase();
+                    const matchesCategory = (activeCategory === "all" || cardCategory === activeCategory);
+                    const matchesSearch = searchTerm === "" || cardText.includes(searchTerm);
+                    card.style.display = (matchesCategory && matchesSearch) ? "block" : "none";
+                });
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener("click", function() {
+                    filterBtns.forEach(b => b.classList.remove("active"));
+                    this.classList.add("active");
+                    activeCategory = this.dataset.category;
+                    applyFilters();
+                });
+            });
+
+            if (searchInput) {
+                searchInput.addEventListener("keyup", applyFilters);
+            }
+
+            applyFilters();
+        });
+    </script>
+</body>
+</html>
+
+
