@@ -1,7 +1,3 @@
 ﻿{
-  "version": 2,
-  "routes": [
-    { "src": "/homestay-vs-hotels.html", "dest": "/homestay-vs-hotels.html" },
-    { "src": "/(.*)", "dest": "/$1" }
-  ]
+  "version": 2
 }
