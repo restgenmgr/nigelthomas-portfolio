@@ -1,9 +1,7 @@
-﻿<!DOCTYPE html>
+cd C:\Users\admin\Desktop\nigelthomas-portfolio; @'
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="your-verification-code-here">
-
-<meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
 <script>
@@ -41,14 +39,6 @@
         .btn-back{background:#800000;color:#FFD700;padding:10px 25px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:25px;}
         @media(max-width:768px){.nav-container{flex-direction:column;}.article-card{padding:25px;}}
     </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMGQCZGTQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KMGQCZGTQX');
-</script>
 </head>
 <body>
     <div class="navbar">
@@ -81,7 +71,7 @@
             </ul>
 
             <div class="highlight-box">
-                <strong>ðŸ“Œ Pro Tip:</strong> Review your menu engineering matrix quarterly. Customer preferences change seasonally, and so should your menu strategy.
+                <strong>ðŸ“Š Pro Tip:</strong> Review your menu engineering matrix quarterly. Customer preferences change seasonally, and so should your menu strategy.
             </div>
 
             <h2>ðŸ“ Steps to Effective Menu Planning</h2>
@@ -190,4 +180,5 @@
     </footer>
 </body>
 </html>
+'@ | Out-File -FilePath menu-planning-engineering-guide.html -Encoding utf8; git add menu-planning-engineering-guide.html; git commit -m "Add complete Menu Planning & Menu Engineering professional guide"; git push origin main --force; npx vercel --prod --force; Write-Host "âœ… Menu Planning article created and deployed!" -ForegroundColor Green
 
