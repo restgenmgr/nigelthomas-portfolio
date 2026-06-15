@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core Pages -->
@@ -91,12 +91,7 @@
     <loc>https://nigelthomas.live/street-food-india.html</loc>
     <priority>0.8</priority>
   </url>
-<url>
-    <loc>https://nigelthoms.live/south-indian-food-styles-udupi-chettinad-nati.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-</url>
+
 
   <!-- Legal Pages -->
   <url>
@@ -113,3 +108,4 @@
   </url>
 
 </urlset>
+
