@@ -1,9 +1,7 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="your-verification-code-here">
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
 <script>
@@ -86,21 +84,11 @@ padding:25px;
 margin-top:40px;
 }
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMGQCZGTQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KMGQCZGTQX');
-</script>
 </head>
 
 <body>
 
 <header>
-<meta name="google-site-verification" content="your-verification-code-here">
-
 <h1>Nigel Thomas</h1>
 <p>Certifications, Resume & Professional Documents</p>
 </header>
@@ -108,7 +96,7 @@ margin-top:40px;
 <div class="container">
 
 <div class="card">
-<h2>Ã°Å¸â€œâ€ž Resume</h2>
+<h2>ðŸ“„ Resume</h2>
 <p>View or download my professional hospitality resume.</p>
 <a href="https://tinyurl.com/270152" target="_blank" class="btn">
 Open Resume
@@ -116,7 +104,7 @@ Open Resume
 </div>
 
 <div class="card">
-<h2>Ã°Å¸â€œâ€˜ Cover Letter</h2>
+<h2>ðŸ“‘ Cover Letter</h2>
 <p>Professional cover letter and supporting career documents.</p>
 <a href="https://tinyurl.com/270152" target="_blank" class="btn">
 Open Cover Letter
@@ -124,7 +112,7 @@ Open Cover Letter
 </div>
 
 <div class="card">
-<h2>Ã°Å¸Ââ€  Professional Certifications</h2>
+<h2>ðŸ† Professional Certifications</h2>
 
 <ul>
 <li>ServSafe Food Protection Manager</li>
@@ -146,11 +134,10 @@ View Certificates
 </div>
 
 <footer>
-Ã‚Â© 2026 Nigel Thomas | Hospitality Trainer & Food Safety Professional
+Â© 2026 Nigel Thomas | Hospitality Trainer & Food Safety Professional
 </footer>
 
 </body>
 </html>
 ```
-
 

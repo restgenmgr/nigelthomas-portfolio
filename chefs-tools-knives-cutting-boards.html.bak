@@ -1,8 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="your-verification-code-here">
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
 <script>
@@ -37,14 +35,6 @@
         .btn-back{background:#800000;color:#FFD700;padding:10px 25px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:25px;}
         @media(max-width:768px){.nav-container{flex-direction:column;}}
     </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMGQCZGTQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KMGQCZGTQX');
-</script>
 </head>
 <body>
     <div class="navbar">
@@ -60,10 +50,10 @@
     </div>
     <div class="container">
         <div class="article-card">
-            <h1>ðŸ”ª Chef's Tools: Complete Guide to Knives & Cutting Boards</h1>
+            <h1>🔪 Chef's Tools: Complete Guide to Knives & Cutting Boards</h1>
             <p>Every professional chef knows that quality tools are essential for efficiency, safety, and precision in the kitchen. This guide covers the essential knives and cutting boards every culinary professional needs.</p>
             
-            <h2>ðŸ—¡ï¸ Essential Kitchen Knives</h2>
+            <h2>🗡️ Essential Kitchen Knives</h2>
             <table>
                 <tr><th>Knife Type</th><th>Purpose</th><th>Blade Size</th></tr>
                 <tr><td>Chef's Knife</td><td>All-purpose chopping, dicing, slicing</td><td>8-10 inches</td></tr>
@@ -75,7 +65,7 @@
                 <tr><td>Cleaver</td><td>Cutting through bones, heavy chopping</td><td>6-8 inches</td></tr>
             </table>
             
-            <h2>ðŸªµ Cutting Board Guide</h2>
+            <h2>🪵 Cutting Board Guide</h2>
             <ul>
                 <li><strong>Wooden Boards (Maple, Walnut, Teak):</strong> Gentle on knives, naturally antimicrobial, requires regular oiling. Best for vegetables, bread, fruit.</li>
                 <li><strong>Plastic/Polyethylene Boards:</strong> Dishwasher safe, affordable, non-porous. Best for raw meat, poultry, fish.</li>
@@ -83,42 +73,41 @@
                 <li><strong>Rubber Boards (Hasegawa, Sani-Tuff):</strong> Professional grade, knife-friendly, heat resistant. Best for high-volume kitchens.</li>
             </ul>
             
-            <h2>ðŸŽ¨ Cutting Board Color Coding (HACCP Standard)</h2>
+            <h2>🎨 Cutting Board Color Coding (HACCP Standard)</h2>
             <table>
                 <tr><th>Color</th><th>Food Type</th></tr>
-                <tr><td>ðŸ”´ Red</td><td>Raw Meat</td></tr>
-                <tr><td>ðŸ”µ Blue</td><td>Raw Fish/Seafood</td></tr>
-                <tr><td>ðŸŸ¡ Yellow</td><td>Cooked Meat/Poultry</td></tr>
-                <tr><td>ðŸŸ¢ Green</td><td>Fruits & Vegetables</td></tr>
-                <tr><td>âšª White</td><td>Dairy & Bakery</td></tr>
-                <tr><td>ðŸŸ  Orange</td><td>Allergen Control (nuts, gluten, etc.)</td></tr>
+                <tr><td>🔴 Red</td><td>Raw Meat</td></tr>
+                <tr><td>🔵 Blue</td><td>Raw Fish/Seafood</td></tr>
+                <tr><td>🟡 Yellow</td><td>Cooked Meat/Poultry</td></tr>
+                <tr><td>🟢 Green</td><td>Fruits & Vegetables</td></tr>
+                <tr><td>⚪ White</td><td>Dairy & Bakery</td></tr>
+                <tr><td>🟠 Orange</td><td>Allergen Control (nuts, gluten, etc.)</td></tr>
             </table>
             
-            <h2>âœ… Knife Care & Maintenance</h2>
+            <h2>✅ Knife Care & Maintenance</h2>
             <ul>
                 <li><strong>Honing:</strong> Use honing steel before each use to straighten the edge</li>
                 <li><strong>Sharpening:</strong> Use whetstone every 2-3 months to remove metal and create new edge</li>
-                <li><strong>Cleaning:</strong> Hand wash only with mild soap â€” NEVER put knives in dishwasher</li>
+                <li><strong>Cleaning:</strong> Hand wash only with mild soap — NEVER put knives in dishwasher</li>
                 <li><strong>Storage:</strong> Store on magnetic strip, in knife block, or with blade guards</li>
                 <li><strong>Cutting Surface:</strong> Always use appropriate board (never glass, stone, or metal)</li>
             </ul>
             
-            <h2>ðŸ“‹ Pro Tips</h2>
+            <h2>📋 Pro Tips</h2>
             <ul>
                 <li>A dull knife is more dangerous than a sharp one (requires more force, slips easily)</li>
-                <li>Invest in quality knives â€” they last a lifetime with proper care</li>
+                <li>Invest in quality knives — they last a lifetime with proper care</li>
                 <li>Separate cutting boards by color to prevent cross-contamination</li>
                 <li>Replace plastic boards when deep grooves appear (bacteria hide in cuts)</li>
             </ul>
             
-            <a href="/blog.html" class="btn-back">â† Back to Blog</a>
+            <a href="/blog.html" class="btn-back">← Back to Blog</a>
         </div>
     </div>
     <footer>
-        <p>Â© 2026 Nigel Thomas â€” Hospitality Trainer & Professional</p>
+        <p>© 2026 Nigel Thomas — Hospitality Trainer & Professional</p>
         <p>30+ years cruise ships, resorts in Middle East, USA, and India</p>
     </footer>
 </body>
 </html>
-
 

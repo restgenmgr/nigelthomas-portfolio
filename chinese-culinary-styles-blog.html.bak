@@ -1,8 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="your-verification-code-here">
-
     <meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
@@ -19,13 +17,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Major Culinary Styles of Chinese Cuisine | Nigel Thomas</title>
-  <meta name="description" content="A deep dive into the eight great regional styles of Chinese cuisine Ã¢â‚¬â€ from bold Sichuan heat to delicate Cantonese dim sum Ã¢â‚¬â€ plus the unique Indo-Chinese fusion tradition that transformed India's dining scene." />
+  <meta name="description" content="A deep dive into the eight great regional styles of Chinese cuisine â€” from bold Sichuan heat to delicate Cantonese dim sum â€” plus the unique Indo-Chinese fusion tradition that transformed India's dining scene." />
   <meta name="keywords" content="Chinese cuisine styles, Sichuan food, Cantonese food, eight culinary traditions China, Hunan cuisine, Jiangsu food, Fujian cuisine, Anhui food, Indo-Chinese food India, Chinese regional food guide" />
   <meta name="author" content="Nigel Anthony Thomas" />
   <link rel="canonical" href="https://www.nigelthomas.live/blog/chinese-culinary-styles" />
 
   <meta property="og:title" content="The Major Culinary Styles of Chinese Cuisine" />
-  <meta property="og:description" content="From the numbing heat of Sichuan peppercorns to the umami depths of Fujian broth Ã¢â‚¬â€ explore China's eight great culinary traditions and India's own Indo-Chinese story." />
+  <meta property="og:description" content="From the numbing heat of Sichuan peppercorns to the umami depths of Fujian broth â€” explore China's eight great culinary traditions and India's own Indo-Chinese story." />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.nigelthomas.live/blog/chinese-culinary-styles" />
 
@@ -42,13 +40,13 @@
   </script>
 
   <style>
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Design tokens Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬
+    /* â”€â”€ Design tokens â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
        Palette inspired by Chinese lacquerware and ink-wash painting:
        a deep cinnabar red as the hero accent (not the generic terracotta),
        aged parchment surface for cuisine cards, deep ink for text.
        Signature element: a region navigation scroll-strip at the top,
        styled like a Chinese hand-scroll with brushstroke separators.
-    Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬ */
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     :root {
       --ink:        #1c1410;
       --soft:       #4a3f38;
@@ -56,9 +54,9 @@
       --rule:       #e6ddd5;
       --bg:         #fefcfa;
       --parchment:  #f8f2e8;
-      --cinnabar:   #c0341f;   /* lacquer red Ã¢â‚¬â€ signature accent */
-      --gold:       #b8860b;   /* aged gold Ã¢â‚¬â€ regional label accent */
-      --jade:       #4a7c6f;   /* muted jade Ã¢â‚¬â€ Indo-Chinese accent */
+      --cinnabar:   #c0341f;   /* lacquer red â€” signature accent */
+      --gold:       #b8860b;   /* aged gold â€” regional label accent */
+      --jade:       #4a7c6f;   /* muted jade â€” Indo-Chinese accent */
       --deep:       #2c1810;   /* near-black with warmth */
       --max:        800px;
       --serif:      'Georgia', 'Times New Roman', serif;
@@ -76,7 +74,7 @@
       font-size: 1.0625rem;
     }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Site bar Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Site bar â”€â”€ */
     .site-bar {
       background: var(--deep);
       padding: 12px 24px;
@@ -87,7 +85,7 @@
     .site-bar a { color: #fff; text-decoration: none; font-family: var(--serif); font-size: 1rem; letter-spacing: .03em; }
     .site-bar .tag { margin-left: auto; font-size: .68rem; text-transform: uppercase; letter-spacing: .16em; color: rgba(255,255,255,.4); }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Hero Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Hero â”€â”€ */
     .hero {
       background: var(--deep);
       color: #fff;
@@ -141,7 +139,7 @@
       position: relative;
     }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Scroll-strip navigation (the signature element) Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Scroll-strip navigation (the signature element) â”€â”€ */
     .scroll-strip {
       background: var(--parchment);
       border-top: 3px solid var(--cinnabar);
@@ -174,14 +172,14 @@
     .scroll-strip a .slocal { font-size: .62rem; color: var(--muted); }
     .scroll-strip a.indo { border-left: 3px solid var(--jade); }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Main Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Main â”€â”€ */
     main {
       max-width: var(--max);
       margin: 0 auto;
       padding: 56px 24px 80px;
     }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Section heading Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Section heading â”€â”€ */
     h2 {
       font-family: var(--serif);
       font-size: 1.6rem;
@@ -212,7 +210,7 @@
 
     p { margin-bottom: 1.1em; }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Cuisine card Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Cuisine card â”€â”€ */
     .cuisine-card {
       border: 1px solid var(--rule);
       border-radius: var(--radius);
@@ -248,7 +246,7 @@
     .cuisine-card .card-body p { font-size: .95rem; }
     .cuisine-card .card-body p:last-child { margin-bottom: 0; }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Dish pills Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Dish pills â”€â”€ */
     .dish-pills {
       display: flex;
       flex-wrap: wrap;
@@ -265,7 +263,7 @@
     }
     .dish-pill.jade-pill { background: var(--jade); }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Flavour tag strip Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Flavour tag strip â”€â”€ */
     .flavour-strip {
       display: flex;
       flex-wrap: wrap;
@@ -289,7 +287,7 @@
     .ftag.bold    { background: #fde8e8; color: #7a1a1a; }
     .ftag.fusion  { background: #e8fdf5; color: #1a6a55; }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Pull quote Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Pull quote â”€â”€ */
     blockquote {
       border-left: 4px solid var(--cinnabar);
       margin: 40px 0;
@@ -315,7 +313,7 @@
       text-transform: uppercase;
     }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Callout Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Callout â”€â”€ */
     .callout {
       border-radius: var(--radius);
       padding: 20px 24px;
@@ -334,7 +332,7 @@
     .india .callout-head { color: #2a6a55; }
     .callout p { font-size: .9rem; margin: 0; }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Section divider Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Section divider â”€â”€ */
     .divider {
       display: flex;
       align-items: center;
@@ -344,7 +342,7 @@
     .divider span { font-size: .7rem; text-transform: uppercase; letter-spacing: .18em; color: var(--muted); white-space: nowrap; }
     .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ At a glance table Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ At a glance table â”€â”€ */
     .glance-table {
       width: 100%;
       border-collapse: collapse;
@@ -365,7 +363,7 @@
     .glance-table tr:nth-child(even) td { background: var(--parchment); }
     .glance-table .style-name { font-weight: 700; color: var(--ink); }
 
-    /* Ã¢â€â‚¬Ã¢â€â‚¬ Footer Ã¢â€â‚¬Ã¢â€â‚¬ */
+    /* â”€â”€ Footer â”€â”€ */
     footer {
       background: var(--deep);
       color: rgba(255,255,255,.45);
@@ -381,14 +379,6 @@
       .glance-table th, .glance-table td { padding: 8px 10px; }
     }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMGQCZGTQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KMGQCZGTQX');
-</script>
 </head>
 <body>
 
@@ -402,36 +392,36 @@
 <div class="hero">
   <p class="eyebrow">A Hospitality Professional's Guide</p>
   <h1>The Major Culinary Styles of <em>Chinese Cuisine</em></h1>
-  <p class="sub">Eight regional traditions, thousands of years of craft Ã¢â‚¬â€ and one remarkable Indian reinvention that changed the way a billion people eat Chinese food.</p>
+  <p class="sub">Eight regional traditions, thousands of years of craft â€” and one remarkable Indian reinvention that changed the way a billion people eat Chinese food.</p>
   <p class="meta">By Nigel Anthony Thomas &nbsp;|&nbsp; June 2026 &nbsp;|&nbsp; 14 min read</p>
 </div>
 
 <!-- Scroll-strip navigation -->
 <nav class="scroll-strip" aria-label="Jump to cuisine">
   <div class="scroll-strip-inner">
-    <a href="#sichuan"><span class="flag">Ã°Å¸Å’Â¶Ã¯Â¸Â</span><span class="sname">Sichuan</span><span class="slocal">Chuan</span></a>
-    <a href="#cantonese"><span class="flag">Ã°Å¸Â«â€“</span><span class="sname">Cantonese</span><span class="slocal">Yue</span></a>
-    <a href="#hunan"><span class="flag">Ã°Å¸â€Â¥</span><span class="sname">Hunan</span><span class="slocal">Xiang</span></a>
-    <a href="#shandong"><span class="flag">Ã°Å¸Å’Å </span><span class="sname">Shandong</span><span class="slocal">Lu</span></a>
-    <a href="#jiangsu"><span class="flag">Ã°Å¸Ââ€“</span><span class="sname">Jiangsu &amp; Zhejiang</span><span class="slocal">Su &amp; Zhe</span></a>
-    <a href="#fujian"><span class="flag">Ã°Å¸Â¦Å¾</span><span class="sname">Fujian</span><span class="slocal">Min</span></a>
-    <a href="#anhui"><span class="flag">Ã°Å¸Å’Â¿</span><span class="sname">Anhui</span><span class="slocal">Hui</span></a>
-    <a href="#indochinese" class="indo"><span class="flag">Ã°Å¸â€¡Â®Ã°Å¸â€¡Â³</span><span class="sname">Indo-Chinese</span><span class="slocal">Hakka Fusion</span></a>
+    <a href="#sichuan"><span class="flag">ðŸŒ¶ï¸</span><span class="sname">Sichuan</span><span class="slocal">Chuan</span></a>
+    <a href="#cantonese"><span class="flag">ðŸ«–</span><span class="sname">Cantonese</span><span class="slocal">Yue</span></a>
+    <a href="#hunan"><span class="flag">ðŸ”¥</span><span class="sname">Hunan</span><span class="slocal">Xiang</span></a>
+    <a href="#shandong"><span class="flag">ðŸŒŠ</span><span class="sname">Shandong</span><span class="slocal">Lu</span></a>
+    <a href="#jiangsu"><span class="flag">ðŸ–</span><span class="sname">Jiangsu &amp; Zhejiang</span><span class="slocal">Su &amp; Zhe</span></a>
+    <a href="#fujian"><span class="flag">ðŸ¦ž</span><span class="sname">Fujian</span><span class="slocal">Min</span></a>
+    <a href="#anhui"><span class="flag">ðŸŒ¿</span><span class="sname">Anhui</span><span class="slocal">Hui</span></a>
+    <a href="#indochinese" class="indo"><span class="flag">ðŸ‡®ðŸ‡³</span><span class="sname">Indo-Chinese</span><span class="slocal">Hakka Fusion</span></a>
   </div>
 </nav>
 
 <!-- Article -->
 <main>
 
-  <p>China is not one cuisine. It is a continent of cuisines Ã¢â‚¬â€ a civilisation that has been cooking, refining, and trading food knowledge for more than four thousand years across a geography that stretches from the frozen north to tropical coastlines, from mountain highlands to river deltas. The result is a culinary diversity that rivals any tradition on earth.</p>
+  <p>China is not one cuisine. It is a continent of cuisines â€” a civilisation that has been cooking, refining, and trading food knowledge for more than four thousand years across a geography that stretches from the frozen north to tropical coastlines, from mountain highlands to river deltas. The result is a culinary diversity that rivals any tradition on earth.</p>
 
-  <p>When Chinese immigration brought these traditions to the rest of the world Ã¢â‚¬â€ to Southeast Asia, the Americas, Europe, and the Indian subcontinent Ã¢â‚¬â€ something remarkable happened. Each destination filtered Chinese cooking through its own palate, its own ingredients, and its own cultural logic. The result was a global family of Chinese-influenced cuisines, each with a distinct identity and a devoted following.</p>
+  <p>When Chinese immigration brought these traditions to the rest of the world â€” to Southeast Asia, the Americas, Europe, and the Indian subcontinent â€” something remarkable happened. Each destination filtered Chinese cooking through its own palate, its own ingredients, and its own cultural logic. The result was a global family of Chinese-influenced cuisines, each with a distinct identity and a devoted following.</p>
 
-  <p>For a hospitality professional Ã¢â‚¬â€ whether you are designing a menu, training a kitchen team, or simply trying to understand what a guest means when they ask for "Chinese food" Ã¢â‚¬â€ knowing the major culinary styles of China is foundational knowledge. This guide walks through the eight great traditions, and ends with the one that most directly shapes dining in India: Indo-Chinese.</p>
+  <p>For a hospitality professional â€” whether you are designing a menu, training a kitchen team, or simply trying to understand what a guest means when they ask for "Chinese food" â€” knowing the major culinary styles of China is foundational knowledge. This guide walks through the eight great traditions, and ends with the one that most directly shapes dining in India: Indo-Chinese.</p>
 
   <blockquote>
-    <p>"Chinese cooking is not a single art. It is a library of arts Ã¢â‚¬â€ each province its own volume, written in a different flavour, texture, and fire."</p>
-    <cite>Ã¢â‚¬â€ A truth every serious food professional discovers eventually</cite>
+    <p>"Chinese cooking is not a single art. It is a library of arts â€” each province its own volume, written in a different flavour, texture, and fire."</p>
+    <cite>â€” A truth every serious food professional discovers eventually</cite>
   </blockquote>
 
   <!-- At a glance -->
@@ -452,15 +442,15 @@
     </tbody>
   </table>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Sichuan Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Sichuan â”€â”€ -->
   <div class="divider"><span>Style One</span></div>
   <div id="sichuan">
     <h2><span class="h2-num">Sichuan</span> The Cuisine That Numbs</h2>
     <div class="cuisine-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸Å’Â¶Ã¯Â¸Â</div>
+        <div class="card-icon">ðŸŒ¶ï¸</div>
         <div>
-          <div class="card-region">Southwest China &nbsp;Ã‚Â·&nbsp; Sichuan Province</div>
+          <div class="card-region">Southwest China &nbsp;Â·&nbsp; Sichuan Province</div>
           <div class="card-title">Sichuan Cuisine &nbsp;<span>(Chuan Cai)</span></div>
         </div>
       </div>
@@ -471,9 +461,9 @@
           <span class="ftag umami">Umami</span>
           <span class="ftag smoky">Numbing</span>
         </div>
-        <p>If there is one Chinese culinary style that has conquered global restaurant culture in the 21st century, it is Sichuan. Its defining characteristic Ã¢â‚¬â€ a sensation called <strong>mÃƒÂ¡lÃƒÂ  (Ã©ÂºÂ»Ã¨Â¾Â£)</strong>, meaning "numbing and spicy" Ã¢â‚¬â€ comes from the combined use of dried red chillies and the extraordinary Sichuan peppercorn (<em>huÃ„ÂjiÃ„Âo</em>). The peppercorn does not simply add heat. It produces a unique tingling, buzzing sensation on the lips and tongue that is unlike anything else in food. Chefs and scientists call it paraesthesia. Diners call it addictive.</p>
-        <p>Sichuan cooking is deeply layered. The heat you feel at the start of a dish is not the same as the heat that lingers. Aromatics Ã¢â‚¬â€ ginger, garlic, scallions, fermented black bean paste, and the deeply umami <em>doubanjiang</em> (fermented broad bean and chilli paste) Ã¢â‚¬â€ build a base of flavour that the spice then intensifies rather than replaces. This is a cuisine of complexity disguised as fire.</p>
-        <p>The province itself sits in a fertile, humid basin Ã¢â‚¬â€ a climate the Chinese describe as "the land of abundance." Its geography historically made it somewhat isolated, and that isolation bred a confident, self-sufficient food culture. Today it is the most globally exported of China's eight great culinary traditions.</p>
+        <p>If there is one Chinese culinary style that has conquered global restaurant culture in the 21st century, it is Sichuan. Its defining characteristic â€” a sensation called <strong>mÃ¡lÃ  (éº»è¾£)</strong>, meaning "numbing and spicy" â€” comes from the combined use of dried red chillies and the extraordinary Sichuan peppercorn (<em>huÄjiÄo</em>). The peppercorn does not simply add heat. It produces a unique tingling, buzzing sensation on the lips and tongue that is unlike anything else in food. Chefs and scientists call it paraesthesia. Diners call it addictive.</p>
+        <p>Sichuan cooking is deeply layered. The heat you feel at the start of a dish is not the same as the heat that lingers. Aromatics â€” ginger, garlic, scallions, fermented black bean paste, and the deeply umami <em>doubanjiang</em> (fermented broad bean and chilli paste) â€” build a base of flavour that the spice then intensifies rather than replaces. This is a cuisine of complexity disguised as fire.</p>
+        <p>The province itself sits in a fertile, humid basin â€” a climate the Chinese describe as "the land of abundance." Its geography historically made it somewhat isolated, and that isolation bred a confident, self-sufficient food culture. Today it is the most globally exported of China's eight great culinary traditions.</p>
         <div class="dish-pills">
           <span class="dish-pill">Mapo Tofu</span>
           <span class="dish-pill">Chongqing Hot Pot</span>
@@ -485,15 +475,15 @@
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Cantonese Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Cantonese â”€â”€ -->
   <div class="divider"><span>Style Two</span></div>
   <div id="cantonese">
     <h2><span class="h2-num">Cantonese</span> The Art of Restraint</h2>
     <div class="cuisine-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸Â«â€“</div>
+        <div class="card-icon">ðŸ«–</div>
         <div>
-          <div class="card-region">South China &nbsp;Ã‚Â·&nbsp; Guangdong Province</div>
+          <div class="card-region">South China &nbsp;Â·&nbsp; Guangdong Province</div>
           <div class="card-title">Cantonese Cuisine &nbsp;<span>(Yue Cai)</span></div>
         </div>
       </div>
@@ -503,10 +493,10 @@
           <span class="ftag umami">Fresh</span>
           <span class="ftag sweet">Delicate</span>
         </div>
-        <p>If Sichuan is the cuisine of fire, Cantonese is the cuisine of water Ã¢â‚¬â€ clean, clear, and utterly committed to the natural flavour of the ingredient. Originating in Guangdong Province in southern China, Cantonese cooking operates on the philosophy that the best ingredient, treated with the lightest hand, produces the best dish. Heavy sauces are an admission of defeat. Great technique, by contrast, is invisible.</p>
-        <p>Steaming is the dominant technique of the Cantonese kitchen. A whole fish steamed over aromatics and finished with hot oil and light soy sauce is a lesson in what food can be when nothing is hidden. Stir-frying Ã¢â‚¬â€ done at ferocious wok heat to produce the elusive <em>wok hei</em>, that smoky, slightly charred breath that no home kitchen can fully replicate Ã¢â‚¬â€ is the second great method.</p>
-        <p>Cantonese cuisine is also the origin of <strong>Dim Sum</strong> Ã¢â‚¬â€ the extraordinary tradition of small, steamed and fried dumplings, buns, rolls, and sweets served in bamboo baskets alongside tea (<em>yum cha</em>, meaning "drink tea"). Dim Sum is one of the world's great brunch cultures and one of the most technically demanding areas of pastry and dough work in any kitchen.</p>
-        <p>Because Guangdong was the province from which the vast majority of Chinese emigrants to Southeast Asia, the Americas, and Europe departed in the 19th and 20th centuries, Cantonese became the default "Chinese food" of the diaspora. The world's idea of Chinese cuisine Ã¢â‚¬â€ roast duck gleaming under restaurant lights, steaming baskets of har gow, crispy spring rolls Ã¢â‚¬â€ is overwhelmingly Cantonese in origin.</p>
+        <p>If Sichuan is the cuisine of fire, Cantonese is the cuisine of water â€” clean, clear, and utterly committed to the natural flavour of the ingredient. Originating in Guangdong Province in southern China, Cantonese cooking operates on the philosophy that the best ingredient, treated with the lightest hand, produces the best dish. Heavy sauces are an admission of defeat. Great technique, by contrast, is invisible.</p>
+        <p>Steaming is the dominant technique of the Cantonese kitchen. A whole fish steamed over aromatics and finished with hot oil and light soy sauce is a lesson in what food can be when nothing is hidden. Stir-frying â€” done at ferocious wok heat to produce the elusive <em>wok hei</em>, that smoky, slightly charred breath that no home kitchen can fully replicate â€” is the second great method.</p>
+        <p>Cantonese cuisine is also the origin of <strong>Dim Sum</strong> â€” the extraordinary tradition of small, steamed and fried dumplings, buns, rolls, and sweets served in bamboo baskets alongside tea (<em>yum cha</em>, meaning "drink tea"). Dim Sum is one of the world's great brunch cultures and one of the most technically demanding areas of pastry and dough work in any kitchen.</p>
+        <p>Because Guangdong was the province from which the vast majority of Chinese emigrants to Southeast Asia, the Americas, and Europe departed in the 19th and 20th centuries, Cantonese became the default "Chinese food" of the diaspora. The world's idea of Chinese cuisine â€” roast duck gleaming under restaurant lights, steaming baskets of har gow, crispy spring rolls â€” is overwhelmingly Cantonese in origin.</p>
         <div class="dish-pills">
           <span class="dish-pill">Har Gow (Prawn Dumpling)</span>
           <span class="dish-pill">Char Siu (BBQ Pork)</span>
@@ -518,15 +508,15 @@
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Hunan Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Hunan â”€â”€ -->
   <div class="divider"><span>Style Three</span></div>
   <div id="hunan">
     <h2><span class="h2-num">Hunan</span> Hotter Than You Think</h2>
     <div class="cuisine-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸â€Â¥</div>
+        <div class="card-icon">ðŸ”¥</div>
         <div>
-          <div class="card-region">Central Southern China &nbsp;Ã‚Â·&nbsp; Hunan Province</div>
+          <div class="card-region">Central Southern China &nbsp;Â·&nbsp; Hunan Province</div>
           <div class="card-title">Hunan Cuisine &nbsp;<span>(Xiang Cai)</span></div>
         </div>
       </div>
@@ -536,9 +526,9 @@
           <span class="ftag sour">Sour/Pickled</span>
           <span class="ftag bold">Garlic-Forward</span>
         </div>
-        <p>The great debate of Chinese gastronomy: which is spicier Ã¢â‚¬â€ Sichuan or Hunan? Sichuan practitioners argue for complexity. Hunan cooks argue for honesty. Both sides have a point, but most heat-lovers who have spent time in Changsha, Hunan's capital, will tell you that Hunan food is the more direct, more purely incendiary of the two. Where Sichuan numbs, Hunan burns.</p>
-        <p>Hunan cuisine uses fresh chillies rather than dried, which produces a different, sharper, more straightforward heat. Garlic is used in quantities that would be considered extreme in almost any other culinary tradition. And uniquely, Hunan cooking incorporates sour, pickled flavours to balance and extend the chilli's intensity Ã¢â‚¬â€ making it a cuisine of deliberate contrasts rather than single-note heat.</p>
-        <p>Mao Zedong, arguably China's most consequential 20th-century figure, was Hunanese and famously devoted to his province's food. He is said to have described Hunan pepper as fuel for revolution Ã¢â‚¬â€ a claim that any chef who has tried to cook the region's smoked meats and fermented vegetables might find entirely plausible.</p>
+        <p>The great debate of Chinese gastronomy: which is spicier â€” Sichuan or Hunan? Sichuan practitioners argue for complexity. Hunan cooks argue for honesty. Both sides have a point, but most heat-lovers who have spent time in Changsha, Hunan's capital, will tell you that Hunan food is the more direct, more purely incendiary of the two. Where Sichuan numbs, Hunan burns.</p>
+        <p>Hunan cuisine uses fresh chillies rather than dried, which produces a different, sharper, more straightforward heat. Garlic is used in quantities that would be considered extreme in almost any other culinary tradition. And uniquely, Hunan cooking incorporates sour, pickled flavours to balance and extend the chilli's intensity â€” making it a cuisine of deliberate contrasts rather than single-note heat.</p>
+        <p>Mao Zedong, arguably China's most consequential 20th-century figure, was Hunanese and famously devoted to his province's food. He is said to have described Hunan pepper as fuel for revolution â€” a claim that any chef who has tried to cook the region's smoked meats and fermented vegetables might find entirely plausible.</p>
         <div class="dish-pills">
           <span class="dish-pill">Spicy Steamed Fish Head</span>
           <span class="dish-pill">Chairman Mao's Red Braised Pork</span>
@@ -549,15 +539,15 @@
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Shandong Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Shandong â”€â”€ -->
   <div class="divider"><span>Style Four</span></div>
   <div id="shandong">
     <h2><span class="h2-num">Shandong</span> The Mother of Northern Chinese Cooking</h2>
     <div class="cuisine-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸Å’Å </div>
+        <div class="card-icon">ðŸŒŠ</div>
         <div>
-          <div class="card-region">North China &nbsp;Ã‚Â·&nbsp; Shandong Province</div>
+          <div class="card-region">North China &nbsp;Â·&nbsp; Shandong Province</div>
           <div class="card-title">Shandong Cuisine &nbsp;<span>(Lu Cai)</span></div>
         </div>
       </div>
@@ -568,8 +558,8 @@
           <span class="ftag umami">Rich Umami</span>
         </div>
         <p>Shandong is considered the oldest and most historically influential of China's eight culinary traditions. Its dominance of the northern cooking world is so complete that many of the dishes served at the Imperial Court in Beijing across the dynastic period were rooted in Shandong techniques and ingredients. The province borders the Yellow Sea to the east, giving it abundant seafood, and its fertile plains produce wheat that became the foundation of the north's noodle and dumpling culture.</p>
-        <p>Lu cuisine, as it is known formally, is characterised by bold, honest flavours Ã¢â‚¬â€ salty, slightly vinegary, and rich with a kind of savoury depth that comes from mastery of clear broths and careful stock-making. Unlike the spice-forward traditions of the south and southwest, Shandong favours a more classical approach: the quality of the broth, the precision of the knife work, and the correctness of the technique.</p>
-        <p>Roasted and braised meats are a northern staple, as are dumplings Ã¢â‚¬â€ <em>jiaozi</em> Ã¢â‚¬â€ whose quality in Shandong is a matter of serious provincial pride. The province's proximity to Beijing also means that many of the capital's signature dishes, including Peking Duck's spiritual ancestors, trace their lineage here.</p>
+        <p>Lu cuisine, as it is known formally, is characterised by bold, honest flavours â€” salty, slightly vinegary, and rich with a kind of savoury depth that comes from mastery of clear broths and careful stock-making. Unlike the spice-forward traditions of the south and southwest, Shandong favours a more classical approach: the quality of the broth, the precision of the knife work, and the correctness of the technique.</p>
+        <p>Roasted and braised meats are a northern staple, as are dumplings â€” <em>jiaozi</em> â€” whose quality in Shandong is a matter of serious provincial pride. The province's proximity to Beijing also means that many of the capital's signature dishes, including Peking Duck's spiritual ancestors, trace their lineage here.</p>
         <div class="dish-pills">
           <span class="dish-pill">Sweet &amp; Sour Yellow River Carp</span>
           <span class="dish-pill">Braised Sea Cucumber</span>
@@ -580,15 +570,15 @@
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Jiangsu & Zhejiang Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Jiangsu & Zhejiang â”€â”€ -->
   <div class="divider"><span>Style Five</span></div>
   <div id="jiangsu">
     <h2><span class="h2-num">Jiangsu &amp; Zhejiang</span> The Refinement of Eastern China</h2>
     <div class="cuisine-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸Ââ€“</div>
+        <div class="card-icon">ðŸ–</div>
         <div>
-          <div class="card-region">East China &nbsp;Ã‚Â·&nbsp; Jiangsu &amp; Zhejiang Provinces</div>
+          <div class="card-region">East China &nbsp;Â·&nbsp; Jiangsu &amp; Zhejiang Provinces</div>
           <div class="card-title">Su-Zhe Cuisine &nbsp;<span>(Su Cai / Zhe Cai)</span></div>
         </div>
       </div>
@@ -598,9 +588,9 @@
           <span class="ftag mild">Delicate</span>
           <span class="ftag umami">Freshwater Umami</span>
         </div>
-        <p>The river delta region around Shanghai, Hangzhou, and Suzhou has long been called the "land of fish and rice" Ã¢â‚¬â€ a phrase that captures not just the abundance of the region's natural larder but the elegance with which it is used. Jiangsu and Zhejiang cuisines share a family resemblance: both prize fresh, seasonal ingredients, both favour sweetness in their seasoning profiles, and both are known for extraordinarily delicate, labour-intensive preparation.</p>
-        <p>The signature technique of this region is slow braising Ã¢â‚¬â€ long, patient cooking in a mixture of soy sauce, rice wine, sugar, and aromatics that produces dishes of extraordinary tenderness and depth. <strong>Dongpo Pork</strong> is the great icon of this tradition: thick slabs of skin-on pork belly, braised for hours until the fat becomes translucent, the skin silken, and the meat falls apart at a touch. It is named after the Song Dynasty poet Su Dongpo and is as close to poetry as pork belly can reasonably aspire to be.</p>
-        <p>Zhejiang's most internationally celebrated contribution is perhaps <strong>Longjing Shrimp</strong> Ã¢â‚¬â€ freshwater shrimp wok-tossed with the leaves of Longjing (Dragon Well) green tea. The dish is a meditation on ingredient purity: the faint vegetal bitterness of the tea leaves counterbalancing the natural sweetness of the shrimp in a way that requires no other flavouring.</p>
+        <p>The river delta region around Shanghai, Hangzhou, and Suzhou has long been called the "land of fish and rice" â€” a phrase that captures not just the abundance of the region's natural larder but the elegance with which it is used. Jiangsu and Zhejiang cuisines share a family resemblance: both prize fresh, seasonal ingredients, both favour sweetness in their seasoning profiles, and both are known for extraordinarily delicate, labour-intensive preparation.</p>
+        <p>The signature technique of this region is slow braising â€” long, patient cooking in a mixture of soy sauce, rice wine, sugar, and aromatics that produces dishes of extraordinary tenderness and depth. <strong>Dongpo Pork</strong> is the great icon of this tradition: thick slabs of skin-on pork belly, braised for hours until the fat becomes translucent, the skin silken, and the meat falls apart at a touch. It is named after the Song Dynasty poet Su Dongpo and is as close to poetry as pork belly can reasonably aspire to be.</p>
+        <p>Zhejiang's most internationally celebrated contribution is perhaps <strong>Longjing Shrimp</strong> â€” freshwater shrimp wok-tossed with the leaves of Longjing (Dragon Well) green tea. The dish is a meditation on ingredient purity: the faint vegetal bitterness of the tea leaves counterbalancing the natural sweetness of the shrimp in a way that requires no other flavouring.</p>
         <div class="dish-pills">
           <span class="dish-pill">Dongpo Pork</span>
           <span class="dish-pill">Longjing Shrimp</span>
@@ -612,15 +602,15 @@
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Fujian Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Fujian â”€â”€ -->
   <div class="divider"><span>Style Six</span></div>
   <div id="fujian">
     <h2><span class="h2-num">Fujian</span> The Deep Umami of the Coast</h2>
     <div class="cuisine-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸Â¦Å¾</div>
+        <div class="card-icon">ðŸ¦ž</div>
         <div>
-          <div class="card-region">Southeast China &nbsp;Ã‚Â·&nbsp; Fujian Province</div>
+          <div class="card-region">Southeast China &nbsp;Â·&nbsp; Fujian Province</div>
           <div class="card-title">Fujian Cuisine &nbsp;<span>(Min Cai)</span></div>
         </div>
       </div>
@@ -630,9 +620,9 @@
           <span class="ftag mild">Subtle Heat</span>
           <span class="ftag bold">Complex Broth</span>
         </div>
-        <p>Fujian Province hugs the southeastern coast of China, facing Taiwan across the strait, and its cuisine reflects a maritime civilisation that has been fishing, fermenting, and slow-cooking premium seafood for millennia. Min cuisine is above all a cuisine of <strong>umami</strong> Ã¢â‚¬â€ that fifth taste of deep, savoury, almost meaty richness Ã¢â‚¬â€ built through complex stocks, careful use of dried and fermented seafood products, and long, slow cooking methods that extract maximum flavour from every ingredient.</p>
-        <p>The greatest showpiece of Fujian cooking is a dish so extraordinarily complex Ã¢â‚¬â€ in both its ingredient list and its preparation Ã¢â‚¬â€ that it is said to produce an aroma so irresistible that even a Buddhist monk would abandon the monastery to eat it. Its name: <strong>Buddha Jumps Over the Wall</strong> (<em>FÃƒÂ³ tiÃƒÂ o qiÃƒÂ¡ng</em>). The original recipe contains abalone, sea cucumber, shark fin, fish maw, scallops, quail eggs, Jinhua ham, pork belly, and chicken, all slow-cooked together in Shaoxing rice wine and broth for the better part of a day. It is the culinary equivalent of a symphony Ã¢â‚¬â€ every ingredient playing a role in a unified whole that no single ingredient could achieve alone.</p>
-        <p>Fujian is also notable for its tradition of <em>red wine lees cooking</em> Ã¢â‚¬â€ using the fermented residue of red rice wine to marinate and braise proteins, producing a distinctive ruddy colour and a complex, sweet-savoury depth that is entirely unique to the region.</p>
+        <p>Fujian Province hugs the southeastern coast of China, facing Taiwan across the strait, and its cuisine reflects a maritime civilisation that has been fishing, fermenting, and slow-cooking premium seafood for millennia. Min cuisine is above all a cuisine of <strong>umami</strong> â€” that fifth taste of deep, savoury, almost meaty richness â€” built through complex stocks, careful use of dried and fermented seafood products, and long, slow cooking methods that extract maximum flavour from every ingredient.</p>
+        <p>The greatest showpiece of Fujian cooking is a dish so extraordinarily complex â€” in both its ingredient list and its preparation â€” that it is said to produce an aroma so irresistible that even a Buddhist monk would abandon the monastery to eat it. Its name: <strong>Buddha Jumps Over the Wall</strong> (<em>FÃ³ tiÃ o qiÃ¡ng</em>). The original recipe contains abalone, sea cucumber, shark fin, fish maw, scallops, quail eggs, Jinhua ham, pork belly, and chicken, all slow-cooked together in Shaoxing rice wine and broth for the better part of a day. It is the culinary equivalent of a symphony â€” every ingredient playing a role in a unified whole that no single ingredient could achieve alone.</p>
+        <p>Fujian is also notable for its tradition of <em>red wine lees cooking</em> â€” using the fermented residue of red rice wine to marinate and braise proteins, producing a distinctive ruddy colour and a complex, sweet-savoury depth that is entirely unique to the region.</p>
         <div class="dish-pills">
           <span class="dish-pill">Buddha Jumps Over the Wall</span>
           <span class="dish-pill">Oyster Omelette</span>
@@ -643,15 +633,15 @@
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Anhui Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Anhui â”€â”€ -->
   <div class="divider"><span>Style Seven</span></div>
   <div id="anhui">
     <h2><span class="h2-num">Anhui</span> Mountain Kitchen, Ancient Methods</h2>
     <div class="cuisine-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸Å’Â¿</div>
+        <div class="card-icon">ðŸŒ¿</div>
         <div>
-          <div class="card-region">Inland East China &nbsp;Ã‚Â·&nbsp; Anhui Province</div>
+          <div class="card-region">Inland East China &nbsp;Â·&nbsp; Anhui Province</div>
           <div class="card-title">Anhui Cuisine &nbsp;<span>(Hui Cai)</span></div>
         </div>
       </div>
@@ -662,8 +652,8 @@
           <span class="ftag smoky">Slow-Cooked</span>
         </div>
         <p>Anhui is perhaps the least internationally known of the eight great culinary traditions, yet for those who know it, it is among the most deeply satisfying. Landlocked and mountainous, Anhui's food culture developed without the luxury of fresh coastal seafood, instead turning to the remarkable biodiversity of its mountain forests and river valleys. Wild mushrooms, bamboo shoots, mountain herbs, freshwater fish and turtle, and locally foraged greens form the backbone of Anhui cooking.</p>
-        <p>The dominant techniques are braising and stewing Ã¢â‚¬â€ long, patient methods that allow tough mountain ingredients like wild boar or mountain goat to become tender and yielding while absorbing the flavours of the pot. Anhui cooks are also masters of using preserved and dried ingredients: dried bamboo shoots, salted fish, and fermented vegetables all feature prominently, adding layers of concentrated flavour that fresh ingredients alone cannot provide.</p>
-        <p>Ham is an Anhui signature. Jiangsu's Jinhua Ham Ã¢â‚¬â€ used in dishes across multiple Chinese culinary traditions Ã¢â‚¬â€ draws its heritage in part from Hui techniques of dry-curing and long ageing. The use of ham as both a seasoning agent and a main ingredient runs deep in this cuisine's identity.</p>
+        <p>The dominant techniques are braising and stewing â€” long, patient methods that allow tough mountain ingredients like wild boar or mountain goat to become tender and yielding while absorbing the flavours of the pot. Anhui cooks are also masters of using preserved and dried ingredients: dried bamboo shoots, salted fish, and fermented vegetables all feature prominently, adding layers of concentrated flavour that fresh ingredients alone cannot provide.</p>
+        <p>Ham is an Anhui signature. Jiangsu's Jinhua Ham â€” used in dishes across multiple Chinese culinary traditions â€” draws its heritage in part from Hui techniques of dry-curing and long ageing. The use of ham as both a seasoning agent and a main ingredient runs deep in this cuisine's identity.</p>
         <div class="dish-pills">
           <span class="dish-pill">Braised Soft-Shell Turtle</span>
           <span class="dish-pill">Stinky Mandarin Fish</span>
@@ -675,20 +665,20 @@
 
     <div class="callout note">
       <div class="callout-head">Culinary Note</div>
-      <p>The "Eight Great Traditions" (Ã¥â€¦Â«Ã¥Â¤Â§Ã¨ÂÅ“Ã§Â³Â») is the most commonly cited framework, though some Chinese culinary scholars extend the list to include Beijing (Jing), Shanghai (Hu), and Shanxi (Jin) as distinct traditions. For the working hospitality professional, the eight provide a complete and practical map of the major flavour territories.</p>
+      <p>The "Eight Great Traditions" (å…«å¤§èœç³») is the most commonly cited framework, though some Chinese culinary scholars extend the list to include Beijing (Jing), Shanghai (Hu), and Shanxi (Jin) as distinct traditions. For the working hospitality professional, the eight provide a complete and practical map of the major flavour territories.</p>
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Indo-Chinese Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Indo-Chinese â”€â”€ -->
   <div class="divider"><span>The India Chapter</span></div>
   <div id="indochinese">
     <h2 class="jade-head"><span class="h2-num" style="color:var(--jade)">Indo-Chinese</span> The Cuisine India Made Its Own</h2>
 
     <div class="cuisine-card indo-card">
       <div class="card-head">
-        <div class="card-icon">Ã°Å¸â€¡Â®Ã°Å¸â€¡Â³</div>
+        <div class="card-icon">ðŸ‡®ðŸ‡³</div>
         <div>
-          <div class="card-region">India &nbsp;Ã‚Â·&nbsp; Born in Kolkata, Spread Everywhere</div>
+          <div class="card-region">India &nbsp;Â·&nbsp; Born in Kolkata, Spread Everywhere</div>
           <div class="card-title">Indo-Chinese Cuisine &nbsp;<span>(Hakka Fusion)</span></div>
         </div>
       </div>
@@ -699,17 +689,17 @@
           <span class="ftag bold">Wok-Kissed</span>
           <span class="ftag umami">Soy-Garlic Depth</span>
         </div>
-        <p>In the late 19th century, Hakka Chinese immigrants Ã¢â‚¬â€ many from Fujian and neighbouring provinces Ã¢â‚¬â€ began settling in Kolkata (then Calcutta), drawn by the city's commercial energy under British India. These immigrants brought with them the wok, their techniques, and their pantry of soy sauce, rice vinegar, and sesame oil. What they found in India was a pantry of a very different kind: green chillies, fresh ginger, garlic in industrial quantities, turmeric, garam masala, and an audience whose palate had been shaped by centuries of bold, spiced, deeply aromatic cooking.</p>
-        <p>The result was not a compromise. It was a revolution. <strong>Indo-Chinese cuisine</strong> Ã¢â‚¬â€ sometimes called Hakka Chinese in India Ã¢â‚¬â€ took the structural vocabulary of Chinese cooking (the wok stir-fry, the clear sauce, the noodle, the dumpling) and rewrote every sentence in it with Indian spices and Indian heat levels. Dishes like <strong>Chicken Manchurian</strong> (invented, by the most credible account, by Nelson Wang at the Cricket Club of India in Mumbai in 1975) became a phenomenon so successful that they are now listed in cookbooks as if they had always existed.</p>
-        <p>Indo-Chinese is today one of the most popular cuisine categories across India Ã¢â‚¬â€ from street food stalls in Kolkata's Tiretti Bazaar to fine dining menus in Mumbai and Bangalore. It occupies a unique cultural position: it is Chinese enough to feel exotic, Indian enough to feel familiar, and bold enough to feel satisfying. Every element of its appeal is a product of that original, extraordinary cultural collision between two of the world's great food civilisations.</p>
+        <p>In the late 19th century, Hakka Chinese immigrants â€” many from Fujian and neighbouring provinces â€” began settling in Kolkata (then Calcutta), drawn by the city's commercial energy under British India. These immigrants brought with them the wok, their techniques, and their pantry of soy sauce, rice vinegar, and sesame oil. What they found in India was a pantry of a very different kind: green chillies, fresh ginger, garlic in industrial quantities, turmeric, garam masala, and an audience whose palate had been shaped by centuries of bold, spiced, deeply aromatic cooking.</p>
+        <p>The result was not a compromise. It was a revolution. <strong>Indo-Chinese cuisine</strong> â€” sometimes called Hakka Chinese in India â€” took the structural vocabulary of Chinese cooking (the wok stir-fry, the clear sauce, the noodle, the dumpling) and rewrote every sentence in it with Indian spices and Indian heat levels. Dishes like <strong>Chicken Manchurian</strong> (invented, by the most credible account, by Nelson Wang at the Cricket Club of India in Mumbai in 1975) became a phenomenon so successful that they are now listed in cookbooks as if they had always existed.</p>
+        <p>Indo-Chinese is today one of the most popular cuisine categories across India â€” from street food stalls in Kolkata's Tiretti Bazaar to fine dining menus in Mumbai and Bangalore. It occupies a unique cultural position: it is Chinese enough to feel exotic, Indian enough to feel familiar, and bold enough to feel satisfying. Every element of its appeal is a product of that original, extraordinary cultural collision between two of the world's great food civilisations.</p>
 
         <h3>The Building Blocks of Indo-Chinese Cooking</h3>
-        <p>What makes Indo-Chinese food distinctive is the way it handles its two culinary inheritances. From the Chinese side, it borrows the wok technique (high heat, fast cooking, constant motion), soy sauce as the primary seasoning agent, rice vinegar for sourness, sesame oil for finish, and the structural forms Ã¢â‚¬â€ noodle dishes, fried rice, dumplings, and clear soups. From the Indian side, it borrows the flavour profile: fresh green chillies instead of dried red ones, fresh ginger and garlic used in far larger quantities than in original Chinese cooking, spring onions treated as a primary herb rather than a garnish, and occasionally the warmth of cumin or coriander to give dishes an unmistakably subcontinent character.</p>
-        <p>The sauces of Indo-Chinese cooking Ã¢â‚¬â€ Manchurian sauce, chilli sauce, schezwan sauce (an Indian adaptation of Sichuan flavours, notably spicier and less nuanced than the original) Ã¢â‚¬â€ are entirely homegrown. They exist nowhere in China, and they are beloved by virtually every Indian who has ever eaten from a Chinese street stall. This is the mark of a cuisine that has genuinely taken root: it creates its own traditions.</p>
+        <p>What makes Indo-Chinese food distinctive is the way it handles its two culinary inheritances. From the Chinese side, it borrows the wok technique (high heat, fast cooking, constant motion), soy sauce as the primary seasoning agent, rice vinegar for sourness, sesame oil for finish, and the structural forms â€” noodle dishes, fried rice, dumplings, and clear soups. From the Indian side, it borrows the flavour profile: fresh green chillies instead of dried red ones, fresh ginger and garlic used in far larger quantities than in original Chinese cooking, spring onions treated as a primary herb rather than a garnish, and occasionally the warmth of cumin or coriander to give dishes an unmistakably subcontinent character.</p>
+        <p>The sauces of Indo-Chinese cooking â€” Manchurian sauce, chilli sauce, schezwan sauce (an Indian adaptation of Sichuan flavours, notably spicier and less nuanced than the original) â€” are entirely homegrown. They exist nowhere in China, and they are beloved by virtually every Indian who has ever eaten from a Chinese street stall. This is the mark of a cuisine that has genuinely taken root: it creates its own traditions.</p>
 
         <div class="callout india">
-          <div class="callout-head">The India Angle Ã¢â‚¬â€ For Hospitality Professionals</div>
-          <p>Any F&amp;B professional working in India who is developing a Chinese menu must understand that the local guest's baseline expectation is Indo-Chinese. They know Hakka Noodles, Chicken Manchurian, and Chilli Paneer. Authentic regional Chinese styles Ã¢â‚¬â€ Sichuan, Cantonese, Shanghainese Ã¢â‚¬â€ can absolutely succeed in the Indian market, but they succeed best when the menu acknowledges this cultural context and serves as an education, not a replacement. The smart approach is to build bridges: let Indo-Chinese anchor the familiar, and let the eight great traditions extend the experience.</p>
+          <div class="callout-head">The India Angle â€” For Hospitality Professionals</div>
+          <p>Any F&amp;B professional working in India who is developing a Chinese menu must understand that the local guest's baseline expectation is Indo-Chinese. They know Hakka Noodles, Chicken Manchurian, and Chilli Paneer. Authentic regional Chinese styles â€” Sichuan, Cantonese, Shanghainese â€” can absolutely succeed in the Indian market, but they succeed best when the menu acknowledges this cultural context and serves as an education, not a replacement. The smart approach is to build bridges: let Indo-Chinese anchor the familiar, and let the eight great traditions extend the experience.</p>
         </div>
 
         <div class="dish-pills">
@@ -725,19 +715,19 @@
     </div>
   </div>
 
-  <!-- Ã¢â€â‚¬Ã¢â€â‚¬ Closing Ã¢â€â‚¬Ã¢â€â‚¬ -->
+  <!-- â”€â”€ Closing â”€â”€ -->
   <div class="divider"><span>Final Thoughts</span></div>
   <h2><span class="h2-num">In Closing</span> One Country, Many Kitchens</h2>
 
   <p>Understanding Chinese cuisine is, at its core, understanding that geography shapes flavour. The cold north builds dumplings and clear broths for warmth. The humid southwest reaches for pepper and chilli to cut through the heat. The coastal southeast turns to the ocean for its deepest umami. The inland mountains go to the forest floor. Every major tradition in Chinese cooking is, in a sense, a response to its landscape.</p>
 
-  <p>For those of us working in hospitality Ã¢â‚¬â€ designing menus, training kitchen brigades, managing guest expectations Ã¢â‚¬â€ this knowledge is not merely academic. A guest who orders Sichuan food and receives a mild stir-fry has been served the wrong dish. A menu that presents itself as "Chinese" without specifying its regional identity is making a promise it may not be able to keep. And in India, a Chinese menu that ignores the extraordinary, beloved, entirely home-grown tradition of Indo-Chinese is simply missing its market.</p>
+  <p>For those of us working in hospitality â€” designing menus, training kitchen brigades, managing guest expectations â€” this knowledge is not merely academic. A guest who orders Sichuan food and receives a mild stir-fry has been served the wrong dish. A menu that presents itself as "Chinese" without specifying its regional identity is making a promise it may not be able to keep. And in India, a Chinese menu that ignores the extraordinary, beloved, entirely home-grown tradition of Indo-Chinese is simply missing its market.</p>
 
   <p>Great food is always geography made edible. The eight traditions of Chinese cuisine, and the remarkable ninth that India created from their legacy, are among the most vivid examples of that truth that the culinary world has to offer.</p>
 
   <blockquote>
     <p>The wok does not care which country it is in. It only cares that the flame is high, the oil is hot, and the cook knows what they are doing.</p>
-    <cite>Ã¢â‚¬â€ Nigel Anthony Thomas</cite>
+    <cite>â€” Nigel Anthony Thomas</cite>
   </blockquote>
 
   <p style="margin-top:44px; font-size:.83rem; color:var(--muted);">
@@ -752,5 +742,4 @@
 
 </body>
 </html>
-
 

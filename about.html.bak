@@ -1,8 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head> 
-<meta name="google-site-verification" content="your-verification-code-here">
- 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
 <script>
@@ -287,14 +285,6 @@ height:220px;
 }
 
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMGQCZGTQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KMGQCZGTQX');
-</script>
 </head>
 
 <body>
@@ -334,8 +324,8 @@ height:220px;
 <h1>Nigel A Thomas</h1>
 
 <h2>
-Hospitality Trainer â€¢ Certified Hospitality Supervisor (CHS) â€¢
-ServSafe Food Protection Manager â€¢ International Hotel, Resort &amp; Cruise Operations Specialist
+Hospitality Trainer • Certified Hospitality Supervisor (CHS) •
+ServSafe Food Protection Manager • International Hotel, Resort &amp; Cruise Operations Specialist
 </h2>
 
 <p>Welcome to my professional hospitality portfolio.</p>
@@ -365,12 +355,12 @@ Today, I continue to contribute to the hospitality profession through training, 
 </p>
 
 <p>
-Hospitality is more than a profession â€” it is a commitment to creating memorable experiences, building lasting relationships, and serving others with professionalism, integrity, and genuine care. Throughout my career, I have remained dedicated to continuous learning and helping hospitality professionals achieve excellence in every aspect of their work.
+Hospitality is more than a profession — it is a commitment to creating memorable experiences, building lasting relationships, and serving others with professionalism, integrity, and genuine care. Throughout my career, I have remained dedicated to continuous learning and helping hospitality professionals achieve excellence in every aspect of their work.
 </p>
 
 <div class="hero-buttons">
-<a href="/certifications.html" class="hero-btn">ðŸ† Certifications</a>
-<a href="/blog.html" class="hero-btn">ðŸ“š Read Blog</a>
+<a href="/certifications.html" class="hero-btn">🏆 Certifications</a>
+<a href="/blog.html" class="hero-btn">📚 Read Blog</a>
 </div>
 
 </div>
@@ -388,11 +378,11 @@ Hospitality is more than a profession â€” it is a commitment to creating me
 
 <div class="card">
 
-<h3>ðŸ’¬ Professional Philosophy</h3>
+<h3>💬 Professional Philosophy</h3>
 
   <div class="card">
 
-  <h3>ðŸ‘¤ Professional Summary</h3>
+  <h3>👤 Professional Summary</h3>
 
   <p>
   Nigel Thomas is an experienced hospitality professional with over four decades of international industry experience spanning luxury hotels, resorts, cruise ships, food &amp; beverage operations, hospitality supervision, workforce development, and professional training.
@@ -411,40 +401,40 @@ attention to detail, safety and genuine care for every guest."
 
 <div class="card">
 
-<h3>ðŸ’¼ Professional Experience</h3>
+<h3>💼 Professional Experience</h3>
 
 <div class="timeline-item">
-<h4>ðŸ‘¨â€ðŸ« Hospitality Trainer</h4>
+<h4>👨‍🏫 Hospitality Trainer</h4>
 <p>Hospitality Institutes &amp; Professional Development Programs</p>
 <p>Food Safety, F&amp;B Operations, Service Excellence and Workforce Development.</p>
 </div>
 
 <div class="timeline-item">
-<h4>ðŸš¢ Royal Caribbean Cruise Line</h4>
+<h4>🚢 Royal Caribbean Cruise Line</h4>
 <p>Senior Head Bartender</p>
 <p>International cruise hospitality operations and beverage management.</p>
 </div>
 
 <div class="timeline-item">
-<h4>ðŸ¨ Ramada Hotel Abu Dhabi</h4>
+<h4>🏨 Ramada Hotel Abu Dhabi</h4>
 <p>Hospitality Operations</p>
 <p>Guest service and food &amp; beverage operations.</p>
 </div>
 
 <div class="timeline-item">
-<h4>ðŸ¨ Le MÃ©ridien Abu Dhabi</h4>
+<h4>🏨 Le Méridien Abu Dhabi</h4>
 <p>Commis de Rang</p>
 <p>Luxury dining and hospitality service standards.</p>
 </div>
 
 <div class="timeline-item">
-<h4>ðŸ¸ Spinneys Abu Dhabi</h4>
+<h4>🍸 Spinneys Abu Dhabi</h4>
 <p>Head Barman</p>
 <p>Beverage operations and customer service leadership.</p>
 </div>
 
 <div class="timeline-item">
-<h4>ðŸ–ï¸ Nanidam Resort &amp; CafÃ©</h4>
+<h4>🏖️ Nanidam Resort &amp; Café</h4>
 <p>Hospitality Operations &amp; Training</p>
 <p>Supporting hospitality standards and guest satisfaction.</p>
 </div>
@@ -453,7 +443,7 @@ attention to detail, safety and genuine care for every guest."
 
 <div class="card">
 
-<h3>ðŸŽ¯ Areas of Expertise</h3>
+<h3>🎯 Areas of Expertise</h3>
 
 <div class="skills">
 <span class="skill">Food Safety</span>
@@ -480,7 +470,7 @@ attention to detail, safety and genuine care for every guest."
 
 <div class="card">
 
-<h3>ðŸ† Career Highlights</h3>
+<h3>🏆 Career Highlights</h3>
 
 <div class="stats">
 
@@ -510,7 +500,7 @@ attention to detail, safety and genuine care for every guest."
 
 <div class="card">
 
-<h3>ðŸ“œ Key Certifications</h3>
+<h3>📜 Key Certifications</h3>
 
 <ul>
 <li>ServSafe Food Protection Manager</li>
@@ -526,22 +516,22 @@ attention to detail, safety and genuine care for every guest."
 <br>
 
 <a href="/certifications.html" class="hero-btn">
-View All Certifications â†’
+View All Certifications →
 </a>
 
 </div>
 
 <div class="card">
 
-<h3>ðŸŒ Industry Exposure</h3>
+<h3>🌍 Industry Exposure</h3>
 
 <ul>
-<li>ðŸš¢ Cruise Ships</li>
-<li>ðŸ¨ Luxury Hotels</li>
-<li>ðŸ–ï¸ Resorts</li>
-<li>ðŸ½ï¸ Restaurants</li>
-<li>ðŸŽ“ Hospitality Education</li>
-<li>ðŸ‘¨â€ðŸ« Professional Training</li>
+<li>🚢 Cruise Ships</li>
+<li>🏨 Luxury Hotels</li>
+<li>🏖️ Resorts</li>
+<li>🍽️ Restaurants</li>
+<li>🎓 Hospitality Education</li>
+<li>👨‍🏫 Professional Training</li>
 </ul>
 
 </div>
@@ -562,10 +552,10 @@ View All Certifications â†’
 <a href="/contact.html">Contact</a>
 </div>
 
-<p>Â© 2026 Nigel A Thomas â€” Hospitality Trainer &amp; Food Safety Professional</p>
+<p>© 2026 Nigel A Thomas — Hospitality Trainer &amp; Food Safety Professional</p>
 
 <p>
-International Hospitality Experience â€¢ Hotels â€¢ Resorts â€¢ Cruise Ships â€¢ Training
+International Hospitality Experience • Hotels • Resorts • Cruise Ships • Training
 </p>
 
 </footer>
@@ -585,4 +575,3 @@ International Hospitality Experience â€¢ Hotels â€¢ Resorts â€¢ Crui
 </script>
 </body>
 </html>
-

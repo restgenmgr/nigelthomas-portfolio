@@ -1,8 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="your-verification-code-here">
-
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
 <script>
@@ -190,14 +188,6 @@
 
     </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMGQCZGTQX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-KMGQCZGTQX');
-</script>
 </head>
 <body>
     <div class="header">
@@ -248,10 +238,9 @@
             <a href="/terms.html">Terms</a> |
             <a href="/disclaimer.html">Disclaimer</a>
         </p>
-        <p>Founder of <a href="https://www.joblynk.live">JobLynk.live</a> Ã¢â‚¬â€ Career platform for hospitality professionals</p>
-        <p>Ã‚Â© 2025 Nigel Anthony Thomas</p>
+        <p>Founder of <a href="https://www.joblynk.live">JobLynk.live</a> â€” Career platform for hospitality professionals</p>
+        <p>Â© 2025 Nigel Anthony Thomas</p>
     </div>
 </body>
 </html>
-
 
