@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core Pages -->
@@ -68,13 +68,10 @@
     <loc>https://nigelthomas.live/indian-spices-herbs-health-benefits.html</loc>
     <priority>0.8</priority>
   </url>
-  <!-- South Indian Food Styles Article -->
-<url>
-  <loc>https://nigelthomas.live/south-indian-food-styles-udupi-chettinad-nati.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
+  <url>
+    <loc>https://nigelthomas.live/south-indian-food-styles-udupi-chettinad-nati.html</loc>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://nigelthomas.live/menu-planning-engineering.html</loc>
     <priority>0.8</priority>
@@ -91,7 +88,19 @@
     <loc>https://nigelthomas.live/street-food-india.html</loc>
     <priority>0.8</priority>
   </url>
-  <loc>https://nigelthomas.live/restaurant-fire-safety-training.html</loc>
+  
+  <!-- Fire Safety Blog -->
+  <url>
+    <loc>https://nigelthomas.live/fire-safety-training-blog.html</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Restaurant SOPs Blog -->
+  <url>
+    <loc>https://nigelthomas.live/restaurant-sop-haccp-fire-safety-compliance-india.html</loc>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Legal Pages -->
   <url>
     <loc>https://nigelthomas.live/privacy-policy.html</loc>
@@ -107,4 +116,3 @@
   </url>
 
 </urlset>
-
