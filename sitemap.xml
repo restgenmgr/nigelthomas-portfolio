@@ -43,3 +43,118 @@
 
 
 
+  <!-- Core Pages -->
+  <url>
+    <loc>https://nigelthomas.live/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/about.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/blog.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/certifications.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://nigelthomas.live/food-temperatures-article.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/House_Manager_Estate_Manager_Hospitality_Manager_Guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/chefs-tools-knives-cutting-boards.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/chinese-culinary-styles-blog.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/cloud-kitchen-catering-operations-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/color-coding-kitchen-housekeeping.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/equal-opportunity-employer-india-usa-europe.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/foh-boh-hierarchy-blog.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/food-allergies-restaurant-awareness.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/homestay-vs-hotels.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/indian-spices-herbs-health-benefits.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <!-- South Indian Food Styles Article -->
+<url>
+  <loc>https://nigelthomas.live/south-indian-food-styles-udupi-chettinad-nati.html</loc>
+  <lastmod>2026-06-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+  <url>
+    <loc>https://nigelthomas.live/menu-planning-engineering.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/mother-sauces-complete-guide.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/qsr-vs-fine-dining.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/street-food-india.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://nigelthomas.live/privacy-policy.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/terms.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nigelthomas.live/disclaimer.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+<url>
+  <loc>https://yourwebsite.com/blog/restaurant-fire-safety-training</loc>
+  <lastmod>2026-06-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+</urlset>
+
+
