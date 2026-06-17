@@ -1,4 +1,4 @@
-# First, replace the file with corrected version
+﻿# First, replace the file with corrected version
 @'
 <!DOCTYPE html>
 <html>
@@ -102,6 +102,15 @@
     </style>
 </head>
 <body>
+<nav class="main-nav">
+    <a href="/index.html">🏠 Home</a>
+    <a href="/about-complete.html">About</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+</nav>
+
     <div class="container">
         <h1>Nigel Thomas</h1>
         <div class="tagline">
@@ -140,4 +149,5 @@
 </body>
 </html>
 '@ | Out-File -FilePath index.html -Encoding UTF8
+
 

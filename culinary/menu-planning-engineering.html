@@ -1,4 +1,4 @@
-cd C:\Users\admin\Desktop\nigelthomas-portfolio; @'
+﻿cd C:\Users\admin\Desktop\nigelthomas-portfolio; @'
 <head>
     <meta charset="UTF-8">
 <!DOCTYPE html> 
@@ -43,6 +43,15 @@ cd C:\Users\admin\Desktop\nigelthomas-portfolio; @'
     </style>
 </head>
 <body>
+<nav class="main-nav">
+    <a href="/index.html">🏠 Home</a>
+    <a href="/about-complete.html">About</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+</nav>
+
     <div class="navbar">
         <div class="nav-container">
             <a href="/" class="logo">Nigel A Thomas</a>
@@ -183,4 +192,5 @@ cd C:\Users\admin\Desktop\nigelthomas-portfolio; @'
 </body>
 </html>
 '@ | Out-File -FilePath menu-planning-engineering-guide.html -Encoding utf8; git add menu-planning-engineering-guide.html; git commit -m "Add complete Menu Planning & Menu Engineering professional guide"; git push origin main --force; npx vercel --prod --force; Write-Host "âœ… Menu Planning article created and deployed!" -ForegroundColor Green
+
 
