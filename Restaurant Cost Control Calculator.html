@@ -7,7 +7,7 @@
     <meta name="description" content="Free restaurant cost control calculator with live food cost, beverage cost, gross profit, labor cost, menu engineering, recipe costing and break-even analysis tools." />
     <meta name="keywords" content="restaurant food cost calculator, recipe costing, beverage cost calculator, gross profit margin, restaurant break-even analysis, food and beverage operations, F&B cost control, restaurant profit calculator" />
     <meta name="author" content="Nigel Anthony Thomas" />
-    <link rel="canonical" href="https://www.nigelthomas.live/tools/restaurant-cost-control-calculator" />
+    <link rel="canonical" href="https://www.nigelthomas.live/Restaurant%20Cost%20Control%20Calculator.html" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
@@ -25,8 +25,7 @@
     <meta property="og:title" content="Restaurant Cost Control Calculator | Food Cost, Beverage Cost, GP & Profit Tools" />
     <meta property="og:description" content="Free restaurant cost control calculator with live food cost, beverage cost, gross profit, labor cost, menu engineering, recipe costing and break-even analysis tools." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.nigelthomas.live/tools/restaurant-cost-control-calculator" />
-    <meta property="og:image" content="https://www.nigelthomas.live/images/restaurant-cost-calculator-og.jpg" />
+    <meta property="og:url" content="https://www.nigelthomas.live/Restaurant%20Cost%20Control%20Calculator.html" />
     <meta property="og:site_name" content="Nigel Thomas" />
 
     <style>
@@ -402,8 +401,6 @@
 <div class="breadcrumb">
     <a href="https://www.nigelthomas.live">Home</a>
     <span>›</span>
-    <a href="https://www.nigelthomas.live/tools">Tools</a>
-    <span>›</span>
     <span>Restaurant Cost Control Calculator</span>
 </div>
 
@@ -684,7 +681,6 @@
     <p>&copy; 2026 Nigel Anthony Thomas &nbsp;|&nbsp; <a href="https://www.nigelthomas.live">nigelthomas.live</a> &nbsp;|&nbsp; <a href="https://www.joblynk.live">JobLynk.live</a></p>
 </footer>
 
-<!-- ===== JAVASCRIPT ===== -->
 <script>
     // --- Food Cost ---
     function calcFoodCost() {
@@ -746,24 +742,6 @@
     // --- Menu Engineering ---
     function calcMenu() {
         const rows = document.querySelectorAll('#menu-body tr:not(.table-total)');
-        let totalPrice = 0, totalCost = 0, totalMargin = 0, totalPct = 0;
-        let count = 0;
-        rows.forEach(row => {
-            const priceInput = row.querySelector('.menu-price');
-            const costInput = row.querySelector('.menu-cost');
-            const marginCell = row.querySelector('.menu-margin');
-            const pctCell = row.querySelector('.menu-pct');
-            const price = parseFloat(priceInput.value) || 0;
-            const cost = parseFloat(costInput.value) || 0;
-            const margin = price - cost;
-            const pct = price > 0 ? (cost / price) * 100 : 0;
-            marginCell.textContent = '$' + margin.toFixed(2);
-            pctCell.textContent = pct.toFixed(2) + '%';
-            if (price > 0 && cost > 0) {
-                totalPrice += price
-    // --- Menu Engineering (continued) ---
-    function calcMenu() {
-        const rows = document.querySelectorAll('#menu-body tr:not(.table-total)');
         let totalPrice = 0, totalCost = 0, totalMargin = 0;
         let count = 0;
         rows.forEach(row => {
@@ -785,57 +763,4 @@
             }
         });
         const avgPrice = count > 0 ? totalPrice / count : 0;
-        const avgCost = count > 0 ? totalCost / count : 0;
-        const avgMargin = count > 0 ? totalMargin / count : 0;
-        const avgPct = avgPrice > 0 ? (avgCost / avgPrice) * 100 : 0;
-        document.getElementById('menu-avg-price').textContent = '$' + avgPrice.toFixed(2);
-        document.getElementById('menu-avg-cost').textContent = '$' + avgCost.toFixed(2);
-        document.getElementById('menu-avg-margin').textContent = '$' + avgMargin.toFixed(2);
-        document.getElementById('menu-avg-pct').textContent = avgPct.toFixed(2) + '%';
-    }
-
-    // --- Break-Even Analysis ---
-    function calcBreakEven() {
-        const fixed = parseFloat(document.getElementById('be-fixed').value) || 0;
-        const variable = parseFloat(document.getElementById('be-variable').value) || 0;
-        const price = parseFloat(document.getElementById('be-price').value) || 0;
-        const cm = price - variable;
-        const units = cm > 0 ? Math.ceil(fixed / cm) : 0;
-        const revenue = units * price;
-        const cmPct = price > 0 ? (cm / price) * 100 : 0;
-        document.getElementById('be-units').textContent = units;
-        document.getElementById('be-revenue').textContent = '$' + revenue.toFixed(2);
-        document.getElementById('be-cmargin').textContent = '$' + cm.toFixed(2);
-        document.getElementById('be-cmargin-pct').textContent = cmPct.toFixed(2) + '%';
-    }
-
-    // --- Daily Operations Summary ---
-    function calcDailySummary() {
-        const revenue = parseFloat(document.getElementById('daily-rev').value) || 0;
-        const cogs = parseFloat(document.getElementById('daily-cogs').value) || 0;
-        const labor = parseFloat(document.getElementById('daily-labor').value) || 0;
-        const overhead = parseFloat(document.getElementById('daily-overhead').value) || 0;
-        const gp = revenue - cogs;
-        const np = gp - labor - overhead;
-        const fcpct = revenue > 0 ? (cogs / revenue) * 100 : 0;
-        const lcpct = revenue > 0 ? (labor / revenue) * 100 : 0;
-        document.getElementById('daily-gp').textContent = '$' + gp.toFixed(2);
-        document.getElementById('daily-np').textContent = '$' + np.toFixed(2);
-        document.getElementById('daily-fcpct').textContent = fcpct.toFixed(2) + '%';
-        document.getElementById('daily-lcpct').textContent = lcpct.toFixed(2) + '%';
-    }
-
-    // --- Initialize all calculators on page load ---
-    window.onload = function() {
-        calcFoodCost();
-        calcBeverageCost();
-        calcGrossProfit();
-        calcLaborCost();
-        calcRecipeCost();
-        calcMenu();
-        calcBreakEven();
-        calcDailySummary();
-    };
-</script>
-</body>
-</html>
+       
