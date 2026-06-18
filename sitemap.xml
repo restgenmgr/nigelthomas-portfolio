@@ -3,50 +3,33 @@
 
     <!-- Main Pages -->
     <url><loc>https://www.nigelthomas.live/</loc><lastmod>2026-06-18</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-    <url><loc>https://www.nigelthomas.live/about.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-    <url><loc>https://www.nigelthomas.live/blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-    <url><loc>https://www.nigelthomas.live/contact.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/certifications.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-    <!-- Legal Pages -->
-    <url><loc>https://www.nigelthomas.live/privacy-policy.html</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-    <url><loc>https://www.nigelthomas.live/terms.html</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
-    <url><loc>https://www.nigelthomas.live/disclaimer.html</loc><lastmod>2026-06-18</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-
-    <!-- Tools -->
-    <url><loc>https://www.nigelthomas.live/Restaurant%20Cost%20Control%20Calculator.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-    <!-- Blog: Hospitality Management -->
-    <url><loc>https://www.nigelthomas.live/House_Manager_Estate_Manager_Hospitality_Manager_Guide.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/foh-boh-hierarchy-blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/homestay-vs-hotels.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/qsr-vs-fine-dining.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/equal-opportunity-employer-india-usa-europe.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
-
-    <!-- Blog: Food Safety -->
-    <url><loc>https://www.nigelthomas.live/food-temperatures-article.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/Food%20Safety%20Temperatures%2C%20Cold%20Chain%20Control%20%26%20Kitchen%20Storage%20Standards.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/fire-safety-training-blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/restaurant-sop-haccp-fire-safety-compliance-india.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/color-coding-kitchen-housekeeping.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/food-allergies-restaurant-awareness.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-    <!-- Blog: Culinary -->
-    <url><loc>https://www.nigelthomas.live/mother-sauces-complete-guide.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/chefs-tools-knives-cutting-boards.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/menu-planning-engineering.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-    <!-- Blog: Regional Food -->
-    <url><loc>https://www.nigelthomas.live/street-food-india.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/south-indian-food-styles-udupi-chettinad-nati.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/indian-spices-herbs-health-benefits.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-    <url><loc>https://www.nigelthomas.live/chinese-culinary-styles-blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-    <!-- Blog: Operations -->
-    <url><loc>https://www.nigelthomas.live/cloud-kitchen-catering-operations-guide.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url><loc>https://www.nigelthomas.live/100-hospitality-interview-questions.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
-    <!-- Misc -->
-    <url><loc>https://www.nigelthomas.live/article_backup.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
-
+    <url><loc>https://www.nigelthomas.live/Restaurant Cost Control Calculator.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/about.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.nigelthomas.live/blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.nigelthomas.live/certifications.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.nigelthomas.live/contact.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.nigelthomas.live/culinary/chefs-tools-knives-cutting-boards.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/culinary/menu-planning-engineering.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/culinary/mother-sauces-complete-guide.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/disclaimer.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+    <url><loc>https://www.nigelthomas.live/fire-safety-training-blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/food-safety/color-coding-kitchen-housekeeping.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/food-safety/food-allergies-restaurant-awareness.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/food-safety/food-temperatures-article.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/food-safety/restaurant-sop-haccp-fire-safety-compliance-india.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/hospitality-management/House_Manager_Estate_Manager_Hospitality_Manager_Guide.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/hospitality-management/equal-opportunity-employer-india-usa-europe.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/hospitality-management/foh-boh-hierarchy-blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/hospitality-management/homestay-vs-hotels.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/hospitality-management/qsr-vs-fine-dining.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/index.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.nigelthomas.live/operations-business/cloud-kitchen-catering-operations-guide.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/partners.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/privacy-policy.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
+    <url><loc>https://www.nigelthomas.live/regional-food/chinese-culinary-styles-blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.nigelthomas.live/regional-food/indian-spices-herbs-health-benefits.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/regional-food/south-indian-food-styles-udupi-chettinad-nati.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/regional-food/street-food-india.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/terms.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.4</priority></url>
 </urlset>
