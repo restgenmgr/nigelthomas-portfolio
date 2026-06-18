@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <!-- Main Pages -->
@@ -38,12 +38,13 @@
 
     <!-- Blog: Regional Food -->
     <url><loc>https://www.nigelthomas.live/street-food-india.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-    <url><loc>https://www.nigelthomas.live/south-indian-food-styles-udupi-chettinad-nati.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.nigelthomas.live/south-indian-food-styles-udupi-chettinad-nati.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url><loc>https://www.nigelthomas.live/indian-spices-herbs-health-benefits.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
     <url><loc>https://www.nigelthomas.live/chinese-culinary-styles-blog.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
     <!-- Blog: Operations -->
     <url><loc>https://www.nigelthomas.live/cloud-kitchen-catering-operations-guide.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.nigelthomas.live/100-hospitality-interview-questions.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
     <!-- Misc -->
     <url><loc>https://www.nigelthomas.live/article_backup.html</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
