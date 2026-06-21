@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-adsense-account" content="ca-pub-4282121192943910">
     <meta name="google-site-verification" content="hDIZHvIzxWFECFJIoXNcGXv6zAGrppBgZ9zFO9OtpCw" />
-    <title>Nigel Thomas | Portfolio & Blog</title>
+    <title>Nigel Thomas | Hospitality Trainer & Consultant</title>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
@@ -93,7 +93,7 @@
             padding: 0 1.5rem;
         }
         
-        .featured-section {
+        .hero-section {
             background: white;
             border-radius: 12px;
             padding: 2rem;
@@ -102,16 +102,27 @@
             margin-bottom: 2.5rem;
         }
         
-        .featured-section h2 {
+        .hero-section h2 {
             color: #8b1a1a;
             font-size: 1.6rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-section p {
+            color: #4a3a3a;
+            font-size: 1.1rem;
+        }
+        
+        .section-title {
+            color: #8b1a1a;
+            font-size: 1.6rem;
+            margin: 2rem 0 1rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
         
-        .featured-section h2::after {
+        .section-title::after {
             content: '';
             flex: 1;
             height: 2px;
@@ -200,18 +211,56 @@
             transform: translateY(-1px);
         }
         
-        .coming-soon {
-            background: #fdf6f0;
-            border-radius: 12px;
-            padding: 1.5rem;
-            border: 2px dashed #e67e22;
-            text-align: center;
-            color: #7a6a5a;
+        .category-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
         }
         
-        .coming-soon h3 {
+        .category-tag {
+            background: white;
+            border: 2px solid #e67e22;
             color: #8b1a1a;
-            margin-bottom: 0.5rem;
+            padding: 0.4rem 1.2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .category-tag:hover {
+            background: #e67e22;
+            color: white;
+        }
+        
+        .category-tag.active {
+            background: #8b1a1a;
+            color: white;
+            border-color: #8b1a1a;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1rem 0 1.5rem;
+            max-width: 400px;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 0.6rem 1rem;
+            border: 2px solid #f0e4d8;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            color: #2d1f1f;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: #e67e22;
         }
         
         .newsletter {
@@ -318,21 +367,22 @@
         @media (max-width: 640px) {
             .main-header h1 { font-size: 1.8rem; }
             .main-nav { gap: 1rem; }
-            .main-nav a { font-size: 0.9rem; }
+            .main-nav a { font-size: 0.85rem; }
             .container { padding: 0 1rem; }
             .newsletter input { min-width: 100%; margin-bottom: 0.5rem; }
-            .featured-section { padding: 1.25rem; }
+            .hero-section { padding: 1.25rem; }
+            .search-box { max-width: 100%; }
         }
     </style>
 </head>
 <body>
     <div class="top-bar">
-        📄 Workplace Compliance • Global HR • Labor Law Insights
+        📄 Hospitality Training • Food Safety • Operations • Career Development
     </div>
     
     <header class="main-header">
         <h1>Nigel Thomas</h1>
-        <div class="subtitle">Portfolio &amp; Blog</div>
+        <div class="subtitle">Hospitality Trainer &amp; Consultant</div>
     </header>
     
     <nav class="main-nav">
@@ -347,39 +397,146 @@
     </nav>
     
     <div class="container">
-        <div class="featured-section">
-            <h2>📄 Featured Article</h2>
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h2>Hospitality Training Blog</h2>
+            <p>Expert insights from 30+ years in the hospitality industry</p>
             
-            <div class="article-card">
-                <div class="article-title">
-                    <a href="equal-opportunity-employer-india-usa-europe.html">
-                        Equal Opportunity Employer: What It Means for Business Establishments in India, USA &amp; Europe
-                    </a>
-                </div>
-                <div class="article-meta">
-                    <span class="badge badge-maroon">3000+ words</span>
-                    <span class="badge badge-orange">Deep Dive</span>
-                    <span>📅 June 2026</span>
-                </div>
-                <p class="article-excerpt">
-                    A comprehensive legal and practical analysis of EOE requirements across three major economies. 
-                    Learn about mandatory posting laws in the US, EU directives, and India's emerging framework 
-                    under the RPwD Act and constitutional mandates. Essential reading for HR leaders and founders.
-                </p>
-                <a href="equal-opportunity-employer-india-usa-europe.html" class="read-more-btn">
-                    Read Full Analysis →
-                </a>
+            <div class="search-box">
+                <input type="text" placeholder="Search articles... (try: safety, Indian, sauce, fine dining)" id="searchInput">
+            </div>
+            
+            <div class="category-tags">
+                <span class="category-tag active">All</span>
+                <span class="category-tag">Cuisine</span>
+                <span class="category-tag">Safety</span>
+                <span class="category-tag">Operations</span>
+                <span class="category-tag">Career</span>
             </div>
         </div>
         
-        <div class="coming-soon">
-            <h3>🔍 More Articles</h3>
+        <!-- Featured Article -->
+        <h2 class="section-title">📄 Featured Article</h2>
+        
+        <div class="article-card">
+            <div class="article-title">
+                <a href="equal-opportunity-employer-india-usa-europe.html">
+                    Equal Opportunity Employer: What It Means for Business Establishments in India, USA &amp; Europe
+                </a>
+            </div>
+            <div class="article-meta">
+                <span class="badge badge-maroon">3000+ words</span>
+                <span class="badge badge-orange">Deep Dive</span>
+                <span>📅 June 2026</span>
+                <span>🏷️ Compliance</span>
+            </div>
+            <p class="article-excerpt">
+                A comprehensive legal and practical analysis of EOE requirements across three major economies. 
+                Learn about mandatory posting laws in the US, EU directives, and India's emerging framework 
+                under the RPwD Act and constitutional mandates. Essential reading for HR leaders and founders.
+            </p>
+            <a href="equal-opportunity-employer-india-usa-europe.html" class="read-more-btn">
+                Read Full Analysis →
+            </a>
+        </div>
+        
+        <!-- More Articles -->
+        <h2 class="section-title">📚 Latest Articles</h2>
+        
+        <div class="article-card">
+            <div class="article-title">
+                <a href="career/ai-shaping-future-jobs-2026.html">
+                    AI Is Shaping the Future of Work: The Great Job Transformation of 2026-2027
+                </a>
+            </div>
+            <div class="article-meta">
+                <span class="badge badge-maroon">3500+ words</span>
+                <span class="badge badge-orange">Future of Work</span>
+                <span>📅 June 2026</span>
+                <span>🏷️ Career</span>
+            </div>
+            <p class="article-excerpt">
+                AI is reshaping the global employment landscape. Jobs like data entry and traditional analysis are fading, 
+                while new roles like AI Generalist, AI Trainer, and AI Project Manager are emerging. Essential reading 
+                for anyone planning their career future.
+            </p>
+            <a href="career/ai-shaping-future-jobs-2026.html" class="read-more-btn">
+                Read Full Analysis →
+            </a>
+        </div>
+        
+        <div class="article-card">
+            <div class="article-title">
+                <a href="ats-friendly-hospitality-cv-guide.html">
+                    ATS-Friendly Hospitality CV Guide
+                </a>
+            </div>
+            <div class="article-meta">
+                <span class="badge badge-maroon">2000+ words</span>
+                <span class="badge badge-orange">Career Guide</span>
+                <span>📅 June 2026</span>
+                <span>🏷️ Career</span>
+            </div>
+            <p class="article-excerpt">
+                Learn how to craft a hospitality CV that passes Applicant Tracking Systems. Essential tips for 
+                hotel, restaurant, and cruise ship professionals.
+            </p>
+            <a href="ats-friendly-hospitality-cv-guide.html" class="read-more-btn">
+                Read Full Analysis →
+            </a>
+        </div>
+        
+        <div class="article-card">
+            <div class="article-title">
+                <a href="building-a-career-in-hospitality-guide.html">
+                    Building a Career in Hospitality: Complete Guide
+                </a>
+            </div>
+            <div class="article-meta">
+                <span class="badge badge-maroon">4000+ words</span>
+                <span class="badge badge-orange">Career Guide</span>
+                <span>📅 June 2026</span>
+                <span>🏷️ Career</span>
+            </div>
+            <p class="article-excerpt">
+                A comprehensive guide to building a successful career in hospitality. From entry-level to executive 
+                roles, learn the skills, certifications, and strategies needed to advance.
+            </p>
+            <a href="building-a-career-in-hospitality-guide.html" class="read-more-btn">
+                Read Full Analysis →
+            </a>
+        </div>
+        
+        <div class="article-card">
+            <div class="article-title">
+                <a href="not-all-cruise-lines-are-created-equal.html">
+                    Not All Cruise Lines Are Created Equal
+                </a>
+            </div>
+            <div class="article-meta">
+                <span class="badge badge-maroon">2500+ words</span>
+                <span class="badge badge-orange">Industry Insights</span>
+                <span>📅 June 2026</span>
+                <span>🏷️ Operations</span>
+            </div>
+            <p class="article-excerpt">
+                A detailed comparison of major cruise lines for hospitality professionals. Understand the differences 
+                in culture, operations, and career opportunities across the industry.
+            </p>
+            <a href="not-all-cruise-lines-are-created-equal.html" class="read-more-btn">
+                Read Full Analysis →
+            </a>
+        </div>
+        
+        <div class="coming-soon" style="background:#fdf6f0;border-radius:12px;padding:1.5rem;border:2px dashed #e67e22;text-align:center;color:#7a6a5a;margin-top:1.5rem;">
+            <h3 style="color:#8b1a1a;margin-bottom:0.5rem;">🔍 More Articles Coming Soon</h3>
             <p>Explore more articles on global employment law, ATS compliance, hospitality careers, and diversity hiring strategies.</p>
         </div>
         
+        <!-- Newsletter -->
         <div class="newsletter">
             <h3>📬 Stay Updated</h3>
-            <p>Get the latest articles on global HR compliance</p>
+            <p>Get the latest articles on hospitality training and career development</p>
             <form id="newsletterForm">
                 <input type="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
@@ -433,7 +590,45 @@
             }, 1000);
         });
         
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('keyup', function() {
+            const searchTerm = this.value.toLowerCase();
+            const articles = document.querySelectorAll('.article-card');
+            
+            articles.forEach(article => {
+                const text = article.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        });
+        
+        // Category filter
+        const categoryTags = document.querySelectorAll('.category-tag');
+        categoryTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                categoryTags.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.textContent.toLowerCase();
+                const articles = document.querySelectorAll('.article-card');
+                
+                articles.forEach(article => {
+                    const badge = article.querySelector('.badge:last-child');
+                    if (category === 'all' || (badge && badge.textContent.toLowerCase().includes(category))) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
         console.log('%c Nigel Thomas Portfolio ', 'background:#8b1a1a;color:#f5e6d3;font-size:16px;padding:8px 16px;border-radius:4px;');
+        console.log('%c Hospitality Trainer & Consultant ', 'color:#e67e22;font-size:14px;');
     </script>
 </body>
 </html>
