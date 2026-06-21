@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-CLRRV5DMXZ');
-</script>
-<!-- Google AdSense -->
-<meta name="google-adsense-account" content="ca-pub-4282121192943910">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"
-     crossorigin="anonymous"></script>
-    <meta name="google-site-verification" content="hDIZHvIzxWFECFJIoXNcGXv6zAGrppBgZ9zFO9OtpCw" />
-    <title>Nigel Thomas | Portfolio & Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-adsense-account" content="ca-pub-4282121192943910">
+    <meta name="google-site-verification" content="hDIZHvIzxWFECFJIoXNcGXv6zAGrppBgZ9zFO9OtpCw" />
+    <title>Nigel Thomas | Portfolio & Blog</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-CLRRV5DMXZ');
+    </script>
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"
+         crossorigin="anonymous"></script>
+    
+    <!-- Microsoft Clarity (analytics alternative) -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+    </script>
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -98,17 +109,142 @@
             font-size: 0.85rem;
             margin-top: 2rem;
         }
+        .main-nav {
+            max-width: 900px;
+            margin: 0 auto 1.5rem;
+            padding: 0 1rem;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .main-nav a {
+            color: #475569;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .main-nav a:hover {
+            color: #2563eb;
+        }
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body { background: #0f172a; color: #e2e8f0; }
+            .container { background: #1e293b; }
+            h1 { color: #60a5fa; }
+            .tagline { color: #94a3b8; border-bottom-color: #334155; }
+            h2 { color: #e2e8f0; }
+            .article-card { background: #2d3748; border-color: #334155; }
+            .article-title a { color: #e2e8f0; }
+            .article-title a:hover { color: #60a5fa; }
+            .meta { color: #94a3b8; }
+            .badge { background: #2563eb20; color: #60a5fa; }
+            footer { color: #94a3b8; }
+            .main-nav a { color: #94a3b8; }
+            .main-nav a:hover { color: #60a5fa; }
+            hr { border-top-color: #334155; }
+        }
+        /* Reading progress indicator */
+        .reading-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            width: 0%;
+            z-index: 1000;
+            transition: width 0.1s;
+        }
+        /* Scroll to top button */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transform: scale(0.8);
+            z-index: 999;
+        }
+        .scroll-top.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .scroll-top:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+        /* Loading animation */
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #e2e8f0;
+            border-radius: 50%;
+            border-top-color: #2563eb;
+            animation: spin 0.8s linear infinite;
+            margin-left: 0.5rem;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        /* Newsletter signup (example) */
+        .newsletter {
+            background: #f1f5f9;
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        @media (prefers-color-scheme: dark) {
+            .newsletter { background: #2d3748; }
+        }
+        .newsletter input {
+            padding: 0.5rem 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+            background: white;
+            color: #1e293b;
+            min-width: 200px;
+        }
+        .newsletter button {
+            padding: 0.5rem 1.5rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .newsletter button:hover {
+            background: #1d4ed8;
+        }
     </style>
 </head>
 <body>
-<nav class="main-nav">
-    <a href="/index.html">🏠 Home</a>
-    <a href="/about-complete.html">About</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/terms.html">Terms</a>
-</nav>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <nav class="main-nav">
+        <a href="/index.html">🏠 Home</a>
+        <a href="/about-complete.html">About</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+    </nav>
 
     <div class="container">
         <h1>Nigel Thomas</h1>
@@ -139,11 +275,180 @@
         <h2>🔍 Coming Soon</h2>
         <p>More articles on global employment law, ATS compliance, and diversity hiring strategies.</p>
         
+        <!-- Newsletter Signup -->
+        <div class="newsletter">
+            <h3 style="margin-bottom:0.5rem;">📬 Stay Updated</h3>
+            <p style="margin-bottom:1rem;color:#64748b;">Get the latest articles on global HR compliance</p>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="newsletterMessage" style="margin-top:0.5rem;font-size:0.85rem;color:#2563eb;"></p>
+        </div>
+        
         <hr>
         
         <footer>
-            © 2026 Nigel Thomas | <a href="">GitHub</a>
+            © 2026 Nigel Thomas | <a href="#">GitHub</a>
         </footer>
     </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+    <script>
+        // ============================================
+        // 1. READING PROGRESS BAR
+        // ============================================
+        const progressBar = document.getElementById('readingProgress');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = scrollPercent + '%';
+        });
+
+        // ============================================
+        // 2. SCROLL TO TOP BUTTON
+        // ============================================
+        const scrollBtn = document.getElementById('scrollTopBtn');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+        
+        scrollBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ============================================
+        // 3. NEWSLETTER FORM (demo)
+        // ============================================
+        const newsletterForm = document.getElementById('newsletterForm');
+        const newsletterMsg = document.getElementById('newsletterMessage');
+        
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = newsletterForm.querySelector('input[type="email"]').value;
+            
+            // Simulate API call
+            newsletterMsg.textContent = '⏳ Subscribing...';
+            newsletterMsg.style.color = '#2563eb';
+            
+            setTimeout(() => {
+                newsletterMsg.textContent = '✅ Subscribed successfully!';
+                newsletterMsg.style.color = '#16a34a';
+                newsletterForm.querySelector('input[type="email"]').value = '';
+                
+                // Reset message after 5 seconds
+                setTimeout(() => {
+                    newsletterMsg.textContent = '';
+                }, 5000);
+            }, 1000);
+        });
+
+        // ============================================
+        // 4. SMOOTH PAGE LOAD
+        // ============================================
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = '1';
+            
+            // Log page load for analytics
+            console.log('📄 Page loaded:', document.title);
+            
+            // Track time on page
+            const startTime = Date.now();
+            window.addEventListener('beforeunload', () => {
+                const timeSpent = Math.round((Date.now() - startTime) / 1000);
+                console.log(`⏱️ Time on page: ${timeSpent} seconds`);
+                // Could send to analytics here
+            });
+        });
+
+        // ============================================
+        // 5. KEYBOARD NAVIGATION ACCESSIBILITY
+        // ============================================
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                // Close any open modals, etc.
+                console.log('🔑 Escape pressed');
+            }
+        });
+
+        // ============================================
+        // 6. CONSOLE BANNER (anti-copy protection)
+        // ============================================
+        console.log('%c Nigel Thomas Portfolio ', 'background:#2563eb;color:white;font-size:16px;padding:8px 16px;border-radius:4px;');
+        console.log('%c © 2026 All rights reserved.', 'color:#64748b;font-size:12px;');
+
+        // ============================================
+        // 7. LAZY LOAD IMAGES (if you add images later)
+        // ============================================
+        if ('IntersectionObserver' in window) {
+            const images = document.querySelectorAll('img[data-src]');
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+            images.forEach(img => imageObserver.observe(img));
+        }
+
+        // ============================================
+        // 8. DARK MODE TOGGLE (optional)
+        // ============================================
+        // Add this if you want a manual toggle instead of system preference
+        /*
+        const darkModeToggle = document.createElement('button');
+        darkModeToggle.textContent = '🌓';
+        darkModeToggle.style.cssText = 'position:fixed;top:1rem;right:1rem;background:white;border:2px solid #e2e8f0;border-radius:50%;width:40px;height:40px;font-size:1.2rem;cursor:pointer;z-index:1000;';
+        document.body.prepend(darkModeToggle);
+        
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+        */
+
+        // ============================================
+        // 9. PERFORMANCE METRICS (optional)
+        // ============================================
+        if ('performance' in window && 'getEntriesByType' in performance) {
+            const paintMetrics = performance.getEntriesByType('paint');
+            paintMetrics.forEach(entry => {
+                if (entry.name === 'first-contentful-paint') {
+                    console.log(`🎨 First Contentful Paint: ${Math.round(entry.startTime)}ms`);
+                }
+            });
+        }
+
+        // ============================================
+        // 10. SMOOTH ANCHOR SCROLLING
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
