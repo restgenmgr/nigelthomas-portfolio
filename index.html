@@ -1,5 +1,3 @@
-# This creates the file with proper HTML content
-$htmlContent = @'
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -450,8 +448,3 @@ $htmlContent = @'
     </script>
 </body>
 </html>
-'@
-
-# Save the content to index.html
-$htmlContent | Out-File -FilePath index.html -Encoding UTF8
-Write-Host "✅ index.html created successfully!" -ForegroundColor Green
