@@ -1,0 +1,6 @@
+﻿node_modules
+.git
+*.ps1
+*.md
+backup-*
+encoding-backup-*

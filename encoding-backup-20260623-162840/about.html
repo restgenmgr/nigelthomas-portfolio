@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-adsense-account" content="ca-pub-8127243414384620">
+    <meta name="google-site-verification" content="hDIZHvIzxWFECFJIoXNcGXv6zAGrppBgZ9zFO9OtpCw" />
+    <title>About | Nigel Thomas</title>
+    
+    
+    
+    <!-- Google AdSense -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.7;
+            color: #2d1f1f;
+            background: #fdf6f0;
+            padding: 0;
+        }
+        
+        .top-bar {
+            background: #8b1a1a;
+            color: #f5e6d3;
+            padding: 0.5rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+        
+        .main-header {
+            background: linear-gradient(135deg, #8b1a1a 0%, #c0392b 100%);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 4px solid #e67e22;
+        }
+        
+        .main-header h1 {
+            font-size: 2.8rem;
+            color: #f5e6d3;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        
+        .main-header .subtitle {
+            color: #f5e6d3;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-top: 0.25rem;
+        }
+        
+        .main-nav {
+            background: #2d1f1f;
+            padding: 0.75rem 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #e67e22;
+        }
+        
+        .main-nav a {
+            color: #f5e6d3;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+        
+        .main-nav a:hover {
+            color: #e67e22;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        .about-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 12px rgba(139, 26, 26, 0.08);
+            border-left: 5px solid #8b1a1a;
+        }
+        
+        .about-card h2 {
+            color: #8b1a1a;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-card h3 {
+            color: #8b1a1a;
+            margin: 1.5rem 0 0.5rem;
+        }
+        
+        .about-card p {
+            color: #4a3a3a;
+            margin-bottom: 1rem;
+        }
+        
+        .about-card ul {
+            color: #4a3a3a;
+            margin: 0.5rem 0 1rem 1.5rem;
+        }
+        
+        .about-card li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Profile Image Styles */
+        .profile-container {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e67e22;
+            box-shadow: 0 4px 12px rgba(139, 26, 26, 0.2);
+            background: #f0e4d8;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(139, 26, 26, 0.3);
+        }
+        
+        .profile-name {
+            font-size: 1.5rem;
+            color: #2d1f1f;
+            margin-top: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .profile-title {
+            color: #7a6a5a;
+            font-size: 1rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #8b1a1a;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #2d1f1f;
+            color: #d4c5b5;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            border-top: 4px solid #e67e22;
+        }
+        
+        footer a {
+            color: #e67e22;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.75rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: #8b1a1a;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #e67e22;
+        }
+        
+        @media (max-width: 640px) {
+            .main-header h1 { font-size: 1.8rem; }
+            .main-nav { gap: 1rem; }
+            .main-nav a { font-size: 0.9rem; }
+            .about-card { padding: 1.5rem; }
+            .profile-image { width: 120px; height: 120px; }
+        }
+    </style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P839TWLQSJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P839TWLQSJ');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top-bar">
+        ðŸ“„ Workplace Compliance â€¢ Global HR â€¢ Labor Law Insights
+    </div>
+    
+    <header class="main-header">
+        <h1>Nigel Thomas</h1>
+        <div class="subtitle">Portfolio &amp; Blog</div>
+    </header>
+    
+    <nav class="main-nav">
+        <a href="/index.html">ðŸ  Home</a>
+        <a href="/about.html">About</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/partners.html">Partners</a>
+        <a href="/privacy-policy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+    </nav>
+    
+    <div class="container">
+        <a href="/index.html" class="back-link">â† Back to Home</a>
+        
+        <div class="about-card">
+            <!-- Profile Picture -->
+            <div class="profile-container">
+                <img src="profile.jpg" alt="Nigel Thomas - Workplace Compliance & Global HR Specialist" class="profile-image">
+                <div class="profile-name">Nigel Thomas</div>
+                <div class="profile-title">Workplace Compliance &amp; Global HR Specialist</div>
+            </div>
+            
+            <h2>About Me</h2>
+            
+            <p>I'm a Workplace Compliance and Global HR specialist with over 12 years of experience helping businesses navigate complex labor laws across multiple jurisdictions.</p>
+            
+            <h3>ðŸ“Œ What I Do</h3>
+            <p>I provide strategic guidance on:</p>
+            <ul>
+                <li><strong>Equal Employment Opportunity</strong> â€” Compliance across USA, EU, and India</li>
+                <li><strong>Global HR Policy</strong> â€” Drafting and implementing compliant HR frameworks</li>
+                <li><strong>Labor Law Analysis</strong> â€” Comparative legal research and practical application</li>
+                <li><strong>Diversity &amp; Inclusion</strong> â€” Building inclusive workplaces that meet regulatory standards</li>
+                <li><strong>POSH &amp; Workplace Harassment</strong> â€” Policy design and training</li>
+                <li><strong>AI &amp; Algorithmic Bias</strong> â€” Ensuring fair AI in hiring and promotions</li>
+            </ul>
+            
+            <h3>ðŸŽ¯ My Mission</h3>
+            <p>To demystify complex employment laws and help organizations build fair, compliant, and inclusive workplaces. I believe that regulatory compliance and ethical employment practices go hand in hand.</p>
+            
+            <h3>ðŸ“š Featured Publications</h3>
+            <ul>
+                <li><a href="equal-opportunity-employer-india-usa-europe.html" style="color:#8b1a1a;">Equal Opportunity Employer: India, USA &amp; Europe</a></li>
+                <li><a href="ats-friendly-hospitality-cv-guide.html" style="color:#8b1a1a;">ATS-Friendly Hospitality CV Guide</a></li>
+                <li><a href="building-a-career-in-hospitality-guide.html" style="color:#8b1a1a;">Building a Career in Hospitality</a></li>
+                <li><a href="not-all-cruise-lines-are-created-equal.html" style="color:#8b1a1a;">Not All Cruise Lines Are Created Equal</a></li>
+            </ul>
+            
+            <h3>ðŸ“¬ Get in Touch</h3>
+            <p>For speaking engagements, consultancy, or collaboration, reach out at <a href="mailto:nigel@example.com" style="color:#8b1a1a;">nigel@example.com</a></p>
+            
+            <div class="social-links">
+                <a href="#" title="LinkedIn">ðŸ”—</a>
+                <a href="#" title="Twitter">ðŸ¦</a>
+                <a href="#" title="GitHub">ðŸ’»</a>
+                <a href="#" title="YouTube">â–¶ï¸</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/partners.html">Partners</a>
+            <a href="/privacy-policy.html">Privacy</a>
+            <a href="/terms.html">Terms</a>
+            <a href="/disclaimer.html">Disclaimer</a>
+        </div>
+        <p>Â© 2026 Nigel Thomas | Built with â¤ï¸</p>
+    </footer>
+</body>
+</html>
+

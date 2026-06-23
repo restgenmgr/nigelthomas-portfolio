@@ -1,0 +1,7 @@
+﻿# Force UTF-8 encoding
+AddCharset UTF-8 .html .htm .css .js
+AddDefaultCharset UTF-8
+
+<FilesMatch "\.(html|htm|css|js)$">
+    Header set Content-Type "text/html; charset=UTF-8"
+</FilesMatch>
