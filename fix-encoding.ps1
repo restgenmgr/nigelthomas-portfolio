@@ -1,4 +1,4 @@
-﻿# fix-encoding.ps1
+﻿# fix-encoding.ps1 
 # Fixes double-encoded UTF-8 (mojibake) in all .html files under the current directory.
 # Creates a timestamped backup folder before touching anything.
 # NOTE: Uses only ASCII characters in this script file itself to avoid encoding issues.
