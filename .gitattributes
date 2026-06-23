@@ -1,0 +1,13 @@
+# Force consistent line endings
+* text=auto
+
+# HTML / CSS / JS should always be UTF-8 + LF
+*.html text eol=lf encoding=utf-8
+*.css  text eol=lf encoding=utf-8
+*.js   text eol=lf encoding=utf-8
+
+# Keep images/binaries untouched
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
