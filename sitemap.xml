@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://restgenmgr.github.io/nigelthomas-portfolio/</loc>
@@ -20,7 +20,7 @@
     </url>
     <url>
         <loc>https://restgenmgr.github.io/nigelthomas-portfolio/blog.html</loc>
-        <lastmod>2026-06-22</lastmod>
+        <lastmod>2026-06-23</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -66,12 +66,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-        <url>
-  <loc>https://nigelthomas.live/foh-boh-equipment-guide.html</loc>
-  <lastmod>2026-06-23</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
+    <url>
+        <loc>https://restgenmgr.github.io/nigelthomas-portfolio/foh-boh-equipment-guide.html</loc>
+        <lastmod>2026-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://restgenmgr.github.io/nigelthomas-portfolio/contact.html</loc>
         <lastmod>2026-06-22</lastmod>
