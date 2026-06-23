@@ -1,4 +1,4 @@
-﻿cd C:\Users\admin\Desktop\nigelthomas-portfolio; @'
+cd C:\Users\admin\Desktop\nigelthomas-portfolio; @'
 <head>
     <meta charset="UTF-8">
 <!DOCTYPE html> 
@@ -14,9 +14,7 @@
 </script>
 <!-- Google AdSense -->
 <meta name="google-adsense-account" content="ca-pub-4282121192943910">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"
-     crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Planning & Menu Engineering: Complete Guide | Nigel Thomas</title>
     <meta name="description" content="Complete professional guide to menu planning and menu engineering. Learn menu psychology, pricing strategies, food cost optimization, and recipe standardization.">
@@ -41,6 +39,7 @@
         .btn-back{background:#800000;color:#FFD700;padding:10px 25px;border-radius:30px;text-decoration:none;display:inline-block;margin-top:25px;}
         @media(max-width:768px){.nav-container{flex-direction:column;}.article-card{padding:25px;}}
     </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="main-nav">
@@ -192,5 +191,4 @@
 </body>
 </html>
 '@ | Out-File -FilePath menu-planning-engineering-guide.html -Encoding utf8; git add menu-planning-engineering-guide.html; git commit -m "Add complete Menu Planning & Menu Engineering professional guide"; git push origin main --force; npx vercel --prod --force; Write-Host "âœ… Menu Planning article created and deployed!" -ForegroundColor Green
-
 
