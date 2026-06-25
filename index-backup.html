@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+# This creates the file with proper HTML content
+$htmlContent = @'
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -258,7 +260,7 @@
 </head>
 <body>
     <div class="top-bar">
-        Hospitality Training • Food Safety • Operations • Career Development
+        📄 Hospitality Training • Food Safety • Operations • Career Development
     </div>
     
     <header class="main-header">
@@ -267,7 +269,7 @@
     </header>
     
     <nav class="main-nav">
-        <a href="/index.html">Home</a>
+        <a href="/index.html">🏠 Home</a>
         <a href="/about.html">About</a>
         <a href="/blog.html">Blog</a>
         <a href="/contact.html">Contact</a>
@@ -283,7 +285,7 @@
             <p>Expert insights from 30+ years in the hospitality industry</p>
         </div>
         
-        <h2 class="section-title">Featured Article</h2>
+        <h2 class="section-title">📄 Featured Article</h2>
         
         <div class="article-card">
             <div class="article-title">
@@ -294,20 +296,20 @@
             <div class="article-meta">
                 <span class="badge badge-maroon">3000+ words</span>
                 <span class="badge badge-orange">Deep Dive</span>
-                <span>ðŸ“… June 2026</span>
+                <span>📅 June 2026</span>
             </div>
             <p class="article-excerpt">
                 Hotels and other business establishments provide equal employment opportunities to all employees and applicants without regard to race, color, religion, age, sex, national origin, disability, genetics, veteran status, sexual orientation, or gender identity.
             </p>
             <p class="article-excerpt">
-                Legal analysis of EOE requirements across US, EU, and India mandatory posting laws, EU directives, RPwD Act, POSH, pay transparency, AI bias, intersectionality &amp; remedies.
+                Legal analysis of EOE requirements across US, EU, and India — mandatory posting laws, EU directives, RPwD Act, POSH, pay transparency, AI bias, intersectionality &amp; remedies.
             </p>
             <a href="equal-opportunity-employer-india-usa-europe.html" class="read-more-btn">
-                Read Full Analysis ’
+                Read Full Analysis →
             </a>
         </div>
         
-        <h2 class="section-title"> Latest Articles</h2>
+        <h2 class="section-title">📚 Latest Articles</h2>
         
         <div class="article-card">
             <div class="article-title">
@@ -318,14 +320,14 @@
             <div class="article-meta">
                 <span class="badge badge-maroon">3500+ words</span>
                 <span class="badge badge-orange">Future of Work</span>
-                <span> June 2026</span>
+                <span>📅 June 2026</span>
             </div>
             <p class="article-excerpt">
                 AI is reshaping the global employment landscape. Jobs like data entry and traditional analysis are fading, 
                 while new roles like AI Generalist, AI Trainer, and AI Project Manager are emerging.
             </p>
             <a href="career/ai-shaping-future-jobs-2026.html" class="read-more-btn">
-                Read Full Analysis’
+                Read Full Analysis →
             </a>
         </div>
         
@@ -338,14 +340,14 @@
             <div class="article-meta">
                 <span class="badge badge-maroon">2500+ words</span>
                 <span class="badge badge-orange">Industry Insights</span>
-                <span> June 2026</span>
+                <span>📅 June 2026</span>
             </div>
             <p class="article-excerpt">
                 Mainstream, premium, luxury, and ultra-luxury cruise lines aren't the same job. Here's how the segments differ 
                 and how to figure out which one is right for your hospitality career.
             </p>
             <a href="not-all-cruise-lines-are-created-equal.html" class="read-more-btn">
-                Read Full Analysis’
+                Read Full Analysis →
             </a>
         </div>
         
@@ -358,14 +360,14 @@
             <div class="article-meta">
                 <span class="badge badge-maroon">4000+ words</span>
                 <span class="badge badge-orange">Career Guide</span>
-                <span> June 2026</span>
+                <span>📅 June 2026</span>
             </div>
             <p class="article-excerpt">
                 Your complete guide to breaking into hospitality, moving up the ladder, and going global. 
                 Covers entry points, skills, certifications, career pathways, and international markets.
             </p>
             <a href="building-a-career-in-hospitality-guide.html" class="read-more-btn">
-                Read Full Analysis’
+                Read Full Analysis →
             </a>
         </div>
         
@@ -378,19 +380,19 @@
             <div class="article-meta">
                 <span class="badge badge-maroon">2000+ words</span>
                 <span class="badge badge-orange">Career Guide</span>
-                <span>June 2026</span>
+                <span>📅 June 2026</span>
             </div>
             <p class="article-excerpt">
                 Learn why your hospitality CV is being rejected by ATS systems and how to fix it. 
                 Expert advice on formatting, keywords, and what recruiters actually look for.
             </p>
             <a href="ats-friendly-hospitality-cv-guide.html" class="read-more-btn">
-                Read Full Analysis’
+                Read Full Analysis →
             </a>
         </div>
         
         <div class="newsletter">
-            <h3>Stay Updated</h3>
+            <h3>📬 Stay Updated</h3>
             <p>Get the latest articles on hospitality training and career development</p>
             <form id="newsletterForm">
                 <input type="email" placeholder="Enter your email" required>
@@ -411,10 +413,10 @@
             <a href="/terms.html">Terms</a>
             <a href="/disclaimer.html">Disclaimer</a>
         </div>
-        <p> 2026 Nigel Thomas | Built with heart </p>
+        <p>© 2026 Nigel Thomas | Built with ❤️</p>
     </footer>
     
-    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top"> </button>
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
     
     <script>
         const scrollBtn = document.getElementById('scrollTopBtn');
@@ -432,11 +434,11 @@
             e.preventDefault();
             const email = newsletterForm.querySelector('input[type="email"]').value;
             
-            newsletterMsg.textContent = ' Subscribing...';
+            newsletterMsg.textContent = '⏳ Subscribing...';
             newsletterMsg.style.color = '#e67e22';
             
             setTimeout(() => {
-                newsletterMsg.textContent = ' Subscribed successfully!';
+                newsletterMsg.textContent = '✅ Subscribed successfully!';
                 newsletterMsg.style.color = '#27ae60';
                 newsletterForm.querySelector('input[type="email"]').value = '';
                 setTimeout(() => { newsletterMsg.textContent = ''; }, 5000);
@@ -448,6 +450,8 @@
     </script>
 </body>
 </html>
+'@
 
-
-
+# Save the content to index.html
+$htmlContent | Out-File -FilePath index.html -Encoding UTF8
+Write-Host "✅ index.html created successfully!" -ForegroundColor Green
