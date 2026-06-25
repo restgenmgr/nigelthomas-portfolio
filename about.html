@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -9,14 +9,27 @@
         gtag('js', new Date());
         gtag('config', 'G-CLRRV5DMXZ');
     </script>
+
     <!-- Google AdSense -->
     <meta name="google-adsense-account" content="ca-pub-4282121192943910">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nigel Thomas | Workplace Compliance & Global HR Specialist</title>
-    <meta name="description" content="Workplace Compliance and Global HR specialist with 12+ years experience in EEO, labor law, diversity & inclusion, POSH, and AI bias compliance across USA, EU, and India.">
+    <title>About Nigel Thomas | Workplace Compliance &amp; Global HR Specialist</title>
+    <meta name="description" content="Nigel Thomas is a Workplace Compliance and Global HR specialist with 12+ years experience across Middle East, USA, and India. Expert in labor law, EEO, POSH, and AI bias compliance.">
+    <meta name="keywords" content="About Nigel Thomas, Workplace Compliance, Global HR Specialist, Labor Law, EEO, POSH, AI Bias, Hospitality HR, Cruise Ship HR">
+    <meta name="author" content="Nigel A Thomas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nigelthomas.live/about.html">
+    <meta property="og:title" content="About Nigel Thomas | Workplace Compliance &amp; Global HR Specialist">
+    <meta property="og:description" content="12+ years experience in workplace compliance and global HR across Middle East, USA, and India.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nigelthomas.live/about.html">
+    <meta name="twitter:card" content="summary_large_image">
+
     <style>
+        /* ---------- GLOBAL RESET & BASE ---------- */
         * {
             margin: 0;
             padding: 0;
@@ -29,7 +42,7 @@
             color: #222;
         }
 
-        /* ---------- NAVBAR ---------- */
+        /* ---------- NAVBAR (Maroon & Gold) ---------- */
         .navbar {
             background: #800000;
             padding: 1.2rem 0;
@@ -69,24 +82,28 @@
             color: #800000;
         }
 
-        /* ---------- HERO ---------- */
+        /* ---------- HERO (Maroon & Gold) ---------- */
         .hero {
             background: linear-gradient(135deg, #800000 0%, #a52a2a 100%);
             color: white;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 10px;
         }
         .hero p {
             font-size: 1.2rem;
             max-width: 800px;
-            margin: 10px auto;
+            margin: 5px auto;
+        }
+        .hero .sub {
+            font-size: 1rem;
+            opacity: 0.9;
         }
 
-        /* ---------- CONTAINER ---------- */
+        /* ---------- MAIN CONTAINER ---------- */
         .container {
             max-width: 1100px;
             margin: 40px auto;
@@ -96,32 +113,30 @@
             box-shadow: 0 5px 30px rgba(0,0,0,0.1);
         }
 
-        .section-title {
-            font-size: 2rem;
+        /* ---------- TYPOGRAPHY ---------- */
+        h1 {
             color: #800000;
-            margin-bottom: 25px;
-            border-bottom: 3px solid #FFD700;
-            padding-bottom: 10px;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
         }
-
         h2 {
             color: #800000;
-            font-size: 1.8rem;
             margin-top: 40px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #FFD700;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #FFD700;
             padding-bottom: 8px;
         }
         h3 {
             color: #333366;
-            font-size: 1.3rem;
-            margin-top: 30px;
+            margin-top: 25px;
             margin-bottom: 10px;
+            font-size: 1.3rem;
         }
         p {
             margin-bottom: 18px;
         }
-        ul {
+        ul, ol {
             margin-bottom: 20px;
             padding-left: 25px;
         }
@@ -129,22 +144,18 @@
             margin-bottom: 6px;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
-        }
+        /* ---------- CARDS ---------- */
         .card {
             background: #f9f6f0;
-            padding: 25px;
+            padding: 25px 30px;
             border-radius: 12px;
-            border-left: 5px solid #FFD700;
+            border-left: 6px solid #FFD700;
+            margin: 25px 0;
             transition: 0.3s;
         }
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
         .card h3 {
             color: #800000;
@@ -152,31 +163,50 @@
             font-size: 1.2rem;
         }
         .card p {
-            color: #555;
             margin-bottom: 0;
         }
 
-        .featured-grid {
+        /* ---------- GRID ---------- */
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
             margin: 20px 0;
         }
-        .featured-link {
-            display: block;
-            background: #f9f6f0;
-            padding: 15px 20px;
-            border-radius: 8px;
-            color: #800000;
-            text-decoration: none;
-            font-weight: 500;
-            border-left: 4px solid #FFD700;
+        .grid-item {
+            background: white;
+            padding: 20px 25px;
+            border-radius: 12px;
+            border: 1px solid #d4c4a8;
+            text-align: center;
             transition: 0.3s;
         }
-        .featured-link:hover {
+        .grid-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-color: #FFD700;
+        }
+        .grid-item h4 {
+            color: #800000;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .grid-item p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* ---------- FLAG BADGES ---------- */
+        .flag-badge {
+            display: inline-block;
             background: #800000;
             color: #FFD700;
-            transform: translateX(5px);
+            padding: 4px 16px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 8px;
         }
 
         /* ---------- FOOTER ---------- */
@@ -199,6 +229,7 @@
             margin: 5px 0;
         }
 
+        /* ---------- RESPONSIVE ---------- */
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
@@ -226,81 +257,159 @@
                 <a href="/">🏠 Home</a>
                 <a href="/about.html">About</a>
                 <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/partners.html">Partners</a>
-                <a href="/privacy.html">Privacy</a>
-                <a href="/terms.html">Terms</a>
-                <a href="/disclaimer.html">Disclaimer</a>
+                <a href="/contact.html">📧 Contact</a>
+                <a href="/partners.html">🤝 Partners</a>
+                <a href="/privacy-policy.html">🔒 Privacy</a>
+                <a href="/terms.html">📜 Terms</a>
+                <a href="/disclaimer.html">⚖️ Disclaimer</a>
             </div>
         </div>
     </div>
 
     <!-- ========== HERO ========== -->
     <div class="hero">
-        <h1>⚖️ Workplace Compliance &amp; Global HR Specialist</h1>
-        <p>Helping businesses navigate complex labor laws across multiple jurisdictions with practical, ethical, and compliant solutions.</p>
+        <h1>👤 About Nigel Thomas</h1>
+        <p>Workplace Compliance &amp; Global HR Specialist | 12+ Years Experience</p>
+        <p class="sub">Middle East · USA · India</p>
     </div>
 
     <!-- ========== MAIN CONTENT ========== -->
     <div class="container">
 
-        <!-- ===== ABOUT ME ===== -->
-        <h1 class="section-title">👤 About Me</h1>
-        <p>I'm a <strong>Workplace Compliance and Global HR specialist</strong> with over <strong>12 years of experience</strong> helping businesses navigate complex labor laws across multiple jurisdictions.</p>
+        <h1>👤 About Nigel Anthony Thomas</h1>
 
-        <!-- ===== WHAT I DO ===== -->
-        <h2>💼 What I Do</h2>
-        <p>I provide strategic guidance on:</p>
+        <p>
+            I am a <strong>Workplace Compliance and Global HR specialist</strong> with over <strong>12 years of experience</strong> helping businesses navigate complex labor laws across multiple jurisdictions. My career has taken me across three continents, giving me a deep understanding of international employment standards, cross-cultural workforce dynamics, and regulatory compliance.
+        </p>
 
-        <div class="grid">
-            <div class="card">
-                <h3>⚖️ Equal Employment Opportunity</h3>
-                <p>Compliance across USA, EU, and India — ensuring fair hiring, promotion, and workplace practices.</p>
-            </div>
-            <div class="card">
-                <h3>📋 Global HR Policy</h3>
-                <p>Drafting and implementing compliant HR frameworks that work across borders.</p>
-            </div>
-            <div class="card">
-                <h3>📚 Labor Law Analysis</h3>
-                <p>Comparative legal research and practical application for multinational operations.</p>
-            </div>
-            <div class="card">
-                <h3>🌈 Diversity &amp; Inclusion</h3>
-                <p>Building inclusive workplaces that meet regulatory standards and foster belonging.</p>
-            </div>
-            <div class="card">
-                <h3>🛡️ POSH &amp; Workplace Harassment</h3>
-                <p>Policy design, implementation, and training for safe workplaces.</p>
-            </div>
-            <div class="card">
-                <h3>🤖 AI &amp; Algorithmic Bias</h3>
-                <p>Ensuring fair AI in hiring, promotions, and performance evaluations.</p>
-            </div>
+        <!-- ===== MIDDLE EAST ===== -->
+        <h2>🌍 Middle East – 6 Years of Strategic Leadership</h2>
+
+        <p>
+            My journey in the Middle East spanned <strong>six years</strong> across the UAE, Qatar, and Saudi Arabia. I worked extensively in the luxury hospitality sector, managing <strong>workforce compliance</strong> for large-scale hotel and resort operations. In Dubai and Abu Dhabi, I oversaw HR operations for 5-star properties, ensuring alignment with <strong>UAE Labor Law</strong>, <strong>DIFC Employment Regulations</strong>, and international best practices.
+        </p>
+
+        <p>
+            In Qatar, I was instrumental in preparing hospitality teams for the <strong>FIFA World Cup 2022</strong>, implementing robust recruitment, onboarding, and compliance frameworks. In Saudi Arabia, I navigated the evolving labor landscape under <strong>Vision 2030</strong>, helping organizations adapt to new employment policies, Saudization requirements, and expatriate workforce management.
+        </p>
+
+        <div class="card">
+            <h3>💡 Key Learnings</h3>
+            <p>
+                This region taught me the importance of <strong>cultural intelligence</strong>, <strong>legal agility</strong>, and the ability to build HR systems that support rapid business growth while maintaining full regulatory compliance.
+            </p>
         </div>
 
-        <!-- ===== MY MISSION ===== -->
-        <h2>🎯 My Mission</h2>
-        <p>To demystify complex employment laws and help organizations build <strong>fair, compliant, and inclusive workplaces</strong>. I believe that regulatory compliance and ethical employment practices go hand in hand.</p>
+        <!-- ===== USA ===== -->
+        <h2>🇺🇸 United States – 20+ Years on Land and at Sea</h2>
 
-        <!-- ===== FEATURED PUBLICATIONS ===== -->
-        <h2>📄 Featured Publications</h2>
-        <div class="featured-grid">
-            <a href="/equal-opportunity-employer-india-usa-europe.html" class="featured-link">⚖️ Equal Opportunity Employer: India, USA &amp; Europe</a>
-            <a href="/ats-friendly-hospitality-cv-guide.html" class="featured-link">📄 ATS-Friendly Hospitality CV Guide</a>
-            <a href="/building-a-career-in-hospitality-guide.html" class="featured-link">📚 Building a Career in Hospitality</a>
-            <a href="/cruise-lines-comparison.html" class="featured-link">🚢 Not All Cruise Lines Are Created Equal</a>
+        <p>
+            My experience in the United States spans over <strong>20 years</strong> – both on land and at sea. I have held leadership roles in hospitality operations and HR compliance across <strong>New York, Florida, and California</strong>.
+        </p>
+
+        <p>
+            <strong>On land</strong>, I managed HR and compliance for multi-unit restaurant groups, luxury hotels, and resort properties. I implemented <strong>EEO and affirmative action programs</strong>, developed employee handbooks, and led workplace investigations ensuring fair treatment and legal protection for both employers and employees.
+        </p>
+
+        <p>
+            <strong>At sea</strong>, I served on premium cruise lines including <strong>Carnival and Royal Caribbean</strong>, where I managed international crew compliance across 50+ nationalities. I navigated complex maritime labor laws, including the <strong>Maritime Labour Convention (MLC) 2006</strong>, <strong>US Coast Guard regulations</strong>, and international employment standards.
+        </p>
+
+        <div class="card">
+            <h3>⚓ Unique Expertise</h3>
+            <p>
+                This dual experience – on land and at sea – gave me a unique perspective on <strong>global workforce mobility</strong>, <strong>multicultural team management</strong>, and the importance of consistent, fair, and compliant HR practices across borders.
+            </p>
+        </div>
+
+        <!-- ===== INDIA ===== -->
+        <h2>🇮🇳 India – 5 Years of Building HR Excellence</h2>
+
+        <p>
+            Returning to India, I spent <strong>five years</strong> building HR and compliance frameworks across <strong>Bangalore, Hyderabad, Nandi Hills, and Chikballapur</strong>. I worked with hospitality groups, tech companies, and manufacturing firms to establish robust HR policies, ensure statutory compliance, and build inclusive workplace cultures.
+        </p>
+
+        <p>
+            In Bangalore and Hyderabad, I supported startups and scaling businesses in navigating India's complex labor laws, including the <strong>Code on Wages</strong>, <strong>Industrial Relations Code</strong>, and <strong>Occupational Safety, Health and Working Conditions Code</strong>. I developed <strong>POSH (Prevention of Sexual Harassment) policies</strong>, conducted employee training, and set up grievance redressal mechanisms.
+        </p>
+
+        <p>
+            In Nandi Hills and Chikballapur, I worked with agri-tourism and hospitality ventures, helping them align with state-specific labor regulations, food safety standards, and employee welfare requirements.
+        </p>
+
+        <div class="card">
+            <h3>🏗️ Building for the Future</h3>
+            <p>
+                My work in India focused on creating <strong>sustainable HR systems</strong> that support business growth while protecting employee rights and ensuring full legal compliance.
+            </p>
+        </div>
+
+        <!-- ===== MY MISSION TODAY ===== -->
+        <h2>🎯 My Mission Today</h2>
+
+        <p>
+            Today, I bring this <strong>global perspective</strong> to every organization I work with. I help businesses:
+        </p>
+
+        <ul>
+            <li>🌍 <strong>Navigate complex labor laws</strong> across India, the USA, Europe, and the Middle East</li>
+            <li>📋 <strong>Build compliant HR frameworks</strong> that protect both employees and employers</li>
+            <li>🌈 <strong>Create inclusive workplaces</strong> that meet regulatory standards and foster belonging</li>
+            <li>🎓 <strong>Develop training programs</strong> on workplace harassment, diversity, and compliance</li>
+            <li>🤖 <strong>Ensure fair AI</strong> in hiring, promotions, and performance evaluations</li>
+        </ul>
+
+        <div class="card">
+            <h3>💡 My Philosophy</h3>
+            <p>
+                I believe that <strong>regulatory compliance and ethical employment practices go hand in hand</strong>. My mission is to demystify complex employment laws and help organizations build <strong>fair, compliant, and inclusive workplaces</strong> where every employee can thrive.
+            </p>
+        </div>
+
+        <!-- ===== AREAS OF EXPERTISE ===== -->
+        <h2>💼 Core Competencies</h2>
+
+        <div class="grid">
+            <div class="grid-item">
+                <h4>⚖️ Equal Employment Opportunity</h4>
+                <p>Compliance across USA, EU, and India</p>
+            </div>
+            <div class="grid-item">
+                <h4>📋 Global HR Policy</h4>
+                <p>Drafting and implementing compliant HR frameworks</p>
+            </div>
+            <div class="grid-item">
+                <h4>📚 Labor Law Analysis</h4>
+                <p>Comparative legal research and practical application</p>
+            </div>
+            <div class="grid-item">
+                <h4>🌈 Diversity &amp; Inclusion</h4>
+                <p>Building inclusive workplaces that meet regulatory standards</p>
+            </div>
+            <div class="grid-item">
+                <h4>🛡️ POSH &amp; Workplace Harassment</h4>
+                <p>Policy design, implementation, and training</p>
+            </div>
+            <div class="grid-item">
+                <h4>🤖 AI &amp; Algorithmic Bias</h4>
+                <p>Ensuring fair AI in hiring, promotions, and evaluations</p>
+            </div>
         </div>
 
         <!-- ===== GET IN TOUCH ===== -->
         <h2>📧 Get in Touch</h2>
-        <p>For speaking engagements, consultancy, or collaboration, reach out at <strong>napt1952@gmail.com</strong></p>
 
-        <div style="display:flex;gap:20px;margin-top:20px;font-size:2rem;flex-wrap:wrap;">
-            <span>📧</span>
-            <span>📱</span>
-            <span>💼</span>
-            <span>▶️</span>
+        <div class="card">
+            <h3>📧 Contact Me</h3>
+            <p>
+                For speaking engagements, consultancy, or collaboration, reach out at:
+                <br><br>
+                <strong>Email:</strong> <a href="mailto:napt1952@gmail.com" style="color:#800000;font-weight:600;">napt1952@gmail.com</a>
+                <br>
+                <strong>Phone:</strong> +91 9769351231
+                <br><br>
+                <a href="/contact.html" style="display:inline-block;background:#800000;color:#FFD700;padding:10px 30px;border-radius:40px;text-decoration:none;font-weight:600;transition:0.3s;">📧 Contact Me</a>
+            </p>
         </div>
 
     </div>
@@ -311,13 +420,14 @@
             <a href="/">🏠 Home</a> |
             <a href="/about.html">About</a> |
             <a href="/blog.html">Blog</a> |
-            <a href="/contact.html">Contact</a> |
-            <a href="/partners.html">Partners</a> |
-            <a href="/privacy.html">Privacy</a> |
-            <a href="/terms.html">Terms</a> |
-            <a href="/disclaimer.html">Disclaimer</a>
+            <a href="/contact.html">📧 Contact</a> |
+            <a href="/partners.html">🤝 Partners</a> |
+            <a href="/privacy-policy.html">🔒 Privacy</a> |
+            <a href="/terms.html">📜 Terms</a> |
+            <a href="/disclaimer.html">⚖️ Disclaimer</a>
         </div>
-        <p>© 2026 Nigel Thomas | Built with ❤️</p>
+        <p>Founder of <a href="https://joblynk.live" style="color:#FFD700;text-decoration:underline;">JobLynk.live</a> – Career platform for hospitality professionals</p>
+        <p style="font-size:0.85rem;opacity:0.8;margin-top:5px;">© 2026 Nigel Anthony Thomas | Built with ❤️</p>
     </div>
 
 </body>
