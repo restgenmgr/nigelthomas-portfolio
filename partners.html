@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
     <script>
@@ -139,10 +139,16 @@
             border-radius: 12px;
             border-left: 6px solid #FFD700;
             margin: 25px 0;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
         .card h2 {
             border-bottom: none;
             margin-top: 0;
+            font-size: 1.5rem;
         }
         .card ul {
             margin-bottom: 0;
@@ -166,6 +172,7 @@
         .partner-card:hover {
             transform: translateY(-3px);
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-color: #FFD700;
         }
         .partner-card h3 {
             color: #800000;
@@ -204,6 +211,17 @@
             background: #FFD700;
             color: #800000;
             transform: scale(1.03);
+        }
+
+        /* ---------- LINKS IN CARDS ---------- */
+        .card a {
+            color: #800000;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .card a:hover {
+            text-decoration: underline;
+            color: #a52a2a;
         }
 
         /* ---------- FOOTER ---------- */
@@ -299,8 +317,8 @@
             <h2>📧 How to Connect</h2>
             <p>Ready to partner? Contact us with your site details:</p>
             <ul>
-                <li><strong>📧 Email:</strong> <a href="mailto:joblynklive@gmail.com" style="color:#800000;">joblynklive@gmail.com</a></li>
-                <li><strong>📧 HR / Recruitment:</strong> <a href="mailto:napt1952@gmail.com" style="color:#800000;">napt1952@gmail.com</a></li>
+                <li><strong>📧 Email:</strong> <a href="mailto:joblynklive@gmail.com">joblynklive@gmail.com</a></li>
+                <li><strong>📧 HR / Recruitment:</strong> <a href="mailto:napt1952@gmail.com">napt1952@gmail.com</a></li>
                 <li><strong>📱 WhatsApp:</strong> +91 9769351231</li>
             </ul>
             <p style="margin-top:10px;">Please include:</p>
@@ -328,7 +346,7 @@
                     <p>Join our partner network</p>
                 </div>
             </div>
-            <p style="margin-top:15px; text-align:center;">Want to be featured here? <a href="/contact.html" style="color:#800000;font-weight:600;">Contact us today!</a></p>
+            <p style="margin-top:15px; text-align:center;">Want to be featured here? <a href="/contact.html">Contact us today!</a></p>
         </div>
 
         <!-- CTA -->
