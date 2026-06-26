@@ -19,21 +19,17 @@
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
         body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.6;}
-        
-        /* Black & Gold Theme */
         .navbar{background:#000000;padding:1rem 0;position:sticky;top:0;z-index:100;border-bottom:2px solid #d4af37;}
         .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
         .logo{color:#d4af37;font-size:1.5rem;font-weight:bold;text-decoration:none;}
         .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
         .nav-links a{color:#ffffff;text-decoration:none;padding:8px 15px;border-radius:25px;transition:0.3s;}
         .nav-links a:hover{background:#d4af37;color:#000000;}
-        
         .hero{background:linear-gradient(135deg,#000000,#1a1a1a);color:#d4af37;padding:80px 20px;text-align:center;border-bottom:2px solid #d4af37;}
         .hero h1{font-size:2.5rem;margin-bottom:15px;color:#d4af37;}
         .hero p{color:#d4d4d4;font-size:1.2rem;max-width:800px;margin:0 auto;}
         .btn{display:inline-block;background:#d4af37;color:#000000;padding:12px 35px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:25px;transition:0.3s;}
         .btn:hover{background:#c4a030;transform:scale(1.05);}
-        
         .container{max-width:1200px;margin:0 auto;padding:50px 20px;}
         .section-title{font-size:2rem;color:#d4af37;margin-bottom:30px;text-align:center;}
         .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin:30px 0;}
@@ -41,22 +37,28 @@
         .card:hover{transform:translateY(-5px);box-shadow:0 5px 25px rgba(212,175,55,0.1);}
         .card h3{color:#d4af37;margin-bottom:15px;font-size:1.3rem;}
         .card p{color:#d4d4d4;margin-bottom:15px;}
-        .card a{color:#d4af37;text-decoration:none;font-weight:bold;}
-        .card a:hover{text-decoration:underline;}
-        
+        .article-card{background:#111111;border-radius:15px;padding:30px;margin-bottom:30px;border:1px solid #d4af37;transition:0.3s;}
+        .article-card:hover{transform:translateY(-3px);box-shadow:0 5px 25px rgba(212,175,55,0.08);}
+        .article-title{font-size:1.3rem;font-weight:600;margin-bottom:10px;}
+        .article-title a{color:#d4af37;text-decoration:none;}
+        .article-title a:hover{text-decoration:underline;}
+        .article-meta{font-size:0.85rem;color:#a0a0a0;margin-bottom:10px;}
+        .badge{display:inline-block;padding:3px 12px;border-radius:20px;font-size:0.7rem;font-weight:600;margin-right:8px;}
+        .badge-gold{background:#d4af37;color:#000000;}
+        .badge-dark{background:#1a1a1a;color:#d4af37;border:1px solid #d4af37;}
+        .article-excerpt{color:#d4d4d4;margin-bottom:15px;}
+        .read-more-btn{display:inline-block;background:#d4af37;color:#000000;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:bold;transition:0.3s;}
+        .read-more-btn:hover{background:#c4a030;transform:scale(1.02);}
         .sectors{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:40px 0;}
         .sector-tag{background:#1a1a1a;color:#d4af37;padding:10px 20px;border-radius:40px;font-size:0.95rem;font-weight:500;border:1px solid #d4af37;transition:0.3s;}
         .sector-tag:hover{background:#d4af37;color:#000000;}
-        
         .mission-box{background:#111111;border:2px solid #d4af37;padding:40px;border-radius:20px;margin:40px 0;text-align:center;}
         .mission-box h2{color:#d4af37;margin-bottom:20px;}
         .mission-box p{color:#d4d4d4;font-size:1.1rem;max-width:900px;margin:0 auto;line-height:1.8;}
-        
         footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-top:50px;border-top:2px solid #d4af37;}
         .footer-links{margin-bottom:15px;}
         .footer-links a{color:#d4af37;text-decoration:none;margin:0 12px;transition:0.3s;}
         .footer-links a:hover{text-decoration:underline;}
-        
         @media(max-width:768px){.nav-container{flex-direction:column;gap:15px;}.hero h1{font-size:1.8rem;}.grid{grid-template-columns:1fr;}}
     </style>
 </head>
@@ -67,6 +69,7 @@
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
+                <a href="/experience.html">Experience</a>
                 <a href="/blog.html">Blog</a>
                 <a href="/contact.html">Contact</a>
                 <a href="/privacy-policy.html">Privacy</a>
@@ -78,29 +81,58 @@
 
     <div class="hero">
         <h1>Nigel Thomas</h1>
-        <p>🏆 Hospitality Trainer & Professional | 30+ Years Global Experience</p>
+        <p>🏆 Hospitality Trainer &amp; Professional | 30+ Years Global Experience</p>
         <p style="font-size:1rem;margin-top:5px;color:#d4af37;">🚢 Cruise Ships | 🏨 Luxury Resorts | 🌍 Middle East | 🇺🇸 USA | 🇮🇳 India</p>
         <a href="/about.html" class="btn">Learn More →</a>
     </div>
 
     <div class="container">
-        <div class="grid">
-            <div class="card"><h3>⭐ 30+ Years Experience</h3><p>Executive leadership on premium cruise lines, luxury resorts, and 5-star hotels globally.</p></div>
-            <div class="card"><h3>📚 10,000+ Mentored</h3><p>Helping hospitality professionals achieve their career goals through expert guidance.</p></div>
-            <div class="card"><h3>🌍 Global Expertise</h3><p>Deep experience across Middle East, USA, and India markets with proven success.</p></div>
+        <!-- Featured Article -->
+        <h2 class="section-title">⭐ Featured Article</h2>
+        <div class="article-card">
+            <div class="article-title">
+                <a href="/mastering-food-cost-guide.html">Mastering Food Cost in Restaurants &amp; Hotels</a>
+            </div>
+            <div class="article-meta">
+                <span class="badge badge-gold">Editor's Pick</span>
+                <span class="badge badge-dark">3000+ words</span>
+                <span>📅 June 2026</span>
+            </div>
+            <p class="article-excerpt">A comprehensive deep-dive into food cost management for hospitality professionals. Covers purchasing strategy, portion control, recipe costing, waste reduction, and how to achieve and maintain your target food cost percentage across single and multi-unit operations.</p>
+            <a href="/mastering-food-cost-guide.html" class="read-more-btn">Read Article →</a>
         </div>
 
-        <div class="mission-box">
-            <h2>🚀 My Mission</h2>
-            <p>To bridge the gap between executive talent and career opportunities in hospitality and maritime industries across India, the Middle East, and international markets. I am committed to elevating industry standards through expert training, operational excellence, and developing the next generation of hospitality leaders.</p>
+        <!-- Latest Articles -->
+        <h2 class="section-title">📚 Latest Articles</h2>
+
+        <div class="article-card">
+            <div class="article-title"><a href="/building-a-career-in-hospitality-guide.html">Building a Career in Hospitality: Complete Guide</a></div>
+            <div class="article-meta"><span class="badge badge-gold">Career Guide</span><span>📅 June 2026</span></div>
+            <p class="article-excerpt">Your complete guide to breaking into hospitality, moving up the ladder, and going global. Covers entry points, skills, certifications, career pathways, and international markets.</p>
+            <a href="/building-a-career-in-hospitality-guide.html" class="read-more-btn">Read Article →</a>
         </div>
 
+        <div class="article-card">
+            <div class="article-title"><a href="/ats-friendly-hospitality-cv-guide.html">Why Your Hospitality CV Keeps Getting Rejected</a></div>
+            <div class="article-meta"><span class="badge badge-gold">Career Guide</span><span>📅 June 2026</span></div>
+            <p class="article-excerpt">Learn why your hospitality CV is being rejected by ATS systems and how to fix it. Expert advice on formatting, keywords, and what recruiters actually look for.</p>
+            <a href="/ats-friendly-hospitality-cv-guide.html" class="read-more-btn">Read Article →</a>
+        </div>
+
+        <div class="article-card">
+            <div class="article-title"><a href="/hot-and-cold-kitchens-temperature-guide.html">Hot &amp; Cold Kitchens: Complete Temperature Guide</a></div>
+            <div class="article-meta"><span class="badge badge-gold">Food Safety</span><span>📅 June 2026</span></div>
+            <p class="article-excerpt">Master critical temperature points, HACCP compliance, fridge storage hierarchy, FIFO, and food safety protocols for professional kitchens.</p>
+            <a href="/hot-and-cold-kitchens-temperature-guide.html" class="read-more-btn">Read Article →</a>
+        </div>
+
+        <!-- 14 Executive Sectors -->
         <h2 class="section-title">📈 14 Executive Sectors I Cover</h2>
         <div class="sectors">
             <span class="sector-tag">🚢 Cruise Line Operations</span>
             <span class="sector-tag">🏨 Luxury Hotels</span>
             <span class="sector-tag">🕌 Middle East Hospitality</span>
-            <span class="sector-tag">🍽️ F&B Management</span>
+            <span class="sector-tag">🍽️ F&amp;B Management</span>
             <span class="sector-tag">🏨 Front Office</span>
             <span class="sector-tag">🧹 Housekeeping</span>
             <span class="sector-tag">👨‍🍳 Culinary Arts</span>
@@ -109,8 +141,13 @@
             <span class="sector-tag">🔧 Engineering</span>
             <span class="sector-tag">⚓ Maritime Deck</span>
             <span class="sector-tag">🔧 Maritime Engine</span>
-            <span class="sector-tag">🧘 Wellness & Spa</span>
-            <span class="sector-tag">🎰 Retail & Casino</span>
+            <span class="sector-tag">🧘 Wellness &amp; Spa</span>
+            <span class="sector-tag">🎰 Retail &amp; Casino</span>
+        </div>
+
+        <div class="mission-box">
+            <h2>🚀 My Mission</h2>
+            <p>To bridge the gap between executive talent and career opportunities in hospitality and maritime industries across India, the Middle East, and international markets. I am committed to elevating industry standards through expert training, operational excellence, and developing the next generation of hospitality leaders.</p>
         </div>
     </div>
 
@@ -118,6 +155,7 @@
         <div class="footer-links">
             <a href="/">Home</a>
             <a href="/about.html">About</a>
+            <a href="/experience.html">Experience</a>
             <a href="/blog.html">Blog</a>
             <a href="/contact.html">Contact</a>
             <a href="/privacy-policy.html">Privacy</a>
@@ -129,6 +167,3 @@
     </footer>
 </body>
 </html>
-
-
-
