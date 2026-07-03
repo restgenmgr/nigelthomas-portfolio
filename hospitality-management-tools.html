@@ -1,106 +1,1462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hospitality Management Tools | Free Hotel Calculators & Templates | Nigel Thomas</title>
-<meta name="description" content="Free hospitality management tools including hotel calculators, operational templates, KPI resources and downloadable management forms.">
-<meta name="keywords" content="hospitality management tools, hotel management tools, ADR calculator, RevPAR calculator, food cost calculator">
-<meta name="author" content="Nigel A. Thomas">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://nigelthomas.live/hospitality-management-tools.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospitality Management Tools | Free Hotel Calculators & Templates | Nigel Thomas</title>
+  <meta name="description" content="Free hospitality management tools including hotel calculators, operational templates, KPI resources and downloadable management forms.">
+  <meta name="keywords" content="hospitality management tools, hotel management tools, ADR calculator, RevPAR calculator, food cost calculator">
+  <meta name="author" content="Nigel A. Thomas">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://nigelthomas.live/hospitality-management-tools.html">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hospitality Management Tools">
-<meta property="og:description" content="Professional hotel management calculators and downloadable operational templates.">
-<meta property="og:url" content="https://nigelthomas.live/hospitality-management-tools.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hospitality Management Tools">
+  <meta property="og:description" content="Professional hotel management calculators and downloadable operational templates.">
+  <meta property="og:url" content="https://nigelthomas.live/hospitality-management-tools.html">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-XXXXXXXXXX');
-</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<style>
-:root{
---maroon:#5b1f27;
---gold:#d4af37;
---bg:#f7f5f2;
---text:#333;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
-header{background:var(--maroon);position:sticky;top:0;z-index:999}
-nav{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:18px}
-.logo{color:#fff;font-family:"Playfair Display",serif;font-size:1.6rem}
-nav ul{display:flex;list-style:none;gap:28px}
-nav a{text-decoration:none;color:#fff;font-weight:600}
-nav a:hover{color:var(--gold)}
-.hero{
-background:linear-gradient(rgba(91,31,39,.88),rgba(91,31,39,.88)),url('assets/images/hotel-tools-banner.jpg') center/cover;
-color:#fff;text-align:center;padding:90px 20px}
-.hero h1{font-family:"Playfair Display",serif;font-size:3rem;margin-bottom:20px}
-.hero p{max-width:850px;margin:auto;font-size:1.15rem}
-.btn{display:inline-block;margin-top:30px;background:var(--gold);color:#222;padding:14px 32px;
-border-radius:40px;text-decoration:none;font-weight:700}
-.stats{max-width:1200px;margin:50px auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;padding:0 20px}
-.card{background:#fff;border-radius:12px;padding:30px;text-align:center;
-box-shadow:0 8px 18px rgba(0,0,0,.08);border-top:5px solid var(--gold)}
-.card h3{color:var(--maroon);margin-bottom:10px}
-.section{max-width:1200px;margin:60px auto;padding:0 20px}
-.section h2{font-family:"Playfair Display",serif;color:var(--maroon);margin-bottom:15px}
-footer{background:var(--maroon);color:#fff;text-align:center;padding:40px 20px;margin-top:60px}
-@media(max-width:768px){
-nav{flex-direction:column;gap:15px}
-nav ul{flex-wrap:wrap;justify-content:center}
-.hero h1{font-size:2.2rem}
-}
-</style>
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --maroon: #5b1f27;
+      --gold: #d4af37;
+      --gold-light: #e8c84a;
+      --bg: #f7f5f2;
+      --text: #1e1e1e;
+      --white: #ffffff;
+      --shadow: 0 8px 30px rgba(0,0,0,0.08);
+      --shadow-hover: 0 16px 48px rgba(91,31,39,0.15);
+      --radius: 16px;
+      --transition: 0.3s ease;
+    }
+
+    /* ===== RESET ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ===== STICKY NAVIGATION ===== */
+    header {
+      background: var(--maroon);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 14px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+    }
+    .logo span { color: var(--gold); }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    nav a:hover,
+    nav a.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(91,31,39,0.9), rgba(91,31,39,0.85)),
+                  url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iODAiIGZpbGw9IiM1QjFGMjciLz48cGF0aCBkPSJNMjAgMjBoNDB2NDBIMjB6IiBmaWxsPSIjRDRBRjM3IiBvcGFjaXR5PSIwLjA1Ii8+PC9zdmc+');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 70px;
+      border-radius: 0 0 40px 40px;
+      margin: 0 12px 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .hero h1 i { color: var(--gold); margin-right: 10px; }
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: #1e1e1e;
+      padding: 14px 36px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.25s;
+      box-shadow: 0 4px 16px rgba(212,175,55,0.3);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(212,175,55,0.45);
+    }
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--gold);
+      padding: 14px 36px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid var(--gold);
+      transition: all 0.25s;
+    }
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #1e1e1e;
+    }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ===== STATS ===== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin: -20px 0 40px;
+      position: relative;
+      z-index: 2;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius);
+      padding: 24px 12px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(212,175,55,0.15);
+      transition: all 0.3s;
+    }
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .stat-card .stat-icon { font-size: 2rem; color: var(--gold); margin-bottom: 4px; }
+    .stat-card .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--maroon);
+    }
+    .stat-card .stat-label { font-size: 0.9rem; font-weight: 500; color: #555; margin-top: 2px; }
+
+    /* ===== SEARCH ===== */
+    .search-wrap { margin: 30px 0 40px; }
+    .search-wrap input {
+      width: 100%;
+      padding: 18px 28px;
+      border-radius: 60px;
+      border: 2px solid rgba(212,175,55,0.25);
+      background: rgba(255,255,255,0.9);
+      font-size: 1.05rem;
+      font-family: 'Inter', sans-serif;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      backdrop-filter: blur(4px);
+    }
+    .search-wrap input:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(212,175,55,0.15);
+    }
+
+    /* ===== SECTION TITLES ===== */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--maroon);
+      margin: 40px 0 24px;
+      padding-left: 20px;
+      border-left: 6px solid var(--gold);
+    }
+    .section-title i { color: var(--gold); margin-right: 12px; }
+
+    /* ===== TOOL CARDS ===== */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+    .tool-card {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(4px);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.6);
+      transition: all 0.3s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .tool-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+    }
+    .tool-card .icon { font-size: 2.4rem; color: var(--gold); margin-bottom: 8px; }
+    .tool-card h3 { font-size: 1.2rem; color: var(--maroon); margin-bottom: 4px; }
+    .tool-card p { font-size: 0.9rem; color: #555; flex: 1; margin: 8px 0 16px; }
+    .tool-card .btn-small {
+      background: var(--maroon);
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      align-self: flex-start;
+      transition: all 0.25s;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .tool-card .btn-small:hover { background: #7a2e3a; transform: scale(1.02); }
+    .coming-ribbon {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--gold);
+      color: #1e1e1e;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 40px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 12px rgba(212,175,55,0.35);
+    }
+
+    /* ===== CATEGORIES ===== */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .category-card {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(4px);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--gold);
+      transition: all 0.3s;
+    }
+    .category-card:hover { transform: translateX(6px); box-shadow: var(--shadow-hover); }
+    .category-card h4 { color: var(--maroon); margin-bottom: 8px; font-size: 1.05rem; }
+    .category-card ul { list-style: none; font-size: 0.9rem; }
+    .category-card ul li { padding: 4px 0; border-bottom: 1px solid rgba(0,0,0,0.04); color: #444; }
+    .category-card ul li i { color: var(--gold); font-size: 0.5rem; margin-right: 8px; }
+
+    /* ===== FEATURES ===== */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 16px;
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(4px);
+      padding: 28px;
+      border-radius: var(--radius);
+      margin: 20px 0 30px;
+      border: 1px solid rgba(212,175,55,0.1);
+    }
+    .feature-item { text-align: center; font-weight: 500; }
+    .feature-item i { color: var(--gold); font-size: 1.8rem; display: block; margin-bottom: 6px; }
+
+    /* ===== INTERNAL LINKS ===== */
+    .internal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 20px 0 30px;
+    }
+    .internal-card {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(4px);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      text-align: center;
+      text-decoration: none;
+      color: #1e1e1e;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid rgba(212,175,55,0.1);
+    }
+    .internal-card:hover {
+      background: var(--gold);
+      color: #1e1e1e;
+      transform: scale(1.02);
+      box-shadow: var(--shadow-hover);
+    }
+
+    /* ===== FAQ ACCORDION ===== */
+    .faq-section { margin: 40px 0; }
+    .faq-item {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(4px);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(212,175,55,0.08);
+    }
+    .faq-question {
+      padding: 18px 24px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s;
+      color: var(--maroon);
+      font-size: 1rem;
+    }
+    .faq-question:hover { background: rgba(212,175,55,0.06); }
+    .faq-question i { transition: transform 0.3s; }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
+    }
+    .faq-item.active .faq-answer { max-height: 300px; padding: 0 24px 20px; }
+    .faq-item.active .faq-question i { transform: rotate(180deg); }
+
+    /* ===== BACK TO TOP ===== */
+    #backTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--maroon);
+      color: #fff;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(91,31,39,0.3);
+      transition: all 0.3s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 999;
+    }
+    #backTop.visible { opacity: 1; visibility: visible; }
+    #backTop:hover { background: var(--gold); color: #1e1e1e; transform: scale(1.08); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--maroon);
+      color: #ddd;
+      padding: 48px 0 28px;
+      margin-top: 50px;
+      border-radius: 40px 40px 0 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 32px;
+      margin-bottom: 30px;
+    }
+    .footer-grid h4 { color: var(--gold); font-family: 'Playfair Display', serif; margin-bottom: 14px; }
+    .footer-grid a { color: #ccc; text-decoration: none; display: block; margin: 6px 0; transition: color 0.2s; font-size: 0.95rem; }
+    .footer-grid a:hover { color: var(--gold); }
+    .social-icons a {
+      display: inline-block;
+      margin-right: 16px;
+      font-size: 1.6rem;
+      color: #ccc;
+      transition: all 0.2s;
+    }
+    .social-icons a:hover { color: var(--gold); transform: translateY(-3px); }
+    .footer-bottom { border-top: 1px solid rgba(212,175,55,0.15); padding-top: 20px; text-align: center; font-size: 0.9rem; color: #aaa; }
+
+    /* ===== REVEAL ANIMATION ===== */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav { flex-direction: column; gap: 12px; }
+      nav ul { flex-wrap: wrap; justify-content: center; gap: 16px; font-size: 0.9rem; }
+      .hero h1 { font-size: 2.2rem; }
+      .stat-card .stat-number { font-size: 2rem; }
+      .section-title { font-size: 1.8rem; }
+      .hero { padding: 50px 16px 40px; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.8rem; }
+      .tools-grid { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
+<!-- ===== HEADER / NAVIGATION ===== -->
 <header>
-<nav>
-<div class="logo">NigelThomas.live</div>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/about.html">About</a></li>
-<li><a href="/hospitality-management-tools.html">Tools</a></li>
-<li><a href="/blog.html">Blog</a></li>
-<li><a href="/contact.html">Contact</a></li>
-</ul>
-</nav>
+  <div class="container">
+    <nav>
+      <div class="logo">Nigel<span>Thomas</span>.live</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/hospitality-management-tools.html" class="active">Tools</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
+<!-- ===== HERO ===== -->
 <section class="hero">
-<h1>Hospitality Management Tools</h1>
-<p>Professional calculators, operational templates, KPI resources and downloadable management tools for hotel managers, operations managers, chefs, restaurant managers and hospitality professionals.</p>
-<a class="btn" href="#tools">Explore Free Tools</a>
+  <div class="container">
+    <h1><i class="fas fa-hotel"></i> Hospitality Management Tools</h1>
+    <p>Professional calculators, operational templates, KPI dashboards, downloadable Excel forms and management resources designed for Hotel Managers, Operations Managers, General Managers, Executive Chefs, Restaurant Managers, Food & Beverage Managers and hospitality professionals.</p>
+    <div class="hero-buttons">
+      <a href="#tools" class="btn-gold"><i class="fas fa-rocket"></i> Explore Free Tools</a>
+      <a href="#" class="btn-outline"><i class="fas fa-compass"></i> Browse Career Guides</a>
+    </div>
+  </div>
 </section>
 
-<section class="stats">
-<div class="card"><h3>40+</h3><p>Professional Hospitality Tools</p></div>
-<div class="card"><h3>Free</h3><p>Downloadable Templates</p></div>
-<div class="card"><h3>Excel</h3><p>CSV Export Support</p></div>
-<div class="card"><h3>24/7</h3><p>Available Online</p></div>
-</section>
+<!-- ===== STATISTICS ===== -->
+<div class="container">
+  <div class="stats-grid reveal">
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-tools"></i></div><div class="stat-number">40+</div><div class="stat-label">Professional Hospitality Tools</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-file-download"></i></div><div class="stat-number">25+</div><div class="stat-label">Downloadable Templates</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-unlock"></i></div><div class="stat-number">100%</div><div class="stat-label">Free Access</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-user-tie"></i></div><div class="stat-number">40+</div><div class="stat-label">Years Hospitality Experience</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-file-csv"></i></div><div class="stat-number">Excel</div><div class="stat-label">CSV Downloads</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-clock"></i></div><div class="stat-number">24/7</div><div class="stat-label">Available Online</div></div>
+  </div>
 
-<section class="section" id="tools">
-<h2>Welcome</h2>
-<p>This is the foundation of the NigelThomas.live Hospitality Management Toolkit. Future updates will add interactive calculators for Food Cost, ADR, RevPAR, Occupancy, Labour Cost, Recipe Costing, Daily Manager Reports and many more.</p>
-</section>
+  <!-- ===== SEARCH ===== -->
+  <div class="search-wrap reveal">
+    <input type="text" id="liveSearch" placeholder="Search calculators, templates or reports..." aria-label="Search tools">
+  </div>
 
+  <!-- ===== FEATURED TOOLS ===== -->
+  <h2 class="section-title reveal" id="tools"><i class="fas fa-star"></i>Featured Tools</h2>
+  <div class="tools-grid" id="toolGrid"></div>
+
+  <!-- ===== TOOL CATEGORIES ===== -->
+  <h2 class="section-title reveal"><i class="fas fa-th-large"></i>Tool Categories</h2>
+  <div class="category-grid" id="categoryGrid"></div>
+
+  <!-- ===== WHY USE OUR TOOLS ===== -->
+  <div class="reveal" style="background:rgba(255,255,255,0.5); backdrop-filter:blur(4px); border-radius:var(--radius); padding:28px; margin:30px 0;">
+    <h3 style="font-family:'Playfair Display'; color:var(--maroon); font-size:1.8rem;">Why Use Our Tools</h3>
+    <p style="max-width:700px; font-size:1.05rem; margin:10px 0 20px;">Developed from more than four decades of hospitality leadership experience across hotels, resorts, restaurants and cruise operations.</p>
+    <div class="feature-grid">
+      <div class="feature-item"><i class="fas fa-check-circle"></i> Free</div>
+      <div class="feature-item"><i class="fas fa-briefcase"></i> Professional</div>
+      <div class="feature-item"><i class="fas fa-chart-line"></i> Industry Standard</div>
+      <div class="feature-item"><i class="fas fa-mobile-alt"></i> Mobile Friendly</div>
+      <div class="feature-item"><i class="fas fa-file-excel"></i> Excel Compatible</div>
+      <div class="feature-item"><i class="fas fa-sync-alt"></i> Regularly Updated</div>
+    </div>
+  </div>
+
+  <!-- ===== COMING SOON ===== -->
+  <h2 class="section-title reveal"><i class="fas fa-clock"></i>Coming Soon</h2>
+  <div class="tools-grid reveal" id="comingSoonGrid"></div>
+
+  <!-- ===== INTERNAL LINKS ===== -->
+  <h2 class="section-title reveal">Continue Learning</h2>
+  <div class="internal-grid reveal" id="internalLinksGrid"></div>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section reveal">
+    <h2 class="section-title"><i class="fas fa-question-circle"></i>Frequently Asked Questions</h2>
+    <div id="faqContainer"></div>
+  </section>
+</div>
+
+<!-- ===== BACK TO TOP ===== -->
+<button id="backTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- ===== FOOTER ===== -->
 <footer>
-<p>&copy; 2026 Nigel Thomas. All Rights Reserved.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Quick Links</h4>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/hospitality-management-tools.html">Tools</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Hospitality Resources</h4>
+        <a href="#">Food Cost Calculator</a>
+        <a href="#">ADR Calculator</a>
+        <a href="#">RevPAR Calculator</a>
+        <a href="#">Occupancy Calculator</a>
+        <a href="#">Labour Cost Calculator</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:info@nigelthomas.live">info@nigelthomas.live</a>
+        <div class="social-icons" style="margin-top:12px;">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 NigelThomas.live &bull; Privacy Policy &bull; Terms of Use</span>
+    </div>
+  </div>
 </footer>
 
+<!-- ===== JSON-LD SCHEMA ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NigelThomas.live",
+  "url": "https://nigelthomas.live",
+  "description": "Hospitality management tools and resources for hotel professionals."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hospitality Management Tools & Hotel Calculators",
+  "description": "Professional hospitality calculators, operational templates, KPI dashboards & Excel forms for hotel managers, chefs and F&B professionals.",
+  "url": "https://nigelthomas.live/hospitality-management-tools.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is a Food Cost Calculator?","acceptedAnswer":{"@type":"Answer","text":"A tool to determine the cost of ingredients per dish and overall food cost percentage."}},
+    {"@type":"Question","name":"How do I calculate ADR?","acceptedAnswer":{"@type":"Answer","text":"Average Daily Rate = Total Room Revenue / Number of Rooms Sold."}},
+    {"@type":"Question","name":"What is RevPAR?","acceptedAnswer":{"@type":"Answer","text":"Revenue Per Available Room = Total Room Revenue / Total Available Rooms."}},
+    {"@type":"Question","name":"What is the Occupancy Rate formula?","acceptedAnswer":{"@type":"Answer","text":"Occupancy Rate = (Rooms Sold / Total Rooms) * 100."}},
+    {"@type":"Question","name":"How is Labour Cost % calculated?","acceptedAnswer":{"@type":"Answer","text":"Labour Cost % = (Total Labour Cost / Total Revenue) * 100."}},
+    {"@type":"Question","name":"What is GOPPAR?","acceptedAnswer":{"@type":"Answer","text":"Gross Operating Profit Per Available Room = (Gross Operating Profit) / Total Available Rooms."}},
+    {"@type":"Question","name":"What is a Break-even Calculator?","acceptedAnswer":{"@type":"Answer","text":"Determines the number of units or revenue needed to cover fixed and variable costs."}},
+    {"@type":"Question","name":"How do you calculate Beverage Cost?","acceptedAnswer":{"@type":"Answer","text":"Beverage Cost % = (Cost of Beverages Sold / Beverage Revenue) * 100."}},
+    {"@type":"Question","name":"What is a Yield Calculator?","acceptedAnswer":{"@type":"Answer","text":"Used in F&B to calculate the usable product yield from raw ingredients."}},
+    {"@type":"Question","name":"What is the Daily Manager Report?","acceptedAnswer":{"@type":"Answer","text":"A structured report for hotel managers to track daily operations, revenue, and incidents."}}
+  ]
+}
+</script>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+(function() {
+  'use strict';
+
+  // ===== DATA =====
+  var tools = [
+    { id: 1, icon: 'fa-calculator', title: 'Food Cost Calculator', desc: 'Calculate dish & menu food cost percentage with yield analysis.', ribbon: '' },
+    { id: 2, icon: 'fa-dollar-sign', title: 'ADR Calculator', desc: 'Average Daily Rate – measure room revenue per sold room.', ribbon: '' },
+    { id: 3, icon: 'fa-chart-bar', title: 'RevPAR Calculator', desc: 'Revenue Per Available Room – key hotel performance metric.', ribbon: '' },
+    { id: 4, icon: 'fa-percent', title: 'Occupancy Calculator', desc: 'Occupancy rate based on rooms sold vs available.', ribbon: '' },
+    { id: 5, icon: 'fa-users', title: 'Labour Cost Calculator', desc: 'Measure labour cost as percentage of total revenue.', ribbon: '' },
+    { id: 6, icon: 'fa-clipboard-list', title: 'Daily Manager Report', desc: 'Operational report template for daily management.', ribbon: 'Coming Soon' }
+  ];
+
+  var categories = [
+    { name: 'Hotel Operations', items: ['Daily Manager Report', 'Shift Handover Log', 'Duty Manager Checklist', 'Guest Complaint Register', 'Maintenance Log', 'VIP Arrival Checklist'] },
+    { name: 'Rooms Division', items: ['Occupancy Calculator', 'ADR Calculator', 'RevPAR Calculator', 'GOPPAR Calculator', 'Forecast Occupancy', 'Room Revenue Calculator'] },
+    { name: 'Finance & Cost Control', items: ['Food Cost Calculator', 'Beverage Cost Calculator', 'Labour Cost Calculator', 'Break-even Calculator', 'Gross Profit Calculator', 'Budget Planner'] },
+    { name: 'Kitchen & Food & Beverage', items: ['Recipe Cost Calculator', 'Menu Pricing Calculator', 'Yield Calculator', 'Portion Cost Calculator', 'Banquet Cost Calculator', 'Buffet Cost Calculator'] },
+    { name: 'Human Resources', items: ['Interview Evaluation Form', 'Training Register', 'Performance Review', 'Leave Planner', 'Staff Roster', 'Disciplinary Register'] },
+    { name: 'Purchasing & Inventory', items: ['Inventory Count Sheet', 'Purchase Order', 'Goods Received Note', 'Supplier Evaluation', 'Stock Requisition', 'Asset Register'] }
+  ];
+
+  var comingSoon = ['Hotel KPI Dashboard', 'Executive Chef Toolkit', 'Restaurant Profit Calculator', 'Hotel Budget Planner', 'Housekeeping Dashboard', 'Front Office Dashboard', 'Energy Cost Calculator', 'Banquet Planner'];
+
+  var internalLinks = ['General Manager Duties & Responsibilities', 'Hotel Manager Operations Guide', 'Operations Manager Guide', 'Executive Chef Guide', 'Sous Chef Guide', 'Chef de Partie Guide', 'Food Cost Control Guide', 'Cloud Kitchen Guide', 'Restaurant Equipment Guide'];
+
+  var faqData = [
+    { q: 'What is a Food Cost Calculator?', a: 'A tool to determine the cost of ingredients per dish and overall food cost percentage, helping chefs and managers control margins.' },
+    { q: 'How do I calculate ADR?', a: 'Average Daily Rate = Total Room Revenue / Number of Rooms Sold. It measures the average rate paid per occupied room.' },
+    { q: 'What is RevPAR?', a: 'Revenue Per Available Room = Total Room Revenue / Total Available Rooms. It combines occupancy and ADR.' },
+    { q: 'What is the Occupancy Rate formula?', a: 'Occupancy Rate = (Rooms Sold / Total Rooms) * 100. It shows the percentage of rooms filled.' },
+    { q: 'How is Labour Cost % calculated?', a: 'Labour Cost % = (Total Labour Cost / Total Revenue) * 100. A key metric for operational efficiency.' },
+    { q: 'What is GOPPAR?', a: 'Gross Operating Profit Per Available Room = (Gross Operating Profit) / Total Available Rooms.' },
+    { q: 'What is a Break-even Calculator?', a: 'Determines the number of units or revenue needed to cover fixed and variable costs.' },
+    { q: 'How do you calculate Beverage Cost?', a: 'Beverage Cost % = (Cost of Beverages Sold / Beverage Revenue) * 100.' },
+    { q: 'What is a Yield Calculator?', a: 'Used in F&B to calculate the usable product yield from raw ingredients, e.g., meat or produce.' },
+    { q: 'What is the Daily Manager Report?', a: 'A structured report for hotel managers to track daily operations, revenue, and incidents.' }
+  ];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospitality Management Tools | Free Hotel Calculators & Templates | Nigel Thomas</title>
+  <meta name="description" content="Free hospitality management tools including hotel calculators, operational templates, KPI resources and downloadable management forms.">
+  <meta name="keywords" content="hospitality management tools, hotel management tools, ADR calculator, RevPAR calculator, food cost calculator">
+  <meta name="author" content="Nigel A. Thomas">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://nigelthomas.live/hospitality-management-tools.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hospitality Management Tools">
+  <meta property="og:description" content="Professional hotel management calculators and downloadable operational templates.">
+  <meta property="og:url" content="https://nigelthomas.live/hospitality-management-tools.html">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --maroon: #5b1f27;
+      --gold: #d4af37;
+      --gold-light: #e8c84a;
+      --bg: #f7f5f2;
+      --text: #1e1e1e;
+      --white: #ffffff;
+      --shadow: 0 8px 30px rgba(0,0,0,0.08);
+      --shadow-hover: 0 16px 48px rgba(91,31,39,0.15);
+      --radius: 16px;
+      --transition: 0.3s ease;
+    }
+
+    /* ===== RESET ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* ===== STICKY NAVIGATION ===== */
+    header {
+      background: var(--maroon);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 14px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+    }
+    .logo span { color: var(--gold); }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    nav a:hover,
+    nav a.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(rgba(91,31,39,0.9), rgba(91,31,39,0.85)),
+                  url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iODAiIGZpbGw9IiM1QjFGMjciLz48cGF0aCBkPSJNMjAgMjBoNDB2NDBIMjB6IiBmaWxsPSIjRDRBRjM3IiBvcGFjaXR5PSIwLjA1Ii8+PC9zdmc+');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 70px;
+      border-radius: 0 0 40px 40px;
+      margin: 0 12px 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .hero h1 i { color: var(--gold); margin-right: 10px; }
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: #1e1e1e;
+      padding: 14px 36px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: all 0.25s;
+      box-shadow: 0 4px 16px rgba(212,175,55,0.3);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-gold:hover {
+      background: var(--gold-light);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(212,175,55,0.45);
+    }
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--gold);
+      padding: 14px 36px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 2px solid var(--gold);
+      transition: all 0.25s;
+    }
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #1e1e1e;
+    }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ===== STATS ===== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin: -20px 0 40px;
+      position: relative;
+      z-index: 2;
+    }
+    .stat-card {
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      border-radius: var(--radius);
+      padding: 24px 12px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(212,175,55,0.15);
+      transition: all 0.3s;
+    }
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .stat-card .stat-icon { font-size: 2rem; color: var(--gold); margin-bottom: 4px; }
+    .stat-card .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: var(--maroon);
+    }
+    .stat-card .stat-label { font-size: 0.9rem; font-weight: 500; color: #555; margin-top: 2px; }
+
+    /* ===== SEARCH ===== */
+    .search-wrap { margin: 30px 0 40px; }
+    .search-wrap input {
+      width: 100%;
+      padding: 18px 28px;
+      border-radius: 60px;
+      border: 2px solid rgba(212,175,55,0.25);
+      background: rgba(255,255,255,0.9);
+      font-size: 1.05rem;
+      font-family: 'Inter', sans-serif;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      backdrop-filter: blur(4px);
+    }
+    .search-wrap input:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(212,175,55,0.15);
+    }
+
+    /* ===== SECTION TITLES ===== */
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--maroon);
+      margin: 40px 0 24px;
+      padding-left: 20px;
+      border-left: 6px solid var(--gold);
+    }
+    .section-title i { color: var(--gold); margin-right: 12px; }
+
+    /* ===== TOOL CARDS ===== */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 28px;
+      margin-bottom: 40px;
+    }
+    .tool-card {
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(4px);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.6);
+      transition: all 0.3s;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .tool-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+    }
+    .tool-card .icon { font-size: 2.4rem; color: var(--gold); margin-bottom: 8px; }
+    .tool-card h3 { font-size: 1.2rem; color: var(--maroon); margin-bottom: 4px; }
+    .tool-card p { font-size: 0.9rem; color: #555; flex: 1; margin: 8px 0 16px; }
+    .tool-card .btn-small {
+      background: var(--maroon);
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 40px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      align-self: flex-start;
+      transition: all 0.25s;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .tool-card .btn-small:hover { background: #7a2e3a; transform: scale(1.02); }
+    .coming-ribbon {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--gold);
+      color: #1e1e1e;
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 40px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 12px rgba(212,175,55,0.35);
+    }
+
+    /* ===== CATEGORIES ===== */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .category-card {
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(4px);
+      padding: 20px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--gold);
+      transition: all 0.3s;
+    }
+    .category-card:hover { transform: translateX(6px); box-shadow: var(--shadow-hover); }
+    .category-card h4 { color: var(--maroon); margin-bottom: 8px; font-size: 1.05rem; }
+    .category-card ul { list-style: none; font-size: 0.9rem; }
+    .category-card ul li { padding: 4px 0; border-bottom: 1px solid rgba(0,0,0,0.04); color: #444; }
+    .category-card ul li i { color: var(--gold); font-size: 0.5rem; margin-right: 8px; }
+
+    /* ===== FEATURES ===== */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 16px;
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(4px);
+      padding: 28px;
+      border-radius: var(--radius);
+      margin: 20px 0 30px;
+      border: 1px solid rgba(212,175,55,0.1);
+    }
+    .feature-item { text-align: center; font-weight: 500; }
+    .feature-item i { color: var(--gold); font-size: 1.8rem; display: block; margin-bottom: 6px; }
+
+    /* ===== INTERNAL LINKS ===== */
+    .internal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin: 20px 0 30px;
+    }
+    .internal-card {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(4px);
+      padding: 16px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+      text-align: center;
+      text-decoration: none;
+      color: #1e1e1e;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid rgba(212,175,55,0.1);
+    }
+    .internal-card:hover {
+      background: var(--gold);
+      color: #1e1e1e;
+      transform: scale(1.02);
+      box-shadow: var(--shadow-hover);
+    }
+
+    /* ===== FAQ ACCORDION ===== */
+    .faq-section { margin: 40px 0; }
+    .faq-item {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(4px);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      border: 1px solid rgba(212,175,55,0.08);
+    }
+    .faq-question {
+      padding: 18px 24px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s;
+      color: var(--maroon);
+      font-size: 1rem;
+    }
+    .faq-question:hover { background: rgba(212,175,55,0.06); }
+    .faq-question i { transition: transform 0.3s; }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 24px;
+    }
+    .faq-item.active .faq-answer { max-height: 300px; padding: 0 24px 20px; }
+    .faq-item.active .faq-question i { transform: rotate(180deg); }
+
+    /* ===== BACK TO TOP ===== */
+    #backTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--maroon);
+      color: #fff;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(91,31,39,0.3);
+      transition: all 0.3s;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 999;
+    }
+    #backTop.visible { opacity: 1; visibility: visible; }
+    #backTop:hover { background: var(--gold); color: #1e1e1e; transform: scale(1.08); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--maroon);
+      color: #ddd;
+      padding: 48px 0 28px;
+      margin-top: 50px;
+      border-radius: 40px 40px 0 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 32px;
+      margin-bottom: 30px;
+    }
+    .footer-grid h4 { color: var(--gold); font-family: 'Playfair Display', serif; margin-bottom: 14px; }
+    .footer-grid a { color: #ccc; text-decoration: none; display: block; margin: 6px 0; transition: color 0.2s; font-size: 0.95rem; }
+    .footer-grid a:hover { color: var(--gold); }
+    .social-icons a {
+      display: inline-block;
+      margin-right: 16px;
+      font-size: 1.6rem;
+      color: #ccc;
+      transition: all 0.2s;
+    }
+    .social-icons a:hover { color: var(--gold); transform: translateY(-3px); }
+    .footer-bottom { border-top: 1px solid rgba(212,175,55,0.15); padding-top: 20px; text-align: center; font-size: 0.9rem; color: #aaa; }
+
+    /* ===== REVEAL ANIMATION ===== */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav { flex-direction: column; gap: 12px; }
+      nav ul { flex-wrap: wrap; justify-content: center; gap: 16px; font-size: 0.9rem; }
+      .hero h1 { font-size: 2.2rem; }
+      .stat-card .stat-number { font-size: 2rem; }
+      .section-title { font-size: 1.8rem; }
+      .hero { padding: 50px 16px 40px; }
+    }
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.8rem; }
+      .tools-grid { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER / NAVIGATION ===== -->
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Nigel<span>Thomas</span>.live</div>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/hospitality-management-tools.html" class="active">Tools</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <h1><i class="fas fa-hotel"></i> Hospitality Management Tools</h1>
+    <p>Professional calculators, operational templates, KPI dashboards, downloadable Excel forms and management resources designed for Hotel Managers, Operations Managers, General Managers, Executive Chefs, Restaurant Managers, Food & Beverage Managers and hospitality professionals.</p>
+    <div class="hero-buttons">
+      <a href="#tools" class="btn-gold"><i class="fas fa-rocket"></i> Explore Free Tools</a>
+      <a href="#" class="btn-outline"><i class="fas fa-compass"></i> Browse Career Guides</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATISTICS ===== -->
+<div class="container">
+  <div class="stats-grid reveal">
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-tools"></i></div><div class="stat-number">40+</div><div class="stat-label">Professional Hospitality Tools</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-file-download"></i></div><div class="stat-number">25+</div><div class="stat-label">Downloadable Templates</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-unlock"></i></div><div class="stat-number">100%</div><div class="stat-label">Free Access</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-user-tie"></i></div><div class="stat-number">40+</div><div class="stat-label">Years Hospitality Experience</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-file-csv"></i></div><div class="stat-number">Excel</div><div class="stat-label">CSV Downloads</div></div>
+    <div class="stat-card"><div class="stat-icon"><i class="fas fa-clock"></i></div><div class="stat-number">24/7</div><div class="stat-label">Available Online</div></div>
+  </div>
+
+  <!-- ===== SEARCH ===== -->
+  <div class="search-wrap reveal">
+    <input type="text" id="liveSearch" placeholder="Search calculators, templates or reports..." aria-label="Search tools">
+  </div>
+
+  <!-- ===== FEATURED TOOLS ===== -->
+  <h2 class="section-title reveal" id="tools"><i class="fas fa-star"></i>Featured Tools</h2>
+  <div class="tools-grid" id="toolGrid"></div>
+
+  <!-- ===== TOOL CATEGORIES ===== -->
+  <h2 class="section-title reveal"><i class="fas fa-th-large"></i>Tool Categories</h2>
+  <div class="category-grid" id="categoryGrid"></div>
+
+  <!-- ===== WHY USE OUR TOOLS ===== -->
+  <div class="reveal" style="background:rgba(255,255,255,0.5); backdrop-filter:blur(4px); border-radius:var(--radius); padding:28px; margin:30px 0;">
+    <h3 style="font-family:'Playfair Display'; color:var(--maroon); font-size:1.8rem;">Why Use Our Tools</h3>
+    <p style="max-width:700px; font-size:1.05rem; margin:10px 0 20px;">Developed from more than four decades of hospitality leadership experience across hotels, resorts, restaurants and cruise operations.</p>
+    <div class="feature-grid">
+      <div class="feature-item"><i class="fas fa-check-circle"></i> Free</div>
+      <div class="feature-item"><i class="fas fa-briefcase"></i> Professional</div>
+      <div class="feature-item"><i class="fas fa-chart-line"></i> Industry Standard</div>
+      <div class="feature-item"><i class="fas fa-mobile-alt"></i> Mobile Friendly</div>
+      <div class="feature-item"><i class="fas fa-file-excel"></i> Excel Compatible</div>
+      <div class="feature-item"><i class="fas fa-sync-alt"></i> Regularly Updated</div>
+    </div>
+  </div>
+
+  <!-- ===== COMING SOON ===== -->
+  <h2 class="section-title reveal"><i class="fas fa-clock"></i>Coming Soon</h2>
+  <div class="tools-grid reveal" id="comingSoonGrid"></div>
+
+  <!-- ===== INTERNAL LINKS ===== -->
+  <h2 class="section-title reveal">Continue Learning</h2>
+  <div class="internal-grid reveal" id="internalLinksGrid"></div>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section reveal">
+    <h2 class="section-title"><i class="fas fa-question-circle"></i>Frequently Asked Questions</h2>
+    <div id="faqContainer"></div>
+  </section>
+</div>
+
+<!-- ===== BACK TO TOP ===== -->
+<button id="backTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Quick Links</h4>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/hospitality-management-tools.html">Tools</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div>
+        <h4>Hospitality Resources</h4>
+        <a href="#">Food Cost Calculator</a>
+        <a href="#">ADR Calculator</a>
+        <a href="#">RevPAR Calculator</a>
+        <a href="#">Occupancy Calculator</a>
+        <a href="#">Labour Cost Calculator</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:info@nigelthomas.live">info@nigelthomas.live</a>
+        <div class="social-icons" style="margin-top:12px;">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 NigelThomas.live &bull; Privacy Policy &bull; Terms of Use</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== JSON-LD SCHEMA ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NigelThomas.live",
+  "url": "https://nigelthomas.live",
+  "description": "Hospitality management tools and resources for hotel professionals."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hospitality Management Tools & Hotel Calculators",
+  "description": "Professional hospitality calculators, operational templates, KPI dashboards & Excel forms for hotel managers, chefs and F&B professionals.",
+  "url": "https://nigelthomas.live/hospitality-management-tools.html"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is a Food Cost Calculator?","acceptedAnswer":{"@type":"Answer","text":"A tool to determine the cost of ingredients per dish and overall food cost percentage."}},
+    {"@type":"Question","name":"How do I calculate ADR?","acceptedAnswer":{"@type":"Answer","text":"Average Daily Rate = Total Room Revenue / Number of Rooms Sold."}},
+    {"@type":"Question","name":"What is RevPAR?","acceptedAnswer":{"@type":"Answer","text":"Revenue Per Available Room = Total Room Revenue / Total Available Rooms."}},
+    {"@type":"Question","name":"What is the Occupancy Rate formula?","acceptedAnswer":{"@type":"Answer","text":"Occupancy Rate = (Rooms Sold / Total Rooms) * 100."}},
+    {"@type":"Question","name":"How is Labour Cost % calculated?","acceptedAnswer":{"@type":"Answer","text":"Labour Cost % = (Total Labour Cost / Total Revenue) * 100."}},
+    {"@type":"Question","name":"What is GOPPAR?","acceptedAnswer":{"@type":"Answer","text":"Gross Operating Profit Per Available Room = (Gross Operating Profit) / Total Available Rooms."}},
+    {"@type":"Question","name":"What is a Break-even Calculator?","acceptedAnswer":{"@type":"Answer","text":"Determines the number of units or revenue needed to cover fixed and variable costs."}},
+    {"@type":"Question","name":"How do you calculate Beverage Cost?","acceptedAnswer":{"@type":"Answer","text":"Beverage Cost % = (Cost of Beverages Sold / Beverage Revenue) * 100."}},
+    {"@type":"Question","name":"What is a Yield Calculator?","acceptedAnswer":{"@type":"Answer","text":"Used in F&B to calculate the usable product yield from raw ingredients."}},
+    {"@type":"Question","name":"What is the Daily Manager Report?","acceptedAnswer":{"@type":"Answer","text":"A structured report for hotel managers to track daily operations, revenue, and incidents."}}
+  ]
+}
+</script>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+(function() {
+  'use strict';
+
+  // ===== DATA =====
+  var tools = [
+    { id: 1, icon: 'fa-calculator', title: 'Food Cost Calculator', desc: 'Calculate dish & menu food cost percentage with yield analysis.', ribbon: '' },
+    { id: 2, icon: 'fa-dollar-sign', title: 'ADR Calculator', desc: 'Average Daily Rate – measure room revenue per sold room.', ribbon: '' },
+    { id: 3, icon: 'fa-chart-bar', title: 'RevPAR Calculator', desc: 'Revenue Per Available Room – key hotel performance metric.', ribbon: '' },
+    { id: 4, icon: 'fa-percent', title: 'Occupancy Calculator', desc: 'Occupancy rate based on rooms sold vs available.', ribbon: '' },
+    { id: 5, icon: 'fa-users', title: 'Labour Cost Calculator', desc: 'Measure labour cost as percentage of total revenue.', ribbon: '' },
+    { id: 6, icon: 'fa-clipboard-list', title: 'Daily Manager Report', desc: 'Operational report template for daily management.', ribbon: 'Coming Soon' }
+  ];
+
+  var categories = [
+    { name: 'Hotel Operations', items: ['Daily Manager Report', 'Shift Handover Log', 'Duty Manager Checklist', 'Guest Complaint Register', 'Maintenance Log', 'VIP Arrival Checklist'] },
+    { name: 'Rooms Division', items: ['Occupancy Calculator', 'ADR Calculator', 'RevPAR Calculator', 'GOPPAR Calculator', 'Forecast Occupancy', 'Room Revenue Calculator'] },
+    { name: 'Finance & Cost Control', items: ['Food Cost Calculator', 'Beverage Cost Calculator', 'Labour Cost Calculator', 'Break-even Calculator', 'Gross Profit Calculator', 'Budget Planner'] },
+    { name: 'Kitchen & Food & Beverage', items: ['Recipe Cost Calculator', 'Menu Pricing Calculator', 'Yield Calculator', 'Portion Cost Calculator', 'Banquet Cost Calculator', 'Buffet Cost Calculator'] },
+    { name: 'Human Resources', items: ['Interview Evaluation Form', 'Training Register', 'Performance Review', 'Leave Planner', 'Staff Roster', 'Disciplinary Register'] },
+    { name: 'Purchasing & Inventory', items: ['Inventory Count Sheet', 'Purchase Order', 'Goods Received Note', 'Supplier Evaluation', 'Stock Requisition', 'Asset Register'] }
+  ];
+
+  var comingSoon = ['Hotel KPI Dashboard', 'Executive Chef Toolkit', 'Restaurant Profit Calculator', 'Hotel Budget Planner', 'Housekeeping Dashboard', 'Front Office Dashboard', 'Energy Cost Calculator', 'Banquet Planner'];
+
+  var internalLinks = ['General Manager Duties & Responsibilities', 'Hotel Manager Operations Guide', 'Operations Manager Guide', 'Executive Chef Guide', 'Sous Chef Guide', 'Chef de Partie Guide', 'Food Cost Control Guide', 'Cloud Kitchen Guide', 'Restaurant Equipment Guide'];
+
+  var faqData = [
+    { q: 'What is a Food Cost Calculator?', a: 'A tool to determine the cost of ingredients per dish and overall food cost percentage, helping chefs and managers control margins.' },
+    { q: 'How do I calculate ADR?', a: 'Average Daily Rate = Total Room Revenue / Number of Rooms Sold. It measures the average rate paid per occupied room.' },
+    { q: 'What is RevPAR?', a: 'Revenue Per Available Room = Total Room Revenue / Total Available Rooms. It combines occupancy and ADR.' },
+    { q: 'What is the Occupancy Rate formula?', a: 'Occupancy Rate = (Rooms Sold / Total Rooms) * 100. It shows the percentage of rooms filled.' },
+    { q: 'How is Labour Cost % calculated?', a: 'Labour Cost % = (Total Labour Cost / Total Revenue) * 100. A key metric for operational efficiency.' },
+    { q: 'What is GOPPAR?', a: 'Gross Operating Profit Per Available Room = (Gross Operating Profit) / Total Available Rooms.' },
+    { q: 'What is a Break-even Calculator?', a: 'Determines the number of units or revenue needed to cover fixed and variable costs.' },
+    { q: 'How do you calculate Beverage Cost?', a: 'Beverage Cost % = (Cost of Beverages Sold / Beverage Revenue) * 100.' },
+    { q: 'What is a Yield Calculator?', a: 'Used in F&B to calculate the usable product yield from raw ingredients, e.g., meat or produce.' },
+    { q: 'What is the Daily Manager Report?', a: 'A structured report for hotel managers to track daily operations, revenue, and incidents.' }
+  ];
+      html += '<div class="icon"><i class="fas ' + t.icon + '"></i></div>';
+      html += '<h3>' + t.title + '</h3>';
+      html += '<p>' + t.desc + '</p>';
+      html += '<a href="#" class="btn-small">Open Tool</a>';
+      if (t.ribbon) {
+        html += '<span class="coming-ribbon">' + t.ribbon + '</span>';
+      }
+      html += '</div>';
+    }
+    document.getElementById('toolGrid').innerHTML = html;
+  }
+
+  // Render Categories
+  function renderCategories() {
+    var html = '';
+    for (var i = 0; i < categories.length; i++) {
+      var cat = categories[i];
+      html += '<div class="category-card">';
+      html += '<h4>' + cat.name + '</h4>';
+      html += '<ul>';
+      for (var j = 0; j < cat.items.length; j++) {
+        html += '<li><i class="fas fa-chevron-right"></i>' + cat.items[j] + '</li>';
+      }
+      html += '</ul></div>';
+    }
+    document.getElementById('categoryGrid').innerHTML = html;
+  }
+
+  // Render Coming Soon
+  function renderComingSoon() {
+    var html = '';
+    for (var i = 0; i < comingSoon.length; i++) {
+      html += '<div class="tool-card">';
+      html += '<div class="icon"><i class="fas fa-hourglass-half"></i></div>';
+      html += '<h3>' + comingSoon[i] + '</h3>';
+      html += '<p>Under development – launching soon.</p>';
+      html += '<span class="coming-ribbon">Coming Soon</span>';
+      html += '</div>';
+    }
+    document.getElementById('comingSoonGrid').innerHTML = html;
+  }
+
+  // Render Internal Links
+  function renderInternalLinks() {
+    var html = '';
+    for (var i = 0; i < internalLinks.length; i++) {
+      html += '<a href="#" class="internal-card">' + internalLinks[i] + '</a>';
+    }
+    document.getElementById('internalLinksGrid').innerHTML = html;
+  }
+
+  // Render FAQ
+  function renderFAQ() {
+    var html = '';
+    for (var i = 0; i < faqData.length; i++) {
+      var item = faqData[i];
+      var activeClass = (i === 0) ? 'active' : '';
+      html += '<div class="faq-item ' + activeClass + '">';
+      html += '<div class="faq-question">';
+      html += '<span>' + item.q + '</span>';
+      html += '<i class="fas fa-chevron-down"></i>';
+      html += '</div>';
+      html += '<div class="faq-answer">' + item.a + '</div>';
+      html += '</div>';
+    }
+    document.getElementById('faqContainer').innerHTML = html;
+  }
+
+  // ===== INITIAL RENDER =====
+  renderTools();
+  renderCategories();
+  renderComingSoon();
+  renderInternalLinks();
+  renderFAQ();
+
+  // ===== LIVE SEARCH =====
+  var searchInput = document.getElementById('liveSearch');
+  searchInput.addEventListener('input', function() {
+    renderTools(this.value);
+  });
+
+  // ===== FAQ ACCORDION =====
+  document.addEventListener('click', function(e) {
+    var question = e.target.closest('.faq-question');
+    if (question) {
+      var item = question.parentElement;
+      item.classList.toggle('active');
+    }
+  });
+
+  // ===== BACK TO TOP BUTTON =====
+  var backTopBtn = document.getElementById('backTop');
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      backTopBtn.classList.add('visible');
+    } else {
+      backTopBtn.classList.remove('visible');
+    }
+  });
+  backTopBtn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ===== REVEAL ON SCROLL =====
+  var revealElements = document.querySelectorAll('.reveal');
+  
+  function checkReveal() {
+    var windowHeight = window.innerHeight;
+    for (var i = 0; i < revealElements.length; i++) {
+      var element = revealElements[i];
+      var rect = element.getBoundingClientRect();
+      var revealPoint = 100;
+      if (rect.top < windowHeight - revealPoint) {
+        element.classList.add('visible');
+      }
+    }
+  }
+  
+  window.addEventListener('scroll', checkReveal);
+  window.addEventListener('load', checkReveal);
+
+  // ===== SMOOTH SCROLLING FOR NAV LINKS =====
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      var targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      var targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ===== TOOL CARD BUTTON CLICK =====
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.btn-small');
+    if (btn) {
+      e.preventDefault();
+      var card = btn.closest('.tool-card');
+      var title = card ? card.querySelector('h3').textContent : 'Tool';
+      alert('Opening ' + title + ' - This feature is under development.');
+    }
+  });
+
+  // ===== INTERNAL LINK CLICK =====
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('.internal-card');
+    if (link) {
+      e.preventDefault();
+      alert('Loading: ' + link.textContent + ' - This resource is coming soon.');
+    }
+  });
+
+  console.log('Hospitality Management Tools initialized successfully.');
+  console.log('NigelThomas.live - Professional Hospitality Management Tools');
+
+})();
+// ===== END OF JAVASCRIPT =====
+</script>
 </body>
 </html>
+  
+ 
