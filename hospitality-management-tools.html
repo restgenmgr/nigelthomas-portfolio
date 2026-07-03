@@ -1352,7 +1352,7 @@
     var html = '';
     for (var i = 0; i < faqData.length; i++) {
       var item = faqData[i];
-      var activeClass = (i === 0) ? 'active' : '';
+      var activeClass = (i === 0) 'active' : '';
       html += '<div class="faq-item ' + activeClass + '">';
       html += '<div class="faq-question">';
       html += '<span>' + item.q + '</span>';
@@ -1436,7 +1436,7 @@
     if (btn) {
       e.preventDefault();
       var card = btn.closest('.tool-card');
-      var title = card ? card.querySelector('h3').textContent : 'Tool';
+      var title = card card.querySelector('h3').textContent : 'Tool';
       alert('Opening ' + title + ' - This feature is under development.');
     }
   });
@@ -1460,4 +1460,6 @@
 </html>
   
  
+
+
 
