@@ -216,9 +216,12 @@ const checklistItems = [
 
 function loadChecklist(){
   const el = document.getElementById('checklist');
-  window.storage.get(CHECKLIST_KEY).then(res=>{
-    render(res ? JSON.parse(res.value) : {});
-  }).catch(()=> render({}));
+  let state = {};
+  try {
+    const raw = localStorage.getItem(CHECKLIST_KEY);
+    state = raw ? JSON.parse(raw) : {};
+  } catch(e){ state = {}; }
+  render(state);
 
   function render(state){
     el.innerHTML = '';
@@ -232,7 +235,7 @@ function loadChecklist(){
       row.querySelector('input').addEventListener('change', e=>{
         state[item.id] = e.target.checked;
         row.classList.toggle('done', e.target.checked);
-        window.storage.set(CHECKLIST_KEY, JSON.stringify(state)).catch(()=>{});
+        try { localStorage.setItem(CHECKLIST_KEY, JSON.stringify(state)); } catch(err){}
       });
       el.appendChild(row);
     });
@@ -294,7 +297,7 @@ function loadTracker(){
   const body = document.getElementById('trackerBody');
 
   function save(rows){
-    window.storage.set(TRACKER_KEY, JSON.stringify(rows)).catch(()=>{});
+    try { localStorage.setItem(TRACKER_KEY, JSON.stringify(rows)); } catch(err){}
   }
 
   function makeRow(row, rows){
@@ -332,22 +335,18 @@ function loadTracker(){
     rows.forEach(row=> body.appendChild(makeRow(row, rows)));
   }
 
-  window.storage.get(TRACKER_KEY).then(res=>{
-    const rows = res ? JSON.parse(res.value) : defaultRows();
+  let rows;
+  try {
+    const raw = localStorage.getItem(TRACKER_KEY);
+    rows = raw ? JSON.parse(raw) : defaultRows();
+  } catch(e){
+    rows = defaultRows();
+  }
+  renderAll(rows);
+  document.getElementById('addRow').addEventListener('click', ()=>{
+    rows.push({company:'',role:'',source:'',date:'',status:'Applied',notes:''});
+    save(rows);
     renderAll(rows);
-    document.getElementById('addRow').addEventListener('click', ()=>{
-      rows.push({company:'',role:'',source:'',date:'',status:'Applied',notes:''});
-      save(rows);
-      renderAll(rows);
-    });
-  }).catch(()=>{
-    const rows = defaultRows();
-    renderAll(rows);
-    document.getElementById('addRow').addEventListener('click', ()=>{
-      rows.push({company:'',role:'',source:'',date:'',status:'Applied',notes:''});
-      save(rows);
-      renderAll(rows);
-    });
   });
 
   function defaultRows(){
