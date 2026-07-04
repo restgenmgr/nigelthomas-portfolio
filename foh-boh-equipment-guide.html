@@ -149,6 +149,26 @@
     margin:28px 0 36px;
   }
 
+  /* ===== Article images ===== */
+  figure.article-photo{
+    margin:32px 0;
+  }
+  figure.article-photo img{
+    width:100%;
+    display:block;
+    border-radius:16px;
+    border:1px solid var(--line);
+    box-shadow:0 14px 34px rgba(28,23,20,0.14);
+  }
+  figure.article-photo figcaption{
+    margin-top:10px;
+    font-size:13px;
+    color:var(--muted);
+    font-family:'JetBrains Mono',monospace;
+    letter-spacing:.02em;
+    text-align:center;
+  }
+
   /* ===== Equipment cards ===== */
   .grid{
     display:grid;
@@ -336,6 +356,11 @@
 
   <p>A Beverage Manager's job isn't just curating a menu — it's running a small, fast-moving production line of ice, liquid, and glass, often under the pressure of a packed room. Every piece of equipment behind the bar exists to make that production line faster, more consistent, and safer. Here's what's actually in that arsenal.</p>
 
+  <figure class="article-photo">
+    <img src="/mocktails-bar-drinks.jpg" alt="Colorful garnished cocktails and mocktails lined up on a bar counter" loading="lazy">
+    <figcaption>Precision, garnish, and glassware — the visible result of a well-equipped bar program.</figcaption>
+  </figure>
+
   <h3>🥃 Measuring &amp; Mixing Tools</h3>
   <div class="grid">
     <div class="card">
@@ -463,6 +488,11 @@
   </div>
 
   <p>If a bar's job is consistency in a glass, a kitchen's job is consistency — and safety — on a plate. The single most important food-safety habit in any professional kitchen is color-coded cutting boards, a system designed to stop cross-contamination before it starts. Each color is assigned to a specific food category, so raw chicken juice never touches a salad, and fish never lingers where bread is sliced.</p>
+
+  <figure class="article-photo">
+    <img src="/chef-image.jpg" alt="Chef plating a dish with precision in a professional kitchen" loading="lazy">
+    <figcaption>The same discipline that governs the bar applies on the line — precision, consistency, and the right tool for every step.</figcaption>
+  </figure>
 
   <div class="board-legend">
     <div class="board red">🥩 <strong>Red</strong>Raw red meat (beef, lamb, pork)</div>
@@ -610,6 +640,3 @@
 
 </body>
 </html>
-
-
-
