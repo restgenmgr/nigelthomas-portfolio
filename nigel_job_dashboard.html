@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nigel A. Thomas — Job Search Command Center</title>
+<style>
+  :root{
+    --bg:#0a0a0a;
+    --panel:#141414;
+    --panel-2:#1b1b1b;
+    --gold:#d4af37;
+    --gold-dim:#8f7a2e;
+    --text:#f1ede2;
+    --muted:#a8a196;
+    --line:#2a2a2a;
+    --good:#6fae7a;
+    --warn:#c97a3a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 80px;}
+  header{
+    text-align:center;
+    padding:28px 20px 32px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:32px;
+  }
+  header h1{
+    margin:0 0 6px;
+    color:var(--gold);
+    font-size:1.9rem;
+    letter-spacing:.5px;
+  }
+  header p{margin:0;color:var(--muted);font-size:.95rem;}
+  h2{
+    color:var(--gold);
+    font-size:1.15rem;
+    border-bottom:1px solid var(--gold-dim);
+    padding-bottom:8px;
+    margin:0 0 16px;
+  }
+  section{margin-bottom:44px;}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:18px 20px;
+  }
+  .grid{display:grid;gap:14px;}
+  .grid-2{grid-template-columns:1fr 1fr;}
+  .grid-4{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:760px){.grid-4{grid-template-columns:1fr 1fr;} .grid-2{grid-template-columns:1fr;}}
+
+  /* Launcher */
+  .launcher-inputs{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;}
+  .launcher-inputs input{
+    flex:1;min-width:180px;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    color:var(--text);
+    padding:10px 12px;
+    border-radius:6px;
+    font-size:.92rem;
+  }
+  .board-btn{
+    display:flex;flex-direction:column;gap:4px;
+    background:var(--panel-2);
+    border:1px solid var(--gold-dim);
+    color:var(--text);
+    padding:14px 16px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:border-color .15s, transform .15s;
+  }
+  .board-btn:hover{border-color:var(--gold);transform:translateY(-2px);}
+  .board-btn strong{color:var(--gold);font-size:1rem;}
+  .board-btn span{color:var(--muted);font-size:.8rem;}
+
+  /* Employers */
+  .employer{
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:14px 16px;
+  }
+  .employer h3{margin:0 0 4px;font-size:.98rem;color:var(--text);}
+  .employer p{margin:0 0 10px;color:var(--muted);font-size:.83rem;}
+  .employer a{color:var(--gold);font-size:.83rem;text-decoration:none;font-weight:600;}
+  .employer a:hover{text-decoration:underline;}
+
+  /* Checklist */
+  .check-item{
+    display:flex;align-items:flex-start;gap:10px;
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .check-item:last-child{border-bottom:none;}
+  .check-item input{margin-top:3px;accent-color:var(--gold);width:16px;height:16px;}
+  .check-item label{flex:1;font-size:.92rem;}
+  .check-item.done label{color:var(--muted);text-decoration:line-through;}
+  .tag{
+    display:inline-block;font-size:.68rem;font-weight:700;
+    padding:2px 7px;border-radius:4px;margin-left:8px;
+    text-transform:uppercase;letter-spacing:.4px;
+  }
+  .tag.critical{background:#4a1f1f;color:#e08383;}
+  .tag.important{background:#4a3a1f;color:var(--gold);}
+
+  /* Tracker */
+  table{width:100%;border-collapse:collapse;font-size:.86rem;}
+  th{
+    text-align:left;color:var(--gold);
+    border-bottom:1px solid var(--gold-dim);
+    padding:8px 6px;font-weight:600;
+  }
+  td{padding:6px;border-bottom:1px solid var(--line);vertical-align:top;}
+  td input, td select{
+    width:100%;background:var(--panel-2);border:1px solid var(--line);
+    color:var(--text);padding:6px 7px;border-radius:5px;font-size:.85rem;
+  }
+  .status-Applied{color:#a8a196;}
+  .status-Interview{color:var(--gold);}
+  .status-Offer{color:var(--good);}
+  .status-Rejected{color:var(--warn);}
+  .row-actions{display:flex;gap:8px;margin-top:14px;}
+  button{
+    background:var(--gold);color:#141414;border:none;
+    padding:9px 16px;border-radius:6px;font-weight:700;
+    cursor:pointer;font-size:.85rem;
+  }
+  button.secondary{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);}
+  button.danger{background:transparent;border:1px solid #6b3030;color:#e08383;padding:5px 10px;font-size:.78rem;}
+  .save-note{color:var(--muted);font-size:.78rem;margin-top:8px;}
+  footer{text-align:center;color:var(--muted);font-size:.8rem;padding-top:20px;border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>NIGEL A. THOMAS</h1>
+    <p>Job Search Command Center — Pan-India &amp; International Hospitality Leadership</p>
+  </header>
+
+  <section>
+    <h2>1. Fix Before You Send</h2>
+    <div class="card">
+      <div id="checklist"></div>
+      <p class="save-note">Checked items are saved automatically on this device.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Search All Boards At Once</h2>
+    <div class="card">
+      <div class="launcher-inputs">
+        <input id="roleInput" type="text" value="General Manager Hospitality">
+        <input id="locInput" type="text" value="India">
+      </div>
+      <div class="grid grid-4" id="boardLinks"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Priority Employers — Published EOE / Age-Inclusive Policies</h2>
+    <div class="grid grid-2" id="employerGrid"></div>
+  </section>
+
+  <section>
+    <h2>4. Application Tracker</h2>
+    <div class="card">
+      <table id="trackerTable">
+        <thead>
+          <tr>
+            <th style="width:20%">Company</th>
+            <th style="width:20%">Role</th>
+            <th style="width:14%">Source</th>
+            <th style="width:14%">Date Applied</th>
+            <th style="width:14%">Status</th>
+            <th style="width:14%">Notes</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="trackerBody"></tbody>
+      </table>
+      <div class="row-actions">
+        <button id="addRow">+ Add Application</button>
+        <span class="save-note" style="align-self:center;">Saved automatically to this browser.</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>nigelthomas.live &nbsp;|&nbsp; restgenmgr1952@gmail.com &nbsp;|&nbsp; +91 97693 51231</footer>
+</div>
+
+<script>
+const CHECKLIST_KEY = 'checklist-state';
+const TRACKER_KEY = 'tracker-rows';
+
+const checklistItems = [
+  {id:'c1', text:'Fix contact block: cover letter shows a different email (restaurantbarmanager@gmail.com) than the resume (restgenmgr1952@gmail.com). Use one email everywhere.', tag:'critical'},
+  {id:'c2', text:'Cover letter icons for phone, LinkedIn and video are unfilled placeholders ("📱 Cel", "🔗Linkedin", "🔗Video"). Replace with the actual number and working links.', tag:'critical'},
+  {id:'c3', text:'Resume headline photo carries a visible "Artguru" watermark from an AI photo-enhancer. Replace with a clean, unwatermarked professional headshot.', tag:'critical'},
+  {id:'c4', text:'Experience length is inconsistent: the summary says "20+ years" but your own career history (1993–present) is 30+ years. Align the number across resume and cover letter.', tag:'important'},
+  {id:'c5', text:'Most recent role ends "Sep 2025" with nothing after it — reads as a gap. Add a line for current activity (consulting, training, or "actively seeking") to close it.', tag:'important'},
+  {id:'c6', text:'Do not state age or date of birth on the resume itself, even for EOE-focused employers — Indian recruiters can screen it out before your experience is even read. Let the cover letter\'s "30+ years" carry that message instead.', tag:'important'},
+  {id:'c7', text:'Cover letter is generic ("Pan India/or Abroad") — tailor the opening line to the specific hotel group or role for every application.', tag:'important'},
+];
+
+function loadChecklist(){
+  const el = document.getElementById('checklist');
+  let state = {};
+  try {
+    const raw = localStorage.getItem(CHECKLIST_KEY);
+    state = raw ? JSON.parse(raw) : {};
+  } catch(e){ state = {}; }
+  render(state);
+
+  function render(state){
+    el.innerHTML = '';
+    checklistItems.forEach(item=>{
+      const row = document.createElement('div');
+      row.className = 'check-item' + (state[item.id] ? ' done' : '');
+      row.innerHTML = `
+        <input type="checkbox" id="${item.id}" ${state[item.id] ? 'checked' : ''}>
+        <label for="${item.id}">${item.text}<span class="tag ${item.tag}">${item.tag}</span></label>
+      `;
+      row.querySelector('input').addEventListener('change', e=>{
+        state[item.id] = e.target.checked;
+        row.classList.toggle('done', e.target.checked);
+        try { localStorage.setItem(CHECKLIST_KEY, JSON.stringify(state)); } catch(err){}
+      });
+      el.appendChild(row);
+    });
+  }
+}
+
+function buildLauncher(){
+  const container = document.getElementById('boardLinks');
+  const roleInput = document.getElementById('roleInput');
+  const locInput = document.getElementById('locInput');
+
+  const boards = [
+    {name:'LinkedIn', hint:'Jobs search', build:(role,loc)=>`https://www.linkedin.com/jobs/search/?keywords=${encodeURIComponent(role)}&location=${encodeURIComponent(loc)}`},
+    {name:'Naukri', hint:'India\'s largest board', build:(role,loc)=>`https://www.naukri.com/${encodeURIComponent(role.replace(/\s+/g,'-').toLowerCase())}-jobs-in-${encodeURIComponent(loc.replace(/\s+/g,'-').toLowerCase())}`},
+    {name:'Indeed', hint:'in.indeed.com', build:(role,loc)=>`https://in.indeed.com/jobs?q=${encodeURIComponent(role)}&l=${encodeURIComponent(loc)}`},
+    {name:'Glassdoor', hint:'Reviews + jobs', build:(role,loc)=>`https://www.glassdoor.co.in/Job/jobs.htm?sc.keyword=${encodeURIComponent(role)}&locT=N&locId=115&locKeyword=${encodeURIComponent(loc)}`},
+  ];
+
+  function render(){
+    const role = roleInput.value.trim() || 'General Manager Hospitality';
+    const loc = locInput.value.trim() || 'India';
+    container.innerHTML = '';
+    boards.forEach(b=>{
+      const a = document.createElement('a');
+      a.className = 'board-btn';
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.href = b.build(role, loc);
+      a.innerHTML = `<strong>${b.name}</strong><span>${b.hint}</span>`;
+      container.appendChild(a);
+    });
+  }
+  roleInput.addEventListener('input', render);
+  locInput.addEventListener('input', render);
+  render();
+}
+
+function buildEmployers(){
+  const employers = [
+    {name:'IHCL / Taj Hotels', note:'Tata Group — published EOE policy, long-tenure senior leadership culture.', url:'https://www.ihcltata.com/careers'},
+    {name:'Marriott International', note:'Global EOE employer; explicit "all ages" language in D&I policy.', url:'https://careers.marriott.com'},
+    {name:'Hyatt Hotels', note:'Global inclusion policy covering age as a protected category.', url:'https://careers.hyatt.com'},
+    {name:'Accor', note:'"Heartist" culture with a stated multi-generational workforce commitment.', url:'https://careers.accor.com'},
+    {name:'ITC Hotels', note:'Part of ITC Ltd, which publishes formal EOE and non-discrimination policy.', url:'https://www.itchotels.com/in/en/careers'},
+    {name:'Lemon Tree Hotels', note:'Known for hiring practices deliberately inclusive of underrepresented and older workers.', url:'https://www.lemontreehotels.com/careers.aspx'},
+    {name:'Oberoi Group', note:'Long-standing internal promotion culture; values veteran GM-level operators.', url:'https://www.oberoihotels.com/careers/'},
+    {name:'Radisson Hotel Group', note:'Global EOE statement; active Pan-India expansion needing experienced GMs.', url:'https://jobs.radissonhotels.com'},
+  ];
+  const grid = document.getElementById('employerGrid');
+  employers.forEach(e=>{
+    const div = document.createElement('div');
+    div.className = 'employer';
+    div.innerHTML = `<h3>${e.name}</h3><p>${e.note}</p><a href="${e.url}" target="_blank" rel="noopener">View careers page →</a>`;
+    grid.appendChild(div);
+  });
+}
+
+function loadTracker(){
+  const body = document.getElementById('trackerBody');
+
+  function save(rows){
+    try { localStorage.setItem(TRACKER_KEY, JSON.stringify(rows)); } catch(err){}
+  }
+
+  function makeRow(row, rows){
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><input type="text" value="${row.company||''}" data-field="company"></td>
+      <td><input type="text" value="${row.role||''}" data-field="role"></td>
+      <td><input type="text" value="${row.source||''}" data-field="source" placeholder="LinkedIn/Naukri..."></td>
+      <td><input type="date" value="${row.date||''}" data-field="date"></td>
+      <td>
+        <select data-field="status">
+          ${['Applied','Interview','Offer','Rejected'].map(s=>`<option value="${s}" ${row.status===s?'selected':''}>${s}</option>`).join('')}
+        </select>
+      </td>
+      <td><input type="text" value="${row.notes||''}" data-field="notes"></td>
+      <td><button class="danger">Remove</button></td>
+    `;
+    tr.querySelectorAll('input,select').forEach(inp=>{
+      inp.addEventListener('input', ()=>{
+        row[inp.dataset.field] = inp.value;
+        save(rows);
+      });
+    });
+    tr.querySelector('button').addEventListener('click', ()=>{
+      const idx = rows.indexOf(row);
+      rows.splice(idx,1);
+      save(rows);
+      renderAll(rows);
+    });
+    return tr;
+  }
+
+  function renderAll(rows){
+    body.innerHTML = '';
+    rows.forEach(row=> body.appendChild(makeRow(row, rows)));
+  }
+
+  let rows;
+  try {
+    const raw = localStorage.getItem(TRACKER_KEY);
+    rows = raw ? JSON.parse(raw) : defaultRows();
+  } catch(e){
+    rows = defaultRows();
+  }
+  renderAll(rows);
+  document.getElementById('addRow').addEventListener('click', ()=>{
+    rows.push({company:'',role:'',source:'',date:'',status:'Applied',notes:''});
+    save(rows);
+    renderAll(rows);
+  });
+
+  function defaultRows(){
+    return [{company:'Vellago Resort', role:'Resort Manager', source:'Direct email', date:'', status:'Applied', notes:''}];
+  }
+}
+
+loadChecklist();
+buildLauncher();
+buildEmployers();
+loadTracker();
+</script>
+</body>
+</html>
