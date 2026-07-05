@@ -577,27 +577,7 @@
   "name": "NigelThomas.live",
   "url": "https://nigelthomas.live",
   "description": "Hospitality management tools and resources for hotel professionals."
-} 
-    // ===== REVEAL ON SCROLL ANIMATION =====
-  var revealElements = document.querySelectorAll('.reveal');
-  
-  function checkReveal() {
-    var windowHeight = window.innerHeight;
-    var revealPoint = 100;
-    
-    for (var i = 0; i < revealElements.length; i++) {
-      var element = revealElements[i];
-      var rect = element.getBoundingClientRect();
-      
-      if (rect.top < windowHeight - revealPoint) {
-        element.classList.add('visible');
-      }
-    }
-  }
-  
-  window.addEventListener('load', checkReveal);
-  window.addEventListener('scroll', checkReveal);
-  window.addEventListener('resize', checkReveal);
+}
 </script>
 <script type="application/ld+json">
 {
@@ -667,13 +647,169 @@
     { q: 'What is a Yield Calculator?', a: 'Used in F&B to calculate the usable product yield from raw ingredients, e.g., meat or produce.' },
     { q: 'What is the Daily Manager Report?', a: 'A structured report for hotel managers to track daily operations, revenue, and incidents.' }
   ];
+
+  // ===== RENDER FUNCTIONS =====
   
-// ===== END OF JAVASCRIPT =====
+  function renderTools(filter) {
+    filter = filter || '';
+    var html = '';
+    var filtered = tools;
+    if (filter) {
+      filter = filter.toLowerCase();
+      filtered = tools.filter(function(t) {
+        return t.title.toLowerCase().indexOf(filter) !== -1 ||
+               t.desc.toLowerCase().indexOf(filter) !== -1;
+      });
+    }
+    for (var i = 0; i < filtered.length; i++) {
+      var t = filtered[i];
+      html += '<div class="tool-card">';
+      html += '<div class="icon"><i class="fas ' + t.icon + '"></i></div>';
+      html += '<h3>' + t.title + '</h3>';
+      html += '<p>' + t.desc + '</p>';
+      html += '<a href="#" class="btn-small">Open Tool</a>';
+      if (t.ribbon) {
+        html += '<span class="coming-ribbon">' + t.ribbon + '</span>';
+      }
+      html += '</div>';
+    }
+    document.getElementById('toolGrid').innerHTML = html;
+  }
+
+  function renderCategories() {
+    var html = '';
+    for (var i = 0; i < categories.length; i++) {
+      var cat = categories[i];
+      html += '<div class="category-card">';
+      html += '<h4>' + cat.name + '</h4>';
+      html += '<ul>';
+      for (var j = 0; j < cat.items.length; j++) {
+        html += '<li><i class="fas fa-chevron-right"></i>' + cat.items[j] + '</li>';
+      }
+      html += '</ul></div>';
+    }
+    document.getElementById('categoryGrid').innerHTML = html;
+  }
+
+  function renderComingSoon() {
+    var html = '';
+    for (var i = 0; i < comingSoon.length; i++) {
+      html += '<div class="tool-card">';
+      html += '<div class="icon"><i class="fas fa-hourglass-half"></i></div>';
+      html += '<h3>' + comingSoon[i] + '</h3>';
+      html += '<p>Under development – launching soon.</p>';
+      html += '<span class="coming-ribbon">Coming Soon</span>';
+      html += '</div>';
+    }
+    document.getElementById('comingSoonGrid').innerHTML = html;
+  }
+
+  function renderInternalLinks() {
+    var html = '';
+    for (var i = 0; i < internalLinks.length; i++) {
+      html += '<a href="#" class="internal-card">' + internalLinks[i] + '</a>';
+    }
+    document.getElementById('internalLinksGrid').innerHTML = html;
+  }
+
+  function renderFAQ() {
+    var html = '';
+    for (var i = 0; i < faqData.length; i++) {
+      var item = faqData[i];
+      var activeClass = (i === 0) ? 'active' : '';
+      html += '<div class="faq-item ' + activeClass + '">';
+      html += '<div class="faq-question">';
+      html += '<span>' + item.q + '</span>';
+      html += '<i class="fas fa-chevron-down"></i>';
+      html += '</div>';
+      html += '<div class="faq-answer">' + item.a + '</div>';
+      html += '</div>';
+    }
+    document.getElementById('faqContainer').innerHTML = html;
+  }
+
+  // ===== INITIAL RENDER =====
+  renderTools();
+  renderCategories();
+  renderComingSoon();
+  renderInternalLinks();
+  renderFAQ();
+
+  // ===== LIVE SEARCH =====
+  var searchInput = document.getElementById('liveSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      renderTools(this.value);
+    });
+  }
+
+  // ===== FAQ ACCORDION =====
+  document.addEventListener('click', function(e) {
+    var question = e.target.closest('.faq-question');
+    if (question) {
+      var item = question.parentElement;
+      item.classList.toggle('active');
+    }
+  });
+
+  // ===== BACK TO TOP BUTTON =====
+  var backTopBtn = document.getElementById('backTop');
+  if (backTopBtn) {
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backTopBtn.classList.add('visible');
+      } else {
+        backTopBtn.classList.remove('visible');
+      }
+    });
+    backTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ===== REVEAL ON SCROLL ANIMATION =====
+  var revealElements = document.querySelectorAll('.reveal');
+  
+  function checkReveal() {
+    var windowHeight = window.innerHeight;
+    var revealPoint = 100;
+    
+    for (var i = 0; i < revealElements.length; i++) {
+      var element = revealElements[i];
+      var rect = element.getBoundingClientRect();
+      
+      if (rect.top < windowHeight - revealPoint) {
+        element.classList.add('visible');
+      }
+    }
+  }
+  
+  window.addEventListener('load', checkReveal);
+  window.addEventListener('scroll', checkReveal);
+  window.addEventListener('resize', checkReveal);
+
+  // ===== TOOL CARD BUTTON CLICK =====
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.btn-small');
+    if (btn) {
+      e.preventDefault();
+      var card = btn.closest('.tool-card');
+      var title = card ? card.querySelector('h3').textContent : 'Tool';
+      alert('Opening ' + title + ' - This feature is under development.');
+    }
+  });
+
+  // ===== INTERNAL LINK CLICK =====
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('.internal-card');
+    if (link) {
+      e.preventDefault();
+      alert('Loading: ' + link.textContent + ' - This resource is coming soon.');
+    }
+  });
+
+  console.log('Hospitality Management Tools initialized successfully.');
+})();
 </script>
 </body>
 </html>
-  
- 
-
-
-
