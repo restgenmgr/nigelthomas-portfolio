@@ -975,6 +975,29 @@
       '<strong>Total Labor:</strong> $' + total.toFixed(2) + 
       ' | <strong>Labor %:</strong> <span style="color:#5b1f27;font-weight:700;">' + pct.toFixed(2) + '%</span><br><small>' + status + ' | Target: 25-35%</small>';
   };
+window.calcBreakEvenModal = function() {
+  var fixed = parseFloat(document.getElementById('be-fixed-modal').value) || 0;
+  var price = parseFloat(document.getElementById('be-price-modal').value) || 0;
+  var variable = parseFloat(document.getElementById('be-variable-modal').value) || 0;
+  var margin = price - variable;
+  if (margin <= 0) {
+    document.getElementById('be-result-modal').innerHTML = '❌ Unit price must be greater than variable cost.';
+    return;
+  }
+  var units = fixed / margin;
+  var revenue = units * price;
+  document.getElementById('be-result-modal').innerHTML =
+    '<strong>Break‑even Units:</strong> ' + Math.ceil(units) + ' units<br>' +
+    '<strong>Break‑even Revenue:</strong> $' + revenue.toFixed(2) +
+    '<br><small>Fixed Costs: $' + fixed + ' | Contribution Margin: $' + margin.toFixed(2) + ' per unit</small>';
+};
+window.calcGOPPARModal = function() {
+  var gop = parseFloat(document.getElementById('gop-gop-modal').value) || 0;
+  var rooms = parseFloat(document.getElementById('gop-rooms-modal').value) || 1;
+  var goppar = gop / rooms;
+  document.getElementById('gop-result-modal').innerHTML =
+    '<strong>GOPPAR:</strong> <span style="color:#5b1f27;font-weight:700;">$' + goppar.toFixed(2) + '</span><br><small>Gross Operating Profit Per Available Room</small>';
+};
 
   // Tool card click
   document.addEventListener('click', function(e) {
