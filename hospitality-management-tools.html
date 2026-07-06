@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospitality Management Tools | Free Hotel Calculators & Templates | Nigel Thomas</title>
+  <meta name="description" content="Free hospitality management tools including hotel calculators, operational templates, KPI resources and downloadable management forms.">
+  <meta name="keywords" content="hospitality management tools, hotel management tools, ADR calculator, RevPAR calculator, food cost calculator">
+  <meta name="author" content="Nigel A. Thomas">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://nigelthomas.live/hospitality-management-tools.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hospitality Management Tools">
+  <meta property="og:description" content="Professional hotel management calculators and downloadable operational templates.">
+  <meta property="og:url" content="https://nigelthomas.live/hospitality-management-tools.html">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P839TWLQSJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-P839TWLQSJ');
+  </script>
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --maroon: #5b1f27;
+      --maroon-light: #7a2e3a;
+      --gold: #d4af37;
+      --gold-light: #e8c84a;
+      --bg: #f7f5f2;
+      --text: #1e1e1e;
+      --text-muted: #666;
+      --white: #ffffff;
+      --shadow: 0 8px 30px rgba(0,0,0,0.08);
+      --shadow-hover: 0 16px 48px rgba(91,31,39,0.15);
+      --radius: 16px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      background: var(--maroon);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 14px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .logo span { color: var(--gold); }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 4px;
+    }
+    nav a:hover, nav a.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(91,31,39,0.92), rgba(91,31,39,0.88)),
+                  url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCIgdmlld0JveD0iMCAwIDgwIDgwIj48cmVjdCB3aWR0aD0iODAiIGhlaWdodD0iODAiIGZpbGw9IiM1QjFGMjciLz48cGF0aCBkPSJNMjAgMjBoNDB2NDBIMjB6IiBmaWxsPSIjRDRBRjM3IiBvcGFjaXR5PSIwLjA1Ii8+PC9zdmc+');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px 70px;
+      border-radius: 0 0 40px 40px;
+      margin: 0 12px 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .hero h1 i { color: var(--gold); margin-right: 10px; }
+    .hero p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--gold);
+    }
+    .hero-stat span { font-size: 0.9rem; opacity: 0.85; }
+
+    /* Search */
+    .search-wrap { max-width: 600px; margin: 0 auto 50px; padding: 0 20px; }
+    .search-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .search-box i {
+      position: absolute;
+      left: 20px;
+      color: var(--maroon);
+      font-size: 1.1rem;
+    }
+    #tool-search {
+      width: 100%;
+      padding: 16px 20px 16px 52px;
+      border: 2px solid #e5e0d8;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      box-shadow: var(--shadow);
+      transition: border-color 0.2s;
+    }
+    #tool-search:focus { outline: none; border-color: var(--gold); }
+
+    /* Section headers */
+    .section { padding: 20px 0 60px; }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.1rem;
+      color: var(--maroon);
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 40px;
+    }
+
+    /* Category pills */
+    .category-pills {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .pill {
+      padding: 8px 20px;
+      border-radius: 30px;
+      background: #fff;
+      border: 2px solid #e5e0d8;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--text);
+    }
+    .pill:hover, .pill.active {
+      border-color: var(--gold);
+      background: var(--maroon);
+      color: #fff;
+    }
+
+    /* Tool grid */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 26px;
+    }
+    .tool-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 32px 26px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      position: relative;
+      transition: transform 0.25s, box-shadow 0.25s;
+      border: 1px solid #ece7de;
+    }
+    .tool-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .tool-card .ribbon {
+      position: absolute;
+      top: 14px;
+      right: -6px;
+      background: var(--gold);
+      color: var(--maroon);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 4px 0 0 4px;
+      letter-spacing: 0.03em;
+    }
+    .tool-card .icon-wrap {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--maroon), var(--maroon-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .tool-card .icon-wrap i { font-size: 1.7rem; color: var(--gold); }
+    .tool-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      color: var(--maroon);
+      margin-bottom: 10px;
+    }
+    .tool-card p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 22px; min-height: 44px; }
+    .btn-small {
+      display: inline-block;
+      background: var(--maroon);
+      color: #fff;
+      border: none;
+      padding: 10px 26px;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .btn-small:hover { background: var(--maroon-light); }
+    .tool-card.is-hidden { display: none; }
+    .no-results { text-align: center; color: var(--text-muted); padding: 40px 0; display: none; }
+
+    /* Coming soon */
+    .coming-soon-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .coming-card {
+      background: #fff;
+      border: 2px dashed #e0d5b8;
+      border-radius: var(--radius);
+      padding: 22px;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .coming-card i { color: var(--gold); font-size: 1.4rem; margin-bottom: 10px; display: block; }
+    .coming-card strong { display: block; color: var(--maroon); margin-bottom: 6px; }
+
+    /* Internal links */
+    .internal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .internal-card {
+      background: #fff;
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      color: var(--text);
+      display: block;
+      border-left: 4px solid var(--gold);
+      transition: transform 0.2s;
+    }
+    .internal-card:hover { transform: translateY(-4px); }
+    .internal-card strong { display: block; color: var(--maroon); font-family: 'Playfair Display', serif; font-size: 1.05rem; margin-bottom: 6px; }
+    .internal-card span { color: var(--text-muted); font-size: 0.88rem; }
+
+    /* FAQ */
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      background: #fff;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 20px 24px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      color: var(--maroon);
+    }
+    .faq-question i { transition: transform 0.2s; color: var(--gold); }
+    .faq-item.open .faq-question i { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 24px;
+      color: var(--text-muted);
+    }
+    .faq-item.open .faq-answer { max-height: 300px; padding: 0 24px 20px; }
+
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: #fff;
+      border-radius: var(--radius);
+      max-width: 440px;
+      width: 100%;
+      padding: 32px 30px;
+      position: relative;
+      max-height: 90vh;
+      overflow-y: auto;
+      transition: max-width 0.15s;
+    }
+    .modal-box.wide { max-width: 720px; }
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 18px;
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: var(--text-muted);
+    }
+    .modal-close:hover { color: var(--maroon); }
+
+    /* Back to top */
+    #back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--maroon);
+      color: var(--gold);
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow);
+      z-index: 500;
+    }
+    #back-to-top.show { display: flex; }
+
+    footer {
+      background: var(--maroon);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    [data-reveal] { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    [data-reveal].revealed { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2.1rem; }
+      nav ul { gap: 16px; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">Nigel <span>Thomas</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hospitality-management-tools.html" class="active">Tools</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1><i class="fa-solid fa-toolbox"></i>Hospitality Management Tools</h1>
+      <p>Free, instant calculators built from 30+ years of hotel and F&amp;B operations experience &mdash; no sign-up, no spreadsheet, just the number you need.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>9</strong><span>Free Tools</span></div>
+        <div class="hero-stat"><strong>100%</strong><span>Free to Use</span></div>
+        <div class="hero-stat"><strong>30+</strong><span>Years of Expertise</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="search-wrap">
+    <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="tool-search" placeholder="Search tools e.g. RevPAR, food cost, occupancy...">
+    </div>
+  </div>
+
+  <section class="section container">
+    <h2 class="section-title">Calculators</h2>
+    <p class="section-subtitle">Click any tool to open an instant calculator. Nothing is stored &mdash; your numbers stay on your screen.</p>
+
+    <div class="category-pills" id="category-pills"></div>
+
+    <div class="tools-grid" id="tools-grid"></div>
+    <p class="no-results" id="no-results">No tools match your search. Try a different term.</p>
+  </section>
+
+  <section class="section container">
+    <h2 class="section-title">Coming Soon</h2>
+    <p class="section-subtitle">More free tools are in development.</p>
+    <div class="coming-soon-list" id="coming-soon-grid"></div>
+  </section>
+
+  <section class="section container">
+    <h2 class="section-title">More Hospitality Resources</h2>
+    <p class="section-subtitle">Guides and articles to go with these tools.</p>
+    <div class="internal-grid" id="internal-links-grid"></div>
+  </section>
+
+  <section class="section container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list" id="faq-list"></div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="footer-year"></span> Nigel A. Thomas &middot; <a href="index.html">nigelthomas.live</a> &middot; Hospitality Training &amp; Career Resources</p>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    'use strict';
+
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    // ========== Tools data (TOOL KEY drives everything below) ==========
+    var tools = [
+      { id: 1, key: 'foodcost', icon: 'fa-calculator', title: 'Food Cost Calculator', desc: 'Calculate dish and menu food cost percentage instantly.', ribbon: '', category: 'Cost Control' },
+      { id: 2, key: 'adr', icon: 'fa-dollar-sign', title: 'ADR Calculator', desc: 'Average Daily Rate — measure room revenue per sold room.', ribbon: '', category: 'Revenue & Pricing' },
+      { id: 3, key: 'revpar', icon: 'fa-chart-bar', title: 'RevPAR Calculator', desc: 'Revenue Per Available Room — key hotel performance metric.', ribbon: '', category: 'Revenue & Pricing' },
+      { id: 4, key: 'occupancy', icon: 'fa-percent', title: 'Occupancy Calculator', desc: 'Occupancy rate based on rooms sold vs. available.', ribbon: '', category: 'Revenue & Pricing' },
+      { id: 5, key: 'labor', icon: 'fa-users', title: 'Labour Cost Calculator', desc: 'Measure labour cost as a percentage of total revenue.', ribbon: '', category: 'Cost Control' },
+      { id: 6, key: 'dailyreport', icon: 'fa-clipboard-list', title: 'Daily Manager Report', desc: 'Operational report template for daily management.', ribbon: 'Coming Soon', category: 'Operations Templates' },
+      { id: 7, key: 'breakeven', icon: 'fa-chart-pie', title: 'Break-even Calculator', desc: 'Units or revenue needed to cover fixed and variable costs.', ribbon: '', category: 'Cost Control' },
+      { id: 8, key: 'goppar', icon: 'fa-building', title: 'GOPPAR Calculator', desc: 'Gross Operating Profit Per Available Room.', ribbon: '', category: 'Revenue & Pricing' },
+      { id: 9, key: 'menuengineering', icon: 'fa-utensils', title: 'Menu Engineering Matrix', desc: 'Classify dishes as Stars, Plowhorses, Puzzles, or Dogs.', ribbon: '', category: 'Operations Templates' }
+    ];
+
+    var categories = ['All', 'Revenue & Pricing', 'Cost Control', 'Operations Templates'];
+
+    var comingSoonList = [
+      { icon: 'fa-clipboard-list', title: 'Daily Manager Report', desc: 'Standardised daily operations report template.' },
+      { icon: 'fa-star', title: 'STAR Report Analyzer', desc: 'Benchmark performance against competitive set data.' },
+      { icon: 'fa-users-gear', title: 'Staffing Ratio Calculator', desc: 'Right-size labour against forecasted occupancy.' }
+    ];
+
+    var internalLinks = [
+      { title: 'F&B Service Hierarchy Explained', desc: 'Understand every role from commis to F&B director.', href: 'fb-service-hierarchy.html' },
+      { title: 'Chef de Partie Career Guide', desc: 'What a CDP does and how to grow into the role.', href: 'chef-de-partie-career-guide.html' },
+      { title: 'Resort GM: Duties & Responsibilities', desc: 'A complete breakdown of the resort GM role.', href: 'resort-gm-duties-responsibilities.html' },
+      { title: 'Restaurant & F&B Operating Terms', desc: 'Key terminology every F&B professional should know.', href: 'restaurant-fb-operating-terminology.html' }
+    ];
+
+    var faqData = [
+      { q: 'Are these hospitality calculators really free?', a: 'Yes. Every tool on this page is free to use, with no sign-up or email required.' },
+      { q: 'Is my data stored anywhere?', a: 'No. All calculations run in your browser and nothing you enter is saved or sent anywhere.' },
+      { q: 'What is a good RevPAR benchmark?', a: 'RevPAR benchmarks vary widely by market and property type. Compare against your own STAR report competitive set for the most useful read.' },
+      { q: 'How is food cost percentage used in menu pricing?', a: 'Food cost percentage helps you check that a dish\'s selling price properly covers ingredient cost while leaving room for labour, overhead and profit.' }
+    ];
+
+    // ========== Render functions ==========
+    function renderCategories() {
+      var wrap = document.getElementById('category-pills');
+      wrap.innerHTML = categories.map(function(cat, i) {
+        return '<button class="pill' + (i === 0 ? ' active' : '') + '" data-cat="' + cat + '">' + cat + '</button>';
+      }).join('');
+      wrap.addEventListener('click', function(e) {
+        var pill = e.target.closest('.pill');
+        if (!pill) return;
+        wrap.querySelectorAll('.pill').forEach(function(p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        renderTools(document.getElementById('tool-search').value, pill.getAttribute('data-cat'));
+      });
+    }
+
+    function renderTools(filterText, filterCat) {
+      var grid = document.getElementById('tools-grid');
+      var text = (filterText || '').toLowerCase().trim();
+      var cat = filterCat || 'All';
+      var visible = tools.filter(function(t) {
+        var matchesText = !text || t.title.toLowerCase().indexOf(text) !== -1 || t.desc.toLowerCase().indexOf(text) !== -1;
+        var matchesCat = cat === 'All' || t.category === cat;
+        return matchesText && matchesCat;
+      });
+
+      grid.innerHTML = visible.map(function(t) {
+        return '' +
+          '<div class="tool-card" data-reveal data-key="' + t.key + '">' +
+            (t.ribbon ? '<span class="ribbon">' + t.ribbon + '</span>' : '') +
+            '<div class="icon-wrap"><i class="fa-solid ' + t.icon + '"></i></div>' +
+            '<h3>' + t.title + '</h3>' +
+            '<p>' + t.desc + '</p>' +
+            '<button class="btn-small" data-key="' + t.key + '">' + (t.ribbon ? 'Preview' : 'Open Calculator') + '</button>' +
+          '</div>';
+      }).join('');
+
+      document.getElementById('no-results').style.display = visible.length ? 'none' : 'block';
+      revealCards();
+    }
+
+    function renderComingSoon() {
+      var grid = document.getElementById('coming-soon-grid');
+      grid.innerHTML = comingSoonList.map(function(c) {
+        return '' +
+          '<div class="coming-card" data-reveal>' +
+            '<i class="fa-solid ' + c.icon + '"></i>' +
+            '<strong>' + c.title + '</strong>' +
+            '<span>' + c.desc + '</span>' +
+          '</div>';
+      }).join('');
+    }
+
+    function renderInternalLinks() {
+      var grid = document.getElementById('internal-links-grid');
+      grid.innerHTML = internalLinks.map(function(l) {
+        return '' +
+          '<a class="internal-card" href="' + l.href + '" data-reveal>' +
+            '<strong>' + l.title + '</strong>' +
+            '<span>' + l.desc + '</span>' +
+          '</a>';
+      }).join('');
+    }
+
+    function renderFAQ() {
+      var list = document.getElementById('faq-list');
+      list.innerHTML = faqData.map(function(f, i) {
+        return '' +
+          '<div class="faq-item" id="faq-' + i + '">' +
+            '<div class="faq-question">' + f.q + '<i class="fa-solid fa-chevron-down"></i></div>' +
+            '<div class="faq-answer"><p>' + f.a + '</p></div>' +
+          '</div>';
+      }).join('');
+      list.addEventListener('click', function(e) {
+        var q = e.target.closest('.faq-question');
+        if (!q) return;
+        q.parentElement.classList.toggle('open');
+      });
+    }
+
+    function revealCards() {
+      var items = document.querySelectorAll('[data-reveal]:not(.revealed)');
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      items.forEach(function(item) { observer.observe(item); });
+    }
+
+    renderCategories();
+    renderTools('', 'All');
+    renderComingSoon();
+    renderInternalLinks();
+    renderFAQ();
+
+    // ========== Live search ==========
+    document.getElementById('tool-search').addEventListener('input', function(e) {
+      var activePill = document.querySelector('.pill.active');
+      renderTools(e.target.value, activePill ? activePill.getAttribute('data-cat') : 'All');
+    });
+
+    // ========== Back to top ==========
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) btn.classList.add('show');
+      else btn.classList.remove('show');
+    });
+    document.getElementById('back-to-top').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ========== Modal system ==========
+    var overlay = document.getElementById('modal-overlay');
+    var modalContent = document.getElementById('modal-content');
+
+    var modalBox = document.getElementById('modal-box');
+    var WIDE_MODAL_KEYS = ['menuengineering'];
+
+    function openCalculator(key) {
+      if (key === 'menuengineering') { meRowCounter = 4; }
+      modalContent.innerHTML = getCalculatorContent(key);
+      modalBox.classList.toggle('wide', WIDE_MODAL_KEYS.indexOf(key) !== -1);
+      overlay.classList.add('open');
+    }
+    function closeModal() {
+      overlay.classList.remove('open');
+      modalBox.classList.remove('wide');
+      modalContent.innerHTML = '';
+    }
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('.btn-small');
+      if (btn) {
+        e.preventDefault();
+        openCalculator(btn.getAttribute('data-key'));
+      }
+    });
+
+    function field(label, id, placeholder) {
+      return '' +
+        '<div style="margin-bottom:14px;">' +
+          '<label style="display:block; font-size:0.85rem; font-weight:600; color:#333; margin-bottom:4px;">' + label + '</label>' +
+          '<input type="number" id="' + id + '" placeholder="' + placeholder + '" style="width:100%; padding:10px 14px; border:2px solid #e0e0e0; border-radius:8px; font-size:1rem;">' +
+        '</div>';
+    }
+    function calcButton(label, onclick) {
+      return '<button onclick="' + onclick + '" style="background:#5b1f27; color:#fff; border:none; padding:12px 28px; border-radius:40px; font-weight:600; cursor:pointer; width:100%; font-size:1rem; transition:background 0.2s;" onmouseover="this.style.background=\'#7a2e3a\'" onmouseout="this.style.background=\'#5b1f27\'">' + label + '</button>';
+    }
+    function resultBox(id) {
+      return '<div id="' + id + '" style="margin-top:16px; padding:14px 16px; background:#f7f5f2; border-radius:8px; border-left:4px solid #d4af37; min-height:50px; font-size:0.95rem;">Enter values and click Calculate</div>';
+    }
+    function heading(emoji, title, sub) {
+      return '<h2 style="color:#5b1f27; margin-bottom:6px; font-family:\'Playfair Display\',serif;">' + emoji + ' ' + title + '</h2>' +
+             '<p style="color:#666; font-size:0.9rem; margin-bottom:18px;">' + sub + '</p>';
+    }
+
+    function getCalculatorContent(key) {
+      var contents = {
+        foodcost:
+          heading('🍽️', 'Food Cost Calculator', 'Ingredient cost as a percentage of selling price') +
+          field('Ingredient Cost per Dish (₹)', 'fc-cost-modal', 'e.g. 120') +
+          field('Menu Selling Price (₹)', 'fc-price-modal', 'e.g. 450') +
+          calcButton('Calculate Food Cost %', 'calcFoodCostModal()') +
+          resultBox('fc-result-modal'),
+
+        adr:
+          heading('💰', 'ADR Calculator', 'Average Daily Rate per room sold') +
+          field('Total Room Revenue (₹)', 'adr-revenue-modal', 'e.g. 250000') +
+          field('Rooms Sold', 'adr-rooms-modal', 'e.g. 80') +
+          calcButton('Calculate ADR', 'calcADRModal()') +
+          resultBox('adr-result-modal'),
+
+        revpar:
+          heading('📊', 'RevPAR Calculator', 'Revenue Per Available Room') +
+          field('Total Room Revenue (₹)', 'revpar-revenue-modal', 'e.g. 250000') +
+          field('Total Available Rooms', 'revpar-rooms-modal', 'e.g. 120') +
+          calcButton('Calculate RevPAR', 'calcRevPARModal()') +
+          resultBox('revpar-result-modal'),
+
+        occupancy:
+          heading('📈', 'Occupancy Calculator', 'Rooms sold as a percentage of rooms available') +
+          field('Rooms Sold', 'occ-sold-modal', 'e.g. 80') +
+          field('Rooms Available', 'occ-available-modal', 'e.g. 120') +
+          calcButton('Calculate Occupancy', 'calcOccupancyModal()') +
+          resultBox('occ-result-modal'),
+
+        labor:
+          heading('👥', 'Labour Cost Calculator', 'Labour cost as a percentage of total revenue') +
+          field('Total Labour Cost (₹)', 'labor-cost-modal', 'e.g. 180000') +
+          field('Total Revenue (₹)', 'labor-revenue-modal', 'e.g. 600000') +
+          calcButton('Calculate Labour Cost %', 'calcLaborModal()') +
+          resultBox('labor-result-modal'),
+
+        breakeven:
+          heading('📊', 'Break-even Calculator', 'Units or revenue needed to cover all costs') +
+          field('Fixed Costs (₹)', 'be-fixed-modal', 'e.g. 500000') +
+          field('Unit Price (₹)', 'be-price-modal', 'e.g. 250') +
+          field('Variable Cost per Unit (₹)', 'be-variable-modal', 'e.g. 100') +
+          calcButton('Calculate Break-even', 'calcBreakEvenModal()') +
+          resultBox('be-result-modal'),
+
+        goppar:
+          heading('🏢', 'GOPPAR Calculator', 'Gross Operating Profit Per Available Room') +
+          field('Gross Operating Profit (₹)', 'gop-gop-modal', 'e.g. 500000') +
+          field('Total Available Rooms', 'gop-rooms-modal', 'e.g. 100') +
+          calcButton('Calculate GOPPAR', 'calcGOPPARModal()') +
+          resultBox('gop-result-modal'),
+
+        dailyreport:
+          heading('📋', 'Daily Manager Report', 'This template is in development') +
+          '<p style="color:#666; line-height:1.7;">A downloadable daily operations report template for shift managers — covering occupancy, revenue, incidents, and staffing notes — is coming soon. Check back shortly or subscribe via the blog for an update.</p>',
+
+        menuengineering:
+          heading('🍽️', 'Menu Engineering Matrix', 'Classify menu items by popularity and profitability') +
+          '<div style="overflow-x:auto;">' +
+            '<table style="width:100%; border-collapse:collapse; margin-bottom:12px; font-size:0.85rem;">' +
+              '<thead><tr style="text-align:left; color:#5b1f27;">' +
+                '<th style="padding:6px 4px;">Item</th><th style="padding:6px 4px;">Qty Sold</th><th style="padding:6px 4px;">Cost (₹)</th><th style="padding:6px 4px;">Price (₹)</th><th></th>' +
+              '</tr></thead>' +
+              '<tbody id="me-table-body">' +
+                menuRowHtml(1) + menuRowHtml(2) + menuRowHtml(3) + menuRowHtml(4) +
+              '</tbody>' +
+            '</table>' +
+          '</div>' +
+          '<button onclick="addMenuRow()" style="background:#fff; border:2px solid #5b1f27; color:#5b1f27; padding:8px 20px; border-radius:30px; font-weight:600; cursor:pointer; margin-bottom:14px;">+ Add Item</button>' +
+          calcButton('Analyze Menu', 'calcMenuEngineering()') +
+          '<div id="me-result-modal"></div>' +
+          '<p style="color:#999; font-size:0.78rem; margin-top:14px; line-height:1.6;"><strong>Stars</strong>: high popularity, high profit. <strong>Plowhorses</strong>: high popularity, low profit. <strong>Puzzles</strong>: low popularity, high profit. <strong>Dogs</strong>: low popularity, low profit.</p>'
+      };
+      return contents[key] || heading('🔧', 'Tool', 'Coming soon.');
+    }
+
+    // ---- Menu Engineering row builder ----
+    var meRowCounter = 4;
+    function menuRowHtml(r) {
+      return '' +
+        '<tr data-row="' + r + '">' +
+          '<td style="padding:4px 2px;"><input type="text" id="me-name-' + r + '" placeholder="e.g. Butter Chicken" style="width:100%; min-width:110px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; font-size:0.82rem;"></td>' +
+          '<td style="padding:4px 2px;"><input type="number" id="me-qty-' + r + '" placeholder="120" style="width:75px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; font-size:0.82rem;"></td>' +
+          '<td style="padding:4px 2px;"><input type="number" id="me-cost-' + r + '" placeholder="90" style="width:75px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; font-size:0.82rem;"></td>' +
+          '<td style="padding:4px 2px;"><input type="number" id="me-price-' + r + '" placeholder="320" style="width:75px; padding:6px 8px; border:1px solid #ddd; border-radius:6px; font-size:0.82rem;"></td>' +
+          '<td style="padding:4px 2px;"><button onclick="removeMenuRow(' + r + ')" style="background:none; border:none; color:#c0392b; cursor:pointer; font-size:1rem;" aria-label="Remove row">&times;</button></td>' +
+        '</tr>';
+    }
+    window.addMenuRow = function() {
+      meRowCounter++;
+      document.getElementById('me-table-body').insertAdjacentHTML('beforeend', menuRowHtml(meRowCounter));
+    };
+    window.removeMenuRow = function(r) {
+      var row = document.querySelector('tr[data-row="' + r + '"]');
+      if (row) row.remove();
+    };
+
+    // ========== Calculation functions ==========
+    function fmt(n) { return n.toLocaleString('en-IN', { maximumFractionDigits: 2 }); }
+
+    window.calcFoodCostModal = function() {
+      var cost = parseFloat(document.getElementById('fc-cost-modal').value);
+      var price = parseFloat(document.getElementById('fc-price-modal').value);
+      var box = document.getElementById('fc-result-modal');
+      if (!cost || !price) { box.textContent = 'Please enter both values.'; return; }
+      var pct = (cost / price) * 100;
+      box.innerHTML = 'Food cost: <strong>' + fmt(pct) + '%</strong>' +
+        (pct > 35 ? ' — higher than the typical 28–35% target range.' : ' — within a healthy target range.');
+    };
+
+    window.calcADRModal = function() {
+      var revenue = parseFloat(document.getElementById('adr-revenue-modal').value);
+      var rooms = parseFloat(document.getElementById('adr-rooms-modal').value);
+      var box = document.getElementById('adr-result-modal');
+      if (!revenue || !rooms) { box.textContent = 'Please enter both values.'; return; }
+      var adr = revenue / rooms;
+      box.innerHTML = 'ADR: <strong>₹' + fmt(adr) + '</strong> per sold room';
+    };
+
+    window.calcRevPARModal = function() {
+      var revenue = parseFloat(document.getElementById('revpar-revenue-modal').value);
+      var rooms = parseFloat(document.getElementById('revpar-rooms-modal').value);
+      var box = document.getElementById('revpar-result-modal');
+      if (!revenue || !rooms) { box.textContent = 'Please enter both values.'; return; }
+      var revpar = revenue / rooms;
+      box.innerHTML = 'RevPAR: <strong>₹' + fmt(revpar) + '</strong> per available room';
+    };
+
+    window.calcOccupancyModal = function() {
+      var sold = parseFloat(document.getElementById('occ-sold-modal').value);
+      var available = parseFloat(document.getElementById('occ-available-modal').value);
+      var box = document.getElementById('occ-result-modal');
+      if (!sold || !available) { box.textContent = 'Please enter both values.'; return; }
+      var occ = (sold / available) * 100;
+      box.innerHTML = 'Occupancy: <strong>' + fmt(occ) + '%</strong>';
+    };
+
+    window.calcLaborModal = function() {
+      var cost = parseFloat(document.getElementById('labor-cost-modal').value);
+      var revenue = parseFloat(document.getElementById('labor-revenue-modal').value);
+      var box = document.getElementById('labor-result-modal');
+      if (!cost || !revenue) { box.textContent = 'Please enter both values.'; return; }
+      var pct = (cost / revenue) * 100;
+      box.innerHTML = 'Labour cost: <strong>' + fmt(pct) + '%</strong>' +
+        (pct > 30 ? ' — above the common 25–30% benchmark.' : ' — within a common benchmark range.');
+    };
+
+    window.calcBreakEvenModal = function() {
+      var fixed = parseFloat(document.getElementById('be-fixed-modal').value);
+      var price = parseFloat(document.getElementById('be-price-modal').value);
+      var variable = parseFloat(document.getElementById('be-variable-modal').value);
+      var box = document.getElementById('be-result-modal');
+      if (!fixed || !price || variable === undefined || isNaN(variable)) { box.textContent = 'Please enter all three values.'; return; }
+      var contribution = price - variable;
+      if (contribution <= 0) { box.textContent = 'Unit price must be greater than variable cost per unit.'; return; }
+      var units = fixed / contribution;
+      var revenue = units * price;
+      box.innerHTML = 'Break-even: <strong>' + fmt(units) + ' units</strong> or <strong>₹' + fmt(revenue) + '</strong> in revenue';
+    };
+
+    window.calcGOPPARModal = function() {
+      var gop = parseFloat(document.getElementById('gop-gop-modal').value);
+      var rooms = parseFloat(document.getElementById('gop-rooms-modal').value);
+      var box = document.getElementById('gop-result-modal');
+      if (!gop || !rooms) { box.textContent = 'Please enter both values.'; return; }
+      var goppar = gop / rooms;
+      box.innerHTML = 'GOPPAR: <strong>₹' + fmt(goppar) + '</strong> per available room';
+    };
+
+    window.calcMenuEngineering = function() {
+      var rows = document.querySelectorAll('#me-table-body tr');
+      var items = [];
+      rows.forEach(function(row) {
+        var idx = row.getAttribute('data-row');
+        var nameEl = document.getElementById('me-name-' + idx);
+        var qtyEl = document.getElementById('me-qty-' + idx);
+        var costEl = document.getElementById('me-cost-' + idx);
+        var priceEl = document.getElementById('me-price-' + idx);
+        if (!nameEl || !qtyEl || !costEl || !priceEl) return;
+        var name = nameEl.value.trim();
+        var qty = parseFloat(qtyEl.value);
+        var cost = parseFloat(costEl.value);
+        var price = parseFloat(priceEl.value);
+        if (name && qty > 0 && !isNaN(cost) && !isNaN(price)) {
+          items.push({ name: name, qty: qty, cm: price - cost });
+        }
+      });
+
+      var box = document.getElementById('me-result-modal');
+      if (items.length < 2) {
+        box.innerHTML = '<p style="color:#c0392b; margin-top:12px;">Add at least 2 complete menu items (name, qty sold, cost, price) to run the analysis.</p>';
+        return;
+      }
+
+      var totalQty = items.reduce(function(sum, i) { return sum + i.qty; }, 0);
+      var weightedCM = items.reduce(function(sum, i) { return sum + (i.cm * i.qty); }, 0) / totalQty;
+      // Standard 70% rule: an item counts as "popular" if its share of total sales
+      // is at least 70% of the share it would get under equal distribution.
+      var popularityThreshold = 0.7 * (1 / items.length);
+
+      var rowsHtml = items.map(function(i) {
+        var mixShare = i.qty / totalQty;
+        var isPopular = mixShare >= popularityThreshold;
+        var isProfitable = i.cm >= weightedCM;
+        var quadrant, color;
+        if (isPopular && isProfitable) { quadrant = 'Star'; color = '#2e7d32'; }
+        else if (isPopular && !isProfitable) { quadrant = 'Plowhorse'; color = '#c9a227'; }
+        else if (!isPopular && isProfitable) { quadrant = 'Puzzle'; color = '#2b6cb0'; }
+        else { quadrant = 'Dog'; color = '#c0392b'; }
+        return '' +
+          '<tr>' +
+            '<td style="padding:6px 4px;">' + i.name + '</td>' +
+            '<td style="padding:6px 4px;">₹' + fmt(i.cm) + '</td>' +
+            '<td style="padding:6px 4px;">' + fmt(mixShare * 100) + '%</td>' +
+            '<td style="padding:6px 4px;"><span style="background:' + color + '; color:#fff; padding:3px 12px; border-radius:12px; font-size:0.75rem; font-weight:600;">' + quadrant + '</span></td>' +
+          '</tr>';
+      }).join('');
+
+      box.innerHTML = '' +
+        '<p style="font-size:0.85rem; color:#666; margin:12px 0 8px;">Average contribution margin across all items: <strong>₹' + fmt(weightedCM) + '</strong></p>' +
+        '<div style="overflow-x:auto;">' +
+          '<table style="width:100%; border-collapse:collapse; font-size:0.85rem;">' +
+            '<thead><tr style="text-align:left; color:#5b1f27;"><th style="padding:6px 4px;">Item</th><th style="padding:6px 4px;">Contribution Margin</th><th style="padding:6px 4px;">Mix %</th><th style="padding:6px 4px;">Class</th></tr></thead>' +
+            '<tbody>' + rowsHtml + '</tbody>' +
+          '</table>' +
+        '</div>';
+    };
+
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('.internal-card');
+      if (link && !link.getAttribute('href')) {
+        e.preventDefault();
+      }
+    });
+
+  })();
+  </script>
+</body>
+</html>
