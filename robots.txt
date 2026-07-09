@@ -1,4 +1,5 @@
-﻿﻿User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://nigelthomas.live/sitemap.xml
+Sitemap: https://www.nigelthomas.live/sitemap.xml
+
