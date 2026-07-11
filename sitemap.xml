@@ -232,6 +232,18 @@
     <priority>0.90</priority>
 </url>
     <url>
+  <loc>https://nigelthomas.live/kitchen-cleaning-schedule-template.html</loc>
+  <lastmod>2026-07-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://nigelthomas.live/kitchen-temperature-log-sheet.html</loc>
+  <lastmod>2026-07-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+    </url>
         <loc>https://www.nigelthomas.live/the-five-minute-restaurant-interview-test.html</loc>
         <lastmod>2026-06-27</lastmod>
         <changefreq>monthly</changefreq>
@@ -249,7 +261,6 @@
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
-
     <url>
         <loc>https://www.nigelthomas.live/food-cost-control-complete-guide.html</loc>
         <lastmod>2026-07-02</lastmod>
