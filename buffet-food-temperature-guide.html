@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffet Food Temperature Guide | Nigel Anthony Thomas</title>
+    <meta name="description" content="Complete buffet food temperature guide for hotels, resorts, and catering. Hot and cold holding temperatures, danger zone, HACCP best practices." />
+    <meta name="keywords" content="Buffet Temperature Guide, Food Safety, Hot Holding, Cold Holding, HACCP, Buffet Service" />
+    <meta name="author" content="Nigel Anthony Thomas" />
+    <link rel="canonical" href="https://www.nigelthomas.live/buffet-food-temperature-guide.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Buffet Food Temperature Guide – Happy Guests, Safe Food" />
+    <meta property="og:description" content="Essential temperature guidelines for safe and delicious buffet service." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+        body { background: #111; color: #eee; font-family: Arial, Helvetica, sans-serif; line-height: 1.8; margin: 0; }
+        header { background: #5b0000; padding: 70px 20px; text-align: center; }
+        header h1 { color: #FFD700; font-size: 46px; margin-bottom: 15px; }
+        header p { color: white; font-size: 20px; }
+        .container { max-width: 1100px; margin: auto; padding: 40px 25px; }
+        h2 { color: #FFD700; margin-top: 45px; }
+        h3 { color: #f0c44d; margin-top: 30px; }
+        table { width: 100%; border-collapse: collapse; margin: 30px 0; }
+        th { background: #5b0000; color: white; padding: 14px; }
+        td { border: 1px solid #444; padding: 14px; }
+        tr:nth-child(even) { background: #1b1b1b; }
+        .tip { background: #222; padding: 20px; border-left: 6px solid gold; margin: 35px 0; }
+        .warning { background: #4b0000; padding: 20px; border-left: 6px solid gold; margin: 35px 0; }
+        .danger-zone-box { background: #2a2a2a; padding: 20px; border-radius: 8px; margin: 30px 0; text-align: center; border: 2px solid #FFD700; }
+        .danger-zone-box .temp-range { font-size: 32px; font-weight: bold; color: #ff6666; }
+        .quick-guide { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 30px 0; }
+        .quick-guide-item { background: #1b1b1b; padding: 20px; border-radius: 8px; flex: 1 1 180px; text-align: center; border: 1px solid #444; }
+        .quick-guide-item .label { font-weight: bold; color: #FFD700; }
+        .quick-guide-item .value { font-size: 28px; color: #fff; }
+        .rules-grid { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0; }
+        .rules-grid .rule-card { flex: 1 1 200px; background: #1b1b1b; padding: 15px; border-radius: 8px; border-left: 4px solid #FFD700; }
+        .rules-grid .rule-card strong { display: block; color: #FFD700; }
+        footer { background: #222; padding: 35px; text-align: center; margin-top: 70px; }
+        a { color: #FFD700; text-decoration: none; }
+        hr { border-color: #444; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍽️ Buffet Food Temperature Guide</h1>
+    <p>Happy Guests • Safe Food – Essential Standards for Hotels, Resorts &amp; Banquets</p>
+</header>
+
+<div class="container" id="app">
+    <!-- All content will be injected by JavaScript -->
+</div>
+
+<footer>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms.html">Website Terms of Use</a>
+    </p>
+    <p>&copy; 2026 Nigel Anthony Thomas. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // ========================================================================
+    // 1. DATA – everything from your buffet guide is stored here
+    //    Add, remove, or update items and the page will reflect the changes.
+    // ========================================================================
+    const buffetData = {
+        // --- Hot Foods ---
+        hotFoods: [
+            { item: "Soup", temp: "70°C – 75°C" },
+            { item: "Veg Curry", temp: "65°C – 75°C" },
+            { item: "Non‑Veg Curry", temp: "70°C – 75°C" },
+            { item: "Rice (Plain / Fried / Biryani)", temp: "63°C – 70°C" },
+            { item: "Dal", temp: "65°C – 75°C" },
+            { item: "Gravy Items", temp: "63°C – 75°C" },
+            { item: "Dry Veg Items", temp: "63°C – 70°C" },
+            { item: "Dry Non‑Veg Items", temp: "65°C – 75°C" },
+            { item: "Noodles / Pasta", temp: "65°C – 70°C" },
+            { item: "Tea / Coffee", temp: "75°C – 85°C" }
+        ],
+        // --- Cold Foods ---
+        coldFoods: [
+            { item: "Salads", temp: "1°C – 5°C" },
+            { item: "Cut Fruits", temp: "1°C – 5°C" },
+            { item: "Cold Desserts", temp: "1°C – 5°C" },
+            { item: "Yoghurt / Curd", temp: "1°C – 5°C" }
+        ],
+        // --- Danger Zone ---
+        dangerZone: {
+            min: 5,
+            max: 63,
+            description: "Bacteria grow rapidly in this range."
+        },
+        // --- Quick Guide (key rules) ---
+        quickGuide: {
+            hotHolding: "Above 63°C",
+            coldHolding: "Below 5°C",
+            checkFrequency: "Every 2 hours"
+        },
+        // --- Important Rules (cards) ---
+        rules: [
+            { title: "🔥 HOT HOLDING", text: "Keep hot food at or above 63°C at all times. Use chafing dishes, steam tables, or induction warmers." },
+            { title: "❄️ COLD HOLDING", text: "Keep cold food at or below 5°C at all times. Use chilled counters, ice beds, or refrigerated displays." },
+            { title: "📋 CHECK & RECORD", text: "Check temperatures every 2 hours and record in your Temperature Log Sheet. Essential for HACCP compliance." },
+            { title: "🌡️ USE CALIBRATED THERMOMETERS", text: "Always use a calibrated probe thermometer for accurate readings. Check calibration daily." },
+            { title: "⚡ ACT IMMEDIATELY", text: "If temperature falls in the Danger Zone, take corrective action – reheat, cool, or discard." }
+        ],
+        // --- FAQs (optional, but included for completeness) ---
+        faqs: [
+            { q: "What is the minimum hot holding temperature?", a: "All hot buffet food must be maintained at 63°C (145°F) or above." },
+            { q: "What is the maximum cold holding temperature?", a: "Cold buffet food must be kept at 5°C (41°F) or below." },
+            { q: "How often should I check buffet temperatures?", a: "At least every 2 hours. Record each reading in your Temperature Log Sheet." },
+            { q: "What should I do if food falls into the Danger Zone?", a: "Act immediately. Reheat hot food to 75°C or above, or cool cold food to below 5°C. If it has been in the Danger Zone for more than 2 hours, discard it." }
+        ]
+    };
+
+    // ========================================================================
+    // 2. RENDER FUNCTIONS – build the HTML from the data above
+    // ========================================================================
+
+    // Helper: build a table from an array of { item, temp }
+    function buildTable(items, caption) {
+        if (!items || items.length === 0) return '';
+        let rows = items.map(row =>
+            `<tr><td>${row.item}</td><td>${row.temp}</td></tr>`
+        ).join('');
+        return `<table>
+                    <caption style="caption-side:bottom;margin-top:8px;color:#aaa;">${caption || ''}</caption>
+                    <thead><tr><th>Food Item</th><th>Recommended Temperature</th></tr></thead>
+                    <tbody>${rows}</tbody>
+                </table>`;
+    }
+
+    // Build the entire page content
+    function renderPage() {
+        const { hotFoods, coldFoods, dangerZone, quickGuide, rules, faqs } = buffetData;
+
+        // Danger Zone box
+        const dangerHtml = `
+            <div class="danger-zone-box">
+                <p style="font-size:24px;font-weight:bold;color:#FFD700;">⚠ DANGER ZONE</p>
+                <p class="temp-range">${dangerZone.min}°C – ${dangerZone.max}°C</p>
+                <p style="font-size:18px;font-weight:normal;color:#eee;">
+                    <strong>${dangerZone.description}</strong><br />
+                    Keep hot food <span style="color:#FFD700;">ABOVE ${dangerZone.max}°C</span> and cold food <span style="color:#66ccff;">BELOW ${dangerZone.min}°C</span>.
+                </p>
+            </div>
+        `;
+
+        // Quick Guide cards
+        const quickHtml = `
+            <div class="quick-guide">
+                <div class="quick-guide-item"><div class="label">🔥 Hot Holding</div><div class="value">${quickGuide.hotHolding}</div></div>
+                <div class="quick-guide-item"><div class="label">❄️ Cold Holding</div><div class="value">${quickGuide.coldHolding}</div></div>
+                <div class="quick-guide-item" style="border-color:#ff6666;"><div class="label">⚠️ Danger Zone</div><div class="value" style="color:#ff6666;">${dangerZone.min}°C – ${dangerZone.max}°C</div></div>
+                <div class="quick-guide-item"><div class="label">🌡️ Check Frequency</div><div class="value">${quickGuide.checkFrequency}</div></div>
+            </div>
+        `;
+
+        // Rules cards
+        const rulesHtml = `
+            <div class="rules-grid">
+                ${rules.map(r => `
+                    <div class="rule-card" style="border-left-color:${r.title.includes('HOT') ? '#FFD700' : r.title.includes('COLD') ? '#66ccff' : r.title.includes('CHECK') ? '#ffaa00' : r.title.includes('THERMOMETERS') ? '#ff6666' : '#ff9999'};">
+                        <strong>${r.title}</strong>
+                        <p style="margin:8px 0 0 0;font-size:0.95rem;">${r.text}</p>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+
+        // FAQs
+        const faqHtml = faqs.map((f, i) => `
+            <h3>${f.q}</h3>
+            <p>${f.a}</p>
+        `).join('');
+
+        // Assemble the full container
+        document.getElementById('app').innerHTML = `
+            <p><strong>Category:</strong> Food &amp; Beverage</p>
+            <p><strong>Author:</strong> Nigel Anthony Thomas</p>
+            <p><strong>Reading Time:</strong> Approximately 10 Minutes</p>
+            <hr />
+
+            <h2>Introduction</h2>
+            <p>
+                Buffet service is a centrepiece of hospitality – from lavish resort breakfasts to cruise ship gala dinners.
+                Guests enjoy variety and choice, but with food on open display, <strong>temperature control</strong> is the single most important factor for both <em>safety</em> and <em>quality</em>.
+                Food held at incorrect temperatures loses freshness and becomes a breeding ground for bacteria.
+                This guide provides clear, actionable standards based on international food safety principles.
+            </p>
+            <div class="tip">
+                <h3>💡 Nigel's Professional Tip</h3>
+                <p>
+                    Over decades of managing hotels and resorts across India, the Middle East, and the USA, I have seen that
+                    the most successful buffets combine visual appeal with rigorous temperature monitoring. Invest in proper
+                    equipment, train your team, and make temperature checks a non‑negotiable part of your service routine.
+                </p>
+            </div>
+            <hr />
+
+            <h2>Hot Food – Keep Above ${dangerZone.max}°C</h2>
+            <p>
+                All hot buffet items must be maintained at <strong>${dangerZone.max}°C (145°F) or above</strong>.
+                Use bain‑maries, steam tables, chafing dishes, and heat lamps. Never top up – replace entire containers.
+                Check every 2 hours and log the results.
+            </p>
+            ${buildTable(hotFoods, 'Hot Food – Recommended Holding Temperatures')}
+            <div class="warning">
+                <h3>⚠ Critical Reminder</h3>
+                <p>If hot food falls below <strong>${dangerZone.max}°C</strong>, it enters the Danger Zone. Act immediately: reheat to 75°C or above, or discard if below for more than 2 hours.</p>
+            </div>
+            <hr />
+
+            <h2>Cold Food – Keep Below ${dangerZone.min}°C</h2>
+            <p>
+                Cold buffet items such as salads, fruits, desserts, and yoghurt must be kept at <strong>${dangerZone.min}°C (41°F) or below</strong>.
+                Use chilled display counters, ice beds, and refrigerated platters. Replenish in small batches and never place food directly on melting ice.
+            </p>
+            ${buildTable(coldFoods, 'Cold Food – Recommended Holding Temperatures')}
+            <div class="tip">
+                <h3>✔ Best Practice</h3>
+                <p>Use separate serving utensils for each cold dish. Replace empty trays promptly and monitor chilled unit temperatures throughout the service period.</p>
+            </div>
+            <hr />
+
+            <h2>The Temperature Danger Zone – Avoid at All Costs</h2>
+            <p>
+                The <strong>Danger Zone</strong> is the range between <strong>${dangerZone.min}°C and ${dangerZone.max}°C</strong>.
+                In this zone, bacteria double every 20 minutes. Any buffet food that lingers here for more than <strong>2 hours</strong> (or 1 hour in hot climates) must be discarded.
+            </p>
+            ${dangerHtml}
+            <hr />
+
+            <h2>Important Rules for Buffet Temperature Control</h2>
+            ${rulesHtml}
+            <hr />
+
+            <h2>HACCP and Documentation</h2>
+            <p>
+                Hazard Analysis and Critical Control Points (HACCP) requires rigorous temperature monitoring. Your Temperature Log Sheet
+                should record time, food item, temperature, corrective action, and staff initials. These records provide evidence of due
+                diligence during health inspections and help identify equipment issues early.
+            </p>
+            <table>
+                <caption style="caption-side:bottom;margin-top:8px;color:#aaa;">Example HACCP Monitoring Schedule</caption>
+                <thead><tr><th>Critical Control Point</th><th>Temperature Standard</th><th>Monitoring Frequency</th></tr></thead>
+                <tbody>
+                    <tr><td>Receiving Chilled Goods</td><td>0–5°C</td><td>Every Delivery</td></tr>
+                    <tr><td>Receiving Frozen Goods</td><td>-18°C or colder</td><td>Every Delivery</td></tr>
+                    <tr><td>Hot Buffet Holding</td><td>Above ${dangerZone.max}°C</td><td>Every 2 Hours</td></tr>
+                    <tr><td>Cold Buffet Holding</td><td>Below ${dangerZone.min}°C</td><td>Every 2 Hours</td></tr>
+                    <tr><td>Cooking (Poultry/Meat)</td><td>75°C minimum</td><td>Every Batch</td></tr>
+                </tbody>
+            </table>
+            <div class="warning">
+                <h3>⚠ Executive Chef's Warning</h3>
+                <p>
+                    Buffet service is high‑risk because food is exposed and guests serve themselves. One lapse can cause an outbreak
+                    that damages your reputation for years. Never compromise on temperature checks – they are your most powerful prevention tool.
+                </p>
+            </div>
+            <hr />
+
+            <h2>Quick Temperature Guide – At a Glance</h2>
+            ${quickHtml}
+            <hr />
+
+            <h2>Frequently Asked Questions</h2>
+            ${faqHtml}
+            <hr />
+
+            <h2>Conclusion</h2>
+            <p>
+                Temperature control is the cornerstone of safe buffet service. By keeping hot food above ${dangerZone.max}°C,
+                cold food below ${dangerZone.min}°C, avoiding the Danger Zone, and diligently recording temperatures,
+                you protect your guests and uphold your brand's reputation.
+            </p>
+            <div class="tip">
+                <h3>👨‍🍳 About the Author</h3>
+                <p>
+                    <strong>Nigel Anthony Thomas</strong> is a hospitality professional with over two decades of leadership
+                    experience across India, the Middle East, and the United States. He shares practical insights to help
+                    hospitality professionals build successful careers and improve operational standards.
+                </p>
+            </div>
+            <hr />
+            <p style="text-align:center;">
+                <strong>© 2026 Nigel Anthony Thomas</strong><br />
+                Sharing hospitality knowledge, leadership insights, and operational excellence with professionals worldwide.
+            </p>
+        `;
+    }
+
+    // ========================================================================
+    // 3. INIT – render when the page loads
+    // ========================================================================
+    document.addEventListener('DOMContentLoaded', renderPage);
+</script>
+
+</body>
+</html>
