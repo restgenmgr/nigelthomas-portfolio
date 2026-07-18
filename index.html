@@ -30,6 +30,9 @@
         .hero p{color:#d4d4d4;font-size:1.2rem;max-width:800px;margin:0 auto;}
         .btn{display:inline-block;background:#d4af37;color:#000000;padding:12px 35px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:25px;transition:0.3s;}
         .btn:hover{background:#c4a030;transform:scale(1.05);}
+        .btn-outline{display:inline-block;background:transparent;color:#d4af37;border:1px solid #d4af37;padding:11px 34px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:25px;margin-left:12px;transition:0.3s;}
+        .btn-outline:hover{background:#d4af37;color:#000000;transform:scale(1.05);}
+        .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;}
         .container{max-width:1200px;margin:0 auto;padding:50px 20px;}
         .section-title{font-size:2rem;color:#d4af37;margin-bottom:30px;text-align:center;}
         .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin:30px 0;}
@@ -59,7 +62,7 @@
         .footer-links{margin-bottom:15px;}
         .footer-links a{color:#d4af37;text-decoration:none;margin:0 12px;transition:0.3s;}
         .footer-links a:hover{text-decoration:underline;}
-        @media(max-width:768px){.nav-container{flex-direction:column;gap:15px;}.hero h1{font-size:1.8rem;}.grid{grid-template-columns:1fr;}}
+        @media(max-width:768px){.nav-container{flex-direction:column;gap:15px;}.hero h1{font-size:1.8rem;}.grid{grid-template-columns:1fr;}.btn-outline{margin-left:0;margin-top:12px;}}
     </style>
 </head>
 <body>
@@ -69,6 +72,7 @@
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
+                <a href="/resume.html">Resume</a>
                 <a href="/hospitality-management-tools.html">Tools</a>
                 <a href="/blog.html">Blog</a>
                 <a href="/contact.html">Contact</a>
@@ -83,7 +87,10 @@
         <h1>Nigel Thomas</h1>
         <p> Hospitality Trainer &amp; Professional | 30+ Years Global Experience</p>
         <p style="font-size:1rem;margin-top:5px;color:#d4af37;">  Cruise Ships | Luxury Resorts | Middle East |  USA |  India</p>
-        <a href="/about.html" class="btn">Learn More </a>
+        <div class="hero-actions">
+            <a href="/about.html" class="btn">Learn More</a>
+            <a href="/resume.html" class="btn-outline">View Resume</a>
+        </div>
     </div>
 
     <div class="container">
@@ -155,6 +162,7 @@
         <div class="footer-links">
             <a href="/">Home</a>
             <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
             <a href="/hospitality-management-tools.html">Tools</a>
             <a href="/blog.html">Blog</a>
             <a href="/contact.html">Contact</a>

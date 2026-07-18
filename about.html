@@ -25,6 +25,7 @@
         .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
         .nav-links a{color:#ffffff;text-decoration:none;padding:8px 15px;border-radius:25px;transition:0.3s;}
         .nav-links a:hover{background:#d4af37;color:#000000;}
+        .nav-links a.active{background:#d4af37;color:#000000;}
         .hero{background:linear-gradient(135deg,#000000,#1a1a1a);color:#d4af37;padding:60px 20px;text-align:center;border-bottom:2px solid #d4af37;}
         .hero h1{font-size:2.5rem;color:#d4af37;}
         .hero p{color:#d4d4d4;font-size:1.1rem;}
@@ -39,6 +40,10 @@
         .expertise-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;}
         .tag{background:#1a1a1a;color:#d4af37;border:1px solid #d4af37;padding:6px 14px;border-radius:20px;font-size:0.85rem;font-weight:500;}
         .founder-stats{background:#1a1a1a;border:1px solid #d4af37;padding:20px;border-radius:12px;margin-top:20px;}
+        .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;}
+        .btn{display:inline-block;padding:12px 26px;border-radius:30px;text-decoration:none;font-weight:600;font-size:0.95rem;}
+        .btn-primary{background:#d4af37;color:#000000;}
+        .btn-primary:hover{background:#e8c455;}
         footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-top:40px;border-top:2px solid #d4af37;}
         .footer-links a{color:#d4af37;text-decoration:none;margin:0 12px;}
         .footer-links a:hover{text-decoration:underline;}
@@ -51,7 +56,8 @@
             <a href="/" class="logo">Nigel Thomas</a>
             <div class="nav-links">
                 <a href="/">Home</a>
-                <a href="/about.html">About</a>
+                <a href="/about.html" class="active">About</a>
+                <a href="/resume.html">Resume</a>
                 <a href="/blog.html">Blog</a>
                 <a href="/contact.html">Contact</a>
                 <a href="/privacy-policy.html">Privacy</a>
@@ -78,6 +84,10 @@
             <p>Throughout his career, Nigel has demonstrated expertise in <strong>turnaround management, cost optimization, and scalable SOP implementation</strong>, delivering consistent improvements in guest satisfaction and profitability while leading multicultural teams of 80+ staff.</p>
 
             <p>His core mission is to <strong>bridge the gap between executive talent and career opportunities</strong> in hospitality and maritime industries across India, the Middle East, and international markets. Through practical, actionable guidance, he helps hospitality professionals excel in global hospitality environments.</p>
+
+            <div class="cta-row">
+                <a class="btn btn-primary" href="/resume.html">View Full Resume →</a>
+            </div>
         </div>
 
         <div class="card">
@@ -124,6 +134,9 @@
                 <li><strong>Restaurant Operations Manager</strong> – United States (2007–2013)</li>
                 <li><strong>Hospitality Manager</strong> – Ramada &amp; Meridien Hotels, Middle East (2002–2007)</li>
             </ul>
+            <div class="cta-row">
+                <a class="btn btn-primary" href="/resume.html">See Full Career Timeline →</a>
+            </div>
         </div>
 
         <div class="card">
@@ -171,6 +184,7 @@
         <div class="footer-links">
             <a href="/">Home</a>
             <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
             <a href="/blog.html">Blog</a>
             <a href="/contact.html">Contact</a>
             <a href="/privacy-policy.html">Privacy</a>
@@ -182,6 +196,3 @@
     </footer>
 </body>
 </html>
-
-
-

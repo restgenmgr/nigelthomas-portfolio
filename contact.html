@@ -37,10 +37,13 @@
         .tag:hover{background:#d4af37;color:#000000;}
         .btn{display:inline-block;background:#d4af37;color:#000000;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:bold;transition:0.3s;}
         .btn:hover{background:#c4a030;transform:scale(1.02);}
+        .btn-outline{display:inline-block;background:transparent;color:#d4af37;border:1px solid #d4af37;padding:11px 29px;border-radius:30px;text-decoration:none;font-weight:bold;transition:0.3s;margin-left:12px;}
+        .btn-outline:hover{background:#d4af37;color:#000000;transform:scale(1.02);}
+        .cta-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:0;}
         footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-top:40px;border-top:2px solid #d4af37;}
         .footer-links a{color:#d4af37;text-decoration:none;margin:0 12px;}
         .footer-links a:hover{text-decoration:underline;}
-        @media(max-width:768px){.nav-container{flex-direction:column;gap:10px;}.hero h1{font-size:1.8rem;}}
+        @media(max-width:768px){.nav-container{flex-direction:column;gap:10px;}.hero h1{font-size:1.8rem;}.btn-outline{margin-left:0;margin-top:12px;}}
     </style>
 </head>
 <body>
@@ -50,8 +53,9 @@
             <div class="nav-links">
                 <a href="/">Home</a>
                 <a href="/about.html">About</a>
+                <a href="/resume.html">Resume</a>
                 <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
+                <a href="/contact.html" class="active">Contact</a>
                 <a href="/privacy-policy.html">Privacy</a>
                 <a href="/terms.html">Terms</a>
                 <a href="/disclaimer.html">Disclaimer</a>
@@ -83,7 +87,7 @@
         </div>
 
         <div class="card">
-            <h2> Get in Touch</h2
+            <h2> Get in Touch</h2>
             <p><strong>Website:</strong>
 <a href="https://nigelthomas.live" style="color:#d4af37;">
 nigelthomas.live
@@ -95,7 +99,10 @@ nigelthomas.live
         <div class="card" style="text-align:center; background:#1a1a1a; border:2px solid #d4af37;">
             <h2> Ready to Elevate Your Career?</h2>
             <p style="max-width:600px;margin:0 auto 20px auto;">Whether you need CV guidance, interview preparation, or operational training — I'm here to help.</p>
-            <a href="mailto:restgenmgr1952@gmail.com" class="btn"> Send a Message</a>
+            <div class="cta-actions">
+                <a href="mailto:restgenmgr1952@gmail.com" class="btn"> Send a Message</a>
+                <a href="/Nigel_Thomas_Resume.pdf" class="btn-outline" download> Download Resume (PDF)</a>
+            </div>
         </div>
     </div>
 
@@ -103,6 +110,7 @@ nigelthomas.live
         <div class="footer-links">
             <a href="/">Home</a>
             <a href="/about.html">About</a>
+            <a href="/resume.html">Resume</a>
             <a href="/blog.html">Blog</a>
             <a href="/contact.html">Contact</a>
             <a href="/privacy-policy.html">Privacy</a>
@@ -114,6 +122,3 @@ nigelthomas.live
     </footer>
 </body>
 </html>
-
-
-
