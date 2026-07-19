@@ -1,3 +1,5 @@
+
+Sitemap · XML
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Main Pages -->
@@ -67,7 +69,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
+ 
     <!-- Blog Articles -->
     <url>
         <loc>https://www.nigelthomas.live/how-to-control-food-cost.html</loc>
@@ -130,12 +132,11 @@
         <priority>0.8</priority>
     </url>
     <url>
-  <loc>https://nigelthomas.live/restaurant-fire-safety-training-guide.html</loc>
-  <lastmod>2026-07-19</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
-    
+        <loc>https://www.nigelthomas.live/restaurant-fire-safety-training-guide.html</loc>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     <url>
         <loc>https://www.nigelthomas.live/foh-boh-equipment-guide.html</loc>
         <lastmod>2026-06-25</lastmod>
@@ -401,15 +402,15 @@
         <priority>0.8</priority>
     </url>
     <url>
-    <loc>https://www.nigelthomas.live/buffet-food-temperature-guide.html</loc>
-    <lastmod>2026-07-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
+        <loc>https://www.nigelthomas.live/buffet-food-temperature-guide.html</loc>
+        <lastmod>2026-07-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
-  <loc>https://nigelthomas.live/which-hotel-chain-is-biggest.html</loc>
-  <lastmod>2026-07-19</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
+        <loc>https://www.nigelthomas.live/which-hotel-chain-is-biggest.html</loc>
+        <lastmod>2026-07-19</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
