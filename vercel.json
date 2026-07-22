@@ -1,3 +1,9 @@
 {
-  "headers": []
+  "redirects": [
+    {
+      "source": "/fire-safety-training-blog.html",
+      "destination": "/restaurant-fire-safety-training-guide.html",
+      "permanent": true
+    }
+  ]
 }
