@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FIFO vs FEFO: Stock Rotation Rules Every Store Manager Must Know</title>
+<meta name="description" content="FIFO vs FEFO explained with a store manager's insight on stacking rules for frozen, dry goods, meat, dairy, and raw vs cooked foods — the practical framework that protects food quality, cost, and safety." />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0b0b;
+    color: #e8e8e8;
+    line-height: 1.7;
+    padding: 20px;
+  }
+  .blog-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #131313;
+    border-radius: 16px;
+    padding: 50px 60px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid #2a2a2a;
+  }
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+  }
+  .byline {
+    font-size: 0.9rem;
+    color: #9a9a9a;
+    border-bottom: 2px solid #2a2a2a;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .byline span {
+    background: #d4af37;
+    color: #0b0b0b;
+    padding: 3px 14px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.72rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #d4af37;
+    margin-top: 45px;
+    margin-bottom: 16px;
+    border-left: 4px solid #d4af37;
+    padding-left: 16px;
+  }
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: #d4af37;
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+  p { margin-bottom: 18px; color: #c9c9c9; }
+  ul, ol { margin: 10px 0 20px 26px; color: #c9c9c9; }
+  li { margin-bottom: 8px; }
+  a { color: #d4af37; text-decoration: underline; font-weight: 500; }
+  a:hover { color: #e8c765; }
+
+  .article-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #2a2a2a;
+  }
+
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0 30px;
+    font-size: 0.92rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  }
+  .compare-table thead { background: #d4af37; color: #0b0b0b; }
+  .compare-table th, .compare-table td {
+    padding: 13px 16px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+  }
+  .compare-table tbody tr:nth-child(even) { background: #1a1a1a; }
+  .compare-table tbody tr:hover { background: #232323; }
+  .compare-table td { color: #d8d8d8; }
+
+  .warning-box {
+    background: #1f1410;
+    border-left: 6px solid #e08a3c;
+    padding: 18px 24px;
+    margin: 22px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .warning-box strong { color: #e08a3c; }
+
+  .tip-box {
+    background: #17190f;
+    border-left: 6px solid #d4af37;
+    padding: 18px 24px;
+    margin: 22px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .tip-box strong { color: #d4af37; }
+
+  .insight-box {
+    background: #10161c;
+    border-left: 6px solid #4a9fd8;
+    padding: 18px 24px;
+    margin: 22px 0;
+    border-radius: 0 8px 8px 0;
+  }
+  .insight-box strong { color: #4a9fd8; }
+
+  .flow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 10px;
+    margin: 20px 0 25px;
+    align-items: center;
+    text-align: center;
+  }
+  .flow-step {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 14px 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #d4af37;
+    border: 1px solid #2a2a2a;
+  }
+  .flow-step small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.78rem;
+    color: #b8b8b8;
+    margin-top: 4px;
+  }
+
+  .storage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    margin: 20px 0 25px;
+  }
+  .storage-card {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .storage-card h4 { margin-top: 0; }
+  .storage-card p, .storage-card ul { margin-bottom: 0; }
+  .storage-card ul { margin-top: 8px; }
+
+  nav.main-nav {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+  nav.main-nav a { color: #d4af37; text-decoration: none; font-weight: 600; }
+  nav.main-nav a:hover { text-decoration: underline; }
+
+  @media (max-width: 700px) {
+    .blog-container { padding: 30px 20px; }
+    h1 { font-size: 1.9rem; }
+    h2 { font-size: 1.35rem; padding-left: 12px; }
+    .compare-table th, .compare-table td { padding: 10px 12px; font-size: 0.8rem; }
+    .flow-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 450px) {
+    .blog-container { padding: 20px 14px; }
+    h1 { font-size: 1.55rem; }
+    .flow-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media print {
+    body { background: white; color: #1e1e1e; padding: 0; }
+    .blog-container { background: white; color: #1e1e1e; box-shadow: none; padding: 30px; border: none; }
+    .byline span { background: #d4af37 !important; color: #0b0b0b !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .compare-table thead { background: #d4af37 !important; color: #0b0b0b !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CLRRV5DMXZ');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<nav class="main-nav">
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/blog.html">Blog</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/privacy-policy.html">Privacy</a>
+  <a href="/terms.html">Terms</a>
+</nav>
+
+<div class="blog-container">
+
+  <h1>FIFO vs FEFO: Stock Rotation Rules Every Store Manager Must Know</h1>
+  <div class="byline">
+    <span>Food Safety</span>
+    <span>Inventory Management</span>
+    <span>Kitchen Operations</span>
+    <span style="color:#d4af37; font-weight:500; background:transparent; padding:0;">&bull; Store Manager's Insight</span>
+  </div>
+
+  <img src="/fifo-vs-fefo-stacking-rules.jpg" alt="FIFO vs FEFO inventory rotation infographic comparing First In First Out and First Expired First Out methods" class="article-hero-img" loading="lazy" width="800" height="800">
+
+  <p>FIFO and FEFO get taught in every food safety orientation, and most staff can recite the definitions on demand. Where operations actually lose money and quality is not in the definitions — it is in the storeroom, at the point where a delivery is stacked, and someone has to decide <em>where</em> it goes and <em>what</em> comes off the shelf first. Get that stacking decision wrong often enough and you get spoilage write-offs, cross-contamination risks, and a walk-in that looks organized but is quietly rotting from the back.</p>
+
+  <p>This guide covers the difference between FIFO and FEFO, when each one actually applies, and — the part most articles skip — the practical stacking and rotation rules a store manager enforces every single day across frozen goods, dry goods, meat, dairy, and raw versus cooked product.</p>
+
+  <h2>FIFO vs FEFO: The Core Difference</h2>
+  <p><strong>FIFO (First In, First Out)</strong> rotates stock in the order it was received. The item that arrived first is used first, regardless of its expiry date. It assumes that everything in a given category has a roughly similar shelf life, which is true for most dry goods, canned items, and non-perishables.</p>
+  <p><strong>FEFO (First Expired, First Out)</strong> rotates stock by expiry date, not receiving date. The product with the nearest expiry is used first — even if it arrived after other stock. FEFO is the standard for perishables, because two batches of the same item can have very different shelf lives depending on when they were produced, not when they were delivered.</p>
+
+  <table class="compare-table">
+    <thead>
+      <tr>
+        <th>Factor</th>
+        <th>FIFO</th>
+        <th>FEFO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Rotation basis</strong></td>
+        <td>Order received</td>
+        <td>Earliest expiry date</td>
+      </tr>
+      <tr>
+        <td><strong>Best suited for</strong></td>
+        <td>Dry goods, canned items, non-perishables</td>
+        <td>Perishables: dairy, meat, produce, prepared food</td>
+      </tr>
+      <tr>
+        <td><strong>Risk if used incorrectly</strong></td>
+        <td>Low &mdash; shelf lives are similar within category</td>
+        <td>High &mdash; wrong item used first causes spoilage or foodborne illness risk</td>
+      </tr>
+      <tr>
+        <td><strong>Labeling requirement</strong></td>
+        <td>Receiving date label</td>
+        <td>Use-by / expiry date label, visible and unobstructed</td>
+      </tr>
+      <tr>
+        <td><strong>Manager's job</strong></td>
+        <td>Enforce shelf discipline &mdash; new stock goes behind, not in front</td>
+        <td>Physically check dates on every rotation, not just position on shelf</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="tip-box">
+    <strong>The Key:</strong> It isn't about choosing FIFO or FEFO across the board — it's knowing which one applies to which category, and building stacking habits that make the correct rotation the <em>easy</em> choice, not the one that depends on someone remembering.
+  </div>
+
+  <div class="flow-grid">
+    <div class="flow-step">1<small>Received First</small></div>
+    <div class="flow-step">2<small>Received Second</small></div>
+    <div class="flow-step">3<small>Received Third</small></div>
+    <div class="flow-step">&#10003;<small>Used First</small></div>
+  </div>
+
+  <h2>Store Manager's Insight: Stacking Rules That Actually Work</h2>
+  <p>Every stockroom eventually develops its own bad habits — new cases get slid in front because the back of the shelf is inconvenient, or a delivery arrives mid-rush and gets parked wherever there's space. The fix isn't more signage. It's a stacking system simple enough that the correct rotation is also the fastest one.</p>
+
+  <h3>Frozen Goods</h3>
+  <div class="storage-card">
+    <p>Frozen stock is deceptively easy to neglect because nothing looks like it's degrading. Freezer burn and quality loss happen silently, and expiry dates on frozen product often get buried under frost or ice glaze.</p>
+    <ul>
+      <li><strong>Stack new cases at the back, always.</strong> Never on top of or in front of existing stock — this is the single most common freezer rotation failure.</li>
+      <li><strong>Date every case on arrival</strong> with a bold marker on the outer carton, not just the manufacturer's print, which frost can obscure within days.</li>
+      <li><strong>Rotate by FEFO where use-by dates vary between batches</strong> (portioned meats, seafood, par-baked goods); use FIFO for uniform bulk items like frozen vegetables from a single supplier run.</li>
+      <li><strong>Keep a "front shelf" for near-expiry items</strong> at eye level so staff pulling stock see it before reaching further back.</li>
+    </ul>
+  </div>
+
+  <h3>Dry Goods</h3>
+  <div class="storage-card">
+    <p>Dry goods are the classic FIFO category — flour, rice, canned goods, oils, packaged sauces. Shelf life is long and fairly uniform, so the risk isn't spoilage, it's dead stock and waste from over-ordering.</p>
+    <ul>
+      <li><strong>Shelf-front rotation:</strong> new stock goes behind existing stock on the same shelf, every time, no exceptions during rushed deliveries.</li>
+      <li><strong>Group by SKU, not by delivery batch,</strong> so staff aren't hunting across three different shelf sections for the same item.</li>
+      <li><strong>Check for swelling, rust, or dented cans</strong> during rotation, not just during receiving — damage can appear weeks after delivery.</li>
+      <li><strong>Even long-shelf-life items need an exit date.</strong> "Non-perishable" doesn't mean "forget it exists" — audit quarterly for items approaching best-by dates.</li>
+    </ul>
+  </div>
+
+  <h3>Meats</h3>
+  <div class="storage-card">
+    <p>Meat is FEFO territory, full stop — and it needs the tightest rotation discipline in the building because the consequence of getting it wrong is a foodborne illness risk, not just a quality complaint.</p>
+    <ul>
+      <li><strong>Store by protein and by expiry, never mixed.</strong> Separate shelves or clearly divided zones for poultry, beef, pork, and seafood — this also controls cross-contamination, not just rotation.</li>
+      <li><strong>Bottom shelf, always, in walk-in coolers</strong> — raw meat never sits above ready-to-eat or lower-risk items, regardless of rotation order.</li>
+      <li><strong>Label with received date AND use-by date.</strong> FEFO only works if the use-by date is visible without moving or unwrapping the product.</li>
+      <li><strong>Vacuum-sealed and portioned cuts get checked individually</strong> — one case can contain product from two different production dates.</li>
+    </ul>
+  </div>
+
+  <h3>Dairy Products</h3>
+  <div class="storage-card">
+    <p>Dairy is unforgiving on timeline — milk, cream, butter, and soft cheeses can turn within days of their use-by date, and staff often default to FIFO out of habit when FEFO is what's actually required.</p>
+    <ul>
+      <li><strong>New stock behind, but verify the date before placement</strong> — occasionally a new delivery has an earlier expiry than what's already on the shelf (short-dated stock from the supplier). If so, it goes to the front, not the back.</li>
+      <li><strong>Keep dairy in its original packaging with the date visible</strong> — don't decant into unlabeled containers unless you're also transferring a use-by date onto the new container.</li>
+      <li><strong>Smell and visual check as a backup, not a substitute,</strong> for date rotation — dairy can look fine and still be past safe use.</li>
+      <li><strong>Store away from strong-odor items</strong> (onions, certain cheeses) since dairy absorbs odors quickly, which compounds quality loss even within date.</li>
+    </ul>
+  </div>
+
+  <h3>Raw &amp; Cooked Foods</h3>
+  <div class="storage-card">
+    <p>This is where rotation rules intersect with cross-contamination control, and the two get confused constantly. Rotation tells you <em>which item</em> to use first. Storage hierarchy tells you <em>where</em> it can sit. Both apply at once.</p>
+    <ul>
+      <li><strong>Never store raw above cooked or ready-to-eat, regardless of rotation order.</strong> If a raw item is next in FEFO rotation but the only open shelf space is above cooked product, it waits — you don't compromise the storage hierarchy to satisfy rotation.</li>
+      <li><strong>Cooked and prepped items follow FEFO relative to their prep date,</strong> not their ingredient's original receiving date. A sauce made today from three-day-old stock still gets a fresh use-by clock from today's prep.</li>
+      <li><strong>Label prepped items with both prep date and discard date</strong> — staff shouldn't have to calculate shelf life in their head during a rush.</li>
+      <li><strong>Use separate containers, separate shelves, separate colour-coded boards</strong> for raw and cooked at every stage, not just during active prep.</li>
+    </ul>
+  </div>
+
+  <div class="insight-box">
+    <strong>Store Manager's Insight:</strong> The rotation system that survives a busy Friday delivery is the one that requires the least thinking under pressure. If your team has to stop and calculate which shelf a case belongs on, they'll take the shortcut instead — and the shortcut is almost always "put it wherever there's room." Build stacking rules that make the correct answer the obvious one: labeled zones, dated cartons, and a strict rule that nothing new goes in front of anything old, no exceptions during rush periods. Exceptions during rush periods are exactly when rotation breaks down.
+  </div>
+
+  <h2>A Quick Decision Rule for Your Team</h2>
+  <p>When training new staff, this single question resolves most rotation confusion on the floor:</p>
+  <p><strong>"Does this item's shelf life vary noticeably between batches?"</strong></p>
+  <ul>
+    <li>If <strong>no</strong> (canned goods, dry staples, uniform frozen bulk) &mdash; use FIFO. Oldest delivery, used first.</li>
+    <li>If <strong>yes</strong> (meat, dairy, seafood, produce, anything prepped in-house) &mdash; use FEFO. Nearest expiry date, used first, regardless of when it arrived.</li>
+  </ul>
+
+  <div class="warning-box">
+    <strong>Common Mistake to Flag in Training:</strong>
+    <ul style="margin-top:8px;">
+      <li>Assuming FIFO is always "safe enough" for perishables because it's simpler to explain.</li>
+      <li>Stacking new stock in gaps rather than consistently behind old stock.</li>
+      <li>Relying on position on the shelf instead of physically checking the printed date during FEFO rotation.</li>
+      <li>Letting raw-over-cooked storage violations slide because "it's next in rotation anyway."</li>
+    </ul>
+  </div>
+
+  <h2>Why This Matters Beyond Compliance</h2>
+  <p>Stock rotation gets filed under food safety training, but it is just as much a cost control function. Every item that expires on a shelf because it was stacked behind newer stock is a direct hit to food cost percentage — and it's a completely preventable one. The four outcomes on the wall of every kitchen I've run reflect that: protecting food quality, reducing food waste, improving food cost control, and supporting efficient operations are not four separate goals. They're four outcomes of the same stacking discipline, applied consistently, every shift, by every person who touches the storeroom.</p>
+
+  <p>Related reading: <a href="/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html">Food Safety Temperatures, Cold Chain Control &amp; Kitchen Storage Standards</a> covers the temperature side of storage discipline in depth, and the <a href="/haccp-kitchen-checklist.html">HACCP Kitchen Checklist</a> gives you a printable daily reference to pair with the rotation rules above.</p>
+
+  <hr style="border: none; border-top: 1px solid #2a2a2a; margin: 40px 0 20px;" />
+  <p style="font-size: 0.9rem; color: #9a9a9a; text-align: center;">
+    &copy; 2026 Nigel A Thomas &mdash; Hospitality Trainer &amp; Professional<br />
+    Specializing in Food Safety, F&amp;B &amp; Operations, Service Excellence &amp; Leadership Training
+  </p>
+
+</div>
+</body>
+</html>
