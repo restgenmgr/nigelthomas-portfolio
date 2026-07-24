@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nigel A. Thomas | Apply Dashboard</title>
-<meta name="description" content="Job search launch pad for Nigel A. Thomas — resume, cover letter, one-click job board search, and application tracker for Pan-India hospitality leadership roles.">
+<meta name="description" content="Job search launch pad for Nigel A. Thomas â€” resume, cover letter, one-click job board search, and application tracker for Pan-India hospitality leadership roles.">
 <style>
   :root{
     --bg:#0a0a0a;
@@ -147,13 +147,13 @@
 
 <section class="section" id="roles">
   <h2>Target Roles</h2>
-  <p class="sub">Pick a role — it filters every search link below.</p>
+  <p class="sub">Pick a role â€” it filters every search link below.</p>
   <div class="chips" id="roleChips"></div>
 </section>
 
 <section class="section" id="launcher-section">
   <h2>Search the Boards</h2>
-  <p class="sub">Location defaults to India-wide. Change it for a specific city, then hit search on any board — each opens a pre-filled results page in a new tab.</p>
+  <p class="sub">Location defaults to India-wide. Change it for a specific city, then hit search on any board â€” each opens a pre-filled results page in a new tab.</p>
   <div class="launcher">
     <div class="launcher-controls">
       <label style="font-size:13px;color:var(--text-dim);">Location&nbsp;</label>
@@ -217,7 +217,7 @@ const BOARDS = [
   },
   {
     name: "Naukri",
-    desc: "India's top job board — strong for GM/Ops roles.",
+    desc: "India's top job board â€” strong for GM/Ops roles.",
     build: (role, loc) => `https://www.naukri.com/${slugify(role)}-jobs-in-${slugify(loc)}`
   },
   {
@@ -232,7 +232,7 @@ const BOARDS = [
   },
   {
     name: "Foundit",
-    desc: "Formerly Monster India — active recruiter postings.",
+    desc: "Formerly Monster India â€” active recruiter postings.",
     build: (role, loc) => `https://www.foundit.in/search/${slugify(role)}-jobs-in-${slugify(loc)}`
   },
   {
@@ -275,7 +275,7 @@ function renderBoards(){
   BOARDS.forEach(board => {
     const card = document.createElement('div');
     card.className = 'board-card';
-    card.innerHTML = `<div class="name">${board.name}</div><div class="desc">${board.desc}</div><button class="go">Search →</button>`;
+    card.innerHTML = `<div class="name">${board.name}</div><div class="desc">${board.desc}</div><button class="go">Search â†’</button>`;
     card.querySelector('.go').onclick = () => window.open(board.build(currentRole, loc), '_blank');
     grid.appendChild(card);
   });
@@ -391,3 +391,21 @@ renderTracker();
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
