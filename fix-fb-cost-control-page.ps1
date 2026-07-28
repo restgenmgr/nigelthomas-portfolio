@@ -1,4 +1,4 @@
-$path = ".\fb-cost-control-blueprint.html"
+$path = Join-Path (Get-Location) "fb-cost-control-blueprint.html"
 
 if (-not (Test-Path $path)) {
     Write-Host "ERROR: fb-cost-control-blueprint.html not found in current folder. Run this from nigelthomas-portfolio\" -ForegroundColor Red
