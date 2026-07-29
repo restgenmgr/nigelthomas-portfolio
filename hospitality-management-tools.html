@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -503,8 +503,8 @@
     // ========== Tools data (TOOL KEY drives everything below) ==========
     var tools = [
       { id: 1, key: 'foodcost', icon: 'fa-calculator', title: 'Food Cost Calculator', desc: 'Calculate dish and menu food cost percentage instantly.', ribbon: '', category: 'Cost Control' },
-      { id: 2, key: 'adr', icon: 'fa-dollar-sign', title: 'ADR Calculator', desc: 'Average Daily Rate â€” measure room revenue per sold room.', ribbon: '', category: 'Revenue & Pricing' },
-      { id: 3, key: 'revpar', icon: 'fa-chart-bar', title: 'RevPAR Calculator', desc: 'Revenue Per Available Room â€” key hotel performance metric.', ribbon: '', category: 'Revenue & Pricing' },
+      { id: 2, key: 'adr', icon: 'fa-dollar-sign', title: 'ADR Calculator', desc: 'Average Daily Rate — measure room revenue per sold room.', ribbon: '', category: 'Revenue & Pricing' },
+      { id: 3, key: 'revpar', icon: 'fa-chart-bar', title: 'RevPAR Calculator', desc: 'Revenue Per Available Room — key hotel performance metric.', ribbon: '', category: 'Revenue & Pricing' },
       { id: 4, key: 'occupancy', icon: 'fa-percent', title: 'Occupancy Calculator', desc: 'Occupancy rate based on rooms sold vs. available.', ribbon: '', category: 'Revenue & Pricing' },
       { id: 5, key: 'labor', icon: 'fa-users', title: 'Labour Cost Calculator', desc: 'Measure labour cost as a percentage of total revenue.', ribbon: '', category: 'Cost Control' },
       { id: 6, key: 'dailyreport', icon: 'fa-clipboard-list', title: 'Daily Manager Report', desc: 'Operational report template for daily management.', ribbon: 'Coming Soon', category: 'Operations Templates' },
@@ -700,65 +700,65 @@
     function getCalculatorContent(key) {
       var contents = {
         foodcost:
-          heading('ðŸ½ï¸', 'Food Cost Calculator', 'Ingredient cost as a percentage of selling price') +
-          field('Ingredient Cost per Dish (â‚¹)', 'fc-cost-modal', 'e.g. 120') +
-          field('Menu Selling Price (â‚¹)', 'fc-price-modal', 'e.g. 450') +
+          heading('🍽️', 'Food Cost Calculator', 'Ingredient cost as a percentage of selling price') +
+          field('Ingredient Cost per Dish (₹)', 'fc-cost-modal', 'e.g. 120') +
+          field('Menu Selling Price (₹)', 'fc-price-modal', 'e.g. 450') +
           calcButton('Calculate Food Cost %', 'calcFoodCostModal()') +
           resultBox('fc-result-modal'),
 
         adr:
-          heading('ðŸ’°', 'ADR Calculator', 'Average Daily Rate per room sold') +
-          field('Total Room Revenue (â‚¹)', 'adr-revenue-modal', 'e.g. 250000') +
+          heading('💰', 'ADR Calculator', 'Average Daily Rate per room sold') +
+          field('Total Room Revenue (₹)', 'adr-revenue-modal', 'e.g. 250000') +
           field('Rooms Sold', 'adr-rooms-modal', 'e.g. 80') +
           calcButton('Calculate ADR', 'calcADRModal()') +
           resultBox('adr-result-modal'),
 
         revpar:
-          heading('ðŸ“Š', 'RevPAR Calculator', 'Revenue Per Available Room') +
-          field('Total Room Revenue (â‚¹)', 'revpar-revenue-modal', 'e.g. 250000') +
+          heading('📊', 'RevPAR Calculator', 'Revenue Per Available Room') +
+          field('Total Room Revenue (₹)', 'revpar-revenue-modal', 'e.g. 250000') +
           field('Total Available Rooms', 'revpar-rooms-modal', 'e.g. 120') +
           calcButton('Calculate RevPAR', 'calcRevPARModal()') +
           resultBox('revpar-result-modal'),
 
         occupancy:
-          heading('ðŸ“ˆ', 'Occupancy Calculator', 'Rooms sold as a percentage of rooms available') +
+          heading('📈', 'Occupancy Calculator', 'Rooms sold as a percentage of rooms available') +
           field('Rooms Sold', 'occ-sold-modal', 'e.g. 80') +
           field('Rooms Available', 'occ-available-modal', 'e.g. 120') +
           calcButton('Calculate Occupancy', 'calcOccupancyModal()') +
           resultBox('occ-result-modal'),
 
         labor:
-          heading('ðŸ‘¥', 'Labour Cost Calculator', 'Labour cost as a percentage of total revenue') +
-          field('Total Labour Cost (â‚¹)', 'labor-cost-modal', 'e.g. 180000') +
-          field('Total Revenue (â‚¹)', 'labor-revenue-modal', 'e.g. 600000') +
+          heading('👥', 'Labour Cost Calculator', 'Labour cost as a percentage of total revenue') +
+          field('Total Labour Cost (₹)', 'labor-cost-modal', 'e.g. 180000') +
+          field('Total Revenue (₹)', 'labor-revenue-modal', 'e.g. 600000') +
           calcButton('Calculate Labour Cost %', 'calcLaborModal()') +
           resultBox('labor-result-modal'),
 
         breakeven:
-          heading('ðŸ“Š', 'Break-even Calculator', 'Units or revenue needed to cover all costs') +
-          field('Fixed Costs (â‚¹)', 'be-fixed-modal', 'e.g. 500000') +
-          field('Unit Price (â‚¹)', 'be-price-modal', 'e.g. 250') +
-          field('Variable Cost per Unit (â‚¹)', 'be-variable-modal', 'e.g. 100') +
+          heading('📊', 'Break-even Calculator', 'Units or revenue needed to cover all costs') +
+          field('Fixed Costs (₹)', 'be-fixed-modal', 'e.g. 500000') +
+          field('Unit Price (₹)', 'be-price-modal', 'e.g. 250') +
+          field('Variable Cost per Unit (₹)', 'be-variable-modal', 'e.g. 100') +
           calcButton('Calculate Break-even', 'calcBreakEvenModal()') +
           resultBox('be-result-modal'),
 
         goppar:
-          heading('ðŸ¢', 'GOPPAR Calculator', 'Gross Operating Profit Per Available Room') +
-          field('Gross Operating Profit (â‚¹)', 'gop-gop-modal', 'e.g. 500000') +
+          heading('🏢', 'GOPPAR Calculator', 'Gross Operating Profit Per Available Room') +
+          field('Gross Operating Profit (₹)', 'gop-gop-modal', 'e.g. 500000') +
           field('Total Available Rooms', 'gop-rooms-modal', 'e.g. 100') +
           calcButton('Calculate GOPPAR', 'calcGOPPARModal()') +
           resultBox('gop-result-modal'),
 
         dailyreport:
-          heading('ðŸ“‹', 'Daily Manager Report', 'This template is in development') +
-          '<p style="color:#666; line-height:1.7;">A downloadable daily operations report template for shift managers â€” covering occupancy, revenue, incidents, and staffing notes â€” is coming soon. Check back shortly or subscribe via the blog for an update.</p>',
+          heading('📋', 'Daily Manager Report', 'This template is in development') +
+          '<p style="color:#666; line-height:1.7;">A downloadable daily operations report template for shift managers — covering occupancy, revenue, incidents, and staffing notes — is coming soon. Check back shortly or subscribe via the blog for an update.</p>',
 
         menuengineering:
-          heading('ðŸ½ï¸', 'Menu Engineering Matrix', 'Classify menu items by popularity and profitability') +
+          heading('🍽️', 'Menu Engineering Matrix', 'Classify menu items by popularity and profitability') +
           '<div style="overflow-x:auto;">' +
             '<table style="width:100%; border-collapse:collapse; margin-bottom:12px; font-size:0.85rem;">' +
               '<thead><tr style="text-align:left; color:#5b1f27;">' +
-                '<th style="padding:6px 4px;">Item</th><th style="padding:6px 4px;">Qty Sold</th><th style="padding:6px 4px;">Cost (â‚¹)</th><th style="padding:6px 4px;">Price (â‚¹)</th><th></th>' +
+                '<th style="padding:6px 4px;">Item</th><th style="padding:6px 4px;">Qty Sold</th><th style="padding:6px 4px;">Cost (₹)</th><th style="padding:6px 4px;">Price (₹)</th><th></th>' +
               '</tr></thead>' +
               '<tbody id="me-table-body">' +
                 menuRowHtml(1) + menuRowHtml(2) + menuRowHtml(3) + menuRowHtml(4) +
@@ -770,7 +770,7 @@
           '<div id="me-result-modal"></div>' +
           '<p style="color:#999; font-size:0.78rem; margin-top:14px; line-height:1.6;"><strong>Stars</strong>: high popularity, high profit. <strong>Plowhorses</strong>: high popularity, low profit. <strong>Puzzles</strong>: low popularity, high profit. <strong>Dogs</strong>: low popularity, low profit.</p>'
       };
-      return contents[key] || heading('ðŸ”§', 'Tool', 'Coming soon.');
+      return contents[key] || heading('🔧', 'Tool', 'Coming soon.');
     }
 
     // ---- Menu Engineering row builder ----
@@ -804,7 +804,7 @@
       if (!cost || !price) { box.textContent = 'Please enter both values.'; return; }
       var pct = (cost / price) * 100;
       box.innerHTML = 'Food cost: <strong>' + fmt(pct) + '%</strong>' +
-        (pct > 35 ? ' â€” higher than the typical 28â€“35% target range.' : ' â€” within a healthy target range.');
+        (pct > 35 ? ' — higher than the typical 28–35% target range.' : ' — within a healthy target range.');
     };
 
     window.calcADRModal = function() {
@@ -813,7 +813,7 @@
       var box = document.getElementById('adr-result-modal');
       if (!revenue || !rooms) { box.textContent = 'Please enter both values.'; return; }
       var adr = revenue / rooms;
-      box.innerHTML = 'ADR: <strong>â‚¹' + fmt(adr) + '</strong> per sold room';
+      box.innerHTML = 'ADR: <strong>₹' + fmt(adr) + '</strong> per sold room';
     };
 
     window.calcRevPARModal = function() {
@@ -822,7 +822,7 @@
       var box = document.getElementById('revpar-result-modal');
       if (!revenue || !rooms) { box.textContent = 'Please enter both values.'; return; }
       var revpar = revenue / rooms;
-      box.innerHTML = 'RevPAR: <strong>â‚¹' + fmt(revpar) + '</strong> per available room';
+      box.innerHTML = 'RevPAR: <strong>₹' + fmt(revpar) + '</strong> per available room';
     };
 
     window.calcOccupancyModal = function() {
@@ -841,7 +841,7 @@
       if (!cost || !revenue) { box.textContent = 'Please enter both values.'; return; }
       var pct = (cost / revenue) * 100;
       box.innerHTML = 'Labour cost: <strong>' + fmt(pct) + '%</strong>' +
-        (pct > 30 ? ' â€” above the common 25â€“30% benchmark.' : ' â€” within a common benchmark range.');
+        (pct > 30 ? ' — above the common 25–30% benchmark.' : ' — within a common benchmark range.');
     };
 
     window.calcBreakEvenModal = function() {
@@ -854,7 +854,7 @@
       if (contribution <= 0) { box.textContent = 'Unit price must be greater than variable cost per unit.'; return; }
       var units = fixed / contribution;
       var revenue = units * price;
-      box.innerHTML = 'Break-even: <strong>' + fmt(units) + ' units</strong> or <strong>â‚¹' + fmt(revenue) + '</strong> in revenue';
+      box.innerHTML = 'Break-even: <strong>' + fmt(units) + ' units</strong> or <strong>₹' + fmt(revenue) + '</strong> in revenue';
     };
 
     window.calcGOPPARModal = function() {
@@ -863,7 +863,7 @@
       var box = document.getElementById('gop-result-modal');
       if (!gop || !rooms) { box.textContent = 'Please enter both values.'; return; }
       var goppar = gop / rooms;
-      box.innerHTML = 'GOPPAR: <strong>â‚¹' + fmt(goppar) + '</strong> per available room';
+      box.innerHTML = 'GOPPAR: <strong>₹' + fmt(goppar) + '</strong> per available room';
     };
 
     window.calcMenuEngineering = function() {
@@ -909,14 +909,14 @@
         return '' +
           '<tr>' +
             '<td style="padding:6px 4px;">' + i.name + '</td>' +
-            '<td style="padding:6px 4px;">â‚¹' + fmt(i.cm) + '</td>' +
+            '<td style="padding:6px 4px;">₹' + fmt(i.cm) + '</td>' +
             '<td style="padding:6px 4px;">' + fmt(mixShare * 100) + '%</td>' +
             '<td style="padding:6px 4px;"><span style="background:' + color + '; color:#fff; padding:3px 12px; border-radius:12px; font-size:0.75rem; font-weight:600;">' + quadrant + '</span></td>' +
           '</tr>';
       }).join('');
 
       box.innerHTML = '' +
-        '<p style="font-size:0.85rem; color:#666; margin:12px 0 8px;">Average contribution margin across all items: <strong>â‚¹' + fmt(weightedCM) + '</strong></p>' +
+        '<p style="font-size:0.85rem; color:#666; margin:12px 0 8px;">Average contribution margin across all items: <strong>₹' + fmt(weightedCM) + '</strong></p>' +
         '<div style="overflow-x:auto;">' +
           '<table style="width:100%; border-collapse:collapse; font-size:0.85rem;">' +
             '<thead><tr style="text-align:left; color:#5b1f27;"><th style="padding:6px 4px;">Item</th><th style="padding:6px 4px;">Contribution Margin</th><th style="padding:6px 4px;">Mix %</th><th style="padding:6px 4px;">Class</th></tr></thead>' +

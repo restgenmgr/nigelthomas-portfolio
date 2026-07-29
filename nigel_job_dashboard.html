@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nigel A. Thomas â€” Job Search Command Center</title>
+<title>Nigel A. Thomas — Job Search Command Center</title>
 <style>
   :root{
     --bg:#0a0a0a;
@@ -146,7 +146,7 @@
 
   <header>
     <h1>NIGEL A. THOMAS</h1>
-    <p>Job Search Command Center â€” Pan-India &amp; International Hospitality Leadership</p>
+    <p>Job Search Command Center — Pan-India &amp; International Hospitality Leadership</p>
   </header>
 
   <section>
@@ -169,7 +169,7 @@
   </section>
 
   <section>
-    <h2>3. Priority Employers â€” Published EOE / Age-Inclusive Policies</h2>
+    <h2>3. Priority Employers — Published EOE / Age-Inclusive Policies</h2>
     <div class="grid grid-2" id="employerGrid"></div>
   </section>
 
@@ -206,12 +206,12 @@ const TRACKER_KEY = 'tracker-rows';
 
 const checklistItems = [
   {id:'c1', text:'Fix contact block: cover letter shows a different email (restaurantbarmanager@gmail.com) than the resume (restgenmgr1952@gmail.com). Use one email everywhere.', tag:'critical'},
-  {id:'c2', text:'Cover letter icons for phone, LinkedIn and video are unfilled placeholders ("ðŸ“± Cel", "ðŸ”—Linkedin", "ðŸ”—Video"). Replace with the actual number and working links.', tag:'critical'},
+  {id:'c2', text:'Cover letter icons for phone, LinkedIn and video are unfilled placeholders ("📱 Cel", "🔗Linkedin", "🔗Video"). Replace with the actual number and working links.', tag:'critical'},
   {id:'c3', text:'Resume headline photo carries a visible "Artguru" watermark from an AI photo-enhancer. Replace with a clean, unwatermarked professional headshot.', tag:'critical'},
-  {id:'c4', text:'Experience length is inconsistent: the summary says "20+ years" but your own career history (1993â€“present) is 30+ years. Align the number across resume and cover letter.', tag:'important'},
-  {id:'c5', text:'Most recent role ends "Sep 2025" with nothing after it â€” reads as a gap. Add a line for current activity (consulting, training, or "actively seeking") to close it.', tag:'important'},
-  {id:'c6', text:'Do not state age or date of birth on the resume itself, even for EOE-focused employers â€” Indian recruiters can screen it out before your experience is even read. Let the cover letter\'s "30+ years" carry that message instead.', tag:'important'},
-  {id:'c7', text:'Cover letter is generic ("Pan India/or Abroad") â€” tailor the opening line to the specific hotel group or role for every application.', tag:'important'},
+  {id:'c4', text:'Experience length is inconsistent: the summary says "20+ years" but your own career history (1993–present) is 30+ years. Align the number across resume and cover letter.', tag:'important'},
+  {id:'c5', text:'Most recent role ends "Sep 2025" with nothing after it — reads as a gap. Add a line for current activity (consulting, training, or "actively seeking") to close it.', tag:'important'},
+  {id:'c6', text:'Do not state age or date of birth on the resume itself, even for EOE-focused employers — Indian recruiters can screen it out before your experience is even read. Let the cover letter\'s "30+ years" carry that message instead.', tag:'important'},
+  {id:'c7', text:'Cover letter is generic ("Pan India/or Abroad") — tailor the opening line to the specific hotel group or role for every application.', tag:'important'},
 ];
 
 function loadChecklist(){
@@ -275,7 +275,7 @@ function buildLauncher(){
 
 function buildEmployers(){
   const employers = [
-    {name:'IHCL / Taj Hotels', note:'Tata Group â€” published EOE policy, long-tenure senior leadership culture.', url:'https://www.ihcltata.com/careers'},
+    {name:'IHCL / Taj Hotels', note:'Tata Group — published EOE policy, long-tenure senior leadership culture.', url:'https://www.ihcltata.com/careers'},
     {name:'Marriott International', note:'Global EOE employer; explicit "all ages" language in D&I policy.', url:'https://careers.marriott.com'},
     {name:'Hyatt Hotels', note:'Global inclusion policy covering age as a protected category.', url:'https://careers.hyatt.com'},
     {name:'Accor', note:'"Heartist" culture with a stated multi-generational workforce commitment.', url:'https://careers.accor.com'},
@@ -288,7 +288,7 @@ function buildEmployers(){
   employers.forEach(e=>{
     const div = document.createElement('div');
     div.className = 'employer';
-    div.innerHTML = `<h3>${e.name}</h3><p>${e.note}</p><a href="${e.url}" target="_blank" rel="noopener">View careers page â†’</a>`;
+    div.innerHTML = `<h3>${e.name}</h3><p>${e.note}</p><a href="${e.url}" target="_blank" rel="noopener">View careers page →</a>`;
     grid.appendChild(div);
   });
 }
