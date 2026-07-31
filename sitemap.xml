@@ -496,7 +496,6 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-</urlset>
 
 <url>
   <loc>https://nigelthomas.live/journey.html</loc>
@@ -531,3 +530,5 @@
 
 </urlset>
 (feat(blog): add ADR-RevPAR-GOPPAR metrics post, update blog index, sitemap, and internal links)
+
+
