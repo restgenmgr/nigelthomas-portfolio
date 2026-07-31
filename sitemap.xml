@@ -471,6 +471,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
 </url>
+<<<<<<< HEAD
     <url>
         <loc>https://www.nigelthomas.live/area-manager-restaurant-visit-diagnostic-lenses.html</loc>
         <lastmod>2026-07-26</lastmod>
@@ -496,3 +497,38 @@
         <priority>0.8</priority>
     </url>
 </urlset>
+=======
+<url>
+  <loc>https://nigelthomas.live/journey.html</loc>
+  <lastmod>2026-04-23T07:56:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nigelthomas.live/hotel-sop-manual.html</loc>
+  <lastmod>2026-04-23T07:56:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nigelthomas.live/contact.html</loc>
+  <lastmod>2026-04-23T07:56:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nigelthomas.live/support.html</loc>
+  <lastmod>2026-04-23T07:56:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nigelthomas.live/privacy.html</loc>
+  <lastmod>2026-04-23T07:56:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nigelthomas.live/terms.html</loc>
+  <lastmod>2026-04-23T07:56:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
+>>>>>>> 0278fa0 (feat(blog): add ADR-RevPAR-GOPPAR metrics post, update blog index, sitemap, and internal links)
