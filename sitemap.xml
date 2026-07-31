@@ -529,6 +529,5 @@
   <priority>0.80</priority>
 </url>
 
-
 </urlset>
->>>>>>> 0278fa0 (feat(blog): add ADR-RevPAR-GOPPAR metrics post, update blog index, sitemap, and internal links)
+(feat(blog): add ADR-RevPAR-GOPPAR metrics post, update blog index, sitemap, and internal links)
