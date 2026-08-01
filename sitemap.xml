@@ -534,6 +534,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://www.nigelthomas.live/restaurant-hotel-pos-systems.html</loc>
+        <lastmod>2026-08-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
 (feat(blog): add ADR-RevPAR-GOPPAR metrics post, update blog index, sitemap, and internal links)
 
