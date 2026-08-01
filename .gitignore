@@ -4,3 +4,4 @@ vercel.json
 .env*
 backup-html-20260731-225049/
 backup-html-*/
+encoding-scan-report-*.txt
