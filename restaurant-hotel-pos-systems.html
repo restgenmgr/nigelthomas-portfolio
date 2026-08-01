@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POS Systems for Restaurants &amp; Hotels in India | Nigel Thomas</title>
+<meta name="description" content="A field-tested comparison of the top 5 Restaurant POS systems and top 5 Hotel POS/PMS systems used in India &#8212; advantages, disadvantages, pricing, FOH &amp; BOH benefits, and offline vs online capability.">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CLRRV5DMXZ');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#0b0b0b;
+    --gold:#d4af37;
+    --gold-soft:#e8cd6c;
+    --panel:#151515;
+    --panel-border:#2a2a2a;
+    --text:#f2f2f2;
+    --muted:#b8b8b8;
+    --good:#8fd19e;
+    --bad:#e08a8a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Segoe UI", Arial, sans-serif;
+    line-height:1.6;
+  }
+  a{color:var(--gold-soft);}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 20px;}
+
+  header.hero{
+    padding:70px 20px 50px;
+    text-align:center;
+    background:
+      radial-gradient(circle at 50% -10%, rgba(212,175,55,0.14), transparent 60%),
+      var(--bg);
+    border-bottom:1px solid var(--panel-border);
+  }
+  header.hero .eyebrow{
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:14px;
+  }
+  header.hero h1{
+    font-size:clamp(28px,4.2vw,46px);
+    margin:0 0 16px;
+    color:#fff;
+  }
+  header.hero h1 span{color:var(--gold);}
+  header.hero p.sub{
+    max-width:720px;
+    margin:0 auto;
+    color:var(--muted);
+    font-size:17px;
+  }
+  .byline{
+    margin-top:22px;
+    font-size:13px;
+    color:#8a8a8a;
+  }
+
+  section{padding:50px 20px;}
+  section.intro{border-bottom:1px solid var(--panel-border);}
+  section.intro p{max-width:820px; margin:0 auto 16px; color:var(--muted); font-size:16px;}
+
+  h2.section-title{
+    font-size:clamp(24px,3vw,32px);
+    color:#fff;
+    text-align:center;
+    margin:0 0 6px;
+  }
+  h2.section-title span{color:var(--gold);}
+  p.section-lead{
+    text-align:center;
+    color:var(--muted);
+    max-width:700px;
+    margin:0 auto 40px;
+    font-size:15px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+    gap:26px;
+    margin-top:10px;
+  }
+
+  .card{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:10px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform .2s ease, border-color .2s ease;
+  }
+  .card:hover{transform:translateY(-3px); border-color:var(--gold);}
+
+  .card-head{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    padding:22px 22px 16px;
+    border-bottom:1px solid var(--panel-border);
+  }
+  .badge{
+    flex:0 0 auto;
+    width:64px;height:64px;
+    border-radius:14px;
+  }
+  .card-head h3{
+    margin:0 0 4px;
+    font-size:20px;
+    color:#fff;
+  }
+  .card-head .tag{
+    font-size:12px;
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+
+  .card-body{padding:20px 22px 24px; flex:1; display:flex; flex-direction:column; gap:16px;}
+
+  .pros-cons{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .pros-cons h4{margin:0 0 8px; font-size:13px; text-transform:uppercase; letter-spacing:1px;}
+  .pros-cons.split .pros h4{color:var(--good);}
+  .pros-cons.split .cons h4{color:var(--bad);}
+  .pros-cons ul{margin:0; padding-left:18px; font-size:14px; color:var(--muted);}
+  .pros-cons li{margin-bottom:6px;}
+
+  .price-line{
+    font-size:14px;
+    background:rgba(212,175,55,0.08);
+    border:1px solid rgba(212,175,55,0.25);
+    border-radius:6px;
+    padding:10px 12px;
+    color:var(--text);
+  }
+  .price-line strong{color:var(--gold);}
+
+  .foh-boh{display:grid; grid-template-columns:1fr 1fr; gap:14px; font-size:14px;}
+  .foh-boh div{background:#111; border:1px solid var(--panel-border); border-radius:6px; padding:10px 12px;}
+  .foh-boh h4{margin:0 0 6px; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:var(--gold-soft);}
+  .foh-boh p{margin:0; color:var(--muted);}
+
+  .online-offline{display:flex; gap:10px; flex-wrap:wrap; font-size:13px;}
+  .pill{
+    padding:6px 12px;
+    border-radius:20px;
+    border:1px solid var(--panel-border);
+    color:var(--muted);
+  }
+  .pill.online{border-color:#4a7fd4; color:#a7c3f0;}
+  .pill.offline{border-color:#4ab07a; color:#a7e0c1;}
+
+  table.compare{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    font-size:14px;
+  }
+  table.compare th, table.compare td{
+    border:1px solid var(--panel-border);
+    padding:12px 14px;
+    text-align:left;
+  }
+  table.compare th{
+    background:#161616;
+    color:var(--gold);
+    text-transform:uppercase;
+    font-size:12px;
+    letter-spacing:1px;
+  }
+  table.compare td{color:var(--muted);}
+  table.compare tr:nth-child(even) td{background:#101010;}
+
+  .note{
+    max-width:820px;
+    margin:34px auto 0;
+    font-size:13px;
+    color:#8a8a8a;
+    border-left:3px solid var(--gold);
+    padding:12px 16px;
+    background:#111;
+  }
+
+  .ad-slot{
+    max-width:1080px;
+    margin:10px auto;
+    padding:0 20px;
+    text-align:center;
+  }
+
+  footer{
+    border-top:1px solid var(--panel-border);
+    padding:40px 20px;
+    text-align:center;
+    color:#8a8a8a;
+    font-size:13px;
+  }
+  footer a{color:var(--gold);}
+
+  @media (max-width:560px){
+    .pros-cons, .foh-boh{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">Hospitality Technology &bull; Operations</div>
+  <h1>POS Systems for <span>Restaurants &amp; Hotels</span> in India</h1>
+  <p class="sub">Ten platforms I've watched operators actually run on &#8212; five built for restaurants, five built for hotels. What they cost, where they win, where they fall short, and how they hold up when the internet doesn't.</p>
+  <div class="byline">By Nigel A. Thomas &mdash; Hospitality Executive &amp; Corporate Trainer</div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <p>A POS system is a promise made at the busiest possible moment: that a bill will print correctly, a KOT will reach the kitchen before the table's patience runs out, and a night audit will close without a fight. I've stood over enough front desks and expo lines to know that the software brochure and the software's behaviour on a Friday night are two very different documents.</p>
+    <p>This is a working reference, not a sales pitch. Pricing changes often in this market, so treat the figures below as indicative &#8212; always confirm the current quote directly with the vendor before you commit.</p>
+  </div>
+</section>
+
+<section id="restaurant-pos">
+  <div class="wrap">
+    <h2 class="section-title">Restaurant POS <span>Systems</span></h2>
+    <p class="section-lead">Five platforms with real footprint across Indian QSRs, cafés, cloud kitchens, and full-service restaurants.</p>
+
+    <div class="grid">
+
+      <!-- PETPOOJA -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#1c1608"/><circle cx="32" cy="26" r="12" fill="none" stroke="#d4af37" stroke-width="3"/><path d="M14 50c3-10 12-16 18-16s15 6 18 16" fill="none" stroke="#d4af37" stroke-width="3" stroke-linecap="round"/></svg>
+          <div>
+            <h3>Petpooja</h3>
+            <div class="tag">Restaurant POS &amp; Billing</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Very strong aggregator integration (Zomato, Swiggy) with auto order-push</li>
+                <li>Large India-specific support and onboarding network</li>
+                <li>Wide plug-in marketplace: loyalty, inventory, accounting</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>UI can feel dated compared to newer entrants</li>
+                <li>Some advanced modules cost extra beyond base plan</li>
+                <li>Multi-outlet reporting can lag during peak sync</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> ~&#8377;7,000&ndash;&#8377;15,000/outlet/year for base billing, higher tiers for KDS, inventory &amp; multi-outlet add-ons. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Fast table &amp; KOT management, split billing, and direct aggregator order capture at the counter.</p></div>
+            <div><h4>BOH Benefit</h4><p>Centralised inventory, recipe-linked stock deduction, and vendor/purchase tracking.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: billing continues, syncs on reconnect</span>
+            <span class="pill online">Online: live aggregator sync, cloud reporting</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- POSIST -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101418"/><rect x="16" y="16" width="32" height="32" rx="6" fill="none" stroke="#d4af37" stroke-width="3"/><path d="M22 32h20M32 22v20" stroke="#d4af37" stroke-width="3"/></svg>
+          <div>
+            <h3>POSist</h3>
+            <div class="tag">Enterprise Restaurant Tech</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Strong fit for multi-outlet chains and franchise reporting</li>
+                <li>Robust central kitchen &amp; central inventory module</li>
+                <li>Good analytics dashboard for area/regional managers</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Pricing skews toward mid-large operations, less suited to a single small outlet</li>
+                <li>Steeper learning curve for new staff</li>
+                <li>Onboarding and customisation can take longer</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> Custom quote model, typically &#8377;15,000&ndash;&#8377;30,000+/outlet/year depending on modules. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Table management, CRM-linked guest history, and fast bill settlement across formats.</p></div>
+            <div><h4>BOH Benefit</h4><p>Central kitchen production planning and consolidated multi-outlet stock control.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: local billing mode available</span>
+            <span class="pill online">Online: chain-wide live dashboards</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- TORQUS -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#160f08"/><path d="M18 44l14-24 14 24z" fill="none" stroke="#d4af37" stroke-width="3" stroke-linejoin="round"/></svg>
+          <div>
+            <h3>Torqus</h3>
+            <div class="tag">Restaurant &amp; Cloud Kitchen POS</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Purpose-built modules for cloud kitchens and delivery-first brands</li>
+                <li>Good real-time menu sync across delivery platforms</li>
+                <li>Reasonably quick setup for single-brand operators</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Smaller partner/integration ecosystem than Petpooja or POSist</li>
+                <li>Support responsiveness varies by region</li>
+                <li>Fewer built-in HR/staff scheduling tools</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> ~&#8377;8,000&ndash;&#8377;18,000/outlet/year depending on delivery-integration tier. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Quick order entry and table turnover tracking for dine-in plus delivery counters.</p></div>
+            <div><h4>BOH Benefit</h4><p>Recipe costing and ingredient-level stock alerts suited to multi-brand cloud kitchens.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: local order queue retained</span>
+            <span class="pill online">Online: live multi-brand delivery sync</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GOFRUGAL -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0e150f"/><circle cx="24" cy="40" r="4" fill="#d4af37"/><circle cx="42" cy="40" r="4" fill="#d4af37"/><path d="M16 20h6l6 20h16l6-14H26" fill="none" stroke="#d4af37" stroke-width="3" stroke-linejoin="round"/></svg>
+          <div>
+            <h3>GoFrugal</h3>
+            <div class="tag">Restaurant &amp; Retail POS</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Strong offline-first architecture, popular in tier-2/tier-3 cities</li>
+                <li>Combined retail + restaurant capability useful for hybrid outlets</li>
+                <li>Solid GST-compliant billing and reporting</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Interface feels more retail-oriented than restaurant-native</li>
+                <li>Aggregator integrations less seamless than Petpooja</li>
+                <li>Advanced restaurant features may need add-on modules</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> ~&#8377;6,000&ndash;&#8377;14,000/outlet/year, license or subscription options. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Reliable billing counter performance even on poor connectivity days.</p></div>
+            <div><h4>BOH Benefit</h4><p>Combined inventory across F&amp;B and retail counters where applicable.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: fully functional billing without internet</span>
+            <span class="pill online">Online: cloud backup &amp; multi-branch view</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOCUS POS -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#120c10"/><circle cx="32" cy="32" r="14" fill="none" stroke="#d4af37" stroke-width="3"/><circle cx="32" cy="32" r="4" fill="#d4af37"/></svg>
+          <div>
+            <h3>Focus POS</h3>
+            <div class="tag">Focus Softnet Restaurant Suite</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Deep ERP-linked accounting and finance integration</li>
+                <li>Good fit for restaurant groups already on Focus ERP</li>
+                <li>Configurable for both QSR and fine-dine formats</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Overkill and costlier for a single small outlet</li>
+                <li>Implementation timeline longer than lighter-weight POS tools</li>
+                <li>Requires more IT involvement to configure well</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> Custom enterprise quote, typically higher than standalone restaurant POS tools. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Unified guest billing that flows straight into group-level financial reporting.</p></div>
+            <div><h4>BOH Benefit</h4><p>Tight stock-to-ledger reconciliation for finance and F&amp;B cost control teams.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: local terminal mode supported</span>
+            <span class="pill online">Online: full ERP sync for finance &amp; inventory</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-4282121192943910"
+       data-ad-slot="0000000000"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<section id="hotel-pos" style="border-top:1px solid var(--panel-border);">
+  <div class="wrap">
+    <h2 class="section-title">Hotel POS <span>&amp; PMS Systems</span></h2>
+    <p class="section-lead">Five platforms covering front office, F&amp;B point-of-sale, and property management for Indian hotels and resorts.</p>
+
+    <div class="grid">
+
+      <!-- EZEE ABSOLUTE -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0e1210"/><rect x="18" y="26" width="28" height="20" fill="none" stroke="#d4af37" stroke-width="3"/><path d="M18 26l14-10 14 10" fill="none" stroke="#d4af37" stroke-width="3" stroke-linejoin="round"/></svg>
+          <div>
+            <h3>eZee Absolute</h3>
+            <div class="tag">Cloud PMS (eZee Technosys)</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Widely used across independent hotels and small chains in India</li>
+                <li>Strong channel manager and OTA rate/inventory sync</li>
+                <li>Affordable entry tier for boutique properties</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Reporting depth can feel limited for large full-service resorts</li>
+                <li>Some modules (POS, spa, banquet) sold separately</li>
+                <li>UI refresh lags behind newer PMS entrants</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> ~&#8377;3,000&ndash;&#8377;8,000/room/year depending on module bundle. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Fast check-in/out, folio management, and real-time room status for the front desk.</p></div>
+            <div><h4>BOH Benefit</h4><p>Housekeeping-to-front-office sync and consolidated night audit reporting.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: limited desktop fallback version available</span>
+            <span class="pill online">Online: live OTA/channel sync, cloud dashboard</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDS NEXT -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#121014"/><rect x="20" y="18" width="24" height="28" rx="3" fill="none" stroke="#d4af37" stroke-width="3"/><path d="M26 26h12M26 32h12M26 38h8" stroke="#d4af37" stroke-width="2.5"/></svg>
+          <div>
+            <h3>IDS Next</h3>
+            <div class="tag">Enterprise Hotel PMS</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Deep, mature feature set for large hotels and resort groups</li>
+                <li>Strong multi-property and central reservation capability</li>
+                <li>Long-standing presence with Indian hospitality chains</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Higher implementation and training investment</li>
+                <li>Less agile for small independent properties</li>
+                <li>Customisation often needs vendor support involvement</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> Custom enterprise quote; typically higher than boutique-focused PMS. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Group reservations, banquet booking, and multi-property front-desk control from one system.</p></div>
+            <div><h4>BOH Benefit</h4><p>Integrated F&amp;B costing, stores, and finance modules for large-property back office.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: on-premise deployment option available</span>
+            <span class="pill online">Online: cloud edition with group-wide visibility</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOTELOGIX -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0c1216"/><circle cx="32" cy="26" r="10" fill="none" stroke="#d4af37" stroke-width="3"/><path d="M18 48c3-9 9-14 14-14s11 5 14 14" fill="none" stroke="#d4af37" stroke-width="3" stroke-linecap="round"/></svg>
+          <div>
+            <h3>Hotelogix</h3>
+            <div class="tag">Cloud Hotel Management System</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Clean, modern interface, easy for new front-desk staff to learn</li>
+                <li>Good mobile app support for on-the-go check-in</li>
+                <li>Competitive pricing for independent hotels</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Fewer deep customisation options for complex resort operations</li>
+                <li>Some users report slower support turnaround at peak season</li>
+                <li>Advanced F&amp;B/banquet modules less mature than dedicated POS tools</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> ~&#8377;2,500&ndash;&#8377;6,000/room/year depending on tier. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Mobile-friendly check-in, reservation calendar, and real-time availability at the desk.</p></div>
+            <div><h4>BOH Benefit</h4><p>Housekeeping task boards and maintenance tracking linked to room status.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: minimal, primarily cloud-dependent</span>
+            <span class="pill online">Online: real-time OTA sync, mobile access anywhere</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RMS CLOUD -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#141010"/><path d="M18 20h28v24H18z" fill="none" stroke="#d4af37" stroke-width="3"/><path d="M18 28h28M26 20v8M38 20v8" stroke="#d4af37" stroke-width="2.5"/></svg>
+          <div>
+            <h3>RMS Cloud</h3>
+            <div class="tag">Global Hotel &amp; Resort PMS</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Very strong for large resorts, groups, and multi-property portfolios</li>
+                <li>Extensive third-party integration marketplace</li>
+                <li>Robust reporting and revenue management tools</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Pricing and complexity can be excessive for a small independent hotel</li>
+                <li>Support and onboarding are based overseas, timezone lag possible</li>
+                <li>Steeper learning curve for smaller teams</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> Custom quote, generally positioned at the higher end for the Indian market. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Advanced booking engine and multi-property front-desk consolidation.</p></div>
+            <div><h4>BOH Benefit</h4><p>Deep revenue management and reporting for finance and ownership review.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: limited, cloud-native design</span>
+            <span class="pill online">Online: strong global distribution and channel reach</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- STAYFLEXI -->
+      <div class="card">
+        <div class="card-head">
+          <svg class="badge" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#101414"/><path d="M20 44l8-16 8 10 8-18" fill="none" stroke="#d4af37" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div>
+            <h3>Stayflexi</h3>
+            <div class="tag">Cloud PMS for Independent Hotels</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pros-cons split">
+            <div class="pros"><h4>Advantages</h4>
+              <ul>
+                <li>Built with dynamic pricing and direct-booking tools in mind</li>
+                <li>Good fit for budget and mid-scale independent hotels/hostels</li>
+                <li>Fast onboarding, modern self-serve setup</li>
+              </ul>
+            </div>
+            <div class="cons"><h4>Disadvantages</h4>
+              <ul>
+                <li>Less proven at large full-service resort scale</li>
+                <li>Smaller support footprint compared to legacy PMS vendors</li>
+                <li>Fewer banquet/F&amp;B-specific modules out of the box</li>
+              </ul>
+            </div>
+          </div>
+          <div class="price-line"><strong>Indicative pricing:</strong> ~&#8377;2,000&ndash;&#8377;5,000/room/year, tiered by feature set. Confirm with vendor.</div>
+          <div class="foh-boh">
+            <div><h4>FOH Benefit</h4><p>Simple check-in flow with dynamic upsell prompts for room upgrades.</p></div>
+            <div><h4>BOH Benefit</h4><p>Revenue management dashboard that feeds directly into rate strategy decisions.</p></div>
+          </div>
+          <div class="online-offline">
+            <span class="pill offline">Offline: minimal, cloud-native design</span>
+            <span class="pill online">Online: real-time dynamic pricing across all channels</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="comparison" style="border-top:1px solid var(--panel-border);">
+  <div class="wrap">
+    <h2 class="section-title">Offline vs Online <span>at a Glance</span></h2>
+    <p class="section-lead">The one question every operator asks before signing: what happens when the WiFi drops mid-service?</p>
+
+    <table class="compare">
+      <tr>
+        <th>Capability</th>
+        <th>Offline-Capable Systems</th>
+        <th>Cloud-Only Systems</th>
+      </tr>
+      <tr>
+        <td>Billing continues during outage</td>
+        <td>Yes &mdash; local terminal keeps running</td>
+        <td>No &mdash; billing may pause or queue</td>
+      </tr>
+      <tr>
+        <td>Data sync after reconnect</td>
+        <td>Automatic sync once online</td>
+        <td>N/A &mdash; always live</td>
+      </tr>
+      <tr>
+        <td>Multi-property live visibility</td>
+        <td>Delayed until sync</td>
+        <td>Real-time across properties</td>
+      </tr>
+      <tr>
+        <td>OTA / aggregator updates</td>
+        <td>Near real-time when online</td>
+        <td>Instant, always-on</td>
+      </tr>
+      <tr>
+        <td>Best suited for</td>
+        <td>Locations with unstable internet, single-property operations</td>
+        <td>Metro properties, chains needing centralised control</td>
+      </tr>
+    </table>
+
+    <p class="note">A pause before choosing a system matters as much as a pause before responding to a guest complaint. Match the platform to your property's connectivity reality, not to the vendor's demo environment &mdash; a demo runs on office WiFi; your restaurant floor may not.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Written by Nigel A. Thomas &mdash; Hospitality Executive, Corporate Trainer, CHS &amp; ServSafe certified.</p>
+  <p>More field-tested hospitality operations content at <a href="https://www.nigelthomas.live">nigelthomas.live</a> &nbsp;|&nbsp; Hospitality careers at <a href="https://www.joblynk.live">joblynk.live</a></p>
+</footer>
+
+</body>
+</html>
