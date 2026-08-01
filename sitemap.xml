@@ -540,7 +540,13 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+
+    <!-- NEW: F&B Service Interview Q&A -->
+    <url>
+        <loc>https://www.nigelthomas.live/f&amp;b-service-interview-q&amp;a.html</loc>
+        <lastmod>2026-08-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
 </urlset>
-(feat(blog): add ADR-RevPAR-GOPPAR metrics post, update blog index, sitemap, and internal links)
-
-
