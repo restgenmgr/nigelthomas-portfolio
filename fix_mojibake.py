@@ -7,7 +7,7 @@ Usage:
   python fix_mojibake.py --dry-run     Preview what would change, no writes
   python fix_mojibake.py --apply       Fix files for real (backs up originals first)
 
-Requires: pip install ftfy   (or: python -m pip install ftfy)
+Requires: pip install ftfy --break-system-packages   (or just: pip install ftfy)
 """
 
 import argparse
@@ -18,17 +18,21 @@ import sys
 try:
     import ftfy
 except ImportError:
-    print("Missing dependency. Run: python -m pip install ftfy")
+    print("Missing dependency. Run: pip install ftfy")
     sys.exit(1)
 
 REPO_ROOT = os.getcwd()
 BACKUP_DIR = os.path.join(REPO_ROOT, "_mojibake_backups")
 SKIP_DIRS = {".git", "node_modules", "_mojibake_backups"}
+SKIP_DIR_PREFIXES = ("backup-html", "backup")
 
 
 def find_html_files(root):
     for dirpath, dirnames, filenames in os.walk(root):
-        dirnames[:] = [d for d in dirnames if d not in SKIP_DIRS]
+        dirnames[:] = [
+            d for d in dirnames
+            if d not in SKIP_DIRS and not d.lower().startswith(SKIP_DIR_PREFIXES)
+        ]
         for f in filenames:
             if f.lower().endswith((".html", ".htm")):
                 yield os.path.join(dirpath, f)
@@ -47,6 +51,7 @@ def main():
         with open(path, "rb") as f:
             raw = f.read()
 
+        # Strip BOM if present, decode as UTF-8
         text = raw.decode("utf-8-sig", errors="replace")
         fixed = ftfy.fix_text(text)
 
@@ -55,6 +60,7 @@ def main():
             rel = os.path.relpath(path, REPO_ROOT)
 
             if args.dry_run:
+                # Show a small sample of what changed
                 for old_line, new_line in zip(text.splitlines(), fixed.splitlines()):
                     if old_line != new_line:
                         print(f"[{rel}]")
@@ -65,6 +71,7 @@ def main():
                 backup_path = os.path.join(BACKUP_DIR, rel.replace(os.sep, "__"))
                 shutil.copy2(path, backup_path)
 
+                # Write back BOM-free UTF-8, matching site standard
                 with open(path, "w", encoding="utf-8", newline="") as f:
                     f.write(fixed)
                 print(f"Fixed: {rel}  (backup: {os.path.relpath(backup_path, REPO_ROOT)})")
