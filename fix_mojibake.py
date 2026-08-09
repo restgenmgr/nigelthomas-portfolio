@@ -53,7 +53,7 @@ def main():
 
         # Strip BOM if present, decode as UTF-8
         text = raw.decode("utf-8-sig", errors="replace")
-        fixed = ftfy.fix_text(text)
+        fixed = ftfy.fix_text(text, uncurl_quotes=False)
 
         if fixed != text:
             changed_files.append(path)
