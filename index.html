@@ -1,195 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nigel Thomas | Hospitality Trainer & Professional</title>
-    <meta name="description" content="Nigel Thomas - Hospitality Trainer & Professional with 30+ years experience on cruise ships, luxury resorts, and hotels across Middle East, USA, and India.">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-CLRRV5DMXZ');
-    </script>
-    <!-- Google AdSense -->
-    <meta name="google-adsense-account" content="ca-pub-4282121192943910">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;}
-        body{font-family:'Segoe UI',Arial,sans-serif;background:#0a0a0a;color:#d4d4d4;line-height:1.6;}
-        .navbar{background:#000000;padding:1rem 0;position:sticky;top:0;z-index:100;border-bottom:2px solid #d4af37;}
-        .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;flex-wrap:wrap;}
-        .logo{color:#d4af37;font-size:1.5rem;font-weight:bold;text-decoration:none;}
-        .nav-links{display:flex;gap:1rem;flex-wrap:wrap;}
-        .nav-links a{color:#ffffff;text-decoration:none;padding:8px 15px;border-radius:25px;transition:0.3s;}
-        .nav-links a:hover{background:#d4af37;color:#000000;}
-        .hero{background:linear-gradient(135deg,#000000,#1a1a1a);color:#d4af37;padding:80px 20px;text-align:center;border-bottom:2px solid #d4af37;}
-        .hero h1{font-size:2.5rem;margin-bottom:15px;color:#d4af37;}
-        .hero p{color:#d4d4d4;font-size:1.2rem;max-width:800px;margin:0 auto;}
-        .btn{display:inline-block;background:#d4af37;color:#000000;padding:12px 35px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:25px;transition:0.3s;}
-        .btn:hover{background:#c4a030;transform:scale(1.05);}
-        .btn-outline{display:inline-block;background:transparent;color:#d4af37;border:1px solid #d4af37;padding:11px 34px;border-radius:40px;text-decoration:none;font-weight:bold;margin-top:25px;margin-left:12px;transition:0.3s;}
-        .btn-outline:hover{background:#d4af37;color:#000000;transform:scale(1.05);}
-        .hero-actions{display:flex;flex-wrap:wrap;justify-content:center;}
-        .container{max-width:1200px;margin:0 auto;padding:50px 20px;}
-        .section-title{font-size:2rem;color:#d4af37;margin-bottom:30px;text-align:center;}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin:30px 0;}
-        .card{background:#111111;border-radius:15px;padding:25px;border-left:4px solid #d4af37;transition:0.3s;}
-        .card:hover{transform:translateY(-5px);box-shadow:0 5px 25px rgba(212,175,55,0.1);}
-        .card h3{color:#d4af37;margin-bottom:15px;font-size:1.3rem;}
-        .card p{color:#d4d4d4;margin-bottom:15px;}
-        .article-card{background:#111111;border-radius:15px;padding:30px;margin-bottom:30px;border:1px solid #d4af37;transition:0.3s;}
-        .article-card:hover{transform:translateY(-3px);box-shadow:0 5px 25px rgba(212,175,55,0.08);}
-        .article-title{font-size:1.3rem;font-weight:600;margin-bottom:10px;}
-        .article-title a{color:#d4af37;text-decoration:none;}
-        .article-title a:hover{text-decoration:underline;}
-        .article-meta{font-size:0.85rem;color:#a0a0a0;margin-bottom:10px;}
-        .badge{display:inline-block;padding:3px 12px;border-radius:20px;font-size:0.7rem;font-weight:600;margin-right:8px;}
-        .badge-gold{background:#d4af37;color:#000000;}
-        .badge-dark{background:#1a1a1a;color:#d4af37;border:1px solid #d4af37;}
-        .article-excerpt{color:#d4d4d4;margin-bottom:15px;}
-        .read-more-btn{display:inline-block;background:#d4af37;color:#000000;padding:8px 20px;border-radius:6px;text-decoration:none;font-weight:bold;transition:0.3s;}
-        .read-more-btn:hover{background:#c4a030;transform:scale(1.02);}
-        .sectors{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:40px 0;}
-        .sector-tag{background:#1a1a1a;color:#d4af37;padding:10px 20px;border-radius:40px;font-size:0.95rem;font-weight:500;border:1px solid #d4af37;transition:0.3s;}
-        .sector-tag:hover{background:#d4af37;color:#000000;}
-        .mission-box{background:#111111;border:2px solid #d4af37;padding:40px;border-radius:20px;margin:40px 0;text-align:center;}
-        .mission-box h2{color:#d4af37;margin-bottom:20px;}
-        .mission-box p{color:#d4d4d4;font-size:1.1rem;max-width:900px;margin:0 auto;line-height:1.8;}
-        footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-top:50px;border-top:2px solid #d4af37;}
-        .footer-links{margin-bottom:15px;}
-        .footer-links a{color:#d4af37;text-decoration:none;margin:0 12px;transition:0.3s;}
-        .footer-links a:hover{text-decoration:underline;}
-        @media(max-width:768px){.nav-container{flex-direction:column;gap:15px;}.hero h1{font-size:1.8rem;}.grid{grid-template-columns:1fr;}.btn-outline{margin-left:0;margin-top:12px;}}
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="Private personal accounting dashboard">
+  <title>Private Accounting Dashboard | Nigel Thomas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo">Nigel Thomas</a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/resume.html">Resume</a>
-                <a href="/hospitality-management-tools.html">Tools</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/privacy-policy.html">Privacy</a>
-                <a href="/terms.html">Terms</a>
-                <a href="/disclaimer.html">Disclaimer</a>
-            </div>
-        </div>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">PRIVATE • PERSONAL</div>
+      <h1>Accounting Dashboard</h1>
+      <p class="muted">Nigel Thomas</p>
     </div>
+    <button id="resetDemoBtn" class="ghost-btn" type="button" title="Reset demo data">Reset Demo</button>
+  </header>
 
-    <div class="hero">
-        <h1>Nigel Thomas</h1>
-        <p> Hospitality Trainer &amp; Professional | 30+ Years Global Experience</p>
-        <p style="font-size:1rem;margin-top:5px;color:#d4af37;">  Cruise Ships | Luxury Resorts | Middle East |  USA |  India</p>
-        <div class="hero-actions">
-            <a href="/about.html" class="btn">Learn More</a>
-            <a href="/resume.html" class="btn-outline">View Resume</a>
+  <main class="container">
+    <section class="hero-card">
+      <div>
+        <span class="label">TOTAL AVAILABLE</span>
+        <div id="totalBalance" class="total">₹0.00</div>
+        <div id="balanceUpdated" class="muted">Ready</div>
+      </div>
+      <div class="hero-stat">
+        <span class="label">TODAY'S EXPENSE</span>
+        <strong id="todayExpense">₹0.00</strong>
+      </div>
+      <div class="hero-stat">
+        <span class="label">THIS MONTH</span>
+        <strong id="monthExpense">₹0.00</strong>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <h2>Accounts</h2>
+        <button id="editBalancesBtn" class="secondary-btn" type="button">Edit Balances</button>
+      </div>
+      <div id="accountsGrid" class="accounts-grid"></div>
+    </section>
+
+    <section class="entry-panel">
+      <div class="section-head">
+        <div>
+          <h2>Quick Entry</h2>
+          <p class="muted">Save a payment in a few seconds. The form clears after saving.</p>
         </div>
-    </div>
+      </div>
 
-    <div class="container">
-        <!-- Featured Article -->
-        <h2 class="section-title"> Featured Article</h2>
-        <div class="article-card">
-            <div class="article-title">
-                <a href="/mastering-food-cost-guide.html">Mastering Food Cost in Restaurants &amp; Hotels</a>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-type="expense" type="button">Expense</button>
+        <button class="tab" data-type="income" type="button">Receive Revenue</button>
+        <button class="tab" data-type="transfer" type="button">Transfer</button>
+      </div>
+
+      <form id="transactionForm">
+        <input type="hidden" id="transactionType" value="expense">
+
+        <div class="form-grid">
+          <label>
+            <span>Payment / Receiving Account</span>
+            <select id="accountSelect" required></select>
+          </label>
+
+          <label id="toAccountWrap" class="hidden">
+            <span>Transfer To</span>
+            <select id="toAccountSelect"></select>
+          </label>
+
+          <label>
+            <span>Amount</span>
+            <div class="money-input">
+              <span>₹</span>
+              <input id="amount" inputmode="decimal" type="number" min="0.01" step="0.01" placeholder="0.00" required>
             </div>
-            <div class="article-meta">
-                <span class="badge badge-gold">Editor's Pick</span>
-                <span class="badge badge-dark">3000+ words</span>
-                <span>June 2026</span>
-            </div>
-            <p class="article-excerpt">A comprehensive deep-dive into food cost management for hospitality professionals. Covers purchasing strategy, portion control, recipe costing, waste reduction, and how to achieve and maintain your target food cost percentage across single and multi-unit operations.</p>
-            <a href="/mastering-food-cost-guide.html" class="read-more-btn">Read Article </a>
+          </label>
+
+          <label id="categoryWrap">
+            <span>Expense Category</span>
+            <select id="category">
+              <option>Food &amp; Beverage</option>
+              <option>Phone Charges</option>
+              <option>Sundries</option>
+              <option>Clothes</option>
+              <option>Travelling</option>
+              <option>Salary Deduction for Absence</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label class="wide">
+            <span>Description <small>(optional)</small></span>
+            <input id="description" type="text" maxlength="180" placeholder="e.g. Tea, auto, mobile recharge">
+          </label>
         </div>
 
-        <!-- Latest Articles -->
-        <h2 class="section-title"> Latest Articles</h2>
-
-        <div class="article-card">
-            <div class="article-title"><a href="/building-a-career-in-hospitality-guide.html">Building a Career in Hospitality: Complete Guide</a></div>
-            <div class="article-meta"><span class="badge badge-gold">Career Guide</span><span>June 2026</span></div>
-            <p class="article-excerpt">Your complete guide to breaking into hospitality, moving up the ladder, and going global. Covers entry points, skills, certifications, career pathways, and international markets.</p>
-            <a href="/building-a-career-in-hospitality-guide.html" class="read-more-btn">Read Article</a>
+        <div class="entry-actions">
+          <button class="primary-btn" type="submit" id="saveBtn">SAVE EXPENSE</button>
+          <span id="formMessage" class="form-message" aria-live="polite"></span>
         </div>
+      </form>
+    </section>
 
-        <div class="article-card">
-            <div class="article-title"><a href="/ats-friendly-hospitality-cv-guide.html">Why Your Hospitality CV Keeps Getting Rejected</a></div>
-            <div class="article-meta"><span class="badge badge-gold">Career Guide</span><span>June 2026</span></div>
-            <p class="article-excerpt">Learn why your hospitality CV is being rejected by ATS systems and how to fix it. Expert advice on formatting, keywords, and what recruiters actually look for.</p>
-            <a href="/ats-friendly-hospitality-cv-guide.html" class="read-more-btn">Read Article </a>
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Recent Transactions</h2>
+          <p class="muted">Latest activity appears here.</p>
         </div>
+        <div class="filters">
+          <select id="filterAccount"><option value="">All accounts</option></select>
+          <select id="filterType">
+            <option value="">All types</option>
+            <option value="expense">Expense</option>
+            <option value="income">Revenue</option>
+            <option value="transfer">Transfer</option>
+          </select>
+        </div>
+      </div>
 
-        <div class="article-card">
-            <div class="article-title"><a href="/hot-and-cold-kitchens-temperature-guide.html">Hot &amp; Cold Kitchens: Complete Temperature Guide</a></div>
-            <div class="article-meta"><span class="badge badge-gold">Food Safety</span><span>June 2026</span></div>
-            <p class="article-excerpt">Master critical temperature points, HACCP compliance, fridge storage hierarchy, FIFO, and food safety protocols for professional kitchens.</p>
-            <a href="/hot-and-cold-kitchens-temperature-guide.html" class="read-more-btn">Read Article </a>
-        </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Date / Time</th>
+              <th>Account</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Category</th>
+              <th>Description</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="transactionsBody"></tbody>
+        </table>
+      </div>
+      <div id="emptyState" class="empty hidden">No transactions yet.</div>
+    </section>
 
-        <!-- 14 Executive Sectors -->
-        <h2 class="section-title"> 14 Executive Sectors I Cover</h2>
-        <div class="sectors">
-            <span class="sector-tag"> Cruise Line Operations</span>
-            <span class="sector-tag"> Luxury Hotels</span>
-            <span class="sector-tag"> Middle East Hospitality</span>
-            <span class="sector-tag"> F&amp;B Management</span>
-            <span class="sector-tag"> Front Office</span>
-            <span class="sector-tag"> Housekeeping</span>
-            <span class="sector-tag"> Culinary Arts</span>
-            <span class="sector-tag"> Revenue Management</span>
-            <span class="sector-tag"> Human Resources</span>
-            <span class="sector-tag"> Engineering</span>
-            <span class="sector-tag"> Maritime Deck</span>
-            <span class="sector-tag"> Maritime Engine</span>
-            <span class="sector-tag"> Wellness &amp; Spa</span>
-            <span class="sector-tag"> Retail &amp; Casino</span>
-        </div>
+    <section class="reports">
+      <div class="section-head"><h2>Reports</h2></div>
+      <div class="report-grid">
+        <article class="report-card"><span>Today's Revenue</span><strong id="todayIncome">₹0.00</strong></article>
+        <article class="report-card"><span>Today's Expense</span><strong id="todayExpense2">₹0.00</strong></article>
+        <article class="report-card"><span>Monthly Revenue</span><strong id="monthIncome">₹0.00</strong></article>
+        <article class="report-card"><span>Monthly Expense</span><strong id="monthExpense2">₹0.00</strong></article>
+      </div>
+    </section>
 
-        <div class="mission-box">
-            <h2>  My Mission</h2>
-            <p>To bridge the gap between executive talent and career opportunities in hospitality and maritime industries across India, the Middle East, and international markets. I am committed to elevating industry standards through expert training, operational excellence, and developing the next generation of hospitality leaders.</p>
-        </div>
-    </div>
+    <section class="future-card">
+      <h2>Future Accounting LLM</h2>
+      <p>V1 keeps the accounting controls explicit. A future AI layer can interpret entries such as <strong>“45 PhonePe tea”</strong> and suggest the account, amount, type and category before saving.</p>
+      <p class="muted">Credit Card is inactive in V1 and can be added later.</p>
+    </section>
+  </main>
 
-    <footer>
-        <div class="footer-links">
-            <a href="/">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/resume.html">Resume</a>
-            <a href="/hospitality-management-tools.html">Tools</a>
-            <a href="/blog.html">Blog</a>
-            <a href="/contact.html">Contact</a>
-            <a href="/privacy-policy.html">Privacy</a>
-            <a href="/terms.html">Terms</a>
-            <a href="/disclaimer.html">Disclaimer</a>
-        </div>
-        <p>Founder of <a href="https://www.joblynk.live" style="color:#d4af37;">JobLynk.live</a> - Career platform for hospitality professionals</p>
-        <p style="font-size:0.85rem;opacity:0.8;margin-top:5px;">(c) 2026 Nigel Anthony Thomas</p>
-    </footer>
+  <dialog id="balancesDialog">
+    <form method="dialog" id="balancesForm" class="dialog-card">
+      <div class="section-head"><h2>Set Current Balances</h2><button value="cancel" class="icon-btn" aria-label="Close">×</button></div>
+      <p class="muted">Enter the current amount you want the dashboard to start from.</p>
+      <div id="balanceInputs"></div>
+      <div class="entry-actions">
+        <button value="cancel" class="secondary-btn" type="button" id="cancelBalances">Cancel</button>
+        <button class="primary-btn" value="default" type="submit">SAVE BALANCES</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer>
+    <span>Private accounting dashboard • V1</span>
+    <span>Data mode: <strong id="dataMode">Demo</strong></span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
