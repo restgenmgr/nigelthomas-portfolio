@@ -1,0 +1,98 @@
+:root{
+  --bg:#0b0b0c;--panel:#151517;--panel2:#1c1c1f;--gold:#d6b25e;--gold2:#f0d48a;
+  --text:#f5f5f5;--muted:#a6a6ad;--line:#2b2b30;--danger:#e57373;--success:#8ed19a;
+  --radius:18px;--shadow:0 12px 35px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box}
+html{background:var(--bg);color-scheme:dark}
+body{margin:0;background:linear-gradient(180deg,#080809 0%,#111114 100%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+button,input,select{font:inherit}
+button{cursor:pointer}
+.topbar{max-width:1250px;margin:auto;padding:28px 20px 10px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+h1,h2,p{margin-top:0}
+h1{font-size:clamp(1.55rem,4vw,2.3rem);margin-bottom:4px}
+h2{font-size:1.15rem;margin-bottom:5px}
+.eyebrow,.label{letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;color:var(--gold);font-weight:800}
+.muted{color:var(--muted);font-size:.88rem}
+.container{max-width:1250px;margin:auto;padding:15px 20px 40px}
+.hero-card{background:linear-gradient(135deg,#1a1710,#17171a 55%,#111113);border:1px solid #40351d;border-radius:24px;padding:24px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px;box-shadow:var(--shadow);margin-bottom:28px}
+.total{font-size:clamp(2.2rem,7vw,4.2rem);font-weight:850;letter-spacing:-.04em;margin:7px 0}
+.hero-stat{border-left:1px solid var(--line);padding-left:20px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.hero-stat strong{font-size:1.45rem}
+.section-head{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:14px}
+.accounts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+.account-card,.entry-panel,.future-card,.report-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.account-card{padding:18px}
+.account-name{font-weight:750}
+.account-balance{font-size:1.65rem;font-weight:800;margin-top:10px}
+.account-icon{font-size:1.2rem;margin-right:7px}
+.entry-panel{padding:20px;margin-bottom:28px}
+.tabs{display:flex;gap:8px;border-bottom:1px solid var(--line);margin:0 -20px 20px;padding:0 20px}
+.tab{border:0;background:transparent;color:var(--muted);padding:12px 10px;border-bottom:2px solid transparent}
+.tab.active{color:var(--gold2);border-color:var(--gold)}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+label{display:flex;flex-direction:column;gap:7px;font-weight:650;font-size:.88rem}
+label small{font-weight:400;color:var(--muted)}
+.wide{grid-column:1/-1}
+input,select{width:100%;background:#0f0f11;border:1px solid #35353b;color:var(--text);border-radius:12px;padding:13px 12px;outline:none}
+input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,178,94,.12)}
+.money-input{display:flex;background:#0f0f11;border:1px solid #35353b;border-radius:12px;align-items:center}
+.money-input span{padding-left:12px;color:var(--gold);font-weight:800}
+.money-input input{border:0;background:transparent}
+.entry-actions{display:flex;align-items:center;gap:12px;margin-top:18px}
+.primary-btn,.secondary-btn,.ghost-btn,.icon-btn{border-radius:11px;padding:11px 15px;font-weight:800}
+.primary-btn{background:var(--gold);color:#111;border:1px solid var(--gold)}
+.primary-btn:hover{background:var(--gold2)}
+.secondary-btn{background:transparent;color:var(--gold2);border:1px solid #66562e}
+.ghost-btn{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.form-message{font-size:.88rem;color:var(--success)}
+.form-message.error{color:var(--danger)}
+.filters{display:flex;gap:8px}
+.filters select{width:auto;padding:9px 10px}
+.table-wrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius)}
+table{width:100%;border-collapse:collapse;min-width:850px}
+th,td{padding:13px 12px;text-align:left;border-bottom:1px solid var(--line);font-size:.85rem}
+th{color:var(--gold);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+tr:last-child td{border-bottom:0}
+.amount-expense{color:#f19a9a;font-weight:800}
+.amount-income{color:var(--success);font-weight:800}
+.amount-transfer{color:#b7c8ff;font-weight:800}
+.delete-btn{border:0;background:transparent;color:var(--danger);padding:6px}
+.report-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.report-card{padding:18px}
+.report-card span{display:block;color:var(--muted);font-size:.8rem;margin-bottom:8px}
+.report-card strong{font-size:1.35rem}
+.reports{margin:28px 0}
+.future-card{padding:20px;margin-top:28px;border-color:#3b3424}
+footer{max-width:1250px;margin:auto;padding:0 20px 28px;color:var(--muted);display:flex;justify-content:space-between;font-size:.78rem}
+.dialog-card{border:1px solid #4a3c21;background:var(--panel);color:var(--text);border-radius:20px;padding:20px;max-width:520px;width:calc(100% - 28px)}
+dialog::backdrop{background:rgba(0,0,0,.78)}
+.balance-row{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center;margin:10px 0}
+.icon-btn{border:0;background:transparent;color:var(--muted);font-size:1.5rem}
+.hidden{display:none!important}
+.empty{text-align:center;color:var(--muted);padding:25px}
+@media(max-width:850px){
+  .hero-card{grid-template-columns:1fr 1fr}
+  .hero-card>div:first-child{grid-column:1/-1}
+  .hero-stat:first-of-type{border-left:0;padding-left:0}
+  .accounts-grid{grid-template-columns:repeat(2,1fr)}
+  .report-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .topbar{padding-top:20px}
+  .container{padding:10px 13px 30px}
+  .topbar{padding-left:13px;padding-right:13px}
+  .hero-card{grid-template-columns:1fr;padding:18px}
+  .hero-stat{border-left:0;border-top:1px solid var(--line);padding:14px 0 0}
+  .accounts-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .account-card{padding:14px}
+  .account-balance{font-size:1.2rem}
+  .form-grid{grid-template-columns:1fr}
+  .wide{grid-column:auto}
+  .section-head{align-items:flex-start;flex-direction:column}
+  .filters{width:100%}.filters select{flex:1;width:50%}
+  .tabs{overflow:auto}
+  .entry-actions{flex-direction:column;align-items:stretch}
+  .primary-btn,.secondary-btn{width:100%}
+  footer{padding:0 13px 22px;flex-direction:column;gap:6px}
+}
