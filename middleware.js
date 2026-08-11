@@ -1,4 +1,4 @@
-export const config = {
+﻿export const config = {
   matcher: ['/accounting-dashboard.html', '/accounting/:path*'],
 };
 
@@ -10,13 +10,21 @@ export default function middleware(request) {
 
   if (authHeader) {
     const encoded = authHeader.split(' ')[1] || '';
-    const decoded = atob(encoded);
-    const sepIndex = decoded.indexOf(':');
-    const user = decoded.slice(0, sepIndex);
-    const pass = decoded.slice(sepIndex + 1);
 
-    if (user === expectedUser && pass === expectedPass) {
-      return; // allow request through
+    try {
+      const decoded = atob(encoded);
+      const sepIndex = decoded.indexOf(':');
+
+      if (sepIndex !== -1) {
+        const user = decoded.slice(0, sepIndex);
+        const pass = decoded.slice(sepIndex + 1);
+
+        if (user === expectedUser && pass === expectedPass) {
+          return;
+        }
+      }
+    } catch {
+      // Invalid Authorization header.
     }
   }
 
@@ -24,6 +32,7 @@ export default function middleware(request) {
     status: 401,
     headers: {
       'WWW-Authenticate': 'Basic realm="Private Accounting Dashboard"',
+      'Cache-Control': 'no-store',
     },
   });
 }

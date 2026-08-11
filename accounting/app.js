@@ -1,13 +1,13 @@
-(() => {
+﻿(() => {
   "use strict";
 
   const ACCOUNTS = [
-    { id: "canara", name: "Canara Bank", icon: "🏦" },
-    { id: "idbi", name: "IDBI Bank", icon: "🏦" },
-    { id: "cash", name: "Cash on Hand", icon: "💵" },
-    { id: "paytm", name: "Paytm", icon: "📱" },
-    { id: "gpay", name: "GPay", icon: "📱" },
-    { id: "phonepe", name: "PhonePe", icon: "📱" }
+    { id: "canara", name: "Canara Bank", icon: "≡ƒÅª" },
+    { id: "idbi", name: "IDBI Bank", icon: "≡ƒÅª" },
+    { id: "cash", name: "Cash on Hand", icon: "≡ƒÆ╡" },
+    { id: "paytm", name: "Paytm", icon: "≡ƒô▒" },
+    { id: "gpay", name: "GPay", icon: "≡ƒô▒" },
+    { id: "phonepe", name: "PhonePe", icon: "≡ƒô▒" }
   ];
 
   const KEY = "nigel_accounting_v1";
@@ -79,18 +79,30 @@
   }
 
   function resetEntry() {
-    document.getElementById("amount").value = "";
+    document.getElementById("rupees").value = "";
+    document.getElementById("paisa").value = "";
     document.getElementById("description").value = "";
     document.getElementById("formMessage").textContent = "";
-    document.getElementById("amount").focus();
-  }
+    document.getElementById("rupees").focus();
+}
 
   function addTransaction(e) {
     e.preventDefault();
     const type = currentType;
     const accountId = document.getElementById("accountSelect").value;
     const toAccountId = document.getElementById("toAccountSelect").value;
-    const amount = Number(document.getElementById("amount").value);
+    const rupees = Number(document.getElementById("rupees").value || 0);
+    const paisa = Number(document.getElementById("paisa").value || 0);
+
+    if (!Number.isInteger(rupees) || rupees < 0) {
+      return showMessage("Enter valid Rupees.", true);
+    }
+
+    if (!Number.isInteger(paisa) || paisa < 0 || paisa > 99) {
+      return showMessage("Paisa must be between 00 and 99.", true);
+    }
+
+    const amount = rupees + (paisa / 100);
     const category = type === "expense" ? document.getElementById("category").value : (type === "income" ? "Revenue" : "Transfer");
     const description = document.getElementById("description").value.trim();
 
@@ -150,9 +162,9 @@
       const tr = document.createElement("tr");
       const d = new Date(x.transaction_date);
       const typeLabel = x.transaction_type === "income" ? "Revenue" : x.transaction_type[0].toUpperCase()+x.transaction_type.slice(1);
-      const amountSign = x.transaction_type === "expense" ? "−" : x.transaction_type === "income" ? "+" : "↔";
+      const amountSign = x.transaction_type === "expense" ? "ΓêÆ" : x.transaction_type === "income" ? "+" : "Γåö";
       const accountLabel = x.transaction_type === "transfer"
-        ? `${accountName(x.account_id)} → ${accountName(x.to_account_id)}`
+        ? `${accountName(x.account_id)} ΓåÆ ${accountName(x.to_account_id)}`
         : accountName(x.account_id);
       tr.innerHTML = `
         <td>${d.toLocaleDateString("en-IN")} ${d.toLocaleTimeString("en-IN",{hour:"2-digit",minute:"2-digit"})}</td>
@@ -160,7 +172,7 @@
         <td>${typeLabel}</td>
         <td class="amount-${x.transaction_type}">${amountSign} ${fmt(x.amount)}</td>
         <td>${escapeHTML(x.category || "")}</td>
-        <td>${escapeHTML(x.description || "—")}</td>
+        <td>${escapeHTML(x.description || "ΓÇö")}</td>
         <td><button class="delete-btn" data-id="${x.id}" type="button" title="Delete transaction">Delete</button></td>`;
       body.appendChild(tr);
     });
@@ -257,3 +269,6 @@
     setTimeout(openBalances, 250);
   }
 })();
+
+
+
