@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#151515"><meta name="description" content="Private mobile-first accounting dashboard"><link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icons/icon-192.png"><title>Nigel Accounting Dashboard</title>
+<style>
+*{box-sizing:border-box}html{font-size:16px}body{margin:0;background:#f5f6f8;color:#171717;font:15px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent}.app{width:min(900px,100%);margin:auto;padding:14px 12px 40px}.backlink{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:6px;background:#151515;color:#fff;text-decoration:none;font-size:.82rem;font-weight:600;padding:12px 14px;margin:-14px -12px 14px;min-height:44px;box-shadow:0 2px 8px #0002}.backlink:active{background:#000}.footer-backlink{position:static;justify-content:center;background:#f0f1f3;color:#151515;border-radius:12px;margin:0 0 8px;box-shadow:none}header,.bar{display:flex;align-items:center;justify-content:space-between;gap:12px}header{margin-bottom:14px}header small{letter-spacing:.15em;color:#777}h1{font-size:1.35rem;margin:3px 0}h2{font-size:1rem;margin:0 0 10px}.round{width:42px;height:42px;border:0;border-radius:12px;background:#fff;font-size:1.05rem}.hero{background:#151515;color:#fff;border-radius:20px;padding:22px;margin-bottom:18px;box-shadow:0 10px 28px #0002}.hero span{display:block;color:#bbb}.hero strong{display:block;font-size:2.1rem;margin:4px 0}.hero em{font-size:.72rem;color:#aaa;font-style:normal}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:10px 0}.account{background:#fff;border-radius:16px;padding:13px;min-height:92px;box-shadow:0 2px 10px #0001;cursor:pointer;transition:transform .08s,box-shadow .08s}.account:active{transform:scale(.97);box-shadow:0 1px 4px #0002}.tap-hint{margin:2px 0 6px;font-size:.74rem}.name{font-size:.76rem;color:#666}.value{font-size:1.05rem;font-weight:750;margin-top:8px}.hint{font-size:.68rem;color:#aaa;margin-top:3px}.asset .value,.company .value{color:#176b3a}.liability .value{color:#a32626}.cc-note{background:#fff;border-radius:13px;padding:11px 13px;margin:9px 0 18px;color:#666;font-size:.8rem}.card{background:#fff;border-radius:18px;padding:16px;margin-bottom:16px;box-shadow:0 2px 12px #0001}label{display:block;font-size:.78rem;color:#555;margin:10px 0}select,input{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #ddd;border-radius:12px;background:#fafafa;font:inherit;min-height:46px}select{appearance:auto}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.filters{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}.buttons,.subbuttons{display:flex;gap:8px;margin-top:10px}.buttons button,.primary{flex:1;background:#151515;color:#fff;border:0;border-radius:12px;padding:12px;font:inherit}.subbuttons button{flex:1;background:#f0f1f3}.primary{margin-top:8px}button{border:0;border-radius:10px;padding:9px 11px;font:inherit;cursor:pointer;touch-action:manipulation}button:active{transform:scale(.98)}#dynamicForm{border-top:1px solid #eee;margin-top:10px;padding-top:8px}small,.muted{color:#777}.tx{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid #eee}.tx:last-child{border:0}.tx small{display:block;margin-top:3px}.neg{color:#a32626;font-weight:750}.pos{color:#176b3a;font-weight:750}.empty{text-align:center;color:#888;padding:18px}footer{text-align:center;color:#888;font-size:.72rem;margin-top:12px}dialog{border:0;border-radius:18px;width:min(500px,92vw);padding:16px;box-shadow:0 20px 70px #0005}dialog::backdrop{background:#0007}.balance{display:grid;grid-template-columns:1fr 140px;gap:10px;align-items:center}.balance label{margin:5px 0}.balance input{margin-top:0}@media(max-width:650px){.grid{grid-template-columns:repeat(2,1fr)}.filters,.two{grid-template-columns:1fr}.buttons{display:grid;grid-template-columns:1fr 1fr 1fr}.buttons button{padding:10px 5px}.hero strong{font-size:1.9rem}.app{padding-left:10px;padding-right:10px}}@media(max-width:380px){.grid{grid-template-columns:1fr 1fr}.account{padding:11px}.value{font-size:1rem}.buttons{grid-template-columns:1fr}.subbuttons{display:grid;grid-template-columns:1fr}.tx{font-size:.9rem}}@media print{body{background:#fff}.app>header,.app>.hero,.app>section:nth-of-type(1),.app>section:nth-of-type(2),footer,.backlink{display:none}.card{box-shadow:none}.buttons,.subbuttons,#clearBtn{display:none}}
+</style>
+</head><body><main class="app">
+<a href="https://www.nigelthomas.live/" class="backlink">← Back to Website</a>
+<header><div><small>PRIVATE ACCOUNTING</small><h1>Money Dashboard</h1></div><button id="lockBtn" class="round" aria-label="Security">🔒</button></header>
+<section class="hero"><span>Total Available</span><strong id="totalBalance">₹0.00</strong><em>Banks + company + cash − Paytm / GPay / PhonePe</em></section>
+<section><div class="bar"><h2>Accounts</h2><button id="editBalancesBtn">Edit balances</button></div><p class="muted tap-hint">Tap any account to quick-update its balance.</p><div id="accountsGrid" class="grid"></div><div class="cc-note">💳 Credit Card: <strong id="ccBalance">No balance</strong></div></section>
+<section class="card"><h2>Add Transaction</h2><label>Transaction type<select id="transactionType"><option value="">Choose...</option><option value="income">Receiving Revenue</option><option value="expense">Purchase / Expense</option><option value="withdrawal">ATM Withdrawal</option><option value="advance">Company Advance Payment</option><option value="cc_payment">Credit Card Payment</option></select></label><div id="dynamicForm"></div></section>
+<section class="card"><div class="bar"><h2>Reports</h2></div><div class="filters"><label>From<input id="reportFrom" type="date"></label><label>To<input id="reportTo" type="date"></label><label>Category<select id="reportCategory"><option value="">All categories</option></select></label></div><div class="buttons"><button id="csvBtn">CSV</button><button id="docxBtn">DOCX</button><button id="pdfBtn">PDF / Print</button></div><div class="subbuttons"><button id="backupBtn">Backup JSON</button><button id="resetBtn">Reset dashboard</button></div></section>
+<section class="card"><div class="bar"><h2>Recent Transactions</h2><button id="clearBtn">Clear transactions</button></div><div id="transactionsList"></div></section>
+<footer><a href="https://www.nigelthomas.live/" class="backlink footer-backlink">← Back to Website</a><br>V3 • Mobile/PWA ready • Local browser storage until Supabase is connected.</footer></main>
+<dialog id="balanceDialog"><form id="balanceForm"><div class="bar"><h2>Starting Balances</h2><button value="cancel" class="round">×</button></div><p class="muted">Enter positive numbers. Paytm, GPay, PhonePe and Credit Card are displayed as liabilities.</p><div id="balanceFields"></div><button class="primary">Save balances</button></form></dialog>
+<dialog id="quickDialog"><form id="quickForm"><div class="bar"><h2 id="quickTitle">Update balance</h2><button value="cancel" class="round">×</button></div><label>New balance<input id="quickAmount" type="number" step=".01" min="0" required></label><small id="quickMeta" class="muted"></small><button class="primary">Save</button></form></dialog>
+<script src="https://cdn.jsdelivr.net/npm/docx@9.5.1/build/index.umd.js"></script>
+<script>window.ACCOUNTING_CONFIG={supabaseUrl:"",supabaseAnonKey:""};</script>
+<script>
+(()=>{"use strict";
+const ACC=[
+{id:"canara",name:"Canara Bank",icon:"🏦",sign:1,kind:"asset"},
+{id:"idbi",name:"IDBI Bank",icon:"🏦",sign:1,kind:"asset"},
+{id:"company",name:"Company Account",icon:"🏢",sign:1,kind:"asset"},
+{id:"cash",name:"Cash on Hand",icon:"💵",sign:1,kind:"asset"},
+{id:"paytm",name:"Paytm",icon:"📱",sign:-1,kind:"liability"},
+{id:"gpay",name:"GPay",icon:"📱",sign:-1,kind:"liability"},
+{id:"phonepe",name:"PhonePe",icon:"📱",sign:-1,kind:"liability"},
+{id:"credit_card",name:"Credit Card",icon:"💳",sign:0,kind:"liability"}
+];
+const CATS=["Food & Beverage","Purchasing","Phone Charges","Sundries","Clothes","Travelling","Salary Deduction / Absence","Company Expenses","Advance Payment","Credit Card Charges","Other"];
+const KEY="nigelAccountingV3";
+const fmt=n=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:2}).format(Number(n)||0);
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+function timeAgo(iso){if(!iso)return"Never updated";const d=new Date(iso),diff=Math.max(0,Date.now()-d.getTime()),m=Math.floor(diff/60000),h=Math.floor(m/60),day=Math.floor(h/24);if(m<1)return"Updated just now";if(m<60)return`Updated ${m}m ago`;if(h<24)return`Updated ${h}h ago`;if(day<7)return`Updated ${day}d ago`;return`Updated ${d.toLocaleDateString("en-IN",{day:"numeric",month:"short"})}`}
+function fresh(){let accounts={};ACC.forEach(a=>accounts[a.id]=0);return{accounts,transactions:[],updated:{},ccRate:.06,version:3}}
+function migrate(x){let s=x&&typeof x==="object"?x:fresh();s.accounts=s.accounts||{};ACC.forEach(a=>{if(typeof s.accounts[a.id]!=="number")s.accounts[a.id]=0});s.transactions=Array.isArray(s.transactions)?s.transactions:[];s.updated=s.updated&&typeof s.updated==="object"?s.updated:{};s.ccRate=.06;s.version=3;return s}
+let state=(()=>{try{return migrate(JSON.parse(localStorage.getItem(KEY)))}catch{return fresh()}})();
+const get=id=>ACC.find(a=>a.id===id), label=id=>get(id)?.name||id, isLiability=id=>get(id)?.kind==="liability";
+function total(){return ACC.filter(a=>a.id!=="credit_card").reduce((s,a)=>s+(+state.accounts[a.id]||0)*a.sign,0)}
+function save(){localStorage.setItem(KEY,JSON.stringify(state));render()}
+function signedValue(a){return (+state.accounts[a.id]||0)*a.sign}
+function render(){
+ document.querySelector("#totalBalance").textContent=fmt(total());
+ document.querySelector("#accountsGrid").innerHTML=ACC.filter(a=>a.id!=="credit_card").map(a=>{let v=signedValue(a);return `<div class="account ${a.kind}" data-account="${a.id}" role="button" tabindex="0"><div class="name">${a.icon} ${esc(a.name)}</div><div class="value">${v<0?"−":""}${fmt(Math.abs(v))}</div><div class="hint">${a.kind==="liability"?"Outstanding":"Available"} • ${timeAgo(state.updated[a.id])}</div></div>`}).join("");
+ const cc=Number(state.accounts.credit_card)||0;document.querySelector("#ccBalance").textContent=cc?`Outstanding ${fmt(cc)}`:"No balance";
+ renderTx();populateCats();
+}
+function sources(includeCC=false){return ACC.filter(a=>includeCC||a.id!=="credit_card").map(a=>`<option value="${a.id}">${a.icon} ${esc(a.name)}</option>`).join("")}
+function form(type){
+ const d=document.querySelector("#dynamicForm");if(!type){d.innerHTML="";return}
+ let h="";
+ if(type==="income")h=`<form><div class="two"><label>Amount<input name="amount" type="number" step=".01" min=".01" required></label><label>Received into<select name="account">${sources(true)}</select></label></div><label>Description<input name="description" placeholder="Salary, sales, refund, etc."></label><button class="primary">Save Revenue</button></form>`;
+ if(type==="withdrawal")h=`<form><div class="two"><label>Amount<input name="amount" type="number" step=".01" min=".01" required></label><label>Withdraw from<select name="account"><option value="canara">🏦 Canara Bank ATM</option><option value="idbi">🏦 IDBI Bank ATM</option></select></label></div><small>Bank decreases; Cash increases by the same amount.</small><button class="primary">Record ATM → Cash</button></form>`;
+ if(type==="expense")h=`<form><div class="two"><label>Amount<input name="amount" type="number" step=".01" min=".01" required></label><label>Expense category<select name="category">${CATS.map(c=>`<option>${esc(c)}</option>`).join("")}</select></label></div><div class="two"><label>Paid from<select name="account">${sources(true)}</select></label><label>Description<input name="description" placeholder="What was purchased or paid?"></label></div><small>Paying with Credit Card automatically adds a 6% charge on top of the amount.</small><button class="primary">Save Expense</button></form>`;
+ if(type==="advance")h=`<form><div class="two"><label>Advance amount<input name="amount" type="number" step=".01" min=".01" required></label><label>Paid from<select name="account"><option value="company">🏢 Company Account</option><option value="cash">💵 Cash</option><option value="canara">🏦 Canara Bank</option><option value="idbi">🏦 IDBI Bank</option></select></label></div><label>Advance for<input name="description" placeholder="Employee / supplier / purpose" required></label><small>Recorded as Company / Advance Payment.</small><button class="primary">Record Advance Payment</button></form>`;
+ if(type==="cc_payment"){let o=Math.max(0,+state.accounts.credit_card||0);h=`<form><div class="two"><label>Payment amount<input name="amount" type="number" step=".01" min=".01" max="${o||""}" value="${o||""}" required></label><label>Pay from<select name="account"><option value="canara">🏦 Canara Bank</option><option value="idbi">🏦 IDBI Bank</option><option value="company">🏢 Company Account</option><option value="cash">💵 Cash</option></select></label></div><small>The 6% charge was already added when the purchase was made. This payment just reduces the outstanding balance — no extra charge here.</small><button class="primary">Pay Credit Card</button></form>`}
+ d.innerHTML=h;d.querySelector("form").addEventListener("submit",submit)
+}
+function addTx(category,title,account,amount,direction,type="expense",date=new Date().toISOString().slice(0,10)){state.transactions.push({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random()),date,category,title,account,amount:Number(amount),direction,transaction_type:type})}
+function touch(...ids){const now=new Date().toISOString();ids.forEach(id=>state.updated[id]=now)}
+function submit(e){e.preventDefault();const t=document.querySelector("#transactionType").value,d=Object.fromEntries(new FormData(e.target)),amt=Number(d.amount);if(!amt||amt<=0)return alert("Enter a valid amount.");
+ if(t==="income"){
+  if(isLiability(d.account)){state.accounts[d.account]=Math.max(0,state.accounts[d.account]-amt)}else state.accounts[d.account]+=amt;
+  addTx("Revenue",d.description||"Revenue received",d.account,amt,"positive","income");touch(d.account);
+ }
+ if(t==="withdrawal"){
+  if(state.accounts[d.account]<amt)return alert("Insufficient bank balance.");state.accounts[d.account]-=amt;state.accounts.cash+=amt;
+  addTx("ATM Withdrawal",`${label(d.account)} ATM → Cash`,d.account,amt,"negative","withdrawal");addTx("ATM Transfer",`Cash received from ${label(d.account)} ATM`,"cash",amt,"positive","transfer");touch(d.account,"cash");
+ }
+ if(t==="expense"){
+  if(d.account==="credit_card"){
+   const charge=amt*state.ccRate;state.accounts.credit_card+=amt+charge;
+   addTx(d.category,d.description||"Purchase / Expense",d.account,amt,"negative","expense");
+   addTx("Credit Card Charges","6% charge on purchase",d.account,charge,"negative","cc_charge");touch("credit_card");
+  }
+  else {
+   if(isLiability(d.account))state.accounts[d.account]+=amt;
+   else {if(state.accounts[d.account]<amt)return alert("Insufficient balance.");state.accounts[d.account]-=amt}
+   addTx(d.category,d.description||"Purchase / Expense",d.account,amt,"negative","expense");touch(d.account);
+  }
+ }
+ if(t==="advance"){
+  if(state.accounts[d.account]<amt)return alert("Insufficient balance.");state.accounts[d.account]-=amt;
+  addTx("Advance Payment",d.description||"Company advance",d.account,amt,"negative","advance");touch(d.account);
+ }
+ if(t==="cc_payment"){
+  if(state.accounts[d.account]<amt)return alert(`Need ${fmt(amt)} to cover this payment.`);
+  state.accounts[d.account]-=amt;state.accounts.credit_card=Math.max(0,state.accounts.credit_card-amt);
+  addTx("Credit Card Payment","Payment towards outstanding balance",d.account,amt,"negative","cc_payment");touch(d.account,"credit_card");
+ }
+ e.target.reset();document.querySelector("#transactionType").value="";form("");save();
+}
+function filtered(){const f=document.querySelector("#reportFrom").value,to=document.querySelector("#reportTo").value,c=document.querySelector("#reportCategory").value;return state.transactions.filter(t=>(!f||t.date>=f)&&(!to||t.date<=to)&&(!c||t.category===c))}
+function renderTx(){const b=document.querySelector("#transactionsList"),a=filtered().slice().reverse().slice(0,50);b.innerHTML=a.length?a.map(t=>`<div class="tx"><div><strong>${esc(t.title)}</strong><small>${esc(t.date)} • ${esc(t.category)} • ${esc(label(t.account))}</small></div><div class="${t.direction==="negative"?"neg":"pos"}">${t.direction==="negative"?"−":"+"}${fmt(t.amount)}</div></div>`).join(""):"<div class=\"empty\">No transactions yet.</div>"}
+function populateCats(){const s=document.querySelector("#reportCategory"),v=s.value,c=[...new Set(state.transactions.map(t=>t.category).filter(Boolean))];s.innerHTML='<option value="">All categories</option>'+c.map(x=>`<option>${esc(x)}</option>`).join("");s.value=v}
+function edit(){const b=document.querySelector("#balanceFields");b.innerHTML=ACC.map(a=>`<div class="balance"><label>${a.icon} ${esc(a.name)}${a.id==="credit_card"?" (liability)":""}</label><input name="${a.id}" type="number" step=".01" min="0" value="${state.accounts[a.id]||0}"></div>`).join("");document.querySelector("#balanceDialog").showModal()}
+function quickEdit(id){const a=get(id);if(!a)return;document.querySelector("#quickTitle").textContent=`${a.icon} ${a.name}`;const inp=document.querySelector("#quickAmount");inp.value=Math.abs(state.accounts[id]||0);document.querySelector("#quickMeta").textContent=timeAgo(state.updated[id]);document.querySelector("#quickDialog").dataset.account=id;document.querySelector("#quickDialog").showModal();setTimeout(()=>{inp.focus();inp.select()},50)}
+function exportCSV(){const rows=[["Date","Type","Category","Description","Account","Amount","Direction"],...filtered().map(t=>[t.date,t.transaction_type,t.category,t.title,label(t.account),t.amount,t.direction])];downloadBlob(rows.map(r=>r.map(v=>`"${String(v??"").replace(/"/g,'""')}"`).join(",")).join("\n"),"nigel-accounting-report.csv","text/csv")}
+function downloadBlob(data,name,type){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+async function exportDOCX(){if(!window.docx)return alert("DOCX library unavailable. Check your internet connection and reload.");const {Document,Packer,Paragraph,Table,TableRow,TableCell}=window.docx;const rows=[new TableRow({children:["Date","Type","Category","Description","Account","Amount"].map(x=>new TableCell({children:[new Paragraph(x)]}))})];filtered().forEach(t=>rows.push(new TableRow({children:[t.date,t.transaction_type,t.category,t.title,label(t.account),`${t.direction==="negative"?"-":""}${t.amount.toFixed(2)}`].map(x=>new TableCell({children:[new Paragraph(String(x))]}))})));const doc=new Document({sections:[{children:[new Paragraph({text:"Nigel Accounting Report",heading:"Heading1"}),new Paragraph("Total Available: "+fmt(total())),new Paragraph("Credit Card Outstanding: "+fmt(state.accounts.credit_card||0)),new Table({rows})]}]});downloadBlob(await Packer.toBlob(doc),"nigel-accounting-report.docx","application/vnd.openxmlformats-officedocument.wordprocessingml.document")}
+function backupJSON(){downloadBlob(JSON.stringify(state,null,2),`nigel-accounting-backup-${new Date().toISOString().slice(0,10)}.json`,"application/json")}
+function resetAll(){if(confirm("Delete all transactions and reset balances? This cannot be undone.")){state=fresh();save()}}
+document.querySelector("#transactionType").onchange=e=>form(e.target.value);document.querySelector("#editBalancesBtn").onclick=edit;
+document.querySelector("#accountsGrid").addEventListener("click",e=>{const c=e.target.closest("[data-account]");if(c)quickEdit(c.dataset.account)});
+document.querySelector("#accountsGrid").addEventListener("keydown",e=>{if(e.key!=="Enter"&&e.key!==" ")return;const c=e.target.closest("[data-account]");if(c){e.preventDefault();quickEdit(c.dataset.account)}});
+document.querySelector("#quickForm").onsubmit=e=>{e.preventDefault();const id=document.querySelector("#quickDialog").dataset.account,v=Math.max(0,Number(document.querySelector("#quickAmount").value)||0);state.accounts[id]=v;state.updated[id]=new Date().toISOString();document.querySelector("#quickDialog").close();save()};
+document.querySelector("#balanceForm").onsubmit=e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target)),now=new Date().toISOString();ACC.forEach(a=>{state.accounts[a.id]=Math.max(0,Number(d[a.id])||0);state.updated[a.id]=now});document.querySelector("#balanceDialog").close();save()};
+["reportFrom","reportTo","reportCategory"].forEach(id=>document.querySelector("#"+id).onchange=renderTx);
+document.querySelector("#clearBtn").onclick=()=>{if(confirm("Delete all transactions? Balances will remain unchanged.")){state.transactions=[];save()}};
+document.querySelector("#resetBtn").onclick=resetAll;document.querySelector("#backupBtn").onclick=backupJSON;document.querySelector("#csvBtn").onclick=exportCSV;document.querySelector("#docxBtn").onclick=exportDOCX;document.querySelector("#pdfBtn").onclick=()=>window.print();
+document.querySelector("#lockBtn").onclick=()=>alert("Production security is the next phase: connect Supabase Auth + Row Level Security before storing real financial data online.");
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+render();
+})();
+</script>
+</body></html>
