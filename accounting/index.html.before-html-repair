@@ -1,0 +1,787 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="robots"
+        content="noindex, nofollow"
+    >
+
+    <title>Nigel Thomas - Private Accounting Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #111;
+            color: #f5f5f5;
+        }
+
+        .page {
+            width: min(1200px, 94%);
+            margin: 0 auto;
+            padding: 30px 0 60px;
+        }
+
+        .hero {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 18px;
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        .eyebrow {
+            color: #d4af37;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(28px, 5vw, 44px);
+        }
+
+        .subtitle {
+            color: #bbb;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .status {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .status span {
+            border: 1px solid #444;
+            border-radius: 999px;
+            padding: 7px 12px;
+            font-size: 13px;
+            color: #ddd;
+        }
+
+        .section {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 18px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .section-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        .section-head h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .account-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(210px, 1fr));
+            gap: 16px;
+        }
+
+        .account-card {
+            background: #111;
+            border: 1px solid #3b3b3b;
+            border-radius: 14px;
+            padding: 20px;
+        }
+
+        .account-name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ddd;
+            font-weight: 700;
+        }
+
+        .account-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 42px;
+            height: 28px;
+            padding: 0 8px;
+            border: 1px solid #555;
+            border-radius: 6px;
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: #d4af37;
+        }
+
+        .account-balance {
+            margin-top: 14px;
+            font-size: 25px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .total-box {
+            margin-top: 18px;
+            padding: 20px;
+            border-radius: 14px;
+            background: #222;
+            border: 1px solid #444;
+        }
+
+        .total-label {
+            color: #aaa;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .total {
+            margin-top: 7px;
+            font-size: 32px;
+            font-weight: 800;
+            color: #d4af37;
+        }
+
+        .updated {
+            margin-top: 6px;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tab,
+        button {
+            border: 1px solid #555;
+            background: #222;
+            color: #eee;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        .tab:hover,
+        button:hover {
+            border-color: #d4af37;
+        }
+
+        .tab.active {
+            background: #d4af37;
+            color: #111;
+            border-color: #d4af37;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(190px, 1fr));
+            gap: 15px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .field label {
+            color: #bbb;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            background: #111;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 11px 12px;
+            border-radius: 8px;
+            font: inherit;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+        }
+
+        textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .full {
+            grid-column: 1 / -1;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .form-actions {
+            margin-top: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .primary {
+            background: #d4af37;
+            color: #111;
+            border-color: #d4af37;
+        }
+
+        .danger {
+            border-color: #7a3030;
+        }
+
+        .message {
+            min-height: 22px;
+            margin-top: 12px;
+            color: #8fd18f;
+            font-size: 14px;
+        }
+
+        .message.error {
+            color: #ff8b8b;
+        }
+
+        .reports {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(190px, 1fr));
+            gap: 15px;
+        }
+
+        .report-card {
+            background: #111;
+            border: 1px solid #3b3b3b;
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .report-card span {
+            display: block;
+            color: #aaa;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .report-card strong {
+            font-size: 22px;
+        }
+
+        .filters {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(190px, 1fr));
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 850px;
+        }
+
+        th,
+        td {
+            padding: 11px 9px;
+            border-bottom: 1px solid #333;
+            text-align: left;
+            vertical-align: top;
+            font-size: 13px;
+        }
+
+        th {
+            color: #d4af37;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+        }
+
+        .amount-expense {
+            color: #ff8b8b;
+        }
+
+        .amount-income {
+            color: #8fd18f;
+        }
+
+        .amount-transfer {
+            color: #8bbcff;
+        }
+
+        .delete-btn {
+            padding: 6px 9px;
+            font-size: 12px;
+        }
+
+        .empty {
+            color: #888;
+            padding: 20px 0;
+        }
+
+        .info {
+            color: #aaa;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        dialog {
+            width: min(600px, 92%);
+            background: #1a1a1a;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        dialog::backdrop {
+            background: rgba(0, 0, 0, .75);
+        }
+
+        .balance-list {
+            display: grid;
+            gap: 12px;
+            margin: 18px 0;
+        }
+
+        .balance-row {
+            display: grid;
+            grid-template-columns: 1fr 170px;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .balance-row span {
+            color: #ddd;
+        }
+
+        .dialog-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 12px;
+            padding-top: 10px;
+        }
+
+        @media (max-width: 600px) {
+
+            .page {
+                width: 92%;
+                padding-top: 18px;
+            }
+
+            .hero,
+            .section {
+                padding: 18px;
+            }
+
+            .balance-row {
+                grid-template-columns: 1fr;
+            }
+
+            .total {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header class="hero">
+
+        <div class="eyebrow">
+            PRIVATE &bull; PERSONAL
+        </div>
+
+        <h1>
+            Nigel Thomas Accounting Dashboard
+        </h1>
+
+        <p class="subtitle">
+            Personal income, expenses, balances and
+            payment tracking.
+        </p>
+
+        <div class="status">
+            <span>
+                Data Mode:
+                <strong id="dataMode">Demo</strong>
+            </span>
+
+            <span>
+                UPI: Paytm + GPay + PhonePe
+                combined
+            </span>
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         ACCOUNTS
+         ===================================================== -->
+
+    <section class="section">
+
+        <div class="section-head">
+
+            <h2>
+                Current Balances
+            </h2>
+
+            <button
+                id="editBalancesBtn"
+                type="button"
+            >
+                Edit Balances
+            </button>
+
+        </div>
+
+
+        <div
+            id="accountsGrid"
+            class="account-grid"
+        ></div>
+
+
+        <div class="total-box">
+
+            <div class="total-label">
+                Total Available Balance
+            </div>
+
+            <div
+                id="totalBalance"
+                class="total"
+            >
+                ₹0.00
+            </div>
+
+            <div
+                id="balanceUpdated"
+                class="updated"
+            >
+                Updated
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TRANSACTION ENTRY
+         ===================================================== -->
+
+    <section class="section">
+
+        <div class="section-head">
+
+            <h2>
+                Add Transaction
+            </h2>
+
+        </div>
+
+
+        <div class="tabs">
+
+            <button
+                class="tab active"
+                data-type="expense"
+                type="button"
+            >
+                Expense
+            </button>
+
+            <button
+                class="tab"
+                data-type="income"
+                type="button"
+            >
+                Revenue
+            </button>
+
+            <button
+                class="tab"
+                data-type="transfer"
+                type="button"
+            >
+                Transfer
+            </button>
+
+        </div>
+
+
+        <form
+            id="transactionForm"
+            autocomplete="off"
+        >
+
+            <input
+                type="hidden"
+                id="transactionType"
+                value="expense"
+            >
+
+
+            <div class="form-grid">
+
+                <div class="field">
+
+                    <label for="accountSelect">
+                        Account
+                    </label>
+
+                    <select
+                        id="accountSelect"
+                        required
+                    ></select>
+
+                </div>
+
+
+                <div
+                    class="field hidden"
+                    id="toAccountWrap"
+                >
+
+                    <label for="toAccountSelect">
+                        Transfer To
+                    </label>
+
+                    <select
+                        id="toAccountSelect"
+                    ></select>
+
+                </div>
+
+
+                <div
+                    class="field"
+                    id="categoryWrap"
+                >
+
+                    <label for="category">
+                        Expense Category
+                    </label>
+
+                    <select id="category">
+
+                        <option value="Food & Beverage">
+                            Food & Beverage
+                        </option>
+
+                        <option value="Phone Charges">
+                            Phone Charges
+                        </option>
+
+                        <option value="Sundries">
+                            Sundries
+                        </option>
+
+                        <option value="Clothes">
+                            Clothes
+                        </option>
+
+                        <option value="Travelling">
+                            Travelling
+                        </option>
+
+                        <option value="Salary Deduction">
+                            Salary Deduction
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="rupees">
+                        Rupees
+                    </label>
+
+                    <input
+                        id="rupees"
+                        type="number"
+                        min="0"
+                        step="1"
+                        placeholder="0"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="paisa">
+                        Paisa
+                    </label>
+
+                    <input
+                        id="paisa"
+                        type="number"
+                        min="0"
+                        max="99"
+                        step="1"
+                        placeholder="00"
+                    >
+
+                </div>
+
+
+                <div class="field full">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        placeholder="Example: Tea and snacks"
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    id="saveBtn"
+                    class="primary"
+                    type="submit"
+                >
+                    SAVE EXPENSE
+                </button>
+
+                <button
+                    type="button"
+                    onclick="location.reload()"
+                >
+                    CLEAR
+                </button>
+
+            </div>
+
+
+            <div
+                id="formMessage"
+                class="message"
+            ></div>
+
+        </form>
+
+    </section>
+
+
+    <!-- =====================================================
+         REPORTS
+         ===================================================== -->
+
+    <section class="section">
+
+        <div class="section-head">
+
+            <h2>
+                Reports
+            </h2>
+
+        </div>
+
+
+        <div class="reports">
+
+            
+    </div>
+        Private accounting dashboard &bull; V1
+    </footer>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jspdf@4.2.1/dist/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html-docx-js@0.3.1/dist/html-docx.js"></script><script src="./app.js"></script>
+
+
+<div class="back-to-website">
+    <a href="https://www.nigelthomas.live/" aria-label="Back to Nigel Thomas website">
+        &larr; BACK TO WEBSITE
+    </a>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
