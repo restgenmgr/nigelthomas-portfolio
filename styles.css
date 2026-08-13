@@ -45,8 +45,10 @@ input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,
 .primary-btn:hover{background:var(--gold2)}
 .secondary-btn{background:transparent;color:var(--gold2);border:1px solid #66562e}
 .ghost-btn{background:transparent;color:var(--muted);border:1px solid var(--line)}
+
 .home-btn{
   display:inline-block;
+  margin-top:16px;
   background:transparent;
   color:var(--gold2);
   border:1px solid #66562e;
@@ -60,21 +62,7 @@ input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,
   background:var(--gold);
   color:#111;
 }
-.home-btn{
-  display:inline-block;
-  background:transparent;
-  color:var(--gold2);
-  border:1px solid #66562e;
-  border-radius:11px;
-  padding:11px 15px;
-  font-weight:800;
-  text-decoration:none;
-  white-space:nowrap;
-}
-.home-btn:hover{
-  background:var(--gold);
-  color:#111;
-}
+
 .form-message{font-size:.88rem;color:var(--success)}
 .form-message.error{color:var(--danger)}
 .filters{display:flex;gap:8px}
@@ -101,6 +89,7 @@ dialog::backdrop{background:rgba(0,0,0,.78)}
 .icon-btn{border:0;background:transparent;color:var(--muted);font-size:1.5rem}
 .hidden{display:none!important}
 .empty{text-align:center;color:var(--muted);padding:25px}
+
 @media(max-width:850px){
   .hero-card{grid-template-columns:1fr 1fr}
   .hero-card>div:first-child{grid-column:1/-1}
@@ -108,6 +97,7 @@ dialog::backdrop{background:rgba(0,0,0,.78)}
   .accounts-grid{grid-template-columns:repeat(2,1fr)}
   .report-grid{grid-template-columns:repeat(2,1fr)}
 }
+
 @media(max-width:600px){
   .topbar{padding-top:20px}
   .container{padding:10px 13px 30px}
@@ -125,19 +115,4 @@ dialog::backdrop{background:rgba(0,0,0,.78)}
   .entry-actions{flex-direction:column;align-items:stretch}
   .primary-btn,.secondary-btn{width:100%}
   footer{padding:0 13px 22px;flex-direction:column;gap:6px}
-}
-.home-btn{
-  display:inline-block;
-  background:transparent;
-  color:var(--gold2);
-  border:1px solid #66562e;
-  border-radius:11px;
-  padding:11px 15px;
-  font-weight:800;
-  text-decoration:none;
-  white-space:nowrap;
-}
-.home-btn:hover{
-  background:var(--gold);
-  color:#111;
 }
