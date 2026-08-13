@@ -45,6 +45,21 @@ input:focus,select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,
 .primary-btn:hover{background:var(--gold2)}
 .secondary-btn{background:transparent;color:var(--gold2);border:1px solid #66562e}
 .ghost-btn{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.home-btn{
+  display:inline-block;
+  background:transparent;
+  color:var(--gold2);
+  border:1px solid #66562e;
+  border-radius:11px;
+  padding:11px 15px;
+  font-weight:800;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.home-btn:hover{
+  background:var(--gold);
+  color:#111;
+}
 .form-message{font-size:.88rem;color:var(--success)}
 .form-message.error{color:var(--danger)}
 .filters{display:flex;gap:8px}
