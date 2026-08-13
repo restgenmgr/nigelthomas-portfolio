@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -11,12 +11,17 @@
 <body>
   <header class="topbar">
     <div>
-      <div class="eyebrow">PRIVATE • PERSONAL</div>
+      <div class="eyebrow">PRIVATE â€¢ PERSONAL</div>
       <h1>Accounting Dashboard</h1>
       <p class="muted">Nigel Thomas</p>
     </div>
+
         <a href="/" class="home-btn">← Back to Home</a>
       <button id="resetDemoBtn" class="ghost-btn" type="button" title="Reset demo data">Reset Demo</button>
+
+        <a href="/" class="home-btn">â† Back to Home</a>
+    <button id="resetDemoBtn" class="ghost-btn" type="button" title="Reset demo data">Reset Demo</button>
+
   </header>
 
   <main class="container">
@@ -24,16 +29,16 @@
     <section class="hero-card">
       <div>
         <span class="label">TOTAL AVAILABLE</span>
-        <div id="totalBalance" class="total">₹0.00</div>
+        <div id="totalBalance" class="total">â‚¹0.00</div>
         <div id="balanceUpdated" class="muted">Ready</div>
       </div>
       <div class="hero-stat">
         <span class="label">TODAY'S EXPENSE</span>
-        <strong id="todayExpense">₹0.00</strong>
+        <strong id="todayExpense">â‚¹0.00</strong>
       </div>
       <div class="hero-stat">
         <span class="label">THIS MONTH</span>
-        <strong id="monthExpense">₹0.00</strong>
+        <strong id="monthExpense">â‚¹0.00</strong>
       </div>
     </section>
 
@@ -76,7 +81,7 @@
           <label>
             <span>Amount</span>
             <div class="money-input">
-              <span>₹</span>
+              <span>â‚¹</span>
               <input id="amount" inputmode="decimal" type="number" min="0.01" step="0.01" placeholder="0.00" required>
             </div>
           </label>
@@ -146,23 +151,23 @@
     <section class="reports">
       <div class="section-head"><h2>Reports</h2></div>
       <div class="report-grid">
-        <article class="report-card"><span>Today's Revenue</span><strong id="todayIncome">₹0.00</strong></article>
-        <article class="report-card"><span>Today's Expense</span><strong id="todayExpense2">₹0.00</strong></article>
-        <article class="report-card"><span>Monthly Revenue</span><strong id="monthIncome">₹0.00</strong></article>
-        <article class="report-card"><span>Monthly Expense</span><strong id="monthExpense2">₹0.00</strong></article>
+        <article class="report-card"><span>Today's Revenue</span><strong id="todayIncome">â‚¹0.00</strong></article>
+        <article class="report-card"><span>Today's Expense</span><strong id="todayExpense2">â‚¹0.00</strong></article>
+        <article class="report-card"><span>Monthly Revenue</span><strong id="monthIncome">â‚¹0.00</strong></article>
+        <article class="report-card"><span>Monthly Expense</span><strong id="monthExpense2">â‚¹0.00</strong></article>
       </div>
     </section>
 
     <section class="future-card">
       <h2>Future Accounting LLM</h2>
-      <p>V1 keeps the accounting controls explicit. A future AI layer can interpret entries such as <strong>“45 PhonePe tea”</strong> and suggest the account, amount, type and category before saving.</p>
+      <p>V1 keeps the accounting controls explicit. A future AI layer can interpret entries such as <strong>â€œ45 PhonePe teaâ€</strong> and suggest the account, amount, type and category before saving.</p>
       <p class="muted">Credit Card is inactive in V1 and can be added later.</p>
     </section>
   </main>
 
   <dialog id="balancesDialog">
     <form method="dialog" id="balancesForm" class="dialog-card">
-      <div class="section-head"><h2>Set Current Balances</h2><button value="cancel" class="icon-btn" aria-label="Close">×</button></div>
+      <div class="section-head"><h2>Set Current Balances</h2><button value="cancel" class="icon-btn" aria-label="Close">Ã—</button></div>
       <p class="muted">Enter the current amount you want the dashboard to start from.</p>
       <div id="balanceInputs"></div>
       <div class="entry-actions">
@@ -173,7 +178,7 @@
   </dialog>
 
   <footer>
-    <span>Private accounting dashboard • V1</span>
+    <span>Private accounting dashboard â€¢ V1</span>
     <span>Data mode: <strong id="dataMode">Demo</strong></span>
   </footer>
 
@@ -181,3 +186,4 @@
   <script src="app.js"></script>
 </body>
 </html>
+
