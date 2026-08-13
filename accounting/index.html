@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Nigel Thomas – Private Accounting Dashboard</title>
+    <title>Nigel Thomas â€“ Private Accounting Dashboard</title>
 
     <style>
         * {
@@ -390,30 +390,16 @@
 
         <!-- HEADER -->
 
-      <header class="hero">
-    <div class="eyebrow">PRIVATE &bull; PERSONAL</div>
-    <h1>Nigel Thomas Accounting Dashboard</h1>
-    <p class="subtitle">Personal income, expenses, balances and payment tracking.</p>
-
-        <header class="hero">
-            <div class="eyebrow">PRIVATE &bull; PERSONAL</div>
-            <h1>Nigel Thomas Accounting Dashboard</h1>
-            <p class="subtitle">Personal income, expenses, balances and payment tracking.</p>
-            <a href="/" class="home-btn">← Back to Home</a>
-            <div class="status">
-                <span>Data Mode: <strong id="dataMode">Demo</strong></span>
-                <span>UPI: Paytm + GPay + PhonePe combined</span>
-            </div>
-        </header>
- (Add Back to Home link to MYCA accounting)
-
-    <a href="/" class="home-btn">← Back to Home</a>
-
-    <div class="status">
-        <span>Data Mode: <strong id="dataMode">Demo</strong></span>
-        <span>UPI: Paytm + GPay + PhonePe combined</span>
-    </div>
-</header>
+              <header class="hero">
+          <div class="eyebrow">PRIVATE &bull; PERSONAL</div>
+          <h1>Nigel Thomas Accounting Dashboard</h1>
+          <p class="subtitle">Personal income, expenses, balances and payment tracking.</p>
+          <a href="/" class="home-btn">&larr; Back to Home</a>
+          <div class="status">
+              <span>Data Mode: <strong id="dataMode">Demo</strong></span>
+              <span>UPI: Paytm + GPay + PhonePe combined</span>
+          </div>
+      </header>
         <!-- ACCOUNTS -->
         <section class="section">
             <div class="section-head">
@@ -423,7 +409,7 @@
             <div id="accountsGrid" class="account-grid"></div>
             <div class="total-box">
                 <div class="total-label">Total Available Balance</div>
-                <div id="totalBalance" class="total">₹0.00</div>
+                <div id="totalBalance" class="total">â‚¹0.00</div>
                 <div id="balanceUpdated" class="updated">Updated</div>
             </div>
         </section>
@@ -496,27 +482,27 @@
             <div class="reports">
                 <article class="report-card">
                     <span>Today's Revenue</span>
-                    <strong id="todayIncome">₹0.00</strong>
+                    <strong id="todayIncome">â‚¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Today's Expense</span>
-                    <strong id="todayExpense">₹0.00</strong>
+                    <strong id="todayExpense">â‚¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Monthly Revenue</span>
-                    <strong id="monthIncome">₹0.00</strong>
+                    <strong id="monthIncome">â‚¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Monthly Expense</span>
-                    <strong id="monthExpense">₹0.00</strong>
+                    <strong id="monthExpense">â‚¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Today's Expense (UPI)</span>
-                    <strong id="todayExpense2">₹0.00</strong>
+                    <strong id="todayExpense2">â‚¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Monthly Expense (UPI)</span>
-                    <strong id="monthExpense2">₹0.00</strong>
+                    <strong id="monthExpense2">â‚¹0.00</strong>
                 </article>
             </div>
         </section>
@@ -697,7 +683,7 @@
             const rupees = Math.floor(abs / 100);
             const paisaPart = String(abs % 100).padStart(2, '0');
             const sign = paisa < 0 ? '-' : '';
-            return '₹' + sign + Number(rupees).toLocaleString('en-IN') + '.' + paisaPart;
+            return 'â‚¹' + sign + Number(rupees).toLocaleString('en-IN') + '.' + paisaPart;
         }
 
         function parseAmount(rupees, paisa) {
@@ -852,10 +838,10 @@
                 const typeLabel = t.type.charAt(0).toUpperCase() + t.type.slice(1);
                 let accountLabel = getAccountName(t.account);
                 if (isTransfer && t.toAccount) {
-                    accountLabel += ' → ' + getAccountName(t.toAccount);
+                    accountLabel += ' â†’ ' + getAccountName(t.toAccount);
                 }
-                const catDisplay = t.category || '—';
-                const descDisplay = t.description || '—';
+                const catDisplay = t.category || 'â€”';
+                const descDisplay = t.description || 'â€”';
 
                 return `
                     <tr>
@@ -1184,7 +1170,7 @@
                 });
             });
 
-            // Account select change → update toAccount options
+            // Account select change â†’ update toAccount options
             accountSelect.addEventListener('change', updateToAccountOptions);
 
             // Form submit
@@ -1243,7 +1229,7 @@
             bindEvents();
             // Ensure toAccount options are correct after render
             updateToAccountOptions();
-            console.log('✅ Nigel Thomas Accounting Dashboard ready.');
+            console.log('âœ… Nigel Thomas Accounting Dashboard ready.');
         }
 
         // Run
@@ -1252,3 +1238,5 @@
 
 </body>
 </html>
+
+
