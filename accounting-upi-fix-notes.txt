@@ -1,0 +1,93 @@
+ACCOUNTING DASHBOARD — UPI FIX — DEPLOY NOTES
+================================================
+
+THE BUG
+--------
+Your "Monthly Expense (UPI)" and "Today's Expense (UPI)" report
+cards were not actually filtering by UPI. The old code did:
+
+    setText("todayExpense2", fmt(todayExpense));   // same as total
+    setText("monthExpense2", fmt(monthExpense));   // same as total
+
+That's why Monthly Expense and Monthly Expense (UPI) both showed
+₹57.00 — it happened to match only because every expense at the
+time was routed through the old UPI Payments account.
+
+THE FIX
+--------
+UPI Payments is no longer a spendable "account" with its own
+balance that you transfer money into and drain. It's now a tag
+you can put on an expense or income that's paid directly from
+Canara / IDBI / Cash — so the money leaves the real account
+immediately, same as you described. The UPI report cards are
+now a genuine filtered sum.
+
+1) FILE TO REPLACE
+--------------------
+dashboard.js  ->  replace your existing accounting dashboard JS
+                  file with the one delivered here.
+
+2) ONE HTML ADDITION NEEDED
+------------------------------
+In your Add Transaction form, next to the description field
+(or wherever fits your layout), add this checkbox. It only
+needs to show for Expense / Income — the JS already hides it
+automatically when the Transfer tab is active, using the
+"upiTagWrap" id below:
+
+<div id="upiTagWrap" class="field-wrap">
+  <label style="display:flex; align-items:center; gap:8px; font-weight:normal;">
+    <input type="checkbox" id="paidViaUPI">
+    Paid via UPI (Paytm / GPay / PhonePe)
+  </label>
+</div>
+
+Place it inside the same <form id="transactionForm"> as your
+existing Account / Category / Rupees / Paisa / Description
+fields — order doesn't matter functionally.
+
+3) REMOVE THE UPI OPTION FROM YOUR ACCOUNT DROPDOWNS (already handled)
+--------------------------------------------------------------------------
+No HTML change needed here — dashboard.js now only has Canara,
+IDBI, and Cash on Hand in the ACCOUNTS list, so the Account and
+"Transfer to" dropdowns populate automatically without a UPI
+option. Your existing <select id="accountSelect">,
+<select id="toAccountSelect">, and <select id="filterAccount">
+markup stays exactly as-is.
+
+4) ONE-TIME MIGRATION STEP (do this once, right after deploying)
+---------------------------------------------------------------------
+Your current UPI Payments balance is ₹60.00. Since UPI is no
+longer tracked as its own account, that ₹60 needs to be folded
+into whichever real account it actually belongs to.
+
+When you load the dashboard after this update, it will
+automatically pop open "Edit Balances" and show an alert
+reminding you to add ₹60.00 to the correct account (Canara,
+IDBI, or Cash — whichever one that money is actually sitting
+in). Do that once, save, and you're done — the alert won't
+show again.
+
+5) HOW IT WORKS GOING FORWARD
+---------------------------------
+- Paying by UPI from Canara: select Account = Canara Bank,
+  check "Paid via UPI", enter amount, save. Canara's balance
+  drops immediately — no transfer step.
+- Cash expense: leave "Paid via UPI" unchecked.
+- The "Monthly Expense (UPI)" and "Today's Expense (UPI)" cards
+  now correctly total only the transactions where you checked
+  that box.
+- Old transactions that ran through the legacy UPI/Paytm/GPay/
+  PhonePe accounts stay in your transaction history exactly as
+  they were, labelled "(legacy)" — nothing is deleted, and they
+  still count toward historical UPI reporting.
+
+6) DEPLOY (your standard pattern)
+-------------------------------------
+git pull --rebase origin main
+Copy-Item "C:\path\to\dashboard.js" -Destination ".\accounting\dashboard.js" -Force
+# manually add the checkbox HTML from step 2 to your accounting HTML file
+git add -A
+git commit -m "Fix UPI reporting bug; UPI is now a payment tag, not an account"
+git push origin main
+vercel --prod --force
