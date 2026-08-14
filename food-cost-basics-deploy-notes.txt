@@ -1,0 +1,63 @@
+FOOD COST BASICS — DEPLOY NOTES
+================================
+
+1) FILES IN THIS DELIVERY
+--------------------------
+food-cost-basics.html                     -> site root
+assets/food-cost-basics-nigel-a-thomas.jpg -> assets/ folder
+
+2) BLOG.HTML CARD (paste above your "END NEW CARD" anchor)
+------------------------------------------------------------
+<div class="article-card">
+  <h3 class="article-title"><a href="/food-cost-basics.html">Food Cost Basics: Control Cost, Improve Profit, Grow Business</a></h3>
+  <p class="article-meta">F&amp;B Leadership Series &bull; Nigel A. Thomas</p>
+  <p class="article-excerpt">The food cost formula, a worked example, target food cost percentages by concept, and practical ways to cut food cost without cutting quality.</p>
+  <a class="read-more-btn" href="/food-cost-basics.html">Read More &rarr;</a>
+</div>
+<!-- END NEW CARD -->
+
+3) SITEMAP.XML ENTRY
+----------------------
+<url>
+  <loc>https://www.nigelthomas.live/food-cost-basics.html</loc>
+  <lastmod>2026-08-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+4) ONE ITEM TO FIX BEFORE PUBLISHING
+--------------------------------------
+Inside food-cost-basics.html, the "More from the F&B Leadership Series" section
+links to:
+    /food-cost-per-portion-calculation.html
+This is a placeholder — I didn't have the exact slug for your Chicken Tikka
+Masala food-cost-per-portion article on file. Swap it for the real filename
+before you deploy (find/replace in one line).
+
+5) POWERSHELL DEPLOY SEQUENCE (your standard pattern)
+--------------------------------------------------------
+# From your local repo root
+git pull --rebase origin main          # stash/commit accounting/ changes first if it blocks the rebase
+
+Copy-Item "C:\path\to\food-cost-basics.html" -Destination ".\food-cost-basics.html" -Force
+Copy-Item "C:\path\to\food-cost-basics-nigel-a-thomas.jpg" -Destination ".\assets\food-cost-basics-nigel-a-thomas.jpg" -Force
+
+# Insert the blog.html card above the END NEW CARD anchor, and the sitemap.xml
+# <url> block, using your normal editor/script workflow — then:
+
+git add -A
+git commit -m "Add Food Cost Basics article, poster, blog card, sitemap entry"
+git push origin main
+vercel --prod --force
+
+# Verify with cache-buster:
+# https://www.nigelthomas.live/food-cost-basics.html?nocache=<random>
+
+NOTE ON THE SOURCE IMAGE
+---------------------------
+The jfif you uploaded was Chef Mohamed Refaat's own branded infographic
+(his layout, his "R" logo, his credential line). I didn't reuse that design —
+the poster delivered here is an original layout in your dark/gold system,
+built from your art_exhibit_2025.jpg photo (background removed, composited
+into your usual gold-ring circle) and written content adapted from your
+own captions.
