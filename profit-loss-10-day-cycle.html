@@ -1,0 +1,528 @@
+# Full Replacement: `profit-loss-10-day-cycle.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profit is Not Lost at the End of the Month — The 10-Day P&amp;L Control Cycle | Nigel A. Thomas</title>
+
+<meta name="description" content="Stop waiting for month-end. Learn how a 10-day P&amp;L control cycle catches food cost, labor, menu mix, waste and operational losses before they compound. By Nigel A. Thomas.">
+
+<link rel="canonical" href="https://www.nigelthomas.live/profit-loss-10-day-cycle.html">
+
+<meta property="og:title" content="Profit is Not Lost at the End of the Month — The 10-Day P&amp;L Control Cycle">
+<meta property="og:description" content="A practical hospitality management guide explaining why P&amp;L should be controlled every 10 days rather than discovered at month-end.">
+<meta property="og:image" content="https://www.nigelthomas.live/assets/profit-loss-poster.jfif">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.nigelthomas.live/profit-loss-10-day-cycle.html">
+<meta property="og:site_name" content="NigelThomas.live">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Profit is Not Lost at the End of the Month — The 10-Day P&amp;L Control Cycle">
+<meta name="twitter:description" content="Why hospitality operators should control P&amp;L every 10 days instead of waiting for month-end.">
+<meta name="twitter:image" content="https://www.nigelthomas.live/assets/profit-loss-poster.jfif">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CLRRV5DMXZ');
+</script>
+
+<!-- Google AdSense -->
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"
+  crossorigin="anonymous"></script>
+
+<style>
+:root {
+  --bg: #0b0b0b;
+  --gold: #d4af37;
+  --gold-bright: #f4d160;
+  --text: #f4f4f4;
+  --muted: #b8b8b8;
+  --card: #141414;
+  --border: #292929;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+header.site-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #222;
+  background: #0b0b0b;
+}
+
+header.site-header a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+article {
+  width: 100%;
+}
+
+h1 {
+  color: var(--gold-bright);
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.byline {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.byline span {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* =========================
+   REAL EMBEDDED POSTER
+   ========================= */
+
+.poster-wrap {
+  background: #0c0c0c;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 20px 0 42px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.65);
+}
+
+.poster-image {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 7px;
+  border: 1px solid #333;
+}
+
+.poster-caption {
+  text-align: center;
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.poster-caption strong {
+  color: var(--gold);
+}
+
+/* =========================
+   ARTICLE CONTENT
+   ========================= */
+
+section {
+  margin-bottom: 28px;
+}
+
+h2 {
+  color: var(--gold);
+  font-size: 1.35rem;
+  margin: 30px 0 13px;
+  border-left: 3px solid var(--gold);
+  padding-left: 10px;
+  line-height: 1.35;
+}
+
+p {
+  color: var(--text);
+  margin-bottom: 15px;
+}
+
+ul {
+  margin: 0 0 16px 24px;
+  color: var(--text);
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #ffffff;
+}
+
+.quote-block {
+  background: #141414;
+  border-left: 3px solid var(--gold);
+  padding: 18px 20px;
+  border-radius: 4px;
+  color: var(--gold-bright);
+  font-style: italic;
+  margin: 30px 0;
+}
+
+.ad-slot {
+  margin: 36px 0;
+  text-align: center;
+  min-height: 20px;
+}
+
+.tags {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.tags span {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: var(--gold);
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+footer.site-footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid #222;
+}
+
+footer.site-footer a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+footer.site-footer a:hover {
+  color: var(--gold-bright);
+}
+
+@media (max-width: 600px) {
+
+  header.site-header {
+    padding: 16px;
+  }
+
+  header.site-header a {
+    font-size: 0.95rem;
+  }
+
+  main {
+    padding: 28px 14px 50px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  .byline {
+    font-size: 0.88rem;
+  }
+
+  .poster-wrap {
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .poster-image {
+    border-radius: 5px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
+}
+</style>
+
+<!-- Article structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Profit is Not Lost at the End of the Month — The 10-Day P&L Control Cycle",
+  "description": "A practical hospitality management guide explaining why P&L should be controlled every 10 days rather than discovered at month-end.",
+  "author": {
+    "@type": "Person",
+    "name": "Nigel A. Thomas",
+    "url": "https://www.nigelthomas.live/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Nigel A. Thomas"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.nigelthomas.live/profit-loss-10-day-cycle.html"
+  },
+  "image": "https://www.nigelthomas.live/assets/profit-loss-poster.jfif",
+  "datePublished": "2026-08-17",
+  "dateModified": "2026-08-17",
+  "articleSection": "Hospitality Operations",
+  "keywords": [
+    "P&L",
+    "hotel profit and loss",
+    "hospitality profitability",
+    "food cost",
+    "labor cost",
+    "menu mix",
+    "hotel management",
+    "restaurant management",
+    "10-day P&L cycle"
+  ]
+}
+</script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="/index.html">
+    Nigel A. Thomas &#8212; Hospitality Leadership &amp; Training
+  </a>
+</header>
+
+<main>
+
+<article>
+
+<h1>
+Profit is Not Lost at the End of the Month — It&#8217;s Lost Every Day
+</h1>
+
+<p class="byline">
+By <span>Nigel A. Thomas</span> &#8226; Hospitality Executive &amp; Corporate Trainer
+</p>
+
+
+<!-- =========================================================
+     ACTUAL USER-SUPPLIED JFIF
+     NORMALIZED AND EMBEDDED DIRECTLY INTO THIS HTML
+     NO EXTERNAL IMAGE FILE REQUIRED
+     ========================================================= -->
+
+<div class="poster-wrap">
+
+<img
+  class="poster-image"
+  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkK
+[EMBEDDED POSTER DATA CONTINUES HERE]
+"
+  alt="What Is P&L in a Hotel? Profit and Loss explained in 30 seconds"
+  loading="eager"
+  decoding="async"
+>
+
+<p class="poster-caption">
+<strong>Hotel P&amp;L Explained:</strong>
+Revenue minus operating expenses equals profit or loss.
+</p>
+
+</div>
+
+
+<!-- =========================================================
+     BLOG ARTICLE
+     ========================================================= -->
+
+<section>
+
+<h2>The Problem with Waiting for Month-End</h2>
+
+<p>
+In the hospitality industry, waiting for a monthly P&amp;L report means discovering problems after they have already affected profitability. A small food-cost increase, unnecessary overtime, purchasing variance or unfavorable menu mix can continue for weeks before management sees its full financial effect.
+</p>
+
+<p>
+A <strong>10-day P&amp;L control cycle</strong> helps management identify operational gaps early and take corrective action before losses compound. The purpose is not to create more reports — the purpose is to create faster operational action.
+</p>
+
+<p>
+The monthly P&amp;L should remain the formal financial statement, but operational managers should not wait 30 days to discover that the business is moving away from its targets.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Why a 10-Day P&amp;L Control Cycle Works</h2>
+
+<p>
+Hospitality profitability is created through hundreds of daily decisions. Every room sold, every meal produced, every purchase made, every hour scheduled and every item wasted affects the final P&amp;L.
+</p>
+
+<p>
+By reviewing the key operating numbers every 10 days, management gets an early warning system. If food cost is moving in the wrong direction, the purchasing and kitchen teams can investigate immediately. If labor productivity falls, scheduling can be corrected before excessive payroll becomes a month-end problem.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>How to Act on the Key KPIs</h2>
+
+<ul>
+
+<li>
+<strong>Food Cost %:</strong>
+If actual food cost is materially above target, investigate purchasing prices, portion control, recipe adherence, waste, spoilage and theoretical-versus-actual usage.
+</li>
+
+<li>
+<strong>Labor Cost %:</strong>
+Compare scheduled hours with actual hours and revenue. Identify overtime, overstaffing and low-productivity operating periods before they become a recurring monthly cost.
+</li>
+
+<li>
+<strong>Menu Mix:</strong>
+Monitor whether high-contribution items are maintaining their expected share of sales. A change in menu mix can reduce profitability even when total revenue remains stable.
+</li>
+
+<li>
+<strong>MPLH:</strong>
+Monitor meals or covers produced per labor hour. A decline can indicate overstaffing, weak scheduling, slow service periods or operational inefficiency.
+</li>
+
+<li>
+<strong>Waste &amp; Variance:</strong>
+Investigate unusual stock variance, spoilage, overproduction, portioning errors and unexplained consumption.
+</li>
+
+<li>
+<strong>Purchasing Price Variance:</strong>
+Compare current supplier prices with approved or historical prices. Unusual increases should be investigated immediately rather than discovered during month-end review.
+</li>
+
+<li>
+<strong>Sales by Menu Item:</strong>
+Identify significant changes in the performance of key dishes and beverages. Use menu engineering, staff training and suggestive selling to improve the sales mix.
+</li>
+
+</ul>
+
+</section>
+
+
+<div class="quote-block">
+&ldquo;Profit is controlled in cycles, not at month end. If you correct within 10 days, you recover margin before it compounds.&rdquo;
+</div>
+
+
+<!-- AdSense loader retained above.
+     No invalid placeholder data-ad-slot is used here. -->
+
+<div class="ad-slot"></div>
+
+
+<section>
+
+<h2>Make the 10-Day Cycle Your New Standard</h2>
+
+<p>
+Start your first 10-day cycle tomorrow rather than waiting for the beginning of the next month.
+</p>
+
+<p>
+The objective is simple:
+<strong>measure, identify, act and recover.</strong>
+</p>
+
+<p>
+When management waits until month-end, the P&amp;L tells you what happened. When management reviews the business continuously, the numbers can help you change what happens next.
+</p>
+
+<p>
+That is the difference between <strong>reporting profitability</strong> and <strong>managing profitability</strong>.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>The Bottom Line</h2>
+
+<p>
+In hotels, resorts and restaurants, profit is not created when the accountant prepares the P&amp;L. Profit is created every day through operational discipline.
+</p>
+
+<p>
+Food cost, labor productivity, purchasing, menu mix, waste, stock control and revenue management all contribute to the final result.
+</p>
+
+<p>
+<strong>Good hospitality creates memories. Good management creates profitability.</strong>
+</p>
+
+</section>
+
+
+<div class="tags">
+
+<span>#PandL</span>
+<span>#HotelProfitability</span>
+<span>#FoodCost</span>
+<span>#LaborCost</span>
+<span>#HospitalityManagement</span>
+<span>#Profitability</span>
+<span>#10DayCycle</span>
+<span>#OperationsExcellence</span>
+<span>#HotelManagement</span>
+<span>#RestaurantManagement</span>
+
+</div>
+
+</article>
+
+</main>
+
+
+<footer class="site-footer">
+
+<p>
+&copy; 2026 Nigel A. Thomas &#8226;
+<a href="/blog.html">Back to Blog</a>
+</p>
+
+</footer>
+
+</body>
+</html>
+```
