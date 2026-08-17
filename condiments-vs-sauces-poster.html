@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Condiments vs Sauces — F&B Terminology Poster | Nigel A Thomas</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  :root{
+    --bg:#0b0b0b;
+    --gold:#d4af37;
+    --gold-soft:#e8cf7a;
+    --navy:#122033;
+    --navy-line:#2a3c52;
+    --green:#12261c;
+    --green-line:#294a37;
+    --cream:#f4ede0;
+    --muted:#a9a49a;
+    --sans:'Segoe UI', Arial, sans-serif;
+  }
+  body{
+    background:var(--bg);
+    font-family:var(--sans);
+    color:var(--cream);
+    display:flex;
+    justify-content:center;
+    padding:2.5rem 1rem;
+  }
+  .poster{
+    width:100%;
+    max-width:820px;
+    border:1px solid #2a2a2a;
+    border-radius:14px;
+    padding:2.4rem 2rem 2rem;
+    background:
+      radial-gradient(circle at 15% 0%, rgba(212,175,55,0.07), transparent 55%),
+      var(--bg);
+  }
+  /* Eyebrow */
+  .eyebrow{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:1rem;flex-wrap:wrap;
+    border-bottom:1px solid #262626;
+    padding-bottom:1rem;margin-bottom:1.6rem;
+  }
+  .eyebrow .tag{
+    font-size:0.72rem;font-weight:700;letter-spacing:0.14em;
+    text-transform:uppercase;color:var(--muted);
+  }
+  .eyebrow .part{
+    font-size:0.72rem;font-weight:800;letter-spacing:0.1em;
+    color:var(--bg);background:var(--gold);
+    padding:0.3rem 0.75rem;border-radius:4px;
+  }
+  /* Title */
+  h1{
+    font-size:clamp(2.1rem,6vw,3.1rem);
+    font-weight:900;text-align:center;
+    letter-spacing:0.01em;line-height:1.05;
+    margin-bottom:0.6rem;
+  }
+  h1 .vs{
+    display:inline-block;
+    font-size:0.55em;color:var(--gold);
+    border:1px solid var(--gold);border-radius:50%;
+    width:1.5em;height:1.5em;line-height:1.5em;
+    text-align:center;vertical-align:middle;margin:0 0.15em;
+  }
+  h1 .sauce-word{color:#eaeaea;}
+  h1 .cond-word{color:var(--gold);}
+  .subtitle{
+    text-align:center;font-style:italic;color:var(--muted);
+    font-size:1.05rem;margin-bottom:2.2rem;
+  }
+  .subtitle::before,.subtitle::after{content:"— ";}
+  .subtitle::after{content:" —";}
+
+  /* Two columns */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.6rem;}
+  .card{border-radius:10px;padding:1.5rem 1.4rem;}
+  .card.sauce{background:var(--navy);border:1px solid var(--navy-line);}
+  .card.condiment{background:var(--green);border:1px solid var(--green-line);}
+  .card .icon{
+    width:44px;height:44px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:0.9rem;font-size:1.3rem;
+    border:1px solid rgba(212,175,55,0.5);color:var(--gold);
+  }
+  .card h2{font-size:1.3rem;font-weight:800;letter-spacing:0.03em;margin-bottom:0.7rem;}
+  .card.sauce h2{color:#eaeaea;}
+  .card.condiment h2{color:var(--gold-soft);}
+  .card p{font-size:0.88rem;line-height:1.55;color:var(--muted);margin-bottom:1rem;}
+  .card p strong{color:var(--cream);}
+  .card .ex-label{
+    font-size:0.68rem;font-weight:800;letter-spacing:0.12em;
+    text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;
+  }
+  .card ul{list-style:none;margin-bottom:1rem;}
+  .card ul li{
+    font-size:0.86rem;padding:0.28rem 0 0.28rem 1.1rem;
+    position:relative;color:#d9d4c8;
+  }
+  .card ul li::before{content:"•";position:absolute;left:0;color:var(--gold);}
+  .card .note{
+    display:flex;align-items:center;gap:0.6rem;
+    font-size:0.78rem;color:var(--muted);
+    border-top:1px solid rgba(255,255,255,0.08);padding-top:0.8rem;
+  }
+  .card .note .dot{
+    width:22px;height:22px;min-width:22px;border-radius:50%;
+    background:rgba(212,175,55,0.15);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;font-size:0.7rem;
+  }
+
+  /* Remember band */
+  .remember{
+    background:#161616;border:1px solid #2a2a2a;border-radius:10px;
+    padding:1.3rem 1.5rem;margin-bottom:1.2rem;
+  }
+  .remember .heading{
+    font-size:0.72rem;font-weight:800;letter-spacing:0.14em;
+    text-transform:uppercase;color:var(--gold);text-align:center;margin-bottom:1rem;
+  }
+  .remember .row{
+    display:flex;align-items:center;justify-content:center;gap:1.4rem;flex-wrap:wrap;
+    text-align:center;
+  }
+  .remember .side h3{font-size:1.15rem;font-weight:900;margin-bottom:0.15rem;}
+  .remember .side.s1 h3{color:#eaeaea;}
+  .remember .side.s2 h3{color:var(--gold-soft);}
+  .remember .side p{font-size:0.78rem;color:var(--muted);}
+  .remember .versus{
+    width:36px;height:36px;border-radius:50%;border:1px solid var(--gold);
+    color:var(--gold);display:flex;align-items:center;justify-content:center;
+    font-size:0.72rem;font-weight:800;
+  }
+  .overlap{
+    font-size:0.82rem;color:var(--muted);text-align:center;
+    margin-top:1rem;padding-top:1rem;border-top:1px solid #262626;
+    line-height:1.6;
+  }
+  .overlap strong{color:var(--cream);}
+
+  /* Example row */
+  .example{
+    display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem;
+  }
+  .ex-box{
+    background:#141414;border:1px solid #262626;border-radius:10px;
+    padding:1.1rem;text-align:center;
+  }
+  .ex-box .plate{
+    font-size:2rem;margin-bottom:0.4rem;
+  }
+  .ex-box .label{font-size:0.85rem;color:var(--muted);margin-bottom:0.3rem;}
+  .ex-box .result{font-size:0.95rem;font-weight:800;}
+  .ex-box.s1 .result{color:#eaeaea;}
+  .ex-box.s2 .result{color:var(--gold-soft);}
+
+  /* Tip */
+  .tip{
+    display:flex;gap:0.8rem;align-items:flex-start;
+    background:linear-gradient(135deg, rgba(212,175,55,0.1), transparent);
+    border:1px solid rgba(212,175,55,0.35);border-radius:10px;
+    padding:1.1rem 1.3rem;margin-bottom:1.8rem;
+  }
+  .tip .bulb{color:var(--gold);font-size:1.1rem;}
+  .tip p{font-size:0.85rem;line-height:1.6;color:#d9d4c8;}
+  .tip strong{color:var(--gold-soft);}
+
+  /* Footer */
+  .footer{
+    text-align:center;border-top:1px solid #262626;padding-top:1.2rem;
+  }
+  .footer .name{font-size:1rem;font-weight:800;color:var(--gold);letter-spacing:0.04em;}
+  .footer .role{font-size:0.74rem;color:var(--muted);margin-top:0.2rem;}
+
+  @media (max-width:600px){
+    .cols,.example{grid-template-columns:1fr;}
+    .remember .row{gap:1rem;}
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <div class="eyebrow">
+    <span class="tag">Hospitality Metrics · F&amp;B Terminology</span>
+    <span class="part">Part 12</span>
+  </div>
+
+  <h1><span class="sauce-word">Condiments</span><span class="vs">vs</span><span class="cond-word">Sauces</span></h1>
+  <p class="subtitle">Are they really the same?</p>
+
+  <div class="cols">
+    <div class="card sauce">
+      <div class="icon">🥄</div>
+      <h2>Sauce</h2>
+      <p>A sauce is generally <strong>prepared</strong> to accompany, enhance, or add <strong>flavour and moisture</strong> to a dish.</p>
+      <div class="ex-label">Examples</div>
+      <ul>
+        <li>Béchamel</li>
+        <li>Demi-glace</li>
+        <li>Tomato sauce</li>
+        <li>Hollandaise</li>
+        <li>Mushroom sauce</li>
+        <li>Pepper sauce</li>
+      </ul>
+      <div class="note"><span class="dot">🍽</span> Usually an <strong style="color:#eaeaea">integral part</strong> of the dish, plated with it.</div>
+    </div>
+
+    <div class="card condiment">
+      <div class="icon">🍶</div>
+      <h2>Condiment</h2>
+      <p>A condiment is added according to the <strong>guest's personal preference</strong>, usually at the table or while eating.</p>
+      <div class="ex-label">Examples</div>
+      <ul>
+        <li>Ketchup</li>
+        <li>Mustard</li>
+        <li>Mayonnaise</li>
+        <li>Pickles</li>
+        <li>Chutneys</li>
+        <li>Relishes</li>
+      </ul>
+      <div class="note"><span class="dot">👤</span> The <strong style="color:var(--gold-soft)">guest decides</strong> how much to use.</div>
+    </div>
+  </div>
+
+  <div class="remember">
+    <div class="heading">The easiest way to remember</div>
+    <div class="row">
+      <div class="side s1"><h3>Sauce</h3><p>Complements the dish</p></div>
+      <div class="versus">VS</div>
+      <div class="side s2"><h3>Condiment</h3><p>Customises the dish</p></div>
+    </div>
+    <div class="overlap">However, there can be <strong>overlap</strong>. Some products can be described as either a sauce or a condiment, depending on how they are prepared, served, and used.</div>
+  </div>
+
+  <div class="example">
+    <div class="ex-box s1">
+      <div class="plate">🍔</div>
+      <div class="label">Burger + prepared sauce, plated with it</div>
+      <div class="result">= SAUCE</div>
+    </div>
+    <div class="ex-box s2">
+      <div class="plate">🍔</div>
+      <div class="label">Burger + ketchup / mustard on the side</div>
+      <div class="result">= CONDIMENT</div>
+    </div>
+  </div>
+
+  <div class="tip">
+    <span class="bulb">💡</span>
+    <p><strong>F&amp;B Tip:</strong> Understanding these small terminology differences can make a big difference in professional communication, menu planning, and service standards.</p>
+  </div>
+
+  <div class="footer">
+    <div class="name">Nigel A. Thomas</div>
+    <div class="role">Hospitality Leadership &amp; F&amp;B Operations Training · nigelthomas.live</div>
+  </div>
+
+</div>
+</body>
+</html>
