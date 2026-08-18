@@ -360,6 +360,58 @@
             gap: 10px;
             margin-top: 18px;
         }
+        .progress-wrap {
+            margin-top: 18px;
+        }
+        .progress-track {
+            width: 100%;
+            height: 14px;
+            background: #111;
+            border: 1px solid #3b3b3b;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+        .progress-label {
+            margin-top: 8px;
+            color: #aaa;
+            font-size: 13px;
+        }
+        .chart {
+            display: grid;
+            gap: 12px;
+        }
+        .chart-row {
+            display: grid;
+            grid-template-columns: 140px 1fr 100px;
+            align-items: center;
+            gap: 12px;
+        }
+        .chart-label {
+            color: #ddd;
+            font-size: 13px;
+        }
+        .chart-bar-track {
+            height: 16px;
+            background: #111;
+            border: 1px solid #3b3b3b;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .chart-bar-fill {
+            height: 100%;
+            background: #d4af37;
+        }
+        .chart-value {
+            color: #d4af37;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: right;
+        }
         footer {
             text-align: center;
             color: #777;
@@ -399,7 +451,7 @@
           <a href="/" class="home-btn">&larr; Back to Home</a>
           <div class="status">
               <span>Data Mode: <strong id="dataMode">Demo</strong></span>
-              <span>UPI: Paytm + GPay + PhonePe combined</span>
+              <span>UPI: Payment method only (Cash or UPI at entry)</span>
           </div>
       </header>
         <!-- ACCOUNTS -->
@@ -438,8 +490,16 @@
 
                 <div class="form-grid">
                     <div class="field">
-                        <label for="accountSelect">Account</label>
+                        <label for="accountSelect">Paid From</label>
                         <select id="accountSelect" required></select>
+                    </div>
+
+                    <div class="field" id="paymentMethodWrap">
+                        <label for="paymentMethod">Payment Method</label>
+                        <select id="paymentMethod">
+                            <option value="cash">Cash in Hand</option>
+                            <option value="upi">UPI</option>
+                        </select>
                     </div>
 
                     <div class="field hidden" id="toAccountWrap">
@@ -514,6 +574,34 @@
                     <strong id="monthExpense2">₹0.00</strong>
                 </article>
             </div>
+        </section>
+
+        <!-- SAVINGS PLAN -->
+        <section class="section">
+            <div class="section-head"><h2>Savings Plan</h2></div>
+            <div class="reports">
+                <article class="report-card">
+                    <span>Net Savings (This Month)</span>
+                    <strong id="netSavings">â‚¹0.00</strong>
+                </article>
+                <article class="report-card">
+                    <span>Projected Month-End Savings</span>
+                    <strong id="projectedSavings">â‚¹0.00</strong>
+                </article>
+            </div>
+            <div class="progress-wrap">
+                <div class="progress-track">
+                    <div id="savingsProgressBar" class="progress-fill" style="width:0%"></div>
+                </div>
+                <div id="savingsProgressLabel" class="progress-label">0% of â‚¹25,000 target</div>
+            </div>
+            <div id="savingsStatus" class="message"></div>
+        </section>
+
+        <!-- CATEGORY BREAKDOWN -->
+        <section class="section">
+            <div class="section-head"><h2>Expense Breakdown by Category (This Month)</h2></div>
+            <div id="categoryChart" class="chart"></div>
         </section>
 
         <!-- TRANSACTION HISTORY -->
@@ -596,20 +684,19 @@
             { id: 'canara', name: 'Canara Bank', icon: 'CAN', balance: 25000 },
             { id: 'idbi', name: 'IDBI Bank', icon: 'IDB', balance: 15000 },
             { id: 'cash', name: 'Cash on Hand', icon: 'CASH', balance: 5000 },
-            { id: 'upi', name: 'UPI Payments', icon: 'UPI', balance: 10000 },
         ];
 
         const SAMPLE_TRANSACTIONS = [
-            { id: 'tx1', date: getTodayStr(), account: 'upi', type: 'expense', amount: 4500, category: 'Food & Beverage',
-                description: 'Lunch at Saravana Bhavan', toAccount: '' },
+            { id: 'tx1', date: getTodayStr(), account: 'cash', type: 'expense', amount: 4500, category: 'Food & Beverage',
+                description: 'Lunch at Saravana Bhavan', toAccount: '', payment_method: 'upi' },
             { id: 'tx2', date: getTodayStr(), account: 'cash', type: 'income', amount: 20000, category: 'Salary',
-                description: 'Freelance payment', toAccount: '' },
+                description: 'Freelance payment', toAccount: '', payment_method: 'cash' },
             { id: 'tx3', date: getTodayStr(), account: 'canara', type: 'transfer', amount: 5000, category: 'Transfer',
-                description: 'To UPI for daily use', toAccount: 'upi' },
-            { id: 'tx4', date: getYesterdayStr(), account: 'upi', type: 'expense', amount: 1200, category: 'Phone Charges',
-                description: 'Mobile recharge', toAccount: '' },
+                description: 'To cash for daily use', toAccount: 'cash', payment_method: '' },
+            { id: 'tx4', date: getYesterdayStr(), account: 'canara', type: 'expense', amount: 1200, category: 'Phone Charges',
+                description: 'Mobile recharge', toAccount: '', payment_method: 'upi' },
             { id: 'tx5', date: getYesterdayStr(), account: 'idbi', type: 'income', amount: 45000, category: 'Salary',
-                description: 'Monthly salary', toAccount: '' },
+                description: 'Monthly salary', toAccount: '', payment_method: 'cash' },
         ];
 
         let accounts = [];
@@ -632,6 +719,8 @@
         const transactionForm = $('#transactionForm');
         const transactionType = $('#transactionType');
         const accountSelect = $('#accountSelect');
+        const paymentMethodWrap = $('#paymentMethodWrap');
+        const paymentMethodSelect = $('#paymentMethod');
         const toAccountSelect = $('#toAccountSelect');
         const toAccountWrap = $('#toAccountWrap');
         const categoryWrap = $('#categoryWrap');
@@ -725,7 +814,9 @@
 
         function getAccountName(id) {
             const a = accounts.find(acc => acc.id === id);
-            return a ? a.name : id;
+            if (a) return a.name;
+            if (id === 'upi') return 'UPI (legacy)';
+            return id;
         }
 
         function getAccountIcon(id) {
@@ -769,6 +860,10 @@
                     const data = JSON.parse(raw);
                     accounts = data.accounts || [];
                     transactions = data.transactions || [];
+                    // MYCA: UPI is no longer a balance-holding account.
+                    // Its prior balance is intentionally dropped (re-enter
+                    // manually via Edit Balances if needed).
+                    accounts = accounts.filter(a => a.id !== 'upi');
                     // ensure all default accounts exist
                     ACCOUNT_DEFAULTS.forEach(def => {
                         if (!accounts.find(a => a.id === def.id)) {
@@ -777,6 +872,12 @@
                     });
                     // ensure balances are numbers
                     accounts.forEach(a => a.balance = Number(a.balance) || 0);
+                    // MYCA: backfill payment_method on legacy transactions
+                    transactions.forEach(t => {
+                        if (!t.payment_method) {
+                            t.payment_method = (t.account === 'upi' || t.toAccount === 'upi') ? 'upi' : 'cash';
+                        }
+                    });
                     return;
                 } catch (_) { /* fall through */ }
             }
@@ -906,6 +1007,8 @@
             let todayUpiExp = 0,
                 monthUpiExp = 0;
 
+            const categoryTotals = {};
+
             transactions.forEach(t => {
                 const isToday = t.date === todayStr;
                 const isMonth = t.date && t.date.startsWith(monthStr);
@@ -917,8 +1020,12 @@
                 } else if (t.type === 'expense') {
                     if (isToday) todayExp += amount;
                     if (isMonth) monthExp += amount;
-                    if (isToday && t.account === 'upi') todayUpiExp += amount;
-                    if (isMonth && t.account === 'upi') monthUpiExp += amount;
+                    if (isToday && t.payment_method === 'upi') todayUpiExp += amount;
+                    if (isMonth && t.payment_method === 'upi') monthUpiExp += amount;
+                    if (isMonth) {
+                        const cat = t.category || 'Other';
+                        categoryTotals[cat] = (categoryTotals[cat] || 0) + amount;
+                    }
                 } else if (t.type === 'transfer') {
                     // Transfers are not income or expense
                 }
@@ -930,6 +1037,82 @@
             monthExpense.textContent = formatMoney(monthExp);
             todayExpense2.textContent = formatMoney(todayUpiExp);
             monthExpense2.textContent = formatMoney(monthUpiExp);
+
+            renderSavingsPlan(monthInc, monthExp);
+            renderCategoryChart(categoryTotals);
+        }
+
+        // ================================================================
+        //  SAVINGS PLAN (target: Rs 25,000 net savings per month)
+        // ================================================================
+
+        const SAVINGS_TARGET = 2500000; // paisa = Rs 25,000.00
+
+        function renderSavingsPlan(monthInc, monthExp) {
+            const netSavings = monthInc - monthExp;
+
+            const now = new Date();
+            const dayOfMonth = now.getDate();
+            const daysInMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0).getDate();
+            const daysRemaining = daysInMonth - dayOfMonth;
+
+            const avgDailyNet = dayOfMonth > 0 ? netSavings / dayOfMonth : 0;
+            const projected = Math.round(avgDailyNet * daysInMonth);
+
+            const pct = Math.max(0, Math.min(100, (netSavings / SAVINGS_TARGET) * 100));
+
+            const netSavingsEl = $('#netSavings');
+            const projectedSavingsEl = $('#projectedSavings');
+            const savingsProgressBar = $('#savingsProgressBar');
+            const savingsProgressLabel = $('#savingsProgressLabel');
+            const savingsStatusEl = $('#savingsStatus');
+
+            if (netSavingsEl) netSavingsEl.textContent = formatMoney(netSavings);
+            if (projectedSavingsEl) projectedSavingsEl.textContent = formatMoney(projected);
+            if (savingsProgressBar) savingsProgressBar.style.width = pct.toFixed(1) + '%';
+            if (savingsProgressLabel) savingsProgressLabel.textContent = pct.toFixed(0) + '% of Rs 25,000 target';
+
+            if (savingsStatusEl) {
+                if (projected >= SAVINGS_TARGET) {
+                    savingsStatusEl.textContent = 'On track to hit the Rs 25,000 target by month end (' + daysRemaining + ' days left).';
+                    savingsStatusEl.className = 'message';
+                } else {
+                    const shortfall = SAVINGS_TARGET - projected;
+                    savingsStatusEl.textContent = 'Projected to fall short by ' + formatMoney(shortfall) + ' (' + daysRemaining + ' days left this month).';
+                    savingsStatusEl.className = 'message error';
+                }
+            }
+        }
+
+        // ================================================================
+        //  CATEGORY BREAKDOWN CHART (this month's expenses)
+        // ================================================================
+
+        function renderCategoryChart(categoryTotals) {
+            const container = $('#categoryChart');
+            if (!container) return;
+
+            const entries = Object.entries(categoryTotals).sort((a, b) => b[1] - a[1]);
+
+            if (entries.length === 0) {
+                container.innerHTML = '<div class="empty">No expenses recorded this month yet.</div>';
+                return;
+            }
+
+            const max = entries[0][1];
+
+            container.innerHTML = entries.map(([cat, amount]) => {
+                const widthPct = max > 0 ? (amount / max) * 100 : 0;
+                return `
+                    <div class="chart-row">
+                        <div class="chart-label">${cat}</div>
+                        <div class="chart-bar-track">
+                            <div class="chart-bar-fill" style="width:${widthPct.toFixed(1)}%"></div>
+                        </div>
+                        <div class="chart-value">${formatMoney(amount)}</div>
+                    </div>
+                `;
+            }).join('');
         }
 
         // ================================================================
@@ -1015,6 +1198,7 @@
             paisaInput.value = '';
             descriptionInput.value = '';
             categorySelect.value = 'Food & Beverage';
+            if (paymentMethodSelect) paymentMethodSelect.value = 'cash';
             formMessage.textContent = '';
             formMessage.className = 'message';
             // Reset to expense tab
@@ -1036,6 +1220,7 @@
             const isTransfer = type === 'transfer';
             toAccountWrap.classList.toggle('hidden', !isTransfer);
             categoryWrap.classList.toggle('hidden', isTransfer);
+            paymentMethodWrap.classList.toggle('hidden', isTransfer);
 
             const labels = { expense: 'SAVE EXPENSE', income: 'SAVE REVENUE', transfer: 'SAVE TRANSFER' };
             saveBtn.textContent = labels[type] || 'SAVE';
@@ -1102,6 +1287,8 @@
                 }
             }
 
+            const paymentMethod = type === 'transfer' ? '' : (paymentMethodSelect.value || 'cash');
+
             const tx = {
                 id: generateId(),
                 date: getTodayStr(),
@@ -1111,6 +1298,7 @@
                 category: category || (type === 'transfer' ? 'Transfer' : 'Other'),
                 description: description,
                 toAccount: type === 'transfer' ? toAccount : '',
+                payment_method: paymentMethod,
             };
 
             addTransaction(tx);
