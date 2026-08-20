@@ -1,0 +1,604 @@
+# ================================================================
+# NIGELTHOMAS.LIVE — WINE 750 ML ARTICLE — ONE-SHOT PUBLISH SCRIPT
+# Run this PowerShell script from:
+# C:\Users\admin\Desktop\nigelthomas-portfolio
+#
+# It will:
+# 1. Create why-is-a-wine-bottle-750ml.html
+# 2. Copy wines(1).jpg into assets\why-is-a-wine-bottle-750ml.jpg
+# 3. Add the wine article and cheese article links to blog.html
+# 4. Add the wine URL to sitemap.xml
+# 5. Create timestamped backups before changing blog.html/sitemap.xml
+# 6. Validate the new article, image, blog link and sitemap URL
+#
+# NOTE: Put this .ps1 file and wines(1).jpg in the repository root
+# before running it, or change $SourceImage below.
+# ================================================================
+
+$ErrorActionPreference = "Stop"
+Set-StrictMode -Version Latest
+
+$Repo = (Get-Location).Path
+$SourceImage = Join-Path $Repo "wines(1).jpg"
+$AssetsDir = Join-Path $Repo "assets"
+$ArticleFile = Join-Path $Repo "why-is-a-wine-bottle-750ml.html"
+$BlogFile = Join-Path $Repo "blog.html"
+$SitemapFile = Join-Path $Repo "sitemap.xml"
+$TargetImage = Join-Path $AssetsDir "why-is-a-wine-bottle-750ml.jpg"
+
+$WineUrl = "https://www.nigelthomas.live/why-is-a-wine-bottle-750ml.html"
+$CheeseUrl = "https://www.nigelthomas.live/types-of-cheese-used-in-hotels.html"
+$Today = "2026-08-20"
+
+Write-Host "============================================================" -ForegroundColor DarkYellow
+Write-Host " NigelThomas.live — Wine 750 ml One-Shot Publisher" -ForegroundColor Yellow
+Write-Host "============================================================" -ForegroundColor DarkYellow
+Write-Host ""
+
+if (-not (Test-Path $BlogFile)) { throw "blog.html was not found in $Repo" }
+if (-not (Test-Path $SitemapFile)) { throw "sitemap.xml was not found in $Repo" }
+if (-not (Test-Path $SourceImage)) {
+    throw "wines(1).jpg was not found in the repository root. Put the uploaded JPG beside this script and run again."
+}
+
+New-Item -ItemType Directory -Force -Path $AssetsDir | Out-Null
+
+$stamp = Get-Date -Format "yyyyMMdd-HHmmss"
+$BlogBackup = "$BlogFile.backup-$stamp"
+$SitemapBackup = "$SitemapFile.backup-$stamp"
+
+Write-Host "Step 1: Creating backups..." -ForegroundColor Cyan
+Copy-Item $BlogFile $BlogBackup -Force
+Copy-Item $SitemapFile $SitemapBackup -Force
+
+Write-Host "Step 2: Copying wine poster into assets..." -ForegroundColor Cyan
+Copy-Item $SourceImage $TargetImage -Force
+
+Write-Host "Step 3: Creating the 2000+ word wine article..." -ForegroundColor Cyan
+
+$Article = @'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Why Is a Wine Bottle 750 ml? History, Sommelier Tasting & Food Pairing | Nigel A. Thomas</title>
+
+<meta name="description" content="Why is a wine bottle 750 ml? Explore the history, trade mathematics, Bordeaux barrels, 6 and 12 bottle cases, sommelier tasting, Old World and New World wines, cheese-board pairings and practical hospitality service.">
+
+<meta name="keywords" content="why is a wine bottle 750 ml, 750ml wine bottle history, wine tasting, sommelier, Old World wine, New World wine, wine and cheese pairing, cheese board, hospitality training, wine service, Nigel Thomas">
+
+<meta name="author" content="Nigel A. Thomas">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.nigelthomas.live/why-is-a-wine-bottle-750ml.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Why Is a Wine Bottle 750 ml?">
+<meta property="og:description" content="The history, mathematics and hospitality story behind the 750 ml wine bottle — plus sommelier tasting, Old World vs New World wines and cheese-board pairing.">
+<meta property="og:url" content="https://www.nigelthomas.live/why-is-a-wine-bottle-750ml.html">
+<meta property="og:image" content="https://www.nigelthomas.live/assets/why-is-a-wine-bottle-750ml.jpg">
+<meta property="og:site_name" content="NigelThomas.live">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Is a Wine Bottle 750 ml?">
+<meta name="twitter:description" content="A hospitality guide to the history, mathematics, tasting and food-pairing logic behind the 750 ml wine bottle.">
+<meta name="twitter:image" content="https://www.nigelthomas.live/assets/why-is-a-wine-bottle-750ml.jpg">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CLRRV5DMXZ');
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Why Is a Wine Bottle 750 ml? History, Sommelier Tasting & Food Pairing",
+  "description":"A professional hospitality guide explaining the history and trade mathematics of the 750 ml wine bottle, followed by sommelier tasting, Old World and New World wine styles, service and cheese-board pairing.",
+  "image":"https://www.nigelthomas.live/assets/why-is-a-wine-bottle-750ml.jpg",
+  "author":{"@type":"Person","name":"Nigel A. Thomas"},
+  "publisher":{"@type":"Organization","name":"NigelThomas.live"},
+  "mainEntityOfPage":"https://www.nigelthomas.live/why-is-a-wine-bottle-750ml.html"
+}
+</script>
+
+<style>
+:root{
+--black:#0b0b0b;
+--dark:#121212;
+--gold:#d4af37;
+--gold2:#f4d160;
+--white:#fff;
+--text:#ececec;
+--muted:#bdbdbd;
+--border:#2a2a2a;
+--card:#181818;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+background:var(--black);
+color:var(--text);
+font-family:"Segoe UI",Arial,sans-serif;
+line-height:1.8;
+}
+a{color:var(--gold);text-decoration:none;transition:.3s}
+a:hover{color:var(--gold2)}
+.site-header{
+background:#090909;
+border-bottom:1px solid #222;
+padding:20px;
+position:sticky;
+top:0;
+z-index:999;
+}
+.site-header a{font-size:1.15rem;font-weight:700;letter-spacing:.5px}
+.container{max-width:1100px;margin:auto;padding:40px 20px}
+.hero{text-align:center;margin-bottom:40px}
+.hero h1{
+font-size:clamp(2rem,5vw,3.2rem);
+color:var(--gold2);
+margin-bottom:20px;
+line-height:1.2;
+}
+.subtitle{
+font-size:1.1rem;
+color:var(--muted);
+max-width:900px;
+margin:auto;
+}
+.byline{margin-top:20px;color:#cfcfcf}
+.byline strong{color:var(--gold)}
+.poster-wrap img{
+width:100%;
+border-radius:10px;
+margin:35px 0;
+border:1px solid var(--border);
+box-shadow:0 15px 40px rgba(0,0,0,.5);
+}
+section{margin:60px 0}
+h2{
+font-size:2rem;
+color:var(--gold);
+margin-bottom:20px;
+padding-left:15px;
+border-left:4px solid var(--gold);
+}
+h3{color:var(--gold2);margin:30px 0 15px}
+p{margin-bottom:18px}
+ul{margin-left:22px;margin-bottom:20px}
+li{margin-bottom:10px}
+.card{
+background:var(--card);
+border:1px solid var(--border);
+border-left:4px solid var(--gold);
+padding:25px;
+margin:30px 0;
+border-radius:8px;
+}
+.tip{
+background:#141414;
+border-left:4px solid #3fa34d;
+padding:22px;
+margin:30px 0;
+border-radius:8px;
+}
+.warning{
+background:#241616;
+border-left:4px solid #d9534f;
+padding:22px;
+margin:30px 0;
+border-radius:8px;
+}
+table{
+width:100%;
+border-collapse:collapse;
+margin:30px 0;
+display:block;
+overflow:auto;
+}
+th{background:var(--gold);color:#111;padding:14px}
+td{border:1px solid #333;padding:14px}
+tr:nth-child(even){background:#141414}
+.toc{
+background:#141414;
+padding:30px;
+border-radius:10px;
+border:1px solid #333;
+}
+.toc ul{columns:2}
+.ad-space{margin:50px 0;text-align:center}
+.tags{
+margin:40px 0;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+.tags span{
+background:var(--card);
+border:1px solid var(--border);
+color:var(--gold);
+padding:6px 14px;
+border-radius:20px;
+font-size:.85rem;
+}
+.related-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.related-card{
+background:#151515;
+border:1px solid #303030;
+border-top:3px solid var(--gold);
+padding:25px;
+border-radius:8px;
+}
+footer{
+border-top:1px solid #222;
+padding:40px 20px;
+text-align:center;
+color:#999;
+font-size:.9rem;
+margin-top:70px;
+}
+footer a{color:var(--gold)}
+@media(max-width:768px){
+.toc ul{columns:1}
+.hero h1{font-size:2rem}
+.container{padding:25px}
+.related-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+<a href="/index.html">Nigel A. Thomas &mdash; Hospitality Leadership &amp; Training</a>
+</header>
+
+<main class="container">
+<article>
+
+<section class="hero">
+<h1>Why Is a Wine Bottle 750 ml?</h1>
+<p class="subtitle">The story of measurement, trade, mathematics, sommelier tasting, Old World and New World wines, food pairing and the hospitality art behind one of the world's most familiar bottle sizes.</p>
+<p class="byline">By <strong>Nigel A. Thomas</strong><br>Hospitality Executive &amp; Corporate Trainer</p>
+
+<div class="poster-wrap">
+<img src="/assets/why-is-a-wine-bottle-750ml.jpg" alt="Why is a wine bottle 750 ml? History, Bordeaux barrel mathematics, wine tasting and hospitality service" loading="eager" width="1263" height="1246">
+</div>
+</section>
+
+<section id="intro">
+<h2>More Than a Number on a Bottle</h2>
+<p>Pick up an ordinary bottle of wine and the label will usually tell you that it contains 750 ml, or 75 cl. It feels so normal that most guests never ask why. Why not 500 ml? Why not 1 litre? Why did producers, merchants and regulators settle on such a specific quantity?</p>
+<p>The answer is not one single story carved in stone. Several practical forces helped make 750 ml familiar: the history of glass bottle production, the trade relationship between continental Europe and Britain, old imperial measurements, the mathematics of barrels and cases, and later international standardisation. For hospitality professionals, the subject is useful because it connects product knowledge with purchasing, costing, stock control, wine service and guest education.</p>
+<div class="card">
+<h3>The simple mathematics</h3>
+<p><strong>750 ml × 6 = 4.5 litres</strong><br>
+<strong>750 ml × 12 = 9 litres</strong><br>
+<strong>225 litres ÷ 0.75 litre = 300 bottles</strong></p>
+<p>Those three calculations explain why the 750 ml format became commercially convenient. A 225-litre Bordeaux barrique divides neatly into 300 bottles, while 12 standard bottles make a 9-litre case.</p>
+</div>
+</section>
+
+<section id="history">
+<h2>The Story Behind 750 ml</h2>
+<p>During the growth of European wine commerce, France was a major producer and exporter and Britain was an important market. The two trading partners did not always describe liquid volume in the same way. France increasingly worked in litres and Britain used imperial measures, including the imperial gallon.</p>
+<p>An imperial gallon is approximately 4.546 litres. Six 750 ml bottles total 4.5 litres, which is very close. Twelve bottles total exactly 9 litres, almost two imperial gallons. That relationship made bottle counts and trade calculations easier than working with irregular bottle capacities.</p>
+<p>Another commonly cited explanation concerns hand-blown glass. Before industrial glass production, the capacity of a bottle was constrained by the skill and physical process of the glassblower. Historical accounts often connect the eventual popularity of a bottle around 650&ndash;750 ml with the practical capacity of hand-blown glass. That explanation is useful, but it should not be treated as the only proven cause of the modern standard.</p>
+<p>The strongest lesson is that standards often emerge from several practical pressures at the same time. Once merchants, producers and regulators become accustomed to a convenient size, the size becomes part of the infrastructure of trade.</p>
+</section>
+
+<section id="barrel">
+<h2>The Bordeaux Barrel Mathematics</h2>
+<p>The poster's most memorable calculation is the Bordeaux barrique. A traditional Bordeaux barrique is commonly described as holding approximately 225 litres. Divide 225 litres by 0.75 litre per bottle and the result is exactly 300 bottles.</p>
+<table>
+<thead><tr><th>Unit</th><th>Volume</th><th>Relationship</th></tr></thead>
+<tbody>
+<tr><td>1 standard bottle</td><td>750 ml / 0.75 L</td><td>Reference unit</td></tr>
+<tr><td>6 bottles</td><td>4.5 L</td><td>Close to 1 imperial gallon</td></tr>
+<tr><td>12 bottles</td><td>9 L</td><td>Close to 2 imperial gallons</td></tr>
+<tr><td>1 Bordeaux barrique</td><td>225 L</td><td>300 × 750 ml</td></tr>
+</tbody>
+</table>
+<p>For a merchant, that is wonderfully simple accounting. One barrel could be expressed as 300 bottles; 300 bottles could be divided into 50 six-bottle cases or 25 twelve-bottle cases. Whether every historical shipping practice followed this exact pattern is a separate question, but the mathematics shows why the 750 ml unit was commercially attractive.</p>
+<div class="tip">
+<h3>Hospitality Management Connection</h3>
+<p>This is exactly the type of calculation a restaurant manager should understand. Purchasing, receiving, cellar inventory, beverage costing and menu pricing all become easier when volume relationships are understood rather than memorised.</p>
+</div>
+</section>
+
+<section id="cases">
+<h2>Why 6 or 12 Bottles Per Case?</h2>
+<p>Both six-bottle and twelve-bottle formats are familiar in the wine trade. Twelve 750 ml bottles contain 9 litres. Six bottles contain 4.5 litres. These quantities create convenient units for distribution, storage and counting.</p>
+<p>For a hotel or restaurant, case configuration matters operationally. A twelve-bottle case represents 9 litres of wine and, at a simple theoretical level, 12 saleable bottles. But the real inventory question is not just how many bottles arrived. It is how many bottles were received in good condition, how many were sold, how many were opened for service, how much was poured, and how much product remains.</p>
+<p>That is where wine knowledge meets financial control. A beverage manager should be able to connect the physical bottle to the theoretical beverage cost and then compare theoretical usage with actual usage.</p>
+</section>
+
+<section id="tasting">
+<h2>Sommelier-Style Wine Tasting: Look, Smell, Taste, Think</h2>
+<p>A sommelier does more than identify an expensive bottle. Professional tasting is a structured method of observing wine and communicating what is in the glass. The same approach can be taught to restaurant supervisors, servers and hospitality trainees.</p>
+<h3>1. Look</h3>
+<p>Hold the glass against a light background. Observe colour, depth, clarity and, for mature wines, the development of colour at the rim. Tilt the glass gently rather than shaking it. Appearance is an observation, not a guarantee of quality.</p>
+<h3>2. Swirl</h3>
+<p>A gentle swirl increases the wine's contact with air and helps release aromas. In professional service, keep the movement controlled. The objective is to evaluate the wine, not to create a dramatic performance.</p>
+<h3>3. Smell</h3>
+<p>Place your nose near the glass and identify broad aroma families first: fruit, flowers, herbs, spices, earth, oak or other fermentation and ageing characteristics. With practice, a trainee can move from general impressions to more precise descriptions.</p>
+<h3>4. Taste</h3>
+<p>Take a small sip and assess sweetness, acidity, tannin, alcohol, body, flavour intensity and finish. White wines often reveal acidity very clearly. Red wines can make tannin easier to detect because of the drying sensation on the gums and tongue.</p>
+<h3>5. Think</h3>
+<p>Finally ask: Is the wine balanced? Is it fresh? Is it concentrated? Does the finish persist? Does it seem youthful or developed? Is it suitable for the food being served? A useful tasting note should communicate an observation that helps a guest or service professional make a decision.</p>
+<div class="card">
+<h3>Simple Staff Tasting Test</h3>
+<p><strong>Observe → Swirl → Smell → Sip → Assess → Describe → Pair.</strong> This seven-step sequence is a practical training exercise for restaurant service teams.</p>
+</div>
+</section>
+
+<section id="old-new">
+<h2>Old World vs New World Wines</h2>
+<p>The terms <strong>Old World</strong> and <strong>New World</strong> are useful teaching labels, but they are not rigid boxes. Old World generally refers to long-established European wine regions, while New World generally refers to major wine-producing regions outside those traditional European centres.</p>
+<table>
+<thead><tr><th>Teaching Point</th><th>Old World — Common Tendencies</th><th>New World — Common Tendencies</th></tr></thead>
+<tbody>
+<tr><td>Emphasis</td><td>Place, tradition, appellation and terroir</td><td>Grape variety, producer style and fruit expression</td></tr>
+<tr><td>Acidity</td><td>Often prominent</td><td>Can be prominent, but styles vary widely</td></tr>
+<tr><td>Fruit profile</td><td>Often more restrained in classic examples</td><td>Often more overtly fruit-driven in classic examples</td></tr>
+<tr><td>Labelling</td><td>Region/appellation often central</td><td>Grape variety often central</td></tr>
+<tr><td>Examples</td><td>France, Italy, Spain, Germany, Portugal</td><td>USA, Australia, New Zealand, Chile, Argentina, South Africa</td></tr>
+</tbody>
+</table>
+<p>Modern wine makes the distinction increasingly fluid. Winemaking technology, climate change, international investment and travelling winemakers have blurred old categories. A New World producer can make a restrained, terroir-focused wine, while an Old World producer can make a bold, fruit-forward wine.</p>
+<p>For hospitality training, the better approach is to teach these as tendencies rather than rules. Guests do not need a lecture about geography; they need a useful explanation of what they can expect in the glass.</p>
+</section>
+
+<section id="pairing">
+<h2>Wine &amp; Food Pairing: The Cheese Board Connection</h2>
+<p>A wine article naturally leads to food pairing, and a well-designed cheese board is one of the best training exercises because it allows staff to compare texture, salt, acidity, sweetness and intensity in a single service.</p>
+<p>Cheese pairing does not have to mean memorising hundreds of combinations. Start with balance. Salty cheeses often benefit from wines with refreshing acidity or a touch of sweetness. Creamy cheeses can work well with wines that have enough acidity to refresh the palate. Strong blue cheeses can create an interesting contrast with sweet wines. Aged, nutty cheeses can work with fuller-bodied reds or structured whites depending on the cheese and wine.</p>
+<div class="card">
+<h3>Build a Professional Cheese Board</h3>
+<ul>
+<li><strong>Soft:</strong> Brie or Camembert — creamy and delicate.</li>
+<li><strong>Firm:</strong> Cheddar or Gouda — familiar and versatile.</li>
+<li><strong>Hard:</strong> Parmesan — salty, nutty and intense.</li>
+<li><strong>Blue:</strong> Blue Cheese — strong, tangy and distinctive.</li>
+<li><strong>Fresh/tangy:</strong> Goat Cheese — bright and expressive.</li>
+</ul>
+<p>These cheeses are already covered in the <a href="/types-of-cheese-used-in-hotels.html">Types of Cheese Used in Hotels</a> training article on NigelThomas.live.</p>
+</div>
+<table>
+<thead><tr><th>Cheese</th><th>Wine Direction</th><th>Why It Works</th></tr></thead>
+<tbody>
+<tr><td>Brie</td><td>Fresh sparkling, Chardonnay or light red</td><td>Acidity and gentle fruit balance creamy texture</td></tr>
+<tr><td>Aged Cheddar</td><td>Cabernet Sauvignon or structured white</td><td>Richness and intensity can stand beside mature cheese</td></tr>
+<tr><td>Goat Cheese</td><td>Sauvignon Blanc</td><td>High acidity echoes the cheese's tang</td></tr>
+<tr><td>Blue Cheese</td><td>Sweet white wine</td><td>Sweetness provides a classic contrast to salt and intensity</td></tr>
+<tr><td>Parmesan</td><td>Chianti-style red or full-bodied white</td><td>Acidity and structure complement salty, savoury flavours</td></tr>
+</tbody>
+</table>
+<p>There is no single correct pairing for every bottle. The cheese, age, preparation, garnish, sauce and serving temperature can change the result. The professional skill is knowing the principles and then tasting.</p>
+</section>
+
+<section id="service">
+<h2>Wine Service in Hotels and Restaurants</h2>
+<p>Wine service is where product knowledge becomes guest experience. A server should know how to present the bottle, confirm the label and vintage when relevant, open it cleanly, offer a taste to the appropriate guest and pour without disturbing the table setting.</p>
+<p>Temperature is also important. Sparkling wines are generally served chilled, many white and rosé wines are served cool, and red wines are not automatically meant to be served warm. The phrase “room temperature” came from older, cooler rooms and should not be interpreted as today's hot dining room temperature.</p>
+<p>Glassware matters because shape influences how aromas reach the nose. Decanting may be useful for some young, structured reds or older wines with sediment, but it should be done because it serves the wine rather than because it looks impressive.</p>
+<div class="tip">
+<h3>Manager's Rule</h3>
+<p>Train the team to answer three guest questions confidently: <strong>What does it taste like? What food does it suit? How should it be served?</strong> Those three answers turn product knowledge into hospitality.</p>
+</div>
+</section>
+
+<section id="costing">
+<h2>750 ml and Beverage Cost Control</h2>
+<p>The standard bottle also matters financially. If a bottle costs a restaurant ₹900 and contains 750 ml, the theoretical liquid cost is ₹1.20 per ml before wastage, breakage, taxes, complimentary pours and other operational factors. A 150 ml pour would therefore represent a theoretical product cost of ₹180 before those additional considerations.</p>
+<p>This is why standard pouring matters. A restaurant that pours 180 ml when its costing model assumes 150 ml will not simply have a service issue; it will have a gross-profit issue. The difference multiplied across hundreds of bottles can become significant.</p>
+<p>Wine stock control should connect purchasing, receiving, storage, opening, pouring, wastage, complimentary service and sales. A 750 ml bottle is therefore not just a container. It is an inventory unit, a costing unit and a revenue unit.</p>
+</section>
+
+<section id="facts">
+<h2>Interesting Wine Facts for Hospitality Trainees</h2>
+<ul>
+<li>750 ml is the standard bottle size most guests recognise for still wine.</li>
+<li>Six 750 ml bottles equal 4.5 litres.</li>
+<li>Twelve 750 ml bottles equal exactly 9 litres.</li>
+<li>A 225-litre Bordeaux barrique divides mathematically into 300 bottles of 750 ml.</li>
+<li>A 1.5-litre Magnum contains the equivalent of two standard bottles.</li>
+<li>Wine bottle shapes can provide clues about regional traditions, but shape alone does not prove quality.</li>
+<li>Old World and New World are useful teaching categories, but modern wine styles cross the traditional boundaries.</li>
+<li>Food pairing is strongest when staff understand balance rather than memorising a fixed list.</li>
+</ul>
+</section>
+
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>Why exactly 750 ml?</h3>
+<p>The modern standard developed from a combination of historical bottle-making practice, trade convenience, measurement systems and later standardisation. The exact origin is more complicated than a single popular story.</p>
+<h3>Is six bottles exactly one imperial gallon?</h3>
+<p>No. Six 750 ml bottles equal 4.5 litres. An imperial gallon is approximately 4.546 litres. The quantities are close, which is one reason the relationship became useful in trade.</p>
+<h3>Why do wine cases often contain 12 bottles?</h3>
+<p>Twelve 750 ml bottles equal 9 litres. The format is convenient for transport, counting, storage and trade.</p>
+<h3>What is the difference between a sommelier and a wine server?</h3>
+<p>A wine server needs strong product and service knowledge. A sommelier typically has more specialised wine expertise covering tasting, regions, grapes, pairing, cellar management and beverage programmes. Roles vary by property.</p>
+<h3>Are Old World wines always lighter than New World wines?</h3>
+<p>No. That is a teaching generalisation, not a rule. Climate, grape variety, vintage, vineyard site, winemaking decisions and producer style all influence the final wine.</p>
+<h3>What cheese should staff start with for a wine-pairing exercise?</h3>
+<p>A simple board containing Brie, aged Cheddar, Goat Cheese, Parmesan and Blue Cheese gives trainees a useful range of textures, salt levels and intensities.</p>
+</section>
+
+<section id="conclusion">
+<h2>Conclusion: A 750 ml Bottle Contains a Lot More Than Wine</h2>
+<p>The next time a guest picks up a 750 ml bottle, there is a story behind the number. The format sits at the intersection of glassmaking, international trade, imperial and metric measurements, Bordeaux barrel mathematics, case configuration, standardisation and modern beverage operations.</p>
+<p>For hospitality professionals, however, the lesson goes further. The bottle leads to the cellar. The cellar leads to stock control. Stock control leads to beverage costing. The wine leads to tasting. Tasting leads to service. And service leads to food pairing and guest experience.</p>
+<p>That is why wine knowledge belongs in hospitality training. A good restaurant professional does not need to pretend to be a master sommelier. The goal is to observe carefully, taste honestly, communicate clearly and recommend thoughtfully.</p>
+<div class="card">
+<h3>Professional Takeaway</h3>
+<p><strong>750 ml is history + mathematics + trade + service + guest experience.</strong></p>
+<p>Teach the bottle. Taste the wine. Understand the food. Then give the guest a confident recommendation.</p>
+</div>
+</section>
+
+<section>
+<h2>Continue the Hospitality Learning</h2>
+<div class="related-grid">
+<div class="related-card">
+<h3>Wine Training</h3>
+<p>Return to the <a href="/blog.html">NigelThomas.live Hospitality Blog</a> for more hospitality, F&amp;B and management training articles.</p>
+</div>
+<div class="related-card">
+<h3>Cheese Training</h3>
+<p>Continue with <a href="/types-of-cheese-used-in-hotels.html">Types of Cheese Used in Hotels</a> — a practical guide to cheese selection, storage, service and cheese-board presentation.</p>
+</div>
+</div>
+</section>
+
+<div class="tags">
+<span>#Wine</span>
+<span>#Sommelier</span>
+<span>#WineTasting</span>
+<span>#OldWorldWine</span>
+<span>#NewWorldWine</span>
+<span>#FoodPairing</span>
+<span>#CheeseBoard</span>
+<span>#HospitalityTraining</span>
+<span>#BeverageCostControl</span>
+<span>#NigelThomas</span>
+</div>
+
+<div class="ad-space">
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4282121192943910"
+data-ad-slot="0000000000"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+</article>
+</main>
+
+<footer>
+<p>&copy; 2026 Nigel A. Thomas &bull; Hospitality Leadership &amp; Training</p>
+<p><a href="/blog.html">&larr; Back to Blog</a></p>
+</footer>
+
+</body>
+</html>
+'@
+
+[System.IO.File]::WriteAllText($ArticleFile, $Article, [System.Text.UTF8Encoding]::new($false))
+
+Write-Host "Step 4: Updating blog.html..." -ForegroundColor Cyan
+$Blog = [System.IO.File]::ReadAllText($BlogFile, [System.Text.UTF8Encoding]::new($false))
+
+$WineMarker = '<!-- NIGEL_WINE_750ML_ARTICLE -->'
+if ($Blog -notmatch [regex]::Escape($WineMarker)) {
+    $BlogBlock = @"
+$WineMarker
+<section class="wine-feature" style="max-width:1100px;margin:50px auto;padding:0 20px;">
+<div style="background:#151515;border:1px solid #2a2a2a;border-top:4px solid #d4af37;border-radius:10px;padding:30px;">
+<h2 style="color:#f4d160;margin-bottom:12px;">New Wine Training Article</h2>
+<p style="color:#bdbdbd;line-height:1.8;">Explore the history and mathematics of the 750 ml wine bottle, sommelier-style tasting, Old World vs New World wines, wine service and cheese-board pairing.</p>
+<p><a href="/why-is-a-wine-bottle-750ml.html" style="color:#d4af37;font-weight:700;">Read: Why Is a Wine Bottle 750 ml? &rarr;</a></p>
+<hr style="border:0;border-top:1px solid #333;margin:25px 0;">
+<p style="color:#bdbdbd;line-height:1.8;"><strong style="color:#f4d160;">Related:</strong> Continue the food-pairing lesson with <a href="/types-of-cheese-used-in-hotels.html" style="color:#d4af37;font-weight:700;">Types of Cheese Used in Hotels &rarr;</a></p>
+</div>
+</section>
+$WineMarker
+"@
+    $Blog = $Blog -replace '(?i)</main>', ($BlogBlock + "`r`n</main>")
+}
+else {
+    Write-Host "Wine blog link already present in blog.html — no duplicate added." -ForegroundColor Yellow
+}
+
+# Ensure the cheese link exists even if the wine block already existed from a previous run.
+if ($Blog -notmatch [regex]::Escape($CheeseUrl)) {
+    $CheeseFallback = @"
+<!-- NIGEL_CHEESE_ARTICLE_LINK -->
+<div style="max-width:1100px;margin:20px auto;padding:0 20px;">
+<p><a href="/types-of-cheese-used-in-hotels.html">Types of Cheese Used in Hotels &rarr;</a></p>
+</div>
+"@
+    $Blog = $Blog -replace '(?i)</main>', ($CheeseFallback + "`r`n</main>")
+}
+
+[System.IO.File]::WriteAllText($BlogFile, $Blog, [System.Text.UTF8Encoding]::new($false))
+
+Write-Host "Step 5: Updating sitemap.xml..." -ForegroundColor Cyan
+$Sitemap = [System.IO.File]::ReadAllText($SitemapFile, [System.Text.UTF8Encoding]::new($false))
+
+if ($Sitemap -notmatch [regex]::Escape($WineUrl)) {
+    $UrlEntry = @"
+  <url>
+    <loc>$WineUrl</loc>
+    <lastmod>$Today</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+"@
+    if ($Sitemap -match '(?i)</urlset>') {
+        $Sitemap = $Sitemap -replace '(?i)</urlset>', ($UrlEntry + "`r`n</urlset>")
+    }
+    else {
+        throw "sitemap.xml does not contain a closing </urlset> element."
+    }
+}
+else {
+    Write-Host "Wine URL already present in sitemap.xml — no duplicate added." -ForegroundColor Yellow
+}
+
+[System.IO.File]::WriteAllText($SitemapFile, $Sitemap, [System.Text.UTF8Encoding]::new($false))
+
+Write-Host "Step 6: Validation..." -ForegroundColor Cyan
+
+$checks = @(
+    @{Name="Article HTML"; Path=$ArticleFile},
+    @{Name="Wine poster"; Path=$TargetImage},
+    @{Name="Blog page"; Path=$BlogFile},
+    @{Name="Sitemap"; Path=$SitemapFile}
+)
+
+foreach ($c in $checks) {
+    if (-not (Test-Path $c.Path)) { throw "$($c.Name) validation failed: $($c.Path)" }
+    Write-Host "  OK  $($c.Name)" -ForegroundColor Green
+}
+
+$FinalArticle = [System.IO.File]::ReadAllText($ArticleFile, [System.Text.UTF8Encoding]::new($false))
+$FinalBlog = [System.IO.File]::ReadAllText($BlogFile, [System.Text.UTF8Encoding]::new($false))
+$FinalSitemap = [System.IO.File]::ReadAllText($SitemapFile, [System.Text.UTF8Encoding]::new($false))
+
+if ($FinalArticle -notmatch 'why-is-a-wine-bottle-750ml\.jpg') { throw "Article image reference missing." }
+if ($FinalBlog -notmatch 'why-is-a-wine-bottle-750ml\.html') { throw "Wine link missing from blog.html." }
+if ($FinalBlog -notmatch 'types-of-cheese-used-in-hotels\.html') { throw "Cheese article link missing from blog.html." }
+if ($FinalSitemap -notmatch [regex]::Escape($WineUrl)) { throw "Wine URL missing from sitemap.xml." }
+
+Write-Host ""
+Write-Host "============================================================" -ForegroundColor Green
+Write-Host " ONE-SHOT PUBLISH PREPARATION COMPLETE" -ForegroundColor Green
+Write-Host "============================================================" -ForegroundColor Green
+Write-Host "Article : $WineUrl" -ForegroundColor White
+Write-Host "Image   : /assets/why-is-a-wine-bottle-750ml.jpg" -ForegroundColor White
+Write-Host "Cheese  : $CheeseUrl" -ForegroundColor White
+Write-Host "Backups : $BlogBackup" -ForegroundColor Gray
+Write-Host "          $SitemapBackup" -ForegroundColor Gray
+Write-Host ""
+Write-Host "Next commands:" -ForegroundColor Cyan
+Write-Host "git status"
+Write-Host "git add why-is-a-wine-bottle-750ml.html assets/why-is-a-wine-bottle-750ml.jpg blog.html sitemap.xml"
+Write-Host 'git commit -m "Add wine 750ml history tasting and food pairing article"'
+Write-Host "git push origin main"
+Write-Host "vercel --prod"
+Write-Host ""
+Write-Host "IMPORTANT: The term 'Testavan' was not inserted into the wine article because Testavan is a testosterone medicine, not a wine-tasting method. If 'Testavan' was intended to mean a specific sommelier tasting framework or person, replace that term after confirming the intended spelling." -ForegroundColor Yellow
