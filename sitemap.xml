@@ -691,12 +691,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+
+
   <url>
-    <loc>https://www.nigelthomas.live/food-and-beverage-question-and-answers.html</loc>
-    <lastmod>2026-08-21</lastmod>
+    <loc>https://www.nigelthomas.live/condiments-vs-sauces-poster.html</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-
 </urlset>
