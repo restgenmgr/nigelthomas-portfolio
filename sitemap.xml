@@ -705,4 +705,11 @@
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
+        <!-- Insert this <url> block directly above </urlset> in sitemap.xml -->
+<url>
+  <loc>https://www.nigelthomas.live/6-pizza-recipes-hotel-restaurant-menu.html</loc>
+  <lastmod>2026-08-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 </urlset>
