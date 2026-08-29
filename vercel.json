@@ -1,8 +1,28 @@
-{
+﻿{
   "redirects": [
     {
-      "source": "/fire-safety-training-blog.html",
-      "destination": "/restaurant-fire-safety-training-guide.html",
+      "source": "/mastering-food-cost-guide.html",
+      "destination": "/food-cost-control-complete-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/food-cost-control-complete-guide.html",
+      "destination": "/food-cost-control-complete-guide.html",
+      "permanent": true
+    },
+    {
+      "source": "/Food Safety Temperatures, Cold Chain Control & Kitchen Storage Standards.html",
+      "destination": "/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html",
+      "permanent": true
+    },
+    {
+      "source": "/hotel-department-heads-complete-guide.html",
+      "destination": "/key-hotel-management-roles.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog.html",
       "permanent": true
     }
   ]
