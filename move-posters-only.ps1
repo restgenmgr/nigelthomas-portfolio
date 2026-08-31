@@ -3,25 +3,20 @@
     Moves all "poster" elements to the bottom of every HTML page,
     hidden behind an "Infomatics" toggle button.
 #>
-
 [CmdletBinding()]
 param(
     [string]$RootPath = (Get-Location).Path,
     [string]$PosterSelectorHint = 'poster',
     [switch]$DryRun
 )
-
 $ErrorActionPreference = 'Stop'
 $stamp = (Get-Date).ToString('yyyyMMdd-HHmmss')
 $logPath = Join-Path $RootPath "poster-move-log-$stamp.csv"
 $backupPath = Join-Path $RootPath "backup-posters-$stamp"
-
 if (-not (Test-Path $RootPath)) {
     throw "RootPath '$RootPath' does not exist."
 }
-
 $results = New-Object System.Collections.Generic.List[object]
-
 function Add-Result {
     param([string]$Path, [int]$PostersMoved, [string]$Status, [string]$Detail)
     $results.Add([pscustomobject]@{
@@ -32,7 +27,6 @@ function Add-Result {
         Timestamp    = (Get-Date).ToString('s')
     }) | Out-Null
 }
-
 # ---------------------------------------------------------------------------
 # Backup
 # ---------------------------------------------------------------------------
@@ -51,21 +45,16 @@ if (-not $DryRun) {
 } else {
     Write-Host "== DryRun: skipping backup ==" -ForegroundColor Yellow
 }
-
 # ---------------------------------------------------------------------------
 # Poster relocation
 # ---------------------------------------------------------------------------
 $PANEL_MARKER = '<!-- INFOMATICS-PANEL:v1 -->'
-
 function Extract-Balanced {
     param([string]$Html, [string]$TagName, [int]$OpenTagStart)
-
     $openRe  = [regex]"(?i)<$TagName(\s[^>]*)?>"
     $closeRe = [regex]"(?i)</$TagName>"
-
     $m = $openRe.Match($Html, $OpenTagStart)
     if (-not $m.Success -or $m.Index -ne $OpenTagStart) { return $null }
-
     $depth = 1
     $pos   = $m.Index + $m.Length
     while ($depth -gt 0) {
@@ -81,15 +70,11 @@ function Extract-Balanced {
     $length = $pos - $OpenTagStart
     return @{ Text = $Html.Substring($OpenTagStart, $length); Start = $OpenTagStart; Length = $length }
 }
-
 function Move-Posters {
     param([string]$Html, [string]$SelectorHint)
-
     if ($Html.Contains($PANEL_MARKER)) { return $Html, 0 }
-
     $extracted = New-Object System.Collections.Generic.List[string]
     $workingHtml = $Html
-
     # Container elements (div, section, figure, aside)
     $containerTags = 'div','section','figure','aside'
     foreach ($tag in $containerTags) {
@@ -105,7 +90,6 @@ function Move-Posters {
             $searchStart = $block.Start
         }
     }
-
     # Standalone <img> tags
     $imgRe = [regex]"(?i)(<a[^>]*>\s*)?<img(?=[\s>])[^>]*(?:src|alt|class)\s*=\s*[""'][^""']*(?:$SelectorHint)[^""']*[""'][^>]*/?>(\s*</a>)?"
     $imgMatches = $imgRe.Matches($workingHtml)
@@ -114,9 +98,7 @@ function Move-Posters {
         $extracted.Insert(0, $m.Value)
         $workingHtml = $workingHtml.Remove($m.Index, $m.Length)
     }
-
     if ($extracted.Count -eq 0) { return $Html, 0 }
-
     $panelHtml = @"
 $PANEL_MARKER
 <div class="infomatics-launcher">
@@ -136,39 +118,30 @@ $($extracted -join "`r`n")
 .infomatics-panel.active{display:block;}
 </style>
 "@
-
     if ($workingHtml -match '(?i)</body>') {
         $workingHtml = $workingHtml -replace '(?i)(</body>)', ($panelHtml -replace '\$', '$$') + "`r`n`$1"
     } else {
         $workingHtml += "`r`n$panelHtml"
     }
-
     return $workingHtml, $extracted.Count
 }
-
 # ---------------------------------------------------------------------------
 # Main loop
 # ---------------------------------------------------------------------------
 $files = Get-ChildItem -Path $RootPath -Filter *.html -Recurse -File |
     Where-Object { $_.FullName -notmatch '\\backup-' -and $_.FullName -notmatch '\\_mojibake_backups\\' -and $_.FullName -notmatch '\\_metadata_backups\\' }
-
 Write-Host "== Processing $($files.Count) HTML files under '$RootPath' ==" -ForegroundColor Cyan
 if ($DryRun) { Write-Host "(DryRun mode: no files will be written)" -ForegroundColor Yellow }
-
 foreach ($file in $files) {
     try {
         $raw = Get-Content -Path $file.FullName -Raw -Encoding UTF8
         $original = $raw
         $postersMoved = 0
-
         $raw, $postersMoved = Move-Posters -Html $raw -SelectorHint $PosterSelectorHint
-
         $changed = ($raw -ne $original)
-
         if ($changed -and -not $DryRun) {
             Set-Content -Path $file.FullName -Value $raw -Encoding UTF8 -NoNewline
         }
-
         $status = if (-not $changed) { 'NoChangeNeeded' } elseif ($DryRun) { 'WouldChange' } else { 'Updated' }
         Add-Result -Path $file.FullName -PostersMoved $postersMoved -Status $status -Detail ''
     }
@@ -177,16 +150,13 @@ foreach ($file in $files) {
         Write-Warning "Failed on $($file.FullName): $($_.Exception.Message)"
     }
 }
-
 $results | Export-Csv -Path $logPath -NoTypeInformation -Encoding UTF8
-
 # ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------
 $updated = ($results | Where-Object Status -in @('Updated','WouldChange')).Count
 $errors = ($results | Where-Object Status -eq 'ERROR').Count
 $postersMv = ($results | Measure-Object -Property PostersMoved -Sum).Sum
-
 Write-Host ""
 Write-Host "== SUMMARY ==" -ForegroundColor Cyan
 Write-Host "Files scanned:            $($files.Count)"
