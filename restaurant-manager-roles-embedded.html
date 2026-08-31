@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -92,6 +92,71 @@ li{margin-bottom:8px}
 footer{background:#000;color:#d4af37;text-align:center;padding:25px;margin-top:40px}
 a{color:#d4af37}
 </style>
+<style id="nt-infomatics-css">
+.nt-infomatics-section {
+    width: 100%;
+    margin: 45px auto 30px;
+    padding: 25px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.nt-infomatics-button {
+    display: inline-block;
+    background: #000;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    padding: 14px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+.nt-infomatics-button:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+.nt-infomatics-panel {
+    display: none;
+    max-width: 1100px;
+    margin: 28px auto 0;
+}
+
+.nt-infomatics-panel.show {
+    display: block;
+}
+
+.nt-infomatics-panel img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .nt-infomatics-section {
+        margin-top: 35px;
+    }
+
+    .nt-infomatics-button {
+        width: calc(100% - 20px);
+        max-width: 360px;
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+
+    .nt-infomatics-panel {
+        margin-top: 20px;
+    }
+}
+</style>
 </head>
 <body>
 
@@ -115,7 +180,7 @@ breaks the role down into the fifteen core areas that define it, drawing on the 
 across multi-unit F&amp;B operations, so the scope of the job is clear whether you're stepping into it for the
 first time, hiring for it, or building your own case for promotion.</p>
 
-<img src="data:image/jpeg;base64," alt="Main Roles and Responsibilities of a Restaurant Manager infographic covering all 15 core management areas">
+
 
 <div class="highlight"><strong>A great Restaurant Manager doesn't just manage the restaurant - they manage the entire business to achieve operational excellence and profitability.</strong></div>
 
@@ -345,5 +410,57 @@ than assuming the parts of the job you already enjoy are the parts that define y
 <footer>
 <p>&copy; 2026 Nigel Anthony Thomas</p>
 </footer>
+
+<!-- NT INFOMATICS -->
+<div class="nt-infomatics-section">
+    <button
+        type="button"
+        class="nt-infomatics-button"
+        data-panel="nt-infomatics-panel-restaurant-manager-roles-embedded"
+        aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+
+    <div
+        id="nt-infomatics-panel-restaurant-manager-roles-embedded"
+        class="nt-infomatics-panel"
+        aria-hidden="true">
+        <img src="data:image/jpeg;base64," alt="Main Roles and Responsibilities of a Restaurant Manager infographic covering all 15 core management areas">
+    </div>
+</div>
+<!-- END NT INFOMATICS -->
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+
+    var button = event.target.closest(".nt-infomatics-button");
+
+    if (!button) {
+        return;
+    }
+
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+
+    if (!panel) {
+        return;
+    }
+
+    var opened = panel.classList.toggle("show");
+
+    button.textContent = opened
+        ? "HIDE INFOMATICS"
+        : "VIEW INFOMATICS";
+
+    button.setAttribute(
+        "aria-expanded",
+        opened ? "true" : "false"
+    );
+
+    panel.setAttribute(
+        "aria-hidden",
+        opened ? "false" : "true"
+    );
+});
+</script>
 </body>
 </html>
