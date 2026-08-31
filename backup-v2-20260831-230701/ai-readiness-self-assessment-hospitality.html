@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Readiness Self-Assessment for Hospitality Staff | Nigel A. Thomas</title>
+<meta name="description" content="A department-specific AI readiness self-assessment for hotel and resort staff — Front Office, Housekeeping, F&B, Kitchen, Engineering, Sales & Marketing, HR, Accounting, and Security. Print your results to include with a job application.">
+<link rel="canonical" href="https://www.nigelthomas.live/ai-readiness-self-assessment-hospitality.html">
+
+<meta property="og:title" content="AI Readiness Self-Assessment for Hospitality Staff">
+<meta property="og:description" content="Score your own AI readiness in your hotel role, by department, and print a summary to attach to a job application.">
+<meta property="og:url" content="https://www.nigelthomas.live/ai-readiness-self-assessment-hospitality.html">
+<meta property="og:type" content="article">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CLRRV5DMXZ');
+</script>
+<meta name="google-adsense-account" content="ca-pub-4282121192943910">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+
+<style>
+  :root{
+    --bg:#0b0b0b; --gold:#d4af37; --panel:#151515; --panel-border:#2a2a2a;
+    --text:#eaeaea; --muted:#a3a3a3;
+    --cat1:#b2465c; --cat2:#d98f7c; --cat3:#c17d45; --cat4:#6f8f72; --cat5:#5a4a6b;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Arial,sans-serif;margin:0;line-height:1.6;}
+  .wrap{max-width:960px;margin:0 auto;padding:40px 20px 90px;}
+  header.page-header{text-align:center;margin-bottom:32px;}
+  .emblem{display:inline-block;border:1px solid var(--gold);padding:10px 16px;border-radius:6px;font-size:12px;letter-spacing:2px;color:var(--gold);margin-bottom:18px;}
+  h1{font-size:clamp(24px,4vw,36px);margin:0 0 10px;color:#fff;}
+  h1 span{color:var(--gold);}
+  .subtitle{color:var(--muted);font-size:15.5px;max-width:680px;margin:0 auto;}
+  .byline{margin-top:16px;font-size:13px;color:var(--muted);}
+  .byline a{color:var(--gold);text-decoration:none;}
+  .attribution{max-width:680px;margin:20px auto 0;font-size:12px;color:var(--muted);border-top:1px solid var(--panel-border);padding-top:12px;}
+
+  .intro{background:var(--panel);border:1px solid var(--panel-border);border-left:3px solid var(--gold);padding:20px 24px;border-radius:6px;margin:28px 0;font-size:15px;color:#dcdcdc;}
+
+  .id-panel{background:var(--panel);border:1px solid var(--panel-border);border-radius:8px;padding:22px;margin:28px 0;}
+  .id-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .id-field{display:flex;flex-direction:column;gap:6px;}
+  .id-field label{font-size:12.5px;color:var(--muted);font-weight:600;}
+  .id-field input, .id-field select{
+    background:#0f0f0f;border:1px solid #333;color:var(--text);border-radius:4px;
+    padding:9px 10px;font-family:inherit;font-size:14px;
+  }
+  .id-field select{color:var(--gold);border-color:var(--gold);font-weight:600;}
+  @media(max-width:600px){.id-grid{grid-template-columns:1fr;}}
+
+  .scale-key{font-size:12.5px;color:var(--muted);text-align:center;margin:18px 0 6px;}
+
+  .category-block{margin-bottom:28px;border:1px solid var(--panel-border);border-radius:8px;overflow:hidden;}
+  .category-header{background:#1c1c1c;border-bottom:1px solid var(--panel-border);padding:14px 20px;font-size:17px;font-weight:600;color:var(--gold);display:flex;justify-content:space-between;align-items:center;}
+  .category-header .catdot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:10px;}
+
+  .stmt-row{padding:14px 20px;border-top:1px solid var(--panel-border);background:var(--panel);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+  .stmt-row:first-of-type{border-top:none;}
+  .stmt-text{flex:1;min-width:220px;font-size:14px;color:#e6e6e6;}
+  .stmt-scale{display:flex;gap:6px;flex-shrink:0;}
+  .stmt-scale label{
+    width:34px;height:34px;border:1px solid #444;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;cursor:pointer;
+    font-size:13px;color:var(--muted);transition:.15s;
+  }
+  .stmt-scale input{display:none;}
+  .stmt-scale input:checked + label{background:var(--gold);border-color:var(--gold);color:#0b0b0b;font-weight:700;}
+
+  .cat-average{display:flex;justify-content:flex-end;gap:10px;align-items:center;padding:10px 20px;background:#161616;border-top:1px solid var(--panel-border);font-size:13px;color:var(--muted);}
+  .cat-average strong{color:var(--gold);font-size:14.5px;}
+
+  .results-panel{position:sticky;bottom:0;margin-top:20px;background:#141414;border:1px solid var(--gold);border-radius:8px;padding:22px 26px;text-align:center;}
+  .results-panel h2{margin:0 0 6px;font-size:18px;color:#fff;}
+  .score-display{font-size:40px;font-weight:800;color:var(--gold);margin:6px 0;}
+  .level-badge{display:inline-block;margin-top:6px;padding:8px 20px;border-radius:30px;font-weight:700;font-size:13.5px;}
+  .lvl-empty{background:#222;color:var(--muted);}
+  .lvl-1{background:#4a2c1c;color:#ffb98a;}
+  .lvl-2{background:#4a3a1c;color:#ffd28a;}
+  .lvl-3{background:#2a3f2b;color:#a6d6a8;}
+  .lvl-4{background:#1c3d2a;color:#7be0a0;}
+
+  .btn-row{margin-top:16px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;}
+  button{background:var(--gold);color:#0b0b0b;border:none;padding:11px 22px;border-radius:4px;font-weight:700;font-size:13.5px;cursor:pointer;font-family:inherit;}
+  button.secondary{background:transparent;color:var(--gold);border:1px solid var(--gold);}
+
+  footer{text-align:center;margin-top:60px;padding-top:24px;border-top:1px solid var(--panel-border);font-size:12.5px;color:var(--muted);}
+  footer a{color:var(--gold);text-decoration:none;}
+
+  /* ---------- Printable summary ---------- */
+  #printSummary{display:none;}
+  @media print{
+    body *{visibility:hidden;}
+    #printSummary, #printSummary *{visibility:visible;}
+    #printSummary{
+      display:block !important;
+      position:absolute; top:0; left:0; width:100%;
+      background:#fff; color:#111; padding:40px;
+    }
+    .ps-header{text-align:center;border-bottom:3px solid #d4af37;padding-bottom:16px;margin-bottom:24px;}
+    .ps-header .ps-emblem{font-size:12px;letter-spacing:2px;color:#8a6d1c;font-weight:700;}
+    .ps-header h1{font-size:24px;margin:8px 0 4px;color:#111;}
+    .ps-header .ps-dept{font-size:15px;color:#555;}
+    .ps-meta{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;margin:20px 0;font-size:13.5px;}
+    .ps-meta div strong{color:#111;}
+    .ps-score-box{text-align:center;border:2px solid #d4af37;border-radius:8px;padding:20px;margin:24px 0;}
+    .ps-score-box .ps-score{font-size:38px;font-weight:800;color:#8a6d1c;}
+    .ps-score-box .ps-level{font-size:15px;font-weight:700;margin-top:6px;}
+    .ps-cats{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px;}
+    .ps-cats th, .ps-cats td{border:1px solid #ccc;padding:8px 10px;text-align:left;}
+    .ps-cats th{background:#f2f2f2;}
+    .ps-footer{margin-top:30px;font-size:11px;color:#777;text-align:center;border-top:1px solid #ddd;padding-top:14px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page-header">
+    <div class="emblem">NT &nbsp;|&nbsp; NIGEL A THOMAS</div>
+    <h1>AI Readiness <span>Self-Assessment</span><br>for Hospitality Staff</h1>
+    <p class="subtitle">Score your own comfort and fluency with AI tools relevant to your role — by department — and print a clean summary to attach to a job application.</p>
+    <p class="byline">By <a href="https://www.linkedin.com/in/nigel-thomas-66515534" target="_blank" rel="noopener">Nigel A. Thomas</a> — Hospitality Executive &amp; Corporate Trainer</p>
+    <p class="attribution">Assessment structure inspired by the category-based approach used in <em>The Decision Matrix Series</em> by Abhinav Prathivadi, developed here as a personal readiness tool for hospitality roles.</p>
+  </header>
+
+  <div class="intro">
+    Hotels and resorts are adopting AI faster than most training programs can keep up with — from AI-assisted booking engines and chatbots to predictive maintenance and demand forecasting. This isn't a test with right or wrong answers. It's an honest self-check: how comfortable are you, today, with the AI tools that already touch your department? Pick your department below, rate each statement 1–5, and get a printable summary you can bring to an interview or attach to an application.
+  </div>
+
+  <div class="id-panel">
+    <div class="id-grid">
+      <div class="id-field">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Your name">
+      </div>
+      <div class="id-field">
+        <label for="jobTitle">Current / Target Role</label>
+        <input type="text" id="jobTitle" placeholder="e.g. Front Office Supervisor">
+      </div>
+      <div class="id-field">
+        <label for="propertyName">Property / Employer (optional)</label>
+        <input type="text" id="propertyName" placeholder="e.g. Grand Palace Resort">
+      </div>
+      <div class="id-field">
+        <label for="deptSelect">Department</label>
+        <select id="deptSelect" onchange="renderDepartment()">
+          <option value="">Select a department...</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <p class="scale-key">Rate each statement: <strong>1</strong> = Not at all &nbsp;&middot;&nbsp; <strong>2</strong> = A little &nbsp;&middot;&nbsp; <strong>3</strong> = Somewhat &nbsp;&middot;&nbsp; <strong>4</strong> = Confidently &nbsp;&middot;&nbsp; <strong>5</strong> = Very confidently</p>
+
+  <div id="matrix"></div>
+
+  <div class="results-panel" id="resultsPanel" style="display:none;">
+    <h2>Your AI Readiness Score</h2>
+    <div class="score-display" id="overallScore">—</div>
+    <div id="levelBadge" class="level-badge lvl-empty">Score every statement to see your result</div>
+    <div class="btn-row">
+      <button onclick="calculateScore()">Calculate My Score</button>
+      <button class="secondary" onclick="generatePrintSummary()">Print Summary</button>
+      <button class="secondary" onclick="resetAll()">Reset</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; <span id="year"></span> Nigel A. Thomas &nbsp;|&nbsp; <a href="https://www.nigelthomas.live">nigelthomas.live</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/nigel-thomas-66515534" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+</div>
+
+<!-- Printable summary, hidden on screen, shown only in print -->
+<div id="printSummary"></div>
+
+<script>
+const CATEGORY_META = [
+  {key:"awareness", name:"AI Awareness", color:"#b2465c"},
+  {key:"fluency", name:"Hands-On Fluency", color:"#d98f7c"},
+  {key:"judgment", name:"Judgment & Verification", color:"#c17d45"},
+  {key:"data", name:"Guest & Data Responsibility", color:"#6f8f72"},
+  {key:"growth", name:"Adaptability & Growth", color:"#5a4a6b"}
+];
+
+const DEPARTMENTS = {
+  frontoffice: {
+    label: "Front Office",
+    statements: {
+      awareness:[
+        "I can name at least two AI-driven tools used in front office operations (e.g. dynamic pricing/RMS, AI chatbots, digital check-in).",
+        "I understand how AI-based revenue management influences the room rates I quote guests.",
+        "I know which AI tools my property currently uses at the front desk or online booking engine."
+      ],
+      fluency:[
+        "I have used an AI chatbot, virtual concierge, or automated messaging tool to communicate with guests.",
+        "I am comfortable using AI-assisted upsell or personalization prompts during check-in.",
+        "I can troubleshoot basic issues when an AI-driven PMS or booking feature doesn't behave as expected."
+      ],
+      judgment:[
+        "I double-check AI-suggested room assignments or rate overrides before confirming them to a guest.",
+        "I know when to override an AI recommendation based on my own judgment of a guest situation.",
+        "I can explain to a guest, in plain language, why an AI system generated a particular rate or offer."
+      ],
+      data:[
+        "I understand what guest data an AI booking or chat tool collects and how it should be protected.",
+        "I know my property's policy on sharing guest information with AI-powered third-party platforms.",
+        "I would flag a data privacy concern involving an AI tool to my supervisor without hesitation."
+      ],
+      growth:[
+        "I actively look for ways AI could reduce repetitive front-desk tasks (like ID scanning or rate lookups).",
+        "I have completed at least one training session or self-study on an AI tool used in guest services.",
+        "I feel confident learning new AI-powered front office systems within a normal onboarding period."
+      ]
+    }
+  },
+  housekeeping: {
+    label: "Housekeeping",
+    statements: {
+      awareness:[
+        "I understand how AI-based housekeeping scheduling or room-status systems assign my daily room list.",
+        "I know which apps or devices my property uses to track room status electronically.",
+        "I am aware of smart devices (e.g. AI-enabled thermostats, occupancy sensors) used in guest rooms."
+      ],
+      fluency:[
+        "I can update room status on a mobile app or tablet linked to the property's AI-assisted PMS.",
+        "I am comfortable using AI-optimized cleaning schedules or route-planning tools.",
+        "I can operate any AI-connected equipment (e.g. smart inventory scanners) used in my department."
+      ],
+      judgment:[
+        "I verify a room's actual condition even when an AI system marks it as \u201cclean\u201d or \u201cinspected.\u201d",
+        "I know when to manually override an automated room-status update.",
+        "I can identify when a scheduling algorithm has made an unrealistic assignment and raise it with my supervisor."
+      ],
+      data:[
+        "I understand what guest-related data (e.g. preferences, do-not-disturb patterns) an AI system may track.",
+        "I respect guest privacy even when AI tools flag rooms for extra attention.",
+        "I know how to report a malfunctioning smart-room device without compromising guest security."
+      ],
+      growth:[
+        "I look for ways AI-assisted tools could reduce time spent on repetitive housekeeping tasks.",
+        "I have received or sought out training on any smart or AI housekeeping tools used at my property.",
+        "I adapt quickly when management introduces a new AI-based housekeeping system."
+      ]
+    }
+  },
+  fb: {
+    label: "F&B / Restaurant Service",
+    statements: {
+      awareness:[
+        "I understand how AI-driven POS systems suggest upsells or combos during order-taking.",
+        "I know how AI-based reservation or table-management systems optimize seating at my outlet.",
+        "I am aware of AI tools used for menu engineering or demand forecasting at my property."
+      ],
+      fluency:[
+        "I can operate an AI-assisted POS or ordering system confidently during a busy service period.",
+        "I am comfortable using AI-generated recommendations for wine pairing or upselling.",
+        "I can use digital or AI tools to manage reservations, waitlists, or table turns."
+      ],
+      judgment:[
+        "I confirm AI-suggested allergen or dietary information with the kitchen before serving a guest.",
+        "I know when to disregard an AI upsell prompt because it doesn't fit the guest's needs.",
+        "I can explain a system-generated bill or charge to a guest if a question arises."
+      ],
+      data:[
+        "I understand what guest dining data (preferences, allergies, spend) an AI system stores and why it matters.",
+        "I know my property's policy on sharing guest dining history with AI-powered marketing tools.",
+        "I protect guest payment and personal information when using AI-integrated POS systems."
+      ],
+      growth:[
+        "I look for ways AI tools could speed up order accuracy or reduce service errors.",
+        "I have completed training on any AI-assisted POS, reservation, or forecasting tool used in my outlet.",
+        "I adjust quickly when new AI-driven service technology is introduced on the floor."
+      ]
+    }
+  },
+  kitchen: {
+    label: "Kitchen / Culinary",
+    statements: {
+      awareness:[
+        "I understand how AI-based demand forecasting affects prep quantities and ordering in my kitchen.",
+        "I know which AI or smart tools are used for inventory tracking, food cost analysis, or recipe costing.",
+        "I am aware of AI-enabled kitchen equipment (e.g. smart ovens, temperature monitoring) used in my section."
+      ],
+      fluency:[
+        "I can use a digital or AI-assisted recipe costing or inventory management tool.",
+        "I am comfortable working with AI-based demand forecasts when planning daily prep.",
+        "I can operate AI-connected kitchen equipment or monitoring systems used in my section."
+      ],
+      judgment:[
+        "I verify AI-generated food cost or waste reports against what I actually see in the kitchen.",
+        "I know when to override an AI-forecasted prep quantity based on real-time business volume.",
+        "I can identify when an AI-generated purchase order doesn't match actual kitchen needs."
+      ],
+      data:[
+        "I understand how AI tools use allergen and dietary data to flag menu items, and I double-check that data.",
+        "I follow food safety protocols even when an AI system indicates temperatures or holding times are within range.",
+        "I know how to escalate a food safety concern that an AI monitoring system may have missed."
+      ],
+      growth:[
+        "I look for ways AI tools could reduce food waste or improve prep efficiency in my section.",
+        "I have sought out or completed training on any AI-assisted kitchen or inventory tool used at my property.",
+        "I adapt quickly when new AI-driven kitchen technology or software is introduced."
+      ]
+    }
+  },
+  engineering: {
+    label: "Engineering / Maintenance",
+    statements: {
+      awareness:[
+        "I understand how AI-based predictive maintenance systems flag equipment issues before failure.",
+        "I know which AI or IoT-connected systems (HVAC, energy management, smart meters) are used at my property.",
+        "I am aware of how AI-driven work-order systems prioritize and assign maintenance tasks."
+      ],
+      fluency:[
+        "I can use a digital or AI-assisted work-order or maintenance management system confidently.",
+        "I am comfortable interpreting AI-generated alerts from building management or energy systems.",
+        "I can perform basic troubleshooting on AI-connected equipment before escalating to a vendor."
+      ],
+      judgment:[
+        "I physically verify equipment issues flagged by AI systems before closing out a work order.",
+        "I know when an AI-predicted maintenance alert is a false positive based on my own inspection.",
+        "I can explain to a guest or manager why a system flagged a room or area for maintenance."
+      ],
+      data:[
+        "I understand what operational or guest-room data energy and smart systems collect and how it should be secured.",
+        "I follow safety protocols even when an AI system indicates a repair is low priority.",
+        "I know how to report a cybersecurity concern involving a connected building system."
+      ],
+      growth:[
+        "I look for ways predictive maintenance tools could reduce downtime or energy costs at my property.",
+        "I have completed training on any AI-assisted maintenance or energy management system used on-site.",
+        "I adapt quickly when new smart-building or AI diagnostic technology is introduced."
+      ]
+    }
+  },
+  salesmarketing: {
+    label: "Sales & Marketing",
+    statements: {
+      awareness:[
+        "I understand how AI-driven revenue management and dynamic pricing tools set the rates I sell against.",
+        "I know which AI tools my property uses for guest segmentation, email marketing, or ad targeting.",
+        "I am aware of AI-generated content tools used for social media, website copy, or campaign creation."
+      ],
+      fluency:[
+        "I am comfortable using AI-assisted CRM tools to personalize outreach to guests or corporate clients.",
+        "I can use AI-generated insights (e.g. booking pace, competitor pricing) to adjust my sales approach.",
+        "I can use AI content-generation tools to draft marketing copy that I then review and edit."
+      ],
+      judgment:[
+        "I fact-check AI-generated marketing claims or copy before it goes out to guests or clients.",
+        "I know when to override an AI-recommended rate or promotion because it doesn't fit a specific account.",
+        "I can explain to a client how a dynamically priced rate or offer was generated."
+      ],
+      data:[
+        "I understand what guest and client data feeds AI segmentation and targeting tools, and how it's protected.",
+        "I follow data consent and privacy rules when using AI tools for email or ad campaigns.",
+        "I would flag a compliance concern (e.g. data misuse) involving a marketing AI tool immediately."
+      ],
+      growth:[
+        "I look for ways AI tools could improve lead conversion or campaign performance.",
+        "I have completed training on any AI-assisted CRM, pricing, or marketing tool used at my property.",
+        "I adapt quickly when new AI-driven sales or marketing technology is introduced."
+      ]
+    }
+  },
+  hr: {
+    label: "Human Resources",
+    statements: {
+      awareness:[
+        "I understand how AI is used in candidate screening, resume shortlisting, or interview scheduling at my property.",
+        "I know which AI tools are used for employee scheduling, payroll checks, or performance tracking.",
+        "I am aware of AI-based training or e-learning platforms used for staff development."
+      ],
+      fluency:[
+        "I am comfortable using AI-assisted applicant tracking or scheduling systems.",
+        "I can interpret AI-generated reports on staffing levels, turnover, or engagement.",
+        "I can guide staff through AI-based onboarding or e-learning tools confidently."
+      ],
+      judgment:[
+        "I review AI-shortlisted candidates myself rather than relying solely on an algorithm's ranking.",
+        "I know when to escalate a concern about potential bias in an AI screening or scheduling tool.",
+        "I can explain to an employee how an AI-assisted scheduling or performance system reached a decision."
+      ],
+      data:[
+        "I understand what employee data AI HR tools collect and how it must be protected under privacy policy.",
+        "I follow fair-hiring and data protection standards when using AI recruitment tools.",
+        "I would raise a concern immediately if an AI tool appeared to discriminate against a candidate or employee."
+      ],
+      growth:[
+        "I look for ways AI tools could reduce administrative burden in recruiting, scheduling, or onboarding.",
+        "I have completed training on any AI-assisted HR platform used at my property.",
+        "I adapt quickly when new AI-driven HR technology is introduced."
+      ]
+    }
+  },
+  accounting: {
+    label: "Accounting / Finance",
+    statements: {
+      awareness:[
+        "I understand how AI is used in my property's forecasting, budgeting, or expense-anomaly detection.",
+        "I know which AI tools are used for invoice processing, reconciliation, or financial reporting.",
+        "I am aware of how AI-driven revenue management ties into the P&L figures I work with."
+      ],
+      fluency:[
+        "I am comfortable using AI-assisted accounting or reconciliation software.",
+        "I can interpret AI-flagged anomalies (e.g. unusual expenses, billing discrepancies) and investigate them properly.",
+        "I can generate and explain AI-assisted financial forecasts or variance reports."
+      ],
+      judgment:[
+        "I verify AI-flagged financial discrepancies manually before escalating or closing them out.",
+        "I know when an AI-generated forecast doesn't reflect real operational context and needs adjustment.",
+        "I can explain an AI-assisted budget variance to a department head in plain terms."
+      ],
+      data:[
+        "I understand what financial and payment data AI tools access and how it must be secured (e.g. PCI-DSS).",
+        "I follow strict access controls when using AI-assisted financial systems.",
+        "I would report a suspected fraud or data-security issue involving an AI finance tool immediately."
+      ],
+      growth:[
+        "I look for ways AI tools could reduce manual reconciliation work or catch errors earlier.",
+        "I have completed training on any AI-assisted finance or accounting tool used at my property.",
+        "I adapt quickly when new AI-driven financial technology or reporting tool is introduced."
+      ]
+    }
+  },
+  security: {
+    label: "Security",
+    statements: {
+      awareness:[
+        "I understand how AI-based CCTV analytics or access-control systems are used at my property.",
+        "I know which AI tools flag unusual guest or staff activity for review.",
+        "I am aware of how AI-driven systems support incident logging or emergency response coordination."
+      ],
+      fluency:[
+        "I am comfortable monitoring and interpreting AI-flagged alerts from surveillance or access systems.",
+        "I can operate AI-assisted incident reporting or visitor management systems confidently.",
+        "I can respond appropriately when an AI system flags a potential security concern in real time."
+      ],
+      judgment:[
+        "I personally verify an AI-flagged incident before taking action, rather than acting on the alert alone.",
+        "I know when an AI system has generated a false alarm and how to close it out properly.",
+        "I can explain to a guest or manager why an AI-based system flagged a specific situation."
+      ],
+      data:[
+        "I understand what guest and staff data AI security systems collect (e.g. video, access logs) and how it's protected.",
+        "I follow strict confidentiality standards when handling AI-flagged incidents involving guests or staff.",
+        "I would escalate a privacy or misuse concern involving an AI security tool immediately."
+      ],
+      growth:[
+        "I look for ways AI security tools could improve response times or reduce false alarms.",
+        "I have completed training on any AI-assisted security or surveillance system used at my property.",
+        "I adapt quickly when new AI-driven security technology is introduced."
+      ]
+    }
+  }
+};
+
+// Populate department dropdown
+const deptSelect = document.getElementById("deptSelect");
+Object.keys(DEPARTMENTS).forEach(key => {
+  const opt = document.createElement("option");
+  opt.value = key;
+  opt.textContent = DEPARTMENTS[key].label;
+  deptSelect.appendChild(opt);
+});
+
+const matrixEl = document.getElementById("matrix");
+const resultsPanel = document.getElementById("resultsPanel");
+
+function renderDepartment(){
+  const deptKey = deptSelect.value;
+  matrixEl.innerHTML = "";
+  resultsPanel.style.display = "none";
+  if(!deptKey) return;
+
+  const dept = DEPARTMENTS[deptKey];
+
+  CATEGORY_META.forEach(cat => {
+    const block = document.createElement("div");
+    block.className = "category-block";
+
+    const header = document.createElement("div");
+    header.className = "category-header";
+    header.innerHTML = `<span><span class="catdot" style="background:${cat.color}"></span>${cat.name}</span>`;
+    block.appendChild(header);
+
+    dept.statements[cat.key].forEach((stmt, i) => {
+      const row = document.createElement("div");
+      row.className = "stmt-row";
+
+      const text = document.createElement("div");
+      text.className = "stmt-text";
+      text.textContent = stmt;
+      row.appendChild(text);
+
+      const scale = document.createElement("div");
+      scale.className = "stmt-scale";
+      for(let v=1; v<=5; v++){
+        const id = `q-${cat.key}-${i}-${v}`;
+        const inp = document.createElement("input");
+        inp.type = "radio";
+        inp.name = `q-${cat.key}-${i}`;
+        inp.id = id;
+        inp.value = v;
+        const lbl = document.createElement("label");
+        lbl.setAttribute("for", id);
+        lbl.textContent = v;
+        scale.appendChild(inp);
+        scale.appendChild(lbl);
+      }
+      row.appendChild(scale);
+      block.appendChild(row);
+    });
+
+    const avgRow = document.createElement("div");
+    avgRow.className = "cat-average";
+    avgRow.innerHTML = `Category Average: <strong id="catavg-${cat.key}">—</strong>`;
+    block.appendChild(avgRow);
+
+    matrixEl.appendChild(block);
+  });
+
+  resultsPanel.style.display = "block";
+}
+
+function getReadinessLevel(score){
+  if(score < 2.5) return {label:"AI Foundational — Just Starting", cls:"lvl-1"};
+  if(score < 3.5) return {label:"AI Developing — Building Confidence", cls:"lvl-2"};
+  if(score < 4.3) return {label:"AI Proficient — Solid Working Fluency", cls:"lvl-3"};
+  return {label:"AI Advanced — High Fluency & Judgment", cls:"lvl-4"};
+}
+
+function calculateScore(){
+  const deptKey = deptSelect.value;
+  if(!deptKey) return;
+  const dept = DEPARTMENTS[deptKey];
+  let categoryAverages = [];
+
+  CATEGORY_META.forEach(cat => {
+    let scores = [];
+    dept.statements[cat.key].forEach((stmt, i) => {
+      const checked = document.querySelector(`input[name="q-${cat.key}-${i}"]:checked`);
+      if(checked) scores.push(parseInt(checked.value));
+    });
+    const avgEl = document.getElementById(`catavg-${cat.key}`);
+    if(scores.length > 0){
+      const avg = scores.reduce((a,b)=>a+b,0) / scores.length;
+      avgEl.textContent = avg.toFixed(1);
+      categoryAverages.push(avg);
+    } else {
+      avgEl.textContent = "—";
+    }
+  });
+
+  const overallEl = document.getElementById("overallScore");
+  const badge = document.getElementById("levelBadge");
+
+  if(categoryAverages.length === 0){
+    overallEl.textContent = "—";
+    badge.className = "level-badge lvl-empty";
+    badge.textContent = "Score every statement to see your result";
+    return;
+  }
+
+  const overall = categoryAverages.reduce((a,b)=>a+b,0) / categoryAverages.length;
+  overallEl.textContent = overall.toFixed(2);
+  const level = getReadinessLevel(overall);
+  badge.className = "level-badge " + level.cls;
+  badge.textContent = level.label;
+}
+
+function generatePrintSummary(){
+  const deptKey = deptSelect.value;
+  if(!deptKey){ alert("Please select a department and score your statements first."); return; }
+  calculateScore();
+
+  const dept = DEPARTMENTS[deptKey];
+  const name = document.getElementById("fullName").value || "________________________";
+  const role = document.getElementById("jobTitle").value || "________________________";
+  const property = document.getElementById("propertyName").value || "—";
+  const dateStr = new Date().toLocaleDateString("en-US", {year:"numeric", month:"long", day:"numeric"});
+
+  const overallText = document.getElementById("overallScore").textContent;
+  const badge = document.getElementById("levelBadge");
+  const levelText = badge.textContent;
+
+  if(overallText === "—"){
+    alert("Please score at least one statement in each category before printing.");
+    return;
+  }
+
+  let rows = "";
+  CATEGORY_META.forEach(cat => {
+    const avg = document.getElementById(`catavg-${cat.key}`).textContent;
+    rows += `<tr><td>${cat.name}</td><td>${avg}</td></tr>`;
+  });
+
+  const html = `
+    <div class="ps-header">
+      <div class="ps-emblem">NT | NIGEL A THOMAS &mdash; HOSPITALITY EXECUTIVE</div>
+      <h1>AI Readiness Self-Assessment</h1>
+      <div class="ps-dept">${dept.label} &mdash; Hospitality Operations</div>
+    </div>
+    <div class="ps-meta">
+      <div><strong>Name:</strong> ${name}</div>
+      <div><strong>Date:</strong> ${dateStr}</div>
+      <div><strong>Role:</strong> ${role}</div>
+      <div><strong>Property / Employer:</strong> ${property}</div>
+    </div>
+    <div class="ps-score-box">
+      <div class="ps-score">${overallText} / 5.00</div>
+      <div class="ps-level">${levelText}</div>
+    </div>
+    <table class="ps-cats">
+      <thead><tr><th>Category</th><th>Average Score</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div class="ps-footer">
+      Self-assessment completed via nigelthomas.live/ai-readiness-self-assessment-hospitality.html &mdash;
+      framework by Nigel A. Thomas, Hospitality Executive &amp; Corporate Trainer.
+      Scores reflect self-reported confidence, not a certified competency exam.
+    </div>
+  `;
+
+  document.getElementById("printSummary").innerHTML = html;
+  window.print();
+}
+
+function resetAll(){
+  document.getElementById("fullName").value = "";
+  document.getElementById("jobTitle").value = "";
+  document.getElementById("propertyName").value = "";
+  deptSelect.value = "";
+  matrixEl.innerHTML = "";
+  resultsPanel.style.display = "none";
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
