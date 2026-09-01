@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Nigel A. Thomas | Apply Dashboard</title>
-<meta name="description" content="Job search launch pad for Nigel A. Thomas — resume, cover letter, one-click job board search, and application tracker for Pan-India hospitality leadership roles.">
+<meta content="Job search launch pad for Nigel A. Thomas — resume, cover letter, one-click job board search, and application tracker for Pan-India hospitality leadership roles." name="description"/>
 <style>
   :root{
     --bg:#0a0a0a;
@@ -125,75 +126,62 @@
 </style>
 </head>
 <body>
-
 <nav>
-  <div class="brand">NIGEL A. <span>THOMAS</span></div>
-  <div class="links">
-    <a href="https://nigelthomas.live" target="_blank">Portfolio</a>
-    <a href="https://www.linkedin.com/in/nathomas-hospitality" target="_blank">LinkedIn</a>
-    <a href="https://nigelthomas.live/nigel_job_dashboard.html" target="_blank">Job Board Dashboard</a>
-  </div>
+<div class="brand">NIGEL A. <span>THOMAS</span></div>
+<div class="links">
+<a href="https://nigelthomas.live" target="_blank">Portfolio</a>
+<a href="https://www.linkedin.com/in/nathomas-hospitality" target="_blank">LinkedIn</a>
+<a href="https://nigelthomas.live/nigel_job_dashboard.html" target="_blank">Job Board Dashboard</a>
+</div>
 </nav>
-
 <section class="hero">
-  <h1>Apply <span class="accent">Dashboard</span></h1>
-  <p class="tag">Resume, cover letter, and one-click access to the boards where Pan-India hospitality leadership roles get posted.</p>
-  <div class="cta-row">
-    <a class="btn btn-gold" href="Nigel_Thomas_Resume.pdf" download>Download Resume</a>
-    <a class="btn btn-gold" href="Nigel_Thomas_Cover_Letter.pdf" download>Download Cover Letter</a>
-    <button class="btn btn-outline" onclick="copyEmail()">Copy Email</button>
-  </div>
+<h1>Apply <span class="accent">Dashboard</span></h1>
+<p class="tag">Resume, cover letter, and one-click access to the boards where Pan-India hospitality leadership roles get posted.</p>
+<div class="cta-row">
+<a class="btn btn-gold" download="" href="Nigel_Thomas_Resume.pdf">Download Resume</a>
+<a class="btn btn-gold" download="" href="Nigel_Thomas_Cover_Letter.pdf">Download Cover Letter</a>
+<button class="btn btn-outline" onclick="copyEmail()">Copy Email</button>
+</div>
 </section>
-
-<section class="section" id="roles">
-  <h2>Target Roles</h2>
-  <p class="sub">Pick a role — it filters every search link below.</p>
-  <div class="chips" id="roleChips"></div>
-</section>
-
 <section class="section" id="launcher-section">
-  <h2>Search the Boards</h2>
-  <p class="sub">Location defaults to India-wide. Change it for a specific city, then hit search on any board — each opens a pre-filled results page in a new tab.</p>
-  <div class="launcher">
-    <div class="launcher-controls">
-      <label style="font-size:13px;color:var(--text-dim);">Location&nbsp;</label>
-      <input type="text" id="locationInput" value="India" style="min-width:160px;">
-      <span style="font-size:12.5px;color:var(--text-dim);">Currently searching: <strong id="currentRoleLabel" style="color:var(--gold);">General Manager</strong></span>
-    </div>
-    <div class="board-grid" id="boardGrid"></div>
-  </div>
+<h2>Search the Boards</h2>
+<p class="sub">Location defaults to India-wide. Change it for a specific city, then hit search on any board — each opens a pre-filled results page in a new tab.</p>
+<div class="launcher">
+<div class="launcher-controls">
+<label style="font-size:13px;color:var(--text-dim);">Location </label>
+<input id="locationInput" style="min-width:160px;" type="text" value="India"/>
+<span style="font-size:12.5px;color:var(--text-dim);">Currently searching: <strong id="currentRoleLabel" style="color:var(--gold);">General Manager</strong></span>
+</div>
+<div class="board-grid" id="boardGrid"></div>
+</div>
 </section>
-
 <section class="section" id="tracker">
-  <h2>Application Tracker</h2>
-  <p class="sub">Log every application as you send it. Saved automatically in this browser.</p>
-  <table id="trackerTable">
-    <thead>
-      <tr>
-        <th style="width:16%;">Company</th>
-        <th style="width:16%;">Role</th>
-        <th style="width:12%;">Platform</th>
-        <th style="width:12%;">Date Applied</th>
-        <th style="width:13%;">Status</th>
-        <th style="width:21%;">Notes</th>
-        <th style="width:6%;"></th>
-      </tr>
-    </thead>
-    <tbody id="trackerBody"></tbody>
-  </table>
-  <div class="table-actions">
-    <button class="btn btn-outline" onclick="addRow()">+ Add Application</button>
-    <button class="btn btn-outline" onclick="exportCSV()">Export CSV</button>
-  </div>
+<h2>Application Tracker</h2>
+<p class="sub">Log every application as you send it. Saved automatically in this browser.</p>
+<table id="trackerTable">
+<thead>
+<tr>
+<th style="width:16%;">Company</th>
+<th style="width:16%;">Role</th>
+<th style="width:12%;">Platform</th>
+<th style="width:12%;">Date Applied</th>
+<th style="width:13%;">Status</th>
+<th style="width:21%;">Notes</th>
+<th style="width:6%;"></th>
+</tr>
+</thead>
+<tbody id="trackerBody"></tbody>
+</table>
+<div class="table-actions">
+<button class="btn btn-outline" onclick="addRow()">+ Add Application</button>
+<button class="btn btn-outline" onclick="exportCSV()">Export CSV</button>
+</div>
 </section>
-
 <footer>
-  Nigel A. Thomas &middot; Mumbai, India &middot; +91 97693 51231 &middot; restgenmgr1952@gmail.com<br>
-  <a href="https://nigelthomas.live" target="_blank">nigelthomas.live</a> &middot; <a href="https://www.linkedin.com/in/nathomas-hospitality" target="_blank">LinkedIn</a>
+  Nigel A. Thomas · Mumbai, India · +91 97693 51231 · restgenmgr1952@gmail.com<br/>
+<a href="https://nigelthomas.live" target="_blank">nigelthomas.live</a> · <a href="https://www.linkedin.com/in/nathomas-hospitality" target="_blank">LinkedIn</a>
 </footer>
-
 <div class="toast" id="toast"></div>
-
 <script>
 const ROLES = [
   "General Manager",
@@ -388,24 +376,40 @@ renderBoards();
 loadApplications();
 renderTracker();
 </script>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
 
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<section class="section" id="roles">
+<h2>Target Roles</h2>
+<p class="sub">Pick a role — it filters every search link below.</p>
+<div class="chips" id="roleChips"></div>
+</section>
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
