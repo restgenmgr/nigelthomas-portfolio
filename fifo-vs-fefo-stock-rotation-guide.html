@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FIFO · LIFO · FEFO — Stock Rotation Poster</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FIFO · LIFO · FEFO — Stock Rotation Poster</title>
+<style>
         /* ───────── RESET & BASE ───────── */
         * {
             margin: 0;
@@ -703,211 +704,16 @@
             }
         }
     </style>
-    <!-- Google Font: Cinzel for elegant serif -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&display=swap" rel="stylesheet" />
+<!-- Google Font: Cinzel for elegant serif -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-    <div class="poster">
-
-        <!-- ═══ HEADER ═══ -->
-        <div class="main-title">
-            <h1>FIFO · LIFO · FEFO</h1>
-            <span class="sub">Stock Rotation Rules &mdash; Every Store Manager Must Know</span>
-            <span class="sub-sub">Protecting Food Quality · Reducing Waste · Controlling Cost · Ensuring Safety</span>
-        </div>
-
-        <!-- ═══ THREE COLUMNS ═══ -->
-        <div class="columns">
-
-            <!-- ──── FIFO COLUMN ──── -->
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="gold">FIFO</h2>
-                    <span class="badge">Queue</span>
-                </div>
-                <div class="tagline">First In, First Out &mdash; the first item in is the first item out.</div>
-
-                <div style="margin-bottom:4px;">
-                    <span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN</span>
-                </div>
-                <ul class="day-list">
-                    <li><span class="day-tag">Day 1</span> <span class="item-name">Milk</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 1</span></li>
-                    <li><span class="day-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 2</span></li>
-                    <li><span class="day-tag">Day 3</span> <span class="item-name">Juice</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 3</span></li>
-                </ul>
-
-                <div class="structure-visual">
-                    <span class="icon">⏳</span>
-                    <span class="label">Like a queue</span>
-                    <span style="color:#8a857a;font-size:0.75rem;">— first come, first served</span>
-                </div>
-
-                <div class="example-box">
-                    <div class="ex-title">✦ Example — need 1 item</div>
-                    <div class="ex-result">
-                        <span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
-                        <div class="items">
-                            <span class="removed">Day 1</span>
-                            <span class="kept">Day 2</span>
-                            <span class="kept">Day 3</span>
-                        </div>
-                    </div>
-                    <div class="remaining-note">
-                        <strong>Remaining:</strong> Yogurt (Day 2) · Juice (Day 3)
-                    </div>
-                </div>
-
-                <div class="meta-row">
-                    <div class="meta-item">
-                        <span class="label-sm">Best for</span>
-                        <span class="value gold">Dry goods, canned items, non‑perishables</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="label-sm">Remember</span>
-                        <span class="value gold">FIFO = Queue</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ──── LIFO COLUMN ──── -->
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="gold">LIFO</h2>
-                    <span class="badge">Stack</span>
-                </div>
-                <div class="tagline">Last In, First Out &mdash; the last item in is the first item out.</div>
-
-                <div style="margin-bottom:4px;">
-                    <span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN</span>
-                </div>
-                <ul class="day-list">
-                    <li><span class="day-tag">Day 1</span> <span class="item-name">Milk</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 1</span></li>
-                    <li><span class="day-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 2</span></li>
-                    <li><span class="day-tag">Day 3</span> <span class="item-name">Juice</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 3</span></li>
-                </ul>
-
-                <div class="structure-visual">
-                    <span class="icon">📚</span>
-                    <span class="label">Like a stack</span>
-                    <span style="color:#8a857a;font-size:0.75rem;">— last placed, first removed</span>
-                </div>
-
-                <div class="example-box">
-                    <div class="ex-title">✦ Example — need 1 item</div>
-                    <div class="ex-result">
-                        <span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
-                        <div class="items">
-                            <span class="kept">Day 1</span>
-                            <span class="kept">Day 2</span>
-                            <span class="removed">Day 3</span>
-                        </div>
-                    </div>
-                    <div class="remaining-note">
-                        <strong>Remaining:</strong> Milk (Day 1) · Yogurt (Day 2)
-                    </div>
-                </div>
-
-                <div class="meta-row">
-                    <div class="meta-item">
-                        <span class="label-sm">Best for</span>
-                        <span class="value gold">Long shelf life, non‑perishable goods, some chemicals</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="label-sm">Remember</span>
-                        <span class="value gold">LIFO = Stack</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ──── FEFO COLUMN (LIVE DATES) ──── -->
-            <div class="card">
-                <div class="card-header">
-                    <h2 class="gold">FEFO</h2>
-                    <span class="badge badge-live">Expiry First · Live</span>
-                </div>
-                <div class="tagline">First Expired, First Out &mdash; nearest expiry used first, regardless of arrival.</div>
-
-                <div style="margin-bottom:4px;">
-                    <span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN (auto‑generated expiry)</span>
-                </div>
-                <ul class="expiry-list">
-                    <li><span class="exp-tag">Day 1</span> <span class="item-name">Milk</span> <span class="exp-date live-indicator" data-days="5">Exp: --</span></li>
-                    <li><span class="exp-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="exp-date warning live-indicator" data-days="3">Exp: --</span></li>
-                    <li><span class="exp-tag">Day 3</span> <span class="item-name">Juice</span> <span class="exp-date live-indicator" data-days="7">Exp: --</span></li>
-                </ul>
-
-                <div class="fefo-note">
-                    <strong>⏰ FEFO:</strong> Uses the item with the <strong>earliest expiry</strong> first — even if it arrived after others.
-                    <br /><span style="font-size:0.7rem;color:#6a6558;">(Expiry dates update automatically to today + days)</span>
-                </div>
-
-                <div class="example-box">
-                    <div class="ex-title">✦ Example — need 1 item</div>
-                    <div class="ex-result">
-                        <span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
-                        <div class="items">
-                            <span class="kept">Day 1</span>
-                            <span class="removed">Day 2</span>
-                            <span class="kept">Day 3</span>
-                        </div>
-                    </div>
-                    <div class="remaining-note">
-                        <strong>Remaining:</strong> Milk · Juice
-                        <br /><span style="font-size:0.7rem;color:#8a857a;">Yogurt (earliest expiry) used first.</span>
-                    </div>
-                </div>
-
-                <div class="meta-row">
-                    <div class="meta-item">
-                        <span class="label-sm">Best for</span>
-                        <span class="value gold">Perishables: meat, dairy, seafood, produce, prepared food</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="label-sm">Remember</span>
-                        <span class="value gold">FEFO = Expiry Date</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /columns -->
-
-        <!-- ═══ BOTTOM BRAND BAR ═══ -->
-        <div class="brand-bar">
-
-            <!-- Left: Emblem + Name -->
-            <div class="brand-left">
-                <div class="emblem">
-                    <div class="logo-icon">NT</div>
-                    <div class="logo-text">
-                        <span class="name">NIGEL THOMAS</span>
-                        <span class="title">Hospitality Executive · Leadership · Operations Excellence</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right: Contact -->
-            <div class="brand-right">
-                <div class="contact-row">
-                    <a href="https://www.linkedin.com/in/nigel-thomas-66515534" target="_blank" rel="noopener">linkedin.com/in/nigel-thomas-66515534</a>
-                    <span class="sep">|</span>
-                    <a href="https://nigelthomas.live" target="_blank" rel="noopener">nigelthomas.live</a>
-                    <span class="sep">|</span>
-                    <span class="phone">+91 9769351231</span>
-                </div>
-            </div>
-
-        </div>
-        <!-- /brand-bar -->
-
-    </div>
-    <!-- /poster -->
-
-    <!-- ═══ JAVASCRIPT: LIVE DATE ENGINE ═══ -->
-    <script>
+<!-- /poster -->
+<!-- ═══ JAVASCRIPT: LIVE DATE ENGINE ═══ -->
+<script>
         document.addEventListener('DOMContentLoaded', function() {
             // Find all expiry date elements that have a data-days attribute
             const expirySpans = document.querySelectorAll('.exp-date[data-days]');
@@ -936,5 +742,190 @@
         });
     </script>
 
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<div class="poster">
+<!-- ═══ HEADER ═══ -->
+<div class="main-title">
+<h1>FIFO · LIFO · FEFO</h1>
+<span class="sub">Stock Rotation Rules — Every Store Manager Must Know</span>
+<span class="sub-sub">Protecting Food Quality · Reducing Waste · Controlling Cost · Ensuring Safety</span>
+</div>
+<!-- ═══ THREE COLUMNS ═══ -->
+<div class="columns">
+<!-- ──── FIFO COLUMN ──── -->
+<div class="card">
+<div class="card-header">
+<h2 class="gold">FIFO</h2>
+<span class="badge">Queue</span>
+</div>
+<div class="tagline">First In, First Out — the first item in is the first item out.</div>
+<div style="margin-bottom:4px;">
+<span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN</span>
+</div>
+<ul class="day-list">
+<li><span class="day-tag">Day 1</span> <span class="item-name">Milk</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 1</span></li>
+<li><span class="day-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 2</span></li>
+<li><span class="day-tag">Day 3</span> <span class="item-name">Juice</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 3</span></li>
+</ul>
+<div class="structure-visual">
+<span class="icon">⏳</span>
+<span class="label">Like a queue</span>
+<span style="color:#8a857a;font-size:0.75rem;">— first come, first served</span>
+</div>
+<div class="example-box">
+<div class="ex-title">✦ Example — need 1 item</div>
+<div class="ex-result">
+<span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
+<div class="items">
+<span class="removed">Day 1</span>
+<span class="kept">Day 2</span>
+<span class="kept">Day 3</span>
+</div>
+</div>
+<div class="remaining-note">
+<strong>Remaining:</strong> Yogurt (Day 2) · Juice (Day 3)
+                    </div>
+</div>
+<div class="meta-row">
+<div class="meta-item">
+<span class="label-sm">Best for</span>
+<span class="value gold">Dry goods, canned items, non‑perishables</span>
+</div>
+<div class="meta-item">
+<span class="label-sm">Remember</span>
+<span class="value gold">FIFO = Queue</span>
+</div>
+</div>
+</div>
+<!-- ──── LIFO COLUMN ──── -->
+<div class="card">
+<div class="card-header">
+<h2 class="gold">LIFO</h2>
+<span class="badge">Stack</span>
+</div>
+<div class="tagline">Last In, First Out — the last item in is the first item out.</div>
+<div style="margin-bottom:4px;">
+<span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN</span>
+</div>
+<ul class="day-list">
+<li><span class="day-tag">Day 1</span> <span class="item-name">Milk</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 1</span></li>
+<li><span class="day-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 2</span></li>
+<li><span class="day-tag">Day 3</span> <span class="item-name">Juice</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 3</span></li>
+</ul>
+<div class="structure-visual">
+<span class="icon">📚</span>
+<span class="label">Like a stack</span>
+<span style="color:#8a857a;font-size:0.75rem;">— last placed, first removed</span>
+</div>
+<div class="example-box">
+<div class="ex-title">✦ Example — need 1 item</div>
+<div class="ex-result">
+<span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
+<div class="items">
+<span class="kept">Day 1</span>
+<span class="kept">Day 2</span>
+<span class="removed">Day 3</span>
+</div>
+</div>
+<div class="remaining-note">
+<strong>Remaining:</strong> Milk (Day 1) · Yogurt (Day 2)
+                    </div>
+</div>
+<div class="meta-row">
+<div class="meta-item">
+<span class="label-sm">Best for</span>
+<span class="value gold">Long shelf life, non‑perishable goods, some chemicals</span>
+</div>
+<div class="meta-item">
+<span class="label-sm">Remember</span>
+<span class="value gold">LIFO = Stack</span>
+</div>
+</div>
+</div>
+<!-- ──── FEFO COLUMN (LIVE DATES) ──── -->
+<div class="card">
+<div class="card-header">
+<h2 class="gold">FEFO</h2>
+<span class="badge badge-live">Expiry First · Live</span>
+</div>
+<div class="tagline">First Expired, First Out — nearest expiry used first, regardless of arrival.</div>
+<div style="margin-bottom:4px;">
+<span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN (auto‑generated expiry)</span>
+</div>
+<ul class="expiry-list">
+<li><span class="exp-tag">Day 1</span> <span class="item-name">Milk</span> <span class="exp-date live-indicator" data-days="5">Exp: --</span></li>
+<li><span class="exp-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="exp-date warning live-indicator" data-days="3">Exp: --</span></li>
+<li><span class="exp-tag">Day 3</span> <span class="item-name">Juice</span> <span class="exp-date live-indicator" data-days="7">Exp: --</span></li>
+</ul>
+<div class="fefo-note">
+<strong>⏰ FEFO:</strong> Uses the item with the <strong>earliest expiry</strong> first — even if it arrived after others.
+                    <br/><span style="font-size:0.7rem;color:#6a6558;">(Expiry dates update automatically to today + days)</span>
+</div>
+<div class="example-box">
+<div class="ex-title">✦ Example — need 1 item</div>
+<div class="ex-result">
+<span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
+<div class="items">
+<span class="kept">Day 1</span>
+<span class="removed">Day 2</span>
+<span class="kept">Day 3</span>
+</div>
+</div>
+<div class="remaining-note">
+<strong>Remaining:</strong> Milk · Juice
+                        <br/><span style="font-size:0.7rem;color:#8a857a;">Yogurt (earliest expiry) used first.</span>
+</div>
+</div>
+<div class="meta-row">
+<div class="meta-item">
+<span class="label-sm">Best for</span>
+<span class="value gold">Perishables: meat, dairy, seafood, produce, prepared food</span>
+</div>
+<div class="meta-item">
+<span class="label-sm">Remember</span>
+<span class="value gold">FEFO = Expiry Date</span>
+</div>
+</div>
+</div>
+</div>
+<!-- /columns -->
+<!-- ═══ BOTTOM BRAND BAR ═══ -->
+<div class="brand-bar">
+<!-- Left: Emblem + Name -->
+<div class="brand-left">
+<div class="emblem">
+<div class="logo-icon">NT</div>
+<div class="logo-text">
+<span class="name">NIGEL THOMAS</span>
+<span class="title">Hospitality Executive · Leadership · Operations Excellence</span>
+</div>
+</div>
+</div>
+<!-- Right: Contact -->
+<div class="brand-right">
+<div class="contact-row">
+<a href="https://www.linkedin.com/in/nigel-thomas-66515534" rel="noopener" target="_blank">linkedin.com/in/nigel-thomas-66515534</a>
+<span class="sep">|</span>
+<a href="https://nigelthomas.live" rel="noopener" target="_blank">nigelthomas.live</a>
+<span class="sep">|</span>
+<span class="phone">+91 9769351231</span>
+</div>
+</div>
+</div>
+<!-- /brand-bar -->
+</div>
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
 </body>
 </html>

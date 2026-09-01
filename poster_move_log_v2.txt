@@ -1,0 +1,934 @@
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\10-biggest-hotels-in-the-world.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\100-hospitality-interview-questions.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\14-major-food-allergens.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\15-money-leaks-in-a-restaurant.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\6-pizza-recipes-hotel-restaurant-menu.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\7-types-of-coffee-and-how-theyre-made.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\about.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting-dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting-v3.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-decision-matrix.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-readiness-self-assessment-hospitality.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-shaping-future-jobs-2026.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-tool-integration-matrix-hospitality.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\area-manager-restaurant-visit-diagnostic-lenses.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\area-manager-vs-cluster-manager.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ats-friendly-hospitality-cv-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\beers.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\beverage.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog-card-snippet.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\buffet-food-temperature-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\building-a-career-in-hospitality-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\career-general.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\certifications.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\chef-de-partie-complete-career-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\classic-cocktails-guide.html
+  🔍 DRY RUN: would move 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cloud-kitchen-catering-operations-guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 556: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cocktail-bar-service-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\coffee-shop-vocabulary.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\coffee-types-poster.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\colour-coding-knives-cutting-boards.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\complete-guide-to-hotel-and-restaurant-abbreviations-final.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\complete-guide-to-hotel-and-restaurant-abbreviations.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\condiments-vs-sauces-fb-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\condiments-vs-sauces-poster.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\contact.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cost-control-protect-profit.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cruise-ship-crew-rotations-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\direct-vs-ota-booking-guest-occasion.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\disclaimer.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\equal-opportunity-employer-india-usa-europe.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\executive-career-dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\executive-chef-duties-and-responsibilities.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\executive-chef-job-description-requirements.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\f&b-service-interview-q&a.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\fb-cost-control-blueprint.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\fifo-vs-fefo-poster.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\fifo-vs-fefo-stock-rotation-guide.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\financial-kpis-poster.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\foh-boh-equipment-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\foh-boh-hierarchy-blog.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-and-beverage-question-and-answers.html
+  🔍 DRY RUN: would move 6 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-and-beverage-service-hierarchy.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-cost-basics.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-cost-control-complete-guide.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-handling-guide-poster.html
+  🔍 DRY RUN: would move 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-handling-procedure.html
+  🔍 DRY RUN: would move 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\general-manager-duties-and-responsibilities.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\general-manager-vs-hotel-manager.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\gm-leadership-playbook-interview-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\google0c2817338a31af1a.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\haccp-hazard-analysis-critical-control-points.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\haccp-kitchen-checklist.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\history-of-wine-world-wine-regions-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-franchising-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management-tools.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\host-full-form-hotel-industry.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0x97 in position 180: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hot-and-cold-kitchens-temperature-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-gm-competency-framework.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-kpi-formula-cheat-sheet.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-management-financial-model.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-management-playbook-month-end-reporting.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-p&l.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-sops-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-vs-resort-expenditure-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\how-to-calculate-food-cost-per-portion.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\how-to-carry-a-service-tray.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\how-to-control-food-cost.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\image-usage.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\index.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\key-hotel-kpis-every-hotelier-should-track.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\key-hotel-management-roles.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-cleaning-schedule-template.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-food.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-haccp-poster.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-temperature-log-sheet.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\knife-color-codes.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\knives-and-forks-poster.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\license.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\management-operations.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\manager-on-duty-hotel-operations-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\many-hats-general-manager.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\medicinal-properties-of-teas.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\medicinal-value-of-spices.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\new-article-cards.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\nigel_apply_dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\nigel_job_dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\north-indian-cuisine-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\not-all-cruise-lines-are-created-equal.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\operations-manager-vs-restaurant-manager.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\partners.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\pest-control-in-kitchen.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\pl-management-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\poster.html
+  🔍 DRY RUN: would move 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\privacy-policy.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\profit-loss-10-day-cycle.html
+  🔍 DRY RUN: would move 3 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\profit-loss-control-cycle.html
+  🔍 DRY RUN: would move 16 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\quality-controllers-food-industry.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\register.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\resort-co-working-future-office.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\resort-manager-career-guide-2026.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-cost-control-calculator.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-financial-kpis.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-fire-safety-training-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-general-manager-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-general-manager-job-description-duties-responsibilities.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-general-operating-terms.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-hotel-pos-systems.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-inventory-management-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-kpis-every-manager-should-track.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-leader-duties-responsibilities-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-manager-roles-and-responsibilities-breakdown.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-manager-roles-and-responsibilities.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-manager-roles-embedded.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-operational-challenges-solutions.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-service-excellence-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-sops-complete-operations-handbook.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-supervisor-interview.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-walkthrough-poster.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\resume.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\right-vs-left-service-restaurants.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\safe-food-storage-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\sales-marketing-hospitality-career-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\service-get-the-job-done-hospitality-creates-the-memory.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\shake-vs-smoothie.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\smart-menu-pricing-formula.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\sous-chef-career-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\staff-behavior-fb-service-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\store-keepers-worksheet.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\street-food-india-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\terms.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\the-five-minute-restaurant-interview-test.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-alcohol-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-cheese-used-in-hotels.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-food-and-beverage-service.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-menus-fb-service.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-pasta-sauces.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-water-used-in-restaurant.html
+  🔍 DRY RUN: would move 11 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ultimate-kpi-playbook-fb-leaders.html
+  🔍 DRY RUN: would move 4 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\vodka-brands-and-cocktails-guide.html
+  🔍 DRY RUN: would move 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\waste-segregation-guide.html
+  🔍 DRY RUN: would move 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\what-is-a-kpi.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\what-is-ebitda-fb-hospitality-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\what-is-management-consulting.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\which-hotel-chain-is-biggest.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\why-is-a-wine-bottle-750ml.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\why-your-hospitality-cv-keeps-getting-rejected.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\about-academy.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\academy-news.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cleaning-log-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\closing-kitchen-sop.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cold-room-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\colour-coding-kitchen-systems.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-cleaning-chemicals.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-deep-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-exhaust-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-fire-safety.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-forms.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-sops.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\contact.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cooking-oil-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cross-contamination-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\daily-weekly-monthly-cleaning-checklists.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\deep-fat-fryer-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\downloads.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\equipment-cleaning-sops.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\food-safety-temperature-control.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\food-storage-guidelines.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fostac-training-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\freezer-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fryer-oil-filtration-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fssai-kitchen-inspection-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fssai-schedule-iv-explained.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\glossary.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\grease-management-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\hood-filter-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\index.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\inspection-report-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\integrated-pest-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-audit-checklist.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-cleaning-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-cleaning-equipment-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-fire-suppression-systems.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-kpis.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\lpg-safety-commercial-kitchens.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\maintenance-log-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\opening-kitchen-sop.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\personal-hygiene-food-handlers.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\pest-control-documentation.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\preventive-maintenance.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\receiving-food-safely.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\restaurant-pest-control-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\sop-library.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\sustainability-commercial-kitchens.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\temperature-log-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\waste-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\wet-chemical-fire-extinguishers.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting\index-backup.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting\index-before-repair.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting\index.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\archive\about_working.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0x97 in position 8156: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\fine-dining-silverware.html
+  🔍 DRY RUN: would move 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\shake-vs-smoothie.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\stuffed-filled-foods-around-the-world.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\types-of-alcohol-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\career\ai-shaping-future-jobs-2026.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\chefs-tools-knives-cutting-boards.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\menu-planning-engineering.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\mother-sauces-complete-guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xea in position 6814: invalid continuation byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\color-coding-kitchen-housekeeping.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\food-allergies-restaurant-awareness.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\food-temperatures-article.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 11638: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\restaurant-sop-haccp-fire-safety-compliance-india.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\foh-boh-hierarchy-blog.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\homestay-vs-hotels.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 10741: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\House_Manager_Estate_Manager_Hospitality_Manager_Guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xa3 in position 7905: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\qsr-vs-fine-dining.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xc0 in position 3585: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\operations-business\cloud-kitchen-catering-operations-guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 556: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\chinese-culinary-styles-blog.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 15739: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\indian-spices-herbs-health-benefits.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\south-indian-food-styles-udupi-chettinad-nati.html
+  ℹ️ No poster elements found.
+
+✅ Done!
+🔍 This was a DRY RUN – no files were modified. Remove --dry-run to actually move posters.
+Backup folder: C:\Users\admin\Desktop\nigelthomas-portfolio\backup_posters_20260901_095253
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\10-biggest-hotels-in-the-world.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\100-hospitality-interview-questions.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\14-major-food-allergens.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\15-money-leaks-in-a-restaurant.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\6-pizza-recipes-hotel-restaurant-menu.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\7-types-of-coffee-and-how-theyre-made.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\about.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting-dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting-v3.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-decision-matrix.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-readiness-self-assessment-hospitality.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-shaping-future-jobs-2026.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ai-tool-integration-matrix-hospitality.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\area-manager-restaurant-visit-diagnostic-lenses.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\area-manager-vs-cluster-manager.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ats-friendly-hospitality-cv-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\beers.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\beverage.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog-card-snippet.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\buffet-food-temperature-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\building-a-career-in-hospitality-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\career-general.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\certifications.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\chef-de-partie-complete-career-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\classic-cocktails-guide.html
+  ✅ Updated: moved 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cloud-kitchen-catering-operations-guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 556: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cocktail-bar-service-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\coffee-shop-vocabulary.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\coffee-types-poster.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\colour-coding-knives-cutting-boards.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\complete-guide-to-hotel-and-restaurant-abbreviations-final.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\complete-guide-to-hotel-and-restaurant-abbreviations.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\condiments-vs-sauces-fb-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\condiments-vs-sauces-poster.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\contact.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cost-control-protect-profit.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\cruise-ship-crew-rotations-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\direct-vs-ota-booking-guest-occasion.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\disclaimer.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\equal-opportunity-employer-india-usa-europe.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\executive-career-dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\executive-chef-duties-and-responsibilities.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\executive-chef-job-description-requirements.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\f&b-service-interview-q&a.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\fb-cost-control-blueprint.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\fifo-vs-fefo-poster.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\fifo-vs-fefo-stock-rotation-guide.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\financial-kpis-poster.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\foh-boh-equipment-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\foh-boh-hierarchy-blog.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-and-beverage-question-and-answers.html
+  ✅ Updated: moved 6 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-and-beverage-service-hierarchy.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-cost-basics.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-cost-control-complete-guide.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-handling-guide-poster.html
+  ✅ Updated: moved 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-handling-procedure.html
+  ✅ Updated: moved 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\general-manager-duties-and-responsibilities.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\general-manager-vs-hotel-manager.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\gm-leadership-playbook-interview-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\google0c2817338a31af1a.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\haccp-hazard-analysis-critical-control-points.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\haccp-kitchen-checklist.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\history-of-wine-world-wine-regions-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-franchising-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management-tools.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\host-full-form-hotel-industry.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0x97 in position 180: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hot-and-cold-kitchens-temperature-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-gm-competency-framework.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-kpi-formula-cheat-sheet.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-management-financial-model.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-management-playbook-month-end-reporting.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-p&l.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-sops-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-vs-resort-expenditure-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\how-to-calculate-food-cost-per-portion.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\how-to-carry-a-service-tray.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\how-to-control-food-cost.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\image-usage.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\index.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\key-hotel-kpis-every-hotelier-should-track.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\key-hotel-management-roles.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-cleaning-schedule-template.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-food.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-haccp-poster.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-temperature-log-sheet.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\knife-color-codes.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\knives-and-forks-poster.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\license.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\management-operations.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\manager-on-duty-hotel-operations-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\many-hats-general-manager.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\medicinal-properties-of-teas.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\medicinal-value-of-spices.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\new-article-cards.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\nigel_apply_dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\nigel_job_dashboard.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\north-indian-cuisine-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\not-all-cruise-lines-are-created-equal.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\operations-manager-vs-restaurant-manager.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\partners.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\pest-control-in-kitchen.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\pl-management-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\poster.html
+  ✅ Updated: moved 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\privacy-policy.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\profit-loss-10-day-cycle.html
+  ✅ Updated: moved 3 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\profit-loss-control-cycle.html
+  ✅ Updated: moved 16 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\quality-controllers-food-industry.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\register.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\resort-co-working-future-office.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\resort-manager-career-guide-2026.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-cost-control-calculator.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-financial-kpis.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-fire-safety-training-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-general-manager-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-general-manager-job-description-duties-responsibilities.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-general-operating-terms.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-hotel-pos-systems.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-inventory-management-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-kpis-every-manager-should-track.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-leader-duties-responsibilities-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-manager-roles-and-responsibilities-breakdown.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-manager-roles-and-responsibilities.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-manager-roles-embedded.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-operational-challenges-solutions.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-service-excellence-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-sops-complete-operations-handbook.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-supervisor-interview.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\restaurant-walkthrough-poster.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\resume.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\right-vs-left-service-restaurants.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\safe-food-storage-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\sales-marketing-hospitality-career-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\service-get-the-job-done-hospitality-creates-the-memory.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\shake-vs-smoothie.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\smart-menu-pricing-formula.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\sous-chef-career-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\staff-behavior-fb-service-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\store-keepers-worksheet.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\street-food-india-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\terms.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\the-five-minute-restaurant-interview-test.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-alcohol-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-cheese-used-in-hotels.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-food-and-beverage-service.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-menus-fb-service.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-pasta-sauces.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\types-of-water-used-in-restaurant.html
+  ✅ Updated: moved 11 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\ultimate-kpi-playbook-fb-leaders.html
+  ✅ Updated: moved 4 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\vodka-brands-and-cocktails-guide.html
+  ✅ Updated: moved 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\waste-segregation-guide.html
+  ✅ Updated: moved 2 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\what-is-a-kpi.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\what-is-ebitda-fb-hospitality-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\what-is-management-consulting.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\which-hotel-chain-is-biggest.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\why-is-a-wine-bottle-750ml.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\why-your-hospitality-cv-keeps-getting-rejected.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\about-academy.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\academy-news.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cleaning-log-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\closing-kitchen-sop.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cold-room-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\colour-coding-kitchen-systems.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-cleaning-chemicals.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-deep-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-exhaust-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-fire-safety.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-forms.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\commercial-kitchen-sops.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\contact.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cooking-oil-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\cross-contamination-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\daily-weekly-monthly-cleaning-checklists.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\deep-fat-fryer-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\downloads.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\equipment-cleaning-sops.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\food-safety-temperature-control.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\food-storage-guidelines.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fostac-training-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\freezer-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fryer-oil-filtration-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fssai-kitchen-inspection-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\fssai-schedule-iv-explained.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\glossary.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\grease-management-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\hood-filter-cleaning.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\index.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\inspection-report-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\integrated-pest-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-audit-checklist.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-cleaning-complete-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-cleaning-equipment-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-fire-suppression-systems.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\kitchen-kpis.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\lpg-safety-commercial-kitchens.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\maintenance-log-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\opening-kitchen-sop.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\personal-hygiene-food-handlers.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\pest-control-documentation.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\preventive-maintenance.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\receiving-food-safely.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\restaurant-pest-control-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\sop-library.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\sustainability-commercial-kitchens.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\temperature-log-templates.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\waste-management.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\academy\wet-chemical-fire-extinguishers.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting\index-backup.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting\index-before-repair.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\accounting\index.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\archive\about_working.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0x97 in position 8156: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\fine-dining-silverware.html
+  ✅ Updated: moved 1 poster(s).
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\shake-vs-smoothie.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\stuffed-filled-foods-around-the-world.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\types-of-alcohol-guide.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\career\ai-shaping-future-jobs-2026.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\chefs-tools-knives-cutting-boards.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\menu-planning-engineering.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\mother-sauces-complete-guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xea in position 6814: invalid continuation byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\color-coding-kitchen-housekeeping.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\food-allergies-restaurant-awareness.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\food-temperatures-article.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 11638: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\restaurant-sop-haccp-fire-safety-compliance-india.html
+  ⚠️ No <body> found, skipping.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\foh-boh-hierarchy-blog.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\homestay-vs-hotels.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 10741: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\House_Manager_Estate_Manager_Hospitality_Manager_Guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xa3 in position 7905: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\qsr-vs-fine-dining.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xc0 in position 3585: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\operations-business\cloud-kitchen-catering-operations-guide.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 556: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\chinese-culinary-styles-blog.html
+  ❌ ERROR: 'utf-8' codec can't decode byte 0xb7 in position 15739: invalid start byte
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\indian-spices-herbs-health-benefits.html
+  ℹ️ No poster elements found.
+Processing: C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\south-indian-food-styles-udupi-chettinad-nati.html
+  ℹ️ No poster elements found.
+
+✅ Done!

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8"/>
 <title>FIFO vs FEFO — Smart Stock Rotation | Nigel A. Thomas</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <style>
   :root{
     --bg:#0b0b0b;
@@ -246,125 +247,132 @@
 </style>
 </head>
 <body>
+
+
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
 <div class="poster">
-
-  <!-- TOP BRANDING -->
-  <div class="brand-top">
-    <img src="assets/NTlogo.png" alt="Nigel A. Thomas logo">
-    <h1>NIGEL A. THOMAS</h1>
-    <p>Global Hospitality &amp; F&amp;B Operations — Leadership · Operations · Excellence</p>
-  </div>
-
-  <!-- TITLE -->
-  <div class="title-block">
-    <h2>FIFO <span class="vs">VS</span> FEFO</h2>
-    <div class="tag">RIGHT STOCK, RIGHT TIME, RIGHT QUALITY</div>
-    <div class="sub">Smart Inventory · Less Waste · Better Food Safety · More Profit</div>
-  </div>
-
-  <!-- FIFO / FEFO CORE -->
-  <div class="cols">
-    <div class="col-card">
-      <div class="col-head fifo">FIFO<small>First In, First Out</small></div>
-      <div class="col-body">
-        <p>Use the stock that was received first, regardless of expiry date (assuming expiry dates are similar).</p>
-        <div class="example-box">
+<!-- TOP BRANDING -->
+<div class="brand-top">
+<img alt="Nigel A. Thomas logo" src="assets/NTlogo.png"/>
+<h1>NIGEL A. THOMAS</h1>
+<p>Global Hospitality &amp; F&amp;B Operations — Leadership · Operations · Excellence</p>
+</div>
+<!-- TITLE -->
+<div class="title-block">
+<h2>FIFO <span class="vs">VS</span> FEFO</h2>
+<div class="tag">RIGHT STOCK, RIGHT TIME, RIGHT QUALITY</div>
+<div class="sub">Smart Inventory · Less Waste · Better Food Safety · More Profit</div>
+</div>
+<!-- FIFO / FEFO CORE -->
+<div class="cols">
+<div class="col-card">
+<div class="col-head fifo">FIFO<small>First In, First Out</small></div>
+<div class="col-body">
+<p>Use the stock that was received first, regardless of expiry date (assuming expiry dates are similar).</p>
+<div class="example-box">
           Received 1 July <span class="arrow">→</span> Received 5 July (Milk)
           <div class="result">Use 1 July stock first — it arrived earlier.</div>
-        </div>
-        <div class="used-list">
-          <span>Dry Groceries</span><span>Packaging</span><span>Cleaning Supplies</span>
-          <span>Beverages</span><span>Disposables</span><span>Canned Goods</span>
-          <span>Kitchen Equipment</span><span>Non-Perishables</span>
-        </div>
-        <ul class="benefits">
-          <li>Prevents old stock from sitting unused</li>
-          <li>Improves stock rotation discipline</li>
-          <li>Reduces storage congestion</li>
-          <li>Simplifies inventory management</li>
-          <li>Minimizes unnecessary purchases</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="col-card">
-      <div class="col-head fefo">FEFO<small>First Expired, First Out</small></div>
-      <div class="col-body">
-        <p>Use the stock with the earliest expiry date first — even if it was received later.</p>
-        <div class="example-box">
+</div>
+<div class="used-list">
+<span>Dry Groceries</span><span>Packaging</span><span>Cleaning Supplies</span>
+<span>Beverages</span><span>Disposables</span><span>Canned Goods</span>
+<span>Kitchen Equipment</span><span>Non-Perishables</span>
+</div>
+<ul class="benefits">
+<li>Prevents old stock from sitting unused</li>
+<li>Improves stock rotation discipline</li>
+<li>Reduces storage congestion</li>
+<li>Simplifies inventory management</li>
+<li>Minimizes unnecessary purchases</li>
+</ul>
+</div>
+</div>
+<div class="col-card">
+<div class="col-head fefo">FEFO<small>First Expired, First Out</small></div>
+<div class="col-body">
+<p>Use the stock with the earliest expiry date first — even if it was received later.</p>
+<div class="example-box">
           Received 1 July, Exp 15 July <span class="arrow">→</span> Received 5 July, Exp 10 July (Yogurt)
           <div class="result">Use the 5 July batch first — it expires sooner.</div>
-        </div>
-        <div class="used-list">
-          <span>Dairy</span><span>Meat &amp; Poultry</span><span>Seafood</span>
-          <span>Fresh Produce</span><span>Eggs</span><span>Bakery</span>
-          <span>Salads</span><span>Ready-to-Eat Food</span>
-        </div>
-        <ul class="benefits" style="color:#7fd6a3;">
-          <li style="color:var(--muted);">Any product with a short shelf life must follow FEFO — no exceptions.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- COMPARISON TABLE -->
-  <div class="compare">
-    <h3>FIFO vs FEFO — AT A GLANCE</h3>
-    <table>
-      <tr><th>FIFO</th><th>Basis</th><th>FEFO</th></tr>
-      <tr><td>Receiving date</td><td>Based on</td><td>Expiry date</td></tr>
-      <tr><td>Non-perishable stock</td><td>Ideal for</td><td>Perishable stock</td></tr>
-      <tr><td>Easy inventory rotation</td><td>Strength</td><td>Maximum food safety</td></tr>
-      <tr><td>Reduces overstock</td><td>Outcome</td><td>Reduces product expiry</td></tr>
-      <tr><td>Dry stores</td><td>Best suited to</td><td>Chillers &amp; refrigerators</td></tr>
-    </table>
-  </div>
-
-  <!-- MISTAKES / BEST PRACTICE -->
-  <div class="lower-grid">
-    <div class="panel mistakes">
-      <h4>Common Mistakes</h4>
-      <ul>
-        <li>Placing new stock in front of old stock</li>
-        <li>Ignoring expiry dates</li>
-        <li>Missing date labels</li>
-        <li>Mixing batches without identification</li>
-        <li>Keeping expired products in storage</li>
-        <li>Skipping regular inventory checks</li>
-      </ul>
-    </div>
-    <div class="panel practices">
-      <h4>Best Practices</h4>
-      <ul>
-        <li>Label every item with receiving and expiry date</li>
-        <li>Store new stock behind existing stock</li>
-        <li>Check expiry dates daily for perishables</li>
-        <li>Inspect fridges, freezers &amp; dry stores regularly</li>
-        <li>Remove expired products immediately</li>
-        <li>Train staff on FIFO and FEFO; audit weekly</li>
-      </ul>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-bottom:20px; font-size:14px; color:#b8b8b8;">
+</div>
+<div class="used-list">
+<span>Dairy</span><span>Meat &amp; Poultry</span><span>Seafood</span>
+<span>Fresh Produce</span><span>Eggs</span><span>Bakery</span>
+<span>Salads</span><span>Ready-to-Eat Food</span>
+</div>
+<ul class="benefits" style="color:#7fd6a3;">
+<li style="color:var(--muted);">Any product with a short shelf life must follow FEFO — no exceptions.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- COMPARISON TABLE -->
+<div class="compare">
+<h3>FIFO vs FEFO — AT A GLANCE</h3>
+<table>
+<tr><th>FIFO</th><th>Basis</th><th>FEFO</th></tr>
+<tr><td>Receiving date</td><td>Based on</td><td>Expiry date</td></tr>
+<tr><td>Non-perishable stock</td><td>Ideal for</td><td>Perishable stock</td></tr>
+<tr><td>Easy inventory rotation</td><td>Strength</td><td>Maximum food safety</td></tr>
+<tr><td>Reduces overstock</td><td>Outcome</td><td>Reduces product expiry</td></tr>
+<tr><td>Dry stores</td><td>Best suited to</td><td>Chillers &amp; refrigerators</td></tr>
+</table>
+</div>
+<!-- MISTAKES / BEST PRACTICE -->
+<div class="lower-grid">
+<div class="panel mistakes">
+<h4>Common Mistakes</h4>
+<ul>
+<li>Placing new stock in front of old stock</li>
+<li>Ignoring expiry dates</li>
+<li>Missing date labels</li>
+<li>Mixing batches without identification</li>
+<li>Keeping expired products in storage</li>
+<li>Skipping regular inventory checks</li>
+</ul>
+</div>
+<div class="panel practices">
+<h4>Best Practices</h4>
+<ul>
+<li>Label every item with receiving and expiry date</li>
+<li>Store new stock behind existing stock</li>
+<li>Check expiry dates daily for perishables</li>
+<li>Inspect fridges, freezers &amp; dry stores regularly</li>
+<li>Remove expired products immediately</li>
+<li>Train staff on FIFO and FEFO; audit weekly</li>
+</ul>
+</div>
+</div>
+<div style="text-align:center; margin-bottom:20px; font-size:14px; color:#b8b8b8;">
   Want the full breakdown with stacking rules by category?
-  <a href="fifo-vs-fefo-stock-rotation-guide.html" style="color:#d4af37; font-weight:600;">Read the Full Guide &rarr;</a>
+  <a href="fifo-vs-fefo-stock-rotation-guide.html" style="color:#d4af37; font-weight:600;">Read the Full Guide →</a>
 </div>
-
 <!-- BOTTOM BRANDING -->
-  <div class="brand-bottom">
-    <div>
-      <div class="name">Nigel A. Thomas</div>
-      <div class="role">Global Hospitality &amp; F&amp;B Operations · P&amp;L Growth · Guest Satisfaction · Team Leadership</div>
-    </div>
-    <div class="contact">
-      <div>Open to opportunities — India &amp; Overseas</div>
-      <div><a href="mailto:restgenmgr1952@gmail.com">restgenmgr1952@gmail.com</a></div>
-      <div><a href="https://www.linkedin.com/in/nigel-thomas-66515534" target="_blank">linkedin.com/in/nigel-thomas-66515534</a></div>
-      <div><a href="https://nigelthomas.live" target="_blank">nigelthomas.live</a></div>
-    </div>
-  </div>
-
+<div class="brand-bottom">
+<div>
+<div class="name">Nigel A. Thomas</div>
+<div class="role">Global Hospitality &amp; F&amp;B Operations · P&amp;L Growth · Guest Satisfaction · Team Leadership</div>
 </div>
+<div class="contact">
+<div>Open to opportunities — India &amp; Overseas</div>
+<div><a href="mailto:restgenmgr1952@gmail.com">restgenmgr1952@gmail.com</a></div>
+<div><a href="https://www.linkedin.com/in/nigel-thomas-66515534" target="_blank">linkedin.com/in/nigel-thomas-66515534</a></div>
+<div><a href="https://nigelthomas.live" target="_blank">nigelthomas.live</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
 </body>
 </html>
