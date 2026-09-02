@@ -345,17 +345,81 @@ footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-to
 </div>
 <!-- ===== END BEVERAGE HUB ===== -->
 </footer>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
 
 
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
 
-
-<section class="related-pages" style="margin:2.5rem 0 1rem;padding-top:1.5rem;border-top:1px solid #333;">
-<h2 style="font-size:1.1rem;margin-bottom:0.75rem;">You Might Also Like</h2>
-<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;">
-<li><a href="/types-of-cheese-used-in-hotels.html" style="color:#d4af37;text-decoration:none;">Types of Cheese Used in Hotels: A Culinary Guide for Hospitality Professionals</a></li>
-<li><a href="/types-of-pasta-sauces.html" style="color:#d4af37;text-decoration:none;">Top 5 Classic Pasta Sauces Every Hospitality Professional Should Know</a></li>
-<li><a href="/about.html" style="color:#d4af37;text-decoration:none;">About Nigel Thomas | Hospitality Executive | 30+ Years Global Leadership</a></li>
-</ul>
-</section>
+<details style="margin:2rem 0;">
+<summary style="display:inline-block;padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;font-size:1rem;">
+    Infomatics
+  </summary>
+<div style="margin-top:1rem;padding:1rem;background:#141414;border:1px solid #262626;border-radius:6px;">
+<div class="map-wrap">
+<svg viewbox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#0e0e0e" height="480" rx="12" width="900" x="0" y="0"></rect>
+<!-- Divider -->
+<line stroke="#333" stroke-dasharray="6,6" stroke-width="2" x1="450" x2="450" y1="20" y2="460"></line>
+<!-- Old World title -->
+<text fill="#d4af37" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" x="225" y="40">OLD WORLD</text>
+<text fill="#888" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-anchor="middle" x="225" y="60">Europe &amp; the Mediterranean</text>
+<!-- Old World stylized landmass -->
+<path d="M 90 90 Q 60 120 80 160 Q 60 200 100 230 Q 90 270 130 300 Q 120 340 170 370 Q 220 400 280 380 Q 330 360 340 320 Q 370 290 350 250 Q 380 220 360 180 Q 370 140 330 110 Q 300 80 250 90 Q 200 70 150 85 Q 110 75 90 90 Z" fill="#3a2f14" stroke="#d4af37" stroke-width="2"></path>
+<!-- Old World pins -->
+<circle cx="140" cy="150" fill="#d4af37" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="155" y="155">France</text>
+<circle cx="110" cy="220" fill="#d4af37" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="125" y="225">Portugal</text>
+<circle cx="270" cy="170" fill="#d4af37" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="285" y="175">Austria</text>
+<circle cx="230" cy="270" fill="#d4af37" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="245" y="275">Italy</text>
+<circle cx="140" cy="280" fill="#d4af37" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="155" y="285">Spain</text>
+<circle cx="230" cy="130" fill="#d4af37" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="245" y="135">Germany</text>
+<circle cx="300" cy="330" fill="#d4af37" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="220" y="350">Greece</text>
+<!-- New World title -->
+<text fill="#d4af37" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle" x="675" y="40">NEW WORLD</text>
+<text fill="#888" font-family="Segoe UI, Arial, sans-serif" font-size="13" text-anchor="middle" x="675" y="60">Americas, Oceania &amp; Africa</text>
+<!-- New World stylized landmass (Americas-like shape) -->
+<path d="M 560 90 Q 540 110 555 140 Q 530 170 550 200 Q 520 230 545 260 Q 520 300 555 330 Q 540 370 580 400 Q 620 420 650 400 Q 660 370 640 340 Q 670 320 655 290 Q 680 270 660 240 Q 685 210 660 180 Q 680 150 650 120 Q 660 95 620 90 Q 590 75 560 90 Z" fill="#3a1414" stroke="#c0392b" stroke-width="2"></path>
+<!-- New World pins -->
+<circle cx="580" cy="120" fill="#e8845a" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="595" y="125">USA</text>
+<circle cx="565" cy="330" fill="#e8845a" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="580" y="335">Argentina</text>
+<circle cx="545" cy="290" fill="#e8845a" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="480" y="290">Chile</text>
+<circle cx="600" cy="200" fill="#e8845a" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="615" y="205">Colombia</text>
+<circle cx="770" cy="250" fill="#e8845a" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="785" y="255">Australia</text>
+<circle cx="800" cy="330" fill="#e8845a" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="700" y="380">New Zealand</text>
+<circle cx="700" cy="150" fill="#e8845a" r="7"></circle>
+<text fill="#f0f0f0" font-family="Segoe UI, Arial, sans-serif" font-size="14" x="715" y="155">South Africa</text>
+<!-- Detached Oceania/Africa pin markers with connecting lines since they're outside main landmass shape -->
+<line stroke="#e8845a" stroke-dasharray="3,3" stroke-width="1.5" x1="770" x2="700" y1="250" y2="240"></line>
+<line stroke="#e8845a" stroke-dasharray="3,3" stroke-width="1.5" x1="800" x2="720" y1="330" y2="360"></line>
+<line stroke="#e8845a" stroke-dasharray="3,3" stroke-width="1.5" x1="700" x2="650" y1="150" y2="140"></line>
+</svg>
+</div>
+<p class="map-caption">Illustrative overview only, not to geographic scale. Grouped by classic Old World and New World wine classification.</p>
+</div>
+</details>
 </body>
 </html>
