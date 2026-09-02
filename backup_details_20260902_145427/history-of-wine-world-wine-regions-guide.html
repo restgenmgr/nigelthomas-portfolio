@@ -146,10 +146,12 @@ footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-to
 <p><strong>New World</strong> wine regions — including the Americas, Australia, New Zealand, and South Africa — generally operate with fewer regulatory restrictions, giving winemakers more freedom to experiment with grape varieties, blending, and technique. New World wines are often, though not universally, associated with riper fruit character, higher alcohol levels, and more prominent use of oak, reflecting both warmer growing climates in many regions and a winemaking culture less bound by centuries of prescriptive tradition.</p>
 <h2>A Visual Map: Old World and New World Wine Regions</h2>
 <p>The map below gives a simplified overview of where the world's major wine-producing regions sit, grouped by Old World and New World classification.</p>
+
 <div class="legend">
 <div class="legend-item"><span class="legend-dot" style="background:#d4af37;"></span>Old World regions</div>
 <div class="legend-item"><span class="legend-dot" style="background:#e8845a;"></span>New World regions</div>
 </div>
+
 <h2>Old World Wine Regions in Detail</h2>
 <h3>France</h3>
 <p>France remains, for many, the reference point against which other wine-producing countries are measured — not necessarily because French wine is objectively superior, but because so much of the world's wine vocabulary and classification thinking originated there. <strong>Bordeaux</strong>, in the southwest, is built around blends — primarily Cabernet Sauvignon and Merlot on the Left and Right Banks respectively — and remains the benchmark for structured, age-worthy red wine. <strong>Burgundy</strong>, by contrast, is almost entirely devoted to single-varietal wines: Pinot Noir for red, Chardonnay for white, with an intensely detailed vineyard classification system built up over centuries, much of it originating with the monastic mapping described earlier in this guide. <strong>Champagne</strong>, in the north, produces the world's benchmark sparkling wine through the labor-intensive traditional method, using primarily Chardonnay, Pinot Noir, and Pinot Meunier. Further south, the <strong>Rhône Valley</strong> splits into a cooler north known for Syrah-based reds and a warmer south known for Grenache-based blends, while the <strong>Loire Valley</strong> is prized for crisp whites like Sauvignon Blanc and Chenin Blanc.</p>
@@ -345,28 +347,12 @@ footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-to
 </div>
 <!-- ===== END BEVERAGE HUB ===== -->
 </footer>
+
 <div class="infomatics-launcher">
 <button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
     Infomatics
   </button>
 <div class="infomatics-panel" id="infomatics-panel">
-
-
-</div>
-</div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
-
-<details style="margin:2rem 0;">
-<summary style="display:inline-block;padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;font-size:1rem;">
-    Infomatics
-  </summary>
-<div style="margin-top:1rem;padding:1rem;background:#141414;border:1px solid #262626;border-radius:6px;">
 <div class="map-wrap">
 <svg viewbox="0 0 900 480" xmlns="http://www.w3.org/2000/svg">
 <rect fill="#0e0e0e" height="480" rx="12" width="900" x="0" y="0"></rect>
@@ -420,6 +406,13 @@ footer{background:#000000;color:#d4af37;text-align:center;padding:30px;margin-to
 </div>
 <p class="map-caption">Illustrative overview only, not to geographic scale. Grouped by classic Old World and New World wine classification.</p>
 </div>
-</details>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
 </body>
 </html>

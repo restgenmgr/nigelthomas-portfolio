@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -358,68 +358,49 @@ for professional hospitality management guides, restaurant operations, hotel SOP
 </p>
 </footer>
 <div class="infomatics-launcher">
-
-  <button
-    type="button"
-    class="infomatics-btn"
-    aria-expanded="false"
-    onclick="var p=this.nextElementSibling;var open=p.classList.toggle('active');this.setAttribute('aria-expanded',open?'true':'false');">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
     Infomatics
   </button>
-
-  <div class="infomatics-panel">
-
-    <img
-      src="assets/shake-vs-smoothie.jpg"
-      alt="Shake vs smoothie comparison poster showing the key differences in ingredients, texture, sugar content, ice cream use, fruit content and examples"
-      loading="lazy">
-
-  </div>
+<div class="infomatics-panel" id="infomatics-panel">
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
 
 </div>
-
+</div>
 <style>
-.infomatics-launcher {
-    margin: 2rem 0;
-    text-align: center;
-}
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
 
-.infomatics-btn {
-    padding: 0.7em 1.6em;
-    border: 1px solid #d4af37;
-    border-radius: 30px;
-    background: #111;
-    color: #d4af37;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.infomatics-btn:hover {
-    background: #d4af37;
-    color: #000;
-}
-
-.infomatics-panel {
-    display: none;
-    margin-top: 1.5rem;
-}
-
-.infomatics-panel.active {
-    display: block;
-}
-
-.infomatics-panel img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 12px;
-    border: 1px solid #d4af37;
-}
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<img alt="Shake vs smoothie comparison poster showing base, texture, sugar content, ice cream use, fruit content and examples for each drink" src="assets/shake-vs-smoothie.jpg"/>
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
 </style>
 </body>
 </html>
-
-
