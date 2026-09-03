@@ -1,0 +1,129 @@
+# ================================================================
+# SCRIPT: Append extra related links to existing "related-grid"
+# ================================================================
+
+# ---- CONFIGURATION ----
+# Define for each blog file the extra related links you want.
+# Use relative paths (e.g., "food-cost-basics.html") or full URLs.
+$relatedLinksMapping = @{
+    "area-manager-vs-cluster-manager.html" = @("restaurant-manager-roles-and-responsibilities.html", "restaurant-supervisor-interview.html")
+    "restaurant-manager-roles-and-responsibilities.html" = @("area-manager-vs-cluster-manager.html", "restaurant-financial-kpis.html")
+    "haccp-hazard-analysis-critical-control-points.html" = @("food-safety-sops.html", "buffet-food-temperature-infographic.html")
+    "direct-vs-ota-booking-guest-occasion.html" = @("revenue-management-basics.html", "guest-satisfaction-strategies.html")
+    "blog/fine-dining-silverware.html" = @("restaurant-table-setting-guide.html", "culinary-etiquette.html")
+    "food-cost-basics.html" = @("restaurant-financial-kpis.html", "profit-loss-10-day-cycle.html")
+    "types-of-cheese-used-in-hotels.html" = @("types-of-pasta-sauces.html", "6-pizza-recipes-hotel-restaurant-menu.html")
+    "types-of-pasta-sauces.html" = @("types-of-cheese-used-in-hotels.html", "6-pizza-recipes-hotel-restaurant-menu.html")
+    "history-of-wine-world-wine-regions.html" = @("wine-pairing-guide.html", "sommelier-basics.html")
+    "cruise-ship-crew-rotations-guide.html" = @("maritime-hospitality.html", "fifo-vs-fefo-stock-rotation-guide.html")
+    "culinary__menu-planning-engineering.html" = @("menu-engineering-techniques.html", "food-cost-basics.html")
+    "f&b-service-interview-q&a.html" = @("restaurant-supervisor-interview.html", "hospitality-career-tips.html")
+    "fifo-vs-fefo-stock-rotation-guide.html" = @("food-cost-basics.html", "inventory-management.html")
+    "not-all-cruise-lines-are-created-equal.html" = @("cruise-ship-crew-rotations-guide.html", "maritime-hospitality.html")
+    "profit-loss-10-day-cycle.html" = @("restaurant-financial-kpis.html", "food-cost-basics.html")
+    "resort-co-working-future-office.html" = @("hospitality-trends.html", "remote-work-hospitality.html")
+    "restaurant-financial-kpis.html" = @("food-cost-basics.html", "profit-loss-10-day-cycle.html")
+    "restaurant-kpis-every-manager-should-track.html" = @("restaurant-financial-kpis.html", "restaurant-manager-roles-and-responsibilities.html")
+    "restaurant-supervisor-interview.html" = @("restaurant-manager-roles-and-responsibilities.html", "f&b-service-interview-q&a.html")
+    "about.html" = @("blog.html", "contact.html")
+}
+
+# List of files to process (adjust as needed)
+$targetFiles = @(
+    "about.html",
+    "blog.html",
+    "cruise-ship-crew-rotations-guide.html",
+    "culinary__menu-planning-engineering.html",
+    "f&b-service-interview-q&a.html",
+    "fifo-vs-fefo-stock-rotation-guide.html",
+    "not-all-cruise-lines-are-created-equal.html",
+    "profit-loss-10-day-cycle.html",
+    "resort-co-working-future-office.html",
+    "restaurant-financial-kpis.html",
+    "restaurant-kpis-every-manager-should-track.html",
+    "restaurant-supervisor-interview.html"
+)
+
+$backupFolder = ".\backup_related_links"
+if (-not (Test-Path $backupFolder)) { New-Item -ItemType Directory -Path $backupFolder -Force | Out-Null }
+
+Write-Host "📁 Backups saved in: $backupFolder" -ForegroundColor Cyan
+Write-Host "🎯 Processing $($targetFiles.Count) files..." -ForegroundColor Yellow
+Write-Host ""
+
+$processed = 0
+$added = 0
+$skipped = 0
+
+foreach ($fileName in $targetFiles) {
+    $filePath = Join-Path -Path (Get-Location) -ChildPath $fileName
+    if (-not (Test-Path $filePath)) {
+        Write-Warning "⚠️  File not found: $fileName – skipping"
+        $skipped++
+        continue
+    }
+
+    $links = $relatedLinksMapping[$fileName]
+    if (-not $links -or $links.Count -eq 0) {
+        Write-Host "⏭️  No related links defined for $fileName – skipping" -ForegroundColor Yellow
+        $skipped++
+        continue
+    }
+
+    Write-Host "Processing: $fileName" -ForegroundColor White
+    $content = Get-Content -Path $filePath -Raw -Encoding UTF8
+
+    $gridStart = '<div class="related-grid">'
+    $gridEnd = '</div>'
+    $startIndex = $content.IndexOf($gridStart)
+    if ($startIndex -eq -1) {
+        Write-Host "  ⚠️  No related-grid found – skipping" -ForegroundColor Yellow
+        $skipped++
+        continue
+    }
+
+    $endIndex = $content.IndexOf($gridEnd, $startIndex + $gridStart.Length)
+    if ($endIndex -eq -1) {
+        Write-Host "  ❌ Could not find closing </div> for related-grid – skipping" -ForegroundColor Red
+        $skipped++
+        continue
+    }
+
+    $newLinksHtml = ""
+    foreach ($link in $links) {
+        if ($link -match '^[^:]+\.html$') {
+            $linkUrl = "https://www.nigelthomas.live/$link"
+        } else {
+            $linkUrl = $link
+        }
+        $linkName = [System.IO.Path]::GetFileNameWithoutExtension($link)
+        $displayTitle = $linkName -replace '[-_]', ' ' -replace '\b\w', { $args[0].Value.ToUpper() }
+        if ($displayTitle.Length -gt 50) { $displayTitle = $displayTitle.Substring(0, 47) + "..." }
+
+        $newLinksHtml += @"
+<a class="related-card" href="$linkUrl">
+    <div class="rc-tag">Related</div>
+    <div class="rc-title">$displayTitle</div>
+</a>
+"@
+    }
+
+    $insertPos = $endIndex
+    $updatedContent = $content.Insert($insertPos, "`n$newLinksHtml")
+
+    $backupPath = Join-Path -Path $backupFolder -ChildPath "$fileName.bak"
+    Copy-Item -Path $filePath -Destination $backupPath -Force
+    Set-Content -Path $filePath -Value $updatedContent -Encoding UTF8 -NoNewline
+
+    Write-Host "  ✅ Added $($links.Count) related links to $fileName" -ForegroundColor Green
+    $added++
+    $processed++
+}
+
+Write-Host ""
+Write-Host "========== SUMMARY ==========" -ForegroundColor Cyan
+Write-Host "Files processed: $($targetFiles.Count)"
+Write-Host "Files with links added: $added"
+Write-Host "Skipped (no mapping or no grid): $skipped"
+Write-Host "Backups saved in: $backupFolder" -ForegroundColor Yellow
+Write-Host ""
