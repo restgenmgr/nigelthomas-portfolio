@@ -1947,5 +1947,6 @@ document.addEventListener("click", function (event) {
     panel.setAttribute("aria-hidden", opened ? "false" : "true");
 });
 </script>
+<script>document.addEventListener("click",function(e){var b=e.target.closest(".nt-infomatics-button");if(!b)return;var p=document.getElementById(b.getAttribute("data-panel"));if(!p)return;var o=p.classList.toggle("show");b.textContent=o?"HIDE INFOMATICS":"VIEW INFOMATICS";b.setAttribute("aria-expanded",o?"true":"false");p.setAttribute("aria-hidden",o?"false":"true");});</script>
 </body>
 </html>

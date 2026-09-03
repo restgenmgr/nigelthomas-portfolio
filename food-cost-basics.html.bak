@@ -195,14 +195,6 @@
   }
   footer.site-footer a { color: var(--gold); text-decoration: none; }
 </style>
-
-<style>
-.nt-infomatics-section { text-align:center; margin:30px 0; }
-.nt-infomatics-button { display:inline-block; background:#000; color:#d4af37; border:1px solid #d4af37; border-radius:4px; padding:14px 30px; font-family:Arial, sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; cursor:pointer; transition:all .25s ease; }
-.nt-infomatics-button:hover { background:#d4af37; color:#000; }
-.nt-infomatics-panel { display:none; max-width:1100px; margin:28px auto 0; }
-.nt-infomatics-panel.show { display:block; }
-</style>
 </head>
 <body>
 <header class="site-header">
@@ -328,6 +320,14 @@
 
 
 
+<section class="related-pages" style="margin:2.5rem 0 1rem;padding-top:1.5rem;border-top:1px solid #333;">
+<h2 style="font-size:1.1rem;margin-bottom:0.75rem;">You Might Also Like</h2>
+<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;">
+<li><a href="/haccp-hazard-analysis-critical-control-points.html" style="color:#d4af37;text-decoration:none;">HACCP: Hazard Analysis and Critical Control Points Explained</a></li>
+<li><a href="/area-manager-vs-cluster-manager.html" style="color:#d4af37;text-decoration:none;">Area Manager vs Cluster Manager in F&amp;B Operations: Know the Difference</a></li>
+<li><a href="/about.html" style="color:#d4af37;text-decoration:none;">About Nigel Thomas | Hospitality Executive | 30+ Years Global Leadership</a></li>
+</ul>
+</section>
 
 
 
@@ -336,34 +336,5 @@
 
 
 
-
-
-<!-- NT INFOMATICS -->
-<div class="nt-infomatics-section" style="margin: 40px 0;">
-    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel-food-cost-basics" aria-expanded="false">
-        VIEW INFOMATICS
-    </button>
-    <div id="nt-infomatics-panel-food-cost-basics" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
-        <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:8px;"/>
-        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
-            💡 Right-click the image to save it.
-        </p>
-    </div>
-</div>
-<!-- END NT INFOMATICS -->
-
-<script id="nt-infomatics-js">
-document.addEventListener("click", function (event) {
-    var button = event.target.closest(".nt-infomatics-button");
-    if (!button) return;
-    var panelId = button.getAttribute("data-panel");
-    var panel = document.getElementById(panelId);
-    if (!panel) return;
-    var opened = panel.classList.toggle("show");
-    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
-    button.setAttribute("aria-expanded", opened ? "true" : "false");
-    panel.setAttribute("aria-hidden", opened ? "false" : "true");
-});
-</script>
 </body>
 </html>
