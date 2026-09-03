@@ -73,6 +73,14 @@ li{margin-bottom:8px}
 footer{background:#000;color:#d4af37;text-align:center;padding:25px;margin-top:40px}
 a{color:#d4af37}
 </style>
+
+<style>
+.nt-infomatics-section { text-align:center; margin:30px 0; }
+.nt-infomatics-button { display:inline-block; background:#000; color:#d4af37; border:1px solid #d4af37; border-radius:4px; padding:14px 30px; font-family:Arial, sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; cursor:pointer; transition:all .25s ease; }
+.nt-infomatics-button:hover { background:#d4af37; color:#000; }
+.nt-infomatics-panel { display:none; max-width:1100px; margin:28px auto 0; }
+.nt-infomatics-panel.show { display:block; }
+</style>
 </head>
 <body>
 <div class="hero">
@@ -129,6 +137,16 @@ a{color:#d4af37}
 </div>
 </div>
 </div>
+<div class="author-box">
+    <div class="av">
+        <img src="/assets/NTlogo.png" alt="Nigel A. Thomas" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
+    </div>
+    <div class="av-info">
+        <h4>Nigel A. Thomas</h4>
+        <div class="role">Hospitality Professional · F&amp;B Operations · Corporate Trainer</div>
+        <p>30+ years in F&amp;B and hospitality operations across India, the Middle East, and the USA. Founder of <a href="https://www.joblynk.live">JobLynk.live</a>, India's careers platform for hospitality and maritime professionals.</p>
+    </div>
+</div>
 <footer>
 <p>© 2026 Nigel Anthony Thomas</p>
 
@@ -146,14 +164,6 @@ a{color:#d4af37}
 
 
 
-<section class="related-pages" style="margin:2.5rem 0 1rem;padding-top:1.5rem;border-top:1px solid #333;">
-<h2 style="font-size:1.1rem;margin-bottom:0.75rem;">You Might Also Like</h2>
-<ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;">
-<li><a href="/restaurant-manager-roles-and-responsibilities.html" style="color:#d4af37;text-decoration:none;">Restaurant Manager Roles &amp; Responsibilities: The Complete Guide</a></li>
-<li><a href="/food-cost-basics.html" style="color:#d4af37;text-decoration:none;">Food Cost Basics: Control Cost, Improve Profit, Grow Business</a></li>
-<li><a href="/about.html" style="color:#d4af37;text-decoration:none;">About Nigel Thomas | Hospitality Executive | 30+ Years Global Leadership</a></li>
-</ul>
-</section>
 
 
 
@@ -164,5 +174,36 @@ a{color:#d4af37}
 
 
 
+
+
+<!-- NT INFOMATICS -->
+
+<!-- END NT INFOMATICS -->
+
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+    var button = event.target.closest(".nt-infomatics-button");
+    if (!button) return;
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var opened = panel.classList.toggle("show");
+    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.setAttribute("aria-expanded", opened ? "true" : "false");
+    panel.setAttribute("aria-hidden", opened ? "false" : "true");
+});
+</script>
+
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel-area-manager-vs-cluster-manager" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel-area-manager-vs-cluster-manager" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+        <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:8px;"/>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
 </body>
 </html>

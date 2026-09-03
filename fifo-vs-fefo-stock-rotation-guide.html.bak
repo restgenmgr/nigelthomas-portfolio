@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FIFO · LIFO · FEFO — Stock Rotation Poster</title>
+<style>
+        /* ───────── RESET & BASE ───────── */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0806;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Cinzel', 'Times New Roman', serif;
+            padding: 24px;
+        }
+
+        /* ───────── POSTER WRAPPER ───────── */
+        .poster {
+            max-width: 1300px;
+            width: 100%;
+            background: #11100d;
+            background-image:
+                radial-gradient(ellipse at 15% 30%, rgba(212, 175, 55, 0.04) 0%, transparent 60%),
+                radial-gradient(ellipse at 85% 70%, rgba(212, 175, 55, 0.04) 0%, transparent 60%),
+                repeating-linear-gradient(45deg, rgba(212, 175, 55, 0.008) 0px, rgba(212, 175, 55, 0.008) 2px, transparent 2px, transparent 8px);
+            border: 2px solid #d4af37;
+            border-radius: 14px;
+            padding: 38px 44px 30px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(212, 175, 55, 0.12) inset, 0 0 60px rgba(212, 175, 55, 0.04);
+            position: relative;
+            transition: all 0.2s;
+        }
+
+        .poster::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4af37, #f0d080, #d4af37, transparent);
+            opacity: 0.4;
+            border-radius: 50%;
+        }
+
+        /* ───────── TYPOGRAPHY ───────── */
+        .gold {
+            color: #d4af37;
+        }
+        .gold-light {
+            color: #f0d080;
+        }
+        .gold-dim {
+            color: #b8952e;
+        }
+        .white {
+            color: #f5f0e8;
+        }
+        .muted {
+            color: #8a857a;
+        }
+        .text-center {
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            letter-spacing: 0.02em;
+        }
+
+        /* ───────── HEADER / TITLE ───────── */
+        .main-title {
+            text-align: center;
+            margin-bottom: 28px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            padding-bottom: 16px;
+        }
+        .main-title h1 {
+            font-size: 3.6rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #d4af37;
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.06), 0 4px 24px rgba(0, 0, 0, 0.6);
+            font-family: 'Cinzel', 'Times New Roman', serif;
+        }
+        .main-title .sub {
+            display: block;
+            font-size: 1.0rem;
+            letter-spacing: 0.4em;
+            color: #b8952e;
+            margin-top: 4px;
+            font-weight: 300;
+        }
+        .main-title .sub-sub {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            color: #6a6558;
+            margin-top: 2px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        /* ───────── THREE-COLUMN LAYOUT ───────── */
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 22px;
+            margin: 12px 0 28px;
+        }
+
+        /* ───────── CARD (each column) ───────── */
+        .card {
+            background: rgba(20, 18, 14, 0.7);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            border-radius: 10px;
+            padding: 24px 22px 26px;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.03) inset;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            border-color: rgba(212, 175, 55, 0.30);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(212, 175, 55, 0.02);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.10);
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+        }
+        .card-header h2 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-family: 'Cinzel', 'Times New Roman', serif;
+        }
+        .card-header .badge {
+            font-size: 0.65rem;
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+            padding: 3px 14px;
+            border-radius: 30px;
+            color: #d4af37;
+            letter-spacing: 0.08em;
+            font-weight: 400;
+            white-space: nowrap;
+        }
+        .badge-live {
+            background: rgba(212, 175, 55, 0.18) !important;
+            border-color: #d4af37 !important;
+            color: #f0d080 !important;
+            animation: pulse-gold 2s infinite ease-in-out;
+        }
+        @keyframes pulse-gold {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+
+        .card .tagline {
+            font-size: 0.85rem;
+            letter-spacing: 0.04em;
+            color: #c4b48a;
+            margin-bottom: 14px;
+            font-style: italic;
+            border-left: 2px solid rgba(212, 175, 55, 0.20);
+            padding-left: 14px;
+            line-height: 1.4;
+        }
+
+        /* ───────── DAY LIST ───────── */
+        .day-list {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0 14px;
+        }
+        .day-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 4px 0;
+            font-size: 0.95rem;
+            color: #e8e0d4;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.025);
+        }
+        .day-list li:last-child {
+            border-bottom: none;
+        }
+        .day-list .day-tag {
+            font-weight: 600;
+            color: #d4af37;
+            min-width: 58px;
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            background: rgba(212, 175, 55, 0.05);
+            padding: 1px 8px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .day-list .item-name {
+            font-weight: 400;
+            color: #f5f0e8;
+        }
+        .day-list .arrow {
+            color: #b8952e;
+            margin: 0 2px;
+            font-size: 0.8rem;
+        }
+
+        /* ───────── STRUCTURE VISUAL ───────── */
+        .structure-visual {
+            background: rgba(0, 0, 0, 0.30);
+            border-radius: 8px;
+            padding: 10px 16px;
+            margin: 10px 0 14px;
+            border-left: 3px solid rgba(212, 175, 55, 0.20);
+            font-size: 0.85rem;
+            color: #d4c9b0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .structure-visual .label {
+            font-weight: 600;
+            color: #d4af37;
+            letter-spacing: 0.06em;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+        .structure-visual .icon {
+            font-size: 1.5rem;
+            line-height: 1;
+            color: #d4af37;
+            opacity: 0.5;
+        }
+
+        /* ───────── EXAMPLE BOX ───────── */
+        .example-box {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 12px 0 14px;
+            border: 1px solid rgba(212, 175, 55, 0.06);
+            flex-shrink: 0;
+        }
+        .example-box .ex-title {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #b8952e;
+            margin-bottom: 4px;
+        }
+        .example-box .ex-result {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .example-box .ex-result .items {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .example-box .ex-result .items span {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            padding: 2px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #f5f0e8;
+        }
+        .example-box .ex-result .items .removed {
+            text-decoration: line-through;
+            opacity: 0.30;
+            border-color: rgba(255, 80, 80, 0.12);
+            color: #8a7a6a;
+        }
+        .example-box .ex-result .items .kept {
+            border-color: rgba(212, 175, 55, 0.25);
+            color: #d4af37;
+        }
+
+        .remaining-note {
+            margin-top: 8px;
+            font-size: 0.82rem;
+            color: #c4b48a;
+            padding: 6px 12px;
+            background: rgba(212, 175, 55, 0.02);
+            border-radius: 6px;
+            border-left: 2px solid rgba(212, 175, 55, 0.10);
+        }
+        .remaining-note strong {
+            color: #f0d080;
+        }
+
+        /* ─── BEST FOR + REMEMBER ─── */
+        .meta-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 14px;
+            flex-wrap: wrap;
+            border-top: 1px solid rgba(212, 175, 55, 0.05);
+            padding-top: 14px;
+            flex-shrink: 0;
+        }
+        .meta-row .meta-item {
+            flex: 1;
+            min-width: 100px;
+        }
+        .meta-row .meta-item .label-sm {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #8a857a;
+            display: block;
+            margin-bottom: 1px;
+        }
+        .meta-row .meta-item .value {
+            color: #e8e0d4;
+            font-size: 0.82rem;
+            line-height: 1.3;
+        }
+        .meta-row .meta-item .value.gold {
+            color: #d4af37;
+        }
+
+        /* ─── FEFO SPECIFIC ─── */
+        .fefo-note {
+            font-size: 0.8rem;
+            color: #c4b48a;
+            background: rgba(212, 175, 55, 0.04);
+            border-radius: 6px;
+            padding: 8px 14px;
+            margin: 6px 0 10px;
+            border-left: 2px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .expiry-list {
+            list-style: none;
+            padding: 0;
+            margin: 6px 0 12px;
+        }
+        .expiry-list li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 3px 0;
+            font-size: 0.88rem;
+            color: #e8e0d4;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+        .expiry-list li:last-child {
+            border-bottom: none;
+        }
+        .expiry-list .exp-tag {
+            font-weight: 600;
+            color: #d4af37;
+            min-width: 52px;
+            font-size: 0.7rem;
+            letter-spacing: 0.04em;
+            background: rgba(212, 175, 55, 0.05);
+            padding: 1px 8px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .expiry-list .exp-date {
+            color: #b8952e;
+            font-size: 0.75rem;
+            margin-left: auto;
+            font-weight: 500;
+        }
+        .expiry-list .exp-date.warning {
+            color: #e08a3c;
+        }
+        .expiry-list .exp-date.live-indicator::after {
+            content: " ●";
+            color: #4caf50;
+            font-size: 0.6rem;
+            opacity: 0.8;
+        }
+
+        /* ───────── BOTTOM BRAND BAR ───────── */
+        .brand-bar {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(212, 175, 55, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px 20px;
+        }
+
+        .brand-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .emblem {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .emblem .logo-icon {
+            width: 48px;
+            height: 48px;
+            border: 2px solid #d4af37;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #d4af37;
+            background: rgba(212, 175, 55, 0.04);
+            letter-spacing: 0.08em;
+            flex-shrink: 0;
+            font-family: 'Cinzel', serif;
+        }
+        .emblem .logo-text {
+            line-height: 1.2;
+        }
+        .emblem .logo-text .name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            letter-spacing: 0.10em;
+            font-family: 'Cinzel', serif;
+        }
+        .emblem .logo-text .title {
+            font-size: 0.6rem;
+            letter-spacing: 0.22em;
+            color: #b8952e;
+            text-transform: uppercase;
+            display: block;
+            margin-top: -1px;
+        }
+
+        .brand-right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        .brand-right .contact-row {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .brand-right .contact-row a,
+        .brand-right .contact-row span {
+            color: #c4b48a;
+            text-decoration: none;
+            font-size: 0.82rem;
+            letter-spacing: 0.04em;
+            transition: color 0.2s;
+        }
+        .brand-right .contact-row a:hover {
+            color: #d4af37;
+        }
+        .brand-right .contact-row .sep {
+            color: #5a5548;
+            font-weight: 300;
+        }
+        .brand-right .phone {
+            color: #d4af37 !important;
+            font-weight: 500;
+        }
+
+        /* ───────── RESPONSIVE ───────── */
+        @media (max-width: 1024px) {
+            .poster {
+                padding: 28px 24px 22px;
+            }
+            .columns {
+                grid-template-columns: 1fr 1fr;
+                gap: 18px;
+            }
+            .columns .card:last-child {
+                grid-column: span 2;
+            }
+            .main-title h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .poster {
+                padding: 22px 16px 18px;
+            }
+            .columns {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .columns .card:last-child {
+                grid-column: span 1;
+            }
+            .main-title h1 {
+                font-size: 2.2rem;
+                letter-spacing: 0.08em;
+            }
+            .main-title .sub {
+                font-size: 0.8rem;
+                letter-spacing: 0.2em;
+            }
+            .card-header h2 {
+                font-size: 1.5rem;
+            }
+            .brand-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .brand-right {
+                text-align: left;
+                width: 100%;
+            }
+            .brand-right .contact-row {
+                justify-content: flex-start;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+            .emblem .logo-text .name {
+                font-size: 1.2rem;
+            }
+            .emblem .logo-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            .card {
+                padding: 18px 16px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .poster {
+                padding: 14px 10px 14px;
+                border-radius: 8px;
+            }
+            .main-title h1 {
+                font-size: 1.6rem;
+                letter-spacing: 0.06em;
+            }
+            .main-title .sub {
+                font-size: 0.65rem;
+            }
+            .main-title .sub-sub {
+                font-size: 0.55rem;
+            }
+            .card-header h2 {
+                font-size: 1.2rem;
+            }
+            .card-header .badge {
+                font-size: 0.5rem;
+                padding: 2px 10px;
+            }
+            .day-list li {
+                font-size: 0.8rem;
+                flex-wrap: wrap;
+            }
+            .day-list .day-tag {
+                min-width: 44px;
+                font-size: 0.65rem;
+            }
+            .expiry-list li {
+                font-size: 0.78rem;
+                flex-wrap: wrap;
+            }
+            .brand-right .contact-row {
+                gap: 6px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .brand-right .contact-row .sep {
+                display: none;
+            }
+            .brand-right .contact-row a,
+            .brand-right .contact-row span {
+                font-size: 0.7rem;
+            }
+            .emblem .logo-text .name {
+                font-size: 1.0rem;
+            }
+            .emblem .logo-text .title {
+                font-size: 0.5rem;
+            }
+            .emblem .logo-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 0.8rem;
+            }
+            .meta-row .meta-item .value {
+                font-size: 0.7rem;
+            }
+            .example-box .ex-result .items span {
+                font-size: 0.7rem;
+                padding: 2px 10px;
+            }
+            .structure-visual {
+                font-size: 0.75rem;
+                padding: 8px 12px;
+            }
+            .structure-visual .icon {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* ───────── PRINT HINTS ───────── */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .poster {
+                border-color: #b8952e;
+                box-shadow: none;
+                border-radius: 0;
+                padding: 24px;
+                background: #faf8f4;
+                background-image: none;
+            }
+            .poster::before {
+                display: none;
+            }
+            .card {
+                background: #faf8f4;
+                border-color: #b8952e;
+            }
+            .gold,
+            .main-title h1,
+            .card-header h2,
+            .day-list .day-tag,
+            .structure-visual .label,
+            .meta-row .meta-item .value.gold,
+            .emblem .logo-text .name,
+            .brand-right .phone,
+            .expiry-list .exp-tag {
+                color: #a67c1e !important;
+            }
+            .white,
+            .day-list .item-name,
+            .example-box .ex-result .items .kept,
+            .meta-row .meta-item .value,
+            .expiry-list li {
+                color: #222 !important;
+            }
+            .muted,
+            .gold-dim {
+                color: #666 !important;
+            }
+            .card {
+                backdrop-filter: none;
+                box-shadow: none;
+            }
+            .structure-visual {
+                background: #f0ede6;
+            }
+            .example-box {
+                background: #f0ede6;
+            }
+            .brand-bar {
+                border-top-color: #b8952e;
+            }
+            .card-header .badge {
+                background: #e8e0d4;
+                border-color: #b8952e;
+                color: #a67c1e;
+            }
+            .day-list .day-tag {
+                background: #e8e0d4;
+            }
+            .expiry-list .exp-tag {
+                background: #e8e0d4;
+            }
+            .emblem .logo-icon {
+                border-color: #a67c1e;
+                color: #a67c1e;
+            }
+            .expiry-list .exp-date.live-indicator::after {
+                content: "" !important;
+            }
+        }
+    </style>
+<!-- Google Font: Cinzel for elegant serif -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<!-- /poster -->
+<!-- ═══ JAVASCRIPT: LIVE DATE ENGINE ═══ -->
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find all expiry date elements that have a data-days attribute
+            const expirySpans = document.querySelectorAll('.exp-date[data-days]');
+
+            // Formatting options for the date
+            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+
+            // Get today's date
+            const now = new Date();
+
+            expirySpans.forEach(span => {
+                // Get the number of days to add from the data attribute
+                const daysToAdd = parseInt(span.getAttribute('data-days'), 10);
+
+                // Calculate future date
+                const futureDate = new Date(now);
+                futureDate.setDate(futureDate.getDate() + daysToAdd);
+
+                // Format the date (e.g., "Jun 10, 2026")
+                const formattedDate = futureDate.toLocaleDateString('en-US', options);
+
+                // Update the text content, keeping the "Exp: " prefix if it exists, or just set it
+                // We'll replace the whole content to ensure consistency
+                span.textContent = 'Exp: ' + formattedDate;
+            });
+        });
+    </script>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<div class="poster">
+<!-- ═══ HEADER ═══ -->
+<div class="main-title">
+<h1>FIFO · LIFO · FEFO</h1>
+<span class="sub">Stock Rotation Rules — Every Store Manager Must Know</span>
+<span class="sub-sub">Protecting Food Quality · Reducing Waste · Controlling Cost · Ensuring Safety</span>
+</div>
+<!-- ═══ THREE COLUMNS ═══ -->
+<div class="columns">
+<!-- ──── FIFO COLUMN ──── -->
+<div class="card">
+<div class="card-header">
+<h2 class="gold">FIFO</h2>
+<span class="badge">Queue</span>
+</div>
+<div class="tagline">First In, First Out — the first item in is the first item out.</div>
+<div style="margin-bottom:4px;">
+<span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN</span>
+</div>
+<ul class="day-list">
+<li><span class="day-tag">Day 1</span> <span class="item-name">Milk</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 1</span></li>
+<li><span class="day-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 2</span></li>
+<li><span class="day-tag">Day 3</span> <span class="item-name">Juice</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 3</span></li>
+</ul>
+<div class="structure-visual">
+<span class="icon">⏳</span>
+<span class="label">Like a queue</span>
+<span style="color:#8a857a;font-size:0.75rem;">— first come, first served</span>
+</div>
+<div class="example-box">
+<div class="ex-title">✦ Example — need 1 item</div>
+<div class="ex-result">
+<span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
+<div class="items">
+<span class="removed">Day 1</span>
+<span class="kept">Day 2</span>
+<span class="kept">Day 3</span>
+</div>
+</div>
+<div class="remaining-note">
+<strong>Remaining:</strong> Yogurt (Day 2) · Juice (Day 3)
+                    </div>
+</div>
+<div class="meta-row">
+<div class="meta-item">
+<span class="label-sm">Best for</span>
+<span class="value gold">Dry goods, canned items, non‑perishables</span>
+</div>
+<div class="meta-item">
+<span class="label-sm">Remember</span>
+<span class="value gold">FIFO = Queue</span>
+</div>
+</div>
+</div>
+<!-- ──── LIFO COLUMN ──── -->
+<div class="card">
+<div class="card-header">
+<h2 class="gold">LIFO</h2>
+<span class="badge">Stack</span>
+</div>
+<div class="tagline">Last In, First Out — the last item in is the first item out.</div>
+<div style="margin-bottom:4px;">
+<span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN</span>
+</div>
+<ul class="day-list">
+<li><span class="day-tag">Day 1</span> <span class="item-name">Milk</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 1</span></li>
+<li><span class="day-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 2</span></li>
+<li><span class="day-tag">Day 3</span> <span class="item-name">Juice</span> <span class="arrow">→</span> <span class="gold-dim" style="font-size:0.7rem;">DAY 3</span></li>
+</ul>
+<div class="structure-visual">
+<span class="icon">📚</span>
+<span class="label">Like a stack</span>
+<span style="color:#8a857a;font-size:0.75rem;">— last placed, first removed</span>
+</div>
+<div class="example-box">
+<div class="ex-title">✦ Example — need 1 item</div>
+<div class="ex-result">
+<span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
+<div class="items">
+<span class="kept">Day 1</span>
+<span class="kept">Day 2</span>
+<span class="removed">Day 3</span>
+</div>
+</div>
+<div class="remaining-note">
+<strong>Remaining:</strong> Milk (Day 1) · Yogurt (Day 2)
+                    </div>
+</div>
+<div class="meta-row">
+<div class="meta-item">
+<span class="label-sm">Best for</span>
+<span class="value gold">Long shelf life, non‑perishable goods, some chemicals</span>
+</div>
+<div class="meta-item">
+<span class="label-sm">Remember</span>
+<span class="value gold">LIFO = Stack</span>
+</div>
+</div>
+</div>
+<!-- ──── FEFO COLUMN (LIVE DATES) ──── -->
+<div class="card">
+<div class="card-header">
+<h2 class="gold">FEFO</h2>
+<span class="badge badge-live">Expiry First · Live</span>
+</div>
+<div class="tagline">First Expired, First Out — nearest expiry used first, regardless of arrival.</div>
+<div style="margin-bottom:4px;">
+<span style="color:#8a857a;font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;">IN (auto‑generated expiry)</span>
+</div>
+<ul class="expiry-list">
+<li><span class="exp-tag">Day 1</span> <span class="item-name">Milk</span> <span class="exp-date live-indicator" data-days="5">Exp: --</span></li>
+<li><span class="exp-tag">Day 2</span> <span class="item-name">Yogurt</span> <span class="exp-date warning live-indicator" data-days="3">Exp: --</span></li>
+<li><span class="exp-tag">Day 3</span> <span class="item-name">Juice</span> <span class="exp-date live-indicator" data-days="7">Exp: --</span></li>
+</ul>
+<div class="fefo-note">
+<strong>⏰ FEFO:</strong> Uses the item with the <strong>earliest expiry</strong> first — even if it arrived after others.
+                    <br/><span style="font-size:0.7rem;color:#6a6558;">(Expiry dates update automatically to today + days)</span>
+</div>
+<div class="example-box">
+<div class="ex-title">✦ Example — need 1 item</div>
+<div class="ex-result">
+<span style="color:#8a857a;font-size:0.75rem;">After taking 1:</span>
+<div class="items">
+<span class="kept">Day 1</span>
+<span class="removed">Day 2</span>
+<span class="kept">Day 3</span>
+</div>
+</div>
+<div class="remaining-note">
+<strong>Remaining:</strong> Milk · Juice
+                        <br/><span style="font-size:0.7rem;color:#8a857a;">Yogurt (earliest expiry) used first.</span>
+</div>
+</div>
+<div class="meta-row">
+<div class="meta-item">
+<span class="label-sm">Best for</span>
+<span class="value gold">Perishables: meat, dairy, seafood, produce, prepared food</span>
+</div>
+<div class="meta-item">
+<span class="label-sm">Remember</span>
+<span class="value gold">FEFO = Expiry Date</span>
+</div>
+</div>
+</div>
+</div>
+<!-- /columns -->
+<!-- ═══ BOTTOM BRAND BAR ═══ -->
+<div class="brand-bar">
+<!-- Left: Emblem + Name -->
+<div class="brand-left">
+<div class="emblem">
+<div class="logo-icon">NT</div>
+<div class="logo-text">
+<span class="name">NIGEL THOMAS</span>
+<span class="title">Hospitality Executive · Leadership · Operations Excellence</span>
+</div>
+</div>
+</div>
+<!-- Right: Contact -->
+<div class="brand-right">
+<div class="contact-row">
+<a href="https://www.linkedin.com/in/nigel-thomas-66515534" rel="noopener" target="_blank">linkedin.com/in/nigel-thomas-66515534</a>
+<span class="sep">|</span>
+<a href="https://nigelthomas.live" rel="noopener" target="_blank">nigelthomas.live</a>
+<span class="sep">|</span>
+<span class="phone">+91 9769351231</span>
+</div>
+</div>
+</div>
+<!-- /brand-bar -->
+</div>
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+</body>
+</html>

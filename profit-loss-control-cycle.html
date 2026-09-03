@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -22,384 +22,8 @@
 </script>
 <!-- Google AdSense -->
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"></script>
-<style>
-  :root {
-    --bg: #0b0b0b;
-    --gold: #d4af37;
-    --gold-bright: #f4d160;
-    --text: #f4f4f4;
-    --muted: #b8b8b8;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Segoe UI", Arial, sans-serif;
-    line-height: 1.6;
-  }
-  header.site-header {
-    padding: 20px 24px;
-    border-bottom: 1px solid #222;
-  }
-  header.site-header a {
-    color: var(--gold);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-  }
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 40px 20px 60px;
-  }
-  h1 {
-    color: var(--gold-bright);
-    font-size: clamp(1.6rem, 4vw, 2.4rem);
-    margin-bottom: 12px;
-    line-height: 1.25;
-  }
-  .byline {
-    color: var(--muted);
-    font-size: 0.95rem;
-    margin-bottom: 28px;
-  }
-  .byline span {
-    color: var(--gold);
-    font-weight: 600;
-  }
-
-  /* ===== POSTER STYLES (RECTIFIED JFIF) ===== */
-  .poster-wrap {
-    background: #0c0c0c;
-    border: 1px solid #2a2a2a;
-    border-radius: 12px;
-    padding: 30px 25px 20px;
-    margin: 20px 0 40px;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.7);
-  }
-  .poster-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid var(--gold);
-    padding-bottom: 12px;
-    margin-bottom: 18px;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .poster-name {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--gold-bright);
-    letter-spacing: 1px;
-  }
-  .poster-name small {
-    display: block;
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--muted);
-    letter-spacing: 0.5px;
-  }
-  .poster-emblem img {
-    height: 50px;
-    width: auto;
-    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.25));
-  }
-  .poster-emblem .fallback {
-    color: var(--gold);
-    font-weight: 700;
-    font-size: 1.2rem;
-    background: #1a1a1a;
-    padding: 6px 14px;
-    border: 1px solid var(--gold);
-    border-radius: 30px;
-    letter-spacing: 1px;
-  }
-  .poster-title {
-    text-align: center;
-    margin: 10px 0 18px;
-  }
-  .poster-title h2 {
-    font-size: 2.2rem;
-    font-weight: 800;
-    letter-spacing: 2px;
-    background: linear-gradient(135deg, var(--gold), #fff5c0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  .poster-title p {
-    color: var(--gold);
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-top: 2px;
-    -webkit-text-fill-color: var(--gold);
-  }
-  .poster-baseline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 24px;
-    background: #161616;
-    padding: 10px 16px;
-    border-radius: 6px;
-    margin-bottom: 14px;
-    font-size: 0.85rem;
-    color: #ddd;
-  }
-  .poster-baseline strong { color: var(--gold); }
-  .poster-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 14px;
-    margin: 12px 0;
-  }
-  .poster-card {
-    background: #141414;
-    border-left: 3px solid #666;
-    padding: 12px 14px;
-    border-radius: 4px;
-  }
-  .poster-card.gold { border-left-color: var(--gold); }
-  .poster-card.red { border-left-color: #ff6b6b; }
-  .poster-card.orange { border-left-color: #ff8c42; }
-  .poster-card.purple { border-left-color: #a29bfe; }
-  .poster-card h4 {
-    color: var(--gold);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 3px;
-  }
-  .poster-card .num { font-size: 1.3rem; font-weight: 700; color: #fff; }
-  .poster-card .num.red { color: #ff6b6b; }
-  .poster-card .num.gold { color: var(--gold-bright); }
-  .poster-card .sub { font-size: 0.78rem; color: #999; }
-  .poster-loss-box {
-    grid-column: 1 / -1;
-    background: #1a0a0a;
-    border: 1.5px solid #ff4444;
-    border-radius: 6px;
-    padding: 14px 16px;
-    text-align: center;
-  }
-  .poster-loss-box .big {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #ff6b6b;
-    letter-spacing: 0.5px;
-  }
-  .poster-loss-box .sub {
-    color: #ffaaaa;
-    font-size: 0.9rem;
-    margin-top: 2px;
-  }
-  .poster-loss-box .sub strong { color: #ff6b6b; }
-  .poster-kpis {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 12px;
-    justify-content: center;
-    margin: 16px 0 10px;
-    padding-top: 14px;
-    border-top: 1px solid #222;
-  }
-  .poster-kpis span {
-    background: #1a1a1a;
-    padding: 4px 14px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    color: var(--gold);
-    border: 1px solid #2a2a2a;
-  }
-  .poster-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 18px;
-    padding-top: 14px;
-    border-top: 1px solid #222;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .poster-footer .tagline {
-    color: var(--muted);
-    font-style: italic;
-    font-size: 0.85rem;
-  }
-  .poster-footer .tagline strong { color: var(--gold-bright); font-style: normal; }
-  .poster-footer .brand {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--gold);
-    font-weight: 700;
-    font-size: 0.9rem;
-  }
-  .poster-footer .brand img { height: 34px; width: auto; }
-  .poster-footer .brand .fallback-sm {
-    background: #1a1a1a;
-    padding: 3px 12px;
-    border: 1px solid var(--gold);
-    border-radius: 20px;
-    font-size: 0.7rem;
-  }
-  .poster-bottom-quote {
-    text-align: center;
-    margin-top: 14px;
-    padding-top: 12px;
-    border-top: 1px solid #1a1a1a;
-    color: #888;
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.3px;
-  }
-  .poster-bottom-quote strong { color: var(--gold); }
-  @media (max-width: 600px) {
-    .poster-wrap { padding: 18px 12px; }
-    .poster-grid { grid-template-columns: 1fr; }
-    .poster-header { flex-direction: column; align-items: flex-start; }
-    .poster-title h2 { font-size: 1.6rem; }
-    .poster-loss-box .big { font-size: 1.5rem; }
-    .poster-footer { flex-direction: column; align-items: flex-start; }
-  }
-
-  /* Blog content styles */
-  h2 {
-    color: var(--gold);
-    font-size: 1.3rem;
-    margin: 28px 0 12px;
-    border-left: 3px solid var(--gold);
-    padding-left: 10px;
-  }
-  p { color: var(--text); margin-bottom: 14px; }
-  ul { margin: 0 0 14px 22px; color: var(--text); }
-  li { margin-bottom: 8px; }
-  .quote-block {
-    background: #141414;
-    border-left: 3px solid var(--gold);
-    padding: 18px 20px;
-    border-radius: 4px;
-    color: var(--gold-bright);
-    font-style: italic;
-    margin: 28px 0;
-  }
-  .tags {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .tags span {
-    background: #1a1a1a;
-    border: 1px solid #333;
-    color: var(--gold);
-    font-size: 0.8rem;
-    padding: 5px 12px;
-    border-radius: 20px;
-  }
-  .ad-slot {
-    margin: 36px 0;
-    text-align: center;
-  }
-  footer.site-footer {
-    text-align: center;
-    padding: 30px 20px;
-    color: var(--muted);
-    font-size: 0.85rem;
-    border-top: 1px solid #222;
-  }
-  footer.site-footer a { color: var(--gold); text-decoration: none; }
-</style>
-</head>
-<body>
-<header class="site-header">
-<a href="index.html">Nigel A. Thomas — Hospitality Leadership &amp; Training</a>
-</header>
-<main>
-<article>
-<h1>Profit is Not Lost at the End of the Month — It’s Lost Every Day</h1>
-<p class="byline">By <span>Nigel A. Thomas</span> • Hospitality Executive &amp; Corporate Trainer</p>
-<!-- ========================================================= -->
-<!-- ===== RECTIFIED POSTER (Your JFIF replacement) =========== -->
-<!-- ========================================================= -->
-<!-- ===== END OF RECTIFIED POSTER ============================ -->
-<!-- BLOG ARTICLE -->
-<section>
-<h2>The Problem with Waiting for Month-End</h2>
-<p>In the hospitality industry, waiting for a monthly P&amp;L report means discovering problems after they have already affected profitability. A 1% food cost creep over 10 days is a training issue; over 30 days, it's a budget crisis.</p>
-<p>A <strong>10-day P&amp;L control cycle</strong> helps management identify operational gaps early and take corrective action before losses compound. The purpose is not to create more reports — the purpose is to create faster operational action.</p>
-</section>
-<section>
-<h2>How to Act on the 7 KPIs</h2>
-<ul>
-<li><strong>Food Cost %:</strong> If &gt;1.5% above target for 3 days, do a line-check on top-selling entrees.</li>
-<li><strong>Labor Cost %:</strong> If actual hours exceed scheduled by 4%, freeze overtime immediately.</li>
-<li><strong>Menu Mix:</strong> If a top-5 item drops in mix, re-train servers on suggestive selling.</li>
-<li><strong>MPLH:</strong> If it drops below baseline, analyze the "dead zone" and reduce labor during slow windows.</li>
-<li><strong>Waste &amp; Variance:</strong> If variance &gt;2% on protein, switch to FIFO audits at shift start.</li>
-<li><strong>Purchasing Price Variance:</strong> Flag invoices immediately — call suppliers for credit before paying.</li>
-<li><strong>Sales by Menu Item:</strong> If a signature dish drops below 5%, move it to the Chef's Feature board.</li>
-</ul>
-</section>
-<div class="quote-block">
-      "Profit is controlled in cycles, not at month end. If you correct within 10 days, you recover margin before it compounds."
-    </div>
-<div class="ad-slot">
-<ins class="adsbygoogle" data-ad-client="ca-pub-4282121192943910" data-ad-format="auto" data-ad-slot="0000000000" data-full-width-responsive="true" style="display:block"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-<section>
-<h2>Make the 10-Day Cycle Your New Standard</h2>
-<p>Start your first 10-day cycle not on the 1st of the month, but tomorrow. Because profit lost today is twice as hard to recover next week. Track these numbers, act on them immediately, and protect your margins with speed — not just hindsight.</p>
-</section>
-<div class="tags">
-<span>#PandL</span>
-<span>#FoodCost</span>
-<span>#LaborCost</span>
-<span>#HospitalityManagement</span>
-<span>#Profitability</span>
-<span>#10DayCycle</span>
-<span>#OperationsExcellence</span>
-</div>
-</article>
-</main>
-<footer class="site-footer">
-<p>© 2026 Nigel A. Thomas • <a href="blog.html">Back to Blog</a></p>
-</footer>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
 
 
-
-
-
-
-
-
-</div>
-</div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-
-<div class="poster-name">
-          NIGEL A THOMAS
-          <small>Hospitality Performance &amp; Profitability</small>
-</div>
 <div class="poster-emblem">
 <img alt="Nigel Thomas Emblem" onerror="this.style.display='none';" src="assets/NTlogo.png"/>
 <span class="fallback">✦ NT</span>
@@ -444,23 +68,8 @@
 
 </div>
 </div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-<div class="poster-header">
-<div class="poster-name">
-          NIGEL A THOMAS
-          <small>Hospitality Performance &amp; Profitability</small>
-</div>
+
+
 <div class="poster-emblem">
 <img alt="Nigel Thomas Emblem" onerror="this.style.display='none';" src="assets/NTlogo.png"/>
 <span class="fallback">✦ NT</span>
@@ -574,23 +183,9 @@
 
 </div>
 </div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
 
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-<div class="poster-name">
-          NIGEL A THOMAS
-          <small>Hospitality Performance &amp; Profitability</small>
-</div>
+
+
 <div class="poster-emblem">
 <img alt="Nigel Thomas Emblem" onerror="this.style.display='none';" src="assets/NTlogo.png"/>
 <span class="fallback">✦ NT</span>
@@ -781,12 +376,42 @@
 </div>
 </div>
 </div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
+
+
+<!-- NT INFOMATICS -->
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+        <div class="poster-wrap">
+            <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto;"/>
+        </div>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
+<!-- END NT INFOMATICS -->
+
+<div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
+    <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
+        Read More Articles →
+    </a>
+</div>
+
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+    var button = event.target.closest(".nt-infomatics-button");
+    if (!button) return;
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var opened = panel.classList.toggle("show");
+    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.setAttribute("aria-expanded", opened ? "true" : "false");
+    panel.setAttribute("aria-hidden", opened ? "false" : "true");
+});
+</script>
 </body>
 </html>

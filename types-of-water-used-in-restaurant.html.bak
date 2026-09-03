@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Types of Water Used in Restaurants – Nigel Thomas Hospitality Guide</title>
+<meta content="Complete guide to still, sparkling, mineral, purified, spring and flavoured water – how to choose, serve and profit from each type in your restaurant." name="description"/>
+<meta content="types of water, restaurant water service, still water, sparkling water, mineral water, purified water, spring water, flavoured water, hospitality beverages, Nigel Thomas" name="keywords"/>
+<meta content="Nigel Anthony Thomas" name="author"/>
+<link href="https://www.nigelthomas.live/types-of-water-used-in-restaurant.html" rel="canonical"/>
+<meta content="index,follow" name="robots"/>
+<meta content="article" property="og:type"/>
+<meta content="Types of Water Used in Restaurants – A Complete Guide" property="og:title"/>
+<meta content="Learn the differences between still, sparkling, mineral, purified, spring and flavoured water – and why each matters for guest satisfaction, cost control and operational efficiency." property="og:description"/>
+<meta content="https://www.nigelthomas.live/types-of-water-used-in-restaurant.html" property="og:url"/>
+<meta content="https://www.nigelthomas.live/assets/types-of-water-used-in-restaurant.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<!-- Google Analytics (GA4) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-CLRRV5DMXZ');
+  </script>
+<!-- Google AdSense -->
+<meta content="ca-pub-4282121192943910" name="google-adsense-account"/>
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"></script>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b0b0b;
+      color: #d8d8d8;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 25px;
+    }
+    header {
+      background: #000;
+      border-bottom: 3px solid #d4af37;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #d4af37;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 25px;
+      transition: .3s;
+    }
+    .nav-links a:hover {
+      background: #d4af37;
+      color: #000;
+    }
+    .hero {
+      background: linear-gradient(135deg, #000, #191919);
+      padding: 70px 25px;
+      text-align: center;
+      border-bottom: 2px solid #d4af37;
+    }
+    .hero h1 {
+      font-size: 46px;
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 900px;
+      margin: auto;
+      color: #d9d9d9;
+    }
+    .article-content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    /* ====== ADJUSTED POSTER EMBED (Logo moved top-right & enlarged) ====== */
+    .poster-embed {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 30px 35px 25px 35px;
+      margin: 30px 0 40px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+      color: #1a3a4a;
+    }
+    .poster-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 3px solid #e0b354;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .poster-title h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #1a3a4a;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .poster-title h2 span {
+      display: block;
+      font-size: 18px;
+      font-weight: 400;
+      color: #4a6a7a;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .poster-title .sub {
+      font-size: 16px;
+      color: #b8863a;
+      font-weight: 600;
+      font-style: italic;
+    }
+    /* NT LOGO - moved top-right, enlarged */
+    .nt-logo-embed {
+      background: #1a3a4a;
+      padding: 10px 20px 12px 20px;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 1.2;
+      min-width: 130px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      flex-shrink: 0;
+      margin-left: 30px;
+    }
+    .nt-logo-embed .initials {
+      font-size: 36px;
+      font-weight: 800;
+      color: #e0b354;
+      letter-spacing: 2px;
+    }
+    .nt-logo-embed .name-line {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 1px;
+    }
+    .nt-logo-embed .sub-lines {
+      font-size: 11px;
+      font-weight: 300;
+      color: #cfdde6;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .poster-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .poster-card {
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 16px 14px 14px 14px;
+      border-left: 5px solid #e0b354;
+    }
+    .poster-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a3a4a;
+      margin-bottom: 6px;
+      border-bottom: 1px dashed #d0dce4;
+      padding-bottom: 4px;
+    }
+    .poster-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .poster-card ul li {
+      font-size: 13px;
+      color: #2a4a5a;
+      padding: 2px 0 2px 16px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .poster-card ul li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: #b8863a;
+      font-weight: 700;
+    }
+    .poster-card .example {
+      margin-top: 6px;
+      font-weight: 600;
+      color: #b8863a;
+      font-size: 13px;
+      background: #eef3f6;
+      display: inline-block;
+      padding: 0 12px;
+      border-radius: 20px;
+    }
+    .poster-card .evian {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2a6b8a;
+      letter-spacing: 2px;
+    }
+    .poster-card .flavors {
+      font-size: 13px;
+      color: #3a6a4a;
+      font-weight: 500;
+    }
+    .poster-bottom {
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 3px solid #e0b354;
+    }
+    .poster-bottom h4 {
+      font-size: 18px;
+      color: #1a3a4a;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .poster-bottom .reasons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
+    .poster-bottom .reasons span {
+      font-size: 13px;
+      color: #2a4a5a;
+      background: #f0f4f8;
+      padding: 3px 14px;
+      border-radius: 30px;
+      border: 1px solid #dce6ed;
+    }
+    @media (max-width: 750px) {
+      .poster-top { flex-direction: column; align-items: stretch; }
+      .nt-logo-embed { align-self: flex-end; margin-left: 0; margin-top: 12px; }
+      .poster-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .poster-grid { grid-template-columns: 1fr; }
+      .poster-embed { padding: 18px; }
+    }
+    /* ====== END POSTER EMBED ====== */
+    .article-content h2 {
+      color: #d4af37;
+      font-size: 30px;
+      margin: 40px 0 20px;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 10px;
+    }
+    .article-content h3 {
+      color: #e6c14b;
+      font-size: 24px;
+      margin: 30px 0 15px;
+    }
+    .article-content p {
+      margin-bottom: 18px;
+      font-size: 17px;
+      color: #ddd;
+    }
+    .article-content ul, .article-content ol {
+      margin: 15px 0 20px 30px;
+      color: #ccc;
+    }
+    .article-content li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: #141414;
+      border-left: 6px solid #d4af37;
+      padding: 18px 22px;
+      margin: 25px 0;
+      border-radius: 8px;
+    }
+    .highlight-box strong {
+      color: #d4af37;
+    }
+    .article-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      background: #111;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .article-content table th {
+      background: #d4af37;
+      color: #000;
+      padding: 12px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .article-content table td {
+      padding: 12px;
+      border-bottom: 1px solid #333;
+    }
+    .article-content table tr:last-child td {
+      border-bottom: none;
+    }
+    .read-more-section {
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 2px solid #d4af37;
+    }
+    .read-more-section a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .read-more-section a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #000;
+      border-top: 3px solid #d4af37;
+      margin-top: 80px;
+      padding: 40px;
+      text-align: center;
+    }
+    footer a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 32px; }
+      .navbar { flex-direction: column; gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+<!-- HEADER -->
+<header>
+<div class="container">
+<div class="navbar">
+<a class="logo" href="">Nigel Thomas</a>
+<nav class="nav-links">
+<a href="">Home</a>
+<a href="about.html">About</a>
+<a href="blog.html">Blog</a>
+<a href="tools.html">Tools</a>
+<a href="contact.html">Contact</a>
+<a href="privacy-policy.html">Privacy</a>
+<a href="terms.html">Terms</a>
+<a href="disclaimer.html">Disclaimer</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1>Types of Water Used in Restaurants</h1>
+<p>Different water, different purpose – a complete guide for hospitality professionals on still, sparkling, mineral, purified, spring and flavoured water.</p>
+</div>
+</section>
+<!-- ARTICLE CONTENT (with the ADJUSTED poster embedded) -->
+<div class="article-content">
+<!-- ========================================================== -->
+<!-- THE ADJUSTED POSTER (LIVE HTML) – LOGO TOP-RIGHT & ENLARGED -->
+<!-- ========================================================== -->
+<!-- ====== END OF ADJUSTED POSTER ====== -->
+<!-- Introduction -->
+<p>Water is the most fundamental beverage in any restaurant, yet it is often overlooked as a strategic element of the guest experience. From the moment a guest sits down, the water they are offered sets the tone for the entire meal. In fine dining, the choice between still and sparkling can signal the level of service, while in casual concepts, the quality of tap water can impact guest satisfaction and even operational costs.</p>
+<p>With over 30 years in hospitality leadership, I have seen how the right water programme can elevate a brand, improve profit margins, and support sustainability goals. This guide breaks down the six main types of water used in restaurants, their characteristics, ideal applications, and the operational considerations every manager should know.</p>
+<!-- 1. Still Water -->
+<h2>1. Still Water – The Everyday Essential</h2>
+<p><strong>Still water</strong> is non‑carbonated, plain and natural. It is the most commonly served water with meals because it is neutral, hydrating, and complements any cuisine without interfering with flavours. Most restaurants offer still water as a complimentary tap option or as a bottled premium choice.</p>
+<ul>
+<li><strong>Best for:</strong> Everyday dining, family restaurants, and as a base for other beverages (tea, coffee, cocktails).</li>
+<li><strong>Serving temperature:</strong> Room temperature or chilled, depending on guest preference and regional norms.</li>
+<li><strong>Cost consideration:</strong> Tap water is virtually cost‑free; bottled still water can be sold at a high markup (300‑500%).</li>
+<li><strong>Operational tip:</strong> Train servers to always offer still water first – it reduces guest hesitation and speeds up the ordering process.</li>
+</ul>
+<div class="highlight-box">
+<strong>Pro Tip:</strong> Many fine‑dining restaurants now offer filtered still water in glass carafes to reduce plastic waste while maintaining a premium image.
+    </div>
+<!-- 2. Sparkling Water -->
+<h2>2. Sparkling Water – The Fizzy Refresher</h2>
+<p><strong>Sparkling water</strong> contains dissolved carbon dioxide (CO₂), which gives it a characteristic fizz and a slightly acidic tang. It is often perceived as more sophisticated and is a staple in upscale restaurants, bars, and hotel lounges. Sparkling water can be naturally carbonated from mineral springs or artificially carbonated.</p>
+<ul>
+<li><strong>Best for:</strong> Fine dining, pre‑dinner aperitifs, and as a palate cleanser between courses.</li>
+<li><strong>Serving temperature:</strong> Chilled (4‑8°C) to preserve carbonation and refreshment.</li>
+<li><strong>Cost consideration:</strong> Premium brands command high prices; in‑house carbonation systems can cut costs significantly.</li>
+<li><strong>Operational tip:</strong> Always offer both still and sparkling when guests are seated – it demonstrates attentiveness and increases beverage sales.</li>
+</ul>
+<p>Sparkling water also pairs well with citrus and can be used as a base for low‑alcohol spritzers, making it a versatile addition to any bar programme.</p>
+<!-- 3. Natural Mineral Water -->
+<h2>3. Natural Mineral Water – The Terroir of Water</h2>
+<p><strong>Natural mineral water</strong> comes from underground sources and is bottled at the spring. It contains a consistent level of minerals and trace elements (calcium, magnesium, sodium, bicarbonates) that are naturally present and not added artificially. Brands like Evian, Perrier, San Pellegrino, and Voss have built global reputations on their unique mineral profiles and source origins.</p>
+<ul>
+<li><strong>Best for:</strong> High‑end restaurants, hotel minibars, and wellness‑focused menus.</li>
+<li><strong>Health benefits:</strong> Mineral content can support bone health, digestion, and electrolyte balance.</li>
+<li><strong>Regulation:</strong> Must be bottled at source and meet strict purity standards (EU Directive 2009/54/EC).</li>
+<li><strong>Cost consideration:</strong> Higher acquisition cost but can be sold at significant margins (up to 400%).</li>
+</ul>
+<div class="highlight-box">
+<strong>Sommelier approach:</strong> Some restaurants treat mineral water like wine – suggesting specific brands to complement the cuisine (e.g., high‑mineral water with rich sauces, low‑mineral water with delicate seafood).
+    </div>
+<!-- 4. Purified Water -->
+<h2>4. Purified Water – The Clean Slate</h2>
+<p><strong>Purified water</strong> is tap or municipal water that has been treated to remove impurities, chemicals, and pathogens. Common purification methods include reverse osmosis (RO), ultraviolet (UV) light, distillation, and deionisation. The result is water that is safe, flavour‑neutral, and consistent.</p>
+<ul>
+<li><strong>Best for:</strong> Ice production, coffee and tea brewing, and as a base for flavoured waters.</li>
+<li><strong>Cost consideration:</strong> On‑site RO systems have high upfront investment but low ongoing costs.</li>
+<li><strong>Quality control:</strong> Regular testing and filter replacement are essential to maintain purity.</li>
+</ul>
+<p>Many chain restaurants and hotels now use purified water in their kitchens to ensure consistency in food preparation and to protect equipment from scaling. It also reduces the need for single‑use plastic bottles, aligning with sustainability goals.</p>
+<!-- 5. Spring Water -->
+<h2>5. Spring Water – Naturally Filtered</h2>
+<p><strong>Spring water</strong> is collected from natural springs where water flows to the surface through rock formations. It is naturally filtered and has a fresh, clean taste. Unlike mineral water, spring water may have varying mineral content and does not need to be bottled at source (though many brands do).</p>
+<ul>
+<li><strong>Best for:</strong> Casual dining, outdoor events, and as a cost‑effective alternative to mineral water.</li>
+<li><strong>Marketing angle:</strong> Emphasise the natural source and purity – often resonates with health‑conscious guests.</li>
+<li><strong>Cost consideration:</strong> Mid‑range pricing, lower than premium mineral water but higher than purified water.</li>
+</ul>
+<p>Spring water is often the go‑to for catering operations where cost and volume are key, yet quality cannot be compromised.</p>
+<!-- 6. Flavoured Water -->
+<h2>6. Flavoured Water – The Infusion Trend</h2>
+<p><strong>Flavoured water</strong> is still or sparkling water infused with fruits, herbs, or natural flavour extracts. Popular combinations include lemon‑mint, cucumber‑lime, strawberry‑basil, and mixed berry. This category has grown rapidly as consumers seek healthier alternatives to sugary sodas.</p>
+<ul>
+<li><strong>Best for:</strong> Spa menus, poolside service, brunch offerings, and as a house‑made welcome drink.</li>
+<li><strong>Operational advantage:</strong> In‑house infusions are low‑cost and high‑perceived‑value.</li>
+<li><strong>Food safety:</strong> Always use clean, sanitised containers and rotate infusions every 24 hours to prevent bacterial growth.</li>
+</ul>
+<div class="highlight-box">
+<strong>Revenue booster:</strong> Offering a “Flavoured Water of the Day” on your beverage menu can increase average check size by 5‑8% with minimal effort.
+    </div>
+<!-- Why the Right Water Matters -->
+<h2>Why the Right Water Matters – Beyond Hydration</h2>
+<p>Choosing the right water for your restaurant is not just about quenching thirst; it has far‑reaching implications for operations, finance, and guest perception.</p>
+<ul>
+<li><strong>Enhances the dining experience:</strong> Water is the first taste your guest encounters. A crisp, clean water sets a high standard.</li>
+<li><strong>Supports health and well‑being:</strong> Proper hydration improves cognitive function and mood – for both guests and staff.</li>
+<li><strong>Essential for food preparation:</strong> Water quality affects taste, texture, and safety of dishes. For example, hard water can ruin pasta and cloud ice.</li>
+<li><strong>Maintains equipment and glassware:</strong> Softened or purified water reduces scale buildup in coffee machines, dishwashers, and ice makers, extending equipment life.</li>
+<li><strong>Sustainable choice for the environment:</strong> Reducing single‑use plastic bottles through filtration systems and glass carafes lowers your carbon footprint and resonates with eco‑conscious diners.</li>
+<li><strong>Shows care for your guests:</strong> Offering a thoughtful water selection demonstrates attention to detail and personalised service.</li>
+</ul>
+<p>I have personally implemented water programmes in luxury hotels and cruise ships, and the results are measurable: higher guest satisfaction scores, increased beverage revenue, and reduced operating costs.</p>
+<!-- Comparative Table -->
+<h2>Quick Reference Table: Water Types at a Glance</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Carbonation</th>
+<th>Key Feature</th>
+<th>Typical Use</th>
+<th>Cost (per litre)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Still Water</td><td>No</td><td>Neutral, natural</td><td>Everyday meals</td><td>Low</td></tr>
+<tr><td>Sparkling Water</td><td>Yes</td><td>Fizzy, refreshing</td><td>Fine dining</td><td>Medium</td></tr>
+<tr><td>Natural Mineral Water</td><td>May or may not</td><td>Consistent minerals</td><td>Premium service</td><td>High</td></tr>
+<tr><td>Purified Water</td><td>No</td><td>Impurity‑free</td><td>Kitchen/ice/coffee</td><td>Very low</td></tr>
+<tr><td>Spring Water</td><td>No</td><td>Naturally filtered</td><td>Casual dining</td><td>Low‑medium</td></tr>
+<tr><td>Flavoured Water</td><td>Optional</td><td>Infused with fruits/herbs</td><td>Specialty menus</td><td>Low (homemade)</td></tr>
+</tbody>
+</table>
+<!-- Operational Best Practices -->
+<h2>Operational Best Practices for Water Service</h2>
+<p>To get the most out of your water programme, consider these actionable steps:</p>
+<ol>
+<li><strong>Train your team:</strong> Teach servers the differences between water types and how to describe them confidently. A well‑informed server can upsell effectively.</li>
+<li><strong>Invest in proper filtration:</strong> A high‑quality RO or carbon filtration system pays for itself within 12‑18 months through reduced bottled water purchases.</li>
+<li><strong>Standardise glassware:</strong> Use branded or distinctive glasses for different water types to reinforce the experience.</li>
+<li><strong>Monitor consumption:</strong> Track how much water is wasted – use jugs with measured pours to reduce over‑pouring.</li>
+<li><strong>Offer a water menu:</strong> For high‑end establishments, a separate water list with tasting notes can be a talking point and a revenue driver.</li>
+</ol>
+<!-- Conclusion -->
+<h2>Conclusion – Water as a Strategic Asset</h2>
+<p>In the competitive world of hospitality, every detail counts. Water, often taken for granted, can become a signature element of your brand. Whether you choose to highlight a local spring water, create artisanal infusions, or simply serve crystal‑clear purified water, the message is the same: you care about quality.</p>
+<p>By understanding the characteristics and applications of still, sparkling, mineral, purified, spring and flavoured water, you can tailor your offering to your concept, guest demographics, and operational goals. And remember – the right water not only quenches thirst but also builds loyalty, enhances flavour, and boosts your bottom line.</p>
+<p><em>Nigel Thomas is a hospitality executive with over 30 years of experience in hotel, restaurant, cruise and resort operations. He is passionate about training the next generation of hospitality leaders.</em></p>
+<!-- Related Reading -->
+<div class="read-more-section">
+<h2 style="color:#d4af37; font-size:24px;">📚 Related Articles</h2>
+<p>
+<a href="food-and-beverage-service-hierarchy.html">Food &amp; Beverage Service Hierarchy Explained</a><br/>
+<a href="coffee-types-poster.html">16 Types of Coffee &amp; How They're Made</a><br/>
+<a href="types-of-alcohol-complete-guide.html">Types of Alcohol – Complete Hospitality Guide</a><br/>
+<a href="restaurant-fire-safety-training-guide.html">Restaurant Fire Safety Training Guide</a>
+</p>
+<p style="margin-top:20px;">
+<a href="blog.html">← Back to all blog articles</a>
+</p>
+</div>
+</div>
+<!-- FOOTER -->
+<footer>
+<div class="container">
+<h2 style="color:#d4af37;margin-bottom:20px;">Nigel Thomas Hospitality Blog</h2>
+<p style="max-width:900px;margin:auto auto 25px;line-height:1.8;">
+        Professional hospitality management articles created to help restaurant managers, hotel managers, supervisors, chefs,
+        hospitality students and professionals improve operational performance, leadership skills, food safety standards and career growth.
+      </p>
+<div style="margin:30px 0;">
+<a href="">Home</a>
+<a href="about.html">About</a>
+<a href="blog.html">Blog</a>
+<a href="hospitality-management-tools.html">Tools</a>
+<a href="contact.html">Contact</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="terms.html">Terms of Use</a>
+<a href="disclaimer.html">Disclaimer</a>
+</div>
+<hr style="border:1px solid #333;margin:30px 0;"/>
+<p>© 2026 Nigel Anthony Thomas. All Rights Reserved.</p>
+<p style="margin-top:10px;color:#999;">
+        Hospitality Leadership • Restaurant Operations • Hotel Management • Food Safety • Culinary Arts • Food &amp; Beverage • Career Development
+      </p>
+</div>
+</footer>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+
+
+
+
+
+
+
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+
+<div class="poster-title">
+<h2>
+            TYPES OF WATER
+            <span>USED IN RESTAURANT</span>
+</h2>
+<div class="sub">Different Water, Different Purpose!</div>
+</div>
+
+<div class="poster-card">
+<h3>1. STILL WATER</h3>
+<ul><li>No carbonation</li><li>Plain and natural</li><li>Most commonly served with meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>2. SPARKLING WATER</h3>
+<ul><li>Contains carbon dioxide (CO₂)</li><li>Fizzy and refreshing</li><li>Often served with fine dining meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>3. NATURAL MINERAL WATER</h3>
+<ul><li>From natural underground sources</li><li>Contains minerals like calcium, magnesium, etc.</li><li>No artificial minerals added</li></ul>
+<div class="example evian">evian</div>
+</div>
+<div class="poster-card">
+<h3>4. PURIFIED WATER</h3>
+<ul><li>Treated through processes like RO, UV, distillation</li><li>Free from impurities</li><li>Safe for drinking</li></ul>
+</div>
+<div class="poster-card">
+<h3>5. SPRING WATER</h3>
+<ul><li>Comes directly from natural springs</li><li>Naturally filtered through rocks</li><li>Fresh and clean taste</li></ul>
+<div class="example">SPRING WATER</div>
+</div>
+<div class="poster-card">
+<h3>6. FLAVOURED WATER</h3>
+<ul><li>Water infused with fruits, herbs or natural flavors</li><li>Refreshing and healthy option</li></ul>
+<div class="flavors">🍋 Lemon · 🌿 Mint · 🥒 Cucumber · 🍓 Berry</div>
+</div>
+
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<div class="poster-top">
+<div class="poster-title">
+<h2>
+            TYPES OF WATER
+            <span>USED IN RESTAURANT</span>
+</h2>
+<div class="sub">Different Water, Different Purpose!</div>
+</div>
+<!-- NT LOGO – moved to top right, enlarged -->
+<div class="nt-logo-embed">
+<div class="initials">NT</div>
+<div class="name-line">NIGEL THOMAS</div>
+<div class="sub-lines">HOSPITALITY • EXECUTIVE<br/>LEADERSHIP • OPERATIONS EXCELLENCE</div>
+</div>
+</div>
+<div class="poster-title">
+<h2>
+            TYPES OF WATER
+            <span>USED IN RESTAURANT</span>
+</h2>
+<div class="sub">Different Water, Different Purpose!</div>
+</div>
+<div class="poster-grid">
+<div class="poster-card">
+<h3>1. STILL WATER</h3>
+<ul><li>No carbonation</li><li>Plain and natural</li><li>Most commonly served with meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>2. SPARKLING WATER</h3>
+<ul><li>Contains carbon dioxide (CO₂)</li><li>Fizzy and refreshing</li><li>Often served with fine dining meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>3. NATURAL MINERAL WATER</h3>
+<ul><li>From natural underground sources</li><li>Contains minerals like calcium, magnesium, etc.</li><li>No artificial minerals added</li></ul>
+<div class="example evian">evian</div>
+</div>
+<div class="poster-card">
+<h3>4. PURIFIED WATER</h3>
+<ul><li>Treated through processes like RO, UV, distillation</li><li>Free from impurities</li><li>Safe for drinking</li></ul>
+</div>
+<div class="poster-card">
+<h3>5. SPRING WATER</h3>
+<ul><li>Comes directly from natural springs</li><li>Naturally filtered through rocks</li><li>Fresh and clean taste</li></ul>
+<div class="example">SPRING WATER</div>
+</div>
+<div class="poster-card">
+<h3>6. FLAVOURED WATER</h3>
+<ul><li>Water infused with fruits, herbs or natural flavors</li><li>Refreshing and healthy option</li></ul>
+<div class="flavors">🍋 Lemon · 🌿 Mint · 🥒 Cucumber · 🍓 Berry</div>
+</div>
+</div>
+<div class="poster-card">
+<h3>1. STILL WATER</h3>
+<ul><li>No carbonation</li><li>Plain and natural</li><li>Most commonly served with meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>2. SPARKLING WATER</h3>
+<ul><li>Contains carbon dioxide (CO₂)</li><li>Fizzy and refreshing</li><li>Often served with fine dining meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>3. NATURAL MINERAL WATER</h3>
+<ul><li>From natural underground sources</li><li>Contains minerals like calcium, magnesium, etc.</li><li>No artificial minerals added</li></ul>
+<div class="example evian">evian</div>
+</div>
+<div class="poster-card">
+<h3>4. PURIFIED WATER</h3>
+<ul><li>Treated through processes like RO, UV, distillation</li><li>Free from impurities</li><li>Safe for drinking</li></ul>
+</div>
+<div class="poster-card">
+<h3>5. SPRING WATER</h3>
+<ul><li>Comes directly from natural springs</li><li>Naturally filtered through rocks</li><li>Fresh and clean taste</li></ul>
+<div class="example">SPRING WATER</div>
+</div>
+<div class="poster-card">
+<h3>6. FLAVOURED WATER</h3>
+<ul><li>Water infused with fruits, herbs or natural flavors</li><li>Refreshing and healthy option</li></ul>
+<div class="flavors">🍋 Lemon · 🌿 Mint · 🥒 Cucumber · 🍓 Berry</div>
+</div>
+<div class="poster-bottom">
+<h4>✦ WHY THE RIGHT WATER MATTERS?</h4>
+<div class="reasons">
+<span>Enhances the dining experience</span>
+<span>Supports health and well-being</span>
+<span>Essential for food preparation</span>
+<span>Maintains equipment and glassware</span>
+<span>Sustainable choice for the environment</span>
+<span>Shows care for your guests</span>
+</div>
+</div>
+
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<div class="poster-title">
+<h2>
+            TYPES OF WATER
+            <span>USED IN RESTAURANT</span>
+</h2>
+<div class="sub">Different Water, Different Purpose!</div>
+</div>
+<div class="poster-card">
+<h3>1. STILL WATER</h3>
+<ul><li>No carbonation</li><li>Plain and natural</li><li>Most commonly served with meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>2. SPARKLING WATER</h3>
+<ul><li>Contains carbon dioxide (CO₂)</li><li>Fizzy and refreshing</li><li>Often served with fine dining meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>3. NATURAL MINERAL WATER</h3>
+<ul><li>From natural underground sources</li><li>Contains minerals like calcium, magnesium, etc.</li><li>No artificial minerals added</li></ul>
+<div class="example evian">evian</div>
+</div>
+<div class="poster-card">
+<h3>4. PURIFIED WATER</h3>
+<ul><li>Treated through processes like RO, UV, distillation</li><li>Free from impurities</li><li>Safe for drinking</li></ul>
+</div>
+<div class="poster-card">
+<h3>5. SPRING WATER</h3>
+<ul><li>Comes directly from natural springs</li><li>Naturally filtered through rocks</li><li>Fresh and clean taste</li></ul>
+<div class="example">SPRING WATER</div>
+</div>
+<div class="poster-card">
+<h3>6. FLAVOURED WATER</h3>
+<ul><li>Water infused with fruits, herbs or natural flavors</li><li>Refreshing and healthy option</li></ul>
+<div class="flavors">🍋 Lemon · 🌿 Mint · 🥒 Cucumber · 🍓 Berry</div>
+</div>
+<div class="poster-top">
+<div class="poster-title">
+<h2>
+            TYPES OF WATER
+            <span>USED IN RESTAURANT</span>
+</h2>
+<div class="sub">Different Water, Different Purpose!</div>
+</div>
+<!-- NT LOGO – moved to top right, enlarged -->
+<div class="nt-logo-embed">
+<div class="initials">NT</div>
+<div class="name-line">NIGEL THOMAS</div>
+<div class="sub-lines">HOSPITALITY • EXECUTIVE<br/>LEADERSHIP • OPERATIONS EXCELLENCE</div>
+</div>
+</div>
+<div class="poster-grid">
+<div class="poster-card">
+<h3>1. STILL WATER</h3>
+<ul><li>No carbonation</li><li>Plain and natural</li><li>Most commonly served with meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>2. SPARKLING WATER</h3>
+<ul><li>Contains carbon dioxide (CO₂)</li><li>Fizzy and refreshing</li><li>Often served with fine dining meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>3. NATURAL MINERAL WATER</h3>
+<ul><li>From natural underground sources</li><li>Contains minerals like calcium, magnesium, etc.</li><li>No artificial minerals added</li></ul>
+<div class="example evian">evian</div>
+</div>
+<div class="poster-card">
+<h3>4. PURIFIED WATER</h3>
+<ul><li>Treated through processes like RO, UV, distillation</li><li>Free from impurities</li><li>Safe for drinking</li></ul>
+</div>
+<div class="poster-card">
+<h3>5. SPRING WATER</h3>
+<ul><li>Comes directly from natural springs</li><li>Naturally filtered through rocks</li><li>Fresh and clean taste</li></ul>
+<div class="example">SPRING WATER</div>
+</div>
+<div class="poster-card">
+<h3>6. FLAVOURED WATER</h3>
+<ul><li>Water infused with fruits, herbs or natural flavors</li><li>Refreshing and healthy option</li></ul>
+<div class="flavors">🍋 Lemon · 🌿 Mint · 🥒 Cucumber · 🍓 Berry</div>
+</div>
+</div>
+<div class="poster-bottom">
+<h4>✦ WHY THE RIGHT WATER MATTERS?</h4>
+<div class="reasons">
+<span>Enhances the dining experience</span>
+<span>Supports health and well-being</span>
+<span>Essential for food preparation</span>
+<span>Maintains equipment and glassware</span>
+<span>Sustainable choice for the environment</span>
+<span>Shows care for your guests</span>
+</div>
+</div>
+<div class="poster-embed">
+<div class="poster-top">
+<div class="poster-title">
+<h2>
+            TYPES OF WATER
+            <span>USED IN RESTAURANT</span>
+</h2>
+<div class="sub">Different Water, Different Purpose!</div>
+</div>
+<!-- NT LOGO – moved to top right, enlarged -->
+<div class="nt-logo-embed">
+<div class="initials">NT</div>
+<div class="name-line">NIGEL THOMAS</div>
+<div class="sub-lines">HOSPITALITY • EXECUTIVE<br/>LEADERSHIP • OPERATIONS EXCELLENCE</div>
+</div>
+</div>
+<!-- 6 Water Cards -->
+<div class="poster-grid">
+<div class="poster-card">
+<h3>1. STILL WATER</h3>
+<ul><li>No carbonation</li><li>Plain and natural</li><li>Most commonly served with meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>2. SPARKLING WATER</h3>
+<ul><li>Contains carbon dioxide (CO₂)</li><li>Fizzy and refreshing</li><li>Often served with fine dining meals</li></ul>
+</div>
+<div class="poster-card">
+<h3>3. NATURAL MINERAL WATER</h3>
+<ul><li>From natural underground sources</li><li>Contains minerals like calcium, magnesium, etc.</li><li>No artificial minerals added</li></ul>
+<div class="example evian">evian</div>
+</div>
+<div class="poster-card">
+<h3>4. PURIFIED WATER</h3>
+<ul><li>Treated through processes like RO, UV, distillation</li><li>Free from impurities</li><li>Safe for drinking</li></ul>
+</div>
+<div class="poster-card">
+<h3>5. SPRING WATER</h3>
+<ul><li>Comes directly from natural springs</li><li>Naturally filtered through rocks</li><li>Fresh and clean taste</li></ul>
+<div class="example">SPRING WATER</div>
+</div>
+<div class="poster-card">
+<h3>6. FLAVOURED WATER</h3>
+<ul><li>Water infused with fruits, herbs or natural flavors</li><li>Refreshing and healthy option</li></ul>
+<div class="flavors">🍋 Lemon · 🌿 Mint · 🥒 Cucumber · 🍓 Berry</div>
+</div>
+</div>
+<!-- Why Water Matters -->
+<div class="poster-bottom">
+<h4>✦ WHY THE RIGHT WATER MATTERS?</h4>
+<div class="reasons">
+<span>Enhances the dining experience</span>
+<span>Supports health and well-being</span>
+<span>Essential for food preparation</span>
+<span>Maintains equipment and glassware</span>
+<span>Sustainable choice for the environment</span>
+<span>Shows care for your guests</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+</body>
+</html>

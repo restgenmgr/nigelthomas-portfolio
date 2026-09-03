@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Medicinal Properties of Teas: Health Benefits, Growing Regions &amp; Brewing Guide | Nigel A. Thomas</title>
+<meta content="Discover the medicinal properties of teas from around the world. Learn about green tea, black tea, chamomile, ginger, peppermint, hibiscus, rooibos and more including growing regions, health benefits, brewing methods and hospitality serving tips." name="description"/>
+<meta content="medicinal teas, green tea benefits, black tea benefits, chamomile tea, ginger tea, peppermint tea, rooibos tea, hibiscus tea, herbal tea, tea brewing guide, tea growing regions, hospitality training, Nigel Thomas" name="keywords"/>
+<meta content="Nigel A. Thomas" name="author"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://www.nigelthomas.live/medicinal-properties-of-teas.html" rel="canonical"/>
+<!-- Open Graph -->
+<meta content="article" property="og:type"/>
+<meta content="Medicinal Properties of Teas" property="og:title"/>
+<meta content="A complete professional guide to medicinal teas, health benefits, brewing techniques, tea growing regions and hospitality service standards." property="og:description"/>
+<meta content="https://www.nigelthomas.live/medicinal-properties-of-teas.html" property="og:url"/>
+<meta content="https://www.nigelthomas.live/assets/teas.png" property="og:image"/>
+<meta content="NigelThomas.live" property="og:site_name"/>
+<!-- Twitter -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Medicinal Properties of Teas" name="twitter:title"/>
+<meta content="Professional guide to medicinal teas and herbal infusions." name="twitter:description"/>
+<meta content="https://www.nigelthomas.live/assets/teas.png" name="twitter:image"/>
+<!-- Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CLRRV5DMXZ"></script>
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', 'G-CLRRV5DMXZ');
+
+</script>
+<!-- Google AdSense -->
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"></script>
+<!-- Schema.org -->
+<script type="application/ld+json">
+
+{
+"@context":"https://schema.org",
+"@type":"Article",
+"headline":"Medicinal Properties of Teas",
+"description":"Professional guide to medicinal teas, herbal infusions, health benefits, brewing methods and tea growing regions.",
+"image":"https://www.nigelthomas.live/assets/teas.png",
+"author":{
+"@type":"Person",
+"name":"Nigel A. Thomas"
+},
+"publisher":{
+"@type":"Organization",
+"name":"NigelThomas.live"
+},
+"mainEntityOfPage":"https://www.nigelthomas.live/medicinal-properties-of-teas.html"
+}
+
+</script>
+<style>
+
+:root{
+
+--black:#0b0b0b;
+
+--dark:#121212;
+
+--gold:#d4af37;
+
+--gold2:#f4d160;
+
+--white:#ffffff;
+
+--text:#ececec;
+
+--muted:#bdbdbd;
+
+--border:#2a2a2a;
+
+--card:#181818;
+
+}
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:var(--black);
+
+color:var(--text);
+
+font-family:"Segoe UI",Arial,sans-serif;
+
+line-height:1.8;
+
+}
+
+a{
+
+color:var(--gold);
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+a:hover{
+
+color:var(--gold2);
+
+}
+
+.site-header{
+
+background:#090909;
+
+border-bottom:1px solid #222;
+
+padding:20px;
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+}
+
+.site-header a{
+
+font-size:1.15rem;
+
+font-weight:700;
+
+letter-spacing:.5px;
+
+}
+
+.container{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+.hero{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.hero h1{
+
+font-size:clamp(2rem,5vw,3.2rem);
+
+color:var(--gold2);
+
+margin-bottom:20px;
+
+line-height:1.2;
+
+}
+
+.subtitle{
+
+font-size:1.1rem;
+
+color:var(--muted);
+
+max-width:900px;
+
+margin:auto;
+
+}
+
+.byline{
+
+margin-top:20px;
+
+color:#cfcfcf;
+
+}
+
+.byline strong{
+
+color:var(--gold);
+
+}
+
+.featured-image{
+
+width:100%;
+
+border-radius:10px;
+
+margin:35px 0;
+
+border:1px solid var(--border);
+
+box-shadow:0 15px 40px rgba(0,0,0,.5);
+
+}
+
+section{
+
+margin:60px 0;
+
+}
+
+h2{
+
+font-size:2rem;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+padding-left:15px;
+
+border-left:4px solid var(--gold);
+
+}
+
+h3{
+
+color:var(--gold2);
+
+margin:30px 0 15px;
+
+}
+
+p{
+
+margin-bottom:18px;
+
+}
+
+ul{
+
+margin-left:22px;
+
+margin-bottom:20px;
+
+}
+
+li{
+
+margin-bottom:10px;
+
+}
+
+.card{
+
+background:var(--card);
+
+border:1px solid var(--border);
+
+border-left:4px solid var(--gold);
+
+padding:25px;
+
+margin:30px 0;
+
+border-radius:8px;
+
+}
+
+.tip{
+
+background:#141414;
+
+border-left:4px solid #3fa34d;
+
+padding:22px;
+
+margin:30px 0;
+
+border-radius:8px;
+
+}
+
+.warning{
+
+background:#241616;
+
+border-left:4px solid #d9534f;
+
+padding:22px;
+
+margin:30px 0;
+
+border-radius:8px;
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin:30px 0;
+
+overflow:auto;
+
+display:block;
+
+}
+
+th{
+
+background:var(--gold);
+
+color:#111;
+
+padding:14px;
+
+}
+
+td{
+
+border:1px solid #333;
+
+padding:14px;
+
+}
+
+tr:nth-child(even){
+
+background:#141414;
+
+}
+
+.toc{
+
+background:#141414;
+
+padding:30px;
+
+border-radius:10px;
+
+border:1px solid #333;
+
+}
+
+.toc ul{
+
+columns:2;
+
+}
+
+.ad-space{
+
+margin:50px 0;
+
+text-align:center;
+
+}
+
+footer{
+
+border-top:1px solid #222;
+
+padding:40px 20px;
+
+text-align:center;
+
+color:#999;
+
+font-size:.9rem;
+
+margin-top:70px;
+
+}
+
+footer a{
+
+color:var(--gold);
+
+}
+
+@media(max-width:768px){
+
+.toc ul{
+
+columns:1;
+
+}
+
+.hero h1{
+
+font-size:2rem;
+
+}
+
+.container{
+
+padding:25px;
+
+}
+
+}
+
+</style>
+</head>
+<body>
+<header class="site-header">
+<a href="index.html">
+        Nigel A. Thomas — Hospitality Leadership &amp; Training
+    </a>
+</header>
+<main class="container">
+<article>
+<!-- ================= HERO ================= -->
+<section class="hero">
+<h1>
+Medicinal Properties of Teas
+</h1>
+<p class="subtitle">
+A Complete Professional Guide to the World's Most Beneficial Teas &amp;
+Herbal Infusions — including their health benefits, growing regions,
+brewing techniques, hospitality applications, and fascinating history.
+</p>
+<p class="byline">
+By <strong>Nigel A. Thomas</strong><br/>
+Hospitality Executive &amp; Corporate Trainer
+</p>
+</section>
+<!-- ================= INTRODUCTION ================= -->
+<section>
+<h2>Tea — Nature's Oldest Wellness Beverage</h2>
+<p>
+
+Long before pharmacies, dietary supplements, and modern nutritional science,
+people relied on plants for healing. Across Asia, Africa, Europe, and the
+Middle East, tea became one of humanity's most trusted natural remedies.
+Whether prepared from the leaves of the tea plant (<em>Camellia sinensis</em>)
+or from herbs, flowers, roots, bark, fruits, and spices, tea has been enjoyed
+for thousands of years for both its comforting flavour and its medicinal
+properties.
+
+</p>
+<p>
+
+Today, millions of cups of tea are consumed every hour around the world.
+Scientific research continues to validate many traditional beliefs regarding
+tea's ability to support heart health, improve digestion, strengthen immunity,
+reduce inflammation, promote relaxation, and provide powerful antioxidant
+protection against cellular damage.
+
+</p>
+<p>
+
+For hospitality professionals, understanding tea is no longer optional.
+Premium hotels, luxury resorts, cafés, restaurants, cruise ships, wellness
+retreats, and specialty tea lounges increasingly feature extensive tea menus
+that rival their wine and coffee offerings. Guests now expect knowledgeable
+recommendations, proper brewing techniques, and premium tea service that
+enhances their dining experience.
+
+</p>
+<div class="card">
+<h3>What You Will Learn</h3>
+<ul>
+<li>The difference between true teas and herbal infusions.</li>
+<li>The medicinal properties of more than a dozen popular teas.</li>
+<li>Where the world's finest teas are grown.</li>
+<li>The active compounds responsible for health benefits.</li>
+<li>Correct brewing temperatures and steeping times.</li>
+<li>Tea service standards used in professional hospitality.</li>
+<li>Interesting facts, traditions, and historical insights.</li>
+<li>Safety considerations and recommended consumption.</li>
+</ul>
+</div>
+<p>
+
+Whether you are a hospitality student, restaurant manager, hotel executive,
+chef, café owner, food and beverage professional, or simply someone interested
+in healthy living, this comprehensive guide will help you understand why tea
+continues to be one of the world's most respected natural beverages.
+
+</p>
+</section>
+<!-- ================= WHY TEA ================= -->
+<section>
+<h2>Why Tea Has Been Used as Medicine for Thousands of Years</h2>
+<p>
+
+The earliest documented use of tea dates back more than 4,000 years in China,
+where Emperor Shen Nong is traditionally credited with discovering tea after
+leaves accidentally drifted into boiling water. Although the story is
+legendary, it reflects tea's ancient association with wellness and longevity.
+
+</p>
+<p>
+
+Traditional Chinese Medicine, Ayurveda in India, Japanese wellness practices,
+and numerous indigenous healing systems have long regarded tea as an important
+part of preventive healthcare. Different herbs and tea varieties were selected
+to aid digestion, reduce fever, calm the mind, improve circulation, relieve
+fatigue, and support the body's natural healing processes.
+
+</p>
+<p>
+
+Modern nutritional science has identified many of the naturally occurring
+compounds responsible for these benefits, including polyphenols, catechins,
+flavonoids, tannins, essential oils, vitamins, minerals, amino acids, and
+plant antioxidants.
+
+</p>
+<div class="tip">
+<h3>Hospitality Insight</h3>
+<p>
+
+Today's luxury hotels increasingly offer wellness tea menus featuring herbal,
+green, white, detox, sleep, digestive, and immunity-support blends. Knowledge
+of tea has become an important skill for restaurant managers, food &amp;
+beverage professionals, baristas, and service associates seeking to deliver an
+exceptional guest experience.
+
+</p>
+</div>
+</section>
+<!-- ================= ADVERTISEMENT ================= -->
+<div class="ad-space">
+<ins class="adsbygoogle" data-ad-client="ca-pub-4282121192943910" data-ad-format="auto" data-ad-slot="0000000000" data-full-width-responsive="true" style="display:block"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- ========================================================= -->
+<!-- TABLE OF CONTENTS -->
+<!-- ========================================================= -->
+<section id="contents">
+<h2>Table of Contents</h2>
+<div class="toc">
+<ul>
+<li><a href="#tea-vs-herbal">Tea vs Herbal Infusions</a></li>
+<li><a href="#medicinal-compounds">Medicinal Compounds Found in Tea</a></li>
+<li><a href="#green-tea">Green Tea</a></li>
+<li><a href="#black-tea">Black Tea</a></li>
+<li><a href="#white-tea">White Tea</a></li>
+<li><a href="#oolong-tea">Oolong Tea</a></li>
+<li><a href="#matcha">Matcha Tea</a></li>
+<li><a href="#chamomile">Chamomile Tea</a></li>
+<li><a href="#peppermint">Peppermint Tea</a></li>
+<li><a href="#ginger">Ginger Tea</a></li>
+<li><a href="#hibiscus">Hibiscus Tea</a></li>
+<li><a href="#rooibos">Rooibos Tea</a></li>
+<li><a href="#lemongrass">Lemongrass Tea</a></li>
+<li><a href="#tulsi">Tulsi (Holy Basil)</a></li>
+<li><a href="#turmeric">Turmeric Tea</a></li>
+<li><a href="#echinacea">Echinacea Tea</a></li>
+<li><a href="#lavender">Lavender Tea</a></li>
+<li><a href="#dandelion">Dandelion Tea</a></li>
+<li><a href="#sage">Sage Tea</a></li>
+<li><a href="#growing-regions">Tea Growing Regions</a></li>
+<li><a href="#brewing-guide">Professional Brewing Guide</a></li>
+<li><a href="#hospitality">Tea Service in Hospitality</a></li>
+<li><a href="#interesting-facts">Interesting Tea Facts</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- TEA VS HERBAL -->
+<!-- ========================================================= -->
+<section id="tea-vs-herbal">
+<h2>Tea vs Herbal Infusions</h2>
+<p>
+
+Many people use the word <strong>"tea"</strong> for every hot herbal beverage,
+but technically that is not correct.
+
+</p>
+<p>
+
+A <strong>true tea</strong> is produced from the leaves of one remarkable plant
+called <em>Camellia sinensis</em>. Depending on how the leaves are processed,
+the same plant produces Green Tea, Black Tea, White Tea, Oolong Tea,
+Yellow Tea and Pu-erh Tea.
+
+</p>
+<p>
+
+Herbal beverages such as Chamomile, Peppermint, Ginger, Hibiscus,
+Tulsi, Rooibos and Lemongrass are technically known as
+<strong>tisanes</strong> or herbal infusions because they are made from
+flowers, herbs, spices, bark, roots or fruits instead of tea leaves.
+
+</p>
+<div class="card">
+<h3>Did You Know?</h3>
+<p>
+
+Although herbal infusions are not technically "tea", the hospitality industry
+and consumers commonly refer to them as herbal teas. Most hotel tea menus,
+cafés and restaurants therefore use the familiar term "Herbal Tea"
+for guest convenience.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- MEDICINAL COMPOUNDS -->
+<!-- ========================================================= -->
+<section id="medicinal-compounds">
+<h2>Medicinal Compounds Found in Tea</h2>
+<p>
+
+Tea contains hundreds of naturally occurring compounds that contribute to
+its reputation as one of the world's healthiest beverages. These compounds
+work together to support wellness in many different ways.
+
+</p>
+<table>
+<thead>
+<tr>
+<th>Compound</th>
+<th>Primary Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Polyphenols</td>
+<td>Powerful antioxidants that help protect body cells.</td>
+</tr>
+<tr>
+<td>Catechins</td>
+<td>Support heart health and healthy metabolism.</td>
+</tr>
+<tr>
+<td>Flavonoids</td>
+<td>Help reduce oxidative stress and inflammation.</td>
+</tr>
+<tr>
+<td>L-Theanine</td>
+<td>Promotes calmness while maintaining alertness.</td>
+</tr>
+<tr>
+<td>Caffeine</td>
+<td>Improves concentration and reduces fatigue.</td>
+</tr>
+<tr>
+<td>Essential Oils</td>
+<td>Provide aroma and digestive benefits in herbal teas.</td>
+</tr>
+<tr>
+<td>Vitamins &amp; Minerals</td>
+<td>Support overall health and immune function.</td>
+</tr>
+</tbody>
+</table>
+<p>
+
+The concentration of these beneficial compounds depends on factors such as
+plant variety, soil quality, altitude, climate, harvesting season,
+processing method and brewing technique.
+
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- GREEN TEA -->
+<!-- ========================================================= -->
+<section id="green-tea">
+<h2>Green Tea</h2>
+<p>
+
+Green tea is one of the least processed forms of tea, allowing it to retain
+a high concentration of natural antioxidants. It has been consumed in China
+and Japan for thousands of years and remains one of the most researched
+beverages in modern nutrition.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>China</li>
+<li>Japan</li>
+<li>South Korea</li>
+<li>Taiwan</li>
+<li>Vietnam</li>
+<li>India (Darjeeling &amp; Nilgiris)</li>
+<li>Sri Lanka</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Rich source of EGCG antioxidants.</li>
+<li>Supports cardiovascular health.</li>
+<li>May assist healthy weight management.</li>
+<li>Supports brain function and concentration.</li>
+<li>May help reduce inflammation.</li>
+<li>Provides natural energy without excessive stimulation.</li>
+<li>Supports healthy ageing.</li>
+</ul>
+<h3>Best Brewing Temperature</h3>
+<p>
+<strong>70–80°C</strong> for approximately
+<strong>2–3 minutes</strong>.
+
+Using boiling water may create excessive bitterness.
+
+</p>
+<div class="tip">
+<h3>Hospitality Service Tip</h3>
+<p>
+
+Always serve premium green tea in pre-warmed porcelain cups or glass teaware.
+Avoid boiling water and never leave tea bags steeping too long, as this
+negatively affects flavour and guest satisfaction.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- END PART 1A-3 -->
+<!-- ========================================================= -->
+<!-- ========================================================= -->
+<!-- BLACK TEA -->
+<!-- ========================================================= -->
+<section id="black-tea">
+<h2>Black Tea</h2>
+<p>
+
+Black tea is the world's most widely consumed tea and is fully oxidised,
+giving it a rich amber colour, bold flavour and characteristic aroma.
+It is the preferred breakfast tea in many countries and forms the base
+of famous blends such as English Breakfast and Earl Grey.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>India (Assam, Darjeeling, Nilgiris)</li>
+<li>Sri Lanka (Ceylon)</li>
+<li>Kenya</li>
+<li>China</li>
+<li>Nepal</li>
+<li>Indonesia</li>
+<li>Vietnam</li>
+</ul>
+<h3>Medicinal Benefits</h3>
+<ul>
+<li>Rich in theaflavins and thearubigins.</li>
+<li>Supports cardiovascular health.</li>
+<li>May improve focus and mental alertness.</li>
+<li>Contains natural antioxidants.</li>
+<li>Supports digestive wellness.</li>
+<li>May contribute to healthy cholesterol levels.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>95–100°C</strong><br/>
+
+Steep for <strong>3–5 minutes</strong>.
+
+</p>
+<div class="card">
+<h3>Interesting Fact</h3>
+<p>
+
+Over 75% of the tea consumed in the Western world is black tea.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- WHITE TEA -->
+<!-- ========================================================= -->
+<section id="white-tea">
+<h2>White Tea</h2>
+<p>
+
+White tea is produced using the youngest unopened tea buds and delicate
+young leaves. It undergoes minimal processing, making it one of the most
+naturally preserved teas available.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Fujian Province, China</li>
+<li>Yunnan, China</li>
+<li>Nepal</li>
+<li>Sri Lanka</li>
+<li>India</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Very high antioxidant content.</li>
+<li>Supports healthy skin.</li>
+<li>May slow cellular ageing.</li>
+<li>Contains low caffeine.</li>
+<li>Supports immune health.</li>
+<li>Gentle flavour suitable for frequent consumption.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>75–80°C</strong><br/>
+
+Steep for <strong>4–5 minutes.</strong>
+</p>
+<div class="tip">
+<h3>Hospitality Tip</h3>
+<p>
+
+Serve white tea in clear glass teaware whenever possible so guests can
+appreciate its pale golden colour.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- OOLONG TEA -->
+<!-- ========================================================= -->
+<section id="oolong-tea">
+<h2>Oolong Tea</h2>
+<p>
+
+Oolong tea sits between green and black tea because it is only partially
+oxidised. Depending on processing, flavours range from floral and delicate
+to rich and roasted.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Taiwan</li>
+<li>Fujian, China</li>
+<li>Guangdong, China</li>
+<li>Thailand</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Supports healthy metabolism.</li>
+<li>Rich in antioxidants.</li>
+<li>May assist weight management.</li>
+<li>Supports digestive health.</li>
+<li>May contribute to healthy blood sugar levels.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>85–90°C</strong>
+<br/>
+
+Steep for <strong>3–5 minutes.</strong>
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- MATCHA -->
+<!-- ========================================================= -->
+<section id="matcha">
+<h2>Matcha Tea</h2>
+<p>
+
+Matcha is a finely ground powdered green tea traditionally used in the
+Japanese tea ceremony. Because the whole leaf is consumed, matcha
+provides significantly more nutrients than ordinary green tea.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Kyoto, Japan</li>
+<li>Shizuoka, Japan</li>
+<li>Kagoshima, Japan</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Extremely rich in EGCG antioxidants.</li>
+<li>Improves sustained energy.</li>
+<li>Enhances concentration.</li>
+<li>Promotes calm alertness through L-theanine.</li>
+<li>Supports healthy metabolism.</li>
+<li>May reduce oxidative stress.</li>
+</ul>
+<h3>Preparation</h3>
+<p>
+
+Use water at approximately
+<strong>75–80°C</strong>.
+
+Whisk with a bamboo whisk until a fine layer of foam develops.
+
+</p>
+<div class="card">
+<h3>Interesting Fact</h3>
+<p>
+
+One serving of ceremonial-grade matcha may provide antioxidant levels
+many times higher than an equivalent serving of standard brewed green tea.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- ADVERTISEMENT -->
+<!-- ========================================================= -->
+<div class="ad-space">
+<ins class="adsbygoogle" data-ad-client="ca-pub-4282121192943910" data-ad-format="auto" data-ad-slot="0000000000" data-full-width-responsive="true" style="display:block"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- ========================================================= -->
+<!-- CHAMOMILE TEA -->
+<!-- ========================================================= -->
+<section id="chamomile">
+<h2>Chamomile Tea</h2>
+<p>
+
+Chamomile tea is prepared from the dried flowers of the chamomile plant and
+has been used in traditional European and Middle Eastern medicine for
+centuries. It is best known for promoting relaxation and improving sleep.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Germany</li>
+<li>Egypt</li>
+<li>Hungary</li>
+<li>Croatia</li>
+<li>Poland</li>
+<li>India</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Promotes restful sleep.</li>
+<li>May reduce anxiety and stress.</li>
+<li>Supports digestive health.</li>
+<li>May ease stomach discomfort.</li>
+<li>Contains natural anti-inflammatory compounds.</li>
+<li>Traditionally used for mild headaches.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>95°C</strong><br/>
+
+Steep for <strong>5 minutes.</strong>
+</p>
+<div class="tip">
+<h3>Hospitality Tip</h3>
+<p>
+
+Chamomile is one of the most requested bedtime beverages in luxury hotels.
+Serve with honey and a fresh lemon slice on the side.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- PEPPERMINT -->
+<!-- ========================================================= -->
+<section id="peppermint">
+<h2>Peppermint Tea</h2>
+<p>
+
+Peppermint tea is naturally caffeine-free and famous for its refreshing aroma
+and digestive benefits. The menthol found in peppermint creates its cooling
+sensation.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>United States</li>
+<li>India</li>
+<li>United Kingdom</li>
+<li>Morocco</li>
+<li>Egypt</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Supports digestion.</li>
+<li>Helps reduce bloating.</li>
+<li>Freshens breath naturally.</li>
+<li>May relieve mild headaches.</li>
+<li>Can soothe sore throats.</li>
+<li>Refreshing after meals.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>95°C</strong><br/>
+
+Steep for <strong>5–7 minutes.</strong>
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- GINGER -->
+<!-- ========================================================= -->
+<section id="ginger">
+<h2>Ginger Tea</h2>
+<p>
+
+Prepared from fresh or dried ginger root, ginger tea has been valued in
+Ayurveda and Traditional Chinese Medicine for thousands of years.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>India</li>
+<li>China</li>
+<li>Nigeria</li>
+<li>Indonesia</li>
+<li>Thailand</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Supports healthy digestion.</li>
+<li>May reduce nausea.</li>
+<li>Natural anti-inflammatory properties.</li>
+<li>Supports immune health.</li>
+<li>Provides warmth during cold weather.</li>
+<li>Traditionally used for sore throats.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+
+Fresh sliced ginger.<br/>
+
+Boiling water.<br/>
+
+Steep for <strong>10 minutes.</strong>
+</p>
+<div class="card">
+<h3>Interesting Fact</h3>
+<p>
+
+Fresh ginger contains gingerol, one of nature's best-known bioactive
+plant compounds.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- HIBISCUS -->
+<!-- ========================================================= -->
+<section id="hibiscus">
+<h2>Hibiscus Tea</h2>
+<p>
+
+Made from dried hibiscus flowers, this vibrant ruby-red beverage is naturally
+caffeine-free and popular throughout Africa, the Caribbean, Mexico and
+the Middle East.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Egypt</li>
+<li>Sudan</li>
+<li>Mexico</li>
+<li>Thailand</li>
+<li>India</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Rich in Vitamin C.</li>
+<li>Powerful antioxidant source.</li>
+<li>May support healthy blood pressure.</li>
+<li>Refreshing served hot or cold.</li>
+<li>Supports hydration.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>95°C</strong><br/>
+
+Steep for <strong>5–7 minutes.</strong>
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- ROOIBOS -->
+<!-- ========================================================= -->
+<section id="rooibos">
+<h2>Rooibos Tea</h2>
+<p>
+
+Rooibos originates exclusively from South Africa and is naturally caffeine-free.
+Its smooth flavour makes it an excellent evening beverage.
+
+</p>
+<h3>Main Growing Region</h3>
+<ul>
+<li>Cederberg Mountains, South Africa</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Rich in antioxidants.</li>
+<li>Caffeine free.</li>
+<li>Supports heart health.</li>
+<li>Suitable for children.</li>
+<li>Low in tannins.</li>
+<li>May support healthy skin.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>100°C</strong><br/>
+
+Steep for <strong>5–7 minutes.</strong>
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- LEMONGRASS -->
+<!-- ========================================================= -->
+<section id="lemongrass">
+<h2>Lemongrass Tea</h2>
+<p>
+
+Lemongrass tea has a fresh citrus aroma and is widely consumed throughout
+South-East Asia as both a wellness beverage and culinary ingredient.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Thailand</li>
+<li>Vietnam</li>
+<li>India</li>
+<li>Sri Lanka</li>
+<li>Malaysia</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Supports digestion.</li>
+<li>Refreshing citrus flavour.</li>
+<li>Contains antioxidants.</li>
+<li>May reduce bloating.</li>
+<li>Popular after meals.</li>
+</ul>
+</section>
+<!-- ========================================================= -->
+<!-- TULSI -->
+<!-- ========================================================= -->
+<section id="tulsi">
+<h2>Tulsi (Holy Basil)</h2>
+<p>
+
+Tulsi is one of the most respected medicinal herbs in Ayurveda and is often
+called the "Queen of Herbs." It is consumed daily by millions of people in India.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>India</li>
+<li>Nepal</li>
+<li>Sri Lanka</li>
+<li>Bangladesh</li>
+<li>Thailand</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Supports immunity.</li>
+<li>May reduce stress.</li>
+<li>Natural adaptogen.</li>
+<li>Supports respiratory wellness.</li>
+<li>Rich in antioxidants.</li>
+<li>Traditionally used for colds.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+<strong>95°C</strong><br/>
+
+Steep for <strong>5 minutes.</strong>
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- END PART 3 -->
+<!-- ========================================================= -->
+<!-- ========================================================= -->
+<!-- TURMERIC TEA -->
+<!-- ========================================================= -->
+<section id="turmeric">
+<h2>Turmeric Tea</h2>
+<p>
+
+Turmeric tea is prepared from the bright golden rhizome of <em>Curcuma longa</em>.
+For thousands of years it has played an important role in Ayurvedic medicine,
+where it has traditionally been used to support overall health and wellbeing.
+Today, turmeric has become one of the world's most researched medicinal spices.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>India (largest producer)</li>
+<li>Bangladesh</li>
+<li>Sri Lanka</li>
+<li>Indonesia</li>
+<li>Thailand</li>
+<li>Myanmar</li>
+</ul>
+<h3>Active Compound</h3>
+<p>
+
+Curcumin is the primary bioactive compound responsible for turmeric's vibrant
+colour and many of its potential health-supporting properties.
+
+</p>
+<h3>Health Benefits</h3>
+<ul>
+<li>Natural antioxidant.</li>
+<li>Supports healthy inflammatory response.</li>
+<li>May support joint mobility.</li>
+<li>Supports immune function.</li>
+<li>Traditionally used in digestive wellness.</li>
+<li>Often enjoyed during seasonal changes.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+
+Use freshly sliced turmeric or quality dried turmeric.
+
+<br/><br/>
+
+Steep in gently boiling water for approximately
+<strong>10 minutes.</strong>
+
+Many people add black pepper and honey.
+
+</p>
+<div class="tip">
+<h3>Hospitality Tip</h3>
+<p>
+
+Golden Turmeric Latte has become a popular wellness beverage in cafés,
+boutique hotels and wellness resorts around the world.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- ECHINACEA -->
+<!-- ========================================================= -->
+<section id="echinacea">
+<h2>Echinacea Tea</h2>
+<p>
+
+Echinacea is a flowering herb native to North America.
+It has traditionally been used by Indigenous peoples and later became one
+of the best-known herbal wellness beverages in Europe and North America.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>United States</li>
+<li>Canada</li>
+<li>Germany</li>
+<li>Poland</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Supports immune health.</li>
+<li>Rich in plant antioxidants.</li>
+<li>Popular during seasonal weather changes.</li>
+<li>Supports overall wellness.</li>
+</ul>
+<h3>Brewing Guide</h3>
+<p>
+
+95°C water
+
+<br/>
+
+Steep for approximately
+<strong>5–7 minutes.</strong>
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- LAVENDER -->
+<!-- ========================================================= -->
+<section id="lavender">
+<h2>Lavender Tea</h2>
+<p>
+
+Lavender tea is recognised for its beautiful floral aroma and relaxing
+character. It has long been enjoyed throughout Europe as an evening beverage.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>France</li>
+<li>England</li>
+<li>Bulgaria</li>
+<li>Spain</li>
+<li>Australia</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Promotes relaxation.</li>
+<li>May support healthy sleep.</li>
+<li>Helps create a calming atmosphere.</li>
+<li>Contains natural aromatic oils.</li>
+</ul>
+</section>
+<!-- ========================================================= -->
+<!-- DANDELION -->
+<!-- ========================================================= -->
+<section id="dandelion">
+<h2>Dandelion Tea</h2>
+<p>
+
+Prepared from roasted roots or leaves, dandelion tea has been consumed in
+many traditional herbal practices throughout Europe and Asia.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Europe</li>
+<li>North America</li>
+<li>China</li>
+<li>India</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Traditionally enjoyed as a digestive beverage.</li>
+<li>Contains naturally occurring antioxidants.</li>
+<li>Caffeine free.</li>
+<li>Earthy roasted flavour.</li>
+</ul>
+</section>
+<!-- ========================================================= -->
+<!-- SAGE -->
+<!-- ========================================================= -->
+<section id="sage">
+<h2>Sage Tea</h2>
+<p>
+
+Sage has been cultivated around the Mediterranean for centuries and is widely
+used as both a culinary herb and herbal infusion.
+
+</p>
+<h3>Main Growing Regions</h3>
+<ul>
+<li>Italy</li>
+<li>Greece</li>
+<li>Turkey</li>
+<li>Croatia</li>
+<li>Spain</li>
+</ul>
+<h3>Health Benefits</h3>
+<ul>
+<li>Traditionally used for sore throats.</li>
+<li>Supports oral wellness.</li>
+<li>Contains natural antioxidants.</li>
+<li>Refreshing herbal flavour.</li>
+</ul>
+</section>
+<!-- ========================================================= -->
+<!-- WORLD GROWING REGIONS -->
+<!-- ========================================================= -->
+<section id="growing-regions">
+<h2>Major Tea Growing Regions of the World</h2>
+<p>
+
+Tea is cultivated across tropical and subtropical regions where altitude,
+rainfall, temperature and soil combine to produce distinctive flavour
+profiles.
+
+</p>
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th>Famous Tea</th>
+<th>Notable Region</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>China</td>
+<td>Green, White, Oolong</td>
+<td>Fujian, Zhejiang, Yunnan</td>
+</tr>
+<tr>
+<td>India</td>
+<td>Assam, Darjeeling, Nilgiri</td>
+<td>Assam, West Bengal, Tamil Nadu</td>
+</tr>
+<tr>
+<td>Sri Lanka</td>
+<td>Ceylon Tea</td>
+<td>Nuwara Eliya, Kandy</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>Matcha, Sencha</td>
+<td>Kyoto, Shizuoka</td>
+</tr>
+<tr>
+<td>Kenya</td>
+<td>Black Tea</td>
+<td>Kericho Highlands</td>
+</tr>
+<tr>
+<td>Taiwan</td>
+<td>Premium Oolong</td>
+<td>Alishan</td>
+</tr>
+<tr>
+<td>South Africa</td>
+<td>Rooibos</td>
+<td>Cederberg Mountains</td>
+</tr>
+<tr>
+<td>Vietnam</td>
+<td>Green Tea</td>
+<td>Northern Highlands</td>
+</tr>
+</tbody>
+</table>
+<div class="card">
+<h3>Professional Hospitality Note</h3>
+<p>
+
+Premium hotels increasingly highlight the origin of their teas in the same
+way they present coffee origins and wine regions. Guests appreciate knowing
+whether their tea comes from Darjeeling, Assam, Kyoto, Fujian or the
+Cederberg Mountains.
+
+</p>
+</div>
+<!-- ========================================================= -->
+<!-- END PART 4A -->
+<!-- ========================================================= -->
+<!-- PROFESSIONAL BREWING GUIDE -->
+<!-- ========================================================= -->
+</section>
+<!-- ========================================================= -->
+<!-- HOSPITALITY -->
+<!-- ========================================================= -->
+<section id="hospitality">
+<h2>Tea Service in Hotels &amp; Restaurants</h2>
+<p>
+
+Tea has evolved from being a simple beverage into an important part of the
+guest experience. Premium hotels often dedicate entire menus to specialty teas,
+while cafés build seasonal beverage promotions around herbal infusions and
+wellness drinks.
+
+</p>
+<h3>Professional Service Standards</h3>
+<ul>
+<li>Serve tea in warmed teapots.</li>
+<li>Use filtered water whenever possible.</li>
+<li>Offer honey, lemon and milk separately.</li>
+<li>Present loose-leaf teas attractively.</li>
+<li>Provide brewing instructions for specialty teas.</li>
+<li>Replace tea bags after steeping if requested.</li>
+<li>Use quality porcelain or glassware.</li>
+<li>Never over-steep delicate teas.</li>
+</ul>
+<div class="card">
+<h3>Hotel Manager's Note</h3>
+<p>
+
+Afternoon Tea remains one of the highest-margin food and beverage experiences
+in luxury hospitality. Well-trained associates who understand tea varieties,
+brewing methods and guest preferences can significantly enhance both service
+quality and revenue.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- INTERESTING FACTS -->
+<!-- ========================================================= -->
+<section id="interesting-facts">
+<h2>Interesting Facts About Tea</h2>
+<ul>
+<li>Tea is the second most consumed beverage in the world after water.</li>
+<li>All traditional teas come from one plant: <em>Camellia sinensis</em>.</li>
+<li>China is recognised as the birthplace of tea.</li>
+<li>India is among the world's largest tea producers and consumers.</li>
+<li>Sri Lanka's Ceylon Tea is internationally renowned for quality.</li>
+<li>Japan elevated tea into a formal cultural ceremony.</li>
+<li>Rooibos grows naturally only in South Africa.</li>
+<li>Matcha uses the entire powdered tea leaf rather than an infusion.</li>
+<li>Darjeeling Tea is often referred to as the "Champagne of Teas."</li>
+<li>Thousands of tea varieties are produced worldwide.</li>
+</ul>
+</section>
+<!-- ========================================================= -->
+<!-- SAFETY -->
+<!-- ========================================================= -->
+<section>
+<h2>Tea Safety &amp; Precautions</h2>
+<p>
+
+Although tea is considered one of the world's healthiest beverages, it should
+still be consumed responsibly.
+
+</p>
+<ul>
+<li>Excess caffeine may affect sensitive individuals.</li>
+<li>Pregnant women should seek medical advice regarding herbal teas.</li>
+<li>Some herbs may interact with prescription medications.</li>
+<li>Very hot beverages may increase the risk of burns.</li>
+<li>Choose reputable suppliers to ensure product quality.</li>
+</ul>
+<div class="warning">
+<h3>Important Reminder</h3>
+<p>
+
+Tea should complement a healthy lifestyle and is not a substitute for
+professional medical diagnosis, treatment or advice.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- ADVERTISEMENT -->
+<!-- ========================================================= -->
+<div class="ad-space">
+<ins class="adsbygoogle" data-ad-client="ca-pub-4282121192943910" data-ad-format="auto" data-ad-slot="0000000000" data-full-width-responsive="true" style="display:block"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- ========================================================= -->
+<!-- FAQ -->
+<!-- ========================================================= -->
+<section id="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>1. Which tea contains the highest level of antioxidants?</h3>
+<p>
+Matcha is generally considered one of the richest sources of antioxidants
+because the entire tea leaf is consumed rather than simply infused.
+</p>
+<h3>2. Which tea is best before bedtime?</h3>
+<p>
+Chamomile and Lavender tea are popular caffeine-free evening beverages that
+many people enjoy as part of a relaxing bedtime routine.
+</p>
+<h3>3. Is Green Tea healthier than Black Tea?</h3>
+<p>
+Both offer valuable antioxidants. Green tea retains more catechins due to
+minimal processing, while black tea develops theaflavins and thearubigins
+during oxidation. Each has its own nutritional strengths.
+</p>
+<h3>4. What is the healthiest way to drink tea?</h3>
+<p>
+Drink freshly brewed tea with minimal added sugar. Brewing at the correct
+temperature helps preserve flavour and beneficial plant compounds.
+</p>
+<h3>5. Why should Green Tea not be brewed with boiling water?</h3>
+<p>
+Boiling water can extract excessive tannins, creating bitterness and masking
+the tea's delicate flavours.
+</p>
+<h3>6. Which tea contains no caffeine?</h3>
+<p>
+Chamomile, Rooibos, Peppermint, Hibiscus, Lavender, Lemongrass and most
+herbal infusions are naturally caffeine free.
+</p>
+<h3>7. Which country produces the most tea?</h3>
+<p>
+China is the world's largest tea producer, followed by India, Kenya,
+Sri Lanka and Turkey.
+</p>
+<h3>8. Can tea be served cold?</h3>
+<p>
+Yes. Green Tea, Hibiscus Tea, Black Tea and many herbal infusions make
+excellent iced beverages.
+</p>
+</section>
+<!-- ========================================================= -->
+<!-- CONCLUSION -->
+<!-- ========================================================= -->
+<section id="conclusion">
+<h2>Conclusion</h2>
+<p>
+
+Tea is far more than a comforting beverage. Across centuries and cultures,
+it has become an important part of traditional wellness, hospitality,
+social customs and culinary excellence. Whether enjoyed for relaxation,
+refreshment or its naturally occurring antioxidants, tea continues to be
+one of the world's most respected drinks.
+
+</p>
+<p>
+
+For hospitality professionals, understanding tea is an essential skill.
+Guests increasingly expect knowledgeable recommendations, proper brewing
+techniques and premium service. A well-curated tea programme enhances the
+guest experience, complements menus and reinforces a property's commitment
+to quality.
+
+</p>
+<p>
+
+From the mist-covered gardens of Darjeeling and the rolling estates of
+Sri Lanka to the tea mountains of China and the Rooibos fields of South
+Africa, every cup tells a story of geography, tradition and craftsmanship.
+
+</p>
+<div class="card">
+<h3>Professional Takeaway</h3>
+<p>
+
+Great hospitality is built on knowledge, consistency and attention to
+detail. Mastering tea service is another way hospitality professionals can
+deliver memorable guest experiences while showcasing product expertise.
+
+</p>
+</div>
+</section>
+<!-- ========================================================= -->
+<!-- RELATED ARTICLES -->
+<!-- ========================================================= -->
+<section>
+<h2>Continue Your Hospitality Learning</h2>
+<ul>
+<li><a href="coffee-types-poster.html">16 Types of Coffee &amp; How They're Made</a></li>
+<li><a href="medicinal-value-of-spices.html">Medicinal Value of Spices</a></li>
+<li><a href="types-of-alcohol-complete-guide.html">Complete Guide to Alcoholic Beverages</a></li>
+<li><a href="food-cost-control-complete-guide.html">Food Cost Control Guide</a></li>
+<li><a href="restaurant-fire-safety-complete-training-guide.html">Restaurant Fire Safety Guide</a></li>
+<li><a href="operations-manager-vs-restaurant-manager.html">Operations Manager vs Restaurant Manager</a></li>
+<li><a href="hotel-management-playbook-month-end-reporting.html">Hotel Management Playbook</a></li>
+<li><a href="blog.html">View All Hospitality Articles</a></li>
+</ul>
+</section>
+<!-- ========================================================= -->
+<!-- TAGS -->
+<!-- ========================================================= -->
+<div class="tags">
+<span>#Tea</span>
+<span>#GreenTea</span>
+<span>#HerbalTea</span>
+<span>#Hospitality</span>
+<span>#FoodAndBeverage</span>
+<span>#Wellness</span>
+<span>#RestaurantManagement</span>
+<span>#HotelManagement</span>
+<span>#NigelThomas</span>
+</div>
+<!-- ========================================================= -->
+<!-- FINAL ADSENSE -->
+<!-- ========================================================= -->
+<div class="ad-space">
+<ins class="adsbygoogle" data-ad-client="ca-pub-4282121192943910" data-ad-format="auto" data-ad-slot="0000000000" data-full-width-responsive="true" style="display:block"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</article>
+</main>
+<footer class="site-footer">
+<p>
+
+© 2026 Nigel A. Thomas •
+Hospitality Leadership &amp; Training
+
+</p>
+<p>
+<a href="blog.html">← Back to Blog</a>
+</p>
+</footer>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+
+
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<section id="brewing-guide">
+<h2>Professional Tea Brewing Guide</h2>
+<p>
+
+One of the most common mistakes in restaurants, cafés and hotels is preparing
+every tea using boiling water. Different teas require different temperatures
+to preserve flavour, aroma and beneficial plant compounds.
+
+</p>
+<table>
+<thead>
+<tr>
+<th>Tea</th>
+<th>Temperature</th>
+<th>Steeping Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>White Tea</td>
+<td>75–80°C</td>
+<td>4–5 min</td>
+</tr>
+<tr>
+<td>Green Tea</td>
+<td>70–80°C</td>
+<td>2–3 min</td>
+</tr>
+<tr>
+<td>Matcha</td>
+<td>75–80°C</td>
+<td>Whisk Immediately</td>
+</tr>
+<tr>
+<td>Oolong</td>
+<td>85–90°C</td>
+<td>3–5 min</td>
+</tr>
+<tr>
+<td>Black Tea</td>
+<td>95–100°C</td>
+<td>3–5 min</td>
+</tr>
+<tr>
+<td>Herbal Teas</td>
+<td>95–100°C</td>
+<td>5–7 min</td>
+</tr>
+</tbody>
+</table>
+<div class="tip">
+<h3>Professional Service Standard</h3>
+<p>
+
+Always warm the teapot before brewing, use freshly drawn filtered water,
+measure tea accurately, and serve with a timer whenever possible. These small
+details significantly improve guest satisfaction.
+
+</p>
+</div>
+</section>
+<div class="poster-wrap">
+<img alt="Medicinal Properties of Teas - Herbal &amp; Medicinal Tea Guide" height="675" loading="lazy" src="assets/teas.png" width="1200"/>
+</div>
+</div>
+</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
+</body>
+</html>

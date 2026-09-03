@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -7,297 +7,12 @@
 <!-- Google AdSense -->
 <meta content="ca-pub-4282121192943910" name="google-adsense-account"/>
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"></script>
-<style>
-  :root{
-    --bg:#0b0b0b;
-    --panel:#151412;
-    --gold:#d4af37;
-    --gold-dim:#8a6d1f;
-    --ink:#f5f1e8;
-    --ink-dim:#a8a49a;
-    --hair:#2a2823;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:#050505;
-    font-family:'Segoe UI', Arial, sans-serif;
-    display:flex;
-    justify-content:center;
-    padding:40px 16px;
-  }
-  .poster{
-    width:800px;
-    max-width:100%;
-    background:var(--bg);
-    color:var(--ink);
-    padding:56px 52px 44px;
-    position:relative;
-    overflow:hidden;
-  }
-  .poster::before{
-    content:"";
-    position:absolute;
-    top:0; left:0; right:0;
-    height:6px;
-    background:linear-gradient(90deg, var(--gold-dim), var(--gold) 50%, var(--gold-dim));
-  }
-  .eyebrow{
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:12px;
-    color:var(--gold);
-    font-weight:600;
-    text-align:center;
-    margin-bottom:14px;
-  }
-  h1{
-    font-size:44px;
-    line-height:1.08;
-    text-align:center;
-    margin:0 0 8px;
-    font-weight:700;
-    letter-spacing:0.5px;
-    color:var(--ink);
-  }
-  h1 span{color:var(--gold);}
-  .subtitle{
-    text-align:center;
-    font-size:19px;
-    color:var(--ink-dim);
-    font-weight:400;
-    margin-bottom:6px;
-    letter-spacing:0.3px;
-  }
-  .subtitle b{color:var(--gold); font-weight:600;}
-  .rule{
-    width:70px;
-    height:2px;
-    background:var(--gold);
-    margin:18px auto 34px;
-  }
 
-  .section-tag{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    background:var(--gold);
-    color:#0b0b0b;
-    font-weight:700;
-    font-size:13px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    padding:7px 16px;
-    margin-bottom:16px;
-  }
-
-  /* Before you walk in */
-  .checklist{
-    border:1px solid var(--hair);
-    padding:22px 24px;
-    margin-bottom:38px;
-  }
-  .checklist-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px 28px;
-  }
-  .check-item{
-    display:flex;
-    align-items:flex-start;
-    gap:10px;
-    font-size:14.5px;
-    color:var(--ink);
-  }
-  .check-item svg{flex-shrink:0; margin-top:2px;}
-
-  .divider-num{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin:8px 0 30px;
-  }
-  .divider-num .line{flex:1; height:1px; background:var(--hair);}
-  .divider-num .num{
-    width:30px; height:30px;
-    border:1px solid var(--gold);
-    color:var(--gold);
-    display:flex; align-items:center; justify-content:center;
-    font-weight:700; font-size:14px;
-  }
-
-  .floor-title{
-    text-align:center;
-    font-size:22px;
-    font-weight:700;
-    letter-spacing:1px;
-    margin-bottom:26px;
-    color:var(--ink);
-  }
-
-  .lens-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-    margin-bottom:36px;
-  }
-  .lens-card{
-    background:var(--panel);
-    border:1px solid var(--hair);
-    padding:20px 20px 18px;
-  }
-  .lens-head{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:14px;
-  }
-  .lens-num{
-    font-size:12px;
-    color:var(--gold-dim);
-    font-weight:700;
-    letter-spacing:1px;
-  }
-  .lens-name{
-    font-size:16.5px;
-    font-weight:700;
-    color:var(--gold);
-    letter-spacing:0.5px;
-  }
-  .lens-card ul{
-    margin:0; padding-left:0;
-    list-style:none;
-  }
-  .lens-card li{
-    font-size:13.5px;
-    color:var(--ink-dim);
-    padding:5px 0 5px 16px;
-    position:relative;
-    border-top:1px solid var(--hair);
-  }
-  .lens-card li:first-child{border-top:none;}
-  .lens-card li::before{
-    content:"—";
-    position:absolute;
-    left:0;
-    color:var(--gold-dim);
-  }
-
-  .close-table{
-    border:1px solid var(--hair);
-    margin-bottom:36px;
-  }
-  .close-row{
-    display:grid;
-    grid-template-columns:200px 1fr;
-    border-top:1px solid var(--hair);
-  }
-  .close-row:first-child{border-top:none;}
-  .close-label{
-    padding:14px 18px;
-    background:var(--panel);
-    color:var(--gold);
-    font-weight:700;
-    font-size:13px;
-    letter-spacing:0.8px;
-    display:flex;
-    align-items:center;
-  }
-  .close-value{
-    padding:14px 18px;
-    font-size:14px;
-    color:var(--ink-dim);
-    display:flex;
-    align-items:center;
-  }
-
-  .quote-band{
-    text-align:center;
-    padding:30px 20px;
-    border-top:1px solid var(--gold-dim);
-    border-bottom:1px solid var(--gold-dim);
-    margin-bottom:34px;
-  }
-  .quote-band p{
-    font-size:17px;
-    line-height:1.55;
-    margin:0;
-    color:var(--ink);
-    font-style:italic;
-  }
-  .quote-band p b{
-    color:var(--gold);
-    font-style:normal;
-  }
-
-  .footer{
-    display:flex;
-    align-items:center;
-    gap:16px;
-  }
-  .footer img{
-    width:66px; height:66px;
-    border-radius:50%;
-    border:2px solid var(--gold);
-    object-fit:cover;
-  }
-  .footer-name{
-    font-size:16px;
-    font-weight:700;
-    color:var(--ink);
-  }
-  .footer-title{
-    font-size:12.5px;
-    color:var(--ink-dim);
-  }
-  .footer-site{
-    margin-left:auto;
-    text-align:right;
-    font-size:13px;
-    color:var(--gold);
-    font-weight:600;
-    letter-spacing:0.5px;
-  }
-</style>
-</head>
-<body>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-</div>
-</div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
 
 </div>
-</div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
 
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-<div class="poster">
-<div class="eyebrow">Field Notes — Operations</div>
+
+
 <h1>THE RESTAURANT<br/><span>WALK-THROUGH</span></h1>
 <p class="subtitle">4 Diagnostic Lenses of a <b>30-Year Operator</b></p>
 <div class="rule"></div>
@@ -435,12 +150,42 @@
 </div>
 </div>
 </div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
+
+
+<!-- NT INFOMATICS -->
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+        <div class="poster-wrap">
+            <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto;"/>
+        </div>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
+<!-- END NT INFOMATICS -->
+
+<div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
+    <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
+        Read More Articles →
+    </a>
+</div>
+
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+    var button = event.target.closest(".nt-infomatics-button");
+    if (!button) return;
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var opened = panel.classList.toggle("show");
+    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.setAttribute("aria-expanded", opened ? "true" : "false");
+    panel.setAttribute("aria-hidden", opened ? "false" : "true");
+});
+</script>
 </body>
 </html>

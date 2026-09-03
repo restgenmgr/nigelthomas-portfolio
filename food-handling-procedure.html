@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -8,324 +8,11 @@
 <!-- html2canvas library for JPG export -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
 </script>
-<style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            background: #e6e9ef;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-            padding: 30px 20px;
-        }
-
-        /* ===== POSTER CARD ===== */
-        #poster {
-            width: 900px;
-            background: #ffffff;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-            padding: 40px 45px 35px;
-            position: relative;
-            transition: all 0.2s;
-        }
-
-        /* ----- TOP HEADER with EMBLEM on far right ----- */
-        .poster-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-bottom: 4px solid #c8102e;
-            padding-bottom: 14px;
-            margin-bottom: 18px;
-        }
-
-        .title-group h1 {
-            font-size: 36px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: #1a1a1a;
-            line-height: 1.1;
-        }
-
-        .title-group h2 {
-            font-size: 22px;
-            font-weight: 500;
-            color: #c8102e;
-            letter-spacing: 2px;
-            margin-top: 2px;
-        }
-
-        .title-group .tagline {
-            font-size: 16px;
-            font-weight: 600;
-            color: #333;
-            margin-top: 6px;
-            background: #f8f2e7;
-            display: inline-block;
-            padding: 2px 18px;
-            border-radius: 20px;
-            letter-spacing: 0.5px;
-        }
-
-        /* Emblem block (far right) */
-        .emblem-block {
-            text-align: right;
-            line-height: 1.3;
-            min-width: 120px;
-            margin-top: 4px;
-        }
-
-        .emblem-block img {
-            max-height: 75px;
-            width: auto;
-            display: block;
-            margin-left: auto;
-            margin-bottom: 2px;
-        }
-
-        .emblem-block .emblem-text {
-            font-size: 12px;
-            font-weight: 700;
-            color: #1a1a1a;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            background: #f0ebe3;
-            padding: 2px 10px;
-            border-radius: 4px;
-            display: inline-block;
-        }
-
-        /* ----- TABLE ----- */
-        .rule-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 12px 0 18px;
-            font-size: 14px;
-        }
-
-        .rule-table th {
-            background: #c8102e;
-            color: #fff;
-            font-weight: 700;
-            padding: 8px 10px;
-            text-align: left;
-            border: 1px solid #b00b27;
-        }
-
-        .rule-table td {
-            padding: 6px 10px;
-            border: 1px solid #d6d6d6;
-            vertical-align: top;
-        }
-
-        .rule-table tr:nth-child(even) td {
-            background: #f9f9f9;
-        }
-
-        .rule-table .sno {
-            font-weight: 700;
-            color: #c8102e;
-            width: 50px;
-            text-align: center;
-        }
-
-        .rule-table .rule {
-            font-weight: 600;
-            width: 260px;
-        }
-
-        .rule-table .purpose {
-            color: #333;
-            font-style: italic;
-        }
-
-        /* ----- NOTE SECTION ----- */
-        .note-box {
-            background: #f8f4ee;
-            border-left: 6px solid #c8102e;
-            padding: 14px 20px;
-            margin: 14px 0 20px;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .note-box p {
-            font-size: 14px;
-            line-height: 1.7;
-            color: #1f1f1f;
-        }
-
-        .note-box strong {
-            color: #c8102e;
-        }
-
-        /* ----- FOOTER (name replaced) ----- */
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            border-top: 3px solid #c8102e;
-            padding-top: 16px;
-            margin-top: 6px;
-        }
-
-        .footer-left .name {
-            font-size: 28px;
-            font-weight: 800;
-            color: #1a1a1a;
-            letter-spacing: 1.5px;
-        }
-
-        .footer-left .title {
-            font-size: 16px;
-            font-weight: 500;
-            color: #c8102e;
-            letter-spacing: 1px;
-        }
-
-        .footer-right {
-            text-align: right;
-            font-size: 18px;
-            font-weight: 600;
-            color: #1a1a1a;
-            line-height: 1.5;
-        }
-
-        .footer-right span {
-            display: block;
-            color: #c8102e;
-        }
-
-        /* ----- DOWNLOAD BUTTON ----- */
-        .download-btn {
-            margin-top: 30px;
-            background: #1a1a1a;
-            color: #fff;
-            border: none;
-            padding: 14px 48px;
-            font-size: 18px;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
-            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-            transition: 0.2s;
-            letter-spacing: 1px;
-        }
-
-        .download-btn:hover {
-            background: #c8102e;
-            transform: scale(1.02);
-        }
-
-        /* small note under button */
-        .hint {
-            margin-top: 12px;
-            font-size: 13px;
-            color: #555;
-        }
-
-        /* responsive tweaks */
-        @media (max-width: 960px) {
-            #poster {
-                width: 100%;
-                padding: 25px 20px;
-            }
-            .poster-header {
-                flex-wrap: wrap;
-            }
-            .emblem-block {
-                margin-top: 6px;
-                width: 100%;
-                text-align: left;
-                display: flex;
-                align-items: center;
-                gap: 12px;
-            }
-            .emblem-block img {
-                margin-left: 0;
-            }
-            .footer {
-                flex-wrap: wrap;
-                gap: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-<!-- ===== POSTER ===== -->
-<!-- end poster -->
-<!-- DOWNLOAD BUTTON -->
-<button class="download-btn" id="downloadBtn">⬇ Download as JPG</button>
-<div class="hint">(Make sure <strong>NTlogo.png</strong> is in the same folder as this HTML file)</div>
-<script>
-        document.getElementById('downloadBtn').addEventListener('click', function() {
-            const poster = document.getElementById('poster');
-
-            // Use html2canvas to render the poster with high quality
-            html2canvas(poster, {
-                scale: 2.0, // 2x resolution for crisp JPG
-                backgroundColor: '#ffffff',
-                useCORS: true,
-                allowTaint: false,
-                logging: false
-            }).then(function(canvas) {
-                // Convert to JPG data URL
-                const link = document.createElement('a');
-                link.download = 'Food_Handling_Poster.jpg';
-                link.href = canvas.toDataURL('image/jpeg', 0.95);
-                link.click();
-            }).catch(function(err) {
-                alert('Could not generate image. Please check the console for errors.');
-                console.error(err);
-            });
-        });
-    </script>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-</div>
-</div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
 
 </div>
-</div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-<div class="poster-header">
-<div class="title-group">
-<h1>FOOD HANDLING GUIDE</h1>
-<h2>Safe Food Handling Practices</h2>
-<div class="tagline">Safe Food • Healthy People • Better Service</div>
+
+
 </div>
 <div class="emblem-block">
 <!-- Emblem loads from the SAME folder as this HTML -->
@@ -336,24 +23,9 @@
 
 </div>
 </div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
 
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-<div class="poster-header">
-<div class="title-group">
-<h1>FOOD HANDLING GUIDE</h1>
-<h2>Safe Food Handling Practices</h2>
-<div class="tagline">Safe Food • Healthy People • Better Service</div>
+
+
 </div>
 <div class="emblem-block">
 <!-- Emblem loads from the SAME folder as this HTML -->
@@ -422,12 +94,42 @@
 </div>
 </div>
 </div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
+
+
+<!-- NT INFOMATICS -->
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+        <div class="poster-wrap">
+            <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto;"/>
+        </div>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
+<!-- END NT INFOMATICS -->
+
+<div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
+    <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
+        Read More Articles →
+    </a>
+</div>
+
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+    var button = event.target.closest(".nt-infomatics-button");
+    if (!button) return;
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var opened = panel.classList.toggle("show");
+    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.setAttribute("aria-expanded", opened ? "true" : "false");
+    panel.setAttribute("aria-hidden", opened ? "false" : "true");
+});
+</script>
 </body>
 </html>

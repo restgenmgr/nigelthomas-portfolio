@@ -1915,11 +1915,7 @@ document.addEventListener("click", function (event) {
 </script>
 <script>document.addEventListener("click",function(e){var b=e.target.closest(".nt-infomatics-button");if(!b)return;var p=document.getElementById(b.getAttribute("data-panel"));if(!p)return;var o=p.classList.toggle("show");b.textContent=o?"HIDE INFOMATICS":"VIEW INFOMATICS";b.setAttribute("aria-expanded",o?"true":"false");p.setAttribute("aria-hidden",o?"false":"true");});</script>
 
-<div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
-    <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
-        Read More Articles →
-    </a>
-</div>
+
 
 <script id="nt-infomatics-js">
 document.addEventListener("click", function (event) {
@@ -1935,34 +1931,33 @@ document.addEventListener("click", function (event) {
 });
 </script>
 
-<div class="nt-infomatics-section" style="margin:40px 0;">
-    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel-blog" aria-expanded="false">
-        VIEW INFOMATICS
-    </button>
-    <div id="nt-infomatics-panel-blog" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
-<img alt="Types of Water Used in Restaurants" loading="lazy" src="assets/types-of-water-used-in-restaurant.jpg"/>
-<img alt="Nigel Thomas Hospitality" src="assets/nigel-thomas-rgm.png"/>
-<img alt="Fine Dining Silverware: Types of Knives and Forks" src="assets/fine-dining-silverware.jpg"/>
-<img alt="Operations Manager vs Restaurant Manager" loading="lazy" src="assets/operations-manager-vs-restaurant-manager.jpg"/>
-<img alt="10-Day P&amp;L Control Cycle" loading="lazy" src="assets/NTlogo.png"/>
-<img alt="Area Manager vs Cluster Manager in F&amp;B Operations" loading="lazy" src="assets/area-manager-vs-cluster-manager.jpg"/>
-<img alt="Roles &amp; Responsibilities of a Restaurant Manager" loading="lazy" src="assets/roles-responsibilities-restaurant-manager.jfif"/>
-<img alt="HACCP Hazard Analysis and Critical Control Points" loading="lazy" src="assets/haccp.jpg"/>
-<img alt="Direct vs Third-Party Booking the Guest Occasion" loading="lazy" src="assets/booking-guest-occasion.jpg"/>
-<img alt="Food Cost Basics" loading="lazy" src="assets/food-cost-basics-nigel-a-thomas.jpg"/>
-<img alt="Types of Cheese Used in Hotels" loading="lazy" src="assets/types-of-cheese-used-in-hotels.jpg"/>
-<img alt="Financial KPIs in Restaurants" loading="lazy" src="assets/restaurant-financial-kpis-nigel-a-thomas.jpg"/>
-<img alt="The Origin and History of Wine and World Wine Growing Regions" loading="lazy" src="assets/types-of-wine.jpg"/>
-<img alt="Top 5 Classic Pasta Sauces infographic" loading="lazy" src="assets/types-of-pasta-sauces.jpg"/>
 
-
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
-            
-        </div>
         <p style="font-size:0.9em;color:#666;margin-top:15px;text-align:center;">
             💡 Click any card to read the full article. Right-click images to save.
         </p>
     </div>
+</div>
+
+<!-- NT INFOMATICS -->
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+        <div class="poster-wrap">
+            <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto;"/>
+        </div>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
+<!-- END NT INFOMATICS -->
+
+<div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
+    <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
+        Read More Articles →
+    </a>
 </div>
 </body>
 </html>

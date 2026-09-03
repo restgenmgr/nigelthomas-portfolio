@@ -31,7 +31,15 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-P839TWLQSJ');
-</script> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script> </head>
+</script> <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script> 
+<style>
+.nt-infomatics-section { text-align:center; margin:30px 0; }
+.nt-infomatics-button { display:inline-block; background:#000; color:#d4af37; border:1px solid #d4af37; border-radius:4px; padding:14px 30px; font-family:Arial, sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; cursor:pointer; transition:all .25s ease; }
+.nt-infomatics-button:hover { background:#d4af37; color:#000; }
+.nt-infomatics-panel { display:none; max-width:1100px; margin:28px auto 0; }
+.nt-infomatics-panel.show { display:block; }
+</style>
+</head>
 <body> <div class="wrap"> <div class="breadcrumb">
 <div class="breadcrumb">
 <a href="https://nigelthomas.live/"> Home</a> &rsaquo;
@@ -51,7 +59,7 @@ Cruise Ship Crew Rotations Explained
 <div class="ad-label">Advertisement</div> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8127243414384620" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins> <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</div> <div class="cta-box"> <p><strong>Ready to start your journey?</strong> Whether mainstream, premium, or luxury is the right fit, the first step is the same — getting your application in front of the right people.</p> <a class="btn-apply" href="https://www.carseacrew.com" onclick="if(typeof gtag==='function'){gtag('event','select_content',{content_type:'cta_button',item_id:'carseacrew_apply'});}"> Apply at Carsea Crew → </a> </div> <div class="author-box"> <img src="https://nigelthomas.live/assets/nigel-thomas-headshot.jpg" alt="Nigel A Thomas"> <div> <h4>Nigel A Thomas</h4> <p>Hospitality Trainer &amp; Professional</p> </div> </div> <a class="btn-back" href="https://nigelthomas.live/blog.html">&larr; Back to all articles</a> <footer class="site-footer"> (c) 2026 Nigel A Thomas — Hospitality Trainer &amp; Professional 
+</div> <div class="cta-box"> <p><strong>Ready to start your journey?</strong> Whether mainstream, premium, or luxury is the right fit, the first step is the same — getting your application in front of the right people.</p> <a class="btn-apply" href="https://www.carseacrew.com" onclick="if(typeof gtag==='function'){gtag('event','select_content',{content_type:'cta_button',item_id:'carseacrew_apply'});}"> Apply at Carsea Crew → </a> </div> <div class="author-box">  <div> <h4>Nigel A Thomas</h4> <p>Hospitality Trainer &amp; Professional</p> </div> </div> <a class="btn-back" href="https://nigelthomas.live/blog.html">&larr; Back to all articles</a> <footer class="site-footer"> (c) 2026 Nigel A Thomas — Hospitality Trainer &amp; Professional 
 <div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
     <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
         Read More Articles →
@@ -65,6 +73,39 @@ Cruise Ship Crew Rotations Explained
 
 
 
+
+<!-- NT INFOMATICS -->
+
+<!-- END NT INFOMATICS -->
+
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+    var button = event.target.closest(".nt-infomatics-button");
+    if (!button) return;
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var opened = panel.classList.toggle("show");
+    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.setAttribute("aria-expanded", opened ? "true" : "false");
+    panel.setAttribute("aria-hidden", opened ? "false" : "true");
+});
+</script>
+
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel-cruise-ship-crew-rotations-guide" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel-cruise-ship-crew-rotations-guide" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+<img src="https://nigelthomas.live/assets/nigel-thomas-headshot.jpg" alt="Nigel A Thomas">
+
+
+        <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:8px;"/>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
 </body>
 </html> 
 

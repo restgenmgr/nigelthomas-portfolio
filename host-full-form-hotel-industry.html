@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -17,321 +17,9 @@
 <!-- Google AdSense -->
 <meta content="ca-pub-4282121192943900" name="google-adsense-account"/>
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943900"></script>
-<style>
-  :root{
-    --bg:#0b0b0b;
-    --panel:#151412;
-    --gold:#d4af37;
-    --gold-dim:#8a6d1f;
-    --ink:#f5f1e8;
-    --ink-dim:#a8a49a;
-    --hair:#2a2823;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:#050505;
-    font-family:'Segoe UI', Arial, sans-serif;
-    display:flex;
-    justify-content:center;
-    padding:40px 16px;
-  }
-  .poster{
-    width:800px;
-    max-width:100%;
-    background:var(--bg);
-    color:var(--ink);
-    padding:56px 52px 44px;
-    position:relative;
-    overflow:hidden;
-  }
-  .poster::before{
-    content:"";
-    position:absolute;
-    top:0; left:0; right:0;
-    height:6px;
-    background:linear-gradient(90deg, var(--gold-dim), var(--gold) 50%, var(--gold-dim));
-  }
-  .eyebrow{
-    text-transform:uppercase;
-    letter-spacing:4px;
-    font-size:12px;
-    color:var(--gold);
-    font-weight:600;
-    text-align:center;
-    margin-bottom:14px;
-  }
-  h1{
-    font-size:38px;
-    line-height:1.15;
-    text-align:center;
-    margin:0 0 8px;
-    font-weight:700;
-    letter-spacing:0.5px;
-    color:var(--ink);
-  }
-  h1 span{color:var(--gold);}
-  .subtitle{
-    text-align:center;
-    font-size:18px;
-    color:var(--ink-dim);
-    font-weight:400;
-    margin-bottom:6px;
-    letter-spacing:0.3px;
-  }
-  .subtitle b{color:var(--gold); font-weight:600;}
-  .rule{
-    width:70px;
-    height:2px;
-    background:var(--gold);
-    margin:18px auto 34px;
-  }
 
-  .divider-num{
-    display:flex;
-    align-items:center;
-    gap:16px;
-    margin:8px 0 26px;
-  }
-  .divider-num .line{flex:1; height:1px; background:var(--hair);}
-  .divider-num .num{
-    width:30px; height:30px;
-    border:1px solid var(--gold);
-    color:var(--gold);
-    display:flex; align-items:center; justify-content:center;
-    font-weight:700; font-size:14px;
-    flex-shrink:0;
-  }
-  .divider-label{
-    text-transform:uppercase; font-size:13px; letter-spacing:1.5px;
-    color:var(--ink-dim); font-weight:700;
-  }
 
-  .top-split{
-    display:grid;
-    grid-template-columns:1.1fr 0.9fr;
-    gap:24px;
-    margin-bottom:10px;
-    align-items:stretch;
-  }
-  .letter-list{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    justify-content:center;
-  }
-  .letter-row{
-    display:flex;
-    align-items:center;
-    gap:14px;
-    background:var(--panel);
-    border:1px solid var(--hair);
-    padding:12px 14px;
-  }
-  .letter-badge{
-    width:38px; height:38px;
-    background:var(--gold);
-    color:#0b0b0b;
-    font-weight:800;
-    font-size:19px;
-    display:flex; align-items:center; justify-content:center;
-    flex-shrink:0;
-  }
-  .letter-text b{
-    color:var(--gold);
-    font-size:15px;
-    letter-spacing:0.3px;
-  }
-  .letter-text span{
-    display:block;
-    color:var(--ink-dim);
-    font-size:12.5px;
-    margin-top:2px;
-  }
-  .portrait-wrap{
-    border:1px solid var(--hair);
-    background:var(--panel);
-    overflow:hidden;
-    display:flex;
-    align-items:flex-end;
-  }
-  .portrait-wrap img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    filter:grayscale(8%);
-  }
 
-  .role-list{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    margin-bottom:34px;
-  }
-  .role-item{
-    display:flex;
-    align-items:flex-start;
-    gap:14px;
-    background:var(--panel);
-    border:1px solid var(--hair);
-    padding:12px 16px;
-  }
-  .role-num{
-    width:30px; height:30px;
-    border:1px solid var(--gold);
-    color:var(--gold);
-    font-weight:700;
-    font-size:12.5px;
-    display:flex; align-items:center; justify-content:center;
-    flex-shrink:0;
-  }
-  .role-item p{
-    margin:0;
-    font-size:14px;
-    color:var(--ink-dim);
-    line-height:1.5;
-    padding-top:4px;
-  }
-
-  .quote-band{
-    text-align:center;
-    padding:26px 20px;
-    border-top:1px solid var(--gold-dim);
-    border-bottom:1px solid var(--gold-dim);
-    margin-bottom:34px;
-  }
-  .quote-band p{
-    font-size:17px;
-    line-height:1.55;
-    margin:0;
-    color:var(--ink);
-    font-style:italic;
-  }
-  .quote-band p b{
-    color:var(--gold);
-    font-style:normal;
-  }
-
-  .icon-strip{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:12px;
-    margin-bottom:34px;
-  }
-  .icon-strip div{
-    text-align:center;
-    border:1px solid var(--hair);
-    background:var(--panel);
-    padding:16px 8px;
-  }
-  .icon-strip .glyph{
-    font-size:22px;
-    margin-bottom:8px;
-    display:block;
-  }
-  .icon-strip .label{
-    font-size:12px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:var(--gold);
-    font-weight:700;
-  }
-
-  .related{
-    margin-bottom:34px;
-  }
-  .related-title{
-    color:var(--gold);
-    font-size:13px;
-    font-weight:700;
-    letter-spacing:1.2px;
-    text-transform:uppercase;
-    margin-bottom:14px;
-    text-align:center;
-  }
-  .related-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:12px;
-  }
-  .related-grid a{
-    display:block;
-    border:1px solid var(--hair);
-    padding:12px 14px;
-    color:var(--ink);
-    text-decoration:none;
-    font-size:13px;
-    transition:0.2s;
-  }
-  .related-grid a:hover{
-    border-color:var(--gold);
-    color:var(--gold);
-  }
-
-  .footer{
-    display:flex;
-    align-items:center;
-    gap:16px;
-  }
-  .footer img{
-    width:66px; height:66px;
-    border-radius:50%;
-    border:2px solid var(--gold);
-    object-fit:cover;
-  }
-  .footer-name{
-    font-size:16px;
-    font-weight:700;
-    color:var(--ink);
-  }
-  .footer-title{
-    font-size:12.5px;
-    color:var(--ink-dim);
-  }
-  .footer-site{
-    margin-left:auto;
-    text-align:right;
-    font-size:13px;
-    color:var(--gold);
-    font-weight:600;
-    letter-spacing:0.5px;
-  }
-
-  @media(max-width:600px){
-    .poster{padding:40px 22px 32px;}
-    h1{font-size:28px;}
-    .top-split{grid-template-columns:1fr;}
-    .portrait-wrap{max-height:320px;}
-    .icon-strip{grid-template-columns:1fr 1fr;}
-    .related-grid{grid-template-columns:1fr;}
-  }
-</style>
-</head>
-<body>
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-
-</div>
-</div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
-
-<div class="infomatics-launcher">
-<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
-    Infomatics
-  </button>
-<div class="infomatics-panel" id="infomatics-panel">
-<div class="poster">
-<div class="eyebrow">Front of House  Role Guide</div>
 <h1>"HOST" — FULL FORM<br/><span>IN THE HOTEL INDUSTRY</span></h1>
 <p class="subtitle">What Every Great Host <b>Delivers, Beyond the Welcome</b></p>
 <div class="rule"></div>
@@ -421,12 +109,42 @@
 </div>
 </div>
 </div>
-<style>
-.infomatics-launcher{margin:2rem 0;}
-.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
-.infomatics-btn:hover{background:#374151;}
-.infomatics-panel{display:none;margin-top:1rem;}
-.infomatics-panel.active{display:block;}
-</style>
+
+
+<!-- NT INFOMATICS -->
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+        <div class="poster-wrap">
+            <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto;"/>
+        </div>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
+<!-- END NT INFOMATICS -->
+
+<div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
+    <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
+        Read More Articles →
+    </a>
+</div>
+
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+    var button = event.target.closest(".nt-infomatics-button");
+    if (!button) return;
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var opened = panel.classList.toggle("show");
+    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.setAttribute("aria-expanded", opened ? "true" : "false");
+    panel.setAttribute("aria-hidden", opened ? "false" : "true");
+});
+</script>
 </body>
 </html>
