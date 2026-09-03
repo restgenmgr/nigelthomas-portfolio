@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -285,20 +285,12 @@
         }
 
     </style>
-
-<style>
-.nt-infomatics-section { text-align:center; margin:30px 0; }
-.nt-infomatics-button { display:inline-block; background:#000; color:#d4af37; border:1px solid #d4af37; border-radius:4px; padding:14px 30px; font-family:Arial, sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; cursor:pointer; transition:all .25s ease; }
-.nt-infomatics-button:hover { background:#d4af37; color:#000; }
-.nt-infomatics-panel { display:none; max-width:1100px; margin:28px auto 0; }
-.nt-infomatics-panel.show { display:block; }
-</style>
 </head>
 <body>
 <nav class="navbar">
 <div class="nav-container">
 <a class="logo" href="/accounting/">
-
+<img alt="MYCA Accounting" src="assets/MYCA-App.png" style="height:42px;width:auto;display:block;"/>
 <span>Nigel Thomas</span>
 </a>
 <div class="nav-links">
@@ -323,7 +315,7 @@ Hospitality Executive • Operations Leader • Hospitality Trainer
 <!-- Profile Section -->
 <section style="display:flex;flex-wrap:wrap;gap:40px;align-items:center;margin-bottom:60px;">
 <div style="flex:1;min-width:280px;text-align:center;">
-
+<img alt="Nigel Anthony Thomas" src="assets/nigel-thomas-headshot.jpg" style="width:260px;height:260px;border-radius:50%;border:5px solid #d4af37;object-fit:cover;box-shadow:0 0 30px rgba(212,175,55,.35);"/>
 </div>
 <div style="flex:2;min-width:320px;">
 <h2 style="color:#d4af37;font-size:36px;margin-bottom:20px;">
@@ -657,16 +649,6 @@ Hospitality Executive • Operations Leader • Hospitality Trainer
 </section>
 </section>
 </div>
-<div class="author-box">
-    <div class="av">
-        <img src="/assets/NTlogo.png" alt="Nigel A. Thomas" style="width:64px;height:64px;border-radius:50%;object-fit:cover;">
-    </div>
-    <div class="av-info">
-        <h4>Nigel A. Thomas</h4>
-        <div class="role">Hospitality Professional · F&amp;B Operations · Corporate Trainer</div>
-        <p>30+ years in F&amp;B and hospitality operations across India, the Middle East, and the USA. Founder of <a href="https://www.joblynk.live">JobLynk.live</a>, India's careers platform for hospitality and maritime professionals.</p>
-    </div>
-</div>
 <footer style="background:#000;border-top:2px solid #d4af37;padding:35px;text-align:center;">
 <p style="color:#d4af37;font-size:22px;font-weight:bold;">
         Nigel Thomas
@@ -685,62 +667,36 @@ Hospitality Executive • Operations Leader • Hospitality Trainer
         © 2026 Nigel Anthony Thomas. All Rights Reserved.
     </p>
 </footer>
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
 
-
-
+</div>
+</div>
 <style>
-.related-pages{margin:2.5rem 0 1rem;padding-top:1.5rem;border-top:1px solid #333;}
-.related-pages h2{font-size:1.1rem;margin-bottom:0.75rem;color:#d4af37;}
-.related-pages-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.5rem;}
-.related-pages-list a{color:#d4af37;text-decoration:none;}
-.related-pages-list a:hover{text-decoration:underline;}
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
 </style>
 
-
-
-<!-- NT INFOMATICS -->
-
-<!-- END NT INFOMATICS -->
-
-
-
-<script id="nt-infomatics-js">
-document.addEventListener("click", function (event) {
-    var button = event.target.closest(".nt-infomatics-button");
-    if (!button) return;
-    var panelId = button.getAttribute("data-panel");
-    var panel = document.getElementById(panelId);
-    if (!panel) return;
-    var opened = panel.classList.toggle("show");
-    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
-    button.setAttribute("aria-expanded", opened ? "true" : "false");
-    panel.setAttribute("aria-hidden", opened ? "false" : "true");
-});
-</script>
-
-
+<div class="infomatics-launcher">
+<button aria-expanded="false" class="infomatics-btn" onclick="var p=document.getElementById('infomatics-panel');var open=p.classList.toggle('active');this.setAttribute('aria-expanded', open?'true':'false');" type="button">
+    Infomatics
+  </button>
+<div class="infomatics-panel" id="infomatics-panel">
+<img alt="Nigel Anthony Thomas - Hospitality Manager (F&amp;B Operations)" src="assets/fb-operations-poster.png" style="width:100%;max-width:900px;border:4px solid #d4af37;border-radius:12px;box-shadow:0 10px 30px rgba(212,175,55,.35);"/>
 </div>
-
-<!-- NT INFOMATICS -->
-<div class="nt-infomatics-section" style="margin: 40px 0;">
-    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel-about" aria-expanded="false">
-        VIEW INFOMATICS
-    </button>
-    <div id="nt-infomatics-panel-about" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
-        <div class="poster-wrap">
-            <img src="/assets/career-summary.png" alt="Infographic" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto;"/>
-        </div>
-        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
-            💡 Right-click the image to save it.
-        </p>
-    </div>
 </div>
-<!-- END NT INFOMATICS -->
-
-<div style="text-align: center; margin: 20px 0 10px; clear: both; display: block !important; visibility: visible !important;">
-    <a href="blog.html" style="display: inline-block !important; padding: 14px 40px; background: #d4af37 !important; color: #000 !important; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e; visibility: visible !important;">
-        Read More Articles →
-    </a>
-</div>
+<style>
+.infomatics-launcher{margin:2rem 0;}
+.infomatics-btn{padding:0.6em 1.4em;border:none;border-radius:6px;background:#1f2937;color:#fff;font-weight:600;cursor:pointer;}
+.infomatics-btn:hover{background:#374151;}
+.infomatics-panel{display:none;margin-top:1rem;}
+.infomatics-panel.active{display:block;}
+</style>
 </body>
 </html>
