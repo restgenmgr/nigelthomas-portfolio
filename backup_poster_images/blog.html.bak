@@ -426,7 +426,7 @@ Topics include:
 <div class="blog-grid">
 <!-- NEW: Types of Water Card -->
 <div class="article-card">
-
+<img alt="Types of Water Used in Restaurants" loading="lazy" src="assets/types-of-water-used-in-restaurant.jpg"/>
 <div class="article-title">
 <a href="types-of-water-used-in-restaurant.html">
       Types of Water Used in Restaurants – A Complete Guide
@@ -445,7 +445,7 @@ Topics include:
 </div>
 <!-- END NEW CARD -->
 <div class="article-card">
-
+<img alt="Nigel Thomas Hospitality" src="assets/nigel-thomas-rgm.png"/>
 <div class="article-title">
 <a href="blog.html">
 
@@ -474,7 +474,7 @@ Read More →
 </div>
 <div class="article-card">
 <a href="blog/fine-dining-silverware.html">
-
+<img alt="Fine Dining Silverware: Types of Knives and Forks" src="assets/fine-dining-silverware.jpg"/>
 </a>
 <div class="article-title">
 <a href="blog/fine-dining-silverware.html">
@@ -492,7 +492,7 @@ Read More →
 </a>
 </div>
 <div class="article-card">
-
+<img alt="Operations Manager vs Restaurant Manager" loading="lazy" src="assets/operations-manager-vs-restaurant-manager.jpg"/>
 <div class="article-title">
 <a href="operations-manager-vs-restaurant-manager.html">
 
@@ -521,7 +521,7 @@ Read More →
 </div> <!-- Closes Operations Manager card -->
 <!-- NEW: 10-Day P&L Control Cycle Card -->
 <div class="article-card">
-
+<img alt="10-Day P&amp;L Control Cycle" loading="lazy" src="assets/NTlogo.png"/>
 <div class="article-title">
 <a href="profit-loss-10-day-cycle.html">
       Profit is Lost Every Day – The 10-Day P&amp;L Control Cycle
@@ -541,7 +541,7 @@ Read More →
 <!-- END NEW CARD -->
 <!-- NEW: Area Manager vs Cluster Manager Card -->
 <div class="article-card">
-
+<img alt="Area Manager vs Cluster Manager in F&amp;B Operations" loading="lazy" src="assets/area-manager-vs-cluster-manager.jpg"/>
 <div class="article-title">
 <a href="area-manager-vs-cluster-manager.html">
       Area Manager vs Cluster Manager in F&amp;B Operations
@@ -561,7 +561,7 @@ Read More →
 <!-- END NEW CARD 2 -->
 <!-- NEW: Restaurant Manager Roles & Responsibilities Card -->
 <div class="article-card">
-
+<img alt="Roles &amp; Responsibilities of a Restaurant Manager" loading="lazy" src="assets/roles-responsibilities-restaurant-manager.jfif"/>
 <div class="article-title">
 <a href="restaurant-manager-roles-and-responsibilities.html">
       Roles &amp; Responsibilities of a Restaurant Manager
@@ -581,7 +581,7 @@ Read More →
 <!-- END NEW CARD 3 -->
 <!-- NEW: HACCP Card -->
 <div class="article-card">
-
+<img alt="HACCP Hazard Analysis and Critical Control Points" loading="lazy" src="assets/haccp.jpg"/>
 <div class="article-title">
 <a href="haccp-hazard-analysis-critical-control-points.html">
       HACCP: Hazard Analysis and Critical Control Points Explained
@@ -601,7 +601,7 @@ Read More →
 <!-- END NEW CARD 4 -->
 <!-- NEW: Direct vs OTA Booking Guest Occasion Card -->
 <div class="article-card">
-
+<img alt="Direct vs Third-Party Booking the Guest Occasion" loading="lazy" src="assets/booking-guest-occasion.jpg"/>
 <div class="article-title">
 <a href="direct-vs-ota-booking-guest-occasion.html">
       Direct vs Third-Party Booking: What It Costs to Book a Guest Occasion
@@ -640,7 +640,7 @@ Read More →
 <!-- END NEW CARD 6 -->
 <!-- NEW: Food Cost Basics Card -->
 <div class="article-card">
-
+<img alt="Food Cost Basics" loading="lazy" src="assets/food-cost-basics-nigel-a-thomas.jpg"/>
 <div class="article-title">
 <a href="food-cost-basics.html">
       Food Cost Basics
@@ -660,7 +660,7 @@ Read More →
 <!-- END NEW CARD 7 -->
 <!-- NEW: Types of Cheese Used in Hotels Card -->
 <div class="article-card">
-
+<img alt="Types of Cheese Used in Hotels" loading="lazy" src="assets/types-of-cheese-used-in-hotels.jpg"/>
 <div class="article-title">
 <a href="types-of-cheese-used-in-hotels.html">
       Types of Cheese Used in Hotels
@@ -680,7 +680,7 @@ Read More →
 <!-- END NEW CARD 9 -->
 <!-- NEW: Restaurant Financial KPIs Card -->
 <div class="article-card">
-
+<img alt="Financial KPIs in Restaurants" loading="lazy" src="assets/restaurant-financial-kpis-nigel-a-thomas.jpg"/>
 <div class="article-title">
 <a href="restaurant-financial-kpis.html">
       Financial KPIs in Restaurants: The 10 Numbers Every Manager Must Track
@@ -700,7 +700,7 @@ Read More →
 <!-- END NEW CARD 8 -->
 <!-- NEW: History of Wine Card -->
 <div class="article-card">
-
+<img alt="The Origin and History of Wine and World Wine Growing Regions" loading="lazy" src="assets/types-of-wine.jpg"/>
 <div class="article-title">
 <a href="history-of-wine-world-wine-regions.html">
       The Origin and History of Wine &amp; World Wine Growing Regions
@@ -718,7 +718,7 @@ Read More →
   </a>
 </div>
 <div class="article-card">
-
+<img alt="Top 5 Classic Pasta Sauces infographic" loading="lazy" src="assets/types-of-pasta-sauces.jpg"/>
 <div class="article-title">Top 5 Classic Pasta Sauces Every Hospitality Professional Should Know</div>
 <div class="article-meta">Culinary Reference | August 2026 | ~9 min read</div>
 <div class="article-excerpt">Bolognese, Arrabbiata, Alfredo, Pesto Genovese, Carbonara - ingredients, allergens, correct pasta pairings, and how to train front-of-house staff to recommend them with confidence.</div>
@@ -1930,22 +1930,6 @@ document.addEventListener("click", function (event) {
         VIEW INFOMATICS
     </button>
     <div id="nt-infomatics-panel-blog" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
-<img alt="Types of Water Used in Restaurants" loading="lazy" src="assets/types-of-water-used-in-restaurant.jpg"/>
-<img alt="Nigel Thomas Hospitality" src="assets/nigel-thomas-rgm.png"/>
-<img alt="Fine Dining Silverware: Types of Knives and Forks" src="assets/fine-dining-silverware.jpg"/>
-<img alt="Operations Manager vs Restaurant Manager" loading="lazy" src="assets/operations-manager-vs-restaurant-manager.jpg"/>
-<img alt="10-Day P&amp;L Control Cycle" loading="lazy" src="assets/NTlogo.png"/>
-<img alt="Area Manager vs Cluster Manager in F&amp;B Operations" loading="lazy" src="assets/area-manager-vs-cluster-manager.jpg"/>
-<img alt="Roles &amp; Responsibilities of a Restaurant Manager" loading="lazy" src="assets/roles-responsibilities-restaurant-manager.jfif"/>
-<img alt="HACCP Hazard Analysis and Critical Control Points" loading="lazy" src="assets/haccp.jpg"/>
-<img alt="Direct vs Third-Party Booking the Guest Occasion" loading="lazy" src="assets/booking-guest-occasion.jpg"/>
-<img alt="Food Cost Basics" loading="lazy" src="assets/food-cost-basics-nigel-a-thomas.jpg"/>
-<img alt="Types of Cheese Used in Hotels" loading="lazy" src="assets/types-of-cheese-used-in-hotels.jpg"/>
-<img alt="Financial KPIs in Restaurants" loading="lazy" src="assets/restaurant-financial-kpis-nigel-a-thomas.jpg"/>
-<img alt="The Origin and History of Wine and World Wine Growing Regions" loading="lazy" src="assets/types-of-wine.jpg"/>
-<img alt="Top 5 Classic Pasta Sauces infographic" loading="lazy" src="assets/types-of-pasta-sauces.jpg"/>
-
-
         <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px;">
             
         </div>

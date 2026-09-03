@@ -134,7 +134,7 @@ a{color:#d4af37}
 <h2>Conclusion</h2>
 <p>Every guest occasion is a small decision point for the property, not just the guest. Third-party platforms have their place in the funnel — but the moments that matter most to a guest are exactly the moments worth bringing back in-house, where the margin, the data, and the relationship all stay with the team that earned them.</p>
 <div class="byline-box">
-
+<img alt="Nigel A. Thomas" src="assets/nat-headshot.jpg"/>
 <div>
 <div class="name">Nigel A. Thomas</div>
 <div class="role">Hospitality Executive &amp; Corporate Trainer • 30+ Years • Resorts, Restaurants &amp; Bars, Cruise Line Operations</div>
@@ -203,9 +203,6 @@ document.addEventListener("click", function (event) {
         VIEW INFOMATICS
     </button>
     <div id="nt-infomatics-panel-direct-vs-ota-booking-guest-occasion" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
-<img alt="Nigel A. Thomas" src="assets/nat-headshot.jpg"/>
-
-
         <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:8px;"/>
         <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
             💡 Right-click the image to save it.

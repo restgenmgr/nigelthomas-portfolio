@@ -557,7 +557,17 @@ padding:25px;
 
 
 <!-- NT INFOMATICS -->
-
+<div class="nt-infomatics-section" style="margin: 40px 0;">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel-types-of-cheese-used-in-hotels" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel-types-of-cheese-used-in-hotels" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
+        <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:8px;"/>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
 <!-- END NT INFOMATICS -->
 
 <script id="nt-infomatics-js">
@@ -573,17 +583,5 @@ document.addEventListener("click", function (event) {
     panel.setAttribute("aria-hidden", opened ? "false" : "true");
 });
 </script>
-
-<div class="nt-infomatics-section" style="margin: 40px 0;">
-    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel-types-of-cheese-used-in-hotels" aria-expanded="false">
-        VIEW INFOMATICS
-    </button>
-    <div id="nt-infomatics-panel-types-of-cheese-used-in-hotels" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
-        <img src="/assets/infomatics-poster.jpg" alt="Infographic" style="max-width:100%; height:auto; display:block; margin:0 auto; border-radius:8px;"/>
-        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
-            💡 Right-click the image to save it.
-        </p>
-    </div>
-</div>
 </body>
 </html>
