@@ -407,7 +407,7 @@
             border-bottom-color: var(--gold);
         }
 
-        /* ── Sitemap / Footer Nav ── */
+        /* ── Sitemap ── */
         .sitemap-section {
             margin: 40px 0 10px;
             padding: 20px 24px;
@@ -751,34 +751,45 @@
                     </div>
                 </div><!-- /poster-wrap -->
 
-                <!-- ─── RELATED BLOGS ─── -->
+                <!-- ─── RELATED BLOGS ─── (Updated with actual existing pages) -->
                 <div class="related-blogs">
                     <h3>📚 More Management Articles</h3>
                     <ul>
-                        <li><a href="https://www.nigelthomas.live/restaurant-management-101.html">Restaurant Management 101</a></li>
-                        <li><a href="https://www.nigelthomas.live/foh-boh-coordination-guide.html">FOH &amp; BOH Coordination Guide</a></li>
-                        <li><a href="https://www.nigelthomas.live/sop-compliance-in-hospitality.html">SOP Compliance in Hospitality</a></li>
-                        <li><a href="https://www.nigelthomas.live/peak-hour-management-strategies.html">Peak-Hour Management Strategies</a></li>
-                        <li><a href="https://www.nigelthomas.live/hospitality-audit-best-practices.html">Hospitality Audit Best Practices</a></li>
+                        <li><a href="operations-manager-vs-restaurant-manager.html">Operations Manager vs Restaurant Manager</a></li>
+                        <li><a href="restaurant-manager-roles-and-responsibilities.html">Restaurant Manager Roles &amp; Responsibilities</a></li>
+                        <li><a href="restaurant-operational-challenges-solutions.html">Operational Challenges &amp; Solutions</a></li>
+                        <li><a href="foh-boh-equipment-guide.html">FOH &amp; BOH Equipment Guide</a></li>
+                        <li><a href="restaurant-sops-complete-operations-handbook.html">Restaurant SOPs Handbook</a></li>
+                        <li><a href="restaurant-financial-kpis.html">Financial KPIs for Restaurants</a></li>
                     </ul>
                 </div>
 
-                <!-- ─── SITEMAP ─── -->
+                <!-- ─── SITEMAP ─── (Based on actual file list) -->
                 <div id="sitemap" class="sitemap-section">
                     <h3>🗺️ Sitemap</h3>
                     <div class="sitemap-grid">
-                        <a href="https://www.nigelthomas.live/">Home</a>
-                        <a href="https://www.nigelthomas.live/about.html">About</a>
-                        <a href="https://www.nigelthomas.live/blog.html">Blog</a>
-                        <a href="https://www.nigelthomas.live/contact.html">Contact</a>
-                        <a href="https://www.nigelthomas.live/operations-management-first-role-restaurant-manager.html">Operations Management</a>
-                        <a href="https://www.nigelthomas.live/hospitality-career-guide.html">Hospitality Career Guide</a>
-                        <a href="https://www.nigelthomas.live/restaurant-management-101.html">Restaurant Management 101</a>
-                        <a href="https://www.nigelthomas.live/foh-boh-coordination-guide.html">FOH &amp; BOH Coordination</a>
-                        <a href="https://www.nigelthomas.live/sop-compliance-in-hospitality.html">SOP Compliance</a>
-                        <a href="https://www.nigelthomas.live/peak-hour-management-strategies.html">Peak-Hour Strategies</a>
-                        <a href="https://www.nigelthomas.live/hospitality-audit-best-practices.html">Audit Best Practices</a>
-                        <a href="https://www.nigelthomas.live/privacy-policy.html">Privacy Policy</a>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="operations-management-first-role-restaurant-manager.html">Operations Management</a>
+                        <a href="operations-manager-vs-restaurant-manager.html">Ops vs Restaurant Mgr</a>
+                        <a href="restaurant-manager-roles-and-responsibilities.html">Restaurant Manager Roles</a>
+                        <a href="restaurant-operational-challenges-solutions.html">Operational Challenges</a>
+                        <a href="foh-boh-equipment-guide.html">FOH/BOH Equipment</a>
+                        <a href="restaurant-sops-complete-operations-handbook.html">SOP Handbook</a>
+                        <a href="restaurant-financial-kpis.html">Financial KPIs</a>
+                        <a href="hospitality-career-guide.html">Hospitality Career Guide</a>
+                        <a href="building-a-career-in-hospitality-guide.html">Building a Career in Hospitality</a>
+                        <a href="general-manager-vs-hotel-manager.html">GM vs Hotel Manager</a>
+                        <a href="hotel-gm-competency-framework.html">GM Competency Framework</a>
+                        <a href="restaurant-general-manager-complete-guide.html">Restaurant GM Guide</a>
+                        <a href="how-to-control-food-cost.html">Food Cost Control</a>
+                        <a href="food-cost-control-complete-guide.html">Food Cost Complete Guide</a>
+                        <a href="what-is-a-kpi.html">What is a KPI?</a>
+                        <a href="ultimate-kpi-playbook-fb-leaders.html">KPI Playbook</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms</a>
                     </div>
                 </div>
 
@@ -790,7 +801,9 @@
             <p style="margin:0 0 6px;">&copy; 2026 Nigel A. Thomas — Hospitality Trainer &amp; Professional</p>
             <p style="margin:0;">30+ years cruise ships, resorts in Middle East, USA, and India</p>
             <p style="margin:8px 0 0;font-size:0.8rem;">
-                <a href="https://www.nigelthomas.live/privacy-policy.html" style="color:var(--text-dim);text-decoration:underline;">Privacy Policy</a>
+                <a href="privacy-policy.html" style="color:var(--text-dim);text-decoration:underline;">Privacy Policy</a>
+                &nbsp;·&nbsp;
+                <a href="terms.html" style="color:var(--text-dim);text-decoration:underline;">Terms</a>
                 &nbsp;·&nbsp;
                 <a href="#sitemap" style="color:var(--text-dim);text-decoration:underline;">Sitemap</a>
             </p>
@@ -822,7 +835,6 @@
                     const container = document.getElementById('poster-container');
                     if (!container) return;
 
-                    // Show a loading state
                     const originalText = this.textContent;
                     this.textContent = '⏳ Generating...';
                     this.disabled = true;
@@ -846,7 +858,6 @@
                         downloadBtn.disabled = false;
                     }).catch(function(err) {
                         console.warn('html2canvas error, falling back to simple download.', err);
-                        // Fallback: open the poster in a new window for manual save
                         const win = window.open('', '_blank');
                         if (win) {
                             win.document.write('<html><head><title>Operations Management Poster</title><style>body{margin:0;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#12100e;font-family:Segoe UI,Arial,sans-serif;}</style></head><body>');
