@@ -278,34 +278,69 @@
             display: block;
         }
 
-        /* ── Poster / Infographic ── */
+        /* ── Poster with Frame ── */
         .poster-wrap {
-            background: #12100e;
-            border-radius: 10px;
-            padding: 28px 24px 20px;
-            border: 1px solid #2a2825;
+            background: #0d0b0a;
+            border-radius: 12px;
+            padding: 16px;
             position: relative;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.7), inset 0 0 0 1px #2a2825;
         }
+        /* The frame itself */
+        .poster-frame {
+            background: #12100e;
+            border: 3px solid #2a2825;
+            border-radius: 8px;
+            padding: 24px 22px 18px;
+            position: relative;
+            box-shadow: inset 0 0 20px rgba(212,175,55,0.05);
+        }
+        /* Decorative corner accents */
+        .poster-frame::before,
+        .poster-frame::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-color: var(--gold);
+            border-style: solid;
+            border-width: 0;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+        .poster-frame::before {
+            top: 6px;
+            left: 6px;
+            border-top-width: 2px;
+            border-left-width: 2px;
+        }
+        .poster-frame::after {
+            bottom: 6px;
+            right: 6px;
+            border-bottom-width: 2px;
+            border-right-width: 2px;
+        }
+
         .poster-wrap .poster-title {
             font-size: 1.8rem;
             font-weight: 800;
             color: var(--gold);
             text-align: center;
             letter-spacing: 2px;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
         .poster-wrap .poster-sub {
             text-align: center;
             color: var(--text-dim);
             font-size: 0.95rem;
-            margin-bottom: 22px;
+            margin-bottom: 20px;
             border-bottom: 1px solid #2a2825;
-            padding-bottom: 16px;
+            padding-bottom: 14px;
         }
         .poster-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 16px 24px;
+            gap: 14px 20px;
         }
         .poster-grid .pg-item {
             background: #1a1816;
@@ -466,6 +501,9 @@
                 padding: 18px 14px;
             }
             .poster-wrap {
+                padding: 10px;
+            }
+            .poster-frame {
                 padding: 16px 12px;
             }
             .poster-wrap .poster-title {
@@ -646,112 +684,114 @@
             </button>
 
             <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true">
-                <!-- Poster -->
+                <!-- Poster with frame -->
                 <div id="poster-container" class="poster-wrap">
-                    <div class="poster-title">OPERATIONS MANAGEMENT</div>
-                    <div class="poster-sub">The First Role of a Restaurant Manager</div>
+                    <div class="poster-frame">
+                        <div class="poster-title">OPERATIONS MANAGEMENT</div>
+                        <div class="poster-sub">The First Role of a Restaurant Manager</div>
 
-                    <div class="poster-grid">
-                        <!-- Daily Operations -->
-                        <div class="pg-item">
-                            <h4>📋 Daily Operations</h4>
-                            <ul>
-                                <li>Staff readiness &amp; positioning</li>
-                                <li>FOH &amp; BOH readiness</li>
-                                <li>Product availability</li>
-                                <li>Equipment functionality</li>
-                                <li>Cleanliness &amp; packaging</li>
-                                <li>POS &amp; delivery systems</li>
-                                <li>Monitor service flow</li>
-                                <li>Resolve issues immediately</li>
-                            </ul>
-                        </div>
+                        <div class="poster-grid">
+                            <!-- Daily Operations -->
+                            <div class="pg-item">
+                                <h4>📋 Daily Operations</h4>
+                                <ul>
+                                    <li>Staff readiness &amp; positioning</li>
+                                    <li>FOH &amp; BOH readiness</li>
+                                    <li>Product availability</li>
+                                    <li>Equipment functionality</li>
+                                    <li>Cleanliness &amp; packaging</li>
+                                    <li>POS &amp; delivery systems</li>
+                                    <li>Monitor service flow</li>
+                                    <li>Resolve issues immediately</li>
+                                </ul>
+                            </div>
 
-                        <!-- Opening & Closing -->
-                        <div class="pg-item">
-                            <h4>🔓 Opening &amp; Closing</h4>
-                            <p><strong>Opening:</strong> Staff, equipment, temps, product, mise en place, POS, deliveries.</p>
-                            <p><strong>Closing:</strong> Sanitation, storage, waste, cash, shutdown, security, reports.</p>
-                            <p style="font-size:0.8rem;color:var(--gold);margin-top:4px;">✓ Use checklists — not memory.</p>
-                        </div>
+                            <!-- Opening & Closing -->
+                            <div class="pg-item">
+                                <h4>🔓 Opening &amp; Closing</h4>
+                                <p><strong>Opening:</strong> Staff, equipment, temps, product, mise en place, POS, deliveries.</p>
+                                <p><strong>Closing:</strong> Sanitation, storage, waste, cash, shutdown, security, reports.</p>
+                                <p style="font-size:0.8rem;color:var(--gold);margin-top:4px;">✓ Use checklists — not memory.</p>
+                            </div>
 
-                        <!-- SOP Compliance -->
-                        <div class="pg-item">
-                            <h4>📐 SOP Compliance</h4>
-                            <p style="font-size:0.85rem;">SOP → Training → Observation → Measurement → Correction</p>
-                            <p style="font-size:0.82rem;color:var(--text-dim);">Example: SOP 5–10 min, actual 15–20 min.<br/>Investigate: prep, manpower, equipment, rotation, skills, workflow.</p>
-                        </div>
+                            <!-- SOP Compliance -->
+                            <div class="pg-item">
+                                <h4>📐 SOP Compliance</h4>
+                                <p style="font-size:0.85rem;">SOP → Training → Observation → Measurement → Correction</p>
+                                <p style="font-size:0.82rem;color:var(--text-dim);">Example: SOP 5–10 min, actual 15–20 min.<br/>Investigate: prep, manpower, equipment, rotation, skills, workflow.</p>
+                            </div>
 
-                        <!-- FOH & BOH Coordination -->
-                        <div class="pg-item">
-                            <h4>🤝 FOH &amp; BOH Coordination</h4>
-                            <p>Bridge the two. One team, one goal. Identify bottlenecks, reallocate, recover service.</p>
-                        </div>
+                            <!-- FOH & BOH Coordination -->
+                            <div class="pg-item">
+                                <h4>🤝 FOH &amp; BOH Coordination</h4>
+                                <p>Bridge the two. One team, one goal. Identify bottlenecks, reallocate, recover service.</p>
+                            </div>
 
-                        <!-- Peak-Hour Management -->
-                        <div class="pg-item">
-                            <h4>⏱️ Peak-Hour Management</h4>
-                            <p><strong>Before:</strong> Forecast, schedule, mise en place, stock.</p>
-                            <p><strong>During:</strong> Queue, prep time, accuracy, complaints, bottlenecks.</p>
-                            <p><strong>After:</strong> Analyze, adjust, improve.</p>
-                        </div>
+                            <!-- Peak-Hour Management -->
+                            <div class="pg-item">
+                                <h4>⏱️ Peak-Hour Management</h4>
+                                <p><strong>Before:</strong> Forecast, schedule, mise en place, stock.</p>
+                                <p><strong>During:</strong> Queue, prep time, accuracy, complaints, bottlenecks.</p>
+                                <p><strong>After:</strong> Analyze, adjust, improve.</p>
+                            </div>
 
-                        <!-- Speed & Efficiency -->
-                        <div class="pg-item">
-                            <h4>⚡ Speed &amp; Efficiency</h4>
-                            <p style="font-size:0.82rem;">Order → Prepared → Checked → Delivered</p>
-                            <p style="color:var(--gold);font-size:0.85rem;font-weight:600;">Fast + Accurate + Consistent + Profitable</p>
-                            <p style="font-size:0.8rem;color:var(--text-dim);">Fast + Wrong = Bad Operation<br/>Fast + Poor Quality = Bad Operation</p>
-                        </div>
+                            <!-- Speed & Efficiency -->
+                            <div class="pg-item">
+                                <h4>⚡ Speed &amp; Efficiency</h4>
+                                <p style="font-size:0.82rem;">Order → Prepared → Checked → Delivered</p>
+                                <p style="color:var(--gold);font-size:0.85rem;font-weight:600;">Fast + Accurate + Consistent + Profitable</p>
+                                <p style="font-size:0.8rem;color:var(--text-dim);">Fast + Wrong = Bad Operation<br/>Fast + Poor Quality = Bad Operation</p>
+                            </div>
 
-                        <!-- Operational Audits -->
-                        <div class="pg-item">
-                            <h4>🔍 Operational Audits</h4>
-                            <p><strong>People</strong> · <strong>Product</strong> · <strong>Process</strong> · <strong>Place</strong> · <strong>Performance</strong></p>
-                            <p style="font-size:0.8rem;">Audit → Gap → Root Cause → Action → Follow-up</p>
-                        </div>
+                            <!-- Operational Audits -->
+                            <div class="pg-item">
+                                <h4>🔍 Operational Audits</h4>
+                                <p><strong>People</strong> · <strong>Product</strong> · <strong>Process</strong> · <strong>Place</strong> · <strong>Performance</strong></p>
+                                <p style="font-size:0.8rem;">Audit → Gap → Root Cause → Action → Follow-up</p>
+                            </div>
 
-                        <!-- Problem Solving -->
-                        <div class="pg-item">
-                            <h4>🧠 Problem Solving</h4>
-                            <p style="font-size:0.82rem;">"How do I prevent this from happening again?"</p>
-                            <p style="font-size:0.8rem;color:var(--text-dim);">Complaint → Data → Pattern → Root Cause → Corrective Action → Measurement</p>
-                        </div>
+                            <!-- Problem Solving -->
+                            <div class="pg-item">
+                                <h4>🧠 Problem Solving</h4>
+                                <p style="font-size:0.82rem;">"How do I prevent this from happening again?"</p>
+                                <p style="font-size:0.8rem;color:var(--text-dim);">Complaint → Data → Pattern → Root Cause → Corrective Action → Measurement</p>
+                            </div>
 
-                        <!-- The Cycle - full width -->
-                        <div class="pg-item poster-full">
-                            <h4>🔄 The Operations Management Cycle</h4>
-                            <p style="font-size:0.82rem;display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:center;">
-                                Plan → Prepare → Execute → Monitor → Identify Gaps → Analyze Root Cause → Correct → Measure → Standardize &amp; Improve
-                            </p>
-                        </div>
+                            <!-- The Cycle - full width -->
+                            <div class="pg-item poster-full">
+                                <h4>🔄 The Operations Management Cycle</h4>
+                                <p style="font-size:0.82rem;display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:center;">
+                                    Plan → Prepare → Execute → Monitor → Identify Gaps → Analyze Root Cause → Correct → Measure → Standardize &amp; Improve
+                                </p>
+                            </div>
 
-                        <!-- Quick Checklist - full width -->
-                        <div class="pg-item poster-full">
-                            <h4>✅ Quick Manager Checklist</h4>
-                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 16px;font-size:0.82rem;color:var(--text-dim);">
-                                <span>✓ Team ready?</span>
-                                <span>✓ Product available?</span>
-                                <span>✓ Equipment working?</span>
-                                <span>✓ SOPs followed?</span>
-                                <span>✓ FOH &amp; BOH aligned?</span>
-                                <span>✓ Operation on track?</span>
-                                <span>✓ Fast, accurate, consistent?</span>
-                                <span>✓ Profitable?</span>
+                            <!-- Quick Checklist - full width -->
+                            <div class="pg-item poster-full">
+                                <h4>✅ Quick Manager Checklist</h4>
+                                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 16px;font-size:0.82rem;color:var(--text-dim);">
+                                    <span>✓ Team ready?</span>
+                                    <span>✓ Product available?</span>
+                                    <span>✓ Equipment working?</span>
+                                    <span>✓ SOPs followed?</span>
+                                    <span>✓ FOH &amp; BOH aligned?</span>
+                                    <span>✓ Operation on track?</span>
+                                    <span>✓ Fast, accurate, consistent?</span>
+                                    <span>✓ Profitable?</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="poster-footer">
-                        <div>
-                            <div class="pf-brand">Nigel A. Thomas</div>
-                            <div class="pf-url">www.nigelthomas.live</div>
+                        <div class="poster-footer">
+                            <div>
+                                <div class="pf-brand">Nigel A. Thomas</div>
+                                <div class="pf-url">www.nigelthomas.live</div>
+                            </div>
+                            <button class="poster-download-btn" id="downloadPosterBtn">⬇ Download Poster</button>
                         </div>
-                        <button class="poster-download-btn" id="downloadPosterBtn">⬇ Download Poster</button>
-                    </div>
+                    </div><!-- /poster-frame -->
                 </div><!-- /poster-wrap -->
 
-                <!-- ─── RELATED BLOGS ─── (Updated with actual existing pages) -->
+                <!-- ─── RELATED BLOGS ─── -->
                 <div class="related-blogs">
                     <h3>📚 More Management Articles</h3>
                     <ul>
@@ -764,7 +804,7 @@
                     </ul>
                 </div>
 
-                <!-- ─── SITEMAP ─── (Based on actual file list) -->
+                <!-- ─── SITEMAP ─── -->
                 <div id="sitemap" class="sitemap-section">
                     <h3>🗺️ Sitemap</h3>
                     <div class="sitemap-grid">
@@ -825,6 +865,13 @@
                     this.setAttribute('aria-expanded', String(!expanded));
                     panel.setAttribute('aria-hidden', String(expanded));
                     panel.style.display = expanded ? 'none' : 'block';
+
+                    // Smooth scroll to panel when opened
+                    if (!expanded) {
+                        setTimeout(() => {
+                            panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 100);
+                    }
                 });
             }
 
