@@ -721,6 +721,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.nigelthomas.live/blog/wine-service-etiquette.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.nigelthomas.live/blog/cross-contamination-prevention.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 <url>
   <loc>https://www.nigelthomas.live/blog/fine-dining-silverware.html</loc>
   <lastmod>2026-08-30</lastmod>
