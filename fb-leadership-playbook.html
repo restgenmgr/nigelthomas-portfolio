@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The F&B Leadership Playbook – Interview Prep & KPIs</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* --- GLOBAL RESET & BASE --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #070707;
+      font-family: 'Inter', sans-serif;
+      color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      padding: 30px 18px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* --- MAIN CONTAINER (Poster / Blog Card) --- */
+    .poster {
+      max-width: 1040px;
+      width: 100%;
+      background: #111111;
+      border: 1px solid #c9a84c;
+      border-radius: 12px;
+      padding: 50px 50px 40px;
+      box-shadow: 0 0 70px rgba(201, 168, 76, 0.08);
+      transition: all 0.2s;
+    }
+
+    /* --- TYPOGRAPHY & COLORS --- */
+    .gold {
+      color: #d4af37;
+    }
+
+    .gold-border {
+      border-bottom: 2px solid #c9a84c;
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    .gold-divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #c9a84c, transparent);
+      margin: 28px 0 30px;
+      opacity: 0.6;
+    }
+
+    .gold-divider-thick {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+      margin: 30px 0 28px;
+    }
+
+    .text-light {
+      color: #dddddd;
+    }
+
+    .text-muted {
+      color: #a0a0a0;
+      font-size: 0.95rem;
+    }
+
+    /* --- HEADER / BRAND --- */
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .brand h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+      color: #d4af37;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    .brand .subhead {
+      font-weight: 300;
+      font-size: 1rem;
+      letter-spacing: 4px;
+      color: #bbbbbb;
+      text-transform: uppercase;
+      border-top: 1px solid #333;
+      padding-top: 8px;
+      width: 60%;
+      max-width: 360px;
+    }
+
+    /* --- MAIN TITLE --- */
+    .main-title {
+      text-align: center;
+      margin: 18px 0 8px;
+    }
+
+    .main-title h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.6rem;
+      letter-spacing: 1px;
+      color: #d4af37;
+      line-height: 1.2;
+    }
+
+    .main-title h3 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      letter-spacing: 6px;
+      color: #c0c0c0;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* --- SECTION HEADERS --- */
+    .section-head {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      color: #d4af37;
+      margin: 30px 0 16px;
+      letter-spacing: 0.5px;
+    }
+
+    .section-head small {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 0.9rem;
+      color: #b0b0b0;
+      letter-spacing: 2px;
+      display: block;
+      margin-top: -4px;
+    }
+
+    /* --- QUESTIONS LIST --- */
+    .q-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 6px;
+    }
+
+    .q-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 8px 12px 8px 0;
+      border-bottom: 1px solid #282828;
+    }
+
+    .q-num {
+      font-weight: 700;
+      color: #d4af37;
+      font-size: 1rem;
+      min-width: 44px;
+      letter-spacing: 0.5px;
+      padding-top: 1px;
+    }
+
+    .q-content {
+      flex: 1;
+    }
+
+    .q-content strong {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .q-content .answer {
+      display: block;
+      color: #c5c5c5;
+      font-weight: 300;
+      font-size: 0.95rem;
+      margin-top: 2px;
+      padding-left: 4px;
+      border-left: 2px solid #c9a84c44;
+      padding-left: 14px;
+    }
+
+    .q-content .answer em {
+      color: #d4af37;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* --- KPI GRID --- */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 40px;
+      margin-top: 6px;
+    }
+
+    .kpi-item {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+      padding: 8px 0 6px;
+      border-bottom: 1px solid #252525;
+    }
+
+    .kpi-num {
+      font-weight: 700;
+      color: #d4af37;
+      font-size: 0.85rem;
+      min-width: 26px;
+    }
+
+    .kpi-name {
+      font-weight: 600;
+      color: #f0f0f0;
+      font-size: 0.95rem;
+    }
+
+    .kpi-formula {
+      color: #b0b0b0;
+      font-size: 0.85rem;
+      font-weight: 300;
+      margin-left: auto;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* --- THE BIGGER LESSON --- */
+    .lesson-box {
+      background: #1a1a1a;
+      border-left: 4px solid #d4af37;
+      padding: 18px 26px 18px 28px;
+      margin: 24px 0 10px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .lesson-box p {
+      margin-bottom: 6px;
+    }
+
+    .lesson-box .highlight {
+      color: #d4af37;
+      font-weight: 600;
+    }
+
+    /* --- FOOTER --- */
+    .poster-footer {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 2px solid #1f1f1f;
+      text-align: center;
+    }
+
+    .poster-footer .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #d4af37;
+      letter-spacing: 2px;
+    }
+
+    .poster-footer .title {
+      font-weight: 300;
+      font-size: 1rem;
+      letter-spacing: 3px;
+      color: #bbbbbb;
+      text-transform: uppercase;
+      margin-top: -2px;
+    }
+
+    .poster-footer .linkedin {
+      color: #a0a0a0;
+      font-size: 0.95rem;
+      margin-top: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .poster-footer .linkedin a {
+      color: #d4af37;
+      text-decoration: none;
+      border-bottom: 1px dotted #d4af3744;
+      transition: border-color 0.2s;
+    }
+
+    .poster-footer .linkedin a:hover {
+      border-bottom-color: #d4af37;
+    }
+
+    .poster-footer .tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #d4af37;
+      margin-top: 14px;
+      letter-spacing: 1px;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 768px) {
+      .poster {
+        padding: 24px 18px 30px;
+      }
+
+      .brand h1 {
+        font-size: 1.6rem;
+      }
+
+      .main-title h2 {
+        font-size: 1.8rem;
+      }
+
+      .main-title h3 {
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+      }
+
+      .section-head {
+        font-size: 1.4rem;
+      }
+
+      .kpi-grid {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .kpi-formula {
+        white-space: normal;
+        text-align: left;
+        margin-left: 0;
+      }
+
+      .kpi-item {
+        flex-wrap: wrap;
+      }
+
+      .q-item {
+        padding: 6px 0;
+      }
+
+      .poster-footer .name {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .main-title h2 {
+        font-size: 1.4rem;
+      }
+
+      .section-head {
+        font-size: 1.2rem;
+      }
+
+      .q-content .answer {
+        padding-left: 8px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="poster">
+
+  <!-- BRAND HEADER -->
+  <div class="brand">
+    <h1>Nigel A Thomas</h1>
+    <div class="subhead">Hospitality Leadership &amp; Strategy</div>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- MAIN TITLE -->
+  <div class="main-title">
+    <h2>The F&B Leadership Playbook</h2>
+    <h3>15 Interview Questions &amp; 10 Must-Know KPIs</h3>
+  </div>
+
+  <div class="gold-divider-thick"></div>
+
+  <!-- CORE QUESTIONS (Q1 – Q10) -->
+  <div class="section-head">
+    Core Interview Questions
+    <small>Q1 – Q10</small>
+  </div>
+
+  <div class="q-list">
+
+    <div class="q-item">
+      <span class="q-num">Q1.</span>
+      <div class="q-content">
+        <strong>Tell me about yourself.</strong>
+        <span class="answer">Clear intro → relevant experience → why you are the right fit.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q2.</span>
+      <div class="q-content">
+        <strong>Why are you interested in this role?</strong>
+        <span class="answer">Connect your experience to what specifically attracts you to this role.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q3.</span>
+      <div class="q-content">
+        <strong>Why should we hire you?</strong>
+        <span class="answer">Prove it with real achievements and results from past roles.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q4.</span>
+      <div class="q-content">
+        <strong>What are your strengths?</strong>
+        <span class="answer">Choose 2–3 strengths that match the job and back each one with a real example.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q5.</span>
+      <div class="q-content">
+        <strong>Tell me about a challenge you faced.</strong>
+        <span class="answer">Focus on what you did, the outcome, and what you learned – not just the problem.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q6.</span>
+      <div class="q-content">
+        <strong>Describe a conflict with a coworker.</strong>
+        <span class="answer">Show empathy, focus on the solution, and explain how you worked together to resolve it.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q7.</span>
+      <div class="q-content">
+        <strong>Tell me about a time you failed.</strong>
+        <span class="answer">Own the mistake, explain what changed afterward, and focus on the lesson learned.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q8.</span>
+      <div class="q-content">
+        <strong>What is your biggest weakness?</strong>
+        <span class="answer">Choose a genuine weakness, explain what you are doing about it, and show your progress.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q9.</span>
+      <div class="q-content">
+        <strong>Why are you leaving your current job?</strong>
+        <span class="answer">Keep it positive. Focus on growth and new opportunities – never on complaints.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q10.</span>
+      <div class="q-content">
+        <strong>Where do you see yourself in 5 years?</strong>
+        <span class="answer">Show ambition, but make sure your goals connect naturally to this opportunity.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- ADVANCED LEADERSHIP QUESTIONS (Q11 – Q15) -->
+  <div class="section-head">
+    Advanced Leadership Questions
+    <small>Q11 – Q15</small>
+  </div>
+
+  <div class="q-list">
+
+    <div class="q-item">
+      <span class="q-num">Q11.</span>
+      <div class="q-content">
+        <strong>How do you handle a difficult guest?</strong>
+        <span class="answer">Acknowledge their frustration, listen without interrupting, apologise sincerely, take ownership of the solution, and follow up to ensure satisfaction.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q12.</span>
+      <div class="q-content">
+        <strong>How do you prioritise tasks during a busy shift?</strong>
+        <span class="answer">Explain your system for triaging tasks, how you delegate to your team, and how you maintain quality standards under pressure.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q13.</span>
+      <div class="q-content">
+        <strong>How do you motivate your team?</strong>
+        <span class="answer">Lead by example, recognise wins publicly, create growth opportunities, and build a supportive team culture.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q14.</span>
+      <div class="q-content">
+        <strong>What is your approach to training new staff?</strong>
+        <span class="answer">Describe your step‑by‑step process: shadowing, hands‑on practice, structured feedback, and ongoing support beyond the initial training period.</span>
+      </div>
+    </div>
+
+    <div class="q-item">
+      <span class="q-num">Q15.</span>
+      <div class="q-content">
+        <strong>How do you handle mistakes made by your team members?</strong>
+        <span class="answer">Address issues privately, focus on solutions rather than blame, use mistakes as coaching moments, and maintain team morale.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="gold-divider-thick"></div>
+
+  <!-- 10 MUST-KNOW KPIs -->
+  <div class="section-head" style="margin-bottom:10px;">
+    10 Must-Know KPIs for F&amp;B Leaders
+    <small>Track what matters. Act on what drives profit.</small>
+  </div>
+
+  <div class="kpi-grid">
+
+    <div class="kpi-item">
+      <span class="kpi-num">1.</span>
+      <span class="kpi-name">Labor Cost %</span>
+      <span class="kpi-formula">Cost / Revenue × 100</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">2.</span>
+      <span class="kpi-name">REVPASH</span>
+      <span class="kpi-formula">Revenue / (Seats × Hours)</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">3.</span>
+      <span class="kpi-name">Table Turnover</span>
+      <span class="kpi-formula">Parties Seated / Tables</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">4.</span>
+      <span class="kpi-name">Break-Even Revenue</span>
+      <span class="kpi-formula">Fixed Costs / Contribution Margin</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">5.</span>
+      <span class="kpi-name">Employee Turnover %</span>
+      <span class="kpi-formula">Leavers / Avg Headcount × 100</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">6.</span>
+      <span class="kpi-name">Food Waste %</span>
+      <span class="kpi-formula">Waste Cost / Purchases × 100</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">7.</span>
+      <span class="kpi-name">Gross Profit Margin</span>
+      <span class="kpi-formula">(Revenue – COGS) / Revenue × 100</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">8.</span>
+      <span class="kpi-name">Booking Conversion %</span>
+      <span class="kpi-formula">Confirmations / Inquiries × 100</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">9.</span>
+      <span class="kpi-name">Complaint Resolution Time</span>
+      <span class="kpi-formula">Avg time to resolve</span>
+    </div>
+
+    <div class="kpi-item">
+      <span class="kpi-num">10.</span>
+      <span class="kpi-name">Upsell Success Rate</span>
+      <span class="kpi-formula">Upsells / Transactions × 100</span>
+    </div>
+
+  </div>
+
+  <!-- THE BIGGER LESSON -->
+  <div class="lesson-box">
+    <p style="font-weight:600; color:#d4af37; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">The Bigger Lesson</p>
+    <p style="font-size:1rem; font-weight:300; color:#e0e0e0;">
+      A KPI is only useful when it leads to an action.
+    </p>
+    <p style="margin-top:6px;">
+      <span class="highlight">A NUMBER</span> tells you <strong>what</strong> happened.<br />
+      <span class="highlight">ANALYSIS</span> helps you understand <strong>why</strong>.<br />
+      <span class="highlight">LEADERSHIP</span> decides <strong>what to do next</strong>.
+    </p>
+    <p style="margin-top:8px; color:#b0b0b0; font-style:italic; border-top:1px solid #2a2a2a; padding-top:8px;">
+      That is where F&amp;B management moves from simply controlling operations to actually leading the business.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="poster-footer">
+    <div class="name">Nigel A Thomas</div>
+    <div class="title">Hospitality Leadership &amp; Strategy</div>
+    <div class="linkedin">
+      LinkedIn: <a href="https://www.linkedin.com/in/nigel-thomas-66515534" target="_blank">www.linkedin.com/in/nigel-thomas-66515534</a>
+    </div>
+    <div class="tagline">"Lead with purpose. Measure with precision."</div>
+  </div>
+
+</div>
+
+</body>
+</html>
