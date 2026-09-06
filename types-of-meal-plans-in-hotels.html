@@ -73,6 +73,14 @@
         .readmore-btn{display:inline-block;padding:14px 40px;background:#d4af37;color:#000;text-decoration:none;border-radius:6px;font-weight:700;font-size:1.05rem;border:1px solid #b8962e;}
         .readmore-btn:hover{background:#e8c766;}
 
+        .related-card h2{color:#d4af37;margin-bottom:18px;font-size:1.3rem;}
+        .related-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+        .related-item{background:#161412;border:1px solid rgba(212,175,55,0.25);border-radius:10px;padding:16px 18px;text-decoration:none;display:block;transition:0.2s;}
+        .related-item:hover{border-color:#d4af37;background:#1c1916;}
+        .related-item .rt{color:#ecd48f;font-weight:700;font-size:0.98rem;margin-bottom:6px;}
+        .related-item .rd{color:#a89f8c;font-size:0.85rem;}
+        @media(max-width:600px){.related-list{grid-template-columns:1fr;}}
+
         .author-box{max-width:900px;margin:0 auto 40px;padding:20px;display:flex;align-items:center;gap:16px;background:#111111;border-radius:12px;border-left:4px solid #d4af37;}
         .author-box .av img{width:64px;height:64px;border-radius:50%;object-fit:cover;display:block;}
         .author-box .name{color:#d4af37;font-weight:700;font-size:1.05rem;}
@@ -232,6 +240,28 @@
             </div>
         </div>
         <!-- END NT INFOMATICS -->
+
+        <div class="card related-card">
+            <h2>Related Reading</h2>
+            <div class="related-list">
+                <a class="related-item" href="/blog/kitchen-structure.html">
+                    <div class="rt">Kitchen Structure</div>
+                    <div class="rd">The sections of a professional F&amp;B production kitchen, explained.</div>
+                </a>
+                <a class="related-item" href="/complete-guide-to-hotel-and-restaurant-abbreviations.html">
+                    <div class="rt">Hotel &amp; Restaurant Abbreviations</div>
+                    <div class="rd">A complete guide to the abbreviations used across hospitality operations.</div>
+                </a>
+                <a class="related-item" href="/types-of-food-and-beverage-service.html">
+                    <div class="rt">Types of Food &amp; Beverage Service</div>
+                    <div class="rd">American, English, French, Russian &amp; more service styles compared.</div>
+                </a>
+                <a class="related-item" href="/condiments-vs-sauces-fb-guide.html">
+                    <div class="rt">Condiments vs Sauces</div>
+                    <div class="rd">The F&amp;B distinction every service team should know.</div>
+                </a>
+            </div>
+        </div>
 
         <div class="readmore-wrap">
             <a href="/blog.html" class="readmore-btn">Read More Articles &rarr;</a>
