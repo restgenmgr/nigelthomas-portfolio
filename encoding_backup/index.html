@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Nigel Thomas ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Private Accounting Dashboard</title>
+    <title>Nigel Thomas Ã¢â‚¬â€œ Private Accounting Dashboard</title>
 
     <style>
         * {
@@ -464,13 +464,13 @@
 
             <div class="total-box">
                 <div class="total-label">Total Bank Balance</div>
-                <div id="totalBankBalance" class="total">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</div>
+                <div id="totalBankBalance" class="total">Ã¢â€šÂ¹0.00</div>
                 <div class="updated">Canara Bank + IDBI Bank</div>
             </div>
 
             <div class="total-box">
                 <div class="total-label">Total Available Balance</div>
-                <div id="totalBalance" class="total">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</div>
+                <div id="totalBalance" class="total">Ã¢â€šÂ¹0.00</div>
                 <div id="balanceUpdated" class="updated">Updated</div>
             </div>
         </section>
@@ -551,27 +551,27 @@
             <div class="reports">
                 <article class="report-card">
                     <span>Today's Revenue</span>
-                    <strong id="todayIncome">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="todayIncome">Ã¢â€šÂ¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Today's Expense</span>
-                    <strong id="todayExpense">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="todayExpense">Ã¢â€šÂ¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Monthly Revenue</span>
-                    <strong id="monthIncome">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="monthIncome">Ã¢â€šÂ¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Monthly Expense</span>
-                    <strong id="monthExpense">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="monthExpense">Ã¢â€šÂ¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Today's Expense (UPI)</span>
-                    <strong id="todayExpense2">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="todayExpense2">Ã¢â€šÂ¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Monthly Expense (UPI)</span>
-                    <strong id="monthExpense2">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="monthExpense2">Ã¢â€šÂ¹0.00</strong>
                 </article>
             </div>
         </section>
@@ -582,18 +582,18 @@
             <div class="reports">
                 <article class="report-card">
                     <span>Net Savings (This Month)</span>
-                    <strong id="netSavings">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="netSavings">Ã¢â€šÂ¹0.00</strong>
                 </article>
                 <article class="report-card">
                     <span>Projected Month-End Savings</span>
-                    <strong id="projectedSavings">ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹0.00</strong>
+                    <strong id="projectedSavings">Ã¢â€šÂ¹0.00</strong>
                 </article>
             </div>
             <div class="progress-wrap">
                 <div class="progress-track">
                     <div id="savingsProgressBar" class="progress-fill" style="width:0%"></div>
                 </div>
-                <div id="savingsProgressLabel" class="progress-label">0% of ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹25,000 target</div>
+                <div id="savingsProgressLabel" class="progress-label">0% of Ã¢â€šÂ¹25,000 target</div>
             </div>
             <div id="savingsStatus" class="message"></div>
         </section>
@@ -782,7 +782,7 @@
             const rupees = Math.floor(abs / 100);
             const paisaPart = String(abs % 100).padStart(2, '0');
             const sign = paisa < 0 ? '-' : '';
-            return 'ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹' + sign + Number(rupees).toLocaleString('en-IN') + '.' + paisaPart;
+            return 'Ã¢â€šÂ¹' + sign + Number(rupees).toLocaleString('en-IN') + '.' + paisaPart;
         }
 
         function parseAmount(rupees, paisa) {
@@ -961,10 +961,10 @@
                 const typeLabel = t.type.charAt(0).toUpperCase() + t.type.slice(1);
                 let accountLabel = getAccountName(t.account);
                 if (isTransfer && t.toAccount) {
-                    accountLabel += ' ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ ' + getAccountName(t.toAccount);
+                    accountLabel += ' Ã¢â€ â€™ ' + getAccountName(t.toAccount);
                 }
-                const catDisplay = t.category || 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-                const descDisplay = t.description || 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+                const catDisplay = t.category || 'Ã¢â‚¬â€';
+                const descDisplay = t.description || 'Ã¢â‚¬â€';
 
                 return `
                     <tr>
@@ -1380,7 +1380,7 @@
                 });
             });
 
-            // Account select change ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ update toAccount options
+            // Account select change Ã¢â€ â€™ update toAccount options
             accountSelect.addEventListener('change', updateToAccountOptions);
 
             // Form submit
@@ -1439,7 +1439,7 @@
             bindEvents();
             // Ensure toAccount options are correct after render
             updateToAccountOptions();
-            console.log('ÃƒÂ¢Ã…â€œÃ¢â‚¬Â¦ Nigel Thomas Accounting Dashboard ready.');
+            console.log('Ã¢Å“â€¦ Nigel Thomas Accounting Dashboard ready.');
         }
 
         // Run
