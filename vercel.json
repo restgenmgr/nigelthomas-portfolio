@@ -1,5 +1,5 @@
 {
-  "redirects": [  
+  "redirects": [
     {
       "source": "/mastering-food-cost-guide.html",
       "destination": "/food-cost-control-complete-guide.html",
@@ -21,7 +21,6 @@
       "permanent": true
     },
     {
-          {
       "source": "/blog",
       "destination": "/blog.html",
       "permanent": true
@@ -31,7 +30,7 @@
       "destination": "/equal-opportunity-employer-india-usa-europe.html",
       "permanent": true
     },
-      {
+    {
       "source": "/regional-food/street-food-india.html",
       "destination": "/street-food-india-complete-guide.html",
       "permanent": true
@@ -41,5 +40,20 @@
       "destination": "/regional-food/chinese-culinary-styles-blog.html",
       "permanent": true
     },
- {
+    {
+      "source": "/complete-guide-to-hotel-and-restaurant-abbreviations-final.html",
+      "destination": "/complete-guide-to-hotel-and-restaurant-abbreviations.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/types-of-meal-plans-in-hotels.html",
+      "destination": "/types-of-meal-plans-in-hotels.html",
+      "permanent": true
+    },
+    {
+      "source": "/operations-business/cloud-kitchen-catering-operations-guide.html",
+      "destination": "/cloud-kitchen-catering-operations-guide.html",
+      "permanent": true
+    }
   ]
+}
