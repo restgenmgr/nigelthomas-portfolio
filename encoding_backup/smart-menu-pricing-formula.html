@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Pricing: The Smart Formula for Profit &amp; Value | Nigel Thomas</title>
+<meta name="description" content="A clear, repeatable formula for pricing every menu item &#8212; food cost, packaging, wastage allowance, and target food cost percentage, with a worked example.">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P839TWLQSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P839TWLQSJ');
+</script>
+
+<!-- Google AdSense -->
+<meta name="google-adsense-account" content="ca-pub-8127243414384620">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script>
+
+<!-- Font Awesome (icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Segoe UI", Arial, sans-serif;background:#0b0b0b;color:#f2f2f2;line-height:1.7;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+  /* NAV */
+  .site-header{background:#000;border-bottom:2px solid #d4af37;position:sticky;top:0;z-index:100;}
+  .site-header .container{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;flex-wrap:wrap;gap:12px 24px;}
+  .logo{font-size:1.5rem;font-weight:bold;color:#d4af37;}
+  .main-nav{display:flex;align-items:center;gap:22px;flex-wrap:wrap;}
+  .main-nav a{font-weight:500;font-size:0.95rem;color:#fff;padding:6px 4px;border-bottom:2px solid transparent;transition:.2s;}
+  .main-nav a:hover, .main-nav a.active{color:#d4af37;border-bottom-color:#d4af37;}
+  .nav-cta{background:#d4af37;color:#000 !important;padding:8px 20px;border-radius:30px;font-weight:700;font-size:0.85rem;}
+  .nav-cta:hover{background:#c4a030;}
+
+  /* BREADCRUMB */
+  .breadcrumb{background:#141414;padding:12px 0;font-size:0.85rem;color:#a0a0a0;border-bottom:1px solid #2a2a2a;}
+  .breadcrumb a{color:#d4d4d4;font-weight:500;}
+  .breadcrumb a:hover{color:#d4af37;}
+  .breadcrumb .sep{margin:0 8px;color:#d4af37;}
+
+  /* LAYOUT */
+  .blog-post{padding:48px 0 64px;}
+  .post-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;}
+  @media (max-width:992px){.post-grid{grid-template-columns:1fr;gap:40px;}}
+
+  .post-category{display:inline-block;background:#d4af37;color:#000;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;padding:4px 16px;border-radius:20px;margin-bottom:14px;}
+  .post-title{font-size:2.2rem;font-weight:700;line-height:1.25;color:#fff;margin-bottom:12px;}
+  .post-meta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;font-size:0.88rem;color:#a0a0a0;margin-bottom:28px;}
+  .post-meta i{margin-right:6px;color:#d4af37;}
+  .post-meta .author{font-weight:600;color:#d4af37;}
+
+  .featured-image{border-radius:12px;overflow:hidden;margin-bottom:32px;border:1px solid #2a2a2a;}
+
+  .post-body h2{color:#d4af37;font-size:1.5rem;margin:32px 0 14px;}
+  .post-body h3{color:#d4af37;font-size:1.15rem;margin:24px 0 12px;}
+  .post-body p{margin-bottom:14px;color:#d4d4d4;}
+  .post-body ul{margin:12px 0 12px 22px;color:#d4d4d4;}
+  .post-body li{margin-bottom:8px;}
+
+  .pricing-formula{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:#141414;border:1px solid #2a2a2a;border-left:4px solid #d4af37;border-radius:10px;padding:22px;margin:20px 0;}
+  @media(max-width:600px){.pricing-formula{grid-template-columns:1fr;}}
+  .formula-item .label{display:block;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.6px;color:#a0a0a0;margin-bottom:4px;}
+  .formula-item .value{font-weight:600;color:#f2f2f2;}
+
+  .example-box{background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:22px;margin:24px 0;}
+  .example-title{color:#d4af37;font-weight:700;margin-bottom:14px;font-size:1.05rem;}
+  .example-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid #232323;font-size:0.95rem;}
+  .example-row .label{color:#a0a0a0;}
+  .example-row .val{color:#f2f2f2;font-weight:500;}
+  .result-row{display:flex;justify-content:space-between;padding:14px 0 0;margin-top:8px;border-top:2px solid #d4af37;font-weight:700;color:#d4af37;font-size:1.1rem;}
+
+  .table-wrap{overflow-x:auto;margin:16px 0;}
+  table{width:100%;border-collapse:collapse;font-size:0.92rem;}
+  th,td{border:1px solid #2a2a2a;padding:10px 14px;text-align:left;}
+  th{background:#161616;color:#d4af37;text-transform:uppercase;font-size:0.75rem;letter-spacing:0.8px;}
+  td{color:#d4d4d4;}
+  tr:nth-child(even) td{background:#101010;}
+
+  .strategy-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0;}
+  @media(max-width:600px){.strategy-grid{grid-template-columns:1fr;}}
+  .strategy-card{background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:18px;}
+  .strategy-card h4{color:#f2f2f2;font-size:1rem;margin-bottom:8px;}
+  .strategy-card p{color:#a0a0a0;font-size:0.9rem;margin-bottom:0;}
+
+  .key-numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0;}
+  @media(max-width:700px){.key-numbers{grid-template-columns:1fr 1fr;}}
+  @media(max-width:420px){.key-numbers{grid-template-columns:1fr;}}
+  .num-card{background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:16px;text-align:center;}
+  .num-label{font-size:0.8rem;color:#a0a0a0;margin-bottom:6px;}
+  .num-value{font-size:1rem;font-weight:700;color:#d4af37;}
+
+  .highlight-box{background:rgba(212,175,55,0.08);border:1px solid rgba(212,175,55,0.3);border-radius:10px;padding:20px;margin:24px 0;}
+  .highlight-box p{color:#f2f2f2;}
+
+  .post-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin:36px 0 8px;padding-top:20px;border-top:1px solid #2a2a2a;}
+  .tags{display:flex;gap:10px;flex-wrap:wrap;}
+  .tags span{background:#161616;border:1px solid #2a2a2a;color:#a0a0a0;font-size:0.78rem;padding:5px 12px;border-radius:16px;}
+  .share{display:flex;align-items:center;gap:14px;}
+  .share span{color:#d4d4d4;font-weight:500;}
+  .share a{color:#d4af37;font-size:1.05rem;}
+
+  /* RELATED POSTS */
+  .related-posts-section{margin-top:44px;}
+  .section-title{font-size:1.4rem;color:#fff;margin-bottom:18px;}
+  .section-title span{color:#d4af37;}
+  .related-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  @media(max-width:600px){.related-grid{grid-template-columns:1fr;}}
+  .rel-card{background:#141414;border:1px solid #2a2a2a;border-radius:10px;overflow:hidden;transition:.2s;}
+  .rel-card:hover{border-color:#d4af37;}
+  .rel-img{height:90px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;}
+  .rel-body{padding:14px 18px 18px;}
+  .rel-cat{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.8px;color:#d4af37;font-weight:700;}
+  .rel-title{font-weight:600;font-size:1rem;color:#f2f2f2;margin:6px 0 6px;display:block;}
+  .rel-title:hover{color:#d4af37;}
+  .rel-excerpt{font-size:0.85rem;color:#a0a0a0;margin-bottom:0;}
+
+  /* SIDEBAR */
+  .sidebar-widget{background:#141414;border:1px solid #2a2a2a;border-radius:10px;padding:20px;margin-bottom:20px;}
+  .widget-title{color:#d4af37;font-weight:700;margin-bottom:12px;font-size:1rem;}
+  .category-list{list-style:none;}
+  .category-list li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #232323;}
+  .category-list li:last-child{border-bottom:none;}
+  .category-list a{color:#d4d4d4;font-size:0.92rem;}
+  .category-list a:hover{color:#d4af37;}
+
+  .related-post{display:flex;gap:12px;margin-bottom:14px;align-items:center;}
+  .rp-thumb{width:44px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#d4af37;color:#000;}
+  .rp-title{font-size:0.9rem;font-weight:600;color:#f2f2f2;display:block;}
+  .rp-title:hover{color:#d4af37;}
+  .rp-meta{font-size:0.78rem;color:#a0a0a0;margin-top:2px;}
+
+  .sidebar-widget p{font-size:0.9rem;color:#a0a0a0;margin-bottom:8px;}
+
+  /* FOOTER */
+  footer.site-footer{background:#000;border-top:3px solid #d4af37;padding:48px 0 24px;margin-top:20px;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;margin-bottom:32px;}
+  @media(max-width:700px){.footer-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.footer-grid{grid-template-columns:1fr;}}
+  .footer-brand .logo{color:#d4af37;margin-bottom:10px;display:inline-block;}
+  .footer-brand p{font-size:0.9rem;color:#a0a0a0;max-width:320px;}
+  footer.site-footer h4{color:#fff;font-weight:600;font-size:1rem;margin-bottom:14px;}
+  footer.site-footer ul{list-style:none;}
+  footer.site-footer ul li{margin-bottom:8px;}
+  footer.site-footer ul a{font-size:0.9rem;color:#a0a0a0;}
+  footer.site-footer ul a:hover{color:#d4af37;}
+  .footer-bottom{border-top:1px solid #232323;padding-top:20px;font-size:0.8rem;text-align:center;color:#8a8a8a;}
+
+  @media(max-width:768px){
+    .post-title{font-size:1.7rem;}
+    .site-header .container{flex-direction:column;align-items:stretch;}
+    .main-nav{justify-content:center;gap:16px;}
+    .post-footer{flex-direction:column;align-items:stretch;}
+    .share{justify-content:center;}
+    .tags{justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="" class="logo">Nigel Thomas</a>
+    <nav class="main-nav">
+      <a href="">Home</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="blog.html#kitchen">Kitchen</a>
+      <a href="hospitality-management-tools.html">Tools</a>
+      <a href="contact.html" class="nav-cta">Let's Talk</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="container">
+    <a href="">Home</a>
+    <span class="sep">/</span>
+    <a href="blog.html">Blog</a>
+    <span class="sep">/</span>
+    <a href="blog.html#kitchen">Kitchen</a>
+    <span class="sep">/</span>
+    <span style="color:#d4af37;font-weight:600;">Menu Pricing Strategy</span>
+  </div>
+</div>
+
+<main class="blog-post">
+  <div class="container">
+    <div class="post-grid">
+
+      <article class="post-main">
+
+        <header class="post-header">
+          <span class="post-category"><i class="fas fa-kitchen-set" style="margin-right:6px;"></i> Kitchen</span>
+          <h1 class="post-title">Menu Pricing: The Smart Formula for Profit &amp; Value</h1>
+          <div class="post-meta">
+            <span><i class="fas fa-user"></i> <span class="author">Nigel A. Thomas</span></span>
+            <span><i class="fas fa-calendar-alt"></i> August 2026</span>
+            <span><i class="fas fa-clock"></i> 6 min read</span>
+            <span><i class="fas fa-tag"></i> Menu, Pricing, Profit</span>
+          </div>
+        </header>
+
+        <div class="featured-image">
+          <img src="assets/smart-menu-pricing-formula.jfif" alt="Menu Pricing Strategy infographic">
+        </div>
+
+        <div class="post-body">
+
+          <p>
+            <strong>Great food brings people to your restaurant, but smart pricing keeps your business growing.</strong>
+            Getting your menu pricing right is one of the most important levers you have. Price too low, and you leave money on the table. Price too high, and you scare customers away. The sweet spot? <strong>Good pricing builds value. Smart pricing builds profit.</strong>
+          </p>
+
+          <h2>The Simple Pricing Formula</h2>
+          <p>Every menu item should be priced using a clear, repeatable formula.</p>
+
+          <div class="pricing-formula">
+            <div class="formula-item">
+              <span class="label">Menu Price (Selling Price)</span>
+              <span class="value">= Total Cost &divide; Target Food Cost %</span>
+            </div>
+            <div class="formula-item">
+              <span class="label">Total Cost (per serving)</span>
+              <span class="value">Food Cost + Packaging + Wastage</span>
+            </div>
+            <div class="formula-item">
+              <span class="label">Target Food Cost %</span>
+              <span class="value">30% &ndash; 35% (industry standard)</span>
+            </div>
+            <div class="formula-item">
+              <span class="label">Wastage Allowance</span>
+              <span class="value">3% &ndash; 5% (covers spoilage &amp; over-portioning)</span>
+            </div>
+          </div>
+
+          <div class="example-box">
+            <div class="example-title"><i class="fas fa-calculator" style="margin-right:8px;"></i> Example &mdash; Biryani Plate</div>
+            <div class="example-row"><span class="label">Food Cost (ingredients per serving)</span><span class="val">PKR 220</span></div>
+            <div class="example-row"><span class="label">Packaging Cost (box, bag, sauce, tissue)</span><span class="val">PKR 30</span></div>
+            <div class="example-row"><span class="label">Wastage Allowance (5%)</span><span class="val">PKR 12.50</span></div>
+            <div class="example-row"><span class="label"><strong>Total Cost</strong></span><span class="val"><strong>PKR 262.50</strong></span></div>
+            <div class="example-row"><span class="label">Target Food Cost %</span><span class="val">35%</span></div>
+            <div class="result-row"><span>Recommended Menu Price</span><span class="val">PKR 749 &ndash; 759</span></div>
+            <div style="font-size:0.8rem;color:#a0a0a0;margin-top:10px;text-align:center;">
+              <i class="fas fa-arrow-right" style="color:#d4af37;"></i> Round off for easy pricing: <strong style="color:#f2f2f2;">PKR 750</strong>
+            </div>
+          </div>
+
+          <h2>Understand Your Costs</h2>
+          <p>Before you can price anything, you need a crystal-clear view of what each dish actually costs you.</p>
+          <ul>
+            <li><strong>Food Cost</strong> &mdash; Cost of all ingredients used in one serving, measured precisely.</li>
+            <li><strong>Packaging Cost</strong> &mdash; Boxes, bags, sauces, tissues, labels, and everything that goes out with the order.</li>
+            <li><strong>Wastage Allowance</strong> &mdash; Covers spoilage, over-portioning, and kitchen waste (typically 3&ndash;5%).</li>
+            <li><strong>Operating Costs</strong> &mdash; Rent, salaries, utilities, maintenance, marketing, software, etc.</li>
+          </ul>
+
+          <h3>Target Food Cost % by Restaurant Type</h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Restaurant Type</th><th>Target Food Cost %</th></tr></thead>
+              <tbody>
+                <tr><td>Fast Food / Quick Service</td><td>28% &ndash; 32%</td></tr>
+                <tr><td>Casual Dining</td><td>30% &ndash; 35%</td></tr>
+                <tr><td>Fine Dining</td><td>32% &ndash; 38%</td></tr>
+                <tr><td>Premium / Specialty Cuisine</td><td>35% &ndash; 40%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:0.9rem;color:#a0a0a0;">
+            <i class="fas fa-lightbulb" style="color:#d4af37;"></i> <strong>Tip:</strong> A lower % means higher profit potential, but the price must still match the customer's perceived value.
+          </p>
+
+          <h2>Smart Pricing Strategy</h2>
+          <p>Pricing isn't just math &mdash; it's psychology and strategy. Here's how to price smart:</p>
+
+          <div class="strategy-grid">
+            <div class="strategy-card">
+              <h4>&#128100; Know Your Customer</h4>
+              <p>Set prices based on their expectations and buying power. A customer who values quality will pay for it.</p>
+            </div>
+            <div class="strategy-card">
+              <h4>&#128269; Research Competitors</h4>
+              <p>Compare similar items and position your menu smartly &mdash; don't just copy, differentiate.</p>
+            </div>
+            <div class="strategy-card">
+              <h4>&#129513; Use Strategic Pricing</h4>
+              <p>Combo offers, value meals, and add-ons increase average order value without discounting core items.</p>
+            </div>
+            <div class="strategy-card">
+              <h4>&#128142; Focus on Value, Not Just Price</h4>
+              <p>Great taste, quality, and service justify a good price. Compete on experience, not cost.</p>
+            </div>
+          </div>
+
+          <h3>Key Numbers to Track</h3>
+          <div class="key-numbers">
+            <div class="num-card"><div class="num-label">Daily Sales</div><div class="num-value">&#128202; Track</div></div>
+            <div class="num-card"><div class="num-label">Food Cost %</div><div class="num-value">&#128200; Monitor</div></div>
+            <div class="num-card"><div class="num-label">Labor Cost %</div><div class="num-value">&#128101; Control</div></div>
+            <div class="num-card"><div class="num-label">Wastage %</div><div class="num-value">&#9851; Reduce</div></div>
+            <div class="num-card"><div class="num-label">Avg. Order Value</div><div class="num-value">&#128176; Grow</div></div>
+            <div class="num-card"><div class="num-label">Net Profit</div><div class="num-value">&#127942; Target</div></div>
+          </div>
+
+          <h2>Best Practices</h2>
+          <ul>
+            <li><strong>Calculate Regularly</strong> &mdash; Review recipe cost and menu prices every 30&ndash;60 days.</li>
+            <li><strong>Track Your Numbers</strong> &mdash; Monitor food cost %, wastage %, and profit % religiously.</li>
+            <li><strong>Adjust When Needed</strong> &mdash; Update prices when ingredient or operational costs increase.</li>
+            <li><strong>Maintain Quality</strong> &mdash; Consistent quality builds trust and repeat customers.</li>
+          </ul>
+
+          <div class="highlight-box">
+            <p style="margin-bottom:0;font-size:1.05rem;">
+              <strong>&#128161; The bottom line:</strong>
+              <em>&ldquo;Good food brings people to your restaurant, but smart pricing keeps your business growing. Price it right. Profit it bright.&rdquo;</em>
+            </p>
+          </div>
+
+        </div>
+        <!-- /post-body -->
+
+        <footer class="post-footer">
+          <div class="tags">
+            <span>#MenuPricing</span>
+            <span>#KitchenManagement</span>
+            <span>#RestaurantProfit</span>
+            <span>#FoodCost</span>
+          </div>
+          <div class="share">
+            <span>Share:</span>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nigelthomas.live/smart-menu-pricing-formula.html" aria-label="Share on Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/intent/tweet?url=https://www.nigelthomas.live/smart-menu-pricing-formula.html" aria-label="Share on Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.nigelthomas.live/smart-menu-pricing-formula.html" aria-label="Share on LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:?subject=Menu%20Pricing%20Formula&body=https://www.nigelthomas.live/smart-menu-pricing-formula.html" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </footer>
+
+        <section class="related-posts-section">
+          <h2 class="section-title">More from the <span>Kitchen</span></h2>
+          <div class="related-grid">
+
+            <div class="rel-card">
+              <div class="rel-img" style="background:#1a1a1a;color:#d4af37;"><i class="fas fa-utensil-spoon"></i></div>
+              <div class="rel-body">
+                <div class="rel-cat">Food Cost &amp; Finance</div>
+                <a href="how-to-calculate-food-cost-per-portion.html" class="rel-title">How to Calculate Food Cost Per Portion</a>
+                <p class="rel-excerpt">A step-by-step framework for costing any recipe, from ingredient sheets to target selling price.</p>
+              </div>
+            </div>
+
+            <div class="rel-card">
+              <div class="rel-img" style="background:#d4af37;color:#000;"><i class="fas fa-chart-line"></i></div>
+              <div class="rel-body">
+                <div class="rel-cat">Kitchen &amp; Culinary</div>
+                <a href="how-to-control-food-cost.html" class="rel-title">How to Control Food Cost: 8 Practical Steps</a>
+                <p class="rel-excerpt">A no-fluff checklist covering targets, portion control, waste reduction, and menu engineering.</p>
+              </div>
+            </div>
+
+            <div class="rel-card">
+              <div class="rel-img" style="background:#1a1a1a;color:#d4af37;"><i class="fas fa-calculator"></i></div>
+              <div class="rel-body">
+                <div class="rel-cat">Food Cost &amp; Finance</div>
+                <a href="food-cost-control-complete-guide.html" class="rel-title">Mastering Food Cost Control in Restaurants &amp; Hotels</a>
+                <p class="rel-excerpt">A comprehensive guide covering recipe costing, inventory, purchasing, and portion control.</p>
+              </div>
+            </div>
+
+            <div class="rel-card">
+              <div class="rel-img" style="background:#d4af37;color:#000;"><i class="fas fa-box-open"></i></div>
+              <div class="rel-body">
+                <div class="rel-cat">Restaurant Operations</div>
+                <a href="cloud-kitchen-catering-operations-guide.html" class="rel-title">Cloud Kitchen, Outdoor &amp; Indoor Catering Operations Guide</a>
+                <p class="rel-excerpt">Staffing, equipment planning, budgeting, and best practices for modern kitchen operations.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="sidebar">
+
+        <div class="sidebar-widget">
+          <div class="widget-title"><i class="fas fa-utensils"></i> Nigel Thomas</div>
+          <p>Hospitality Trainer, Hotel Operations Professional and Career Mentor with more than 30 years of international leadership across hotels, resorts, restaurants and cruise lines.</p>
+          <p style="color:#d4af37;font-weight:600;"><i class="fas fa-quote-left" style="margin-right:4px;"></i> Pause before responding.</p>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title"><i class="fas fa-folder-open"></i> Categories</div>
+          <ul class="category-list">
+            <li><a href="blog.html#kitchen">Kitchen &amp; Culinary</a></li>
+            <li><a href="blog.html#foodcost">Food Cost &amp; Finance</a></li>
+            <li><a href="blog.html#operations">Restaurant Operations</a></li>
+            <li><a href="blog.html#foodsafety">Food Safety &amp; HACCP</a></li>
+            <li><a href="blog.html#career">Careers &amp; Interviews</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title"><i class="fas fa-newspaper"></i> Trending in Kitchen</div>
+
+          <div class="related-post">
+            <div class="rp-thumb"><i class="fas fa-utensil-spoon"></i></div>
+            <div class="rp-info">
+              <a href="how-to-calculate-food-cost-per-portion.html" class="rp-title">Food Cost Per Portion</a>
+              <div class="rp-meta">Food Cost &amp; Finance &bull; 8 min read</div>
+            </div>
+          </div>
+
+          <div class="related-post">
+            <div class="rp-thumb"><i class="fas fa-trash-alt"></i></div>
+            <div class="rp-info">
+              <a href="how-to-control-food-cost.html" class="rp-title">How to Control Food Cost</a>
+              <div class="rp-meta">Kitchen &amp; Culinary &bull; 6 min read</div>
+            </div>
+          </div>
+
+          <div class="related-post">
+            <div class="rp-thumb"><i class="fas fa-crown"></i></div>
+            <div class="rp-info">
+              <a href="food-cost-control-complete-guide.html" class="rp-title">Mastering Food Cost Control</a>
+              <div class="rp-meta">Food Cost &amp; Finance &bull; 10 min read</div>
+            </div>
+          </div>
+
+          <div class="related-post">
+            <div class="rp-thumb"><i class="fas fa-box"></i></div>
+            <div class="rp-info">
+              <a href="cloud-kitchen-catering-operations-guide.html" class="rp-title">Cloud Kitchen Operations Guide</a>
+              <div class="rp-meta">Restaurant Operations &bull; 7 min read</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <div class="widget-title"><i class="fas fa-toolbox"></i> Free Tools</div>
+          <p>Instant calculators for food cost, ADR, RevPAR, labour cost, and menu engineering.</p>
+          <a href="hospitality-management-tools.html" style="display:inline-block;background:#d4af37;color:#000;padding:8px 20px;border-radius:6px;font-weight:bold;">Open Tools &rarr;</a>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Nigel Thomas</div>
+        <p>Hospitality Trainer, Hotel Operations Professional and Career Mentor with more than 30 years of international hospitality leadership across hotels, resorts, restaurants and cruise lines.</p>
+      </div>
+      <div>
+        <h4>Website</h4>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="hospitality-management-tools.html">Tools</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="blog.html#kitchen">Kitchen &amp; Culinary</a></li>
+          <li><a href="blog.html#foodcost">Food Cost &amp; Finance</a></li>
+          <li><a href="blog.html#operations">Restaurant Operations</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Created by <strong style="color:#d4af37;">Nigel Anthony Thomas</strong></p>
+      <p>Founder of <a href="https://www.joblynk.live" style="color:#d4af37;">JobLynk.live</a></p>
+      <p>&copy; 2026 Nigel Anthony Thomas. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
