@@ -10,3 +10,6 @@ _mojibake_backups/
 _metadata_backups/
 
 CanonicalAudit_*.csv
+
+encoding_backup/
+encoding_fix2_backup/
