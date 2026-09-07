@@ -8,3 +8,5 @@ encoding-scan-report-*.txt
 _mojibake_backups/
 
 _metadata_backups/
+
+CanonicalAudit_*.csv
