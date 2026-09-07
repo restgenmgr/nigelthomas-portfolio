@@ -41,8 +41,7 @@ param(
     [string]$OutputCsv,
 
     [Parameter(Mandatory = $false)]
-    [string[]]$ExcludeFolders = @("_mojibake_backups", "_metadata_backups")
-)
+[string[]]$ExcludeFolders = @("_mojibake_backups", "_metadata_backups", "encoding_backup", "encoding_fix2_backup")
 
 $ErrorActionPreference = "Stop"
 
