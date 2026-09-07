@@ -1,5 +1,5 @@
 <#
-.SYNOPSIS
+.SYNOPSIS  
     Audits canonical tags across an HTML site for missing, mismatched, or duplicate canonicals.
 
 .DESCRIPTION
@@ -34,9 +34,11 @@ param(
     [string]$SiteBaseUrl = "https://www.nigelthomas.live",
 
     [Parameter(Mandatory = $false)]
-    [string]$OutputCsv
-)
+    [string]$OutputCsv,
 
+    [Parameter(Mandatory = $false)]
+    [string[]]$ExcludeFolders = @("_mojibake_backups", "_metadata_backups")
+)
 $ErrorActionPreference = "Stop"
 
 if (-not $OutputCsv) {
@@ -47,7 +49,12 @@ if (-not $OutputCsv) {
 $SiteBaseUrl = $SiteBaseUrl.TrimEnd('/')
 
 Write-Host "Scanning HTML files under: $Path" -ForegroundColor Cyan
-$htmlFiles = Get-ChildItem -Path $Path -Filter *.html -Recurse -File
+$allHtmlFiles = Get-ChildItem -Path $Path -Filter *.html -Recurse -File
+$htmlFiles = $allHtmlFiles | Where-Object {
+    $fp = $_.FullName
+    -not ($ExcludeFolders | Where-Object { $fp -like "*\$_\*" })
+}
+Write-Host "Excluded $($allHtmlFiles.Count - $htmlFiles.Count) file(s) under backup folders" -ForegroundColor DarkGray
 
 if ($htmlFiles.Count -eq 0) {
     Write-Warning "No .html files found under $Path"
