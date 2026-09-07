@@ -54,11 +54,6 @@
       "source": "/operations-business/cloud-kitchen-catering-operations-guide.html",
       "destination": "/cloud-kitchen-catering-operations-guide.html",
       "permanent": true
-    },
-    {
-      "source": "/shake-vs-smoothie.html",
-      "destination": "/blog/shake-vs-smoothie.html",
-      "permanent": true
     }
   ]
 }
