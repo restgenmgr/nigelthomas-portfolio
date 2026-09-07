@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Audits canonical tags across an HTML site for missing, mismatched, or duplicate canonicals.
 
@@ -42,6 +42,7 @@ param(
 
     [Parameter(Mandatory = $false)]
 [string[]]$ExcludeFolders = @("_mojibake_backups", "_metadata_backups", "encoding_backup", "encoding_fix2_backup")
+)
 
 $ErrorActionPreference = "Stop"
 
