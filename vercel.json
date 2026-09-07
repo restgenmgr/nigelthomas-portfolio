@@ -31,11 +31,15 @@
       "destination": "/equal-opportunity-employer-india-usa-europe.html",
       "permanent": true
     },
-    {
+      {
       "source": "/regional-food/street-food-india.html",
       "destination": "/street-food-india-complete-guide.html",
       "permanent": true
-    }
+    },
+    {
+      "source": "/Blog/chinese-culinary-styles",
+      "destination": "/regional-food/chinese-culinary-styles-blog.html",
+      "permanent": true
+    },
+ {
   ]
-}
-  
