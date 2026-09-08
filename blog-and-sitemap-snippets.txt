@@ -1,0 +1,58 @@
+====================================================================
+1) BLOG.HTML — paste this card right after your last "END NEW CARD"
+   marker, inside the Hospitality Safety / Terminology Series section.
+====================================================================
+
+<div class="article-card">
+  <img src="assets/fire-extinguisher-types.png" alt="Types of fire extinguishers infographic" style="width:100%;border-radius:10px;">
+  <div class="article-title">Types of Fire Extinguishers: A, B, C, D & K Explained</div>
+  <div class="article-meta">Hospitality Safety Series</div>
+  <div class="article-excerpt">Which extinguisher goes where — and why using the wrong one on a grease fire or an electrical fire can make things worse. A manager's guide to classification, placement, and staff training.</div>
+  <a href="blog/types-of-fire-extinguishers.html" class="read-more-btn">Read More</a>
+</div>
+<!-- END NEW CARD (fire extinguisher types) -->
+
+NOTE: adjust the img src to wherever you actually upload
+fire-extinguisher-types.png (this snippet assumes /assets/).
+The poster is ALSO embedded directly (base64) inside the article page
+itself, so the article works standalone even if this thumbnail path
+is off — just fix the card thumbnail whenever convenient.
+
+====================================================================
+2) SITEMAP.XML — paste this before </urlset>
+====================================================================
+
+<url>
+  <loc>https://www.nigelthomas.live/blog/types-of-fire-extinguishers.html</loc>
+  <lastmod>2026-09-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+====================================================================
+3) GOOGLE SEARCH CONSOLE
+====================================================================
+
+Submit / request indexing for this exact URL:
+https://www.nigelthomas.live/blog/types-of-fire-extinguishers.html
+
+Steps: GSC > URL Inspection > paste the URL above > "Request Indexing".
+Do this only AFTER the file is actually live on Vercel (check it loads
+in an incognito tab first) — requesting indexing on a 404 wastes the
+crawl request.
+
+====================================================================
+4) FILE TO UPLOAD
+====================================================================
+
+Upload types-of-fire-extinguishers.html into your /blog/ folder in
+the restgenmgr/nigelthomas-portfolio repo. It is fully self-contained
+(poster is embedded as base64) — no separate image upload is required
+for the article page itself to work.
+
+If you also want the standalone poster PNG (fire-extinguisher-types.png)
+in /assets/ for the blog.html card thumbnail and for social sharing
+(og:image), upload it there too — remembering the known GitHub web UI
+quirk: uploads through the web UI often land at repo root instead of
+assets/, so double check the path after upload and move it with
+git mv if needed.
