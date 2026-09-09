@@ -1,33 +1,46 @@
-# Move coffee-types-poster.jpg from repo root to assets/, then commit and push.
-# Run this AFTER you've uploaded coffee-types-poster.jpg to the repo root via GitHub web UI
-# and pulled the latest changes locally.
+# ============================================================
+# Move restaurant-hotel-napkin-folding.png from repo root -> assets/
+# then verify locally and (after push) verify live on Vercel
+# ============================================================
 
-$repo = "C:\Users\admin\Desktop\nigelthomas-portfolio"
-Set-Location $repo
+$root = "C:\Users\admin\Desktop\nigelthomas-portfolio"
+Set-Location $root
 
-# Always rebase before pushing
+$file = "restaurant-hotel-napkin-folding.png"
+$src  = Join-Path $root $file
+$dest = Join-Path $root "assets\$file"
+
+# --- Move ---
+if (Test-Path $src) {
+    Move-Item -Path $src -Destination $dest -Force
+    Write-Host "Moved: $file -> assets\" -ForegroundColor Green
+} else {
+    Write-Host "File not found at repo root: $src" -ForegroundColor Red
+}
+
+# --- Verify locally ---
+if (Test-Path $dest) {
+    $info = Get-Item $dest
+    Write-Host "Confirmed in assets/: $($info.FullName)" -ForegroundColor Green
+    Write-Host "Size: $([math]::Round($info.Length / 1KB, 1)) KB"
+} else {
+    Write-Host "Move failed — file not found in assets/" -ForegroundColor Red
+}
+
+# --- Commit + push ---
 git pull --rebase
-
-$src = Join-Path $repo "coffee-types-poster.jpg"
-$destDir = Join-Path $repo "assets"
-$dest = Join-Path $destDir "coffee-types-poster.jpg"
-
-if (-not (Test-Path $src)) {
-    Write-Host "ERROR: $src not found. Did you upload it to repo root and pull first?" -ForegroundColor Red
-    exit 1
-}
-
-if (-not (Test-Path $destDir)) {
-    New-Item -ItemType Directory -Path $destDir | Out-Null
-}
-
-Move-Item -Path $src -Destination $dest -Force
-
-git add -A
-git commit -m "Move coffee-types-poster.jpg to assets folder"
+git add assets/$file
+git commit -m "Add: restaurant-hotel-napkin-folding.png to assets"
 git push
 
-# Verify live deployment after Vercel redeploys
-Start-Sleep -Seconds 20
-$check = Invoke-WebRequest -Uri "https://www.nigelthomas.live/assets/coffee-types-poster.jpg" -UseBasicParsing
-Write-Host "Status: $($check.StatusCode)  ContentLength: $($check.RawContentLength)"
+# ============================================================
+# Verify live (run a minute or two after push, once Vercel redeploys)
+# ============================================================
+$liveUrl = "https://www.nigelthomas.live/assets/restaurant-hotel-napkin-folding.png"
+try {
+    $resp = Invoke-WebRequest -Uri $liveUrl -UseBasicParsing -Method Head
+    Write-Host "LIVE CHECK: $($resp.StatusCode) $($resp.StatusDescription)" -ForegroundColor Green
+    Write-Host "Content-Length: $($resp.Headers['Content-Length']) bytes"
+} catch {
+    Write-Host "LIVE CHECK FAILED: $($_.Exception.Message)" -ForegroundColor Red
+}
