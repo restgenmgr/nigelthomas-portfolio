@@ -787,4 +787,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
 </url>
+    <url>
+        <loc>https://www.nigelthomas.live/10-italian-salads.html</loc>
+        <lastmod>2026-09-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>
