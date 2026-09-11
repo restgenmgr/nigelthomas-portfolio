@@ -17,3 +17,5 @@ encoding_fix2_backup/
 # Local backups
 *.backup-*
 *.bak-*
+
+*.b64
