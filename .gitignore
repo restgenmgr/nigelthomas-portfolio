@@ -6,16 +6,11 @@ backup-html-20260731-225049/
 backup-html-*/
 encoding-scan-report-*.txt
 _mojibake_backups/
-
 _metadata_backups/
-
 CanonicalAudit_*.csv
-
 encoding_backup/
 encoding_fix2_backup/
-
 # Local backups
 *.backup-*
 *.bak-*
-
 *.b64
