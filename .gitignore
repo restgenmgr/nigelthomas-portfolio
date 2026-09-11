@@ -15,3 +15,5 @@ encoding_fix2_backup/
 *.b64
 
 __pycache__/
+
+*.bak-*
