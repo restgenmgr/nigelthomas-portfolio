@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cross-Contamination Prevention: A Complete Kitchen Guide | Nigel Thomas</title>
+<meta content="A hospitality executive's complete guide to cross-contamination prevention in commercial kitchens â€�????? separation, color-coded boards, handwashing, sanitizing, utensils and cold storage." name="description"/>
+<meta content="Cross-Contamination, Food Safety, HACCP, Color-Coded Boards, Kitchen Hygiene, Hotel Restaurant Food Safety, Nigel Thomas" name="keywords"/>
+<meta content="Nigel Anthony Thomas" name="author"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.nigelthomas.live/blog/cross-contamination-prevention.html" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Cross-Contamination Prevention: A Complete Kitchen Guide | Nigel Thomas" property="og:title"/>
+<meta content="Six controls every commercial kitchen needs to prevent cross-contamination, explained for F&amp;B teams." property="og:description"/>
+<meta content="https://www.nigelthomas.live/assets/cross-contamination-poster.jpg" property="og:image"/>
+<meta content="https://www.nigelthomas.live/blog/cross-contamination-prevention.html" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Cross-Contamination Prevention: A Complete Kitchen Guide" name="twitter:title"/>
+<meta content="A hospitality guide to the six controls that stop cross-contamination before it starts." name="twitter:description"/>
+<!-- Google Analytics -->
+
+
+<!-- END FREE POSTER DOWNLOAD -->
+
+
+<!-- =========================================================
+     FREE POSTER DOWNLOAD
+     CROSS-CONTAMINATION PREVENTION
+     ========================================================= -->
+
+<section id="free-poster-download"
+style="margin:50px auto 20px;max-width:1000px;background:#0a0a0a;border:2px solid #d4af37;border-radius:12px;padding:22px;box-shadow:0 8px 30px rgba(0,0,0,.35);text-align:center;color:#ffffff;">
+
+    <button
+        type="button"
+        onclick="togglePosterInfomatic()"
+        aria-expanded="false"
+        aria-controls="poster-infomatic-panel"
+        style="display:inline-block;width:100%;max-width:600px;padding:16px 22px;background:#d4af37;color:#0a0a0a;border:0;border-radius:8px;font-size:18px;font-weight:800;letter-spacing:.5px;cursor:pointer;">
+        FREE POSTER DOWNLOAD
+    </button>
+
+    <div
+        id="poster-infomatic-panel"
+        hidden
+        style="margin-top:24px;">
+
+        <h2 style="color:#d4af37;margin:0 0 15px;">
+            Cross-Contamination Prevention
+        </h2>
+
+        <p style="margin:0 auto 20px;max-width:750px;line-height:1.7;">
+            Download the quick-reference hospitality training poster by Nigel A Thomas.
+        </p>
+
+        <div style="background:#111111;border:1px solid #d4af37;border-radius:10px;padding:15px;">
+
+            <img
+                src="assets/cross-contamination-poster.jpg"
+                alt="Cross-Contamination Prevention training poster by Nigel A Thomas"
+                loading="lazy"
+                style="display:block;width:100%;max-width:900px;height:auto;margin:0 auto 18px;border-radius:6px;">
+
+            <a
+                href="assets/cross-contamination-poster.jpg"
+                download="Nigel-A-Thomas-Cross-Contamination-Prevention-Poster.jpg"
+                style="display:inline-block;padding:13px 22px;background:#d4af37;color:#0a0a0a;text-decoration:none;border-radius:7px;font-weight:800;">
+                DOWNLOAD POSTER
+            </a>
+
+            <p style="margin:16px 0 0;color:#d4af37;font-weight:700;">
+                Nigel A Thomas
+            </p>
+
+        </div>
+
+        <div
+            class="related-management-links"
+            style="margin-top:30px;padding-top:22px;border-top:1px solid #d4af37;">
+
+            <h3 style="color:#d4af37;margin:0 0 15px;">
+                Related Hospitality Management Resources
+            </h3>
+
+            <p style="line-height:1.9;margin:0;">
+
+                <a
+                    href="../haccp-hazard-analysis-critical-control-points.html"
+                    style="color:#d4af37;font-weight:700;">
+                    HACCP Hazard Analysis &amp; Critical Control Points
+                </a>
+
+                &nbsp;&bull;&nbsp;
+
+                <a
+                    href="../haccp-kitchen-checklist.html"
+                    style="color:#d4af37;font-weight:700;">
+                    HACCP Kitchen Checklist
+                </a>
+
+                &nbsp;&bull;&nbsp;
+
+                <a
+                    href="../receiving-food-safely.html"
+                    style="color:#d4af37;font-weight:700;">
+                    Receiving Food Safely
+                </a>
+
+                &nbsp;&bull;&nbsp;
+
+                <a
+                    href="../temperature-log-templates.html"
+                    style="color:#d4af37;font-weight:700;">
+                    Temperature Log Templates
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+function togglePosterInfomatic() {
+    var panel = document.getElementById('poster-infomatic-panel');
+    var button = document.querySelector('#free-poster-download button');
+
+    if (!panel || !button) {
+        return;
+    }
+
+    if (panel.hasAttribute('hidden')) {
+        panel.removeAttribute('hidden');
+        button.setAttribute('aria-expanded', 'true');
+    } else {
+        panel.setAttribute('hidden', '');
+        button.setAttribute('aria-expanded', 'false');
+    }
+}
+</script>
+
+<!-- END FREE POSTER DOWNLOAD -->
+
+</body>
+</html>
