@@ -13,3 +13,7 @@ CanonicalAudit_*.csv
 
 encoding_backup/
 encoding_fix2_backup/
+
+# Local backups
+*.backup-*
+*.bak-*
