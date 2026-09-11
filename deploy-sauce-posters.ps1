@@ -48,7 +48,7 @@ $check1 = Test-Path (Join-Path $assetsPath "mother-sauce-derivatives-poster.svg"
 $check2 = Test-Path (Join-Path $assetsPath "popular-sauces-condiments-poster.svg")
 
 if (-not ($check1 -and $check2)) {
-    Write-Host "Move failed — one or both SVGs not confirmed in assets/. Stopping." -ForegroundColor Red
+    Write-Host "Move failed - one or both SVGs not confirmed in assets/. Stopping." -ForegroundColor Red
     exit 1
 }
 Write-Host "Both SVGs confirmed in assets/." -ForegroundColor Green
@@ -69,7 +69,7 @@ git pull --rebase
 git push
 
 # ------------------------------------------------------------
-# STEP 5: Verify live (Vercel) — GET, not HEAD, with content checks
+# STEP 5: Verify live (Vercel) â€” GET, not HEAD, with content checks
 # ------------------------------------------------------------
 Write-Host "STEP 5: Verifying live deployment (allow ~30-60s for Vercel build)..." -ForegroundColor Yellow
 Start-Sleep -Seconds 30
