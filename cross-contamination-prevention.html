@@ -245,14 +245,15 @@ Cross-contamination doesn't announce itself, which is exactly why it has to be p
 <!-- NT INFOMATICS -->
 <div class="nt-infomatics-section" style="margin: 40px 0;">
     <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel" aria-expanded="false">
-        VIEW INFOMATICS
+        FREE POSTER DOWNLOAD
     </button>
     <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true" style="margin-top:20px;">
         <div class="poster-wrap">
             <img src="/assets/cross-contamination-poster.jpg" alt="Cross-Contamination Prevention Knowledge Guide — separate raw and ready-to-eat food, use color-coded boards, wash hands, clean and sanitize, use separate utensils, store raw food below" style="max-width:100%; height:auto; border-radius:8px; display:block; margin:0 auto;"/>
         </div>
+        <p style="margin-top:18px;text-align:center;"><a href="/assets/cross-contamination-poster.jpg" download="cross-contamination-poster.jpg" style="display:inline-block;background:#d4af37;color:#000;padding:12px 28px;border-radius:30px;font-weight:bold;text-decoration:none;">DOWNLOAD FREE POSTER</a></p>
         <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
-            💡 Right-click the image to save it.
+            💡
         </p>
     </div>
 </div>
@@ -284,7 +285,7 @@ document.addEventListener("click", function (event) {
     var panel = document.getElementById(panelId);
     if (!panel) return;
     var opened = panel.classList.toggle("show");
-    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.textContent = opened ? "HIDE POSTER" : "FREE POSTER DOWNLOAD";
     button.setAttribute("aria-expanded", opened ? "true" : "false");
     panel.setAttribute("aria-hidden", opened ? "false" : "true");
 });
