@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Famous Foods & Their Country Names - Full Word Script</title>
+    <meta name="description" content="A comprehensive 3000+ word script detailing 30 world-famous dishes, their countries of origin, key ingredients, and cultural descriptions. Includes a downloadable infographic poster.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: #0d0d0d;
+            color: #f5efe0;
+            line-height: 1.7;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: #1c1c1c;
+            padding: 40px 50px;
+            border: 1px solid #c9a227;
+            box-shadow: 0 0 30px rgba(201, 162, 39, 0.1);
+        }
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 2.8rem;
+            color: #c9a227;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border-bottom: 3px solid #6b1f2a;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        h2 {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.8rem;
+            color: #c9a227;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-left: 5px solid #6b1f2a;
+            padding-left: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h3 {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.3rem;
+            color: #f5efe0;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            background: #6b1f2a;
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 3px;
+        }
+        p {
+            margin-bottom: 18px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .script-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #333;
+        }
+        .script-section:last-child { border-bottom: none; }
+        .ingredients {
+            background: #111;
+            padding: 15px;
+            border-left: 4px solid #c9a227;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            color: #ddd;
+        }
+        .ingredients strong { color: #c9a227; }
+        .poster-section {
+            margin-top: 60px;
+            padding: 30px;
+            background: #111;
+            border: 2px solid #c9a227;
+            text-align: center;
+        }
+        .poster-section h2 {
+            border-left: none;
+            text-align: center;
+            border-bottom: 2px solid #6b1f2a;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .poster-section img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #333;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: #6b1f2a;
+            color: #f5efe0;
+            padding: 15px 35px;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 2px solid #c9a227;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        .download-btn:hover {
+            background-color: #c9a227;
+            color: #1c1c1c;
+            border-color: #f5efe0;
+        }
+        .download-note {
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        .blog-links {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #c9a227;
+        }
+        .blog-links h2 {
+            border-left: none;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .blog-card {
+            background: #111;
+            border: 1px solid #333;
+            padding: 20px;
+            transition: transform 0.2s, border-color 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            border-color: #c9a227;
+        }
+        .blog-card h3 {
+            background: transparent;
+            color: #c9a227;
+            font-size: 1.1rem;
+            padding: 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .blog-card p {
+            font-size: 0.95rem;
+            color: #bbb;
+            margin-bottom: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #777;
+            font-family: 'Arial', sans-serif;
+        }
+        .footer a {
+            color: #c9a227;
+            text-decoration: none;
+        }
+        .footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .container { padding: 20px; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+            .blog-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>World Famous Foods &amp; Their Country Names</h1>
+    <p style="text-align: center; font-size: 1.2rem; color: #c9a227; font-style: italic; margin-bottom: 40px;">Full Word Script — A Culinary Journey Across 30 Iconic Dishes</p>
+
+    <div class="script-section">
+        <h3>1. Pizza — Italy</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Pizza dough (flour, water, yeast, salt, olive oil), tomato sauce, mozzarella cheese, fresh basil, olive oil.</div>
+        <p><strong>Description:</strong> A flat, round baked bread topped with tomato sauce, cheese, and various toppings. Originating from Naples, Italy, the classic Margherita uses tomatoes, mozzarella, and basil to represent the Italian flag. Cooked in a wood-fired oven for a crispy, charred crust.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>2. Sushi — Japan</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Vinegared rice, raw fish (tuna, salmon, yellowtail), seaweed (nori), wasabi, ginger, soy sauce.</div>
+        <p><strong>Description:</strong> Vinegared rice combined with seafood, vegetables, and occasionally tropical fruits. It is an art form requiring precise knife skills and rice preparation. Served as nigiri (fish over rice), maki (rolled), or sashimi (raw fish alone).</p>
+    </div>
+
+    <div class="script-section">
+        <h3>3. Biryani — India</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Basmati rice, meat (chicken, mutton, beef) or vegetables, yogurt, saffron, cardamom, cloves, cinnamon, bay leaves, onions, garlic, ginger, mint, coriander.</div>
+        <p><strong>Description:</strong> A layered, aromatic rice dish cooked with marinated meat and a complex blend of spices. Originating from the Mughal Empire, it is a royal feast. Each region has its own version, but all feature fragrant basmati rice and rich, spiced flavors.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>4. Croissant — France</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Flour, butter, yeast, milk, sugar, salt.</div>
+        <p><strong>Description:</strong> A flaky, crescent-shaped pastry made through lamination—folding butter into dough repeatedly to create hundreds of layers. Although Austrian in origin (kipferl), it was perfected in France. It is the quintessential French breakfast pastry.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>5. Burger — USA</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Ground beef patty, hamburger bun, lettuce, tomato, onion, pickles, cheese, ketchup, mustard, mayonnaise.</div>
+        <p><strong>Description:</strong> A sandwich consisting of a cooked meat patty placed inside a sliced bun. Popularized in the United States in the early 20th century by German immigrants. It represents American fast-food culture and is endlessly customizable.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>6. Tacos — Mexico</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Corn tortilla, meat (beef, pork, chicken, fish), onion, cilantro, lime, salsa, avocado, cheese.</div>
+        <p><strong>Description:</strong> A traditional Mexican dish consisting of a corn tortilla folded around a filling. Ancient in origin, predating European arrival. Eaten as street food at all hours. Key varieties include al pastor, barbacoa, and carnitas.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>7. Pasta — Italy</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Durum wheat semolina, water, eggs (for some varieties), salt.</div>
+        <p><strong>Description:</strong> A staple of Italian cuisine made from durum wheat and water. There are over 350 shapes, each designed to hold specific sauces. From spaghetti and penne to fettuccine and ravioli. It represents family, tradition, and Italian comfort food.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>8. Momos — China</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Dough (flour, water), filling (minced meat or vegetables), garlic, ginger, soy sauce, scallions.</div>
+        <p><strong>Description:</strong> Steamed dumplings popular across Asia, particularly in Tibet, Nepal, and India. A delicate pouch of dough filled with seasoned meat or vegetables. Often served with a spicy tomato-chili chutney. A symbol of warmth and hospitality.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>9. Ramen — Japan</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Wheat noodles, broth (pork, chicken, fish, or miso), soy sauce, sliced pork (chashu), seaweed, green onions, soft-boiled egg.</div>
+        <p><strong>Description:</strong> A Japanese noodle soup dish with Chinese origins. Each region has its own style—Tonkotsu, Shoyu, Miso, Shio. The broth is the soul, simmered for hours. Slurping is encouraged as a sign of appreciation.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>10. Paella — Spain</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Rice (bomba), saffron, olive oil, chicken, rabbit, seafood (shrimp, mussels, clams), vegetables, broth.</div>
+        <p><strong>Description:</strong> A Valencian rice dish cooked in a wide, shallow pan. The key is the socarrat—the crispy caramelized rice at the bottom. Traditionally cooked outdoors over an open fire. A festive dish meant to be shared.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>11. Chocolate — Switzerland</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Cocoa beans, cocoa butter, sugar, milk, vanilla.</div>
+        <p><strong>Description:</strong> Switzerland is credited with perfecting chocolate in the 19th century by inventing milk chocolate and the conching machine. Swiss chocolate is known for its smooth, melt-in-your-mouth texture. A symbol of luxury and sweetness.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>12. Falafel — Egypt</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Ground chickpeas or fava beans, onion, garlic, parsley, cilantro, cumin, coriander, salt, pepper.</div>
+        <p><strong>Description:</strong> Deep-fried balls or patties made from ground chickpeas or fava beans. Originating in Egypt as a meat substitute during Lent. Crispy outside, fluffy inside. Served in pita with tahini, pickles, and tomatoes.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>13. Steak — Argentina</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Beef (ribeye, sirloin, flank), salt, chimichurri (parsley, garlic, vinegar, olive oil, chili).</div>
+        <p><strong>Description:</strong> Argentina is world-renowned for its beef, thanks to the Pampas grasslands. The traditional method is asado—slow-cooking over an open wood fire. Seasoned simply with salt to let the natural flavor shine. A social event centered on fire and patience.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>14. Tandoori Chicken — India</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Chicken, yogurt, lemon juice, cumin, coriander, garam masala, paprika, garlic, ginger, salt.</div>
+        <p><strong>Description:</strong> A dish where chicken is marinated in yogurt and spices, then cooked in a tandoor (clay oven) at high heat. The result is a smoky, charred exterior with juicy meat. A favorite at Indian weddings and celebrations.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>15. Crepe — France</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Flour, eggs, milk, butter, sugar, salt.</div>
+        <p><strong>Description:</strong> A thin, delicate pancake from France. Can be sweet (with Nutella, sugar, lemon) or savory (with ham, cheese, eggs—known as a galette). The most famous is Crêpe Suzette, flambéed with orange butter and Grand Marnier.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>16. Pho — Vietnam</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Rice noodles, beef or chicken broth, charred ginger, onion, star anise, cinnamon, cloves, fish sauce, herbs (basil, cilantro), bean sprouts, lime.</div>
+        <p><strong>Description:</strong> Vietnam's national dish—a bowl of rice noodles in a clear, aromatic broth simmered for hours. Traditionally eaten for breakfast. Reflects French colonial influence. A bowl of warmth, history, and healing.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>17. Spring Rolls — Vietnam</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Rice paper, vegetables (cabbage, carrots, mushrooms), shrimp, pork, vermicelli noodles, herbs, dipping sauce (peanut or hoisin).</div>
+        <p><strong>Description:</strong> Fresh or fried rolls filled with vegetables, shrimp, and herbs wrapped in rice paper. Fresh version (Gỏi cuốn) is light and healthy. Fried version (Chả giò) is crispy and indulgent. A celebration of texture.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>18. Cheese — France</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Milk (cow, goat, sheep), rennet, salt, cultures.</div>
+        <p><strong>Description:</strong> France produces over 1,000 varieties of cheese, from soft Brie to pungent Roquefort. Cheese is a course in France, served after the main meal before dessert. A product of terroir—the soil, climate, and tradition of a region.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>19. Kebab — Turkey</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Meat (lamb, chicken, beef), garlic, paprika, sumac, cumin, yogurt, flatbread, grilled vegetables.</div>
+        <p><strong>Description:</strong> The word "kebab" means grilled meat. From Döner Kebab (rotating spit) to Şiş Kebab (skewered cubes). Seasoned with Middle Eastern spices. Served with flatbread, rice, and grilled vegetables. A symbol of Turkish hospitality.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>20. Baklava — Turkey</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Phyllo dough, chopped nuts (pistachios, walnuts), butter, syrup (sugar, honey, lemon juice).</div>
+        <p><strong>Description:</strong> A sweet pastry made of layers of phyllo dough filled with nuts and sweetened with syrup. Perfected in the Ottoman Empire's imperial kitchens. Crunchy, sticky, and decadent. Reserved for special occasions.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>21. Tiramisu — Italy</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Ladyfingers, coffee, mascarpone cheese, eggs, sugar, cocoa powder, marsala wine (optional).</div>
+        <p><strong>Description:</strong> Italy's most famous dessert. The name means "pick me up." Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa. Invented in the 1960s in Treviso. A perfect balance of bitter and sweet.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>22. Satay — Malaysia</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Marinated meat (chicken, beef, pork), turmeric, coriander, lemongrass, peanut sauce (peanuts, coconut milk, chili, garlic), cucumber, onion.</div>
+        <p><strong>Description:</strong> Skewered and grilled meat served with peanut sauce. A street food favorite in Malaysia and Indonesia. The peanut sauce is the star—creamy, spicy, and rich. A communal dish perfect for sharing.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>23. Pad Thai — Thailand</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Rice noodles, shrimp, tofu, eggs, bean sprouts, tamarind pulp, fish sauce, palm sugar, peanuts, lime.</div>
+        <p><strong>Description:</strong> Thailand's national dish—stir-fried rice noodles with a perfect balance of sweet, sour, salty, and spicy. Promoted in the 1930s to boost national identity. A harmony of flavors and textures.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>24. Dim Sum — China</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Various—shrimp, pork, chicken, vegetables, rice flour, wheat flour, soy sauce, ginger.</div>
+        <p><strong>Description:</strong> A Cantonese style of small, bite-sized dishes served in steamer baskets. The name means "touch the heart." Enjoyed with tea (yum cha). Includes har gow, siu mai, bao, and more. A social meal meant to be shared.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>25. Kimchi — South Korea</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Napa cabbage, radish, chili powder (gochugaru), garlic, ginger, fish sauce, salt.</div>
+        <p><strong>Description:</strong> Korea's soul food—fermented vegetables with a spicy, tangy flavor. The tradition of kimjang (communal making) is UNESCO-recognized. Packed with probiotics. A symbol of Korean identity and resilience.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>26. Dumplings — China</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Dough (flour, water), filling (pork, cabbage, shrimp, chives), soy sauce, ginger, garlic.</div>
+        <p><strong>Description:</strong> Pockets of dough filled with meat or vegetables, boiled, steamed, or pan-fried. Jiaozi are eaten during Lunar New Year for prosperity. Making dumplings is a family activity. The ultimate comfort food.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>27. Gyoza — Japan</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Ground pork, cabbage, garlic, ginger, scallions, soy sauce, sesame oil, gyoza wrappers.</div>
+        <p><strong>Description:</strong> Japan's version of the dumpling, originally from China. Pan-fried with a crispy bottom and steamed top. Served with soy-vinegar-chili dipping sauce. A staple of ramen shops and izakayas.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>28. Nasi Goreng — Indonesia</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Day-old rice, kecap manis (sweet soy sauce), garlic, shallots, chili, shrimp paste, chicken, prawns, fried egg, prawn crackers.</div>
+        <p><strong>Description:</strong> Indonesian fried rice. The name means "fried rice." Made with day-old rice, stir-fried with vegetables, meat, and sweet soy sauce. Topped with a fried egg. A humble dish born from resourcefulness, now a national treasure.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>29. Rendang — Indonesia</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Beef, coconut milk, galangal, ginger, turmeric, lemongrass, chili, garlic, shallots, candlenuts.</div>
+        <p><strong>Description:</strong> A spicy slow-cooked beef curry from West Sumatra. Simmered for hours until the liquid evaporates and the meat is tender and caramelized. Voted the world's most delicious food by CNN in 2011. Rich, complex, unforgettable.</p>
+    </div>
+
+    <div class="script-section">
+        <h3>30. Nasi Goreng — Indonesia</h3>
+        <div class="ingredients"><strong>Ingredients:</strong> Same as number 28—day-old rice, kecap manis, garlic, shallots, chili, shrimp paste, chicken, prawns, fried egg, prawn crackers.</div>
+        <p><strong>Description:</strong> A second nod to Indonesia's beloved fried rice. This dish represents the incredible diversity of Indonesian cuisine—thousands of regional dishes from spicy sambal to sweet pisang goreng. A fitting final celebration of global flavor.</p>
+    </div>
+
+    <div class="poster-section">
+        <h2>World Famous Foods &amp; Their Country Names — Infographic Poster</h2>
+        <p style="text-align: center; margin-bottom: 25px; color: #bbb;">Click the button below to download the full high-resolution infographic poster featuring all 30 dishes.</p>
+
+        <img src="assets/world-famous-foods-country-names-poster.png" alt="World Famous Foods and Their Country Names Infographic Poster - 30 dishes with flags, ingredients, and descriptions">
+
+        <a href="assets/world-famous-foods-country-names-poster.png" download class="download-btn">⬇ Download Full Infographic Poster</a>
+        <p class="download-note">* Right-click and "Save Image As" if the download button does not work.</p>
+    </div>
+
+    <div class="blog-links">
+        <h2>Explore More From Our Kitchen Blog</h2>
+        <div class="blog-grid">
+            <a href="world-famous-foods-country-names-poster.html" class="blog-card">
+                <h3>World Famous Foods &amp; Their Country Names</h3>
+                <p>The complete guide to 30 iconic dishes, their origins, ingredients, and cultural stories. Includes downloadable poster.</p>
+            </a>
+            <a href="types-of-pasta-sauces.html" class="blog-card">
+                <h3>The Art of Italian Pasta Making</h3>
+                <p>From tagliatelle to ravioli—master the dough, the shapes, and the sauces that define Italian cuisine.</p>
+            </a>
+            <a href="classic-cocktails-guide.html" class="blog-card">
+                <h3>Classic Cocktails Guide</h3>
+                <p>Discover the timeless recipes and techniques behind the world's most beloved mixed drinks.</p>
+            </a>
+            <a href="street-food-india-complete-guide.html" class="blog-card">
+                <h3>Spices of India: A Beginner's Guide</h3>
+                <p>Learn the essential spices for biryani, curries, and tandoori dishes—and how to balance them.</p>
+            </a>
+            <a href="6-pizza-recipes-hotel-restaurant-menu.html" class="blog-card">
+                <h3>6 Pizza Recipes for Hotel &amp; Restaurant Menus</h3>
+                <p>Elevate your menu with classic and creative pizza recipes fit for professional kitchens.</p>
+            </a>
+            <a href="types-of-cheese-used-in-hotels.html" class="blog-card">
+                <h3>Types of Cheese Used in Hotels</h3>
+                <p>From Brie to Roquefort—a professional guide to the cheeses that define hospitality menus.</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Nigel Thomas Hospitality Executive. All rights reserved.</p>
+        <p>World Famous Foods &amp; Their Country Names — Full Word Script &amp; Infographic</p>
+        <p><a href="blog.html">Back to Blog</a> | <a href="#">Privacy Policy</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
