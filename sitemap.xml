@@ -355,12 +355,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-  <loc>https://www.nigelthomas.live/kitchen-equipment-temperature-guide.html</loc>
-  <lastmod>2026-09-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-    <url>
         <loc>https://www.nigelthomas.live/general-manager-duties-and-responsibilities.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -494,12 +488,6 @@
     </url>
     <url>
         <loc>https://www.nigelthomas.live/kitchen-haccp-poster.html</loc>
-        <lastmod>2026-09-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.nigelthomas.live/kitchen-temperature-log-sheet.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -752,12 +740,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-  <loc>https://www.nigelthomas.live/methods-of-making-cocktails.html</loc>
-  <lastmod>2026-09-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-    <url>
         <loc>https://www.nigelthomas.live/waste-segregation-guide.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -823,4 +805,9 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-</urlset>
+  <url>
+    <loc>https://www.nigelthomas.live/types-of-sandwiches.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url></urlset>
