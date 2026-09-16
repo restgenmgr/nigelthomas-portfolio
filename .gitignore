@@ -17,3 +17,5 @@ encoding_fix2_backup/
 __pycache__/
 
 *.bak-*
+
+fire-source-backup/
