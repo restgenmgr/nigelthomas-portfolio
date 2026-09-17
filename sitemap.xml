@@ -1,11 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-    <url>  
-        <loc>https://nigelthomas.live/fb-leadership-playbook.html</loc>
-        <lastmod>2026-09-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>  
-    </url> 
     <url>
         <loc>https://www.nigelthomas.live/</loc>
         <lastmod>2026-09-06</lastmod>
@@ -139,7 +133,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.nigelthomas.live/blog/types-of-meal-plans-in-hotels.html</loc>
+        <loc>https://www.nigelthomas.live/types-of-meal-plans-in-hotels.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -254,12 +248,6 @@
     </url>
     <url>
         <loc>https://www.nigelthomas.live/equal-opportunity-employer-india-usa-europe.html</loc>
-        <lastmod>2026-09-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.nigelthomas.live/executive-career-dashboard.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -385,7 +373,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.nigelthomas.live/history-of-wine-world-wine-regions-guide.html</loc>
+        <loc>https://www.nigelthomas.live/history-of-wine-world-wine-regions.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -481,12 +469,6 @@
     </url>
     <url>
         <loc>https://www.nigelthomas.live/kitchen-cleaning-schedule-template.html</loc>
-        <lastmod>2026-09-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://www.nigelthomas.live/kitchen-haccp-poster.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
@@ -769,24 +751,18 @@
         <priority>0.5</priority>
     </url> 
     <url>
-  <loc>https://www.nigelthomas.live/blog/types-of-fire-extinguishers.html</loc>
+  <loc>https://www.nigelthomas.live/academy/wet-chemical-fire-extinguishers.html</loc>
   <lastmod>2026-09-08</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url> 
 <url>
-  <loc>https://www.nigelthomas.live/blog/restaurant-hotel-napkin-folding.html</loc>
+  <loc>https://www.nigelthomas.live/restaurant-hotel-napkin-folding.html</loc>
   <lastmod>2026-09-09</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
     <url>
-    <loc>https://www.nigelthomas.live/operations-management-first-role-restaurant-manager.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
-<url>
     <loc>https://www.nigelthomas.live/assets/restaurant-hotel-napkin-folding.png</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>yearly</changefreq>
@@ -810,3 +786,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url></urlset>
+
+
