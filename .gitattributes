@@ -1,4 +1,4 @@
-﻿* text=auto eol=lf
+* text=auto eol=lf
 *.html text
 *.xml  text
 *.css  text
