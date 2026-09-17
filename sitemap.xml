@@ -4,7 +4,7 @@
         <loc>https://nigelthomas.live/fb-leadership-playbook.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.6</priority>  
     </url>
     <url>
         <loc>https://www.nigelthomas.live/</loc>
@@ -277,7 +277,7 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.nigelthomas.live/f&amp;b-service-interview-q&amp;a.html</loc>
+        <loc>https://www.nigelthomas.live/f%26b-service-interview-q%26a.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
