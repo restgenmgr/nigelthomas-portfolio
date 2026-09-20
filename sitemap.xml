@@ -801,6 +801,12 @@
       <image:loc>https://www.nigelthomas.live/assets/international-soups-poster.jpg</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.nigelthomas.live/draught-beers.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
 
 
