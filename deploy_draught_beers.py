@@ -385,7 +385,7 @@ def main():
     if not (os.path.isdir('.git') and os.path.exists('sitemap.xml')):
         sys.exit('Run this from the repo root (cd C:\\Users\\admin\\Desktop\\nigelthomas-portfolio). No .git/sitemap.xml here.')
     src_html = next((p for p in (os.path.join(here, HTML_NAME), HTML_NAME) if os.path.exists(p)), None)
-    src_png = next((p for p in (os.path.join(here, PNG_NAME), PNG_NAME) if os.path.exists(p)), None)
+    src_png = next((p for p in (os.path.join(here, PNG_NAME), PNG_NAME, os.path.join('assets', PNG_NAME)) if os.path.exists(p)), None)
     if not src_html or not src_png:
         sys.exit('Missing %s and/or %s next to this script.' % (HTML_NAME, PNG_NAME))
 
