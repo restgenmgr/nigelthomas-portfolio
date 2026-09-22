@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
     <url>
         <loc>https://www.nigelthomas.live/</loc>
@@ -711,6 +711,12 @@
     <url>
         <loc>https://www.nigelthomas.live/vodka-brands-and-cocktails-guide.html</loc>
         <lastmod>2026-09-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <url>
+        <loc>https://www.nigelthomas.live/whiskies-of-the-world.html</loc>
+        <lastmod>2026-09-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
