@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whiskies of the World — Scotch, Bourbon, Rye, Canadian &amp; International Styles | Nigel Thomas</title>
+<meta name="description" content="A complete guide to whiskies of the world: Scotch, Kentucky Bourbon, Rye, Canadian, American, Irish, Japanese, Indian and other international styles. History, production, tasting notes, food pairing and a buyer's guide.">
+<meta name="author" content="Nigel Thomas">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.nigelthomas.live/whiskies-of-the-world.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Whiskies of the World — A Complete Guide">
+<meta property="og:description" content="Scotch, Kentucky Bourbon, Rye, Canadian, American, Irish, Japanese, Indian and international whisky styles explained.">
+<meta property="og:image" content="https://www.nigelthomas.live/assets/whiskies-of-the-world.png">
+<meta property="og:url" content="https://www.nigelthomas.live/whiskies-of-the-world.html">
+
+<style>
+  :root{
+    --bg:#0b0b0b; --panel:#141414; --panel-2:#1a1a1a;
+    --gold:#d4af37; --gold-soft:#e8c96a;
+    --text:#e8e6e1; --muted:#a8a49c; --line:#2a2a2a;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:Georgia,"Times New Roman",serif;
+    line-height:1.75; font-size:18px;
+  }
+  a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(212,175,55,.35);}
+  a:hover{color:var(--gold-soft);border-bottom-color:var(--gold-soft);}
+
+  header.site{
+    border-bottom:1px solid var(--line); padding:22px 20px; text-align:center;
+    background:linear-gradient(180deg,#0b0b0b 0%,#101010 100%);
+  }
+  header.site .brand{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    letter-spacing:.35em; text-transform:uppercase; font-size:13px; color:var(--gold);
+  }
+  header.site .brand strong{color:var(--text);}
+
+  .wrap{max-width:820px;margin:0 auto;padding:0 20px 80px;}
+
+  .hero{text-align:center;padding:64px 0 40px;border-bottom:1px solid var(--line);}
+  .hero .kicker{
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    letter-spacing:.3em; text-transform:uppercase; font-size:12px;
+    color:var(--gold); margin-bottom:18px;
+  }
+  .hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 18px;color:#fff;}
+  .hero p.lede{color:var(--muted);font-size:1.05rem;max-width:640px;margin:0 auto;}
+  .rule{width:70px;height:2px;background:var(--gold);margin:26px auto 0;}
+
+  h2{font-size:clamp(1.4rem,3vw,1.9rem);color:var(--gold);margin:56px 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+  h3{font-size:1.2rem;color:#fff;margin:34px 0 10px;}
+  p{margin:0 0 18px;color:var(--text);}
+  ul,ol{margin:0 0 20px;padding-left:22px;}
+  li{margin-bottom:8px;}
+
+  .panel{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);padding:20px 22px;margin:28px 0;border-radius:2px;}
+  .panel h4{margin:0 0 10px;font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);}
+  .panel p:last-child{margin-bottom:0;}
+
+  table{width:100%;border-collapse:collapse;margin:24px 0;font-size:.95rem;}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
+  th{color:var(--gold);font-family:"Helvetica Neue",Arial,sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;}
+  tr:hover td{background:var(--panel-2);}
+
+  /* INFOMATIC */
+  .infomatic{margin:70px 0 30px;text-align:center;}
+  .btn-infomatic{
+    display:inline-flex;align-items:center;gap:12px;background:transparent;color:var(--gold);
+    border:1px solid var(--gold);padding:16px 34px;
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:13px;letter-spacing:.24em;
+    text-transform:uppercase;cursor:pointer;transition:.25s ease;border-radius:2px;
+  }
+  .btn-infomatic:hover,.btn-infomatic:focus{background:var(--gold);color:#0b0b0b;outline:none;}
+  .btn-infomatic .icon{font-size:16px;line-height:1;}
+
+  #posterPanel{display:none;margin-top:34px;border:1px solid var(--line);background:var(--panel);padding:22px;border-radius:2px;text-align:left;}
+  #posterPanel.open{display:block;animation:fade .4s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  #posterPanel img{width:100%;height:auto;display:block;border:1px solid var(--line);}
+  .poster-caption{color:var(--muted);font-size:.88rem;text-align:center;margin:16px 0 18px;font-style:italic;}
+  .download-row{text-align:center;}
+  .btn-download{
+    display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#0b0b0b;
+    border:1px solid var(--gold);padding:13px 28px;
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;letter-spacing:.2em;
+    text-transform:uppercase;border-radius:2px;transition:.2s ease;font-weight:600;
+  }
+  .btn-download:hover{background:var(--gold-soft);border-color:var(--gold-soft);color:#0b0b0b;}
+
+  /* RELATED LINKS */
+  .related{margin-top:80px;padding-top:40px;border-top:1px solid var(--line);}
+  .related h2{border:none;margin-top:0;}
+  .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:24px;}
+  .related-grid a{
+    display:block;background:var(--panel);border:1px solid var(--line);
+    border-bottom:2px solid var(--gold);padding:18px 20px;color:var(--text);
+    font-size:.98rem;transition:.2s ease;border-radius:2px;
+  }
+  .related-grid a:hover{background:var(--panel-2);color:var(--gold);transform:translateY(-2px);}
+  .related-grid a span{
+    display:block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10px;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;
+  }
+
+  footer.site{
+    border-top:1px solid var(--line);text-align:center;padding:34px 20px;color:var(--muted);
+    font-family:"Helvetica Neue",Arial,sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  }
+  footer.site strong{color:var(--gold);}
+
+  @media(max-width:560px){
+    body{font-size:17px;}
+    .hero{padding:44px 0 30px;}
+    table{font-size:.88rem;}
+    th,td{padding:9px 8px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="brand"><strong>Nigel Thomas</strong> &nbsp;·&nbsp; Bar &amp; Beverage Guides</div>
+</header>
+
+<div class="wrap">
+<article>
+
+  <div class="hero">
+    <div class="kicker">The Complete Guide</div>
+    <h1>Whiskies of the World</h1>
+    <p class="lede">Scotch, Kentucky Bourbon, Rye, Canadian, American, Irish, Japanese, Indian and the wider family of international grain spirits — how they are made, how they taste, and how to serve them.</p>
+    <div class="rule"></div>
+  </div>
+
+  <p>Whisky is the most geographically dispersed of all the great spirits. From the misted glens of Speyside to the bluegrass hills of Kentucky, from the barley fields of Hokkaido to the sugarcane plains of India, distillers have taken the same three raw materials — grain, water and yeast — and produced a family of drinks so varied that two bottles standing side by side on the same back bar may share almost nothing but a name.</p>
+
+  <p>This guide is written for the working bartender, the hospitality student and the curious drinker. It covers the major whisky-producing nations, the rules that define each style, the flavour signatures you can expect, and the practical questions that come up behind the bar: what to pour, how to serve it, what to pair it with, and what to say when a guest asks for "a good whisky" and nothing else.</p>
+
+  <div class="panel">
+    <h4>How to use this guide</h4>
+    <p>Read it end to end for a full grounding, or jump to the style you need. At the bottom of the page you'll find the <strong>Whiskies of the World</strong> infomatic poster — a single-sheet visual summary of every style covered here — available to view and download.</p>
+  </div>
+
+  <h2>What Is Whisky?</h2>
+
+  <p>Whisky is a distilled alcoholic beverage made from a fermented mash of cereal grains. The word itself derives from the Gaelic <em>uisge beatha</em> — "water of life" — a translation of the Latin <em>aqua vitae</em>. The spelling divide is simple and worth remembering: <strong>Scotland, Canada and Japan</strong> generally use <em>whisky</em> (no "e"), while <strong>Ireland and the United States</strong> use <em>whiskey</em> (with an "e"). Neither is wrong; each is a matter of national convention and, in some cases, legal definition.</p>
+
+  <p>The production process is broadly consistent across the world:</p>
+
+  <ol>
+    <li><strong>Malting</strong> — grain (usually barley) is soaked and allowed to germinate, converting starches into fermentable sugars. In Scotch production the germination is halted by drying the barley over a fire, which is where peat smoke enters the flavour.</li>
+    <li><strong>Mashing</strong> — the malted grain is ground and mixed with hot water to extract sugars, producing a sweet liquid called <em>wort</em>.</li>
+    <li><strong>Fermentation</strong> — yeast is added and the wort is fermented for anywhere from two to five days, producing a low-alcohol beer-like wash.</li>
+    <li><strong>Distillation</strong> — the wash is distilled, usually twice in Scotland and Ireland, often three times in Ireland and some Japanese houses, and typically once through a continuous column still in American whiskey.</li>
+    <li><strong>Maturation</strong> — the new spirit is filled into oak casks and aged. This is where the majority of flavour, colour and character develops.</li>
+    <li><strong>Bottling</strong> — the whisky may be chill-filtered, coloured with caramel, diluted to bottling strength, or bottled at cask strength.</li>
+  </ol>
+
+  <p>Everything that follows — every regional style, every tasting note, every rule about what may and may not be called "Scotch" or "bourbon" — grows out of variations on those six steps.</p>
+
+  <h2>Scotch Whisky</h2>
+
+  <p>Scotch is the benchmark against which most other whiskies are measured. By law it must be produced in Scotland, made from water and malted barley (with whole grains of other cereals permitted), distilled to no more than 94.8% ABV, and matured in oak casks of no more than 700 litres for a minimum of three years. Nothing may be added except water and plain caramel colouring.</p>
+
+  <h3>The Five Scotch Regions</h3>
+
+  <table>
+    <tr><th>Region</th><th>Character</th><th>Typical notes</th></tr>
+    <tr><td><strong>Speyside</strong></td><td>Elegant, fruity, often unpeated</td><td>Apple, pear, honey, vanilla, sherry</td></tr>
+    <tr><td><strong>Highland</strong></td><td>Broad and varied</td><td>Heather, malt, gentle smoke, citrus</td></tr>
+    <tr><td><strong>Lowland</strong></td><td>Light, grassy, soft</td><td>Cut grass, cream, lemon, cereal</td></tr>
+    <tr><td><strong>Campbeltown</strong></td><td>Briny, oily, distinctive</td><td>Sea salt, smoke, dried fruit</td></tr>
+    <tr><td><strong>Islay</strong></td><td>Heavily peated, medicinal</td><td>Peat smoke, iodine, seaweed, tar</td></tr>
+  </table>
+
+  <h3>Single Malt vs Blended</h3>
+
+  <p>A <strong>single malt</strong> is the product of one distillery, made entirely from malted barley. A <strong>single grain</strong> comes from one distillery but may include other cereals and is usually column-distilled. A <strong>blended Scotch</strong> combines malt and grain whiskies from multiple distilleries — the category that built the global Scotch industry and still accounts for the overwhelming majority of sales worldwide.</p>
+
+  <div class="panel">
+    <h4>Bar tip</h4>
+    <p>When a guest asks for "a Scotch," the useful question is not <em>which region</em> but <em>how much smoke</em>. A Speyside such as Glenfiddich or Macallan sits at one end; a heavily peated Islay such as Laphroaig or Ardbeg sits at the other. Ask "smooth or smoky?" and you can place almost any palate in seconds.</p>
+  </div>
+
+  <h2>Kentucky Bourbon</h2>
+
+  <p>Bourbon is America's native whiskey and its most exported. To be called bourbon it must be:</p>
+
+  <ul>
+    <li>Made in the United States (not, despite popular belief, only in Kentucky — though Kentucky produces the overwhelming majority).</li>
+    <li>Produced from a mash bill of at least <strong>51% corn</strong>.</li>
+    <li>Distilled to no more than 160 proof (80% ABV).</li>
+    <li>Entered into new, charred oak containers at no more than 125 proof.</li>
+    <li>Aged for at least a period with no minimum stated by law, but "straight bourbon" requires a minimum of two years.</li>
+    <li>Bottled at no less than 80 proof.</li>
+    <li>Free of any added colouring or flavouring.</li>
+  </ul>
+
+  <p>The result is a whiskey defined by sweet, vanillin-rich oak. Expect caramel, vanilla, toasted corn, brown sugar and baking spice. The corn base gives bourbon its characteristic roundness, while the new charred barrels — used only once — give it the deep amber colour and dessert-like sweetness that make it so approachable.</p>
+
+  <h3>Key Bourbon Sub-Styles</h3>
+
+  <table>
+    <tr><th>Style</th><th>What it means</th></tr>
+    <tr><td><strong>Straight bourbon</strong></td><td>Aged at least two years, no added colour or flavour</td></tr>
+    <tr><td><strong>Bottled-in-bond</strong></td><td>At least four years old, 100 proof, one distillery, one season</td></tr>
+    <tr><td><strong>Small batch</strong></td><td>A blend of a limited number of barrels (no legal definition)</td></tr>
+    <tr><td><strong>Single barrel</strong></td><td>Bottled from one barrel, so each release varies</td></tr>
+    <tr><td><strong>Wheated bourbon</strong></td><td>Wheat replaces rye in the mash bill — softer, sweeter</td></tr>
+    <tr><td><strong>High-rye bourbon</strong></td><td>Higher rye content — spicier, more peppery</td></tr>
+  </table>
+
+  <h2>Rye Whiskey</h2>
+
+  <p>Rye is the older American style and, for many drinkers, the more interesting one. It must be made from a mash bill of at least <strong>51% rye</strong>, and follows the same new-charred-oak rules as bourbon. Where bourbon is round and sweet, rye is lean, spicy and herbal — think black pepper, caraway, dill, mint and a dry, grassy finish.</p>
+
+  <p>Rye was the dominant American whiskey before Prohibition and has returned to prominence largely through the cocktail revival: it is the backbone of the Manhattan, the Old Fashioned, the Sazerac and the Boulevardier. Its spice cuts through vermouth and bitters in a way bourbon's sweetness cannot.</p>
+
+  <p>Canadian whisky is sometimes called "rye" colloquially, but the two are distinct. Canadian rye is typically a blend where rye may be only a flavouring component.</p>
+
+  <h2>Canadian Whisky</h2>
+
+  <p>Canadian whisky is defined by blending and by a lighter, smoother house style. By law it must be mashed, distilled and aged in Canada for at least three years in wooden barrels of no more than 700 litres. It is typically a blend of a base whisky (often corn) with a flavouring whisky (often rye), married together before bottling.</p>
+
+  <p>The result is generally softer and more approachable than bourbon — vanilla, toffee, light spice, a clean grain finish. Brands such as Crown Royal, Canadian Club and Forty Creek define the category. Canadian whisky is an excellent introductory pour and works well in highballs and lighter mixed drinks.</p>
+
+  <h2>American Whiskey Beyond Bourbon</h2>
+
+  <p>The United States produces a wider range of whiskey than most drinkers realise. Beyond bourbon and rye:</p>
+
+  <table>
+    <tr><th>Style</th><th>Base</th><th>Notes</th></tr>
+    <tr><td><strong>Tennessee whiskey</strong></td><td>Corn (bourbon-style mash)</td><td>Filtered through maple charcoal before ageing — smoother, slightly smoky</td></tr>
+    <tr><td><strong>Wheat whiskey</strong></td><td>At least 51% wheat</td><td>Soft, bready, gentle</td></tr>
+    <tr><td><strong>Corn whiskey</strong></td><td>At least 80% corn</td><td>Often unaged or lightly aged; sweet and raw</td></tr>
+    <tr><td><strong>Malt whiskey</strong></td><td>At least 51% malted barley</td><td>American take on single malt</td></tr>
+    <tr><td><strong>Blended American</strong></td><td>Whiskey plus neutral spirit</td><td>Lighter, used in high-volume mixing</td></tr>
+  </table>
+
+  <h2>Irish Whiskey</h2>
+
+  <p>Irish whiskey is the smooth, approachable cousin of Scotch. It must be produced in Ireland (including Northern Ireland) and aged in wooden casks for at least three years. The defining technical difference is that Irish whiskey is almost always <strong>triple distilled</strong>, which strips out heavier compounds and produces a lighter, cleaner spirit.</p>
+
+  <p>Irish whiskey is also unusual in that it permits a wider range of grains and does not require the peat smoke that characterises much of Scotch. The classic styles are:</p>
+
+  <ul>
+    <li><strong>Single malt</strong> — 100% malted barley from one distillery.</li>
+    <li><strong>Single pot still</strong> — a mix of malted and unmalted barley, distilled in a pot still; the signature Irish style, spicy and creamy.</li>
+    <li><strong>Single grain</strong> — typically column-distilled from corn or wheat.</li>
+    <li><strong>Blended</strong> — a combination of the above; the most common category worldwide.</li>
+  </ul>
+
+  <p>Expect soft vanilla, green apple, honey, light spice and a clean, gentle finish. Jameson, Bushmills, Redbreast and Tullamore D.E.W. are the names most guests will recognise.</p>
+
+  <h2>Japanese Whisky</h2>
+
+  <p>Japanese whisky began as a deliberate imitation of Scotch and has become one of the most sought-after styles in the world. It was founded in the 1920s by Masataka Taketsuru, who studied chemistry in Scotland and brought the techniques home. The two founding houses — Suntory and Nikka — still dominate.</p>
+
+  <p>Japanese whisky is not defined by a single flavour but by precision. Distilleries such as Yamazaki, Hakushu, Yoichi and Miyagikyo produce whiskies that range from delicate and floral to heavily peated, often with a characteristic refinement and balance. The style tends toward elegance rather than power: subtle smoke, orchard fruit, mizunara oak spice and a long, clean finish.</p>
+
+  <div class="panel">
+    <h4>Note on labelling</h4>
+    <p>Japanese whisky labelling has historically been loose, and some bottles sold as "Japanese" contain imported spirit. New labelling standards introduced in 2021 tightened the rules, but older stock may still be on shelves. If authenticity matters to a guest, check the bottle for a Japanese distillery name and a stated ageing period.</p>
+  </div>
+
+  <h2>Indian Whisky</h2>
+
+  <p>India is the largest whisky market in the world by volume, though much of what is sold domestically is technically a blend of molasses-based spirit with a small proportion of malt whisky — a category sometimes called "Indian-made foreign liquor" (IMFL). This is changing fast.</p>
+
+  <p>A new generation of Indian single malts has won international acclaim. Amrut, founded in Bangalore, was the first Indian single malt to gain global attention. Paul John (Goa) and Indri (Haryana) have followed, producing whiskies that mature far faster than their Scottish equivalents because of India's heat — often reaching full maturity in three to five years. The flavour profile is typically rich, tropical and intense: mango, banana, dark chocolate, spice and a warm, oily texture.</p>
+
+  <h2>International Styles: Sake, Soju, Baijiu and Beyond</h2>
+
+  <p>Whisky does not exist in isolation. On a well-stocked international back bar it sits alongside other grain- and rice-based spirits that share its production logic and its place at the table.</p>
+
+  <h3>Sake (Japan)</h3>
+  <p>Sake is not a spirit but a brewed rice beverage, often called "rice wine." It is made from rice, water, yeast and koji mould, and ranges from crisp and dry (junmai, ginjo) to sweet and rich. While not a whisky, it belongs in any serious discussion of international grain beverages and is increasingly served alongside whisky in Japanese-style bars.</p>
+
+  <h3>Soju (Korea)</h3>
+  <p>Soju is a clear Korean spirit, traditionally distilled from rice but now most commonly made from sweet potato, wheat or tapioca. It is typically 16–25% ABV, neutral and clean, and is the world's best-selling spirit by volume. It is a staple of Korean dining and pairs naturally with grilled meats and spicy dishes.</p>
+
+  <h3>Baijiu (China)</h3>
+  <p>Baijiu is the world's most consumed spirit, though almost entirely within China. It is distilled from sorghum (sometimes with other grains) and is famous for its pungent, intensely savoury character — descriptors range from soy sauce and mushrooms to tropical fruit and anise. It is an acquired taste for many Western drinkers but is essential to understanding global spirits.</p>
+
+  <h3>Other Grain and Rice Spirits</h3>
+  <ul>
+    <li><strong>Shochu (Japan)</strong> — a distilled spirit, usually from sweet potato, barley or rice; lighter than whisky, often 25% ABV.</li>
+    <li><strong>Awamori (Okinawa)</strong> — a rice spirit distilled in Okinawa, aged in clay pots.</li>
+    <li><strong>Rakı (Turkey)</strong> — an aniseed-flavoured spirit, usually from grapes but with a grain-distilled cousin.</li>
+    <li><strong>Poitín (Ireland)</strong> — a traditional Irish distilled spirit, historically illicit, now regulated.</li>
+  </ul>
+
+  <h2>How to Taste Whisky</h2>
+
+  <p>Professional tasting follows a simple discipline. It is not about ceremony; it is about attention.</p>
+
+  <ol>
+    <li><strong>Look.</strong> Note the colour. Deeper amber suggests longer or more active oak ageing. Pale gold suggests a lighter cask influence or a younger spirit. Colour is not a quality indicator on its own, and in Scotland caramel colouring is legal.</li>
+    <li><strong>Nose.</strong> Add a small amount of water first if the spirit is above 50% ABV. Swirl gently and smell with your mouth slightly open. Try to identify three things: the grain, the cask and the environment (smoke, salt, earth).</li>
+    <li><strong>Taste.</strong> Take a small sip and let it coat the tongue. Note the arrival, the mid-palate and the finish separately. Add a drop of water and taste again — the flavour will change, often opening up.</li>
+    <li><strong>Finish.</strong> How long does the flavour last? A long, complex finish is one of the clearest signs of a well-made spirit.</li>
+  </ol>
+
+  <div class="panel">
+    <h4>The water question</h4>
+    <p>A few drops of room-temperature water — not ice, not soda — can transform a cask-strength whisky. Water breaks the surface tension of the alcohol and releases volatile aroma compounds. For a 40% ABV whisky, water is usually unnecessary. For anything above 50%, it is often essential.</p>
+  </div>
+
+  <h2>Serving Whisky Behind the Bar</h2>
+
+  <table>
+    <tr><th>Serve</th><th>Glass</th><th>Best for</th></tr>
+    <tr><td><strong>Neat</strong></td><td>Tasting glass / copita</td><td>High-quality single malts, cask strength</td></tr>
+    <tr><td><strong>With water</strong></td><td>Tasting glass</td><td>Anything above 50% ABV</td></tr>
+    <tr><td><strong>On the rocks</strong></td><td>Old Fashioned / tumbler</td><td>Bourbon, rye, blended Scotch</td></tr>
+    <tr><td><strong>Highball</strong></td><td>Highball / Collins</td><td>Japanese whisky, Canadian, blended Scotch</td></tr>
+    <tr><td><strong>Cocktail</strong></td><td>Varies</td><td>Rye in Manhattans, bourbon in Old Fashioneds</td></tr>
+  </table>
+
+  <p>Ice is a legitimate choice, but it is not neutral. Cold suppresses aroma and dilution changes the drink over time. A large, clear cube melts slowly and is preferable to crushed ice in a whisky glass. For a highball, use plenty of ice and top with chilled soda water — the drink should be cold, fizzy and refreshing, not watery.</p>
+
+  <h2>Food Pairing</h2>
+
+  <p>Whisky pairs well with food, but the pairing must respect the spirit's power. The general rule is: <strong>match intensity, and let the smoke, sweetness or spice find a partner.</strong></p>
+
+  <table>
+    <tr><th>Whisky style</th><th>Food pairing</th></tr>
+    <tr><td>Speyside / Lowland Scotch</td><td>Smoked salmon, mild cheese, apple tart</td></tr>
+    <tr><td>Islay / peated Scotch</td><td>Oysters, blue cheese, dark chocolate, smoked meats</td></tr>
+    <tr><td>Kentucky Bourbon</td><td>Pulled pork, pecan pie, aged cheddar, barbecue</td></tr>
+    <tr><td>Rye</td><td>Pastrami, rye bread, pickles, charcuterie</td></tr>
+    <tr><td>Canadian</td><td>Maple-glazed salmon, mild curry, light desserts</td></tr>
+    <tr><td>Irish</td><td>Irish stew, soda bread, creamy cheeses</td></tr>
+    <tr><td>Japanese</td><td>Sushi, sashimi, grilled yakitori, matcha desserts</td></tr>
+    <tr><td>Indian single malt</td><td>Tandoori, biryani, spiced chocolate</td></tr>
+  </table>
+
+  <h2>Buyer's Guide: What to Stock</h2>
+
+  <p>A well-balanced whisky shelf does not need to be large. It needs to cover the major flavour territories so that any guest can be served well.</p>
+
+  <h3>Essential bottles</h3>
+  <ul>
+    <li><strong>A Speyside single malt</strong> — the smooth, approachable anchor (e.g. Glenfiddich 12, Macallan 12).</li>
+    <li><strong>An Islay single malt</strong> — for the smoke seekers (e.g. Laphroaig 10, Ardbeg 10).</li>
+    <li><strong>A Kentucky bourbon</strong> — the sweet, oak-driven workhorse (e.g. Buffalo Trace, Maker's Mark).</li>
+    <li><strong>A rye</strong> — for cocktails and spice (e.g. Rittenhouse, Bulleit Rye).</li>
+    <li><strong>A Canadian</strong> — the light, easy pour (e.g. Crown Royal, Canadian Club).</li>
+    <li><strong>An Irish</strong> — the smooth, triple-distilled option (e.g. Jameson, Bushmills).</li>
+  </ul>
+
+  <h3>Nice to have</h3>
+  <ul>
+    <li>A Japanese single malt or blend for the curious guest.</li>
+    <li>A cask-strength bottling for the enthusiast.</li>
+    <li>A high-rye or wheated bourbon to show range within the American category.</li>
+    <li>An Indian single malt as a conversation piece.</li>
+  </ul>
+
+  <h3>What to avoid</h3>
+  <ul>
+    <li>Buying only on age statements — age is not quality, and NAS (no age statement) whiskies can be excellent.</li>
+    <li>Over-investing in rare bottles that will never be opened.</li>
+    <li>Ignoring your guests' actual requests in favour of what you personally like.</li>
+  </ul>
+
+  <h2>Common Questions</h2>
+
+  <h3>Is Scotch always smoky?</h3>
+  <p>No. Most Speyside and Lowland whiskies are unpeated or very lightly peated. Heavily smoky whisky is largely an Islay and island tradition.</p>
+
+  <h3>What is the difference between whisky and whiskey?</h3>
+  <p>Spelling convention. Scotland, Canada and Japan use <em>whisky</em>; Ireland and the United States use <em>whiskey</em>. The drink is the same family either way.</p>
+
+  <h3>Does older mean better?</h3>
+  <p>Not necessarily. Age adds complexity and oak influence, but it can also overpower a delicate spirit. Many excellent whiskies are bottled young, and many over-oaked ones are bottled old.</p>
+
+  <h3>Should I add water?</h3>
+  <p>If the whisky is above 50% ABV, a few drops usually help. Below 40%, it is a matter of taste.</p>
+
+  <h3>What is the best whisky for a beginner?</h3>
+  <p>A Speyside single malt, an Irish blend or a Canadian whisky. All are smooth, approachable and low in smoke.</p>
+
+  <h2>The Global Picture</h2>
+
+  <p>Whisky today is a genuinely global drink. Scotland remains the reference point, but the most exciting developments are happening elsewhere: Japanese distilleries pushing precision to new levels, Indian single malts rewriting the rules on maturation, American craft distillers reviving rye and experimenting with heritage grains, and new producers emerging across Europe, Australia, Taiwan and beyond.</p>
+
+  <p>For the bartender, this is an opportunity. The guest who once asked only for "a Scotch" now has a genuine world of styles to explore, and the professional who can guide that exploration — who knows the difference between a Speyside and a Highland, who can explain why bourbon tastes sweet and rye tastes spicy, who can pour a Japanese highball with confidence — is worth their weight behind the bar.</p>
+
+  <p>Use the poster below as a quick reference. Keep it behind the bar, print it for staff training, or share it with guests who want to learn. The world of whisky is large, but it is not intimidating once you understand the map.</p>
+
+  <!-- ================= INFOMATIC + POSTER ================= -->
+  <section class="infomatic" id="infomatic">
+    <button class="btn-infomatic" type="button"
+            onclick="togglePoster()"
+            aria-expanded="false" aria-controls="posterPanel">
+      <span class="icon">▣</span> View Infomatics
+    </button> 
+
+    <div id="posterPanel" role="region" aria-label="Whiskies of the World poster">
+      <img src="assets/whiskies-of-the-world.png"
+           alt="Whiskies of the World infomatic poster — Scotch, Kentucky Bourbon, Rye, Canadian, American, Irish, Japanese, Indian and international styles"
+           loading="lazy" width="2000" height="2680">
+
+      <p class="poster-caption">Whiskies of the World — a single-sheet reference covering every style in this guide.</p>
+
+      <div class="download-row">
+        <a class="btn-download"
+           href="assets/whiskies-of-the-world.png"
+           download="whiskies-of-the-world.png">
+          ↓ Download Poster (PNG)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RELATED LINKS ================= -->
+  <section class="related">
+    <h2>Other Interesting Beverage Pages</h2>
+
+    <div class="related-grid">
+
+      <a href="https://www.nigelthomas.live/why-is-a-wine-bottle-750ml.html">
+        <span>Wine</span>
+        Why Is a Wine Bottle 750ml?
+      </a>
+
+      <a href="https://www.nigelthomas.live/vodka-brands-and-cocktails-guide.html">
+        <span>Vodka</span>
+        Vodka Brands and Cocktails Guide
+      </a>
+
+      <a href="https://www.nigelthomas.live/blog/wine-service-etiquette.html">
+        <span>Service</span>
+        Wine Service Etiquette
+      </a>
+
+      <a href="https://www.nigelthomas.live/classic-cocktails-guide.html">
+        <span>Cocktails</span>
+        Classic Cocktails Guide
+      </a>
+
+      <a href="https://www.nigelthomas.live/vodka-brands-and-cocktails-guide.html">
+        <span>Spirits</span>
+        Vodka Guide — Brands &amp; Cocktails
+      </a>
+
+    </div>
+  </section>
+
+</article>
+</div>
+
+<footer class="site">
+  <strong>Nigel Thomas</strong> &nbsp;·&nbsp; nigelthomas.live &nbsp;·&nbsp; Bar &amp; Beverage Guides
+</footer>
+
+<script>
+function togglePoster(){
+  var panel = document.getElementById('posterPanel');
+  var btn   = document.querySelector('.btn-infomatic');
+  var open  = panel.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  if(open){
+    panel.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+}
+</script>
+
+</body>
+</html>
