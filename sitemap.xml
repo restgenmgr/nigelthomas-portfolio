@@ -813,7 +813,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url> 
-</urlset>
+    <url>
+        <loc>https://www.nigelthomas.live/resume-making-tools-guide.html</loc>
+        <lastmod>2026-09-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url></urlset>
+
 
 
 
