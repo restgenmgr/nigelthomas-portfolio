@@ -1,5 +1,6 @@
 {
   "redirects": [
+    { "source": "/cruise-ship-crew-rotations-guide.html", "destination": "/not-all-cruise-lines-are-created-equal.html", "permanent": true },
     {
       "source": "/mastering-food-cost-guide.html",
       "destination": "/food-cost-control-complete-guide.html",
