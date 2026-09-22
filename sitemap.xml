@@ -48,12 +48,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
-          <article class="article-card">
-        <h3 class="article-title"><a href="future-of-ai-guardrails.html">The Future of AI: Power, Peril, and the Absolute Need for Control</a></h3>
-        <div class="article-meta">AI Safety &amp; Governance | April 2025</div>
-        <div class="article-excerpt">Unmonitored artificial intelligence can replicate, deviate, and multiply. Why strict guidelines, continuous monitoring, and enforceable guardrails are non‑negotiable for the future of AI — and what happens if we don't act.</div>
-        <a href="future-of-ai-guardrails.html" class="read-more-btn">Read Article &rarr;</a>
-      </article>
+    <url>
+        <loc>https://www.nigelthomas.live/future-of-ai-guardrails.html</loc>
+        <lastmod>2026-09-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>  
     <url> 
         <loc>https://www.nigelthomas.live/ai-readiness-self-assessment-hospitality.html</loc>
         <lastmod>2026-09-06</lastmod>
