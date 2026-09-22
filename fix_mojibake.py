@@ -4,7 +4,7 @@ Scans all .html files in the repo for mojibake (UTF-8 emoji/punctuation
 that got saved or read as Windows-1252) and fixes them.
 
 Strategy:
-  1. Peel utf8→latin1 repeatedly until no mojibake signature remains
+  1. Peel utf8->latin1 repeatedly until no mojibake signature remains
   2. Run ftfy.fix_text as a final normalization pass
   3. Verify the result is clean; if not, skip and report
 
@@ -43,17 +43,45 @@ SKIP_DIRS = {
 SKIP_DIR_PREFIXES = ("backup-html", "backup")
 
 # Any of these remaining in the text = still mojibake.
+#
+# Every signature is written as raw UTF-8 bytes (\xNN escapes) rather
+# than literal characters.  This is deliberate: if this source file is
+# ever saved or copied through a tool that mangles non-ASCII text, the
+# signatures would silently stop matching.  Byte escapes cannot be
+# mangled.
+#
+# Each entry is the UTF-8 encoding of what a Windows-1252 mis-decode
+# of a real UTF-8 sequence looks like.  For example, an em dash U+2014
+# (UTF-8 bytes E2 80 94) decoded as CP1252 becomes "â€”", which in
+# UTF-8 is the bytes C3 A2 E2 82 AC E2 80 9D.
 MOJIBAKE_SIGS = [
-    "Ãƒ",       # multi-layer
-    "Ã‚",       # multi-layer
-    "Ã¢â‚¬",    # multi-layer
-    "ðŸ",       # single-layer (most common)
-    "â€"",       # en dash single-layer
-    "â€œ",       # left double quote
-    "â€\x9d",   # right double quote
-    "â€™",       # right single quote
-    "Ã©", "Ã¨", "Ã ",  # accented latin
-    "Â°", "Â£", "Â©",   # misc single-layer symbols
+    # -- multi-layer (double/triple-encoded) ---------------------------
+    "\xc3\x83",                          # Ãƒ
+    "\xc3\x82",                          # Ã‚
+    "\xc3\xa2\xe2\x82\xac",              # Ã¢â‚¬
+
+    # -- single-layer, common -----------------------------------------
+    "\xc3\xb0\xc5\xb8",                  # ðŸ   (emoji prefix)
+    "\xe2\x80\x93",                      # â€“  (en dash)
+    "\xe2\x80\x94",                      # â€”  (em dash)
+    "\xe2\x80\x9c",                      # â€œ  (left double quote)
+    "\xe2\x80\x9d",                      # â€   (right double quote)
+    "\xe2\x80\x99",                      # â€™  (right single quote)
+    "\xe2\x80\x98",                      # â€˜  (left single quote)
+    "\xe2\x80\xa6",                      # â€¦  (ellipsis)
+    "\xe2\x80\xa2",                      # â€¢  (bullet)
+    "\xe2\x84\xa2",                      # â„¢  (trademark)
+
+    # -- accented latin ----------------------------------------------
+    "\xc3\xa9", "\xc3\xa8", "\xc3\xa0",  # é è à
+    "\xc3\xaa", "\xc3\xab", "\xc3\xa7",  # ê ë ç
+    "\xc3\xae", "\xc3\xaf", "\xc3\xb4",  # î ï ô
+    "\xc3\xb9", "\xc3\xbb", "\xc3\xb1",  # ù û ñ
+    "\xc3\xbc", "\xc3\xb6", "\xc3\xa4",  # ü ö ä
+
+    # -- misc single-layer symbols -----------------------------------
+    "\xc2\xb0", "\xc2\xa3", "\xc2\xa9",  # ° £ ©
+    "\xc2\xae", "\xc2\xa0",              # ® nbsp
 ]
 
 
@@ -62,19 +90,19 @@ def has_mojibake(text):
 
 
 def peel(text):
-    """Peel utf8→latin1 one layer. Returns new text."""
+    """Peel utf8->latin1 one layer. Returns new text."""
     return text.encode("latin-1", errors="strict").decode("utf-8", errors="strict")
 
 
 def fix_text_multi(text):
     """Peel until no mojibake signature, then ftfy. Returns (fixed, depth, ok)."""
     depth = 0
-    # Up to 6 peels — the worst we've seen is 5
+    # Up to 6 peels -- the worst we've seen is 5
     while has_mojibake(text) and depth < 6:
         try:
             text = peel(text)
         except (UnicodeDecodeError, UnicodeEncodeError):
-            # Can't peel this file cleanly — bail and let caller decide
+            # Can't peel this file cleanly -- bail and let caller decide
             return text, depth, False
         depth += 1
 
