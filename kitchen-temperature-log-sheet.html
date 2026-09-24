@@ -30,6 +30,55 @@ gtag('config', 'G-P839TWLQSJ');
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should kitchen temperatures be logged?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most HACCP plans require refrigeration and freezer checks at least twice a day (opening and closing), cooking and reheating temperatures checked every time a high-risk item is prepared, and hot/cold holding checked every two to four hours during active service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What temperature range is considered the danger zone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The food safety danger zone is between 5°C and 60°C (41°F and 140°F). Bacteria multiply rapidly in this range, so food should not sit within it for more than a combined two hours before it is discarded."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a temperature log replace a certified HACCP plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This log sheet is an operational recording tool. It supports a HACCP plan by documenting critical control point checks, but it does not replace a certified HACCP plan, a hazard analysis, or your local health authority's specific requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should be responsible for filling in the temperature log?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A designated, trained team member on each shift — typically a chef de partie, sous chef, or shift supervisor — should take and record readings, with the outlet manager or executive chef reviewing and signing off at the end of each day."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should happen if a reading falls outside the safe range?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Record the out-of-range reading immediately, take corrective action (such as adjusting the equipment, moving stock, or discarding affected food), note the action taken in the Corrective Action column, and escalate to a supervisor if the issue recurs or cannot be resolved on the spot."
+      }
+    }
+  ]
+}
+</script>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Segoe UI',Arial,sans-serif;background:#0b0b0b;color:#d9d9d9;line-height:1.6;}
@@ -73,6 +122,18 @@ h1{color:#d4af37;font-size:2rem;margin-bottom:12px;}
 footer{background:#000;border-top:2px solid #d4af37;color:#d4af37;text-align:center;padding:40px 20px;margin-top:60px;}
 .footer-links a{color:#d4af37;text-decoration:none;margin:0 12px;}
 .footer-links a:hover{text-decoration:underline;}
+.article-body p{margin-bottom:14px;color:#ccc;}
+.article-body h2{color:#d4af37;font-size:1.3rem;margin:26px 0 12px;}
+.article-body h3{color:#e8c766;font-size:1.05rem;margin:18px 0 8px;}
+.article-body ul, .article-body ol{margin:0 0 14px 22px;color:#ccc;}
+.article-body li{margin-bottom:6px;}
+.faq-item{border-bottom:1px solid #2a2a2a;padding:16px 0;}
+.faq-item:last-child{border-bottom:none;}
+.faq-item h3{color:#d4af37;font-size:1rem;margin-bottom:6px;}
+.faq-item p{color:#ccc;font-size:0.92rem;}
+.reg-table{width:100%;border-collapse:collapse;font-size:0.88rem;margin:14px 0;}
+.reg-table th{background:#1a1a1a;color:#d4af37;text-align:left;padding:8px;border-bottom:2px solid #d4af37;}
+.reg-table td{padding:8px;border-bottom:1px solid #222;color:#ccc;}
 
 @media print{
   .navbar,.actions,footer,.breadcrumb,.add-row-btn{display:none !important;}
@@ -81,6 +142,7 @@ footer{background:#000;border-top:2px solid #d4af37;color:#d4af37;text-align:cen
   .header-card,.section-card{background:#fff;color:#000;box-shadow:none;border:1px solid #ccc;page-break-inside:avoid;}
   h1,h2,.log-table td,.range-note,.ref-box{color:#000 !important;}
   .log-table th{background:#000;color:#fff !important;}
+  .article-body, .faq-item, .related-reading{display:none !important;}
 }
 @media(max-width:768px){.nav-container{flex-direction:column;gap:15px;}h1{font-size:1.5rem;}.header-card,.section-card{padding:20px;}.meta-row{flex-direction:column;}}
 </style>
@@ -117,6 +179,33 @@ footer{background:#000;border-top:2px solid #d4af37;color:#d4af37;text-align:cen
       <button class="btn" onclick="window.print()">🖨️ Print Log Sheet</button>
       <button class="btn-outline btn" onclick="resetLog()">Reset Log</button>
     </div>
+  </div>
+
+  <div class="section-card article-body">
+    <h2>Why Kitchen Temperature Logging Matters</h2>
+    <p>
+      Temperature control is one of the few food safety hazards a commercial kitchen can measure directly and
+      objectively — a thermometer either confirms an item is safe or it doesn't. That is exactly why regulators,
+      auditors, and HACCP systems treat refrigeration, cooking, and holding temperatures as Critical Control
+      Points (CCPs): the specific steps in a food's journey where a hazard can be prevented, eliminated, or
+      reduced to a safe level, and where the outcome must be checked and recorded every time.
+    </p>
+    <p>
+      Most foodborne illness outbreaks traced back to a commercial kitchen come down to one of three failures:
+      food held too long in the temperature danger zone, undercooked high-risk items such as poultry or ground
+      meat, or refrigeration equipment that quietly drifted out of range without anyone noticing. A consistent,
+      dated, signed-off log sheet is the paper trail that proves those checks actually happened — which is what
+      a health inspector, an internal auditor, or your own kitchen team needs to see during a review or, worse,
+      after a complaint.
+    </p>
+    <h3>What This Tool Does</h3>
+    <p>
+      This page gives you three ready-to-use logs — refrigeration &amp; freezers, cooking &amp; reheating, and
+      hot/cold holding — with built-in target ranges for each. Fill it in on screen and print it at the end of
+      shift, or print it blank and complete it by hand at the pass. Every log includes a corrective action
+      column, because recording an out-of-range reading is only half the requirement — what you did about it
+      matters just as much to an auditor.
+    </p>
   </div>
 
   <div class="section-card">
@@ -162,7 +251,65 @@ footer{background:#000;border-top:2px solid #d4af37;color:#d4af37;text-align:cen
     <p class="disclaimer">This log is a general operational reference and does not replace your property's certified HACCP plan or local food safety regulations. Always verify acceptable temperature ranges against your local health authority.</p>
   </div>
 
+  <div class="section-card article-body">
+    <h2>How to Use This Log Sheet</h2>
+    <ol>
+      <li><strong>Set it up once per shift.</strong> Fill in the property name, date, and the name of the person recording readings at the top of the sheet.</li>
+      <li><strong>Check refrigeration at opening and closing.</strong> Walk-in fridges, freezers, and reach-ins should be checked at minimum twice a day; busier kitchens often check every four hours.</li>
+      <li><strong>Log cooking temperatures at the point of service, not before.</strong> Take the reading from the thickest part of the item, away from bone, immediately before it leaves the kitchen.</li>
+      <li><strong>Check hot and cold holding every two to four hours</strong> during active buffet or banquet service, since holding equipment can drift once doors are opened repeatedly.</li>
+      <li><strong>Record the corrective action immediately</strong> if any reading falls outside the target range — don't wait until end of shift to remember what was done.</li>
+      <li><strong>Have a supervisor review and sign off</strong> at the end of each day, then file the printed sheet with your HACCP records.</li>
+    </ol>
+
+    <h2>Recommended Logging Frequency by Equipment Type</h2>
+    <table class="reg-table">
+      <tr><th>Equipment / Process</th><th>Minimum Check Frequency</th></tr>
+      <tr><td>Walk-in fridges &amp; freezers</td><td>Twice daily (opening &amp; closing)</td></tr>
+      <tr><td>Reach-in fridges near prep stations</td><td>Every 4 hours during service</td></tr>
+      <tr><td>Cooking &amp; reheating</td><td>Every batch / every high-risk item</td></tr>
+      <tr><td>Hot holding (buffets, banquets)</td><td>Every 2 hours</td></tr>
+      <tr><td>Cold holding (salad bars, displays)</td><td>Every 2–4 hours</td></tr>
+    </table>
+
+    <h2>Understanding the Danger Zone</h2>
+    <p>
+      The temperature danger zone — 5°C to 60°C (41°F to 140°F) — is the range in which bacteria such as
+      <em>Salmonella</em>, <em>E. coli</em>, and <em>Listeria</em> multiply fastest. Under ideal conditions,
+      bacterial populations can double in as little as 20 minutes within this range. That is why most food
+      safety systems apply a strict "2-hour / 4-hour rule": food left in the danger zone for under 2 hours
+      (cumulative, not per instance) can usually be returned to safe temperature or used immediately; between
+      2 and 4 hours it must be used immediately with no further temperature abuse; beyond 4 hours it should be
+      discarded. Cumulative means every minute the item has spent in the danger zone across its whole life in
+      your kitchen — from delivery, to storage, to prep, to service — adds up toward that limit.
+    </p>
+  </div>
+
   <div class="section-card">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How often should kitchen temperatures be logged?</h3>
+      <p>Refrigeration and freezers at least twice daily; cooking and reheating every time a high-risk item is prepared; hot/cold holding every two to four hours during active service.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What temperature range is considered the danger zone?</h3>
+      <p>5°C to 60°C (41°F to 140°F). Food should not spend more than a combined two hours in this range before it is discarded.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does a temperature log replace a certified HACCP plan?</h3>
+      <p>No. This log sheet supports a HACCP plan by documenting checks at critical control points, but it does not replace a certified plan or your local health authority's specific requirements.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Who should be responsible for filling in the temperature log?</h3>
+      <p>A trained team member on each shift — typically a chef de partie, sous chef, or shift supervisor — with the outlet manager or executive chef reviewing and signing off daily.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What should happen if a reading falls outside the safe range?</h3>
+      <p>Record it immediately, take corrective action (adjust the equipment, move stock, or discard affected food), note the action taken, and escalate to a supervisor if it recurs.</p>
+    </div>
+  </div>
+
+  <div class="section-card related-reading">
     <h2>Related HACCP Tools</h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:10px;">
       <a href="haccp-kitchen-checklist.html" style="background:#161616;border:1px solid #333;border-radius:12px;padding:20px;text-decoration:none;display:block;">
@@ -172,6 +319,14 @@ footer{background:#000;border-top:2px solid #d4af37;color:#d4af37;text-align:cen
       <a href="kitchen-cleaning-schedule-template.html" style="background:#161616;border:1px solid #333;border-radius:12px;padding:20px;text-decoration:none;display:block;">
         <strong style="color:#d4af37;display:block;font-size:1.05rem;margin-bottom:6px;">🧽 Kitchen Cleaning Schedule Template</strong>
         <span style="color:#aaa;font-size:0.88rem;">Daily, weekly, and monthly cleaning tasks with sign-off tracking.</span>
+      </a>
+      <a href="haccp-hazard-analysis-critical-control-points.html" style="background:#161616;border:1px solid #333;border-radius:12px;padding:20px;text-decoration:none;display:block;">
+        <strong style="color:#d4af37;display:block;font-size:1.05rem;margin-bottom:6px;">📋 HACCP: Hazard Analysis &amp; Critical Control Points</strong>
+        <span style="color:#aaa;font-size:0.88rem;">The seven HACCP principles explained, from receiving to service.</span>
+      </a>
+      <a href="food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html" style="background:#161616;border:1px solid #333;border-radius:12px;padding:20px;text-decoration:none;display:block;">
+        <strong style="color:#d4af37;display:block;font-size:1.05rem;margin-bottom:6px;">🌡️ Food Safety Temperatures &amp; Cold Chain Control</strong>
+        <span style="color:#aaa;font-size:0.88rem;">Safe cooking, holding, cooling and storage temperatures explained in full.</span>
       </a>
     </div>
   </div>
@@ -209,21 +364,3 @@ function resetLog(){
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
