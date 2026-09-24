@@ -315,7 +315,7 @@ Write-Host "New page template validated." -ForegroundColor Green
 # ------------------------------------------------------------
 # STEP 5: Build kitchen-food.html card + sitemap entry, validate BEFORE writing
 # ------------------------------------------------------------
-$kfContent = Get-Content -Raw -LiteralPath ".\kitchen-food.html"
+$kfContent = [System.IO.File]::ReadAllText((Join-Path $PWD "kitchen-food.html"), [System.Text.UTF8Encoding]::new($false))
 $kfMarker = "`n</div>`n</main>"
 if ($kfContent -notmatch [regex]::Escape("</div>") ) { throw "kitchen-food.html structure not recognized. Nothing written." }
 
