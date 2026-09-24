@@ -824,13 +824,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  <url>
+   <url>
     <loc>https://www.nigelthomas.live/what-is-ebitda-fb-hospitality-guide.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-</url>
-   <url>
+  </url>
+  <url>
     <loc>https://www.nigelthomas.live/kitchen-temperature-log-sheet.html</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -843,7 +843,3 @@
     <priority>0.5</priority>
   </url>
 </urlset>
-
-
-
-
