@@ -1,6 +1,6 @@
-<#
+﻿<# 
 ONE-SHOT-UPLOAD-TYPES-OF-MENUS.ps1
-------------------------------------------------------------
+----------------------------------------------------kitchen--------
 Run this from INSIDE C:\Users\admin\Desktop\nigelthomas-portfolio
 after uploading the poster image to the REPO ROOT (not assets/).
 
@@ -97,8 +97,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-P839TWLQSJ');
 </script>
-<meta name="google-adsense-account" content="ca-pub-4282121192943910">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-8127243414384620">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script>
 <style>
 body{font-family:'Segoe UI',Arial,sans-serif;background:#0b0b0b;color:#d4d4d4;line-height:1.7;margin:0}
 .hero{background:#000;padding:60px 20px;text-align:center;border-bottom:2px solid #d4af37}
@@ -315,7 +315,7 @@ Write-Host "New page template validated." -ForegroundColor Green
 # ------------------------------------------------------------
 # STEP 5: Build kitchen-food.html card + sitemap entry, validate BEFORE writing
 # ------------------------------------------------------------
-$kfContent = Get-Content -Raw -LiteralPath ".\kitchen-food.html"
+$kfContent = [System.IO.File]::ReadAllText((Join-Path $PWD "kitchen-food.html"), [System.Text.UTF8Encoding]::new($false))
 $kfMarker = "`n</div>`n</main>"
 if ($kfContent -notmatch [regex]::Escape("</div>") ) { throw "kitchen-food.html structure not recognized. Nothing written." }
 
@@ -349,7 +349,7 @@ if (([regex]::Matches($newKfContent, 'class="article-card"')).Count -ne ([regex]
 Write-Host "kitchen-food.html update validated (card count +1)." -ForegroundColor Green
 
 # --- sitemap.xml ---
-$sitemapContent = Get-Content -Raw -LiteralPath ".\sitemap.xml"
+$sitemapContent = [System.IO.File]::ReadAllText((Join-Path $PWD "sitemap.xml"), [System.Text.UTF8Encoding]::new($false))
 if ($sitemapContent -match "types-of-menus-fb-service\.html") {
     Write-Host "sitemap.xml already has an entry for this page - skipping sitemap update." -ForegroundColor Yellow
     $newSitemapContent = $sitemapContent
@@ -380,7 +380,6 @@ try {
 }
 
 # --- blog.html "Latest Articles" list (one line, non-destructive) ---
-$blogContent = Get-Content -Raw -LiteralPath ".\blog.html"
 if ($blogContent -match "types-of-menus-fb-service\.html") {
     Write-Host "blog.html already references this page - skipping blog.html update." -ForegroundColor Yellow
     $newBlogContent = $blogContent
