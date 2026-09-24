@@ -1,5 +1,5 @@
-<#
-ONE-SHOT-UPLOAD-TYPES-OF-MENUS.ps1
+<# 
+ONE-SHOT-UPLOAD-TYPES-OF-MENUS.ps1 
 ------------------------------------------------------------
 Run this from INSIDE C:\Users\admin\Desktop\nigelthomas-portfolio
 after uploading the poster image to the REPO ROOT (not assets/).
