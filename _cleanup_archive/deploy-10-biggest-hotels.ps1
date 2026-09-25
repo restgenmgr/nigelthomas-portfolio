@@ -63,7 +63,7 @@ $articleContent = @'
 </script>
 
 <!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script>
 
 <!-- Schema.org -->
 <script type="application/ld+json">
@@ -298,7 +298,7 @@ GMs will never encounter in a career.
 </section>
 
 <div class="ad-space">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4282121192943910" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8127243414384620" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
@@ -488,7 +488,7 @@ infrastructure unmatched anywhere else on Earth.
 </section>
 
 <div class="ad-space">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4282121192943910" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8127243414384620" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
@@ -580,7 +580,7 @@ independent businesses, all reporting into one coherent property strategy.
 </section>
 
 <div class="ad-space">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4282121192943910" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8127243414384620" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
@@ -686,7 +686,7 @@ running divisions independently, not because any one person could oversee
 </div>
 
 <div class="ad-space">
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4282121192943910" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8127243414384620" data-ad-slot="0000000000" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 

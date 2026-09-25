@@ -13,7 +13,7 @@ $poster = "`r`n<!-- SINGLE BOTTOM POSTER -->`r`n<section class='nt-poster-bottom
 
 $html = $html.Replace('<footer>', "$poster<footer>")
 $html = $html.Replace('G-CLRRV5DMXZ', 'G-P839TWLQSJ')
-$html = $html.Replace('ca-pub-4282121192943910', 'ca-pub-8127243414384620')
+$html = $html.Replace('ca-pub-8127243414384620', 'ca-pub-8127243414384620')
 
 [System.IO.File]::WriteAllText($file, $html, [System.Text.UTF8Encoding]::new($false))
 

@@ -44,8 +44,8 @@ $html = @'
 </script>
 
 <!-- Google AdSense -->
-<meta name="google-adsense-account" content="ca-pub-4282121192943910">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910" crossorigin="anonymous"></script>
+<meta name="google-adsense-account" content="ca-pub-8127243414384620">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620" crossorigin="anonymous"></script>
 
 <style>
   :root {
@@ -239,7 +239,7 @@ $html = @'
     <div class="ad-slot">
       <ins class="adsbygoogle"
            style="display:block"
-           data-ad-client="ca-pub-4282121192943910"
+           data-ad-client="ca-pub-8127243414384620"
            data-ad-slot="0000000000"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>

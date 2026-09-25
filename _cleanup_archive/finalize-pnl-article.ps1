@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Stop"
 
 $repo = "C:\Users\admin\Desktop\nigelthomas-portfolio"
 Set-Location $repo
@@ -44,7 +44,7 @@ gtag('config', 'G-CLRRV5DMXZ');
 
 <!-- Google AdSense -->
 <script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4282121192943910"
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620"
   crossorigin="anonymous"></script>
 
 <style>
