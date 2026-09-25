@@ -13,7 +13,7 @@ What it does, in order, with a safety check before each write:
   5. Adds one line to blog.html's "Latest Articles" list
   6. Adds a <url> entry to sitemap.xml
   7. Validates every file (well-formed HTML/XML, no BOM) before writing
-  8. git add + commit (does NOT push Ã¢â‚¬â€ you review and push yourself)
+  8. git add + commit (does NOT push ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â you review and push yourself)
 
 Nothing is written until ALL checks pass. If anything is wrong,
 the script throws and changes nothing.
@@ -64,7 +64,7 @@ $posterSourcePath = Join-Path $repoRoot $posterFile
 $posterDestPath   = Join-Path $assetsPath $posterFile
 
 if (Test-Path $posterDestPath) {
-    Write-Host "Poster already exists in assets/ Ã¢â‚¬â€ will overwrite." -ForegroundColor Yellow
+    Write-Host "Poster already exists in assets/ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â will overwrite." -ForegroundColor Yellow
 }
 Copy-Item -LiteralPath $posterSourcePath -Destination $posterDestPath -Force
 Write-Host "Poster copied to assets\$posterFile" -ForegroundColor Green
@@ -89,7 +89,7 @@ $newPageHtml = @'
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>13 Types of Menus Used in Food &amp; Beverage Service | Nigel Thomas</title>
 <link rel="canonical" href="https://www.nigelthomas.live/types-of-menus-fb-service.html">
-<meta name="description" content="A complete guide to the 13 types of menus used in food and beverage service Ã¢â‚¬â€ Ãƒâ‚¬ la Carte, Table d'HÃƒÂ´te, Prix Fixe, Tasting, Buffet, Banquet, Cycle, Static, Seasonal, Du Jour, and more Ã¢â‚¬â€ with what each is best for.">
+<meta name="description" content="A complete guide to the 13 types of menus used in food and beverage service ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ÃƒÆ’Ã¢â€šÂ¬ la Carte, Table d'HÃƒÆ’Ã‚Â´te, Prix Fixe, Tasting, Buffet, Banquet, Cycle, Static, Seasonal, Du Jour, and more ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â with what each is best for.">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P839TWLQSJ"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -143,8 +143,8 @@ a{color:#d4af37}
 <body>
 
 <div class="hero">
-<h1>Ã°Å¸ÂÂ½Ã¯Â¸Â 13 Types of Menus Used in Food &amp; Beverage Service</h1>
-<p>From Ãƒâ‚¬ la Carte to Du Jour Ã¢â‚¬â€ a field-tested breakdown of every menu format hospitality professionals need to know, and exactly when to use each one.</p>
+<h1>ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â½ÃƒÂ¯Ã‚Â¸Ã‚Â 13 Types of Menus Used in Food &amp; Beverage Service</h1>
+<p>From ÃƒÆ’Ã¢â€šÂ¬ la Carte to Du Jour ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â a field-tested breakdown of every menu format hospitality professionals need to know, and exactly when to use each one.</p>
 </div>
 
 <div class="container">
@@ -154,16 +154,16 @@ a{color:#d4af37}
 
 <h1>13 Types of Menus Used in Food &amp; Beverage Service</h1>
 
-<p>Choosing the right menu type is one of the most important decisions in food and beverage service. I've opened properties where the menu format was decided in a boardroom with a spreadsheet, and I've opened properties where it was decided on the back of a napkin at 11 PM before a soft launch Ã¢â‚¬â€ and the difference always shows up on the floor within the first week. Every menu is designed to meet different operational goals, guest expectations, and dining experiences. Get the format wrong, and even brilliant food struggles: kitchens over-produce, service slows down, and guests leave confused about what they actually paid for. Get it right, and the menu quietly does half the selling for you before a server ever reaches the table.</p>
+<p>Choosing the right menu type is one of the most important decisions in food and beverage service. I've opened properties where the menu format was decided in a boardroom with a spreadsheet, and I've opened properties where it was decided on the back of a napkin at 11 PM before a soft launch ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â and the difference always shows up on the floor within the first week. Every menu is designed to meet different operational goals, guest expectations, and dining experiences. Get the format wrong, and even brilliant food struggles: kitchens over-produce, service slows down, and guests leave confused about what they actually paid for. Get it right, and the menu quietly does half the selling for you before a server ever reaches the table.</p>
 
-<button class="infomatic-toggle" onclick="document.getElementById('infomaticPanel').classList.toggle('open')">Ã°Å¸â€œÅ  VIEW INFOMATIC</button>
+<button class="infomatic-toggle" onclick="document.getElementById('infomaticPanel').classList.toggle('open')">ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  VIEW INFOMATIC</button>
 <div class="infomatic-panel" id="infomaticPanel">
 <img src="__DATA_URI__" alt="Infographic showing 13 types of menus used in food and beverage service, including a la carte, table d'hote, prix fixe, tasting, buffet, banquet, cycle, static, seasonal, du jour, children's, beverage, and dessert menus" loading="lazy">
 <br>
-<a class="download-btn" href="__DATA_URI__" download="types-of-menus-fb-service.__EXT__">Ã¢Â¬â€¡ Download Poster</a>
+<a class="download-btn" href="__DATA_URI__" download="types-of-menus-fb-service.__EXT__">ÃƒÂ¢Ã‚Â¬Ã¢â‚¬Â¡ Download Poster</a>
 </div>
 
-<div class="highlight"><strong>A menu is not a list of dishes. It's an operational contract between the kitchen, the front of house, and the guest Ã¢â‚¬â€ and each format below writes that contract differently.</strong></div>
+<div class="highlight"><strong>A menu is not a list of dishes. It's an operational contract between the kitchen, the front of house, and the guest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â and each format below writes that contract differently.</strong></div>
 
 <h2>The Core Five: How Guests Order and Pay</h2>
 <p>These five formats decide the single biggest question in any dining concept: does the guest choose everything, or does the house decide most of it for them?</p>
@@ -171,13 +171,13 @@ a{color:#d4af37}
 <div class="menu-grid">
 
 <div class="menu-card">
-<h3><span class="num">1</span>Ãƒâ‚¬ la Carte</h3>
+<h3><span class="num">1</span>ÃƒÆ’Ã¢â€šÂ¬ la Carte</h3>
 <p>Each dish is listed and priced separately, allowing guests to order individual items exactly as they like them.</p>
 <div class="best-for"><strong>Best for:</strong> Fine dining and casual restaurants.</div>
 </div>
 
 <div class="menu-card">
-<h3><span class="num">2</span>Table d'HÃƒÂ´te (Set Menu)</h3>
+<h3><span class="num">2</span>Table d'HÃƒÆ’Ã‚Â´te (Set Menu)</h3>
 <p>A complete meal with a fixed number of courses offered at one set price, with little or no choice per course.</p>
 <div class="best-for"><strong>Best for:</strong> Hotels, banquets, and events.</div>
 </div>
@@ -189,7 +189,7 @@ a{color:#d4af37}
 </div>
 
 <div class="menu-card">
-<h3><span class="num">4</span>Tasting Menu (DÃƒÂ©gustation)</h3>
+<h3><span class="num">4</span>Tasting Menu (DÃƒÆ’Ã‚Â©gustation)</h3>
 <p>A series of small courses showcasing the chef's creativity and signature dishes, usually in a set sequence.</p>
 <div class="best-for"><strong>Best for:</strong> Fine dining restaurants.</div>
 </div>
@@ -202,10 +202,10 @@ a{color:#d4af37}
 
 </div>
 
-<div class="highlight"><strong>Know the difference:</strong> Table d'HÃƒÂ´te menus are more fixed with limited or no choices, while Prix Fixe menus usually offer choices within each course.</div>
+<div class="highlight"><strong>Know the difference:</strong> Table d'HÃƒÆ’Ã‚Â´te menus are more fixed with limited or no choices, while Prix Fixe menus usually offer choices within each course.</div>
 
 <h2>Menus Built Around Volume and Structure</h2>
-<p>The next set exists to solve a different problem entirely Ã¢â‚¬â€ not guest choice, but operational repeatability. These formats keep a kitchen consistent across hundreds of covers a day, or years of contract catering.</p>
+<p>The next set exists to solve a different problem entirely ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â not guest choice, but operational repeatability. These formats keep a kitchen consistent across hundreds of covers a day, or years of contract catering.</p>
 
 <div class="menu-grid">
 
@@ -217,7 +217,7 @@ a{color:#d4af37}
 
 <div class="menu-card">
 <h3><span class="num">7</span>Cycle Menu</h3>
-<p>A menu that repeats over a fixed period Ã¢â‚¬â€ commonly 7, 14, or 28 days Ã¢â‚¬â€ before starting again.</p>
+<p>A menu that repeats over a fixed period ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â commonly 7, 14, or 28 days ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â before starting again.</p>
 <div class="best-for"><strong>Best for:</strong> Hospitals, schools, and staff cafeterias.</div>
 </div>
 
@@ -236,13 +236,13 @@ a{color:#d4af37}
 <div class="menu-card">
 <h3><span class="num">10</span>Du Jour Menu</h3>
 <p>Features dishes or specials that change daily, often built around what came in fresh that morning.</p>
-<div class="best-for"><strong>Best for:</strong> Restaurants, cafÃƒÂ©s, and bistros.</div>
+<div class="best-for"><strong>Best for:</strong> Restaurants, cafÃƒÆ’Ã‚Â©s, and bistros.</div>
 </div>
 
 </div>
 
 <h2>Additional Menu Types (Optional but Common)</h2>
-<p>These aren't standalone concepts Ã¢â‚¬â€ they're supporting menus that ride alongside one of the ten above, and they quietly do a lot of work for guest satisfaction and check average.</p>
+<p>These aren't standalone concepts ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â they're supporting menus that ride alongside one of the ten above, and they quietly do a lot of work for guest satisfaction and check average.</p>
 
 <div class="menu-grid">
 
@@ -261,7 +261,7 @@ a{color:#d4af37}
 <div class="menu-card">
 <h3><span class="num">13</span>Dessert Menu</h3>
 <p>A dedicated menu offering desserts, pastries, and sweet dishes, presented after the main meal.</p>
-<div class="best-for"><strong>Best for:</strong> Restaurants and cafÃƒÂ©s.</div>
+<div class="best-for"><strong>Best for:</strong> Restaurants and cafÃƒÆ’Ã‚Â©s.</div>
 </div>
 
 </div>
@@ -269,8 +269,8 @@ a{color:#d4af37}
 <h2>Quick Reference: Choosing the Right Format</h2>
 <table>
 <tr><th>If your priority is...</th><th>Consider this menu type</th></tr>
-<tr><td>Maximum guest flexibility</td><td>Ãƒâ‚¬ la Carte</td></tr>
-<tr><td>Predictable food cost per cover</td><td>Table d'HÃƒÂ´te or Prix Fixe</td></tr>
+<tr><td>Maximum guest flexibility</td><td>ÃƒÆ’Ã¢â€šÂ¬ la Carte</td></tr>
+<tr><td>Predictable food cost per cover</td><td>Table d'HÃƒÆ’Ã‚Â´te or Prix Fixe</td></tr>
 <tr><td>Showcasing chef creativity</td><td>Tasting Menu</td></tr>
 <tr><td>High volume, self-service</td><td>Buffet</td></tr>
 <tr><td>Contracted institutional feeding</td><td>Cycle Menu</td></tr>
@@ -279,12 +279,12 @@ a{color:#d4af37}
 </table>
 
 <h2>Why This Matters on the Floor, Not Just on Paper</h2>
-<p>I've trained enough F&amp;B teams to know that menu type dictates almost everything downstream Ã¢â‚¬â€ prep schedules, staffing ratios, portion control, and even how a server is trained to sell. A static menu team can run lean because tomorrow looks like today. A du jour team needs a pre-shift briefing every single day, because the server has to sell a dish they may not have tasted yet. A banquet menu succeeds or fails entirely on what was agreed weeks in advance Ã¢â‚¬â€ there is no room for improvisation once 200 covers are plated. Understanding these formats isn't academic; it's the difference between a kitchen that runs in control and one that's constantly firefighting.</p>
+<p>I've trained enough F&amp;B teams to know that menu type dictates almost everything downstream ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prep schedules, staffing ratios, portion control, and even how a server is trained to sell. A static menu team can run lean because tomorrow looks like today. A du jour team needs a pre-shift briefing every single day, because the server has to sell a dish they may not have tasted yet. A banquet menu succeeds or fails entirely on what was agreed weeks in advance ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â there is no room for improvisation once 200 covers are plated. Understanding these formats isn't academic; it's the difference between a kitchen that runs in control and one that's constantly firefighting.</p>
 
-<div class="highlight"><strong>Numbers tell you what happened. People tell you why. The right menu format is what lets both sides Ã¢â‚¬â€ kitchen and guest Ã¢â‚¬â€ actually deliver on their end of the deal.</strong></div>
+<div class="highlight"><strong>Numbers tell you what happened. People tell you why. The right menu format is what lets both sides ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â kitchen and guest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â actually deliver on their end of the deal.</strong></div>
 
 <h2>Conclusion</h2>
-<p>A well-designed menu is more than a list of food and drinks Ã¢â‚¬â€ it is a powerful tool for improving guest satisfaction, increasing profitability, and creating memorable dining experiences. Whether you're opening a fine dining room built around a tasting menu or running a 500-cover banquet on a fixed Table d'HÃƒÂ´te, the format you choose sets the ceiling for what your team can deliver consistently. Know all thirteen, and you'll never again default to "ÃƒÂ  la carte" just because it's familiar Ã¢â‚¬â€ you'll choose the format that actually fits the operation in front of you.</p>
+<p>A well-designed menu is more than a list of food and drinks ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â it is a powerful tool for improving guest satisfaction, increasing profitability, and creating memorable dining experiences. Whether you're opening a fine dining room built around a tasting menu or running a 500-cover banquet on a fixed Table d'HÃƒÆ’Ã‚Â´te, the format you choose sets the ceiling for what your team can deliver consistently. Know all thirteen, and you'll never again default to "ÃƒÆ’Ã‚Â  la carte" just because it's familiar ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â you'll choose the format that actually fits the operation in front of you.</p>
 
 <h2>Related Reading</h2>
 <div class="related-reading">
@@ -308,7 +308,7 @@ $newPageHtml = $newPageHtml.Replace("__DATA_URI__", $dataUri).Replace("__EXT__",
 # ------------------------------------------------------------
 # STEP 4: Validate the new page BEFORE writing anything
 # ------------------------------------------------------------
-if ($newPageHtml -notmatch "infomatic-panel") { throw "Template build failed Ã¢â‚¬â€ infomatic panel missing. Nothing written." }
+if ($newPageHtml -notmatch "infomatic-panel") { throw "Template build failed ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â infomatic panel missing. Nothing written." }
 if ($newPageHtml -notmatch [regex]::Escape($dataUri.Substring(0,60))) { throw "Base64 data URI failed to embed. Nothing written." }
 Write-Host "New page template validated." -ForegroundColor Green
 
@@ -378,6 +378,8 @@ try {
 } catch {
     throw "New sitemap.xml is not valid XML: $($_.Exception.Message). Nothing written."
 }
+
+$blogContent = [System.IO.File]::ReadAllText((Join-Path $PWD "blog.html"), [System.Text.UTF8Encoding]::new($false))
 
 # --- blog.html "Latest Articles" list (one line, non-destructive) ---
 if ($blogContent -match "types-of-menus-fb-service\.html") {
