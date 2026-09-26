@@ -1,0 +1,25 @@
+=== FILES TO UPLOAD ===
+1. top-worldwide-famous-desserts.html  -> repo root
+2. top-worldwide-famous-desserts.jpg   -> assets/  (also base64-embedded inside the HTML, so the
+                                            page works standalone even before assets/ is uploaded)
+
+=== blog.html CARD SNIPPET ===
+(Insert as a sibling immediately after the last existing <article class="article-card"> block,
+matching the site's real card structure — no bare <div> wrapper, no stray placement outside <main>.)
+
+<article class="article-card">
+  <h3 class="article-title"><a href="top-worldwide-famous-desserts.html">Top Worldwide Famous Desserts: 10 Desserts, 10 Countries</a></h3>
+  <p class="article-meta">Hospitality Training Series</p>
+  <p class="article-excerpt">A quick-reference poster and guide to 10 iconic desserts — Tiramisu, Baklava, Macarons, Gulab Jamun, Cr&egrave;me Br&ucirc;l&eacute;e, Cheesecake, Mochi, Sticky Toffee Pudding, Panna Cotta and Rasmalai — with origins and F&amp;B training notes.</p>
+  <a class="read-more-btn" href="top-worldwide-famous-desserts.html">Read Article &rarr;</a>
+</article>
+
+=== sitemap.xml SNIPPET ===
+(Insert before </urlset>)
+
+<url>
+  <loc>https://www.nigelthomas.live/top-worldwide-famous-desserts.html</loc>
+  <lastmod>2026-09-26</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
