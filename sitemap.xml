@@ -31,12 +31,6 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.nigelthomas.live/7-types-of-coffee-and-how-theyre-made.html</loc>
-        <lastmod>2026-09-06</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://www.nigelthomas.live/about.html</loc>
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
@@ -695,6 +689,22 @@
         <lastmod>2026-09-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.nigelthomas.live/types-of-coffee-complete-guide.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.nigelthomas.live/top-worldwide-famous-desserts.html</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.nigelthomas.live/assets/top-worldwide-famous-desserts.jpg</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://www.nigelthomas.live/types-of-food-and-beverage-service.html</loc>
