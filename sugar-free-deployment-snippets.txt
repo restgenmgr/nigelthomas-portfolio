@@ -1,0 +1,24 @@
+=== FILES TO UPLOAD ===
+1. sugar-free-dessert-menu.html  -> repo root
+2. sugar-free-dessert-menu.jpg   -> assets/  (also base64-embedded inside the HTML, so the
+                                    page works standalone even before assets/ is uploaded)
+
+=== blog.html CARD SNIPPET ===
+(Insert as a sibling immediately after the last existing <article class="article-card"> block.)
+
+<article class="article-card">
+  <h3 class="article-title"><a href="sugar-free-dessert-menu.html">Sugar-Free Dessert Menu: 12 Guilt-Free Desserts</a></h3>
+  <p class="article-meta">Hospitality &amp; Wellness Dining Training Series</p>
+  <p class="article-excerpt">A full recipe guide and reference poster covering 12 sugar-free desserts — Chocolate Mousse, Berry Chia Pudding, Cheesecake Cups, Panna Cotta, Almond Flour Cookies, Mango Sorbet, and more — with ingredients, method and F&amp;B service notes.</p>
+  <a class="read-more-btn" href="sugar-free-dessert-menu.html">Read Article &rarr;</a>
+</article>
+
+=== sitemap.xml SNIPPET ===
+(Insert before </urlset>)
+
+<url>
+  <loc>https://www.nigelthomas.live/sugar-free-dessert-menu.html</loc>
+  <lastmod>2026-09-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
