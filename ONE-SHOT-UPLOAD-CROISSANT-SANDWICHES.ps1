@@ -4,7 +4,7 @@ $repo = "C:\Users\admin\Desktop\nigelthomas-portfolio"
 $dl   = Join-Path $env:USERPROFILE "Downloads"
 $utf8 = New-Object System.Text.UTF8Encoding $false
 $page = "croissant-sandwiches.html"
-$img  = "croissant-sandwitches.png"
+$img  = "croissant-sandwiches.png"
 $base = "https://www.nigelthomas.live"
 Set-Location $repo
 
@@ -22,19 +22,31 @@ git pull --rebase --autostash
 if ($LASTEXITCODE -ne 0) { throw "git pull failed - fix conflicts, then rerun" }
 
 # 1. place page at repo root
-$src = Find-Local $page
-if (-not $src) { throw "Cannot find $page in repo root or Downloads" }
 $dstPage = Join-Path $repo $page
-if ($src -ne $dstPage) { Move-Item $src $dstPage -Force }
+$fresh = Get-ChildItem $dl -Recurse -Filter $page -File -ErrorAction SilentlyContinue | Select-Object -First 1
+if ($fresh) { Move-Item $fresh.FullName $dstPage -Force; Write-Host "Page copied from Downloads (overwrites repo copy)." -ForegroundColor Yellow }
+elseif (-not (Test-Path $dstPage)) { throw "Cannot find $page in repo root or Downloads" }
 
 # 2. poster into assets\
 $assets = Join-Path $repo "assets"
 if (-not (Test-Path $assets)) { New-Item -ItemType Directory $assets | Out-Null }
 $dstImg = Join-Path $assets $img
+$oldPre = Join-Path $assets "croissant-sandwitches.png"
+if ((-not (Test-Path $dstImg)) -and (Test-Path $oldPre)) {
+  if (git ls-files "assets/croissant-sandwitches.png") { git mv "assets/croissant-sandwitches.png" "assets/$img" } else { Move-Item $oldPre $dstImg -Force }
+  Write-Host "Renamed old-spelling poster to $img" -ForegroundColor Yellow
+}
 if (-not (Test-Path $dstImg)) {
   $s = Find-Local $img
   if (-not $s) { throw "Cannot find $img anywhere" }
   Move-Item $s $dstImg -Force
+}
+$oldImg = Join-Path $assets "croissant-sandwitches.png"
+if (Test-Path $oldImg) {
+  if ((Get-FileHash $oldImg).Hash -eq (Get-FileHash $dstImg).Hash) {
+    if (git ls-files "assets/croissant-sandwitches.png") { git rm -f "assets/croissant-sandwitches.png" | Out-Null } else { Remove-Item $oldImg -Force }
+    Write-Host "Removed duplicate old-spelling poster." -ForegroundColor Yellow
+  } else { Write-Host "Old-spelling poster differs from new one - left in place, check manually." -ForegroundColor Red }
 }
 Write-Host "Files placed: page + assets\$img" -ForegroundColor Yellow
 
