@@ -24,3 +24,6 @@ sitemap_broken.csv
 # No one-off scripts in repo root
 /*.ps1
 
+
+# Build artifacts
+methods-of-making-cocktails-poster.html
