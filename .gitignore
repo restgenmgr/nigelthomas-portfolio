@@ -27,3 +27,6 @@ sitemap_broken.csv
 
 # Build artifacts
 methods-of-making-cocktails-poster.html
+
+# Blank/backup poster artifacts
+*.blank-bak-*
