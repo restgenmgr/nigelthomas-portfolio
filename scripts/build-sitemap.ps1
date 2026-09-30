@@ -1,31 +1,80 @@
-name: Generate Sitemap
+# ==== Config ====
+$siteRoot = "https://www.nigelthomas.live"
+$today    = (Get-Date).ToString("yyyy-MM-dd")
 
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+$folders = @(
+  '.',
+  'academy',
+  'blog',
+  'culinary',
+  'food-safety',
+  'hospitality-management',
+  'regional-food'
+)
 
-permissions:
-  contents: write
+$excludeNames = @(
+  'index-old.html',
+  'test.html',
+  'accounting-dashboard.html',
+  'accounting-v3.html',
+  'accounting__index.html'
+)
 
-jobs:
-  sitemap_job:
-    runs-on: ubuntu-latest
-    name: Generate a sitemap
-    steps:
-      - name: Checkout the repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+# Resolve repo root regardless of where the script lives
+$repoRoot = Split-Path -Parent $PSScriptRoot
 
-      - name: Generate the sitemap
-        shell: pwsh
-        run: ./build-sitemap.ps1
+# ==== Collect URLs ====
+$urls = New-Object System.Collections.Generic.List[string]
+$seen = New-Object System.Collections.Generic.HashSet[string]
 
-      - name: Commit and push the sitemap
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add sitemap.xml
-          git commit -m "Automatically generate sitemap" || echo "No changes to commit"
-          git push
+foreach ($folder in $folders) {
+    $fullPath = Join-Path -Path $repoRoot -ChildPath $folder
+    if (-not (Test-Path $fullPath)) { continue }
+
+    $files = Get-ChildItem -Path $fullPath -Filter *.html -File
+    foreach ($f in $files) {
+        if ($excludeNames -contains $f.Name) { continue }
+
+        if ($folder -eq '.') {
+            $rel = $f.Name
+        } else {
+            $rel = "$folder/$($f.Name)"
+        }
+
+        $rel = $rel -replace '&', '%26'
+        $url = "$siteRoot/$rel"
+
+        if (-not $seen.Add($url)) { continue }
+
+        $priority = '0.5'
+        if ($rel -eq 'index.html') { $priority = '1.0' }
+        elseif ($rel -eq 'blog.html') { $priority = '0.8' }
+        elseif ($rel -in @('kitchen-food.html','beverage.html','management-operations.html','career-general.html')) { $priority = '0.7' }
+        elseif ($rel -in @('what-is-ebitda-fb-hospitality-guide.html','kitchen-temperature-log-sheet.html')) { $priority = '0.7' }
+
+        $urls.Add(@"
+  <url>
+    <loc>$url</loc>
+    <lastmod>$today</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>$priority</priority>
+  </url>
+"@)
+    }
+}
+
+# ==== Build XML ====
+$header = @"
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+"@
+$footer = "</urlset>`n"
+
+$output = $header + ($urls -join "`n") + $footer
+
+# ==== Write to repo root ====
+$outPath = Join-Path -Path $repoRoot -ChildPath 'sitemap.xml'
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText($outPath, $output, $utf8NoBom)
+
+Write-Host "Done. Wrote $($urls.Count) unique URLs to $outPath" -ForegroundColor Green
