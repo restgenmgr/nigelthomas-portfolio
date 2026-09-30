@@ -65,6 +65,18 @@
       "destination": "/types-of-meal-plans-in-hotels.html",
       "permanent": true
     },
+        {
+      "source": "/blog/types-of-meal-plans-in-hotels.html",
+      "destination": "/types-of-meal-plans-in-hotels.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/types-of-menus-fb-service.html",
+      "destination": "/types-of-menus-fb-service.html",
+      "permanent": true
+    },
+    {
+      "source": "/operations-business/cloud-kitchen-catering-operations-guide.html",
     {
       "source": "/operations-business/cloud-kitchen-catering-operations-guide.html",
       "destination": "/cloud-kitchen-catering-operations-guide.html",
