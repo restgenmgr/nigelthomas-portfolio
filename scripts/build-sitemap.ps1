@@ -20,7 +20,7 @@ jobs:
 
       - name: Generate the sitemap
         shell: pwsh
-        run: pwsh ./scripts/build-sitemap.ps1
+        run: ./build-sitemap.ps1
 
       - name: Commit and push the sitemap
         run: |
