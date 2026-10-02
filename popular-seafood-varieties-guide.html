@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+
+
+
+
+
+<meta content="article" property="og:type"/>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P839TWLQSJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P839TWLQSJ');
+</script>
+<!-- Google AdSense -->
+<script async crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620"></script>
+
+<style>
+  :root {
+    --bg: #0b0b0b;
+    --gold: #d4af37;
+    --gold-bright: #f4d160;
+    --text: #f4f4f4;
+    --muted: #b8b8b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+  }
+  header.site-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #222;
+  }
+  header.site-header a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+  h1 {
+    color: var(--gold-bright);
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    margin-bottom: 12px;
+    line-height: 1.25;
+  }
+  .byline {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+  }
+  .byline span {
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .intro, .breakdown, .takeaway, .related, .mistakes {
+    margin-bottom: 28px;
+  }
+  h2 {
+    color: var(--gold);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--gold);
+    padding-left: 10px;
+  }
+  h3 {
+    color: var(--gold);
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+  }
+  p { color: var(--text); margin-bottom: 14px; }
+  ul { margin: 0 0 14px 22px; color: var(--text); }
+  li { margin-bottom: 8px; }
+  .highlight {
+    background: #141414;
+    border-left: 3px solid var(--gold);
+    padding: 18px 20px;
+    border-radius: 4px;
+    color: var(--gold-bright);
+    font-style: italic;
+    margin: 28px 0;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin: 20px 0 28px;
+  }
+  @media (max-width: 620px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+  .col-box {
+    background: #141414;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 18px 20px;
+  }
+  .col-box h3 {
+    color: var(--gold);
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+  }
+  .col-box .num {
+    display: inline-block;
+    background: var(--gold);
+    color: #0b0b0b;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    margin-right: 8px;
+    font-size: 0.85rem;
+  }
+  .col-box .best-for {
+    color: var(--muted);
+    font-size: 0.88rem;
+    border-top: 1px solid #262626;
+    padding-top: 8px;
+    margin-top: 10px;
+  }
+  .col-box .best-for strong { color: var(--gold); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 22px 0 28px;
+    background: #141414;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #262626;
+    font-size: 0.95rem;
+  }
+  th {
+    background: #1a1a1a;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  td { color: var(--text); }
+  .related-links {
+    list-style: none;
+    margin: 0;
+  }
+  .related-links li { margin-bottom: 10px; }
+  .related-links a {
+    color: var(--gold-bright);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--gold);
+  }
+  .related-links a:hover { color: var(--gold); }
+  .tags {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .tags span {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: var(--gold);
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+  .ad-slot {
+    margin: 36px 0;
+    text-align: center;
+  }
+  .author-box {
+    display: flex;
+    gap: 16px;
+    background: #141414;
+    border: 1px solid #262626;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 36px auto;
+    max-width: 900px;
+    align-items: flex-start;
+  }
+  .author-box .av img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+  .author-box .av-info h4 {
+    color: var(--gold);
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+  }
+  .author-box .av-info .role {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+  }
+  .author-box .av-info p {
+    color: var(--text);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  .author-box .av-info a {
+    color: var(--gold-bright);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--gold);
+  }
+  .author-box .av-info a:hover { color: var(--gold); }
+  .poster-wrap {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .poster-wrap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #262626;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  }
+  footer.site-footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid #222;
+  }
+  footer.site-footer a { color: var(--gold); text-decoration: none; }
+</style>
+
+<style>
+.nt-infomatics-section { text-align:center; margin:40px 0; }
+.nt-infomatics-button { display:inline-block; background:#000; color:#d4af37; border:1px solid #d4af37; border-radius:4px; padding:14px 30px; font-family:Arial, sans-serif; font-size:15px; font-weight:700; letter-spacing:1.5px; cursor:pointer; transition:all .25s ease; }
+.nt-infomatics-button:hover { background:#d4af37; color:#000; }
+.nt-infomatics-panel { display:none; max-width:1100px; margin:28px auto 0; }
+.nt-infomatics-panel.show { display:block; }
+</style>
+<title>Popular Seafood Varieties: A Practical Guide for Chefs and F&amp;B Teams | Nigel Thomas</title><meta name="description" content="A practical guide to 28 popular seafood varieties for chefs and F&amp;B teams: finfish, crustaceans and molluscs, with buying, costing, allergen and menu tips plus a free downloadable infographic."><link rel="canonical" href="https://www.nigelthomas.live/popular-seafood-varieties-guide.html"><meta property="og:title" content="Popular Seafood Varieties: A Practical Guide for Chefs and F&amp;B Teams"><meta property="og:description" content="A practical guide to 28 popular seafood varieties for chefs and F&amp;B teams: finfish, crustaceans and molluscs, with buying, costing, allergen and menu tips plus a free downloadable infographic."><meta property="og:url" content="https://www.nigelthomas.live/popular-seafood-varieties-guide.html"><meta property="og:image" content="https://www.nigelthomas.live/assets/seafood-varieties-poster.jpg"><meta name="twitter:title" content="Popular Seafood Varieties: A Practical Guide for Chefs and F&amp;B Teams"><meta name="twitter:description" content="A practical guide to 28 popular seafood varieties for chefs and F&amp;B teams: finfish, crustaceans and molluscs, with buying, costing, allergen and menu tips plus a free downloadable infographic."><meta name="twitter:image" content="https://www.nigelthomas.live/assets/seafood-varieties-poster.jpg"><style>.sf-meta{font-size:.95rem;opacity:.8}.sf-info{margin:48px 0;padding:32px 24px;background:#0a0a0a;border:2px solid #d4af37;border-radius:18px;text-align:center}.sf-info h2{color:#f3d98b;margin:0 0 8px}.sf-info p{color:#e8e8e8}.sf-info img{max-width:100%;height:auto;border:3px solid #d4af37;border-radius:12px;margin:20px 0}.sf-dl{display:inline-block;background:linear-gradient(180deg,#f3d98b,#b8860b);color:#0a0a0a!important;font-weight:700;padding:14px 34px;border-radius:999px;text-decoration:none}.sf-dl:hover{filter:brightness(1.1)}</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Popular Seafood Varieties: A Practical Guide for Chefs and F&B Teams","datePublished":"2026-10-01","dateModified":"2026-10-01","author":{"@type":"Person","name":"Nigel A. Thomas"},"image":"https://www.nigelthomas.live/assets/seafood-varieties-poster.jpg","mainEntityOfPage":"https://www.nigelthomas.live/popular-seafood-varieties-guide.html"}</script></head>
+<body>
+<header class="site-header">
+<a href="index.html">Nigel A. Thomas — Hospitality Leadership &amp; Training</a>
+</header>
+<main>
+<article>
+<h1>Popular Seafood Varieties: A Practical Guide for Chefs and F&amp;B Teams</h1>
+<p class="sf-meta">By Nigel A. Thomas &middot; Hospitality Executive and Corporate Trainer &middot; October 1, 2026</p>
+<p>Walk into any well-run kitchen at six in the morning and you can tell within minutes how seriously the team takes seafood. The receiving table is clear, the ice is fresh, the thermometer is in hand, and someone is already checking gills, eyes and shells. Seafood is the most unforgiving category on the menu. It spoils faster than meat, it varies more from one delivery to the next, and a single mistake in storage or handling can turn a premium dish into a guest complaint or a food safety incident.</p>
+<p>It is also one of the most profitable categories when handled well. Guests happily pay more for a perfectly seared scallop or a whole grilled snapper, and a server who can explain the difference between a prawn and a shrimp builds trust at the table. After three decades in luxury hotels, resorts and cruise operations across India, the Middle East and the USA, I have seen seafood make and break banquet menus, buffets and fine dining rooms alike.</p>
+<p>This guide walks through 28 popular seafood varieties in the same order as the infographic at the bottom of the page, which you can download for your kitchen, your training room or your service briefing. For each variety you will find what it is, how it behaves in the kitchen, and where it fits best on a menu.</p>
+<section class="breakdown"><h2>How the Seafood Family Is Organised</h2>
+<p>Before memorising names, learn the families. Every variety in this guide belongs to one of four groups, and the group tells you most of what you need to know about storage, cooking and service.</p>
+<p><strong>Finfish</strong> are vertebrate fish with fins and scales or skin. Within this group, oily fish such as salmon, mackerel and sardines carry more natural fat, cook quickly and spoil faster, while lean white fish such as cod, haddock and halibut are delicate, flake easily and need gentler heat.</p>
+<p><strong>Crustaceans</strong> include lobster, crab, shrimp and prawn. They have a hard outer shell, cook in minutes, and turn rubbery when overcooked.</p>
+<p><strong>Molluscs</strong> divide into bivalves such as scallops, mussels, clams and oysters, and cephalopods such as squid, octopus and cuttlefish. Bivalves are often served live or very lightly cooked, so sourcing and temperature control matter enormously. Cephalopods go one of two ways: cooked for seconds or cooked for an hour, never in between.</p>
+<p>The last group has just one member here, the sea urchin, an echinoderm prized for its sweet, briny roe.</p></section>
+<section class="breakdown"><h2>Finfish: Sixteen Varieties You Will Meet Most Often</h2>
+<p>Finfish dominate most seafood menus, so this is where your team needs the strongest product knowledge.</p><div class="two-col"><div class="col-box"><h3><span class="num">1</span>Salmon</h3><p>A rich, oily fish with pink to orange flesh and a buttery texture. It stays moist under high heat, which makes it forgiving for line cooks, and it takes well to curing, smoking and raw preparations when handled correctly.</p><div class="best-for"><strong>Best for:</strong> Grilled fillets, sushi and sashimi, banquet mains, smoked platters.</div></div><div class="col-box"><h3><span class="num">2</span>Tuna</h3><p>A firm, meaty fish with deep red flesh that is best served rare or raw. Overcooking turns it dry and chalky, so cooks should sear it quickly, and receivers must check colour and smell carefully.</p><div class="best-for"><strong>Best for:</strong> Seared steaks, poke, sashimi, sandwiches and salads.</div></div><div class="col-box"><h3><span class="num">3</span>Cod</h3><p>A mild white fish with large, tender flakes and a clean flavour. It absorbs seasoning and sauces well, holds up to roasting, poaching and frying, and is a staple of pub and family dining.</p><div class="best-for"><strong>Best for:</strong> Fish and chips, baked dishes, chowders, casual restaurants.</div></div><div class="col-box"><h3><span class="num">4</span>Halibut</h3><p>A flatfish with thick, white, lean flesh and a sweet, delicate taste. It dries out quickly when overcooked, so gentle pan roasting or poaching works best, and its premium price demands careful portioning.</p><div class="best-for"><strong>Best for:</strong> Fine dining mains, pan roasted fillets, upscale hotel menus.</div></div><div class="col-box"><h3><span class="num">5</span>Mackerel</h3><p>A strongly flavoured oily fish with silvery skin and rich, dark flesh. It is highly perishable and must be very fresh, but its bold taste stands up to grilling, curing and pickling.</p><div class="best-for"><strong>Best for:</strong> Grilled whole fish, smoked dishes, tapas and Japanese cuisine.</div></div><div class="col-box"><h3><span class="num">6</span>Swordfish</h3><p>A dense, meaty fish cut into steaks, with a mild flavour and few bones. It can dry out on the grill, so brushing with oil and watching the clock is essential for consistent results.</p><div class="best-for"><strong>Best for:</strong> Grilled steaks, skewers, kebabs and Mediterranean menus.</div></div><div class="col-box"><h3><span class="num">7</span>Haddock</h3><p>A close cousin of cod with a slightly sweeter taste and finer flake. It is popular smoked, and it performs well in batter, which makes it a reliable choice for high volume frying.</p><div class="best-for"><strong>Best for:</strong> Battered fish, smoked fillets, kedgeree and chowders.</div></div><div class="col-box"><h3><span class="num">8</span>Snapper</h3><p>A lean fish with firm white flesh and a sweet, nutty flavour, often recognised by its pink or red skin. It suits whole preparations, and its crisp skin when pan seared delights guests.</p><div class="best-for"><strong>Best for:</strong> Whole roasted or grilled fish, curries, tropical and coastal menus.</div></div><div class="col-box"><h3><span class="num">9</span>Grouper</h3><p>A large reef fish with thick, firm, mild flesh that holds together in soups and stews. Its size makes it ideal for portion cutting, though availability and sourcing should always be confirmed.</p><div class="best-for"><strong>Best for:</strong> Pan seared fillets, fish stews, sandwiches and resort dining.</div></div><div class="col-box"><h3><span class="num">10</span>Tilapia</h3><p>A freshwater fish with mild, lean, slightly sweet flesh that is widely farmed and affordable. It is easy to cook and consistent in size, which supports tight food cost control.</p><div class="best-for"><strong>Best for:</strong> Budget friendly mains, staff meals, institutional and cafeteria menus.</div></div><div class="col-box"><h3><span class="num">11</span>Sea Bass</h3><p>A premium fish with moist, white, delicate flesh and a clean taste. Crisp skin and gentle seasoning let the fish speak for itself, and a whole bass makes a striking tableside presentation.</p><div class="best-for"><strong>Best for:</strong> Whole baked fish, fillets with light sauces, fine dining.</div></div><div class="col-box"><h3><span class="num">12</span>Sardines</h3><p>Small, oily, silver fish packed with flavour and affordable at any scale. They are best cooked very fresh over a hot grill, and they also shine canned, marinated or served on toast.</p><div class="best-for"><strong>Best for:</strong> Grilled platters, appetisers, tapas and rustic menus.</div></div><div class="col-box"><h3><span class="num">13</span>Barramundi</h3><p>A prized fish from Asian and Australian waters with moist, buttery white flesh and a mild flavour. It is also farmed in many regions and gives chefs a dependable, versatile fillet.</p><div class="best-for"><strong>Best for:</strong> Pan roasted fillets, curries, steamed dishes and hotel restaurants.</div></div><div class="col-box"><h3><span class="num">14</span>Anchovy</h3><p>A tiny, intensely savoury fish that works as a seasoning as much as an ingredient. Salted or oil cured, it adds depth to sauces, dressings and pizzas, and a little goes a long way.</p><div class="best-for"><strong>Best for:</strong> Caesar dressing, pizza, pasta sauces and antipasti.</div></div><div class="col-box"><h3><span class="num">15</span>Eel</h3><p>A long, rich fish with fatty, tender flesh that is usually grilled or braised with a sweet glaze. It needs skilled preparation and must always be cooked thoroughly, never served raw.</p><div class="best-for"><strong>Best for:</strong> Japanese grilled eel, smoked platters, stews and specialty restaurants.</div></div><div class="col-box"><h3><span class="num">16</span>Monkfish</h3><p>A firm, boneless tail with a texture often compared to lobster. It is mostly sold as the tail only, holds together in roasts and stews, and rewards chefs with excellent plate value.</p><div class="best-for"><strong>Best for:</strong> Roasted medallions, curries, bouillabaisse and fine dining.</div></div></div></section>
+<section class="breakdown"><h2>Crustaceans: Shell, Sweetness and Speed</h2>
+<p>Crustaceans are quick to cook and quick to ruin. Train your team to time them carefully and to store them cold and clean.</p><div class="two-col"><div class="col-box"><h3><span class="num">17</span>Lobster</h3><p>The luxury centrepiece of the shellfish world, with sweet, dense meat in the tail and claws. Cook it just until opaque, because overcooking toughens it, and make sure live stock is lively when received.</p><div class="best-for"><strong>Best for:</strong> Thermidor, grilled tails, bisques, banquets and celebration menus.</div></div><div class="col-box"><h3><span class="num">18</span>Crab</h3><p>Sweet, delicate meat from the body and claws, available fresh, cooked or picked. Check origin and handling carefully, and use the rich brown meat for sauces and bisques.</p><div class="best-for"><strong>Best for:</strong> Crab cakes, salads, curries, soups and cold seafood platters.</div></div><div class="col-box"><h3><span class="num">19</span>Shrimp</h3><p>A small, fast cooking crustacean in countless sizes, sold fresh, frozen, peeled or shell on. Size grading drives price and plating, and overcooked shrimp curl tight and turn rubbery.</p><div class="best-for"><strong>Best for:</strong> Cocktails, stir fries, pasta, tempura, buffets and bar snacks.</div></div><div class="col-box"><h3><span class="num">20</span>Prawn</h3><p>Often larger than shrimp, with a firmer, meatier bite and a sweet taste. The two names are used loosely in different regions, so confirm species and size with suppliers rather than relying on the label.</p><div class="best-for"><strong>Best for:</strong> Grilled king prawns, curries, skewers and tasting menus.</div></div></div></section>
+<section class="breakdown"><h2>Molluscs and Echinoderms: Live Product, Live Responsibility</h2>
+<p>Bivalves and cephalopods need the most careful sourcing on the list, and many are served raw or lightly cooked. Use only reputable, documented suppliers.</p><div class="two-col"><div class="col-box"><h3><span class="num">21</span>Scallop</h3><p>A bivalve with a sweet, tender adductor muscle and sometimes the coral roe. Pat it dry and sear hard and fast for a golden crust, because wet scallops steam instead of browning.</p><div class="best-for"><strong>Best for:</strong> Seared starters, crudo, risotto and tasting menus.</div></div><div class="col-box"><h3><span class="num">22</span>Mussel</h3><p>A dark shelled bivalve that is affordable, farmed sustainably in many regions and quick to cook. Discard any that stay open before cooking or remain closed afterwards.</p><div class="best-for"><strong>Best for:</strong> Steamed pots in wine broth, pasta, paella and bistro menus.</div></div><div class="col-box"><h3><span class="num">23</span>Clam</h3><p>A bivalve with a sweet, briny flavour, sold live in a range of sizes. Purge them in cold salted water to remove grit and cook only until the shells open.</p><div class="best-for"><strong>Best for:</strong> Chowder, linguine, steamed platters and Asian stir fries.</div></div><div class="col-box"><h3><span class="num">24</span>Oyster</h3><p>A bivalve prized for its mineral, ocean flavour and often eaten raw. Strict cold chain control, tags and supplier documentation are essential, and shucking skill is a real service asset.</p><div class="best-for"><strong>Best for:</strong> Raw bars, champagne pairings, grilled specials and luxury events.</div></div><div class="col-box"><h3><span class="num">25</span>Squid</h3><p>A cephalopod with tender, mild flesh that turns tough when cooked a little too long. Flash fry or grill it in seconds, or braise it slowly until tender.</p><div class="best-for"><strong>Best for:</strong> Fried calamari, grilled rings, stuffed squid and appetisers.</div></div><div class="col-box"><h3><span class="num">26</span>Octopus</h3><p>A cephalopod with a chewy texture that softens through long, gentle cooking. Simmering or braising first, then charring, gives tender meat with a smoky edge.</p><div class="best-for"><strong>Best for:</strong> Grilled octopus, salads, tapas and Mediterranean menus.</div></div><div class="col-box"><h3><span class="num">27</span>Cuttlefish</h3><p>A cephalopod similar to squid but thicker and sweeter, with ink prized in sauces. It tolerates longer cooking than squid and makes a dramatic plate when the ink is used.</p><div class="best-for"><strong>Best for:</strong> Black ink risotto, stews, grills and regional specials.</div></div><div class="col-box"><h3><span class="num">28</span>Sea Urchin</h3><p>An echinoderm whose bright orange roe, called uni, tastes sweet, creamy and briny. It is extremely delicate and perishable, so serve it fresh and in small portions.</p><div class="best-for"><strong>Best for:</strong> Sushi, pasta toppings, tasting menus and luxury plates.</div></div></div></section>
+<section class="breakdown"><h2>Quick Reference: Matching Seafood to the Menu</h2><table><tr><th>If your priority is...</th><th>Consider</th></tr><tr><td>Rich, forgiving fish for volume service</td><td>Salmon</td></tr><tr><td>Delicate premium white fish</td><td>Halibut or Sea Bass</td></tr><tr><td>Budget friendly mains</td><td>Tilapia or Haddock</td></tr><tr><td>Raw bar and sashimi programmes</td><td>Tuna, Salmon or Oyster</td></tr><tr><td>Luxury centrepiece dishes</td><td>Lobster or Scallop</td></tr><tr><td>Bold flavour on a small budget</td><td>Sardines or Mackerel</td></tr><tr><td>Seasoning and depth in sauces</td><td>Anchovy</td></tr></table></section>
+<section class="breakdown"><h2>Buying and Receiving: Where Quality Is Won or Lost</h2>
+<p>Great seafood cookery begins at the back door. Train every receiver to use their senses and a thermometer before signing the invoice.</p>
+<ul><li>Whole fish should have clear, bright eyes, red gills, firm elastic flesh and a clean smell of the sea, never a sharp or ammonia odour.</li>
+<li>Fillets should look moist and translucent, with no gaping, browning or sticky film.</li>
+<li>Live shellfish must be alive: shells tightly closed or closing when tapped, and lobsters and crabs actively moving.</li>
+<li>Check temperature on arrival. Fresh fish should be received at 41&deg;F (5&deg;C) or below, packed in ice or under refrigeration.</li>
+<li>Check tags, labels and origin documents, especially for oysters, clams and mussels, and keep records for traceability.</li></ul>
+<p>Reject anything that fails these checks, and document the rejection. A firm receiving standard protects guests, margins and your reputation.</p></section>
+<section class="breakdown"><h2>Costing, Yield and Portion Control</h2>
+<p>Seafood is purchased in many forms, so the purchase price never tells the whole story. A whole fish may cost less per kilogram than fillets, but after heads, bones, skin and trim the edible yield can be as low as forty to fifty percent. Always run a yield test, record the results, and cost each dish on the usable weight, not the invoice weight.</p>
+<p>Standardise portion sizes by weight or count, and train cooks to portion consistently. Use trim creatively in fish cakes, stocks, chowders and staff meals so that nothing of value goes to waste. For shellfish, size grading such as count per kilogram controls both plate appearance and cost. Review seafood prices weekly, because market swings are larger here than in almost any other category, and adjust specials accordingly. For a refresher on controlling cost across the whole operation, read <a href="food-cost-basics.html">Food Cost Basics</a>.</p></section>
+<section class="breakdown"><h2>Food Safety and Allergen Awareness</h2>
+<p>Cook fish to an internal temperature of 145&deg;F (63&deg;C) unless a compliant raw or undercooked preparation has been properly sourced and approved. Store raw seafood below cooked and ready to eat food, and use separate boards, knives and utensils. Keep live shellfish refrigerated in breathable containers, never sealed in airtight bags or submerged in fresh water.</p>
+<p>Fish and crustaceans are recognised major food allergens, and in many jurisdictions molluscs are regulated as allergens too. Train servers to ask about allergies at every table, to know which dishes contain which species, and to alert the kitchen early. Shared fryers, grills and marinades are common sources of cross contact, so build clear protocols for them. Always follow your local regulations and your company food safety plan.</p></section>
+<section class="breakdown"><h2>Seafood on the Menu: Planning and Service Tips</h2>
+<p>Seafood suits almost every format. A seasonal menu can follow the catch calendar, and a du jour special lets you buy opportunistically and sell what is freshest that morning. An &agrave; la carte menu benefits from two or three signature seafood dishes with a clear price ladder, from an affordable fried fish to a premium lobster or scallop plate. To explore frying styles for casual menus, see <a href="6-types-of-fried-fish.html">6 Types of Fried Fish</a>, and for the formats themselves read <a href="types-of-menus-fb-service.html">Types of Menus in F&amp;B Service</a>.</p>
+<p>Service staff are your best selling tool. Give them tasting notes, cooking times and pairing suggestions so they can describe each dish with confidence. Always tell guests when an item is subject to market availability, and never substitute species without clear communication.</p></section>
+<section class="breakdown"><h2>Team Training Checklist</h2>
+<ul><li>Can every cook identify all 28 varieties by sight and by name?</li>
+<li>Can receivers perform freshness and temperature checks without prompting?</li>
+<li>Do servers know which dishes contain fish, crustaceans and molluscs?</li>
+<li>Does the kitchen run weekly yield tests on high cost items?</li>
+<li>Are storage, labelling and first in, first out rules visible and enforced?</li></ul>
+<p>Use the infographic below as a daily briefing tool, and quiz the team in pre-shift meetings until the names and families become second nature.</p></section>
+<section class="sf-info" id="infographic"><h2>Download the Seafood Varieties Infographic</h2>
+<p>All 28 varieties in one clean poster, grouped by family and ready to print for your kitchen, training room or pass. Save it, share it with your team, and pin it where people can see it.</p>
+<img src="assets/seafood-varieties-poster.jpg" alt="Popular Seafood Varieties infographic showing 28 fish, crustaceans and molluscs" width="1200" height="1600" loading="lazy">
+<p><a class="sf-dl" href="assets/seafood-varieties-poster.jpg" download="Nigel-Thomas-Popular-Seafood-Varieties-Poster.jpg">Download the Infographic (JPG)</a></p></section>
+<section class="breakdown"><h2>Final Thought</h2>
+<p>Seafood rewards the teams who respect it. Knowing the variety, understanding how it behaves, buying it with discipline and cooking it with care is what separates a forgettable plate from one that guests describe to their friends. Start with the 28 varieties in this guide, build product knowledge one family at a time, and turn that knowledge into consistent service on the floor. Great seafood is never an accident. It is the result of habits, training and attention to detail, repeated every single day.</p></section>
+<section class="related"><h2>More from the F&amp;B Leadership Series</h2><ul>
+<li><a href="types-of-menus-fb-service.html">Types of Menus in F&amp;B Service</a></li>
+<li><a href="6-types-of-fried-fish.html">6 Types of Fried Fish</a></li>
+<li><a href="food-cost-basics.html">Food Cost Basics: Control Cost, Improve Profit, Grow Business</a></li>
+<li><a href="restaurant-kpis-every-manager-should-track.html">Restaurant KPIs Every Manager Should Track</a></li>
+<li><a href="blog.html">All Articles</a></li></ul></section>
+<div class="tags"><span>#Seafood</span><span>#FBLeadership</span><span>#Hospitality</span><span>#MenuEngineering</span><span>#FoodSafety</span></div>
+</article>
+</main>
+
+<div class="author-box">
+    <div class="av">
+        <img src="/assets/NTlogo.png" alt="Nigel A. Thomas">
+    </div>
+    <div class="av-info">
+        <h4>Nigel A. Thomas</h4>
+        <div class="role">Hospitality Professional · F&amp;B Operations · Corporate Trainer</div>
+        <p>30+ years in F&amp;B and hospitality operations across India, the Middle East, and the USA. Founder of <a href="https://www.joblynk.live">JobLynk.live</a>, India's careers platform for hospitality and maritime professionals.</p>
+    </div>
+</div>
+
+<footer class="site-footer">
+<p>© 2026 Nigel A. Thomas • <a href="blog.html">Back to Blog</a></p>
+</footer>
+
+<!-- NT INFOMATICS -->
+<div class="nt-infomatics-section">
+    <button type="button" class="nt-infomatics-button" data-panel="nt-infomatics-panel" aria-expanded="false">
+        VIEW INFOMATICS
+    </button>
+    <div id="nt-infomatics-panel" class="nt-infomatics-panel" aria-hidden="true">
+        <div class="poster-wrap">
+            <img src="/assets/types-of-menus-fb-service.jpg" alt="Infographic showing 13 types of menus used in food and beverage service"/>
+        </div>
+        <p style="font-size:0.9em;color:#666;margin-top:10px;text-align:center;">
+            💡 Right-click the image to save it.
+        </p>
+    </div>
+</div>
+<!-- END NT INFOMATICS -->
+
+<script id="nt-infomatics-js">
+document.addEventListener("click", function (event) {
+    var button = event.target.closest(".nt-infomatics-button");
+    if (!button) return;
+    var panelId = button.getAttribute("data-panel");
+    var panel = document.getElementById(panelId);
+    if (!panel) return;
+    var opened = panel.classList.toggle("show");
+    button.textContent = opened ? "HIDE INFOMATICS" : "VIEW INFOMATICS";
+    button.setAttribute("aria-expanded", opened ? "true" : "false");
+    panel.setAttribute("aria-hidden", opened ? "false" : "true");
+});
+</script>
+
+<div style="text-align: center; margin: 20px 0 40px;">
+    <a href="blog.html" style="display: inline-block; padding: 14px 40px; background: #d4af37; color: #000; text-decoration: none; border-radius: 6px; font-weight: 700; font-size: 1.1rem; border: 1px solid #b8962e;">
+        Read More Articles →
+    </a>
+</div>
+
+</body>
+</html>
