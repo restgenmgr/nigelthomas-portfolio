@@ -5,12 +5,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-<url>
-    <loc>https://www.nigelthomas.live/classic-bread-recipes-guide.html</loc>
-    <lastmod>2026-10-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
   <url>
     <loc>https://www.nigelthomas.live/10-italian-salads.html</loc>
     <lastmod>2026-10-02</lastmod>
@@ -169,6 +163,12 @@
   </url>
   <url>
     <loc>https://www.nigelthomas.live/chef-de-partie-complete-career-guide.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.nigelthomas.live/classic-bread-recipes-guide.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
