@@ -1,10 +1,9 @@
 * text=auto eol=lf
-*.html text
-*.xml  text
-*.css  text
-*.js   text
-*.png  binary
-*.jpg  binary
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.png binary
+*.jpg binary
 *.jpeg binary
-*.webp binary
-*.gif  binary
+*.jfif binary
+*.svg text eol=lf
