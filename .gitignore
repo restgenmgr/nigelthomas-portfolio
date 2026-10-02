@@ -1,33 +1,17 @@
-.vercel
-vercel.json
-.env*
-backup-html-20260731-225049/
-backup-html-*/
-encoding-scan-report-*.txt
-_mojibake_backups/
-_metadata_backups/
+﻿# Environment files — never commit (may contain secrets)
+.env
+.env.local
+.env.production.local
+.env.*.local
+
+# Build / deploy artifacts
+.vercel/
+
+# Temporary audit output
 CanonicalAudit_*.csv
-encoding_backup/
-encoding_fix2_backup/
-# Local backups
-*.backup-*
-*.bak-*
-*.b64
+encoding-scan-report-*.txt
 
-__pycache__/
-
-*.bak-*
-
-fire-source-backup/
-sitemap_broken.csv
-
-# No one-off scripts in repo root
-/*.ps1
-
-
-# Build artifacts
-methods-of-making-cocktails-poster.html
-
-# Blank/backup poster artifacts
-*.blank-bak-*
+# Backups and archives
 *.bak
+_cleanup_archive/
+fire-source-backup/
