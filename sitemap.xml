@@ -408,6 +408,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.nigelthomas.live/frozen-desserts.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.nigelthomas.live/future-of-ai-guardrails.html</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
