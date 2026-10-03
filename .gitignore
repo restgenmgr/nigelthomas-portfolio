@@ -27,3 +27,8 @@ _logo_resize.py
 assets/_optimized_tier2a/
 _tier2a_opt.py
 assets_backup_tier2a/
+
+# Ignore PowerShell scripts (keep only CI-required ones)
+*.ps1
+!scripts/build-sitemap.ps1
+
