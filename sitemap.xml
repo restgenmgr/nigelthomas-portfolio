@@ -30,6 +30,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.nigelthomas.live/20-green-mocktail-recipes.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.nigelthomas.live/6-pizza-recipes-hotel-restaurant-menu.html</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -1534,10 +1540,4 @@
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>  <url>
-    <loc>https://www.nigelthomas.live/20-green-mocktail-recipes.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-</urlset>
+  </url></urlset>
