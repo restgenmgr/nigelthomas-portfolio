@@ -1534,4 +1534,10 @@
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url></urlset>
+  </url>  <url>
+    <loc>https://www.nigelthomas.live/20-green-mocktail-recipes.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
