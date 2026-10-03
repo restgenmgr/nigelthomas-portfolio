@@ -15,3 +15,8 @@ encoding-scan-report-*.txt
 *.bak
 _cleanup_archive/
 fire-source-backup/
+# Staging folders for image optimization (never commit these)
+assets/_optimized/
+assets/_optimized_tier1/
+assets_backup/
+_*_opt.py
