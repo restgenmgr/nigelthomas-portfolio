@@ -23,3 +23,7 @@ _*_opt.py
 # Logo backup + resize helpers
 assets/_logo_backup/
 _logo_resize.py
+# Tier 2A staging
+assets/_optimized_tier2a/
+_tier2a_opt.py
+assets_backup_tier2a/
