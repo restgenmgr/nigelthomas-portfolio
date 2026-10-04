@@ -19,17 +19,17 @@
             margin: 0 auto;
             background-color: #1c1c1c;
             padding: 40px 50px;
-            border: 1px solid #c9a227;
+            border: 1px solid #d4af37;
             box-shadow: 0 0 30px rgba(201, 162, 39, 0.1);
         }
         h1 {
             font-family: 'Arial', sans-serif;
             font-size: 2.8rem;
-            color: #c9a227;
+            color: #d4af37;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 3px;
-            border-bottom: 3px solid #6b1f2a;
+            border-bottom: 3px solid #3a2d0b;
             padding-bottom: 20px;
             margin-bottom: 10px;
             line-height: 1.2;
@@ -37,10 +37,10 @@
         h2 {
             font-family: 'Arial', sans-serif;
             font-size: 1.8rem;
-            color: #c9a227;
+            color: #d4af37;
             margin-top: 50px;
             margin-bottom: 20px;
-            border-left: 5px solid #6b1f2a;
+            border-left: 5px solid #3a2d0b;
             padding-left: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -51,7 +51,7 @@
             color: #f5efe0;
             margin-top: 30px;
             margin-bottom: 10px;
-            background: #6b1f2a;
+            background: #3a2d0b;
             display: inline-block;
             padding: 5px 12px;
             border-radius: 3px;
@@ -70,23 +70,23 @@
         .ingredients {
             background: #111;
             padding: 15px;
-            border-left: 4px solid #c9a227;
+            border-left: 4px solid #d4af37;
             margin-bottom: 15px;
             font-size: 1rem;
             color: #ddd;
         }
-        .ingredients strong { color: #c9a227; }
+        .ingredients strong { color: #d4af37; }
         .poster-section {
             margin-top: 60px;
             padding: 30px;
             background: #111;
-            border: 2px solid #c9a227;
+            border: 1px solid #d4af37;
             text-align: center;
         }
         .poster-section h2 {
             border-left: none;
             text-align: center;
-            border-bottom: 2px solid #6b1f2a;
+            border-bottom: 2px solid #3a2d0b;
             padding-bottom: 15px;
             margin-bottom: 25px;
         }
@@ -99,7 +99,7 @@
         }
         .download-btn {
             display: inline-block;
-            background-color: #6b1f2a;
+            background-color: #3a2d0b;
             color: #f5efe0;
             padding: 15px 35px;
             text-decoration: none;
@@ -108,12 +108,12 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border: 2px solid #c9a227;
+            border: 2px solid #d4af37;
             transition: all 0.3s ease;
             margin-top: 10px;
         }
         .download-btn:hover {
-            background-color: #c9a227;
+            background-color: #d4af37;
             color: #1c1c1c;
             border-color: #f5efe0;
         }
@@ -126,7 +126,7 @@
         .blog-links {
             margin-top: 50px;
             padding-top: 30px;
-            border-top: 2px solid #c9a227;
+            border-top: 2px solid #d4af37;
         }
         .blog-links h2 {
             border-left: none;
@@ -149,11 +149,11 @@
         }
         .blog-card:hover {
             transform: translateY(-5px);
-            border-color: #c9a227;
+            border-color: #d4af37;
         }
         .blog-card h3 {
             background: transparent;
-            color: #c9a227;
+            color: #d4af37;
             font-size: 1.1rem;
             padding: 0;
             margin-bottom: 10px;
@@ -175,7 +175,7 @@
             font-family: 'Arial', sans-serif;
         }
         .footer a {
-            color: #c9a227;
+            color: #d4af37;
             text-decoration: none;
         }
         .footer a:hover { text-decoration: underline; }
@@ -192,7 +192,7 @@
 <div class="container">
 
     <h1>World Famous Foods &amp; Their Country Names</h1>
-    <p style="text-align: center; font-size: 1.2rem; color: #c9a227; font-style: italic; margin-bottom: 40px;">Full Word Script — A Culinary Journey Across 30 Iconic Dishes</p>
+    <p style="text-align: center; font-size: 1.2rem; color: #d4af37; font-style: italic; margin-bottom: 40px;">Full Word Script — A Culinary Journey Across 30 Iconic Dishes</p>
 
     <div class="script-section">
         <h3>1. Pizza — Italy</h3>
@@ -374,23 +374,27 @@
         <p><strong>Description:</strong> A second nod to Indonesia's beloved fried rice. This dish represents the incredible diversity of Indonesian cuisine—thousands of regional dishes from spicy sambal to sweet pisang goreng. A fitting final celebration of global flavor.</p>
     </div>
 
-    <div class="poster-section">
+    <div class="poster-section" id="posterSection">
         <h2>World Famous Foods &amp; Their Country Names — Infographic Poster</h2>
-        <p style="text-align: center; margin-bottom: 25px; color: #bbb;">Click the button below to download the full high-resolution infographic poster featuring all 30 dishes.</p>
+        <button type="button" class="download-btn" id="posterToggle" aria-expanded="false" aria-controls="posterPanel">
+            FREE POSTER DOWNLOAD
+        </button>
 
-        <img src="assets/world-famous-foods-country-names-poster.png" alt="World Famous Foods and Their Country Names Infographic Poster - 30 dishes with flags, ingredients, and descriptions">
-
-        <a href="assets/world-famous-foods-country-names-poster.png" download class="download-btn">⬇ Download Full Infographic Poster</a>
-        <p class="download-note">* Right-click and "Save Image As" if the download button does not work.</p>
+        <div id="posterPanel" style="display:none; margin-top:25px;">
+            <img id="posterImage"
+                 src="assets/world-famous-foods-country-names-poster.png"
+                 alt="World Famous Foods and Their Country Names Infographic Poster - 30 dishes with flags, ingredients, and descriptions">
+            <br>
+            <a href="assets/world-famous-foods-country-names-poster.png"
+               download
+               class="download-btn">DOWNLOAD POSTER</a>
+            <p class="download-note">High-resolution infographic poster. If the download does not start, right-click the poster and choose "Save Image As".</p>
+        </div>
     </div>
 
     <div class="blog-links">
         <h2>Explore More From Our Kitchen Blog</h2>
         <div class="blog-grid">
-            <a href="world-famous-foods-country-names-poster.html" class="blog-card">
-                <h3>World Famous Foods &amp; Their Country Names</h3>
-                <p>The complete guide to 30 iconic dishes, their origins, ingredients, and cultural stories. Includes downloadable poster.</p>
-            </a>
             <a href="types-of-pasta-sauces.html" class="blog-card">
                 <h3>The Art of Italian Pasta Making</h3>
                 <p>From tagliatelle to ravioli—master the dough, the shapes, and the sauces that define Italian cuisine.</p>
@@ -421,6 +425,29 @@
     </div>
 
 </div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const section = document.getElementById("posterSection");
+    const button = document.getElementById("posterToggle");
+    const panel = document.getElementById("posterPanel");
+    const image = document.getElementById("posterImage");
+
+    if (!section || !button || !panel || !image) return;
+
+    image.addEventListener("error", function () {
+        section.remove();
+    });
+
+    button.addEventListener("click", function () {
+        const open = panel.style.display !== "none";
+        panel.style.display = open ? "none" : "block";
+        button.setAttribute("aria-expanded", String(!open));
+        button.textContent = open ? "FREE POSTER DOWNLOAD" : "HIDE POSTER";
+    });
+});
+</script>
 
 </body>
 </html>
