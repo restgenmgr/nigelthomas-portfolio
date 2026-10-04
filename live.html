@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>F&B LIVE | The Daily Food & Beverage Intelligence Brief — Nigel A. Thomas</title>
+  <meta name="description" content="Food, beverage, hospitality, culinary innovation, recipes and operational insight curated for F&B professionals by Nigel A. Thomas.">
+  <link rel="canonical" href="https://www.nigelthomas.live/live.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="F&B LIVE | NigelThomas.live">
+  <meta property="og:description" content="Food. Beverage. Hospitality. Innovation. A daily intelligence destination for F&B professionals.">
+  <meta property="og:url" content="https://www.nigelthomas.live/live.html">
+  <meta name="twitter:card" content="summary">
+  <style>
+    :root {
+      --bg: #090909;
+      --panel: #121212;
+      --panel2: #171717;
+      --gold: #d4af37;
+      --gold-light: #f1d777;
+      --text: #f5f2e9;
+      --muted: #b9b5a8;
+      --line: rgba(212,175,55,.28);
+      --green: #a8c99a;
+      --max: 1320px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.6;
+    }
+    a { color: var(--gold-light); text-decoration: none; }
+    a:hover { color: #fff1b5; }
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    .topline { height: 4px; background: linear-gradient(90deg, #72570c, var(--gold), #fff0a6, var(--gold)); }
+    header { border-bottom: 1px solid var(--line); background: #0b0b0b; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 22px; padding: 17px 0; }
+    .brand { color: var(--text); font-size: 15px; font-weight: 800; letter-spacing: .12em; white-space: nowrap; }
+    .brand span { color: var(--gold); }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; justify-content: flex-end; }
+    nav a { color: #dedbd1; font-size: 13px; font-weight: 700; letter-spacing: .04em; }
+    nav a.active { color: var(--gold-light); }
+    .hero { padding: 62px 0 42px; background: radial-gradient(ellipse at 50% 0%, rgba(212,175,55,.13), transparent 60%); text-align: center; }
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .22em; font-size: 11px; font-weight: 800; }
+    h1 { margin: 9px 0 4px; font-size: clamp(42px, 7vw, 78px); line-height: 1.02; letter-spacing: .035em; }
+    h1 span { color: var(--gold); }
+    .tagline { margin: 15px auto 0; max-width: 760px; font-size: clamp(16px, 2vw, 21px); color: #e6e0ce; }
+    .hero-copy { max-width: 720px; margin: 12px auto 0; color: var(--muted); font-size: 14px; }
+    .hero-meta { display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 25px; }
+    .pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px; color: #e8e0c5; font-size: 11px; font-weight: 800; letter-spacing: .06em; }
+    .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 8px rgba(168,201,154,.55); }
+    .notice { margin: 0 auto 28px; max-width: 900px; border: 1px solid rgba(212,175,55,.32); background: rgba(212,175,55,.07); padding: 12px 16px; color: #d8d1bd; font-size: 12px; text-align: left; border-radius: 8px; }
+    .notice strong { color: var(--gold-light); }
+    .section { padding: 24px 0 38px; }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 13px; margin-bottom: 20px; }
+    .section-head h2 { margin: 0; font-size: clamp(21px, 3vw, 30px); line-height: 1.2; }
+    .section-head h2 span { color: var(--gold); }
+    .section-head p { margin: 0; color: var(--muted); font-size: 12px; text-align: right; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .card { background: linear-gradient(145deg, var(--panel2), var(--panel)); border: 1px solid #29261d; border-radius: 10px; padding: 22px; min-width: 0; transition: border-color .2s, transform .2s; }
+    .card:hover { border-color: var(--gold); transform: translateY(-2px); }
+    .kicker { color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .card h3 { margin: 9px 0 8px; font-size: 19px; line-height: 1.3; }
+    .card p { margin: 0; color: #c4c0b5; font-size: 13px; }
+    .card .foot { margin-top: 17px; padding-top: 12px; border-top: 1px solid #302d24; color: #a8a394; font-size: 11px; }
+    .feature-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 16px; }
+    .feature { background: linear-gradient(135deg, #1b180f, #101010 68%); border: 1px solid var(--line); border-radius: 12px; padding: clamp(22px, 4vw, 34px); }
+    .feature h3 { font-size: clamp(24px, 3vw, 34px); line-height: 1.15; margin: 10px 0; }
+    .feature p { color: #cbc5b4; font-size: 14px; }
+    .take { border-left: 3px solid var(--gold); padding: 10px 0 10px 16px; margin-top: 20px; color: #e9dfc1; font-size: 13px; }
+    .feature-list { display: grid; gap: 12px; }
+    .mini { border: 1px solid #29261d; background: var(--panel); border-radius: 9px; padding: 17px; }
+    .mini h3 { margin: 5px 0 5px; font-size: 16px; }
+    .mini p { margin: 0; color: var(--muted); font-size: 12px; }
+    .recipe-layout { display: grid; grid-template-columns: .8fr 1.2fr; gap: 20px; align-items: stretch; }
+    .recipe-art { min-height: 270px; border-radius: 11px; border: 1px solid var(--line); background: radial-gradient(circle at 50% 40%, rgba(212,175,55,.17), transparent 48%), linear-gradient(135deg, #1a1710, #101010); display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+    .plate { width: 160px; height: 160px; border: 2px solid rgba(212,175,55,.75); border-radius: 50%; box-shadow: 0 0 0 9px rgba(212,175,55,.07), inset 0 0 0 8px rgba(212,175,55,.08); display: flex; align-items: center; justify-content: center; color: var(--gold-light); font-size: 13px; font-weight: 800; letter-spacing: .12em; }
+    .recipe-content h3 { margin: 5px 0 10px; font-size: 27px; }
+    .recipe-content p { color: #c4c0b5; font-size: 13px; }
+    .stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+    .stats span { border: 1px solid #363126; border-radius: 5px; padding: 5px 9px; color: #ddd4bb; font-size: 11px; }
+    .recipe-content h4 { color: var(--gold-light); margin: 15px 0 5px; font-size: 13px; }
+    .recipe-content ul, .recipe-content ol { color: #c4c0b5; padding-left: 20px; margin-top: 5px; font-size: 13px; }
+    .link-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .link-card { display: block; border: 1px solid #29261d; background: #111; border-radius: 8px; padding: 16px; }
+    .link-card strong { display: block; color: var(--gold-light); font-size: 13px; margin-bottom: 5px; }
+    .link-card span { color: var(--muted); font-size: 11px; }
+    .cta { margin: 20px 0 45px; padding: 28px; border: 1px solid var(--line); border-radius: 11px; background: linear-gradient(110deg, rgba(212,175,55,.1), rgba(212,175,55,.025)); display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .cta h2 { margin: 0 0 5px; font-size: 23px; }
+    .cta p { margin: 0; color: var(--muted); font-size: 13px; }
+    .button { display: inline-block; border: 1px solid var(--gold); border-radius: 5px; background: var(--gold); color: #111; padding: 11px 17px; font-size: 12px; font-weight: 900; letter-spacing: .06em; white-space: nowrap; }
+    .button:hover { background: var(--gold-light); color: #111; }
+    footer { border-top: 1px solid var(--line); padding: 27px 0 32px; color: #a8a394; font-size: 11px; }
+    .footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+    .footer-brand { color: var(--gold); font-weight: 800; letter-spacing: .1em; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .link-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 650px) {
+      .wrap { width: min(100% - 28px, var(--max)); }
+      .nav { align-items: flex-start; flex-direction: column; gap: 12px; }
+      nav { justify-content: flex-start; gap: 13px; }
+      nav a { font-size: 12px; }
+      .hero { padding: 43px 0 30px; }
+      .grid, .feature-grid, .recipe-layout { grid-template-columns: 1fr; }
+      .section-head { align-items: flex-start; flex-direction: column; }
+      .section-head p { text-align: left; }
+      .link-grid { grid-template-columns: 1fr 1fr; }
+      .cta { align-items: flex-start; flex-direction: column; padding: 22px; }
+      .recipe-art { min-height: 210px; }
+    }
+  </style>
+  <!-- Google Analytics and AdSense can be added after confirming the site's current approved IDs. -->
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="https://www.nigelthomas.live/" aria-label="NigelThomas.live home">NIGEL<span>THOMAS</span>.LIVE</a>
+      <nav aria-label="Main navigation">
+        <a href="/">HOME</a>
+        <a href="/about.html">ABOUT</a>
+        <a class="active" href="/live.html" aria-current="page">F&amp;B LIVE</a>
+        <a href="/blog.html">BLOG</a>
+        <a href="/tools.html">TOOLS</a>
+        <a href="/contact.html">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">The Daily Food &amp; Beverage Intelligence Brief</div>
+        <h1>F&amp;B <span>LIVE</span></h1>
+        <p class="tagline">Food. Beverage. Hospitality. Innovation.</p>
+        <p class="hero-copy">A practical briefing for chefs, restaurant teams, hotel operators, beverage professionals and everyone curious about what is changing across the food and hospitality world.</p>
+        <div class="hero-meta">
+          <span class="pill"><span class="dot"></span> DAILY EDITION</span>
+          <span class="pill" id="edition-date">EDITION DATE</span>
+          <span class="pill">NIGEL A. THOMAS</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <div class="notice"><strong>LAUNCH PREVIEW:</strong> This is the designed landing page. Live news feeds, AI summaries, daily recipe selection and the 9:00 AM IST publishing automation have not been connected yet. The sections below demonstrate the editorial format; they are not presented as today's verified news.</div>
+
+      <section class="section" id="top-stories">
+        <div class="section-head">
+          <h2><span>01 /</span> The F&amp;B Briefing</h2>
+          <p>Global developments • Operations • Consumer trends</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="kicker">Food Innovation</div>
+            <h3>From trend to menu: turning food innovation into a workable operation</h3>
+            <p>What makes a new ingredient, product or dining idea practical at scale? Look beyond novelty to supply, consistency, training, guest acceptance and margin.</p>
+            <div class="foot">EDITORIAL TOPIC • Add verified story and source link during automation</div>
+          </article>
+          <article class="card">
+            <div class="kicker">Restaurant Operations</div>
+            <h3>Smarter kitchens: technology that supports the team</h3>
+            <p>Explore where forecasting, digital prep lists, equipment monitoring and workflow tools can improve service without replacing sound management.</p>
+            <div class="foot">EDITORIAL TOPIC • Add verified story and source link during automation</div>
+          </article>
+          <article class="card">
+            <div class="kicker">India F&amp;B Watch</div>
+            <h3>India's changing café, restaurant and beverage landscape</h3>
+            <p>Follow new concepts, regional flavours, hospitality investment, beverage launches and operating models relevant to India's foodservice market.</p>
+            <div class="foot">EDITORIAL TOPIC • Add verified story and source link during automation</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="innovation">
+        <div class="section-head">
+          <h2><span>02 /</span> Innovation Spotlight</h2>
+          <p>What is new — and why it matters</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="kicker">The daily deep dive</div>
+            <h3>Useful innovation is more than a headline.</h3>
+            <p>F&amp;B LIVE will examine ideas in food technology, kitchen equipment, ingredients, packaging, beverage development, sustainability and hospitality systems — with a focus on what a working operation can actually learn from them.</p>
+            <div class="take"><strong>NIGEL'S OPERATIONAL LENS</strong><br>For every featured innovation, ask: Does it improve quality, guest experience, consistency, safety, productivity or profitability? What will it cost to implement, maintain and train for?</div>
+          </article>
+          <div class="feature-list">
+            <article class="mini">
+              <div class="kicker">Watchlist</div>
+              <h3>Food technology &amp; equipment</h3>
+              <p>Automation, smart appliances, preservation, traceability and production systems.</p>
+            </article>
+            <article class="mini">
+              <div class="kicker">Watchlist</div>
+              <h3>New ingredients &amp; products</h3>
+              <p>Flavour, fermentation, functional foods, alternative ingredients and product launches.</p>
+            </article>
+            <article class="mini">
+              <div class="kicker">Watchlist</div>
+              <h3>Waste, energy &amp; sustainability</h3>
+              <p>Ideas that can reduce waste, water, energy use and avoidable operating cost.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="recipe">
+        <div class="section-head">
+          <h2><span>03 /</span> Recipe &amp; Chef's Note</h2>
+          <p>Practical, adaptable and service-minded</p>
+        </div>
+        <div class="card recipe-layout">
+          <div class="recipe-art" role="img" aria-label="Decorative gold plate graphic for the recipe feature">
+            <div class="plate">RECIPE<br>OF THE DAY</div>
+          </div>
+          <div class="recipe-content">
+            <div class="kicker">Recipe feature format</div>
+            <h3>A seasonal special, built for service</h3>
+            <p>The daily recipe feature will include a clear yield, ingredient quantities, method, preparation and cooking time, storage/safety notes where relevant, and suggestions for adapting the dish to a hotel, restaurant, café or home kitchen.</p>
+            <div class="stats">
+              <span>Yield: specified per recipe</span>
+              <span>Prep &amp; cook time: included</span>
+              <span>Costing: indicative when data allows</span>
+            </div>
+            <h4>What each recipe will include</h4>
+            <ul>
+              <li>Ingredients in practical quantities and a step-by-step method</li>
+              <li>Chef's tip, plating idea and possible menu application</li>
+              <li>Allergen and food-safety reminders where appropriate</li>
+              <li>Clear attribution and source links if adapted from a published recipe</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="beverage">
+        <div class="section-head">
+          <h2><span>04 /</span> Beverage Lab</h2>
+          <p>Coffee • Tea • Cocktails • No-alcohol drinks</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="kicker">Coffee &amp; Tea</div>
+            <h3>Brewing, service and new beverage ideas</h3>
+            <p>Equipment, extraction, menu design, tea service, specialty coffee and consistency behind the counter.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">Bar &amp; Mixology</div>
+            <h3>Technique, flavour and presentation</h3>
+            <p>Classic cocktails, modern methods, responsible service, glassware, batching and bar operations.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">No- &amp; Low-Alcohol</div>
+            <h3>More choice beyond traditional soft drinks</h3>
+            <p>Mocktails, botanical blends, refreshing seasonal serves and thoughtful non-alcoholic menu options.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="operations">
+        <div class="section-head">
+          <h2><span>05 /</span> The F&amp;B Manager's Brief</h2>
+          <p>Turn information into action</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="kicker">People &amp; Productivity</div>
+            <h3>What could this mean for the team?</h3>
+            <p>Staffing, skills, training, service flow, workload and guest satisfaction — the people side of every operational decision.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">Cost &amp; Commercial</div>
+            <h3>What could this mean for the numbers?</h3>
+            <p>Food cost, beverage margins, purchasing, waste, energy, capital investment and the difference between a trend and a viable business case.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">AI &amp; Hospitality</div>
+            <h3>Technology with a practical purpose</h3>
+            <p>Forecasting, inventory support, menu analysis, guest communication and workflow tools — with human oversight and accountability.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="trend-watch">
+        <div class="section-head">
+          <h2><span>06 /</span> Trend &amp; Sustainability Watch</h2>
+          <p>Signals to keep on your radar</p>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <div class="kicker">Global Trend Watch</div>
+            <h3>Consumer preferences and menu shifts</h3>
+            <p>Track emerging preferences in flavour, convenience, wellness, indulgence, value and dining experience — with sources and dates attached.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">India F&amp;B Watch</div>
+            <h3>Local developments, regional ideas</h3>
+            <p>Restaurant openings, hotel news, chefs, Indian food brands, regional cuisines, food policy and hospitality investment.</p>
+          </article>
+          <article class="card">
+            <div class="kicker">Sustainability</div>
+            <h3>Less waste, smarter resource use</h3>
+            <p>Food waste prevention, sustainable sourcing, packaging, water and energy efficiency, and practical kitchen implementation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="knowledge">
+        <div class="section-head">
+          <h2><span>07 /</span> Go Deeper with Nigel Thomas</h2>
+          <p>Connect today's ideas to practical knowledge</p>
+        </div>
+        <div class="link-grid">
+          <a class="link-card" href="/blog.html"><strong>Hospitality Knowledge</strong><span>Browse the article library</span></a>
+          <a class="link-card" href="/kitchen-equipment-temperature-guide.html"><strong>Kitchen Operations</strong><span>Equipment and temperature reference</span></a>
+          <a class="link-card" href="/methods-of-making-cocktails.html"><strong>Beverage Techniques</strong><span>Explore cocktail methods</span></a>
+          <a class="link-card" href="/food-and-beverage-question-and-answers.html"><strong>F&amp;B Questions &amp; Answers</strong><span>Build professional knowledge</span></a>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div>
+          <h2>Fresh thinking for the F&amp;B professional.</h2>
+          <p>F&amp;B LIVE brings industry developments back to the realities of service, people, quality and profitability.</p>
+        </div>
+        <a class="button" href="/about.html">MEET NIGEL THOMAS</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <div><div class="footer-brand">NIGEL A. THOMAS</div><div>Hospitality • Food &amp; Beverage Operations • Professional Insight</div></div>
+      <div>© <span id="year"></span> NigelThomas.live <span aria-hidden="true">&bull;</span> F&amp;B LIVE</div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      const options = { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'Asia/Kolkata' };
+      const dateNode = document.getElementById('edition-date');
+      const yearNode = document.getElementById('year');
+      if (dateNode) dateNode.textContent = 'EDITION DATE • ' + new Intl.DateTimeFormat('en-IN', options).format(new Date()).toUpperCase();
+      if (yearNode) yearNode.textContent = new Intl.DateTimeFormat('en-IN', { year: 'numeric', timeZone: 'Asia/Kolkata' }).format(new Date());
+    })();
+  </script>
+</body>
+</html>
