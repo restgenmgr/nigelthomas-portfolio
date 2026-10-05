@@ -17,7 +17,9 @@ $excludeNames = @(
   'test.html',
   'accounting-dashboard.html',
   'accounting-v3.html',
-  'accounting__index.html'
+  'accounting__index.html',
+  'world-famous-foods-country-names-poster.html',
+  'world-famous-foods-country-names-poster-updated.html'
 )
 
 # Resolve repo root regardless of where the script lives
