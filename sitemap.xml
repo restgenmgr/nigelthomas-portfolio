@@ -1122,12 +1122,15 @@
     <priority>0.5</priority>
   </url>
   <url>
+<<<<<<< HEAD
     <loc>https://www.nigelthomas.live/world-famous-foods-country-names-poster-updated.html</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+=======
+>>>>>>> ba248f6 (Canonicalise poster-updated page to original and remove from sitemap)
     <loc>https://www.nigelthomas.live/world-famous-foods-country-names-poster.html</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
