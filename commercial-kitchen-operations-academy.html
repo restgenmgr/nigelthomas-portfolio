@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Commercial Kitchen Operations Academy | Nigel A. Thomas</title>
+
+<meta name="description" content="Commercial Kitchen Operations Academy by Nigel A. Thomas — practical hospitality training resources covering kitchen operations, food safety, FSSAI, HACCP, SOPs, kitchen safety, cost control, waste management and staff training.">
+
+<link rel="canonical" href="https://www.nigelthomas.live/commercial-kitchen-operations-academy.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Commercial Kitchen Operations Academy | Nigel A. Thomas">
+<meta property="og:description" content="Professional commercial kitchen operations training, SOPs, food safety resources, checklists and management guides.">
+<meta property="og:url" content="https://www.nigelthomas.live/commercial-kitchen-operations-academy.html">
+<meta property="og:site_name" content="NigelThomas.live">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Commercial Kitchen Operations Academy | Nigel A. Thomas">
+<meta name="twitter:description" content="Practical commercial kitchen operations training and professional hospitality resources.">
+
+<style>
+:root{
+    --bg:#0a0a0a;
+    --panel:#151515;
+    --panel2:#1b1b1b;
+    --gold:#d4af37;
+    --gold-light:#f0d875;
+    --text:#f2f2f2;
+    --muted:#bdbdbd;
+    --border:#343434;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.7;
+}
+
+a{
+    color:var(--gold-light);
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.container{
+    width:min(1200px,92%);
+    margin:0 auto;
+}
+
+header{
+    border-bottom:1px solid var(--border);
+    background:#090909;
+}
+
+.nav{
+    min-height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    color:var(--gold);
+    font-size:1.25rem;
+    font-weight:700;
+    letter-spacing:.4px;
+}
+
+.nav-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.nav-links a{
+    color:#ddd;
+    font-size:.95rem;
+}
+
+.hero{
+    padding:80px 0 70px;
+    text-align:center;
+    background:
+        radial-gradient(circle at top,rgba(212,175,55,.12),transparent 45%);
+}
+
+.kicker{
+    color:var(--gold);
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+h1{
+    margin:14px auto 20px;
+    max-width:950px;
+    color:var(--gold);
+    font-size:clamp(2.3rem,5vw,4.4rem);
+    line-height:1.08;
+}
+
+.hero p{
+    max-width:850px;
+    margin:0 auto;
+    color:var(--muted);
+    font-size:1.12rem;
+}
+
+.intro{
+    padding:55px 0 25px;
+}
+
+.intro-box{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+}
+
+h2{
+    color:var(--gold);
+    font-size:2rem;
+    margin:0 0 18px;
+}
+
+.section{
+    padding:45px 0;
+}
+
+.section-heading{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 35px;
+}
+
+.section-heading p{
+    color:var(--muted);
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.card{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:25px;
+    transition:transform .2s ease,border-color .2s ease;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    border-color:var(--gold);
+}
+
+.card h3{
+    color:var(--gold);
+    margin-top:0;
+    font-size:1.2rem;
+}
+
+.card p{
+    color:var(--muted);
+    font-size:.95rem;
+}
+
+.card ul{
+    padding-left:20px;
+    color:#d5d5d5;
+}
+
+.card li{
+    margin-bottom:6px;
+}
+
+.feature{
+    background:var(--panel2);
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:35px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.resource-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.resource{
+    border:1px solid var(--border);
+    background:var(--panel);
+    border-radius:8px;
+    padding:22px;
+}
+
+.resource strong{
+    display:block;
+    color:var(--gold);
+    margin-bottom:8px;
+}
+
+.cta{
+    margin:45px 0 70px;
+    padding:45px 30px;
+    text-align:center;
+    border:1px solid var(--gold);
+    border-radius:12px;
+    background:linear-gradient(135deg,#151515,#0d0d0d);
+}
+
+.cta p{
+    max-width:800px;
+    margin:0 auto 25px;
+    color:var(--muted);
+}
+
+.button{
+    display:inline-block;
+    padding:12px 22px;
+    border:1px solid var(--gold);
+    border-radius:6px;
+    color:#111;
+    background:var(--gold);
+    font-weight:700;
+}
+
+.button:hover{
+    background:var(--gold-light);
+    text-decoration:none;
+}
+
+footer{
+    border-top:1px solid var(--border);
+    padding:30px 0;
+    color:#999;
+    text-align:center;
+    font-size:.9rem;
+}
+
+@media(max-width:950px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .resource-list{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:650px){
+    .nav{
+        padding:15px 0;
+        flex-direction:column;
+    }
+
+    .nav-links{
+        justify-content:center;
+    }
+
+    .hero{
+        padding:55px 0;
+    }
+
+    .grid,
+    .feature-grid,
+    .resource-list{
+        grid-template-columns:1fr;
+    }
+
+    .card,
+    .feature{
+        padding:22px;
+    }
+}
+</style>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P839TWLQSJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P839TWLQSJ');
+</script>
+
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+    <a class="brand" href="index.html">NigelThomas.live</a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="tools.html">Tools</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</div>
+</header>
+
+<main>
+
+<section class="hero">
+<div class="container">
+    <div class="kicker">Nigel A. Thomas</div>
+
+    <h1>Commercial Kitchen Operations Academy</h1>
+
+    <p>
+        Practical training, operational knowledge and professional resources
+        for chefs, kitchen managers, F&amp;B professionals, supervisors and
+        hospitality teams.
+    </p>
+</div>
+</section>
+
+<section class="intro">
+<div class="container">
+<div class="intro-box">
+
+<h2>Building Better Commercial Kitchens</h2>
+
+<p>
+The Commercial Kitchen Operations Academy is being developed as a practical
+hospitality training resource based on real-world food and beverage operations.
+The objective is simple: provide useful knowledge that can be applied in the
+kitchen, during service and throughout the daily management of a professional
+food operation.
+</p>
+
+<p>
+Resources will cover food safety, FSSAI requirements, HACCP principles,
+standard operating procedures, kitchen safety, production planning, inventory,
+cost control, waste management, staff training and operational leadership.
+</p>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="section-heading">
+<h2>Academy Training Areas</h2>
+<p>
+The Academy will be developed as a series of practical learning modules,
+guides, checklists and downloadable resources.
+</p>
+</div>
+
+<div class="grid">
+
+<article class="card">
+<h3>Kitchen Operations</h3>
+<p>Practical systems for running an efficient commercial kitchen.</p>
+<ul>
+<li>Opening and closing procedures</li>
+<li>Mise en place</li>
+<li>Production planning</li>
+<li>Service preparation</li>
+<li>Kitchen organization</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>Food Safety &amp; FSSAI</h3>
+<p>Essential food safety practices for professional food operations.</p>
+<ul>
+<li>Personal hygiene</li>
+<li>Temperature control</li>
+<li>Food storage</li>
+<li>Receiving procedures</li>
+<li>FSSAI fundamentals</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>HACCP &amp; Food Control</h3>
+<p>Understanding hazards, controls and preventive food safety systems.</p>
+<ul>
+<li>Food safety hazards</li>
+<li>Critical control points</li>
+<li>Monitoring</li>
+<li>Corrective action</li>
+<li>Verification</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>SOPs &amp; Checklists</h3>
+<p>Operational tools designed to turn standards into daily practice.</p>
+<ul>
+<li>Opening checklists</li>
+<li>Closing checklists</li>
+<li>Cleaning schedules</li>
+<li>Temperature logs</li>
+<li>Inspection forms</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>Kitchen Safety</h3>
+<p>Creating safer working environments for kitchen teams.</p>
+<ul>
+<li>Fire safety</li>
+<li>Knife safety</li>
+<li>Equipment safety</li>
+<li>Chemical safety</li>
+<li>Emergency procedures</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>Cost Control</h3>
+<p>Understanding the operational controls behind profitable kitchens.</p>
+<ul>
+<li>Food cost</li>
+<li>Portion control</li>
+<li>Recipe costing</li>
+<li>Yield</li>
+<li>Purchasing controls</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>Inventory &amp; Waste</h3>
+<p>Systems for controlling stock, waste and unnecessary food costs.</p>
+<ul>
+<li>Stock control</li>
+<li>Receiving</li>
+<li>Storage rotation</li>
+<li>Waste monitoring</li>
+<li>Inventory procedures</li>
+</ul>
+</article>
+
+<article class="card">
+<h3>People &amp; Leadership</h3>
+<p>Developing kitchen teams and maintaining professional standards.</p>
+<ul>
+<li>Staff training</li>
+<li>Shift handovers</li>
+<li>Communication</li>
+<li>Performance standards</li>
+<li>Leadership</li>
+</ul>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="feature">
+
+<div class="section-heading">
+<h2>Practical Hospitality Resources</h2>
+<p>
+The Academy will combine training articles with practical operational
+documents that hospitality professionals can use in their daily work.
+</p>
+</div>
+
+<div class="resource-list">
+
+<div class="resource">
+<strong>Training Guides</strong>
+Practical explanations of kitchen and F&amp;B operating procedures.
+</div>
+
+<div class="resource">
+<strong>SOP Templates</strong>
+Structured procedures that can be adapted to individual operations.
+</div>
+
+<div class="resource">
+<strong>Operational Checklists</strong>
+Daily tools for opening, closing, cleaning, safety and inspections.
+</div>
+
+<div class="resource">
+<strong>Posters &amp; Infographics</strong>
+Visual training material for kitchen and hospitality teams.
+</div>
+
+<div class="resource">
+<strong>Food Safety Resources</strong>
+Practical guidance covering hygiene, temperature control and contamination.
+</div>
+
+<div class="resource">
+<strong>Management Resources</strong>
+Tools and guidance for supervisors, managers and F&amp;B leaders.
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<div class="section-heading">
+<h2>First Academy Resources</h2>
+<p>
+Existing NigelThomas.live hospitality resources will gradually be connected
+to the Academy as individual training modules are developed.
+</p>
+</div>
+
+<div class="resource-list">
+
+<div class="resource">
+<strong>Workplace Safety</strong>
+<p>
+Explore the existing workplace safety resource.
+</p>
+<a href="oshwc-workplace-safety.html">View Workplace Safety &raquo;</a>
+</div>
+
+<div class="resource">
+<strong>Food &amp; Beverage Knowledge</strong>
+<p>
+Professional F&amp;B articles and operational information.
+</p>
+<a href="blog.html">Explore the Blog &raquo;</a>
+</div>
+
+<div class="resource">
+<strong>Training Resources</strong>
+<p>
+New Academy modules, checklists and downloadable resources will be added here.
+</p>
+<a href="#training">Academy Development &raquo;</a>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section" id="training">
+<div class="container">
+
+<div class="feature-grid">
+
+<div class="feature">
+<h2>Who Is This Academy For?</h2>
+<ul>
+<li>Chefs and Sous Chefs</li>
+<li>Kitchen Managers</li>
+<li>F&amp;B Managers</li>
+<li>Restaurant Managers</li>
+<li>Hospitality Supervisors</li>
+<li>Food Production Teams</li>
+<li>Hospitality Students</li>
+<li>Career Professionals</li>
+</ul>
+</div>
+
+<div class="feature">
+<h2>The Practical Approach</h2>
+<p>
+The Academy is designed around practical hospitality operations rather than
+theory alone. The goal is to explain what should happen, why it matters and
+how a professional operation can implement the standard consistently.
+</p>
+<p>
+New modules will be added progressively as the Academy develops.
+</p>
+</div>
+
+</div>
+
+<div class="cta">
+<h2>Commercial Kitchen Operations Academy</h2>
+<p>
+A developing professional resource from Nigel A. Thomas for practical kitchen
+operations, food safety, SOPs, safety, cost control and hospitality management.
+</p>
+
+<a class="button" href="contact.html">Contact Nigel A. Thomas</a>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+&copy; 2026 Nigel A. Thomas &bull; NigelThomas.live
+</div>
+</footer>
+
+</body>
+</html>
