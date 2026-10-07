@@ -32,3 +32,6 @@ assets_backup_tier2a/
 *.ps1
 !scripts/build-sitemap.ps1
 
+*-AUDIT-REPORT.txt
+*.backup-before-seo-fix
+RESTORE-POSTER.html
