@@ -1,0 +1,799 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Inventory & Waste Management | Commercial Kitchen Operations Academy | Nigel A. Thomas</title>
+<meta name="description" content="Practical inventory and waste management training for commercial kitchens, covering stock control, par levels, FIFO, FEFO, stocktaking, variance control, food waste, waste costing and manager checklists.">
+<meta name="author" content="Nigel A. Thomas">
+<link rel="canonical" href="https://www.nigelthomas.live/commercial-kitchen-inventory-waste-management.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Inventory & Waste Management | Commercial Kitchen Operations Academy">
+<meta property="og:description" content="Practical inventory and waste management systems for commercial kitchens.">
+<meta property="og:url" content="https://www.nigelthomas.live/commercial-kitchen-inventory-waste-management.html">
+<meta property="og:site_name" content="NigelThomas.live">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Inventory & Waste Management | Commercial Kitchen Operations Academy">
+<meta name="twitter:description" content="Practical inventory and waste management systems for commercial kitchens.">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P839TWLQSJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-P839TWLQSJ');
+</script>
+
+<!-- Google AdSense -->
+<meta name="google-adsense-account" content="ca-pub-8127243414384620">
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8127243414384620"
+crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Inventory & Waste Management",
+  "description":"Practical inventory and waste management training for commercial kitchens.",
+  "author":{
+    "@type":"Person",
+    "name":"Nigel A. Thomas"
+  },
+  "publisher":{
+    "@type":"Person",
+    "name":"Nigel A. Thomas"
+  },
+  "mainEntityOfPage":{
+    "@type":"WebPage",
+    "@id":"https://www.nigelthomas.live/commercial-kitchen-inventory-waste-management.html"
+  }
+}
+</script>
+
+<style>
+:root{
+  --bg:#0a0a0a;
+  --panel:#141414;
+  --panel2:#191919;
+  --gold:#d4af37;
+  --text:#f2f2f2;
+  --muted:#b8b8b8;
+  --border:#333;
+  --green:#9fd18b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.7;
+}
+a{color:var(--gold)}
+header{
+  border-bottom:1px solid var(--border);
+  background:#090909;
+  position:sticky;
+  top:0;
+  z-index:20;
+}
+.nav{
+  max-width:1200px;
+  margin:auto;
+  padding:16px 22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.brand{
+  color:var(--gold);
+  font-size:1.25rem;
+  font-weight:700;
+  text-decoration:none;
+}
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+}
+nav a{
+  color:#ddd;
+  text-decoration:none;
+  font-size:.95rem;
+}
+nav a:hover{color:var(--gold)}
+.hero{
+  max-width:1100px;
+  margin:auto;
+  padding:75px 22px 45px;
+}
+.kicker{
+  color:var(--gold);
+  font-size:.85rem;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+h1{
+  color:var(--gold);
+  font-size:clamp(2.2rem,5vw,4rem);
+  line-height:1.1;
+  margin:14px 0 20px;
+}
+.hero p{
+  color:var(--muted);
+  font-size:1.12rem;
+  max-width:850px;
+}
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:0 22px 70px;
+}
+.notice{
+  background:#17130a;
+  border:1px solid #6d5920;
+  border-left:4px solid var(--gold);
+  padding:20px;
+  margin:25px 0 40px;
+}
+h2{
+  color:var(--gold);
+  margin-top:50px;
+  font-size:1.8rem;
+}
+h3{
+  color:#eee;
+  margin-top:30px;
+  font-size:1.25rem;
+}
+p,li{font-size:1rem}
+ul,ol{padding-left:25px}
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:24px;
+  margin:22px 0;
+}
+.formula{
+  background:#111;
+  border:1px solid #444;
+  border-left:4px solid var(--gold);
+  padding:18px;
+  margin:20px 0;
+  font-family:Consolas,monospace;
+  color:#f4e5a8;
+  overflow-x:auto;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:25px 0;
+  background:#111;
+}
+th,td{
+  border:1px solid #3b3b3b;
+  padding:12px;
+  text-align:left;
+  vertical-align:top;
+}
+th{
+  color:var(--gold);
+  background:#181818;
+}
+.checklist{
+  list-style:none;
+  padding-left:0;
+}
+.checklist li{
+  border-bottom:1px solid #292929;
+  padding:9px 0;
+}
+.checklist li::before{
+  content:"[ ] ";
+  color:var(--gold);
+  font-weight:bold;
+}
+.kpi{
+  color:var(--green);
+  font-weight:700;
+}
+.cta{
+  margin-top:45px;
+  padding:28px;
+  background:var(--panel2);
+  border:1px solid #555;
+  text-align:center;
+}
+.button{
+  display:inline-block;
+  margin:7px;
+  padding:11px 18px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  text-decoration:none;
+  border-radius:4px;
+}
+.button:hover{
+  background:var(--gold);
+  color:#000;
+}
+footer{
+  border-top:1px solid var(--border);
+  text-align:center;
+  color:#999;
+  padding:30px 20px;
+}
+@media(max-width:700px){
+  .nav{align-items:flex-start;flex-direction:column}
+  nav{gap:12px}
+  .hero{padding-top:45px}
+  table{font-size:.88rem}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html">NigelThomas.live</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tools.html">Tools</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="kicker">Commercial Kitchen Operations Academy • Module 7</div>
+  <h1>Inventory &amp; Waste Management</h1>
+  <p>
+    A practical guide to controlling stock, reducing waste, protecting food cost,
+    improving purchasing decisions and maintaining reliable inventory systems in
+    commercial kitchens.
+  </p>
+</section>
+
+<main class="container">
+
+<div class="notice">
+<strong>Operational focus:</strong> Good inventory management is not simply counting
+food. It connects purchasing, receiving, storage, production, service, waste,
+portion control and financial control into one operating system.
+</div>
+
+<h2>1. What Inventory Management Means</h2>
+<p>
+Inventory management is the systematic control of products entering, being stored,
+being issued, being produced, being sold and being discarded by a commercial
+kitchen. The objective is to have the right product, in the right quantity, at the
+right quality and at the right time without carrying unnecessary stock.
+</p>
+<p>
+A kitchen with too little stock risks shortages and service disruption. A kitchen
+with too much stock ties up cash, increases storage pressure and creates more
+opportunity for spoilage, expiry and waste.
+</p>
+
+<h2>2. Why Inventory Control Matters</h2>
+<p>
+Inventory affects food cost, cash flow, menu availability, purchasing decisions,
+production planning and guest satisfaction. Weak stock control can make an
+otherwise well-run kitchen appear unprofitable.
+</p>
+<ul>
+<li>Prevents avoidable stock shortages.</li>
+<li>Reduces expired and spoiled products.</li>
+<li>Supports accurate food-cost reporting.</li>
+<li>Improves purchasing decisions.</li>
+<li>Helps identify unusual consumption.</li>
+<li>Reduces unnecessary working capital tied up in stock.</li>
+<li>Creates accountability between departments and shifts.</li>
+</ul>
+
+<h2>3. Types of Kitchen Inventory</h2>
+<div class="card">
+<ul>
+<li>Fresh produce</li>
+<li>Meat, poultry and seafood</li>
+<li>Dairy and eggs</li>
+<li>Frozen products</li>
+<li>Dry goods</li>
+<li>Canned and packaged goods</li>
+<li>Ready-to-use ingredients</li>
+<li>Beverage ingredients</li>
+<li>Cleaning and sanitation supplies</li>
+<li>Packaging and disposables</li>
+<li>Small operating supplies</li>
+</ul>
+</div>
+
+<h2>4. Par Levels</h2>
+<p>
+A par level is the quantity of an item that a kitchen normally needs to maintain
+operations for a defined period. Par levels should reflect actual consumption,
+delivery schedules, storage capacity, shelf life and business volume.
+</p>
+<p>
+Par levels should not remain fixed forever. They should be reviewed when sales
+patterns, menus, suppliers, seasons or operating hours change.
+</p>
+
+<h2>5. Minimum &amp; Maximum Stock Levels</h2>
+<p>
+Minimum stock is the level below which a product requires attention or replenishment.
+Maximum stock is the upper quantity the operation normally wants to hold.
+</p>
+<p>
+These controls help prevent both stockouts and excessive inventory.
+</p>
+
+<h2>6. Stock Requisition</h2>
+<p>
+A stock requisition creates a controlled record of goods requested by a kitchen
+section or department. It should identify the product, requested quantity, issued
+quantity, date and responsible person where appropriate.
+</p>
+<p>
+Requisitions create discipline between the storeroom and production areas and help
+management understand consumption patterns.
+</p>
+
+<h2>7. Purchasing &amp; Inventory Connection</h2>
+<p>
+Purchasing should be based on expected demand, current inventory, confirmed
+deliveries, menu requirements and appropriate safety stock. Buying without checking
+existing inventory can create unnecessary duplication.
+</p>
+
+<div class="formula">
+Suggested order quantity = Required stock level - Usable stock on hand + Expected safety stock adjustment
+</div>
+
+<p>
+The exact method should reflect the property's purchasing system and supplier
+lead times.
+</p>
+
+<h2>8. Receiving Inventory</h2>
+<p>
+Receiving is the first physical control point after purchasing. The receiver should
+check quantity, quality, packaging, temperatures where relevant, dates, product
+identity and condition against the approved order and delivery documentation.
+</p>
+<ul>
+<li>Verify the supplier and purchase order.</li>
+<li>Check delivered quantities.</li>
+<li>Inspect packaging for damage.</li>
+<li>Check quality and freshness.</li>
+<li>Check date coding where applicable.</li>
+<li>Record discrepancies.</li>
+<li>Move temperature-sensitive products into correct storage promptly.</li>
+</ul>
+
+<h2>9. Storage Organisation</h2>
+<p>
+Storage should allow products to be located quickly, inspected easily and rotated
+correctly. Shelves should be organised by product category and operational use.
+</p>
+<ul>
+<li>Keep products protected and appropriately covered.</li>
+<li>Maintain clear product identification.</li>
+<li>Separate raw and ready-to-eat products.</li>
+<li>Keep chemicals away from food.</li>
+<li>Avoid unnecessary overstocking.</li>
+<li>Maintain appropriate storage temperatures.</li>
+<li>Keep floors, shelves and storage areas clean.</li>
+</ul>
+
+<h2>10. FIFO &amp; FEFO</h2>
+<p>
+<strong>FIFO</strong> means First In, First Out. Older stock is normally used before
+newer stock.
+</p>
+<p>
+<strong>FEFO</strong> means First Expired, First Out. Products approaching their
+expiry or use-by date receive priority.
+</p>
+<p>
+FEFO is particularly useful where products have different shelf lives.
+</p>
+
+<h2>11. Stock Rotation</h2>
+<p>
+Stock rotation should occur whenever new deliveries are stored, not only during
+formal stocktakes. New products should not simply be placed in front of older
+products without checking dates and condition.
+</p>
+
+<h2>12. Daily Inventory Controls</h2>
+<div class="card">
+<ul class="checklist">
+<li>Check critical low-stock items.</li>
+<li>Check high-value products.</li>
+<li>Check short-life products.</li>
+<li>Review items approaching expiry.</li>
+<li>Check storage conditions.</li>
+<li>Review unusual consumption.</li>
+<li>Confirm urgent purchase requirements.</li>
+</ul>
+</div>
+
+<h2>13. Weekly Stocktaking</h2>
+<p>
+Weekly stocktaking should focus on important categories and products where
+consumption, value or operational risk justifies more frequent counting.
+</p>
+<p>
+Counts should be performed consistently using the same units of measure and
+counting method.
+</p>
+
+<h2>14. Monthly Stocktaking</h2>
+<p>
+A full monthly stocktake provides a broader view of inventory value and consumption.
+It should be reconciled with purchasing, sales and production information where
+available.
+</p>
+
+<h2>15. Physical vs. Book Inventory</h2>
+<p>
+Physical inventory is what is actually present in storage. Book inventory is what
+the system or records indicate should be present.
+</p>
+<p>
+Differences between the two require investigation rather than simply being
+adjusted away.
+</p>
+
+<div class="formula">
+Inventory variance = Physical quantity - Recorded quantity
+</div>
+
+<h2>16. Inventory Variance</h2>
+<p>
+Common causes of inventory variance include incorrect receiving, incorrect issuing,
+portion variation, unrecorded waste, incorrect recipes, theft, pilferage,
+transfers, counting errors and incorrect units of measure.
+</p>
+<p>
+Management should look for recurring patterns rather than focusing only on one
+isolated discrepancy.
+</p>
+
+<h2>17. Food Waste Management</h2>
+<p>
+Waste management begins by identifying why food is being discarded. Recording only
+the amount of waste without identifying the cause limits the value of the system.
+</p>
+
+<h2>18. Types of Kitchen Waste</h2>
+<table>
+<tr>
+<th>Waste Type</th>
+<th>Examples</th>
+</tr>
+<tr>
+<td>Preparation waste</td>
+<td>Peels, trimmings, bones and unusable preparation material.</td>
+</tr>
+<tr>
+<td>Spoilage</td>
+<td>Food damaged through poor storage, temperature abuse or contamination.</td>
+</tr>
+<tr>
+<td>Expiry</td>
+<td>Products reaching their permitted use date without being used.</td>
+</tr>
+<tr>
+<td>Overproduction</td>
+<td>Food produced in excess of actual demand.</td>
+</tr>
+<tr>
+<td>Plate waste</td>
+<td>Food returned uneaten by guests.</td>
+</tr>
+<tr>
+<td>Production errors</td>
+<td>Burnt, overcooked, incorrectly prepared or incorrectly portioned food.</td>
+</tr>
+</table>
+
+<h2>19. Preparation Waste</h2>
+<p>
+Not all preparation waste can or should be eliminated. Some trimming is necessary
+to meet quality and safety standards. The objective is to control unnecessary
+losses and understand normal yield.
+</p>
+
+<h2>20. Spoilage &amp; Expired Stock</h2>
+<p>
+Spoilage and expired stock are often symptoms of weak forecasting, poor rotation,
+incorrect storage, excessive purchasing or inadequate monitoring.
+</p>
+<p>
+Repeated spoilage should trigger corrective action rather than simply being
+recorded as unavoidable waste.
+</p>
+
+<h2>21. Overproduction Waste</h2>
+<p>
+Overproduction occurs when more food is prepared than can reasonably be sold or
+used. Production quantities should be based on historical sales, reservations,
+forecast occupancy, events, day-of-week patterns and current demand.
+</p>
+
+<h2>22. Plate Waste</h2>
+<p>
+Plate waste can reveal portion-size problems, product quality issues, menu
+preferences or preparation problems. Repeated patterns should be communicated to
+culinary and service management.
+</p>
+
+<h2>23. Waste Recording</h2>
+<p>
+A useful waste log should capture enough information to identify trends.
+</p>
+
+<table>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>Date and shift</td>
+<td>Identifies when the waste occurred.</td>
+</tr>
+<tr>
+<td>Product</td>
+<td>Identifies the item.</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>Measures the physical waste.</td>
+</tr>
+<tr>
+<td>Estimated value</td>
+<td>Shows the financial impact.</td>
+</tr>
+<tr>
+<td>Reason</td>
+<td>Identifies the cause.</td>
+</tr>
+<tr>
+<td>Responsible area</td>
+<td>Identifies where corrective action may be needed.</td>
+</tr>
+<tr>
+<td>Corrective action</td>
+<td>Records the response.</td>
+</tr>
+</table>
+
+<h2>24. Waste Cost Calculation</h2>
+<p>
+A simple waste-cost calculation can convert recorded waste into a financial
+management measure.
+</p>
+
+<div class="formula">
+Waste cost = Quantity wasted × Applicable unit cost
+</div>
+
+<p>
+Where the unit cost varies significantly, the operation should use an appropriate
+costing method consistent with its accounting and inventory procedures.
+</p>
+
+<h2>25. Waste Reduction Strategies</h2>
+<ul>
+<li>Improve demand forecasting.</li>
+<li>Use accurate production sheets.</li>
+<li>Strengthen portion control.</li>
+<li>Rotate stock consistently.</li>
+<li>Improve date coding and labelling.</li>
+<li>Review slow-moving inventory.</li>
+<li>Train staff to recognise avoidable waste.</li>
+<li>Investigate recurring waste causes.</li>
+<li>Improve recipe yields.</li>
+<li>Review menu items with excessive waste.</li>
+</ul>
+
+<h2>26. Production Planning &amp; Waste</h2>
+<p>
+Inventory control and production planning must work together. Purchasing excessive
+quantities creates stock risk, while producing excessive quantities converts
+ingredients into finished-food waste.
+</p>
+<p>
+The kitchen should continuously compare forecast demand with actual sales and
+adjust production accordingly.
+</p>
+
+<h2>27. Portion Control &amp; Waste</h2>
+<p>
+Standard portions protect both consistency and profitability. Weighing, measuring
+or using approved portioning tools can reduce variation.
+</p>
+<p>
+Portion control should be reinforced through standard recipes, training,
+supervision and periodic checks.
+</p>
+
+<h2>28. Inventory Theft &amp; Pilferage</h2>
+<p>
+Unexplained inventory losses should be investigated professionally and objectively.
+Controls may include restricted storage access, documented issues, receiving
+verification, regular stock counts and management review of unusual variances.
+</p>
+<p>
+Inventory controls should support accountability without creating an unnecessarily
+hostile working environment.
+</p>
+
+<h2>29. Inventory KPIs</h2>
+<table>
+<tr>
+<th>KPI</th>
+<th>Purpose</th>
+</tr>
+<tr>
+<td>Inventory value</td>
+<td>Measures capital tied up in stock.</td>
+</tr>
+<tr>
+<td>Stock variance</td>
+<td>Identifies differences between expected and physical stock.</td>
+</tr>
+<tr>
+<td>Waste cost</td>
+<td>Measures financial loss from discarded products.</td>
+</tr>
+<tr>
+<td>Waste percentage</td>
+<td>Tracks waste relative to an appropriate operating base.</td>
+</tr>
+<tr>
+<td>Stock turnover</td>
+<td>Shows how quickly inventory is consumed.</td>
+</tr>
+<tr>
+<td>Expiry/spoilage value</td>
+<td>Highlights loss caused by poor stock management.</td>
+</tr>
+<tr>
+<td>High-value variance</td>
+<td>Focuses management attention on expensive products.</td>
+</tr>
+</table>
+
+<p>
+Useful inventory KPIs should be reviewed as trends. A single number rarely tells
+the complete operational story.
+</p>
+
+<h2>30. Manager's Inventory &amp; Waste Checklist</h2>
+<div class="card">
+<ul class="checklist">
+<li>Critical stock levels reviewed.</li>
+<li>High-value products checked.</li>
+<li>Short-life products reviewed.</li>
+<li>FIFO and FEFO being followed.</li>
+<li>Storage areas organised.</li>
+<li>Receiving discrepancies investigated.</li>
+<li>Stock requisitions controlled.</li>
+<li>Physical counts completed correctly.</li>
+<li>Inventory variances investigated.</li>
+<li>Waste log completed.</li>
+<li>Waste causes reviewed.</li>
+<li>Overproduction identified.</li>
+<li>Portion control checked.</li>
+<li>Expired and spoiled products reviewed.</li>
+<li>Slow-moving stock identified.</li>
+<li>Purchasing adjusted where necessary.</li>
+<li>Corrective actions assigned.</li>
+<li>Recurring problems discussed with the team.</li>
+</ul>
+</div>
+
+<h2>Daily Inventory Management Routine</h2>
+<div class="card">
+<ol>
+<li>Review expected business volume.</li>
+<li>Check critical stock and short-life products.</li>
+<li>Review current production requirements.</li>
+<li>Confirm required purchasing.</li>
+<li>Receive and inspect deliveries correctly.</li>
+<li>Store and rotate products.</li>
+<li>Monitor issues and consumption.</li>
+<li>Record waste and unusual losses.</li>
+<li>Review important variances.</li>
+<li>Prepare the next shift or day's requirements.</li>
+</ol>
+</div>
+
+<h2>Weekly Inventory Management Routine</h2>
+<div class="card">
+<ul>
+<li>Review stock levels and turnover.</li>
+<li>Conduct targeted stock counts.</li>
+<li>Review waste trends.</li>
+<li>Review expiry and spoilage.</li>
+<li>Review supplier and purchasing issues.</li>
+<li>Investigate recurring variances.</li>
+<li>Review slow-moving products.</li>
+<li>Discuss corrective actions with kitchen leadership.</li>
+</ul>
+</div>
+
+<h2>Monthly Inventory Management Routine</h2>
+<div class="card">
+<ul>
+<li>Complete the scheduled full stocktake.</li>
+<li>Reconcile physical and recorded inventory.</li>
+<li>Review inventory value.</li>
+<li>Review waste cost.</li>
+<li>Review inventory variance trends.</li>
+<li>Review supplier pricing and purchasing patterns.</li>
+<li>Review high-risk and high-value items.</li>
+<li>Set corrective actions for the following period.</li>
+</ul>
+</div>
+
+<h2>Final Principles</h2>
+<p>
+Effective inventory and waste management is a daily operating discipline. The
+best systems do not depend on one monthly stocktake. They combine purchasing
+control, accurate receiving, organised storage, stock rotation, controlled issues,
+production planning, portion control, waste recording and management review.
+</p>
+<p>
+The objective is not simply to reduce the amount of food purchased. The objective
+is to ensure that every purchase is used intelligently, safely and profitably.
+</p>
+
+<div class="notice">
+<strong>Manager's principle:</strong> If you cannot explain where your inventory
+went, you do not yet have full control of your kitchen operation.
+</div>
+
+<div class="cta">
+<h2>Continue the Commercial Kitchen Operations Academy</h2>
+<a class="button" href="commercial-kitchen-operations-academy.html">Academy Home</a>
+<a class="button" href="commercial-kitchen-operations-fundamentals.html">Module 1</a>
+<a class="button" href="commercial-kitchen-food-safety-fssai.html">Module 2</a>
+<a class="button" href="commercial-kitchen-haccp-fundamentals.html">Module 3</a>
+<a class="button" href="commercial-kitchen-sops-checklists.html">Module 4</a>
+<a class="button" href="commercial-kitchen-kitchen-safety.html">Module 5</a>
+<a class="button" href="commercial-kitchen-cost-control.html">Module 6</a>
+<a class="button" href="oshwc-workplace-safety.html">Workplace Safety</a>
+</div>
+
+<div class="notice">
+<strong>Training disclaimer:</strong> This page provides general commercial kitchen
+operations training. Inventory, food safety, accounting, waste disposal,
+employment and regulatory requirements vary by operation and jurisdiction.
+Site-specific procedures should be aligned with applicable legislation, company
+policy, approved accounting procedures and competent professional advice.
+</div>
+
+</main>
+
+<footer>
+Nigel A. Thomas &bull; Commercial Kitchen Operations Academy &bull; NigelThomas.live
+</footer>
+
+</body>
+</html>
