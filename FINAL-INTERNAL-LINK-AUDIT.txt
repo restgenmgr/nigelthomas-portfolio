@@ -1,0 +1,202 @@
+$repo = "C:\Users\admin\Desktop\nigelthomas-portfolio"
+$out  = Join-Path $repo "FINAL-INTERNAL-LINK-AUDIT-V2.txt"
+
+Set-Location $repo
+
+$files = Get-ChildItem -Path $repo -Recurse -File -Filter *.html |
+    Where-Object { $_.FullName -notmatch "\\\.git\\" }
+
+$results = New-Object System.Collections.Generic.List[string]
+$broken = 0
+$malformed = 0
+$checked = 0
+
+$results.Add("FINAL INTERNAL LINK AUDIT V2")
+$results.Add("============================")
+$results.Add("Date: $(Get-Date)")
+$results.Add("Repository: $repo")
+$results.Add("HTML files scanned: $($files.Count)")
+$results.Add("")
+
+foreach ($file in $files) {
+
+    try {
+        $bytes = [System.IO.File]::ReadAllBytes($file.FullName)
+        $enc = New-Object System.Text.UTF8Encoding($false,$true)
+        $html = $enc.GetString($bytes)
+    }
+    catch {
+        $results.Add("UNREADABLE FILE: $($file.FullName)")
+        continue
+    }
+
+    $matches = [regex]::Matches(
+        $html,
+        '(?is)href\s*=\s*["'']([^"'']+)["'']'
+    )
+
+    foreach ($m in $matches) {
+
+        $href = $m.Groups[1].Value.Trim()
+
+        if ([string]::IsNullOrWhiteSpace($href)) {
+            continue
+        }
+
+        # Ignore external/non-page links
+        if ($href -match '^(?i:https?:|//|mailto:|tel:|javascript:|data:|#)') {
+            continue
+        }
+
+        # Remove fragment and query string
+        $target = $href -replace '#.*$',''
+        $target = $target -replace '\?.*$',''
+
+        if ([string]::IsNullOrWhiteSpace($target)) {
+            continue
+        }
+
+        # Flag malformed root-relative links such as:
+        # / About-complete.html
+        if ($target -match '^/\s+') {
+
+            $malformed++
+
+            $relativeSource = $file.FullName.Substring($repo.Length + 1)
+
+            $results.Add("MALFORMED LINK")
+            $results.Add("Source : $relativeSource")
+            $results.Add("Link   : $href")
+            $results.Add("")
+
+            continue
+        }
+
+        # Only audit local HTML pages
+        if ($target -notmatch '\.html$') {
+            continue
+        }
+
+        try {
+            $decoded = [System.Uri]::UnescapeDataString($target)
+        }
+        catch {
+            $decoded = $target
+        }
+
+        $decoded = $decoded -replace '/','\'
+
+        $sourceDir = Split-Path $file.FullName -Parent
+
+        # IMPORTANT:
+        # /about.html means repo\about.html
+        # /blog/test.html means repo\blog\test.html
+        if ($target.StartsWith('/')) {
+
+            $relativeTarget = $decoded.TrimStart('\')
+            $candidate = Join-Path $repo $relativeTarget
+
+        }
+        else {
+
+            # Normal relative link
+            # ../something.html
+            # folder/something.html
+            # something.html
+            $candidate = Join-Path $sourceDir $decoded
+        }
+
+        try {
+            $candidate = [System.IO.Path]::GetFullPath($candidate)
+        }
+        catch {
+            continue
+        }
+
+        # Make sure the target does not escape the repository
+        $repoRoot = $repo.TrimEnd('\') + '\'
+
+        if (
+            -not $candidate.StartsWith(
+                $repoRoot,
+                [System.StringComparison]::OrdinalIgnoreCase
+            )
+        ) {
+
+            $malformed++
+
+            $relativeSource = $file.FullName.Substring($repo.Length + 1)
+
+            $results.Add("OUT-OF-REPO LINK")
+            $results.Add("Source : $relativeSource")
+            $results.Add("Link   : $href")
+            $results.Add("Target : $candidate")
+            $results.Add("")
+
+            continue
+        }
+
+        $checked++
+
+        if (-not (Test-Path -LiteralPath $candidate -PathType Leaf)) {
+
+            $broken++
+
+            $relativeSource = $file.FullName.Substring($repo.Length + 1)
+
+            $results.Add("BROKEN LINK")
+            $results.Add("Source : $relativeSource")
+            $results.Add("Link   : $href")
+            $results.Add("Target : $candidate")
+            $results.Add("")
+        }
+    }
+}
+
+$results.Add("====================================")
+$results.Add("AUDIT SUMMARY")
+$results.Add("====================================")
+$results.Add("HTML files scanned        : $($files.Count)")
+$results.Add("HTML links checked        : $checked")
+$results.Add("Broken links found        : $broken")
+$results.Add("Malformed/out-of-repo     : $malformed")
+$results.Add("")
+
+if ($broken -eq 0) {
+    $results.Add("RESULT: PASS - No broken local HTML links found.")
+}
+else {
+    $results.Add("RESULT: REVIEW - Broken local HTML links are listed above.")
+}
+
+if ($malformed -gt 0) {
+    $results.Add("NOTE: Malformed/out-of-repo links are listed separately and require inspection.")
+}
+
+# Write report only. NO WEBSITE FILES ARE MODIFIED.
+[System.IO.File]::WriteAllLines(
+    $out,
+    $results,
+    (New-Object System.Text.UTF8Encoding($false))
+)
+
+Write-Host ""
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host " FINAL INTERNAL LINK AUDIT V2 COMPLETE" -ForegroundColor Cyan
+Write-Host "========================================" -ForegroundColor Cyan
+Write-Host ""
+Write-Host "HTML files scanned       : $($files.Count)"
+Write-Host "HTML links checked       : $checked"
+Write-Host "Broken links found       : $broken"
+Write-Host "Malformed/out-of-repo    : $malformed"
+Write-Host ""
+Write-Host "Report:" -ForegroundColor Yellow
+Write-Host $out -ForegroundColor Yellow
+Write-Host ""
+
+if ($broken -eq 0) {
+    Write-Host "PASS - No broken local HTML links found." -ForegroundColor Green
+}
+else {
+    Write-Host "REVIEW - Open the V2 report before changing anything." -ForegroundColor Red
+}

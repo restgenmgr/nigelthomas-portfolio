@@ -1,0 +1,590 @@
+FINAL INTERNAL LINK AUDIT V2
+============================
+Date: 10/08/2026 00:47:07
+Repository: C:\Users\admin\Desktop\nigelthomas-portfolio
+HTML files scanned: 283
+
+BROKEN LINK
+Source : about-academy.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy.html
+
+BROKEN LINK
+Source : about-academy.html
+Link   : courses.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\courses.html
+
+BROKEN LINK
+Source : about-academy.html
+Link   : resources.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\resources.html
+
+BROKEN LINK
+Source : about-academy.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy.html
+
+BROKEN LINK
+Source : about-academy.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy.html
+
+BROKEN LINK
+Source : academy-news.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy.html
+
+BROKEN LINK
+Source : academy-news.html
+Link   : courses.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\courses.html
+
+BROKEN LINK
+Source : beers.html
+Link   : history-of-wine-world-wine-regions-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\history-of-wine-world-wine-regions-guide.html
+
+BROKEN LINK
+Source : certifications.html
+Link   : About-complete.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\About-complete.html
+
+BROKEN LINK
+Source : certifications.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : chicken-nuggets-recipes.html
+Link   : gourmet-canapes-italian-starters.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\gourmet-canapes-italian-starters.html
+
+BROKEN LINK
+Source : cloud-kitchen-catering-operations-guide.html
+Link   : About-complete.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\About-complete.html
+
+BROKEN LINK
+Source : cloud-kitchen-catering-operations-guide.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : cloud-kitchen-operations-dashboard-the-pass.html
+Link   : /blog/types-of-fire-extinguishers.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\types-of-fire-extinguishers.html
+
+BROKEN LINK
+Source : commercial-kitchen-cost-control.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-food-safety-fssai.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-haccp-fundamentals.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-inventory-waste-management.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-kitchen-safety.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-operations-academy.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-operations-fundamentals.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-sops-checklists.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : commercial-kitchen-staff-training-leadership.html
+Link   : tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : cross-contamination-prevention.html
+Link   : /kitchen-haccp-poster.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\kitchen-haccp-poster.html
+
+BROKEN LINK
+Source : equal-opportunity-employer-india-usa-europe.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : equal-opportunity-employer-india-usa-europe.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : foh-boh-hierarchy-blog.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : general-manager-duties-and-responsibilities.html
+Link   : services.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\services.html
+
+BROKEN LINK
+Source : healthy-daily-recipes.html
+Link   : gourmet-canapes-italian-starters.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\gourmet-canapes-italian-starters.html
+
+BROKEN LINK
+Source : history-of-wine-world-wine-regions.html
+Link   : history-of-wine-world-wine-regions-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\history-of-wine-world-wine-regions-guide.html
+
+BROKEN LINK
+Source : hotel-gm-competency-framework.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : hotel-gm-competency-framework.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : live.html
+Link   : /tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\tools.html
+
+BROKEN LINK
+Source : quality-controllers-food-industry.html
+Link   : blog/restaurant-sops.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\restaurant-sops.html
+
+BROKEN LINK
+Source : quality-controllers-food-industry.html
+Link   : blog/hospitality-leadership.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\hospitality-leadership.html
+
+BROKEN LINK
+Source : quality-controllers-food-industry.html
+Link   : blog/hotel-operations-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\hotel-operations-guide.html
+
+BROKEN LINK
+Source : quality-controllers-food-industry.html
+Link   : blog/cloud-kitchen-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\cloud-kitchen-guide.html
+
+BROKEN LINK
+Source : quality-controllers-food-industry.html
+Link   : about-complete.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\about-complete.html
+
+BROKEN LINK
+Source : quality-controllers-food-industry.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : restaurant-cost-control-calculator.html
+Link   : About-complete.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\About-complete.html
+
+BROKEN LINK
+Source : restaurant-cost-control-calculator.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : restaurant-general-manager-complete-guide.html
+Link   : 14-major-food-allergens-every-hospitality-professional-must-know.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\14-major-food-allergens-every-hospitality-professional-must-know.html
+
+BROKEN LINK
+Source : restaurant-general-manager-complete-guide.html
+Link   : knife-colour-codes.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\knife-colour-codes.html
+
+BROKEN LINK
+Source : restaurant-hotel-napkin-folding.html
+Link   : blog/types-of-meal-plans-in-hotels.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\types-of-meal-plans-in-hotels.html
+
+BROKEN LINK
+Source : restaurant-hotel-napkin-folding.html
+Link   : blog/types-of-fire-extinguishers.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\types-of-fire-extinguishers.html
+
+BROKEN LINK
+Source : sales-marketing-hospitality-career-guide.html
+Link   : services.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\services.html
+
+BROKEN LINK
+Source : types-of-alcohol-complete-guide.html
+Link   : food-and-beverage-service.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-and-beverage-service.html
+
+BROKEN LINK
+Source : types-of-alcohol-complete-guide.html
+Link   : history-of-wine-world-wine-regions-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\history-of-wine-world-wine-regions-guide.html
+
+BROKEN LINK
+Source : types-of-sandwiches.html
+Link   : knife-colour-codes.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\knife-colour-codes.html
+
+BROKEN LINK
+Source : types-of-sandwiches.html
+Link   : breakfast-menu-ideas-for-hotels.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\breakfast-menu-ideas-for-hotels.html
+
+BROKEN LINK
+Source : which-hotel-chain-is-biggest.html
+Link   : About-complete.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\About-complete.html
+
+BROKEN LINK
+Source : which-hotel-chain-is-biggest.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\privacy.html
+
+BROKEN LINK
+Source : academy\about-academy.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\academy.html
+
+BROKEN LINK
+Source : academy\about-academy.html
+Link   : courses.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\courses.html
+
+BROKEN LINK
+Source : academy\about-academy.html
+Link   : resources.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\resources.html
+
+BROKEN LINK
+Source : academy\about-academy.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\safety-compliance.html
+
+BROKEN LINK
+Source : academy\about-academy.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\academy.html
+
+BROKEN LINK
+Source : academy\about-academy.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\academy.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : academy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\academy.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : courses.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\courses.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\safety-compliance.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : hotel-sops-complete-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\hotel-sops-complete-guide.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : key-hotel-management-roles.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\key-hotel-management-roles.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : hospitality-management-tools.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\hospitality-management-tools.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : hotel-sops-complete-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\hotel-sops-complete-guide.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : food-cost-control-complete-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\food-cost-control-complete-guide.html
+
+BROKEN LINK
+Source : academy\academy-news.html
+Link   : manager-on-duty-hotel-operations-complete-guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\academy\manager-on-duty-hotel-operations-complete-guide.html
+
+BROKEN LINK
+Source : blog\cross-contamination-prevention.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\cross-contamination-prevention.html
+Link   : ../temperature-log-templates.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\temperature-log-templates.html
+
+BROKEN LINK
+Source : blog\cross-contamination-prevention.html
+Link   : ../temperature-log-templates.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\temperature-log-templates.html
+
+BROKEN LINK
+Source : blog\cross-contamination-prevention.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\fine-dining-silverware.html
+Link   : blog.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\blog.html
+
+BROKEN LINK
+Source : blog\gourmet-canapes-italian-starters.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\kitchen-structure.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\kitchen-structure.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\restaurant-fire-safety-training-guide.html
+Link   : index.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\index.html
+
+BROKEN LINK
+Source : blog\restaurant-fire-safety-training-guide.html
+Link   : About-complete.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\About-complete.html
+
+BROKEN LINK
+Source : blog\restaurant-fire-safety-training-guide.html
+Link   : blog.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\blog.html
+
+BROKEN LINK
+Source : blog\restaurant-fire-safety-training-guide.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\restaurant-fire-safety-training-guide.html
+Link   : Contact.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\Contact.html
+
+BROKEN LINK
+Source : blog\restaurant-fire-safety-training-guide.html
+Link   : privacy.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\privacy.html
+
+BROKEN LINK
+Source : blog\restaurant-fire-safety-training-guide.html
+Link   : terms.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\terms.html
+
+BROKEN LINK
+Source : blog\shake-vs-smoothie.html
+Link   : blog.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\blog.html
+
+BROKEN LINK
+Source : blog\stuffed-filled-foods-around-the-world.html
+Link   : blog.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\blog.html
+
+BROKEN LINK
+Source : blog\types-of-alcohol-guide.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\types-of-alcohol-guide.html
+Link   : /blog/fb-cost-control-blueprint.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\fb-cost-control-blueprint.html
+
+BROKEN LINK
+Source : blog\types-of-alcohol-guide.html
+Link   : /blog/ADR-RevPAR-GOPPAR-Explained.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\ADR-RevPAR-GOPPAR-Explained.html
+
+BROKEN LINK
+Source : blog\types-of-alcohol-guide.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\wine-service-etiquette.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : blog\wine-service-etiquette.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\blog\safety-compliance.html
+
+BROKEN LINK
+Source : culinary\chefs-tools-knives-cutting-boards.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\safety-compliance.html
+
+BROKEN LINK
+Source : culinary\chefs-tools-knives-cutting-boards.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\safety-compliance.html
+
+BROKEN LINK
+Source : culinary\mother-sauces-complete-guide.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\safety-compliance.html
+
+BROKEN LINK
+Source : culinary\mother-sauces-complete-guide.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\safety-compliance.html
+
+BROKEN LINK
+Source : food-safety\color-coding-kitchen-housekeeping.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\safety-compliance.html
+
+BROKEN LINK
+Source : food-safety\color-coding-kitchen-housekeeping.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\safety-compliance.html
+
+BROKEN LINK
+Source : food-safety\color-coding-kitchen-housekeeping.html
+Link   : /compliance- Guide.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\compliance- Guide.html
+
+BROKEN LINK
+Source : food-safety\color-coding-kitchen-housekeeping.html
+Link   : /food-cost-reduction.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-cost-reduction.html
+
+BROKEN LINK
+Source : food-safety\color-coding-kitchen-housekeeping.html
+Link   : /ai-hospitality.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\ai-hospitality.html
+
+BROKEN LINK
+Source : food-safety\color-coding-kitchen-housekeeping.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\safety-compliance.html
+
+BROKEN LINK
+Source : food-safety\food-allergies-restaurant-awareness.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\safety-compliance.html
+
+BROKEN LINK
+Source : food-safety\food-allergies-restaurant-awareness.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\safety-compliance.html
+
+BROKEN LINK
+Source : food-safety\food-allergies-restaurant-awareness.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\safety-compliance.html
+
+BROKEN LINK
+Source : food-safety\food-temperatures-article.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\food-safety\safety-compliance.html
+
+BROKEN LINK
+Source : hospitality-management\foh-boh-hierarchy-blog.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\safety-compliance.html
+
+BROKEN LINK
+Source : hospitality-management\homestay-vs-hotels.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\safety-compliance.html
+
+BROKEN LINK
+Source : hospitality-management\House_Manager_Estate_Manager_Hospitality_Manager_Guide.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\safety-compliance.html
+
+BROKEN LINK
+Source : hospitality-management\qsr-vs-fine-dining.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\safety-compliance.html
+
+BROKEN LINK
+Source : regional-food\chinese-culinary-styles-blog.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\safety-compliance.html
+
+BROKEN LINK
+Source : regional-food\indian-spices-herbs-health-benefits.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\safety-compliance.html
+
+BROKEN LINK
+Source : regional-food\indian-spices-herbs-health-benefits.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\safety-compliance.html
+
+BROKEN LINK
+Source : regional-food\south-indian-food-styles-udupi-chettinad-nati.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\safety-compliance.html
+
+BROKEN LINK
+Source : regional-food\south-indian-food-styles-udupi-chettinad-nati.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\safety-compliance.html
+
+BROKEN LINK
+Source : regional-food\south-indian-food-styles-udupi-chettinad-nati.html
+Link   : safety-compliance.html
+Target : C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\safety-compliance.html
+
+====================================
+AUDIT SUMMARY
+====================================
+HTML files scanned        : 283
+HTML links checked        : 2227
+Broken links found        : 115
+Malformed/out-of-repo     : 0
+
+RESULT: REVIEW - Broken local HTML links are listed above.
