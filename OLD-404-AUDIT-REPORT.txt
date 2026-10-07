@@ -1,0 +1,298 @@
+OLD GOOGLE 404 URL AUDIT
+========================
+READ-ONLY AUDIT - NO FILES MODIFIED
+Date: 10/07/2026 19:19:49
+Repository: C:\Users\admin\Desktop\nigelthomas-portfolio
+
+Current HTML files scanned: 278
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/mastering-food-cost-guide.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\mastering-food-cost-guide.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 308
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/hotel-department-heads-complete-guide.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\hotel-department-heads-complete-guide.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 308
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/Food Safety Temperatures%2C Cold Chain Control %26 Kitchen Storage Standards.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\Food Safety Temperatures, Cold Chain Control & Kitchen Storage Standards.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 308
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/Blog/chinese- Culinary-styles
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\Blog\chinese- Culinary-styles
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/regional-food/street-food-india.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\regional-food\street-food-india.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 308
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/article_backup.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\article_backup.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/hospitality-management/equal-opportunity-employer-india-usa-europe.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-management\equal-opportunity-employer-india-usa-europe.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 308
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/blog/food-cost-control-complete-guide.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\blog\food-cost-control-complete-guide.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 308
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/blog
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\blog
+REFERENCED BY CURRENT HTML: YES
+REFERENCING FILES:
+  - 100-hospitality-interview-questions.html
+  - 10-biggest-hotels-in-the-world.html
+  - 10-italian-salads.html
+  - 14-major-food-allergens.html
+  - 15-money-leaks-in-a-restaurant.html
+  - 20-green-mocktail-recipes.html
+  - 6-pizza-recipes-hotel-restaurant-menu.html
+  - 6-types-of-fried-fish.html
+  - about.html
+  - ai-decision-matrix.html
+  - ats-friendly-hospitality-cv-guide.html
+  - bartenders-quick-reference.html
+  - beers.html
+  - beverage.html
+  - blog.html
+  - blog\cross-contamination-prevention.html
+  - blog\fine-dining-silverware.html
+  - blog\gourmet-canapes-italian-starters.html
+  - blog\kitchen-structure.html
+  - blog\restaurant-fire-safety-training-guide.html
+  - blog\shake-vs-smoothie.html
+  - blog\stuffed-filled-foods-around-the-world.html
+  - blog\types-of-alcohol-guide.html
+  - blog\wine-service-etiquette.html
+  - brandy-cognac-armagnac.html
+  - buffet-food-temperature-guide.html
+  - building-a-career-in-hospitality-guide.html
+  - career-general.html
+  - certifications.html
+  - chef-de-partie-complete-career-guide.html
+  - chicken-nuggets-recipes.html
+  - classic-biryani-recipes-guide.html
+  - classic-bread-recipes-guide.html
+  - classic-burger-recipes-guide.html
+  - classic-cocktails-guide.html
+  - classic-snacks-recipes.html
+  - cloud-kitchen-catering-operations-guide.html
+  - cloud-kitchen-operations-dashboard-the-pass.html
+  - cocktail-bar-service-guide.html
+  - coffee-shop-vocabulary.html
+  - coffee-types-poster.html
+  - cold-coffees-guide.html
+  - colour-coding-knives-cutting-boards.html
+  - commercial-kitchen-cost-control.html
+  - commercial-kitchen-food-safety-fssai.html
+  - commercial-kitchen-haccp-fundamentals.html
+  - commercial-kitchen-inventory-waste-management.html
+  - commercial-kitchen-kitchen-safety.html
+  - commercial-kitchen-operations-academy.html
+  - commercial-kitchen-operations-fundamentals.html
+  - commercial-kitchen-sops-checklists.html
+  - commercial-kitchen-staff-training-leadership.html
+  - complete-guide-to-hotel-and-restaurant-abbreviations.html
+  - condiments-vs-sauces-fb-guide.html
+  - condiments-vs-sauces-poster.html
+  - contact.html
+  - cost-control-protect-profit.html
+  - croissant-sandwiches.html
+  - cross-contamination-prevention.html
+  - culinary\chefs-tools-knives-cutting-boards.html
+  - culinary\mother-sauces-complete-guide.html
+  - culinary__menu-planning-engineering.html
+  - disclaimer.html
+  - draught-beers.html
+  - equal-opportunity-employer-india-usa-europe.html
+  - essential-kitchen-knives-guide.html
+  - executive-chef-duties-and-responsibilities.html
+  - executive-chef-job-description-requirements.html
+  - f&b-service-interview-q&a.html
+  - fb-cost-control-blueprint.html
+  - fb-leadership-playbook.html
+  - fifo-vs-fefo-poster.html
+  - fifo-vs-fefo-stock-rotation-guide.html
+  - financial-kpis-poster.html
+  - fine-dining-silverware.html
+  - foh-boh-hierarchy-blog.html
+  - food-and-beverage-question-and-answers.html
+  - food-and-beverage-service-hierarchy.html
+  - food-cost-basics.html
+  - food-cost-control-complete-guide.html
+  - food-handling-guide-poster.html
+  - food-handling-procedure.html
+  - food-safety\color-coding-kitchen-housekeeping.html
+  - food-safety\food-allergies-restaurant-awareness.html
+  - food-safety\food-temperatures-article.html
+  - food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html
+  - frozen-desserts.html
+  - fssai-kitchen-inspection-guide.html
+  - future-of-ai-guardrails.html
+  - general-manager-duties-and-responsibilities.html
+  - general-manager-vs-hotel-manager.html
+  - haccp-hazard-analysis-critical-control-points.html
+  - haccp-kitchen-checklist.html
+  - haccp-plan.html
+  - healthy-daily-recipes.html
+  - history-of-wine-world-wine-regions.html
+  - hospitality-franchising-complete-guide.html
+  - hospitality-management\foh-boh-hierarchy-blog.html
+  - hospitality-management\homestay-vs-hotels.html
+  - hospitality-management\House_Manager_Estate_Manager_Hospitality_Manager_Guide.html
+  - hospitality-management\qsr-vs-fine-dining.html
+  - hospitality-management-tools.html
+  - host-full-form-hotel-industry.html
+  - hot-and-cold-kitchens-temperature-guide.html
+  - hotel-gm-competency-framework.html
+  - hotel-kpi-formula-cheat-sheet.html
+  - hotel-management-financial-model.html
+  - hotel-management-playbook-month-end-reporting.html
+  - hotel-p&l.html
+  - hotel-sops-complete-guide.html
+  - hotel-vs-resort-expenditure-guide.html
+  - house-keeping-formulas-explained.html
+  - how-to-carry-a-service-tray.html
+  - how-to-control-food-cost.html
+  - index.html
+  - international-soups.html
+  - italian-pasta-recipes.html
+  - key-hotel-kpis-every-hotelier-should-track.html
+  - key-hotel-management-roles.html
+  - kitchen-cleaning-schedule-template.html
+  - kitchen-equipment-temperature-guide.html
+  - kitchen-food.html
+  - kitchen-temperature-log-sheet.html
+  - knife-color-codes.html
+  - knives-and-forks-poster.html
+  - live.html
+  - management-operations.html
+  - many-hats-general-manager.html
+  - medicinal-properties-of-teas.html
+  - medicinal-value-of-spices.html
+  - methods-of-making-cocktails.html
+  - mother-sauce-derivatives.html
+  - north-indian-cuisine-guide.html
+  - not-all-cruise-lines-are-created-equal.html
+  - operations-manager-vs-restaurant-manager.html
+  - oshwc-workplace-safety.html
+  - partners.html
+  - pest-control-in-kitchen.html
+  - pl-management-guide.html
+  - popular-seafood-varieties-guide.html
+  - privacy-policy.html
+  - profit-loss-10-day-cycle.html
+  - profit-loss-control-cycle.html
+  - quality-controllers-food-industry.html
+  - regional-food\chinese-culinary-styles-blog.html
+  - regional-food\indian-spices-herbs-health-benefits.html
+  - regional-food\south-indian-food-styles-udupi-chettinad-nati.html
+  - resort-co-working-future-office.html
+  - resort-manager-career-guide-2026.html
+  - restaurant-cost-control-calculator.html
+  - restaurant-financial-kpis.html
+  - restaurant-general-manager-complete-guide.html
+  - restaurant-general-operating-terms.html
+  - restaurant-hotel-napkin-folding.html
+  - restaurant-inventory-management-complete-guide.html
+  - restaurant-kpis-every-manager-should-track.html
+  - restaurant-leader-duties-responsibilities-guide.html
+  - restaurant-manager-roles-and-responsibilities.html
+  - restaurant-mis-en-plas.html
+  - restaurant-operational-challenges-solutions.html
+  - restaurant-service-excellence-guide.html
+  - restaurant-sops-complete-operations-handbook.html
+  - restaurant-supervisor-interview.html
+  - restaurant-walkthrough-poster.html
+  - RESTORE-POSTER.html
+  - resume.html
+  - resume-making-tools-guide.html
+  - right-vs-left-service-restaurants.html
+  - safe-food-storage-guide.html
+  - safety-compliance.html
+  - sales-marketing-hospitality-career-guide.html
+  - service-get-the-job-done-hospitality-creates-the-memory.html
+  - smart-menu-pricing-formula.html
+  - sous-chef-career-guide.html
+  - staff-behavior-fb-service-guide.html
+  - store-keepers-worksheet.html
+  - street-food-india-complete-guide.html
+  - sugar-free-dessert-menu.html
+  - terms.html
+  - the-five-minute-restaurant-interview-test.html
+  - top-worldwide-famous-desserts.html
+  - types-of-cheese-used-in-hotels.html
+  - types-of-coffee-complete-guide.html
+  - types-of-food-and-beverage-service.html
+  - types-of-meal-plans-in-hotels.html
+  - types-of-menus-fb-service.html
+  - types-of-milk.html
+  - types-of-pasta-sauces.html
+  - types-of-sandwiches.html
+  - types-of-tequilas.html
+  - types-of-water-used-in-restaurant.html
+  - ultimate-kpi-playbook-fb-leaders.html
+  - vodka-brands-and-cocktails-guide.html
+  - waste-segregation-guide.html
+  - what-is-a-kpi.html
+  - what-is-ebitda-fb-hospitality-guide.html
+  - what-is-management-consulting.html
+  - which-hotel-chain-is-biggest.html
+  - whiskies-of-the-world.html
+  - why-is-a-wine-bottle-750ml.html
+  - why-your-hospitality-cv-keeps-getting-rejected.html
+  - world-famous-foods-country-names-poster.html
+  - yogurt-curd-paneer-plant-based-guide.html
+LIVE STATUS: 308
+
+============================================================
+AUDIT COMPLETE
+NO WEBSITE FILES WERE MODIFIED.
+NO GIT COMMANDS WERE RUN.
+============================================================

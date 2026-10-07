@@ -1,0 +1,83 @@
+NEW GOOGLE SEARCH CONSOLE 404 AUDIT
+===================================
+READ-ONLY - NO FILES MODIFIED
+Date: 10/07/2026 19:55:42
+Repository: C:\Users\admin\Desktop\nigelthomas-portfolio
+
+Current HTML files scanned: 279
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/culinary/menu-planning-engineering.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\culinary\menu-planning-engineering.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/fire-safety-training-blog.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\fire-safety-training-blog.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/gm-resort-duties-responsibilities.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\gm-resort-duties-responsibilities.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/hospitality-career-guide.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\hospitality-career-guide.html
+REFERENCED BY CURRENT HTML: YES
+REFERENCING FILES:
+  - sales-marketing-hospitality-career-guide.html
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/experience.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\experience.html
+REFERENCED BY CURRENT HTML: YES
+REFERENCING FILES:
+  - street-food-india-complete-guide.html
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/receiving-food-safely.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\receiving-food-safely.html
+REFERENCED BY CURRENT HTML: YES
+REFERENCING FILES:
+  - academy\receiving-food-safely.html
+  - blog\cross-contamination-prevention.html
+LIVE STATUS: 404
+
+------------------------------------------------------------
+GOOGLE URL:
+https://www.nigelthomas.live/Restaurant Cost Control Calculator.html
+
+LOCAL FILE: NOT FOUND
+EXPECTED PATH: C:\Users\admin\Desktop\nigelthomas-portfolio\Restaurant Cost Control Calculator.html
+REFERENCED BY CURRENT HTML: NO
+LIVE STATUS: 404
+
+============================================================
+AUDIT COMPLETE
+NO WEBSITE FILES WERE MODIFIED.
+NO GIT COMMANDS WERE RUN.
+============================================================
