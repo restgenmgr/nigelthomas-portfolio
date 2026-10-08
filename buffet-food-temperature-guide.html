@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -41,6 +41,14 @@
         hr { border-color: #444; }
         ul { padding-left: 20px; }
     </style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KMGQCZGTQX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-KMGQCZGTQX');
+</script>
 </head>
 <body>
 
@@ -137,7 +145,7 @@
 
         // Image HTML – displays the updated buffet guide image
         const imageHtml = `
-            <img src="${IMAGE_SRC}" 
+            <img src="assets/food-safety/buffet-food-temperature-guide-updated.jpg" 
                  alt="Buffet Food Temperature Guide – Happy Guests, Safe Food" 
                  class="banner-image" 
                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
