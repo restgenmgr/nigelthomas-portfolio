@@ -87,6 +87,27 @@
     color: var(--bg);
     box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
   }
+  .btn-download {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--bg);
+    border: 2px solid var(--gold);
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  .btn-download:hover {
+    background-color: transparent;
+    color: var(--gold);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  }
 
   /* Footer */
   footer { border-top: 1px solid var(--line); padding: 40px 20px; text-align: center; font-size: 16px; color: var(--muted); margin-top: 60px; }
@@ -118,9 +139,14 @@
     <p>Botanicals, Styles & Classic Serves — A Comprehensive Guide for Enthusiasts and Bartenders</p>
   </div>
 
+  <!-- Poster Section with Embedded Image and Download Button -->
   <div class="poster-container">
     <img src="assets/gin-botanicals-styles-poster.jpg" alt="Gin Botanicals, Styles & Classic Serves Infographic by Nigel A. Thomas">
     <div class="caption">Gin Knowledge Series: Botanicals, Styles & Classic Serves. By Nigel A. Thomas.</div>
+    <!-- Download Button for the Poster -->
+    <div style="margin-top: 15px;">
+      <a href="assets/gin-botanicals-styles-poster.jpg" download="gin-botanicals-styles-poster.jpg" class="btn-download">📥 Download This Poster (JPG)</a>
+    </div>
   </div>
 
   <article>
@@ -300,6 +326,7 @@
     <p>Gin is a spirit of endless discovery. Whether you are a seasoned bartender or a curious enthusiast, the world of gin offers a botanical journey unlike any other. Remember to always serve responsibly, check ID, and follow local licensing laws. Never serve guests who have had enough.</p>
   </article>
 
+  <!-- Bottom Informatic Button -->
   <div class="btn-container">
     <a href="blog.html" class="btn-info">Explore More Beverage Guides</a>
   </div>
@@ -317,6 +344,11 @@
       <li><a href="all-about-gin.html">All About Gin</a></li>
     </ul>
     
+    <!-- Footer Download Button -->
+    <div style="margin-top: 30px;">
+      <a href="assets/gin-botanicals-styles-poster.jpg" download="gin-botanicals-styles-poster.jpg" class="btn-download">📥 Download This Poster (JPG)</a>
+    </div>
+
     <p style="margin-top: 30px;">&copy; 2024 Nigel Thomas. All rights reserved.</p>
   </div>
 </footer>
