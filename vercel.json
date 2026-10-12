@@ -26,6 +26,13 @@
     { "source": "/complete-guide-to-hotel-and-restaurant-abbreviations-final.html", "destination": "/complete-guide-to-hotel-and-restaurant-abbreviations.html", "permanent": true },
     { "source": "/blog/types-of-meal-plans-in-hotels.html", "destination": "/types-of-meal-plans-in-hotels.html", "permanent": true },
     { "source": "/blog/types-of-menus-fb-service.html", "destination": "/types-of-menus-fb-service.html", "permanent": true },
-    { "source": "/operations-business/cloud-kitchen-catering-operations-guide.html", "destination": "/cloud-kitchen-catering-operations-guide.html", "permanent": true }
+    { "source": "/operations-business/cloud-kitchen-catering-operations-guide.html", "destination": "/cloud-kitchen-catering-operations-guide.html", "permanent": true },
+    { "source": "/culinary/menu-planning-engineering.html", "destination": "/food-cost-control-complete-guide.html", "permanent": true },
+    { "source": "/restaurant-manager-roles-and-responsibilities-breakdown.html", "destination": "/key-hotel-management-roles.html", "permanent": true },
+    { "source": "/fire-safety-training-blog.html", "destination": "/blog.html", "permanent": true },
+    { "source": "/gm-resort-duties-responsibilities.html", "destination": "/key-hotel-management-roles.html", "permanent": true },
+    { "source": "/hospitality-career-guide.html", "destination": "/blog.html", "permanent": true },
+    { "source": "/experience.html", "destination": "/", "permanent": true },
+    { "source": "/receiving-food-safely.html", "destination": "/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html", "permanent": true }
   ]
 }
