@@ -15,70 +15,17 @@
   ],
   "redirects": [
     { "source": "/cruise-ship-crew-rotations-guide.html", "destination": "/not-all-cruise-lines-are-created-equal.html", "permanent": true },
-    {
-      "source": "/mastering-food-cost-guide.html",
-      "destination": "/food-cost-control-complete-guide.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog/food-cost-control-complete-guide.html",
-      "destination": "/food-cost-control-complete-guide.html",
-      "permanent": true
-    },
-    {
-      "source": "/Food%20Safety%20Temperatures%2C%20Cold%20Chain%20Control%20%26%20Kitchen%20Storage%20Standards.html",
-      "destination": "/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html",
-      "permanent": true
-    },
-    {
-      "source": "/hotel-department-heads-complete-guide.html",
-      "destination": "/key-hotel-management-roles.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog",
-      "destination": "/blog.html",
-      "permanent": true
-    },
-    {
-      "source": "/hospitality-management/equal-opportunity-employer-india-usa-europe.html",
-      "destination": "/equal-opportunity-employer-india-usa-europe.html",
-      "permanent": true
-    },
-    {
-      "source": "/regional-food/street-food-india.html",
-      "destination": "/street-food-india-complete-guide.html",
-      "permanent": true
-    },
-    {
-      "source": "/Blog/chinese-culinary-styles",
-      "destination": "/regional-food/chinese-culinary-styles-blog.html",
-      "permanent": true
-    },
-    {
-      "source": "/complete-guide-to-hotel-and-restaurant-abbreviations-final.html",
-      "destination": "/complete-guide-to-hotel-and-restaurant-abbreviations.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog/types-of-meal-plans-in-hotels.html",
-      "destination": "/types-of-meal-plans-in-hotels.html",
-      "permanent": true
-    },
-        {
-      "source": "/blog/types-of-meal-plans-in-hotels.html",
-      "destination": "/types-of-meal-plans-in-hotels.html",
-      "permanent": true
-    },
-    {
-      "source": "/blog/types-of-menus-fb-service.html",
-      "destination": "/types-of-menus-fb-service.html",
-      "permanent": true
-    },
-    {
-      "source": "/operations-business/cloud-kitchen-catering-operations-guide.html",
-      "destination": "/cloud-kitchen-catering-operations-guide.html",
-      "permanent": true
-    }
+    { "source": "/mastering-food-cost-guide.html", "destination": "/food-cost-control-complete-guide.html", "permanent": true },
+    { "source": "/blog/food-cost-control-complete-guide.html", "destination": "/food-cost-control-complete-guide.html", "permanent": true },
+    { "source": "/Food%20Safety%20Temperatures%2C%20Cold%20Chain%20Control%20%26%20Kitchen%20Storage%20Standards.html", "destination": "/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html", "permanent": true },
+    { "source": "/hotel-department-heads-complete-guide.html", "destination": "/key-hotel-management-roles.html", "permanent": true },
+    { "source": "/blog", "destination": "/blog.html", "permanent": true },
+    { "source": "/hospitality-management/equal-opportunity-employer-india-usa-europe.html", "destination": "/equal-opportunity-employer-india-usa-europe.html", "permanent": true },
+    { "source": "/regional-food/street-food-india.html", "destination": "/street-food-india-complete-guide.html", "permanent": true },
+    { "source": "/Blog/chinese-culinary-styles", "destination": "/regional-food/chinese-culinary-styles-blog.html", "permanent": true },
+    { "source": "/complete-guide-to-hotel-and-restaurant-abbreviations-final.html", "destination": "/complete-guide-to-hotel-and-restaurant-abbreviations.html", "permanent": true },
+    { "source": "/blog/types-of-meal-plans-in-hotels.html", "destination": "/types-of-meal-plans-in-hotels.html", "permanent": true },
+    { "source": "/blog/types-of-menus-fb-service.html", "destination": "/types-of-menus-fb-service.html", "permanent": true },
+    { "source": "/operations-business/cloud-kitchen-catering-operations-guide.html", "destination": "/cloud-kitchen-catering-operations-guide.html", "permanent": true }
   ]
 }
