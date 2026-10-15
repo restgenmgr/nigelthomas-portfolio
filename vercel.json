@@ -1,4 +1,4 @@
-﻿{
+{
     "headers":  [
                     {
                         "source":  "/sitemap.xml",
@@ -91,11 +91,6 @@
                           "permanent":  true
                       },
                       {
-                          "source":  "/restaurant-manager-roles-and-responsibilities-breakdown.html",
-                          "destination":  "/key-hotel-management-roles.html",
-                          "permanent":  true
-                      },
-                      {
                           "source":  "/fire-safety-training-blog.html",
                           "destination":  "/restaurant-fire-safety-training-guide.html",
                           "permanent":  true
@@ -119,16 +114,6 @@
                           "source":  "/receiving-food-safely.html",
                           "destination":  "/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html",
                           "permanent":  true
-                      },
-                      {
-                          "destination":  "/regional-food/chinese-culinary-styles-blog.html",
-                          "permanent":  true,
-                          "source":  "/%20Blog/chinese-%20Culinary-styles"
-                      },
-                      {
-                          "destination":  "/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html",
-                          "permanent":  true,
-                          "source":  "/Food%20Safety%20Temperatures,%20Cold%20Chain%20Control%20%26%20%0AKitchen%20Storage%20Standards.html"
                       }
                   ]
 }
