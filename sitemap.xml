@@ -1810,4 +1810,10 @@
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url></urlset>
+  </url>  <url>
+    <loc>https://www.nigelthomas.live/traditional-foods-around-the-world.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
