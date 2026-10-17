@@ -24,6 +24,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.nigelthomas.live/12-course-meal-fine-dining-guide.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.nigelthomas.live/14-major-food-allergens.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -1846,5 +1852,4 @@
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>  <url><loc>https://www.nigelthomas.live/12-course-meal-fine-dining-guide.html</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-</urlset>
+  </url></urlset>
