@@ -21,16 +21,6 @@
                 ],
     "redirects":  [
                       {
-                          "source":  "/Food Safety Temperatures, Cold Chain Control \u0026 Kitchen Storage Standards.html",
-                          "destination":  "/food-safety-temperatures-cold-chain-control-kitchen-storage-standards.html",
-                          "permanent":  true
-                      },
-                      {
-                          "source":  "/ Blog/chinese- Culinary-styles",
-                          "destination":  "/regional-food/chinese-culinary-styles-blog.html",
-                          "permanent":  true
-                      },
-                      {
                           "source":  "/cruise-ship-crew-rotations-guide.html",
                           "destination":  "/not-all-cruise-lines-are-created-equal.html",
                           "permanent":  true
