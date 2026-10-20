@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">  <url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://www.nigelthomas.live/10-biggest-hotels-in-the-world.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -492,12 +493,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.nigelthomas.live/experience.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.nigelthomas.live/f%26b-service-interview-q%26a.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -535,12 +530,6 @@
   </url>
   <url>
     <loc>https://www.nigelthomas.live/fine-dining-silverware.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nigelthomas.live/fire-safety-training-blog.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -660,12 +649,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.nigelthomas.live/gm-resort-duties-responsibilities.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.nigelthomas.live/google0c2817338a31af1a.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -703,12 +686,6 @@
   </url>
   <url>
     <loc>https://www.nigelthomas.live/history-of-wine-world-wine-regions.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nigelthomas.live/hospitality-career-guide.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1075,12 +1052,6 @@
   </url>
   <url>
     <loc>https://www.nigelthomas.live/quality-controllers-food-industry.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.nigelthomas.live/receiving-food-safely.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1836,12 +1807,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.nigelthomas.live/culinary/menu-planning-engineering.html</loc>
-    <lastmod>2026-10-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://www.nigelthomas.live/culinary/mother-sauces-complete-guide.html</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -1912,4 +1877,5 @@
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url></urlset>
+  </url>
+</urlset>
