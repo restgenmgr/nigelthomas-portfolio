@@ -43,6 +43,15 @@ foreach ($folder in $folders) {
             $rel = "$folder/$($f.Name)"
         }
 
+        if ($rel -in @(
+            'experience.html',
+            'fire-safety-training-blog.html',
+            'gm-resort-duties-responsibilities.html',
+            'hospitality-career-guide.html',
+            'receiving-food-safely.html',
+            'culinary/menu-planning-engineering.html'
+        )) { continue }
+
         $rel = $rel -replace '&', '%26'
         $url = "$siteRoot/$rel"
 
