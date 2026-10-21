@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book a Table or Order | The Green Hotel, Mysuru</title>
+<meta name="description" content="Request a table or order food and drinks from the restaurant and cafe of The Green Hotel, Vinoba Road, Jayalakshmipuram, Mysuru.">
+<meta name="color-scheme" content="light">
+
+<style>
+  :root { --green:#3f7a2f; --green2:#34681f; --cream:#f7f3e8; --paper:#fffdf7; --brass:#a97c2f; --ink:#22302a; --muted:#5f6d65; --line:#d9d2bd; --err:#a12b22; --ok:#1d6b43; }
+  * { box-sizing:border-box; }
+  [hidden] { display:none !important; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--cream); color:var(--ink); font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif; line-height:1.55; }
+  :focus-visible { outline:3px solid var(--brass); outline-offset:2px; }
+
+  header.hero { background:var(--green); color:#f2ecd9; text-align:center; padding:30px 20px 24px; border-bottom:4px solid var(--brass); }
+  .hero .name { font-family:Georgia,"Times New Roman",serif; font-size:clamp(1.6rem,5vw,2.4rem); letter-spacing:.14em; text-transform:uppercase; margin:0; font-weight:400; }
+  .hero .sub { margin:8px 0 0; font-size:.95rem; opacity:.95; }
+  .hero .addr { margin:10px auto 0; font-size:.85rem; opacity:.92; max-width:46ch; }
+
+  .tabs { position:sticky; top:0; z-index:20; background:var(--cream); border-bottom:1px solid var(--line); }
+  .tabs-in { max-width:720px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:8px; padding:10px 16px; }
+  .tab { font:600 1rem "Segoe UI",system-ui,sans-serif; padding:13px 8px; min-height:50px; border-radius:12px; border:1.5px solid var(--line); background:#fff; color:var(--green); cursor:pointer; }
+  .tab[aria-pressed=true] { background:var(--green); color:#f7f3e8; border-color:var(--green); }
+
+  main { max-width:720px; margin:0 auto; padding:22px 16px 70px; }
+  h2 { font-family:Georgia,serif; font-weight:400; font-size:1.5rem; margin:0 0 4px; color:var(--green); }
+  h3 { font-family:Georgia,serif; font-weight:400; font-size:1.2rem; margin:0 0 10px; color:var(--green); }
+  .lede { color:var(--muted); margin:0 0 20px; }
+  .card { background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:22px 18px; }
+
+  fieldset { border:0; padding:0; margin:0 0 22px; }
+  legend, label.t, .t { display:block; font-weight:600; margin:0 0 8px; font-size:.95rem; padding:0; }
+  .opt { font-weight:400; color:var(--muted); }
+
+  .choices { display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; }
+  .choice input { position:absolute; opacity:0; pointer-events:none; }
+  .choice span { display:block; text-align:center; border:1.5px solid var(--line); border-radius:12px; padding:14px 8px; background:#fff; cursor:pointer; font-family:Georgia,serif; font-size:1.08rem; height:100%; }
+  .choice small { display:block; font-family:"Segoe UI",system-ui,sans-serif; font-size:.78rem; color:var(--muted); margin-top:2px; }
+  .choice input:checked + span { border-color:var(--green); background:var(--green); color:#f7f3e8; }
+  .choice input:checked + span small { color:#eef5e9; }
+  .choice input:focus-visible + span { outline:3px solid var(--brass); outline-offset:2px; }
+
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  input[type=text], input[type=tel], input[type=email], input[type=date], select, textarea {
+    width:100%; font:inherit; color:var(--ink); background:#fff; border:1.5px solid var(--line); border-radius:10px; padding:12px; min-height:48px; }
+  textarea { min-height:90px; resize:vertical; }
+  input:focus, select:focus, textarea:focus { border-color:var(--green2); outline:none; box-shadow:0 0 0 3px rgba(63,122,47,.25); }
+  .field { margin-bottom:20px; }
+  .err { color:var(--err); font-size:.85rem; margin:6px 0 0; min-height:1.1em; }
+  .has-err input, .has-err select { border-color:var(--err); }
+  .check { display:flex; gap:10px; align-items:flex-start; font-size:.92rem; color:var(--muted); margin:0 0 20px; }
+  .check input { width:20px; height:20px; margin-top:2px; flex:none; }
+
+  .slots { display:grid; grid-template-columns:repeat(auto-fill,minmax(92px,1fr)); gap:8px; }
+  .slot input { position:absolute; opacity:0; pointer-events:none; }
+  .slot span { display:block; text-align:center; padding:11px 4px; border:1.5px solid var(--line); border-radius:10px; background:#fff; cursor:pointer; font-size:.92rem; }
+  .slot input:checked + span { background:var(--green); border-color:var(--green); color:#fff; }
+  .slot input:focus-visible + span { outline:3px solid var(--brass); outline-offset:2px; }
+  .slot-note { color:var(--muted); font-size:.9rem; margin:0; }
+  .group-h { font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:10px 0 6px; grid-column:1/-1; }
+
+  .btn { display:inline-block; width:100%; background:var(--green); color:#fff; border:0; border-radius:12px; padding:15px 20px; font:600 1.05rem "Segoe UI",system-ui,sans-serif; cursor:pointer; text-align:center; text-decoration:none; min-height:52px; }
+  .btn:hover { background:var(--green2); }
+  .btn.ghost { background:transparent; color:var(--green); border:1.5px solid var(--green); }
+  .btn.ghost:hover { background:var(--green); color:#fff; }
+  .btn[disabled] { background:#cfd6c9; color:#566052; cursor:not-allowed; border-color:#cfd6c9; }
+
+  /* menu */
+  .menu-cat { margin:0 0 26px; }
+  .item { display:grid; grid-template-columns:1fr auto; gap:12px; align-items:center; padding:12px 0; border-bottom:1px solid var(--line); }
+  .item:last-child { border-bottom:0; }
+  .nm { font-weight:600; }
+  .dot { display:inline-block; width:12px; height:12px; border:1.5px solid; border-radius:2px; margin-right:8px; position:relative; vertical-align:-1px; }
+  .dot::after { content:""; position:absolute; inset:2px; border-radius:50%; background:currentColor; }
+  .dot.veg { color:#1d8a47; } .dot.nonveg { color:#a12b22; }
+  .ds { color:var(--muted); font-size:.88rem; }
+  .pr { color:var(--brass); font-weight:600; font-size:.92rem; }
+  .qty { display:flex; align-items:center; gap:4px; }
+  .qty button { width:44px; height:44px; border-radius:10px; border:1.5px solid var(--green); background:#fff; color:var(--green); font-size:1.3rem; line-height:1; cursor:pointer; }
+  .qty button:hover { background:var(--green); color:#fff; }
+  .qty output { min-width:30px; text-align:center; font-weight:600; }
+
+  .cartbar { position:fixed; left:0; right:0; bottom:0; z-index:30; background:var(--green); color:#f7f3e8; padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px)); border-top:3px solid var(--brass); }
+  .cartbar-in { max-width:720px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:14px; }
+  .cartbar .btn { width:auto; background:var(--brass); min-height:46px; padding:10px 20px; }
+  .cartbar .btn:hover { background:#8f6824; }
+  .cartbar-txt { font-weight:600; }
+
+  /* send panel */
+  .summary { background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:14px 0 20px; }
+  .summary dl { margin:0; display:grid; grid-template-columns:110px 1fr; gap:6px 12px; }
+  .summary dt { color:var(--muted); font-size:.9rem; }
+  .summary dd { margin:0; font-weight:600; word-break:break-word; white-space:pre-line; }
+  .ref { display:inline-block; background:var(--green); color:#f7f3e8; border-radius:999px; padding:3px 14px; font-size:.85rem; letter-spacing:.06em; }
+  .sendlist { list-style:none; padding:0; margin:16px 0 0; display:grid; gap:10px; }
+  .sendlist li { display:grid; grid-template-columns:1fr auto; gap:10px; align-items:center; background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 12px; }
+  .sendlist .lab { font-weight:600; }
+  .sendlist .st { font-size:.85rem; color:var(--muted); }
+  .sendlist li.done { border-color:var(--ok); }
+  .sendlist li.done .st { color:var(--ok); font-weight:600; }
+  .sendlist .btn { width:auto; min-height:44px; padding:10px 16px; font-size:.95rem; }
+  .warn { background:#fbf1d8; border:1px solid #e3c978; color:#5a4410; border-radius:10px; padding:10px 14px; margin:14px 0 0; font-size:.92rem; }
+  .small { font-size:.85rem; color:var(--muted); }
+  .center { text-align:center; }
+  .stack { display:grid; gap:10px; margin-top:18px; }
+  footer { text-align:center; color:var(--muted); font-size:.85rem; padding:10px 16px 34px; }
+
+  @media (max-width:520px) {
+    .row { grid-template-columns:1fr; gap:0; }
+    .summary dl { grid-template-columns:90px 1fr; }
+    .sendlist li { grid-template-columns:1fr; }
+    .sendlist .btn { width:100%; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1 class="name">The Green Hotel</h1>
+  <p class="sub">The Restaurant &amp; Malgudi Cafe &bull; Table requests &amp; orders</p>
+  <p class="addr">2270 Vinoba Road, Jayalakshmipuram, Mysuru 570012, Karnataka</p>
+</header>
+
+<nav class="tabs" id="tabs" aria-label="Choose a service">
+  <div class="tabs-in">
+    <button type="button" class="tab" id="tabBook" aria-pressed="true">Book a table</button>
+    <button type="button" class="tab" id="tabOrder" aria-pressed="false">Order food &amp; drinks</button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ===================== BOOK A TABLE ===================== -->
+  <section id="viewBook" class="card" aria-labelledby="h-book">
+    <h2 id="h-book">Request a table</h2>
+    <p class="lede">Choose where you would like to sit, then tell us when. Our team will confirm your table by phone or WhatsApp.</p>
+
+    <form id="bookForm" novalidate>
+      <fieldset>
+        <legend>Where would you like to dine?</legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="venue" value="The Restaurant" checked><span>The Restaurant<small>Lunch &amp; dinner</small></span></label>
+          <label class="choice"><input type="radio" name="venue" value="Malgudi Cafe"><span>Malgudi Cafe<small>Coffee, bakery &amp; light bites</small></span></label>
+        </div>
+      </fieldset>
+
+      <div class="row">
+        <div class="field" id="f-date">
+          <label class="t" for="date">Date</label>
+          <input type="date" id="date" required>
+          <p class="err" id="e-date" role="alert"></p>
+        </div>
+        <div class="field" id="f-guests">
+          <label class="t" for="guests">Number of guests</label>
+          <select id="guests" required></select>
+          <p class="err" id="e-guests" role="alert"></p>
+        </div>
+      </div>
+
+      <div class="field" id="f-time">
+        <span class="t" id="timeLabel">Time</span>
+        <div class="slots" id="slots" role="radiogroup" aria-labelledby="timeLabel"></div>
+        <p class="slot-note" id="slotNote">Pick a date to see available times.</p>
+        <p class="err" id="e-time" role="alert"></p>
+      </div>
+
+      <div class="field">
+        <label class="t" for="seat">Seating <span class="opt">(optional)</span></label>
+        <select id="seat"><option>No preference</option><option>Garden / outdoors</option><option>Indoors</option></select>
+      </div>
+
+      <div class="row">
+        <div class="field" id="f-name">
+          <label class="t" for="name">Your name</label>
+          <input type="text" id="name" autocomplete="name" required>
+          <p class="err" id="e-name" role="alert"></p>
+        </div>
+        <div class="field" id="f-phone">
+          <label class="t" for="phone">Mobile number</label>
+          <input type="tel" id="phone" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile" required>
+          <p class="err" id="e-phone" role="alert"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label class="t" for="email">Email <span class="opt">(optional)</span></label>
+          <input type="email" id="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label class="t" for="occasion">Occasion <span class="opt">(optional)</span></label>
+          <select id="occasion">
+            <option value="">None</option><option>Birthday</option><option>Anniversary</option>
+            <option>Family get-together</option><option>Business meeting</option><option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="t" for="notes">Special requests <span class="opt">(optional)</span></label>
+        <textarea id="notes" placeholder="Dietary needs, high chair, cake, quiet corner..."></textarea>
+      </div>
+
+      <button class="btn" type="submit">Continue</button>
+      <p class="small center" style="margin-top:12px">This is a table request. Your table is held once our team confirms it.</p>
+    </form>
+  </section>
+
+  <!-- ===================== ORDER ===================== -->
+  <section id="viewOrder" class="card" aria-labelledby="h-order" hidden>
+    <h2 id="h-order">Order food &amp; drinks</h2>
+    <p class="lede">For room guests, diners already at the hotel, and takeaway. Our team will confirm your order.</p>
+
+    <form id="orderForm" novalidate>
+      <fieldset>
+        <legend>How would you like your order?</legend>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="otype" value="room"><span>Room service<small>Delivered to your room</small></span></label>
+          <label class="choice"><input type="radio" name="otype" value="dine" checked><span>Dine in<small>At The Restaurant, Malgudi Cafe or garden</small></span></label>
+          <label class="choice"><input type="radio" name="otype" value="take"><span>Takeaway<small>Collect from the hotel</small></span></label>
+        </div>
+      </fieldset>
+
+      <div class="row">
+        <div class="field" id="f-oname">
+          <label class="t" for="oname">Your name</label>
+          <input type="text" id="oname" autocomplete="name">
+          <p class="err" id="e-oname" role="alert"></p>
+        </div>
+        <div class="field" id="f-ophone">
+          <label class="t" for="ophone">Mobile number <span class="opt" id="ophoneOpt">(optional)</span></label>
+          <input type="tel" id="ophone" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile">
+          <p class="err" id="e-ophone" role="alert"></p>
+        </div>
+      </div>
+
+      <div class="field" id="grpRoom" hidden>
+        <div id="f-room">
+          <label class="t" for="room">Room number</label>
+          <select id="room"></select>
+          <p class="err" id="e-room" role="alert"></p>
+        </div>
+      </div>
+
+      <div class="row" id="grpDine">
+        <div class="field">
+          <label class="t" for="where">Where are you seated?</label>
+          <select id="where"><option>The Restaurant</option><option>Malgudi Cafe</option><option>Garden</option></select>
+        </div>
+        <div class="field" id="f-table">
+          <label class="t" for="table">Table number</label>
+          <select id="table"></select>
+          <p class="err" id="e-table" role="alert"></p>
+        </div>
+      </div>
+
+      <div class="field" id="grpTake" hidden>
+        <label class="t" for="pickup">Ready for pickup in</label>
+        <select id="pickup"><option>As soon as possible</option><option>About 15 minutes</option><option>About 30 minutes</option><option>About 45 minutes</option><option>About 1 hour</option></select>
+      </div>
+
+      <label class="check"><input type="checkbox" id="remember"><span>Remember my name and mobile on this device for next time</span></label>
+
+      <h3>Menu</h3>
+      <p class="small" style="margin:-4px 0 6px">Use + and &minus; to choose your items. <span class="dot veg" style="margin:0 2px 0 4px"></span>Veg <span class="dot nonveg" style="margin:0 2px 0 8px"></span>Non-veg</p>
+      <div class="field" style="margin-bottom:10px"><button class="btn ghost" type="button" id="repeatBtn" hidden>Repeat my last order</button></div>
+      <div id="menu"></div>
+      <p class="err" id="e-items" role="alert"></p>
+
+      <div class="field">
+        <label class="t" for="onotes">Special instructions <span class="opt">(optional)</span></label>
+        <textarea id="onotes" placeholder="Allergies, spice level, no onion, cutlery..."></textarea>
+      </div>
+
+      <button class="btn" type="submit">Review my order</button>
+    </form>
+  </section>
+
+  <!-- ===================== SEND PANEL ===================== -->
+  <section id="viewSend" class="card" aria-labelledby="h-send" tabindex="-1" hidden>
+    <h2 id="h-send">Almost done</h2>
+    <p class="lede" id="sendLede">Review your request, then send it to our team on WhatsApp.</p>
+    <p><span class="ref" id="refCode"></span></p>
+    <div class="summary"><dl id="summary"></dl></div>
+
+    <button class="btn" type="button" id="nextBtn">Send on WhatsApp</button>
+    <ul class="sendlist" id="sendList"></ul>
+    <div class="warn" id="noNumbers" hidden>Booking numbers have not been added yet. Add them in the CONFIG block at the top of this page&rsquo;s script.</div>
+
+    <div class="stack">
+      <button class="btn ghost" type="button" id="copyBtn">Copy details</button>
+      <button class="btn ghost" type="button" id="editBtn">Change my request</button>
+    </div>
+    <p class="small center" id="copyMsg" role="status" style="margin-top:10px"></p>
+  </section>
+</main>
+
+<div class="cartbar" id="cartbar" hidden>
+  <div class="cartbar-in">
+    <span class="cartbar-txt" id="cartTxt"></span>
+    <button type="button" class="btn" id="cartGo">Review order</button>
+  </div>
+</div>
+
+<footer>The Green Hotel &bull; 2270 Vinoba Road, Jayalakshmipuram, Mysuru 570012</footer>
+
+<script>
+/* =====================  CONFIG  (edit here)  ===================== */
+function seq(prefix, from, to) { var a = []; for (var i = from; i <= to; i++) a.push(prefix + i); return a; }
+
+var CONFIG = {
+  hotelName: "The Green Hotel",
+
+  /* The three contact slots. Add each number later, e.g. "9876543210".
+     Requests go to every slot that has a number. You can rename a label,
+     e.g. "Front desk", "Kitchen", "Manager". */
+  contacts: [
+    { label: "Cel#1", number: "" },
+    { label: "Cel#2", number: "" },
+    { label: "Cel#3", number: "" }
+  ],
+
+  /* Optional: paste a Formspree URL (https://formspree.io/f/xxxx) to ALSO get each
+     request by email automatically. Leave blank to skip. */
+  formEndpoint: "",
+
+  /* ROOM NUMBERS. SAMPLE LIST: replace with the hotel's real room numbers, e.g.
+     ["101","102","103","201","202"]. If you leave this list empty, guests type
+     their room number instead. */
+  rooms: seq("", 101, 110),
+
+  /* TABLE NUMBERS for dine-in orders, by seating area. SAMPLE LISTS: replace with
+     the real table numbers or names, e.g. ["T1","T2","Window 1"]. An area with an
+     empty list lets guests type the table instead. */
+  tables: {
+    "The Restaurant": seq("T", 1, 12),
+    "Malgudi Cafe":   seq("T", 1, 8),
+    "Garden":         seq("G", 1, 6)
+  },
+
+  /* Table-booking time slots. CHECK AGAINST THE REAL OPENING HOURS. */
+  services: {
+    "The Restaurant": [
+      { name: "Lunch",  start: "12:00", end: "15:00", step: 30 },
+      { name: "Dinner", start: "19:00", end: "22:00", step: 30 }
+    ],
+    "Malgudi Cafe": [
+      { name: "Morning",   start: "08:30", end: "11:30", step: 30 },
+      { name: "Afternoon", start: "12:00", end: "18:00", step: 30 }
+    ]
+  },
+
+  maxGuests: 12,
+  advanceDays: 60,
+  leadMinutes: 60,
+
+  /* MENU. SAMPLE ITEMS ONLY: replace with the hotel's real menu and prices.
+     n = name, p = price in rupees (use null if no price yet), v = true for veg
+     and false for non-veg, d = short description (optional).
+     If any ordered item has no price, the total is left out and the team
+     confirms the bill. */
+  menu: [
+    { cat: "Malgudi Cafe", items: [
+      { n: "Filter coffee",        p: null, v: true },
+      { n: "Cappuccino",           p: null, v: true },
+      { n: "Cold coffee",          p: null, v: true },
+      { n: "Masala tea",           p: null, v: true },
+      { n: "Lemon drizzle cake",   p: null, v: true, d: "Slice" },
+      { n: "Chocolate brownie",    p: null, v: true },
+      { n: "Chocolate cake",       p: null, v: true, d: "Slice" },
+      { n: "Veg sandwich",         p: null, v: true }
+    ]},
+    { cat: "Starters", items: [
+      { n: "Paneer tikka",         p: null, v: true },
+      { n: "Veg manchurian",       p: null, v: true },
+      { n: "Chicken tikka",        p: null, v: false },
+      { n: "Chilli chicken",       p: null, v: false }
+    ]},
+    { cat: "Indian mains", items: [
+      { n: "Dal tadka",            p: null, v: true },
+      { n: "Paneer butter masala", p: null, v: true },
+      { n: "Veg biryani",          p: null, v: true },
+      { n: "Chicken curry",        p: null, v: false },
+      { n: "Chicken biryani",      p: null, v: false }
+    ]},
+    { cat: "Chinese & Continental", items: [
+      { n: "Veg hakka noodles",    p: null, v: true },
+      { n: "Chicken fried rice",   p: null, v: false },
+      { n: "Pasta in tomato sauce",p: null, v: true },
+      { n: "Grilled chicken",      p: null, v: false }
+    ]},
+    { cat: "Breads & sides", items: [
+      { n: "Chapati",              p: null, v: true },
+      { n: "Butter naan",          p: null, v: true },
+      { n: "Green salad",          p: null, v: true }
+    ]},
+    { cat: "Drinks", items: [
+      { n: "Fresh lime soda",      p: null, v: true },
+      { n: "Soft drink",           p: null, v: true },
+      { n: "Packaged water",       p: null, v: true }
+    ]}
+  ]
+};
+/* ================================================================ */
+
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var RUPEE = "\u20B9";
+  var bookForm = $("bookForm"), orderForm = $("orderForm");
+  var views = { book: $("viewBook"), order: $("viewOrder"), send: $("viewSend") };
+  var ctx = null, sent = [], backTo = "book", lastTab = "book";
+
+  /* ---------- helpers ---------- */
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function toMin(h) { var p = h.split(":"); return parseInt(p[0], 10) * 60 + parseInt(p[1], 10); }
+  function fmt12(min) { var h = Math.floor(min / 60), m = min % 60, h12 = h % 12 === 0 ? 12 : h % 12; return h12 + ":" + pad(m) + " " + (h >= 12 ? "PM" : "AM"); }
+  function isoLocal(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+  function parseISO(s) { var p = s.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function prettyDate(s) { return parseISO(s).toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short", year: "numeric" }); }
+  function digits(s) { return (s || "").replace(/\D/g, ""); }
+  function cleanMobile(raw) {
+    var d = digits(raw);
+    if (d.length === 12 && d.indexOf("91") === 0) d = d.slice(2);
+    if (d.length === 11 && d.charAt(0) === "0") d = d.slice(1);
+    return d;
+  }
+  function waNumber(n) { var d = digits(n); if (d.length === 10) d = "91" + d; if (d.length === 11 && d.charAt(0) === "0") d = "91" + d.slice(1); return d; }
+  function el(tag, txt, cls) { var e = document.createElement(tag); if (txt != null) e.textContent = txt; if (cls) e.className = cls; return e; }
+  function makeRef(prefix) { var c = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789", s = ""; for (var i = 0; i < 4; i++) s += c.charAt(Math.floor(Math.random() * c.length)); return prefix + s; }
+  function setErr(fieldId, errId, msg) { $(errId).textContent = msg || ""; if (fieldId && $(fieldId)) $(fieldId).classList.toggle("has-err", !!msg); return !msg; }
+  function money(n) { return RUPEE + n.toLocaleString("en-IN"); }
+  function store(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  function load(k) { try { var s = localStorage.getItem(k); return s ? JSON.parse(s) : null; } catch (e) { return null; } }
+
+  /* ---------- view switching ---------- */
+  function show(name) {
+    ["book", "order", "send"].forEach(function (k) { views[k].hidden = k !== name; });
+    $("tabs").hidden = name === "send";
+    if (name === "book" || name === "order") {
+      lastTab = name;
+      $("tabBook").setAttribute("aria-pressed", name === "book");
+      $("tabOrder").setAttribute("aria-pressed", name === "order");
+    }
+    updateCart();
+    window.scrollTo(0, 0);
+  }
+  $("tabBook").addEventListener("click", function () { show("book"); });
+  $("tabOrder").addEventListener("click", function () { show("order"); });
+
+  /* ================= TABLE BOOKING ================= */
+  var today = new Date(), maxD = new Date(); maxD.setDate(today.getDate() + CONFIG.advanceDays);
+  $("date").min = isoLocal(today); $("date").max = isoLocal(maxD);
+
+  var g = $("guests");
+  g.appendChild(new Option("Select", ""));
+  for (var i = 1; i <= CONFIG.maxGuests; i++) g.appendChild(new Option(i + (i === 1 ? " guest" : " guests"), String(i)));
+  g.appendChild(new Option((CONFIG.maxGuests + 1) + " or more (we will call you)", "more"));
+
+  function selectedVenue() { return bookForm.querySelector('input[name="venue"]:checked').value; }
+  function renderSlots() {
+    var box = $("slots"), note = $("slotNote"), dv = $("date").value;
+    box.innerHTML = ""; $("e-time").textContent = "";
+    if (!dv) { note.textContent = "Pick a date to see available times."; return; }
+    var groups = CONFIG.services[selectedVenue()] || [], now = new Date();
+    var isToday = dv === isoLocal(now), nowMin = now.getHours() * 60 + now.getMinutes() + CONFIG.leadMinutes, count = 0;
+    groups.forEach(function (gp) {
+      var times = [];
+      for (var t = toMin(gp.start); t <= toMin(gp.end); t += gp.step) { if (isToday && t < nowMin) continue; times.push(t); }
+      if (!times.length) return;
+      box.appendChild(el("div", gp.name, "group-h"));
+      times.forEach(function (t) {
+        var lab = el("label", null, "slot"), inp = document.createElement("input");
+        inp.type = "radio"; inp.name = "time"; inp.value = fmt12(t);
+        lab.appendChild(inp); lab.appendChild(el("span", fmt12(t))); box.appendChild(lab); count++;
+      });
+    });
+    note.textContent = count ? "" : "No more times are available on this date. Please choose another day.";
+  }
+  $("date").addEventListener("change", renderSlots);
+  bookForm.querySelectorAll('input[name="venue"]').forEach(function (r) { r.addEventListener("change", renderSlots); });
+
+  function validateBooking() {
+    var ok = true, first = null;
+    function mark(v, e) { if (!v) { ok = false; if (!first) first = e; } }
+    mark(setErr("f-date", "e-date", $("date").value ? "" : "Please choose a date."), $("date"));
+    mark(setErr("f-guests", "e-guests", g.value ? "" : "Please choose the number of guests."), g);
+    mark(setErr("f-time", "e-time", bookForm.querySelector('input[name="time"]:checked') ? "" : "Please choose a time."), $("slots"));
+    mark(setErr("f-name", "e-name", $("name").value.trim().length >= 2 ? "" : "Please enter your name."), $("name"));
+    mark(setErr("f-phone", "e-phone", /^[6-9]\d{9}$/.test(cleanMobile($("phone").value)) ? "" : "Please enter a valid 10-digit mobile number."), $("phone"));
+    if (first && first.focus) first.focus();
+    return ok;
+  }
+  function bookingContext() {
+    var b = {
+      ref: makeRef("GH-"), venue: selectedVenue(), date: $("date").value,
+      time: bookForm.querySelector('input[name="time"]:checked').value,
+      guests: g.value === "more" ? (CONFIG.maxGuests + 1) + "+ (large group, please call back)" : g.value,
+      seat: $("seat").value, name: $("name").value.trim(), phone: cleanMobile($("phone").value),
+      email: $("email").value.trim(), occasion: $("occasion").value, notes: $("notes").value.trim()
+    };
+    var rows = [["Venue", b.venue], ["Date", prettyDate(b.date)], ["Time", b.time], ["Guests", b.guests], ["Seating", b.seat], ["Name", b.name], ["Mobile", "+91 " + b.phone]];
+    var L = ["*New table request - " + CONFIG.hotelName + "*", "Ref: " + b.ref, "Venue: " + b.venue, "Date: " + prettyDate(b.date), "Time: " + b.time,
+             "Guests: " + b.guests, "Seating: " + b.seat, "Name: " + b.name, "Mobile: +91 " + b.phone];
+    if (b.email) L.push("Email: " + b.email);
+    if (b.occasion) { rows.push(["Occasion", b.occasion]); L.push("Occasion: " + b.occasion); }
+    if (b.notes) { rows.push(["Notes", b.notes]); L.push("Notes: " + b.notes); }
+    L.push("", "Please confirm this table with the guest.");
+    return { kind: "booking", ref: b.ref, lede: "Review your table request, then send it to our team on WhatsApp.", rows: rows, msg: L.join("\n"),
+             subject: "Table request " + b.ref + " - " + b.venue + " - " + prettyDate(b.date) + " " + b.time,
+             data: { reference: b.ref, venue: b.venue, date: prettyDate(b.date), time: b.time, guests: b.guests, seating: b.seat, name: b.name, mobile: "+91 " + b.phone, email: b.email, occasion: b.occasion, notes: b.notes } };
+  }
+  bookForm.addEventListener("submit", function (e) {
+    e.preventDefault(); if (!validateBooking()) return;
+    openSend(bookingContext(), "book");
+  });
+
+  /* ================= ORDERING ================= */
+  var cart = {}, items = {};
+  function buildMenu() {
+    var root = $("menu"); root.innerHTML = "";
+    CONFIG.menu.forEach(function (cat, ci) {
+      var sec = el("section", null, "menu-cat"); sec.appendChild(el("h3", cat.cat));
+      cat.items.forEach(function (it, ii) {
+        var id = "i" + ci + "_" + ii; items[id] = it;
+        var row = el("div", null, "item"), left = el("div"), nm = el("div", null, "nm");
+        nm.appendChild(el("span", null, "dot " + (it.v === false ? "nonveg" : "veg"))); nm.appendChild(document.createTextNode(it.n));
+        left.appendChild(nm);
+        if (it.d) left.appendChild(el("div", it.d, "ds"));
+        if (typeof it.p === "number") left.appendChild(el("div", money(it.p), "pr"));
+        var q = el("div", null, "qty"), minus = el("button", "\u2212"), out = el("output", "0"), plus = el("button", "+");
+        minus.type = "button"; plus.type = "button";
+        minus.setAttribute("aria-label", "Remove one " + it.n); plus.setAttribute("aria-label", "Add one " + it.n);
+        out.id = "q-" + id; out.setAttribute("aria-live", "polite");
+        minus.addEventListener("click", function () { setQty(id, (cart[id] || 0) - 1); });
+        plus.addEventListener("click", function () { setQty(id, (cart[id] || 0) + 1); });
+        q.appendChild(minus); q.appendChild(out); q.appendChild(plus);
+        row.appendChild(left); row.appendChild(q); sec.appendChild(row);
+      });
+      root.appendChild(sec);
+    });
+  }
+  function setQty(id, n) {
+    n = Math.max(0, Math.min(20, n));
+    if (n === 0) delete cart[id]; else cart[id] = n;
+    var o = $("q-" + id); if (o) o.textContent = String(n);
+    $("e-items").textContent = ""; updateCart();
+  }
+  function cartStats() {
+    var count = 0, total = 0, priced = true;
+    Object.keys(cart).forEach(function (id) { count += cart[id]; if (typeof items[id].p === "number") total += items[id].p * cart[id]; else priced = false; });
+    return { count: count, total: total, priced: priced };
+  }
+  function updateCart() {
+    var s = cartStats(), bar = $("cartbar");
+    bar.hidden = !(views.order && !views.order.hidden && s.count > 0);
+    $("cartTxt").textContent = s.count + (s.count === 1 ? " item" : " items") + (s.priced && s.count ? " \u2022 " + money(s.total) : "");
+  }
+  $("cartGo").addEventListener("click", function () { orderForm.requestSubmit ? orderForm.requestSubmit() : orderForm.dispatchEvent(new Event("submit", { cancelable: true })); });
+
+  /* room and table pickers */
+  function toText(id) { var old = $(id), inp = document.createElement("input"); inp.type = "text"; inp.id = id; inp.autocomplete = "off"; old.parentNode.replaceChild(inp, old); }
+  function fillSelect(sel, list, first, extra) {
+    sel.innerHTML = ""; sel.appendChild(new Option(first, ""));
+    list.forEach(function (v) { sel.appendChild(new Option(v, v)); });
+    if (extra) sel.appendChild(new Option(extra, extra));
+  }
+  if (CONFIG.rooms && CONFIG.rooms.length) fillSelect($("room"), CONFIG.rooms, "Select your room"); else toText("room");
+  function syncTables() {
+    var list = (CONFIG.tables && CONFIG.tables[$("where").value]) || [], cur = $("table");
+    if (!list.length) { if (cur.tagName === "SELECT") toText("table"); $("table").placeholder = "Table number or name"; return; }
+    if (cur.tagName !== "SELECT") { var sel = document.createElement("select"); sel.id = "table"; cur.parentNode.replaceChild(sel, cur); cur = sel; }
+    fillSelect(cur, list, "Select your table", "Not sure - please ask me");
+  }
+  $("where").addEventListener("change", syncTables); syncTables();
+
+  function otype() { return orderForm.querySelector('input[name="otype"]:checked').value; }
+  function syncType() {
+    var t = otype();
+    $("grpRoom").hidden = t !== "room"; $("grpDine").hidden = t !== "dine"; $("grpTake").hidden = t !== "take";
+    $("ophoneOpt").textContent = t === "take" ? "" : "(optional)";
+  }
+  orderForm.querySelectorAll('input[name="otype"]').forEach(function (r) { r.addEventListener("change", syncType); });
+
+  function validateOrder() {
+    var ok = true, first = null, t = otype();
+    function mark(v, e) { if (!v) { ok = false; if (!first) first = e; } }
+    mark(setErr("f-oname", "e-oname", $("oname").value.trim().length >= 2 ? "" : "Please enter your name."), $("oname"));
+    var ph = cleanMobile($("ophone").value), phOk = ph === "" ? t !== "take" : /^[6-9]\d{9}$/.test(ph);
+    mark(setErr("f-ophone", "e-ophone", phOk ? "" : (ph === "" ? "Please enter your mobile number." : "Please enter a valid 10-digit mobile number.")), $("ophone"));
+    if (t === "room") mark(setErr("f-room", "e-room", $("room").value.trim() ? "" : "Please enter your room number."), $("room"));
+    else setErr("f-room", "e-room", "");
+    if (t === "dine") mark(setErr("f-table", "e-table", $("table").value.trim() ? "" : "Please choose or enter your table number."), $("table"));
+    else setErr("f-table", "e-table", "");
+    var s = cartStats();
+    mark(setErr(null, "e-items", s.count ? "" : "Please add at least one item from the menu."), $("menu"));
+    if (first && first.focus) first.focus();
+    return ok;
+  }
+  function orderContext() {
+    var t = otype(), name = $("oname").value.trim(), ph = cleanMobile($("ophone").value), ref = makeRef("GH-O-"), s = cartStats();
+    var typeTxt = t === "room" ? "Room service - Room " + $("room").value.trim()
+                : t === "dine" ? "Dine in - " + $("where").value + ", Table " + $("table").value.trim()
+                : "Takeaway - pickup: " + $("pickup").value;
+    var lines = Object.keys(cart).map(function (id) { return cart[id] + " x " + items[id].n; });
+    var notes = $("onotes").value.trim();
+    var rows = [["Order type", typeTxt], ["Name", name]];
+    if (ph) rows.push(["Mobile", "+91 " + ph]);
+    rows.push(["Items", lines.join("\n")]);
+    if (s.priced) rows.push(["Total", money(s.total)]);
+    if (notes) rows.push(["Notes", notes]);
+    var L = ["*New order - " + CONFIG.hotelName + "*", "Ref: " + ref, "Type: " + typeTxt, "Name: " + name];
+    if (ph) L.push("Mobile: +91 " + ph);
+    L.push("", "Items:"); L = L.concat(lines);
+    if (s.priced) L.push("", "Total: Rs " + s.total); else L.push("", "Prices as per menu");
+    if (notes) L.push("", "Notes: " + notes);
+    L.push("", "Please confirm this order with the guest.");
+    return { kind: "order", ref: ref, lede: "Review your order, then send it to our team on WhatsApp.", rows: rows, msg: L.join("\n"),
+             subject: "Order " + ref + " - " + typeTxt,
+             data: { reference: ref, type: typeTxt, name: name, mobile: ph ? "+91 " + ph : "", items: lines.join("; "), total: s.priced ? "Rs " + s.total : "as per menu", notes: notes },
+             remember: { name: name, phone: ph } };
+  }
+  orderForm.addEventListener("submit", function (e) {
+    e.preventDefault(); if (!validateOrder()) return;
+    var c = orderContext();
+    if ($("remember").checked) { store("gh_customer", c.remember); store("gh_lastcart", cart); }
+    else { store("gh_customer", null); store("gh_lastcart", null); }
+    openSend(c, "order");
+  });
+
+  /* regular customers: prefill and repeat last order */
+  (function () {
+    var cu = load("gh_customer");
+    if (cu) { $("oname").value = cu.name || ""; $("ophone").value = cu.phone || ""; $("name").value = cu.name || ""; $("phone").value = cu.phone || ""; $("remember").checked = true; }
+    var lc = load("gh_lastcart");
+    if (lc && Object.keys(lc).length) $("repeatBtn").hidden = false;
+  })();
+  $("repeatBtn").addEventListener("click", function () {
+    var lc = load("gh_lastcart") || {};
+    Object.keys(cart).forEach(function (id) { setQty(id, 0); });
+    Object.keys(lc).forEach(function (id) { if (items[id]) setQty(id, lc[id]); });
+  });
+
+  /* ================= SEND PANEL (shared) ================= */
+  function contactsList() { return CONFIG.contacts.map(function (c, i) { return { idx: i, label: c.label, wa: waNumber(c.number) }; }); }
+  function hasNum(c) { return c.wa.length >= 11; }
+  function nextIndex() { var cs = contactsList(); for (var i = 0; i < cs.length; i++) if (hasNum(cs[i]) && sent.indexOf(i) === -1) return i; return -1; }
+
+  function openSend(c, from) {
+    ctx = c; sent = []; backTo = from;
+    $("sendLede").textContent = c.lede; $("refCode").textContent = "Reference " + c.ref; $("copyMsg").textContent = "";
+    var dl = $("summary"); dl.innerHTML = "";
+    c.rows.forEach(function (r) { dl.appendChild(el("dt", r[0])); dl.appendChild(el("dd", r[1])); });
+    renderSendList(); postToEndpoint(c);
+    show("send"); views.send.focus();
+  }
+  function renderSendList() {
+    var ul = $("sendList"); ul.innerHTML = ""; var cs = contactsList(), any = false;
+    cs.forEach(function (c, i) {
+      var has = hasNum(c), done = sent.indexOf(i) > -1; if (has) any = true;
+      var li = el("li", null, done ? "done" : ""), left = el("div");
+      left.appendChild(el("div", c.label, "lab"));
+      left.appendChild(el("div", !has ? "Number not added yet" : (done ? "Opened - tap Send in WhatsApp" : "Ready"), "st"));
+      li.appendChild(left);
+      var b = el("button", done ? "Send again" : "WhatsApp", "btn ghost"); b.type = "button"; if (!has) b.disabled = true;
+      b.addEventListener("click", function () { openWA(i); }); li.appendChild(b); ul.appendChild(li);
+    });
+    $("noNumbers").hidden = any;
+    var n = nextIndex(), btn = $("nextBtn");
+    if (!any) { btn.disabled = true; btn.textContent = "Send on WhatsApp"; }
+    else if (n === -1) { btn.disabled = true; btn.textContent = "Sent to all numbers"; }
+    else { btn.disabled = false; btn.textContent = "Send to " + cs[n].label + " on WhatsApp"; }
+  }
+  function openWA(i) {
+    var c = contactsList()[i]; if (!c || !hasNum(c)) return;
+    window.open("https://wa.me/" + c.wa + "?text=" + encodeURIComponent(ctx.msg), "_blank", "noopener");
+    if (sent.indexOf(i) === -1) sent.push(i); renderSendList();
+  }
+  $("nextBtn").addEventListener("click", function () { var n = nextIndex(); if (n > -1) openWA(n); });
+  $("editBtn").addEventListener("click", function () { show(backTo); });
+  $("copyBtn").addEventListener("click", function () {
+    var msg = $("copyMsg");
+    function ok() { msg.textContent = "Copied. You can paste it into any message."; }
+    function fail() { msg.textContent = "Copy was blocked. Please select the details above and copy them."; }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ctx.msg).then(ok, fail);
+    else { var ta = document.createElement("textarea"); ta.value = ctx.msg; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy") ? ok() : fail(); } catch (e) { fail(); } document.body.removeChild(ta); }
+  });
+  function postToEndpoint(c) {
+    if (!CONFIG.formEndpoint) return;
+    try {
+      var body = { _subject: c.subject }; for (var k in c.data) body[k] = c.data[k];
+      fetch(CONFIG.formEndpoint, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(body) }).catch(function () {});
+    } catch (e) {}
+  }
+
+  /* ---------- start ---------- */
+  buildMenu(); syncType(); show("book");
+})();
+</script>
+</body>
+</html>
