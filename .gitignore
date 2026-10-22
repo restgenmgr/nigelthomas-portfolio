@@ -35,3 +35,5 @@ assets_backup_tier2a/
 *-AUDIT-REPORT.txt
 *.backup-before-seo-fix
 RESTORE-POSTER.html
+
+*.bak-*
