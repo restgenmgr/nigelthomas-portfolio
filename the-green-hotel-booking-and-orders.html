@@ -697,7 +697,22 @@ var CONFIG = {
   }
 
   /* ---------- start ---------- */
-  buildMenu(); syncType(); show("book");
+  /* QR / link options, e.g. ...html?tab=order&room=104  or  ...html?tab=order&where=Garden&table=G2 */
+  function startFromLink() {
+    var q = new URLSearchParams(window.location.search), start = "book";
+    var room = q.get("room"), where = q.get("where"), table = q.get("table");
+    if (q.get("tab") === "order" || room || where || table) start = "order";
+    if (room) {
+      orderForm.querySelector('input[name="otype"][value="room"]').checked = true; syncType();
+      var r = $("room"); if (r.tagName === "SELECT") { for (var i = 0; i < r.options.length; i++) if (r.options[i].value === room) r.value = room; } else r.value = room;
+    } else if (where || table) {
+      orderForm.querySelector('input[name="otype"][value="dine"]').checked = true; syncType();
+      if (where) { var w = $("where"); for (var j = 0; j < w.options.length; j++) if (w.options[j].value === where) w.value = where; syncTables(); }
+      if (table) { var t = $("table"); if (t.tagName === "SELECT") { for (var k = 0; k < t.options.length; k++) if (t.options[k].value === table) t.value = table; } else t.value = table; }
+    }
+    return start;
+  }
+  buildMenu(); syncType(); show(startFromLink());
 })();
 </script>
 </body>
