@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="en">  
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -709,6 +709,16 @@ var CONFIG = {
       orderForm.querySelector('input[name="otype"][value="dine"]').checked = true; syncType();
       if (where) { var w = $("where"); for (var j = 0; j < w.options.length; j++) if (w.options[j].value === where) w.value = where; syncTables(); }
       if (table) { var t = $("table"); if (t.tagName === "SELECT") { for (var k = 0; k < t.options.length; k++) if (t.options[k].value === table) t.value = table; } else t.value = table; }
+    }
+    /* banner links: ...html?venue=Malgudi%20Cafe&date=2026-11-02&guests=4 */
+    var venue = q.get("venue"), date = q.get("date"), guests = q.get("guests");
+    if (venue || date || guests) {
+      if (q.get("tab") !== "order" && !room && !where && !table) start = "book";
+      if (venue) { var vr = bookForm.querySelectorAll('input[name="venue"]'); for (var a = 0; a < vr.length; a++) if (vr[a].value === venue) vr[a].checked = true; }
+      var de = $("date");
+      if (date && /^\d{4}-\d{2}-\d{2}$/.test(date) && date >= de.min && date <= de.max) de.value = date;
+      if (guests) { var gs = $("guests"); for (var b = 0; b < gs.options.length; b++) if (gs.options[b].value === guests) gs.value = guests; }
+      renderSlots();
     }
     return start;
   }

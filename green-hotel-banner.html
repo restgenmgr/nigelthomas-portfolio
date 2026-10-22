@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Green Hotel, Mysuru | Book a table or order</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { --green:#3f7a2f; --green-d:#1f3d2f; --cream:#f7f3e8; --brass:#c9a24a; --ink:#22302a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#e9e5d8; font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif; padding:24px 12px; }
+  .note { max-width:1100px; margin:0 auto 16px; font-size:.85rem; color:#5f6d65; }
+
+  /* ================= BANNER ================= */
+  .gh-banner { position:relative; max-width:1100px; margin:0 auto; border-radius:16px; overflow:hidden; color:var(--cream);
+    min-height:340px; display:grid; grid-template-columns:300px 1fr 330px; align-items:center; gap:24px; padding:34px 36px;
+    background-image:
+      radial-gradient(circle at 88% 15%, rgba(255,255,255,.14) 0, transparent 38%),
+      linear-gradient(135deg, #2c5a24, #3f7a2f 55%, #5a9444);
+    box-shadow:0 10px 30px rgba(0,0,0,.25); }
+  /* The hotel photo (https://www.nigelthomas.live/assets/green-hotel.jpg, with the repo root as a fallback) sits in a framed card. It is a small image, so it is kept at card size. */
+  .gh-photo { position:relative; z-index:2; margin:0; pointer-events:none; }
+  .gh-photo img { display:block; width:100%; max-width:324px; height:auto; border:5px solid var(--brass); border-radius:18px; box-shadow:0 8px 22px rgba(0,0,0,.35); background:#2c5a24; }
+  .gh-banner::after { content:""; position:absolute; left:0; right:0; bottom:0; height:5px; background:var(--brass); }
+
+  /* the whole banner is clickable (sits under the widget) */
+  .gh-stretch { position:absolute; inset:0; z-index:1; }
+  .gh-stretch:focus-visible { outline:4px solid var(--brass); outline-offset:-6px; }
+
+  .gh-copy { position:relative; z-index:2; pointer-events:none; }
+  .gh-eyebrow { letter-spacing:.22em; text-transform:uppercase; font-size:.78rem; color:#e8d9a8; margin:0 0 8px; }
+  .gh-title { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:clamp(1.9rem,4.6vw,3.1rem); line-height:1.1; margin:0 0 10px; }
+  .gh-sub { margin:0 0 18px; font-size:1.05rem; max-width:34ch; }
+  .gh-chips { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; padding:0; list-style:none; }
+  .gh-chips li { background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.35); border-radius:999px; padding:5px 14px; font-size:.88rem; }
+  .gh-addr { font-size:.82rem; opacity:.9; margin:0; }
+
+  /* mini booking widget */
+  .gh-widget { position:relative; z-index:3; background:rgba(255,253,247,.97); color:var(--ink); border-radius:14px; padding:18px 18px 16px; box-shadow:0 8px 24px rgba(0,0,0,.3); }
+  .gh-widget h2 { font-family:Georgia,serif; font-weight:400; font-size:1.25rem; margin:0 0 12px; color:var(--green-d); }
+  .gh-venues { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:12px; }
+  .gh-venues label { position:relative; }
+  .gh-venues input { position:absolute; opacity:0; pointer-events:none; }
+  .gh-venues span { display:block; text-align:center; padding:10px 6px; border:1.5px solid #d9d2bd; border-radius:10px; background:#fff; cursor:pointer; font-size:.92rem; font-weight:600; color:var(--green); }
+  .gh-venues input:checked + span { background:var(--green); border-color:var(--green); color:#fff; }
+  .gh-venues input:focus-visible + span { outline:3px solid var(--brass); outline-offset:2px; }
+  .gh-row { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:12px; }
+  .gh-widget label.t { display:block; font-size:.8rem; font-weight:600; margin:0 0 4px; color:#4a574f; }
+  .gh-widget input[type=date], .gh-widget select { width:100%; font:inherit; font-size:.95rem; min-height:44px; padding:8px 10px; border:1.5px solid #d9d2bd; border-radius:10px; background:#fff; color:var(--ink); }
+  .gh-widget input:focus, .gh-widget select:focus { outline:none; border-color:var(--green); box-shadow:0 0 0 3px rgba(63,122,47,.25); }
+  .gh-btn { display:block; width:100%; background:var(--green); color:#fff; border:0; border-radius:10px; min-height:48px; font:600 1rem "Segoe UI",system-ui,sans-serif; cursor:pointer; }
+  .gh-btn:hover { background:#34681f; }
+  .gh-order { display:block; text-align:center; margin-top:10px; font-size:.92rem; color:var(--green); font-weight:600; }
+
+  @media (max-width:980px) {
+    .gh-banner { grid-template-columns:1fr; padding:26px 18px 22px; gap:18px; }
+    .gh-photo img { margin:0 auto; }
+    .gh-sub { max-width:none; }
+  }
+</style>
+</head>
+<body>
+
+<p class="note">Preview of the banner. Copy everything between the "BANNER START" and "BANNER END" markers (plus the style block) to place it on another page, or link to this file.</p>
+
+<!-- ===== BANNER START ===== -->
+<section class="gh-banner" aria-label="The Green Hotel, Mysuru: book a table or order food">
+  <a class="gh-stretch" id="ghGo" href="https://www.nigelthomas.live/the-green-hotel-booking-and-orders.html" aria-label="Open the table booking and ordering page"></a>
+
+  <figure class="gh-photo">
+    <img src="https://www.nigelthomas.live/assets/green-hotel.jpg" onerror="this.onerror=null;this.src='https://www.nigelthomas.live/green-hotel.jpg'" alt="The Green Hotel, Mysuru: the white heritage building and lawn at dusk" width="324" height="312">
+  </figure>
+
+  <div class="gh-copy">
+    <p class="gh-eyebrow">The Green Hotel &bull; Mysuru</p>
+    <h1 class="gh-title">Dine with us<br>in the garden</h1>
+    <p class="gh-sub">Book a table at The Restaurant or Malgudi Cafe, or order food and drinks in a few taps.</p>
+    <ul class="gh-chips">
+      <li>The Restaurant</li><li>Malgudi Cafe</li><li>Room service</li><li>Takeaway</li>
+    </ul>
+    <p class="gh-addr">2270 Vinoba Road, Jayalakshmipuram, Mysuru 570012</p>
+  </div>
+
+  <form class="gh-widget" id="ghForm" aria-labelledby="ghHead">
+    <h2 id="ghHead">Book a table</h2>
+    <div class="gh-venues" role="radiogroup" aria-label="Where would you like to dine?">
+      <label><input type="radio" name="venue" value="The Restaurant" checked><span>The Restaurant</span></label>
+      <label><input type="radio" name="venue" value="Malgudi Cafe"><span>Malgudi Cafe</span></label>
+    </div>
+    <div class="gh-row">
+      <div><label class="t" for="ghDate">Date</label><input type="date" id="ghDate"></div>
+      <div><label class="t" for="ghGuests">Guests</label><select id="ghGuests"></select></div>
+    </div>
+    <button class="gh-btn" type="submit">Check times</button>
+    <a class="gh-order" id="ghOrderLink" href="https://www.nigelthomas.live/the-green-hotel-booking-and-orders.html?tab=order">Or order food &amp; drinks &rarr;</a>
+  </form>
+</section>
+
+<script>
+(function () {
+  var BASE = "https://www.nigelthomas.live/the-green-hotel-booking-and-orders.html";
+  var f = document.getElementById("ghForm"), d = document.getElementById("ghDate"), g = document.getElementById("ghGuests");
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function iso(x) { return x.getFullYear() + "-" + pad(x.getMonth() + 1) + "-" + pad(x.getDate()); }
+  var t = new Date(), m = new Date(); m.setDate(t.getDate() + 60);
+  d.min = iso(t); d.max = iso(m); d.value = iso(t);
+  for (var i = 1; i <= 12; i++) g.appendChild(new Option(i + (i === 1 ? " guest" : " guests"), String(i)));
+  g.value = "2";
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var v = f.querySelector('input[name="venue"]:checked').value;
+    var url = BASE + "?venue=" + encodeURIComponent(v) + "&date=" + encodeURIComponent(d.value) + "&guests=" + encodeURIComponent(g.value);
+    window.location.href = url;
+  });
+})();
+</script>
+<!-- ===== BANNER END ===== -->
+
+</body>
+</html>
