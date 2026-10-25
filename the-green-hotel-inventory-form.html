@@ -19,7 +19,7 @@ button{padding:8px 14px;border:0;border-radius:4px;background:var(--green);color
 button.alt{background:#fff;color:var(--green);border:1px solid var(--green)}
 h2{font-family:Georgia,serif;font-style:italic;font-weight:normal;font-size:21px;color:var(--green);border-bottom:2px solid var(--brass);padding-bottom:3px;margin:22px 0 8px}
 .scroll{overflow-x:auto}
-table{width:100%;border-collapse:collapse;min-width:900px}
+table{width:100%;border-collapse:collapse;min-width:780px}
 th{background:var(--green);color:#fff;font-weight:500;font-size:12px;padding:7px 6px;text-align:center}
 th:first-child{text-align:left}
 td{border-bottom:1px solid #d3dbcf;padding:3px 4px}
@@ -33,7 +33,7 @@ td.x{width:28px;text-align:center}
 td.x button{background:none;color:#a33;padding:2px 6px;font-size:16px}
 tfoot td{font-weight:600;background:var(--tint);padding:7px 8px}
 .add{margin-top:6px;background:#fff;color:var(--leaf);border:1px dashed var(--leaf)}
-.grand{flex-wrap:wrap;gap:8px;margin-top:22px;background:var(--green);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;font-size:16px;border-radius:4px}
+.grand{margin-top:22px;background:var(--green);color:#fff;padding:12px 16px;display:flex;justify-content:space-between;font-size:16px;border-radius:4px}
 .note{font-size:12px;color:var(--mute);margin-top:10px}
 .sign{display:flex;gap:30px;margin-top:26px}
 .sign div{flex:1;border-top:1px solid var(--ink);padding-top:4px;font-size:12px;color:var(--mute)}
@@ -65,8 +65,8 @@ tfoot td{font-weight:600;background:var(--tint);padding:7px 8px}
 
   <div id="sections"></div>
 
-  <div class="grand"><span>Grand total par level amount: <b id="grandpar">₹ 0.00</b></span><span>Grand total balance amount: <b id="grand">₹ 0.00</b></span></div>
-  <p class="note">Order amount = Par level minus Stock on hand (shows 0 when stock is at or above par). Total par level amount = Par level × Last cost per unit. Total balance amount = Stock on hand × Last cost per unit. Entries are saved in this browser automatically.</p>
+  <div class="grand"><span>Grand total balance amount</span><span id="grand">₹ 0.00</span></div>
+  <p class="note">Order amount = Par level minus Stock on hand (shows 0 when stock is at or above par). Total balance amount = Stock on hand × Last cost per unit. Entries are saved in this browser automatically.</p>
 
   <div class="sign"><div>Counted by</div><div>Checked by (Chef / F&amp;B Manager)</div><div>Approved by</div></div>
 </div>
@@ -77,23 +77,13 @@ var DEFAULTS={
  'Milk & Milk Products':[['Milk (full cream)','ltr'],['Curd','kg'],['Butter','kg'],['Cheese (cheddar)','kg'],['Mozzarella','kg'],['Cream','ltr'],['Paneer','kg'],['Eggs','pcs']],
  'Chicken':[['Chicken (whole)','kg'],['Chicken breast','kg'],['Chicken leg / thigh','kg'],['Chicken wings','kg'],['Chicken liver','kg']],
  'Vegetables':[['Onion','kg'],['Tomato','kg'],['Potato','kg'],['Mushroom','kg'],['Carrot','kg'],['Capsicum','kg'],['Spinach','kg'],['Lemon','kg']],
- 'Paper & Plastics':[['Paper napkins','pkt'],['Garbage bags','pkt'],['Silver foil','roll'],['Carry out bio containers','pcs'],['Cups – hot','pcs'],['Cups – cold','pcs'],['Single item container','pcs'],['Takeaway paper bags','pcs']],
+ 'Paper & Plastics':[['Paper napkins','pkt'],['Takeaway containers','pcs'],['Paper cups','pcs'],['Cling film','roll'],['Garbage bags','pkt']],
  'Cleaning Materials':[['Dish wash liquid','ltr'],['Floor cleaner','ltr'],['Sanitiser','ltr'],['Scouring pads','pcs'],['Hand wash','ltr']]
 };
 var data=load();
-function migratePk(d){
-  if(d.pk)return;var rows=d.sections['Paper & Plastics'];d.pk=1;if(!rows)return;
-  rows=rows.filter(function(r){return r.n!=='Cling film'});
-  rows.forEach(function(r){if(r.n==='Takeaway containers')r.n='Carry out bio containers';if(r.n==='Paper cups')r.n='Cups – hot'});
-  var have=rows.map(function(r){return r.n});
-  var add=[['Silver foil','roll'],['Cups – cold','pcs'],['Single item container','pcs'],['Takeaway paper bags','pcs']];
-  var at=rows.length;while(at>0&&rows[at-1].n===''&&rows[at-1].p===''&&rows[at-1].s===''&&rows[at-1].c==='')at--;
-  add.forEach(function(x){if(have.indexOf(x[0])<0){rows.splice(at++,0,{n:x[0],u:x[1],p:'',s:'',c:''})}});
-  d.sections['Paper & Plastics']=rows;
-}
 function blank(){return{n:'',u:'',p:'',s:'',c:''}}
-function load(){try{var d=JSON.parse(localStorage.getItem(KEY));if(d&&d.sections){if(!d.blanks){for(var k in d.sections){d.sections[k].push(blank(),blank())}d.blanks=1}migratePk(d);return d}}catch(e){}return fresh()}
-function fresh(){var s={};for(var k in DEFAULTS){s[k]=DEFAULTS[k].map(function(r){return{n:r[0],u:r[1],p:'',s:'',c:''}});s[k].push(blank(),blank())}return{sections:s,date:'',outlet:'',by:'',blanks:1,pk:1}}
+function load(){try{var d=JSON.parse(localStorage.getItem(KEY));if(d&&d.sections){if(!d.blanks){for(var k in d.sections){d.sections[k].push(blank(),blank())}d.blanks=1}return d}}catch(e){}return fresh()}
+function fresh(){var s={};for(var k in DEFAULTS){s[k]=DEFAULTS[k].map(function(r){return{n:r[0],u:r[1],p:'',s:'',c:''}});s[k].push(blank(),blank())}return{sections:s,date:'',outlet:'',by:'',blanks:1}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(data))}catch(e){}}
 function num(v){var n=parseFloat(v);return isNaN(n)?0:n}
 function money(n){return '₹ '+n.toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2})}
@@ -103,20 +93,19 @@ function render(){
   var h='';
   Object.keys(data.sections).forEach(function(sec){
     h+='<h2>'+esc(sec)+'</h2><div class="scroll"><table data-sec="'+esc(sec)+'"><thead><tr>'+
-    '<th>Item</th><th style="width:60px">Unit</th><th style="width:90px">Par level</th><th style="width:120px">Total par level amount</th><th style="width:90px">Stock on hand</th>'+
+    '<th>Item</th><th style="width:60px">Unit</th><th style="width:90px">Par level</th><th style="width:90px">Stock on hand</th>'+
     '<th style="width:100px">Order amount</th><th style="width:110px">Last cost per unit (₹)</th><th style="width:130px">Total bal amount</th><th class="x"></th></tr></thead><tbody>';
     data.sections[sec].forEach(function(r,i){
       h+='<tr data-i="'+i+'"><td class="name"><input data-f="n" value="'+esc(r.n)+'"></td>'+
       '<td class="unit"><input data-f="u" value="'+esc(r.u)+'"></td>'+
       '<td><input data-f="p" type="number" min="0" step="any" value="'+esc(r.p)+'"></td>'+
-      '<td class="out paramt"></td>'+
       '<td><input data-f="s" type="number" min="0" step="any" value="'+esc(r.s)+'"></td>'+
       '<td class="out order"></td>'+
       '<td><input data-f="c" type="number" min="0" step="any" value="'+esc(r.c)+'"></td>'+
       '<td class="out bal"></td>'+
       '<td class="x"><button title="Remove row" onclick="delRow(\''+esc(sec).replace(/'/g,"\\'")+'\','+i+')">×</button></td></tr>';
     });
-    h+='</tbody><tfoot><tr><td colspan="3" style="text-align:right">Section total</td><td class="out secpar" style="text-align:right"></td><td colspan="3"></td><td class="out sec" style="text-align:right"></td><td class="x"></td></tr></tfoot></table></div>'+
+    h+='</tbody><tfoot><tr><td colspan="6" style="text-align:right">Section total</td><td class="out sec" style="text-align:right"></td><td class="x"></td></tr></tfoot></table></div>'+
     '<button class="add" onclick="addRow(\''+esc(sec).replace(/'/g,"\\'")+'\')">+ Add item</button>';
   });
   document.getElementById('sections').innerHTML=h;
@@ -127,24 +116,21 @@ function render(){
 }
 
 function calc(){
-  var grand=0,grandpar=0;
+  var grand=0;
   document.querySelectorAll('table[data-sec]').forEach(function(t){
-    var sec=t.getAttribute('data-sec'),total=0,ptotal=0;
+    var sec=t.getAttribute('data-sec'),total=0;
     t.querySelectorAll('tbody tr').forEach(function(tr){
       var r=data.sections[sec][+tr.getAttribute('data-i')];
       var order=Math.max(0,num(r.p)-num(r.s));
       var bal=num(r.s)*num(r.c);
-      var pa=num(r.p)*num(r.c);total+=bal;ptotal+=pa;
-      tr.querySelector('.paramt').textContent=pa?money(pa):'';
+      total+=bal;
       tr.querySelector('.order').textContent=(r.p===''&&r.s==='')?'':order.toLocaleString('en-IN',{maximumFractionDigits:2});
       tr.querySelector('.bal').textContent=bal?money(bal):'';
     });
     t.querySelector('.sec').textContent=money(total);
-    t.querySelector('.secpar').textContent=money(ptotal);
-    grand+=total;grandpar+=ptotal;
+    grand+=total;
   });
   document.getElementById('grand').textContent=money(grand);
-  document.getElementById('grandpar').textContent=money(grandpar);
 }
 
 document.addEventListener('input',function(e){
