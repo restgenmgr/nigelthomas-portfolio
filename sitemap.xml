@@ -276,6 +276,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.nigelthomas.live/chicken-ham-zucchini-roulade.html</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.nigelthomas.live/chicken-nuggets-recipes.html</loc>
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -2026,8 +2032,4 @@
     <lastmod>2026-11-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>  <url>
-    <loc>https://www.nigelthomas.live/chicken-ham-zucchini-roulade.html</loc>
-    <lastmod>2026-11-23</lastmod>
-  </url>
-</urlset>
+  </url></urlset>
