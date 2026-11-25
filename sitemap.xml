@@ -168,6 +168,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.nigelthomas.live/avocado-5-different-preparations.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.nigelthomas.live/baileys-irish-cream-liqueur.html</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -2032,16 +2038,4 @@
     <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>  <url>
-    <loc>https://www.nigelthomas.live/basil-pesto-recipe-guide.html</loc>
-    <lastmod>2026-11-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nigelthomas.live/essential-culinary-herbs-guide.html</loc>
-    <lastmod>2026-11-24</lastmod>
-  </url>
-  <url>
-    <loc>https://www.nigelthomas.live/avocado-5-different-preparations.html</loc>
-    <lastmod>2026-11-25</lastmod>
-  </url>
-</urlset>
+  </url></urlset>
